@@ -1,0 +1,123 @@
+
+/* navbar icons */
+#fa_nav_icon_square {
+    color: #ff0015;
+    margin-right: 5px;
+    font-size: 25px;
+    border-radius: 7px;
+    padding: 4px;
+}
+
+#fa_nav_icon_square:hover {
+    color: #ffffff;
+    box-shadow: 0 1px 42px #ff0015;
+    background-color: #ff0015;
+}
+
+#fa_nav_icon_round {
+    color: #ff0015;
+    margin-right: 5px;
+    font-size: 25px;
+    border-radius: 15px;
+    padding: 4px;
+}
+
+#fa_nav_icon_round:hover {
+    color: #ffffff;
+    box-shadow: 0 1px 42px #ff0015;
+    background-color: #ff0015;
+}
+
+/* dropdown navbar links */
+
+#sign_in_link{
+    color: #ffffff;
+    font-size: 25px;
+    border-radius: 15px;
+    border: 4px;
+}
+#sign_in_link:hover {
+    color: #ffffff;
+    box-shadow: 0 1px 10px #ffffff;
+    border: 4px solid #ffffff;
+}
+#sign_in_link:hover #fa_nav_icon_square {
+    color: #ffffff;
+    box-shadow: 0 1px 42px #ff0015;
+    background-color: #ff0015;
+}
+
+
+#navbarDropdown1{
+    color: #ffffff;
+}
+#navbarDropdown1:hover #fa_nav_icon_round {
+    color: #ffffff;
+    box-shadow: 0 1px 42px #ff0015;
+    background-color: #ff0015;
+}
+
+#navbarDropdown2{
+    color: #ffffff;
+}
+#navbarDropdown2:hover #fa_nav_icon_round {
+    color: #ffffff;
+    box-shadow: 0 1px 42px #ff0015;
+    background-color: #ff0015;
+}
+
+#navbarDropdown3{
+    color: #ffffff;
+}
+#navbarDropdown3:hover #fa_nav_icon_square {
+    color: #ffffff;
+    box-shadow: 0 1px 42px #ff0015;
+    background-color: #ff0015;
+}
+
+#navbarDropdown4{
+    color: #ffffff;
+}
+#navbarDropdown4:hover #fa_nav_icon_square {
+    color: #ffffff;
+    box-shadow: 0 1px 42px #ff0015;
+    background-color: #ff0015;
+}
+
+#navbarDropdown5{
+    color: #ffffff;
+}
+#navbarDropdown5:hover #fa_nav_icon_round {
+    color: #ffffff;
+    box-shadow: 0 1px 42px #ff0015;
+    background-color: #ff0015;
+}
+
+
+/* non-dropdown navbar links */
+#navbar_calendar{
+    color: #ffffff;
+}
+#navbar_calendar:hover #fa_nav_icon_square {
+    color: #ffffff;
+    box-shadow: 0 1px 42px #ff0015;
+    background-color: #ff0015;
+}
+
+#navbar_contact_us{
+    color: #ffffff;
+}
+#navbar_contact_us:hover #fa_nav_icon_square {
+    color: #ffffff;
+    box-shadow: 0 1px 42px #ff0015;
+    background-color: #ff0015;
+}
+
+#navbar_resources{
+    color: #ffffff;
+}
+#navbar_resources:hover #fa_nav_icon_round {
+    color: #ffffff;
+    box-shadow: 0 1px 42px #ff0015;
+    background-color: #ff0015;
+}
