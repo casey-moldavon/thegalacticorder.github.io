@@ -1,11 +1,25 @@
+#navbar_full {
+    background-image: url("merchantman_cargo.png");
+    /* background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
 
 /* The Galactic Order heading */
 #tgo_name {
     color: #ffffff;
     font-size: 3.1vw;
+    text-shadow:
+        0 0 5px #000000,
+        0 0 7px #000000,
+        0 0 10px #ff0015,
+        0 0 15px #ff0015,
+        0 0 20px #ff0015,
+        0 0 30px #00c9ff,
+        0 0 40px #00c9ff,
+        0 0 50px #00c9ff;
     font-family: 'Zen Dots', cursive;
 }
-
 
 /* navbar icons */
 #fa_nav_icon_square {
@@ -16,24 +30,12 @@
     padding: 4px;
 }
 
-#fa_nav_icon_square:hover {
-    color: #ffffff;
-    box-shadow: 0 1px 42px #ff0015;
-    background-color: #ff0015;
-}
-
 #fa_nav_icon_round {
     color: #ff0015;
     margin-right: 5px;
     font-size: 25px;
     border-radius: 15px;
     padding: 4px;
-}
-
-#fa_nav_icon_round:hover {
-    color: #ffffff;
-    box-shadow: 0 1px 42px #ff0015;
-    background-color: #ff0015;
 }
 
 /* dropdown navbar links */
@@ -44,10 +46,13 @@
     font-size: 25px;
     border-radius: 15px;
     border: 3px solid;
+    background-color: #202124;
 }
 #sign_in_link:hover {
     color: #ffffff;
-    box-shadow: 0 1px 10px #ffffff;
+    font-size: 27px;
+    text-shadow: 0 0 2px #ffffff;
+    box-shadow: 0 0 10px #ffffff;
     border: 4px solid #ffffff;
 }
 #sign_in_link:hover #fa_nav_icon_square {
@@ -62,9 +67,15 @@
     font-size: 20px;
     font-family: 'Fanwood Text', serif;
 }
+#navbarDropdown1:hover {
+    text-shadow: 0 0 2px #ffffff;
+    font-size: 22px;
+}
 #navbarDropdown1:hover #fa_nav_icon_round {
     color: #ffffff;
-    box-shadow: 0 1px 42px #ff0015;
+    box-shadow:
+        0 0 10px #ff0015,
+        0 0 20px #ff0015;
     background-color: #ff0015;
 }
 
@@ -73,9 +84,15 @@
     font-size: 20px;
     font-family: 'Fanwood Text', serif;
 }
+#navbarDropdown2:hover {
+    text-shadow: 0 0 2px #ffffff;
+    font-size: 22px;
+}
 #navbarDropdown2:hover #fa_nav_icon_round {
     color: #ffffff;
-    box-shadow: 0 1px 42px #ff0015;
+    box-shadow:
+        0 0 10px #ff0015,
+        0 0 20px #ff0015;
     background-color: #ff0015;
 }
 
@@ -84,9 +101,15 @@
     font-size: 20px;
     font-family: 'Fanwood Text', serif;
 }
+#navbarDropdown3:hover {
+    text-shadow: 0 0 2px #ffffff;
+    font-size: 22px;
+}
 #navbarDropdown3:hover #fa_nav_icon_square {
     color: #ffffff;
-    box-shadow: 0 1px 42px #ff0015;
+    box-shadow:
+        0 0 10px #ff0015,
+        0 0 20px #ff0015;
     background-color: #ff0015;
 }
 
@@ -95,9 +118,15 @@
     font-size: 20px;
     font-family: 'Fanwood Text', serif;
 }
+#navbarDropdown4:hover {
+    text-shadow: 0 0 2px #ffffff;
+    font-size: 22px;
+}
 #navbarDropdown4:hover #fa_nav_icon_square {
     color: #ffffff;
-    box-shadow: 0 1px 42px #ff0015;
+    box-shadow:
+        0 0 10px #ff0015,
+        0 0 20px #ff0015;
     background-color: #ff0015;
 }
 
@@ -106,9 +135,15 @@
     font-size: 20px;
     font-family: 'Fanwood Text', serif;
 }
+#navbarDropdown5:hover {
+    text-shadow: 0 0 2px #ffffff;
+    font-size: 22px;
+}
 #navbarDropdown5:hover #fa_nav_icon_round {
     color: #ffffff;
-    box-shadow: 0 1px 42px #ff0015;
+    box-shadow:
+        0 0 10px #ff0015,
+        0 0 20px #ff0015;
     background-color: #ff0015;
 }
 
@@ -119,9 +154,15 @@
     font-size: 20px;
     font-family: 'Fanwood Text', serif;
 }
+#navbar_calendar:hover {
+    text-shadow: 0 0 2px #ffffff;
+    font-size: 22px;
+}
 #navbar_calendar:hover #fa_nav_icon_square {
     color: #ffffff;
-    box-shadow: 0 1px 42px #ff0015;
+    box-shadow:
+        0 0 10px #ff0015,
+        0 0 20px #ff0015;
     background-color: #ff0015;
 }
 
@@ -130,9 +171,15 @@
     font-size: 20px;
     font-family: 'Fanwood Text', serif;
 }
+#navbar_contact_us:hover {
+    text-shadow: 0 0 2px #ffffff;
+    font-size: 22px;
+}
 #navbar_contact_us:hover #fa_nav_icon_square {
     color: #ffffff;
-    box-shadow: 0 1px 42px #ff0015;
+    box-shadow:
+        0 0 10px #ff0015,
+        0 0 20px #ff0015;
     background-color: #ff0015;
 }
 
@@ -141,8 +188,14 @@
     font-size: 20px;
     font-family: 'Fanwood Text', serif;
 }
+#navbar_resources:hover {
+    text-shadow: 0 0 2px #ffffff;
+    font-size: 22px;
+}
 #navbar_resources:hover #fa_nav_icon_round {
     color: #ffffff;
-    box-shadow: 0 1px 42px #ff0015;
+    box-shadow:
+        0 0 10px #ff0015,
+        0 0 20px #ff0015;
     background-color: #ff0015;
 }
