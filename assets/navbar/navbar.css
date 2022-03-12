@@ -2,7 +2,8 @@
 /* The Galactic Order heading */
 #tgo_name {
     color: #ffffff;
-    font-size: 2.7vw;
+    font-size: 3.1vw;
+    font-family: 'Zen Dots', cursive;
 }
 
 
@@ -39,6 +40,7 @@
 
 #sign_in_link {
     color: #ffffff;
+    font-family: 'Fanwood Text', serif;
     font-size: 25px;
     border-radius: 15px;
     border: 3px solid;
@@ -57,6 +59,8 @@
 
 #navbarDropdown1 {
     color: #ffffff;
+    font-size: 20px;
+    font-family: 'Fanwood Text', serif;
 }
 #navbarDropdown1:hover #fa_nav_icon_round {
     color: #ffffff;
@@ -66,6 +70,8 @@
 
 #navbarDropdown2 {
     color: #ffffff;
+    font-size: 20px;
+    font-family: 'Fanwood Text', serif;
 }
 #navbarDropdown2:hover #fa_nav_icon_round {
     color: #ffffff;
@@ -75,6 +81,8 @@
 
 #navbarDropdown3 {
     color: #ffffff;
+    font-size: 20px;
+    font-family: 'Fanwood Text', serif;
 }
 #navbarDropdown3:hover #fa_nav_icon_square {
     color: #ffffff;
@@ -84,6 +92,8 @@
 
 #navbarDropdown4 {
     color: #ffffff;
+    font-size: 20px;
+    font-family: 'Fanwood Text', serif;
 }
 #navbarDropdown4:hover #fa_nav_icon_square {
     color: #ffffff;
@@ -93,6 +103,8 @@
 
 #navbarDropdown5 {
     color: #ffffff;
+    font-size: 20px;
+    font-family: 'Fanwood Text', serif;
 }
 #navbarDropdown5:hover #fa_nav_icon_round {
     color: #ffffff;
@@ -104,6 +116,8 @@
 /* non-dropdown navbar links */
 #navbar_calendar {
     color: #ffffff;
+    font-size: 20px;
+    font-family: 'Fanwood Text', serif;
 }
 #navbar_calendar:hover #fa_nav_icon_square {
     color: #ffffff;
@@ -113,6 +127,8 @@
 
 #navbar_contact_us {
     color: #ffffff;
+    font-size: 20px;
+    font-family: 'Fanwood Text', serif;
 }
 #navbar_contact_us:hover #fa_nav_icon_square {
     color: #ffffff;
@@ -122,6 +138,8 @@
 
 #navbar_resources {
     color: #ffffff;
+    font-size: 20px;
+    font-family: 'Fanwood Text', serif;
 }
 #navbar_resources:hover #fa_nav_icon_round {
     color: #ffffff;
