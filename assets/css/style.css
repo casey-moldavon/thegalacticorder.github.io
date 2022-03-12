@@ -1,4 +1,11 @@
 
+/* The Galactic Order heading */
+#tgo_name {
+    color: #ffffff;
+    font-size: 2.7vw;
+}
+
+
 /* navbar icons */
 #fa_nav_icon_square {
     color: #ff0015;
@@ -30,7 +37,7 @@
 
 /* dropdown navbar links */
 
-#sign_in_link{
+#sign_in_link {
     color: #ffffff;
     font-size: 25px;
     border-radius: 15px;
@@ -48,7 +55,7 @@
 }
 
 
-#navbarDropdown1{
+#navbarDropdown1 {
     color: #ffffff;
 }
 #navbarDropdown1:hover #fa_nav_icon_round {
@@ -57,7 +64,7 @@
     background-color: #ff0015;
 }
 
-#navbarDropdown2{
+#navbarDropdown2 {
     color: #ffffff;
 }
 #navbarDropdown2:hover #fa_nav_icon_round {
@@ -66,7 +73,7 @@
     background-color: #ff0015;
 }
 
-#navbarDropdown3{
+#navbarDropdown3 {
     color: #ffffff;
 }
 #navbarDropdown3:hover #fa_nav_icon_square {
@@ -75,7 +82,7 @@
     background-color: #ff0015;
 }
 
-#navbarDropdown4{
+#navbarDropdown4 {
     color: #ffffff;
 }
 #navbarDropdown4:hover #fa_nav_icon_square {
@@ -84,7 +91,7 @@
     background-color: #ff0015;
 }
 
-#navbarDropdown5{
+#navbarDropdown5 {
     color: #ffffff;
 }
 #navbarDropdown5:hover #fa_nav_icon_round {
@@ -95,7 +102,7 @@
 
 
 /* non-dropdown navbar links */
-#navbar_calendar{
+#navbar_calendar {
     color: #ffffff;
 }
 #navbar_calendar:hover #fa_nav_icon_square {
@@ -104,7 +111,7 @@
     background-color: #ff0015;
 }
 
-#navbar_contact_us{
+#navbar_contact_us {
     color: #ffffff;
 }
 #navbar_contact_us:hover #fa_nav_icon_square {
@@ -113,7 +120,7 @@
     background-color: #ff0015;
 }
 
-#navbar_resources{
+#navbar_resources {
     color: #ffffff;
 }
 #navbar_resources:hover #fa_nav_icon_round {
