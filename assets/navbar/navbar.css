@@ -5,13 +5,29 @@
     background-size: cover; */
 }
 
+#tgo_logo {
+    /* object-fit: contain; */
+    width: 100px;
+    height: 100px;
+    border: 3px solid #ff0015;
+    border-radius: 50px;
+    background-color: #000000;
+    box-shadow:
+        0 0 1px 1px #ff0015,
+        0 0 2.5px 2.7px #ffffff,
+        0 0 5px 5px #ff0015,
+        0 0 7px 7px #ff0015;
+    border-collapse: collapse;
+}
+
+
 /* The Galactic Order heading */
 #tgo_name {
     color: #ffffff;
     font-size: 3.1vw;
     text-shadow:
-        0 0 5px #000000,
-        0 0 7px #000000,
+        0 0 5px #ff0000,
+        0 0 7px #ffffff,
         0 0 10px #ff0015,
         0 0 15px #ff0015,
         0 0 20px #ff0015,
@@ -44,13 +60,13 @@
     color: #ffffff;
     font-family: 'Fanwood Text', serif;
     font-size: 25px;
-    border-radius: 15px;
     border: 3px solid;
+    border-radius: 15px;
     background-color: #202124;
 }
 #sign_in_link:hover {
     color: #ffffff;
-    font-size: 27px;
+    font-size: 25.5px;
     text-shadow: 0 0 2px #ffffff;
     box-shadow: 0 0 10px #ffffff;
     border: 4px solid #ffffff;
@@ -69,7 +85,7 @@
 }
 #navbarDropdown1:hover {
     text-shadow: 0 0 2px #ffffff;
-    font-size: 22px;
+    font-size: 20.5px;
 }
 #navbarDropdown1:hover #fa_nav_icon_round {
     color: #ffffff;
@@ -86,7 +102,7 @@
 }
 #navbarDropdown2:hover {
     text-shadow: 0 0 2px #ffffff;
-    font-size: 22px;
+    font-size: 20.5px;
 }
 #navbarDropdown2:hover #fa_nav_icon_round {
     color: #ffffff;
@@ -103,7 +119,7 @@
 }
 #navbarDropdown3:hover {
     text-shadow: 0 0 2px #ffffff;
-    font-size: 22px;
+    font-size: 20.5px;
 }
 #navbarDropdown3:hover #fa_nav_icon_square {
     color: #ffffff;
@@ -120,7 +136,7 @@
 }
 #navbarDropdown4:hover {
     text-shadow: 0 0 2px #ffffff;
-    font-size: 22px;
+    font-size: 20.5px;
 }
 #navbarDropdown4:hover #fa_nav_icon_square {
     color: #ffffff;
@@ -137,7 +153,7 @@
 }
 #navbarDropdown5:hover {
     text-shadow: 0 0 2px #ffffff;
-    font-size: 22px;
+    font-size: 20.5px;
 }
 #navbarDropdown5:hover #fa_nav_icon_round {
     color: #ffffff;
@@ -156,7 +172,7 @@
 }
 #navbar_calendar:hover {
     text-shadow: 0 0 2px #ffffff;
-    font-size: 22px;
+    font-size: 20.5px;
 }
 #navbar_calendar:hover #fa_nav_icon_square {
     color: #ffffff;
@@ -173,7 +189,7 @@
 }
 #navbar_contact_us:hover {
     text-shadow: 0 0 2px #ffffff;
-    font-size: 22px;
+    font-size: 20.5px;
 }
 #navbar_contact_us:hover #fa_nav_icon_square {
     color: #ffffff;
@@ -190,7 +206,7 @@
 }
 #navbar_resources:hover {
     text-shadow: 0 0 2px #ffffff;
-    font-size: 22px;
+    font-size: 20.5px;
 }
 #navbar_resources:hover #fa_nav_icon_round {
     color: #ffffff;

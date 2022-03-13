@@ -1,0 +1,65 @@
+@page {margin: 0;}
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("");
+    /* background-color: #000000; */
+    background-image: url("concept5.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+    #introduction_container {
+        margin-top: 50px;
+        margin-bottom: 25px;
+        padding: 40px;
+        border: 5px solid #ffffff;
+        border-radius: 50px;
+        box-shadow:
+            0 0 5px 2.5px #ffffff,
+            0 0 10px 5px #00c9ff,
+            0 0 20px 10px #00c9ff;
+        border-collapse: collapse;
+    }
+        #introduction_image_container {
+            padding-top: 40px;
+            padding-bottom: 20px;
+            padding-left: 10%;
+            padding-right: 10%;
+        }
+            #introduction_image {
+                position: center;
+                border: 2.5px solid #ffffff;
+                border-radius: 50px;
+                box-shadow:
+                    0 0 1px 2px #ffffff,
+                    0 0 2px 4px #00c9ff,
+                    0 0 5px 6px #00c9ff;
+            }
+
+        #introduction_title {
+            color: #ffffff;
+            font-size: 42px;
+            font-family: 'Zen Dots', cursive;
+            text-shadow:
+                0 0 5px #00c9ff,
+                0 0 20px #00c9ff;
+        }
+
+        #introduction_text {
+            color: #ffffff;
+            font-size: 25px;
+            font-family: 'Fanwood Text', serif;
+            margin-top: 25px;
+            margin-bottom: 25px;
+        }
+            #big_welcome {
+                font-size: 27px;
+            }
