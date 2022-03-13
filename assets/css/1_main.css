@@ -75,6 +75,7 @@ body {
         0 0 5px 4px #00c9ff,
         0 0 10px 10px #00c9ff;
 
+    border-collapse: collapse;
     background-color: #1c1c1c;
     width: 420px;
 }
@@ -83,8 +84,7 @@ body {
     color: #ffffff;
     font-size: 25px;
     font-family: 'Fanwood Text', serif;
-    margin-top: 25px;
-    margin-bottom: 25px;
+    margin-top: 20px;
     padding: 25px;
     border: 2px solid #ffffff;
     border-radius: 2.5px;
@@ -93,6 +93,7 @@ body {
         0 0 5px 4px #00c9ff,
         0 0 10px 10px #00c9ff;
 
+    border-collapse: collapse;
     background-color: #1c1c1c;
     opacity: 95%;
 }
@@ -125,6 +126,12 @@ body {
 
     opacity: 95%;
 }
+
+#rules_laws_hidden_container {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 5%;
+}
     
 #rules_laws_image_container {
     padding-top: 40px;
@@ -141,6 +148,8 @@ body {
         0 0 1px 2px #ffffff,
         0 0 2px 4px #00c9ff,
         0 0 10px 10px #00c9ff;
+
+    border-collapse: collapse;
 }
     
 #rules_laws_title {
@@ -155,13 +164,14 @@ body {
         0 0 15px #ff0015,
         0 0 20px #ff0015;
 
-    /* text-decoration: underline; */
     border: 2px solid #ffffff;
+    border-radius: 2.5px;
     box-shadow:
         0 0 2.5px 1px #ffffff,
         0 0 5px 4px #00c9ff,
         0 0 10px 10px #00c9ff;
 
+    border-collapse: collapse;
     background-color: #1c1c1c;
     width: 420px;
 }
@@ -170,9 +180,12 @@ body {
     color: #ffffff;
     font-size: 25px;
     font-family: 'Fanwood Text', serif;
-    margin-top: 25px;
-    margin-bottom: 25px;
     padding: 25px;
+    background-color: #1c1c1c;
+    opacity: 95%;
+}
+
+#rules_laws_collapse {
     border: 2px solid #ffffff;
     border-radius: 2.5px;
     box-shadow:
@@ -180,20 +193,75 @@ body {
         0 0 5px 4px #00c9ff,
         0 0 10px 10px #00c9ff;
 
-    background-color: #1c1c1c;
+    border-collapse: collapse;
     opacity: 95%;
 }
 
 #general_laws {
-    color: #ff0015;
-    font-size: 27px;
-    font-family: 'Fanwood Text', serif;
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Allerta Stencil', sans-serif;
+    background-color: #1c1c1c;
+}
+#general_laws:hover {
+    color: #ffffff;
+    font-size: 30.5px;
+    text-shadow:
+        0 0 10px #00c9ff,
+        0 0 15px #00c9ff;
+}
+#general_laws:hover #rules_laws_icon {
+    color: #ffffff;
+    font-size: 35.5px;
+    text-shadow:
+        0 0 5px #ffffff,
+        0 0 10px #ff0015,
+        0 0 15px #ff0015;
+
+    border-radius: 25px;
+    box-shadow:
+        0 0 10px #ff0015,
+        0 0 20px #ff0015;
+    border-collapse: collapse;
+    background-color: #ff0015;
 }
 
 #gameplay_rules {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Allerta Stencil', sans-serif;
+    background-color: #1c1c1c;
+}
+#gameplay_rules:hover {
+    color: #ffffff;
+    font-size: 30.5px;
+    text-shadow:
+        0 0 10px #00c9ff,
+        0 0 15px #00c9ff;
+}
+#gameplay_rules:hover #rules_laws_icon {
+    color: #ffffff;
+    font-size: 35.5px;
+    text-shadow:
+        0 0 5px #ffffff,
+        0 0 10px #ff0015,
+        0 0 15px #ff0015;
+
+    border-radius: 25px;
+    box-shadow:
+        0 0 10px #ff0015,
+        0 0 20px #ff0015;
+    border-collapse: collapse;
+    background-color: #ff0015;
+}
+
+#rules_laws_icon {
     color: #ff0015;
-    font-size: 27px;
-    font-family: 'Fanwood Text', serif;
+    font-size: 35px;
+    margin-right: 20px;
+    padding: 7px;
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Rules & Laws End ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
