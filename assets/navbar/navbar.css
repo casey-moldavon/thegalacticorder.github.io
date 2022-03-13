@@ -1,8 +1,15 @@
 #navbar_full {
     background-image: url("merchantman_cargo.png");
-    /* background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover; */
+    z-index: 2;
+}
+
+#navbar_bottom {
+    border-bottom: 2px solid #ffffff;
+    box-shadow:
+        0 0 5px 2.5px #ffffff,
+        0 0 10px 5px #00c9ff,
+        0 0 20px 10px #00c9ff;
+    z-index: 1;
 }
 
 #tgo_logo {
@@ -11,13 +18,22 @@
     height: 100px;
     border: 3px solid #ff0015;
     border-radius: 50px;
-    background-color: #000000;
+    background-color: #202020;
+    opacity: 80%;
+}
+
+#tgo_logo:hover {
+    width: 100.7px;
+    height: 100.7px;
+    border: 3px solid #ffffff;
+    border-radius: 60px;
     box-shadow:
-        0 0 1px 1px #ff0015,
-        0 0 2.5px 2.7px #ffffff,
-        0 0 5px 5px #ff0015,
-        0 0 7px 7px #ff0015;
+        0 0 2.5px 2px #ffffff,
+        0 0 10px 5px #ff0015,
+        0 0 15px 10px #ff0015;
+
     border-collapse: collapse;
+    opacity: 1;
 }
 
 
@@ -25,16 +41,17 @@
 #tgo_name {
     color: #ffffff;
     font-size: 3.1vw;
+    font-weight: bold;
     text-shadow:
         0 0 5px #ff0000,
-        0 0 7px #ffffff,
         0 0 10px #ff0015,
         0 0 15px #ff0015,
         0 0 20px #ff0015,
         0 0 30px #00c9ff,
         0 0 40px #00c9ff,
         0 0 50px #00c9ff;
-    font-family: 'Zen Dots', cursive;
+
+    font-family: 'Allerta Stencil', sans-serif;
 }
 
 /* navbar icons */
@@ -67,7 +84,7 @@
 #sign_in_link:hover {
     color: #ffffff;
     font-size: 25.5px;
-    text-shadow: 0 0 2px #ffffff;
+    text-shadow: 0 0 20px #ffffff;
     box-shadow: 0 0 10px #ffffff;
     border: 4px solid #ffffff;
 }
@@ -84,7 +101,7 @@
     font-family: 'Fanwood Text', serif;
 }
 #navbarDropdown1:hover {
-    text-shadow: 0 0 2px #ffffff;
+    text-shadow: 0 0 20px #ffffff;
     font-size: 20.5px;
 }
 #navbarDropdown1:hover #fa_nav_icon_round {
@@ -101,7 +118,7 @@
     font-family: 'Fanwood Text', serif;
 }
 #navbarDropdown2:hover {
-    text-shadow: 0 0 2px #ffffff;
+    text-shadow: 0 0 20px #ffffff;
     font-size: 20.5px;
 }
 #navbarDropdown2:hover #fa_nav_icon_round {
@@ -118,7 +135,7 @@
     font-family: 'Fanwood Text', serif;
 }
 #navbarDropdown3:hover {
-    text-shadow: 0 0 2px #ffffff;
+    text-shadow: 0 0 20px #ffffff;
     font-size: 20.5px;
 }
 #navbarDropdown3:hover #fa_nav_icon_square {
@@ -135,7 +152,7 @@
     font-family: 'Fanwood Text', serif;
 }
 #navbarDropdown4:hover {
-    text-shadow: 0 0 2px #ffffff;
+    text-shadow: 0 0 20px #ffffff;
     font-size: 20.5px;
 }
 #navbarDropdown4:hover #fa_nav_icon_square {
@@ -152,7 +169,7 @@
     font-family: 'Fanwood Text', serif;
 }
 #navbarDropdown5:hover {
-    text-shadow: 0 0 2px #ffffff;
+    text-shadow: 0 0 20px #ffffff;
     font-size: 20.5px;
 }
 #navbarDropdown5:hover #fa_nav_icon_round {
@@ -171,7 +188,7 @@
     font-family: 'Fanwood Text', serif;
 }
 #navbar_calendar:hover {
-    text-shadow: 0 0 2px #ffffff;
+    text-shadow: 0 0 20px #ffffff;
     font-size: 20.5px;
 }
 #navbar_calendar:hover #fa_nav_icon_square {
@@ -188,7 +205,7 @@
     font-family: 'Fanwood Text', serif;
 }
 #navbar_contact_us:hover {
-    text-shadow: 0 0 2px #ffffff;
+    text-shadow: 0 0 20px #ffffff;
     font-size: 20.5px;
 }
 #navbar_contact_us:hover #fa_nav_icon_square {
@@ -205,7 +222,7 @@
     font-family: 'Fanwood Text', serif;
 }
 #navbar_resources:hover {
-    text-shadow: 0 0 2px #ffffff;
+    text-shadow: 0 0 20px #ffffff;
     font-size: 20.5px;
 }
 #navbar_resources:hover #fa_nav_icon_round {

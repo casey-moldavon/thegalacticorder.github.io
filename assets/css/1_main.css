@@ -9,57 +9,191 @@ body {
     margin: 0;
     padding: 0;
     background-image: url("");
-    /* background-color: #000000; */
+    background-color: #000000;
     background-image: url("concept5.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 }
-    #introduction_container {
-        margin-top: 50px;
-        margin-bottom: 25px;
-        padding: 40px;
-        border: 5px solid #ffffff;
-        border-radius: 50px;
-        box-shadow:
-            0 0 5px 2.5px #ffffff,
-            0 0 10px 5px #00c9ff,
-            0 0 20px 10px #00c9ff;
-        border-collapse: collapse;
-    }
-        #introduction_image_container {
-            padding-top: 40px;
-            padding-bottom: 20px;
-            padding-left: 10%;
-            padding-right: 10%;
-        }
-            #introduction_image {
-                position: center;
-                border: 2.5px solid #ffffff;
-                border-radius: 50px;
-                box-shadow:
-                    0 0 1px 2px #ffffff,
-                    0 0 2px 4px #00c9ff,
-                    0 0 5px 6px #00c9ff;
-            }
 
-        #introduction_title {
-            color: #ffffff;
-            font-size: 42px;
-            font-family: 'Zen Dots', cursive;
-            text-shadow:
-                0 0 5px #00c9ff,
-                0 0 20px #00c9ff;
-        }
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Introduction Start ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+#introduction_container {
+    margin-top: 50px;
+    margin-bottom: 25px;
+    padding: 40px;
 
-        #introduction_text {
-            color: #ffffff;
-            font-size: 25px;
-            font-family: 'Fanwood Text', serif;
-            margin-top: 25px;
-            margin-bottom: 25px;
-        }
-            #big_welcome {
-                font-size: 27px;
-            }
+    border: 4px solid #ffffff;
+    border-radius: 2.5px;
+    box-shadow:
+        0 0 5px 2.5px #ffffff,
+        0 0 10px 5px #00c9ff,
+        0 0 20px 10px #00c9ff;
+
+    border-collapse: collapse;
+
+    background-image: url("logo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    opacity: 95%;
+}
+
+#introduction_image_container {
+    padding-top: 40px;
+    padding-bottom: 20px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+#introduction_image {
+    position: center;
+    border: 2px solid #ffffff;
+    border-radius: 2.5px;
+    box-shadow:
+        0 0 1px 2px #ffffff,
+        0 0 2px 4px #00c9ff,
+        0 0 10px 10px #00c9ff;
+}
+
+#introduction_title {
+    color: #ffffff;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Allerta Stencil', sans-serif;
+    
+    text-shadow:
+        0 0 5px #ff0000,
+        0 0 10px #ff0015,
+        0 0 15px #ff0015,
+        0 0 20px #ff0015;
+
+    /* text-decoration: underline; */
+    border: 2px solid #ffffff;
+    box-shadow:
+        0 0 2.5px 1px #ffffff,
+        0 0 5px 4px #00c9ff,
+        0 0 10px 10px #00c9ff;
+
+    background-color: #1c1c1c;
+    width: 420px;
+}
+
+#introduction_text {
+    color: #ffffff;
+    font-size: 25px;
+    font-family: 'Fanwood Text', serif;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding: 25px;
+    border: 2px solid #ffffff;
+    border-radius: 2.5px;
+    box-shadow:
+        0 0 2.5px 1px #ffffff,
+        0 0 5px 4px #00c9ff,
+        0 0 10px 10px #00c9ff;
+
+    background-color: #1c1c1c;
+    opacity: 95%;
+}
+
+#big_welcome {
+    color: #ff0015;
+    font-size: 27px;
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Introduction End ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Rules & Laws Start ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+#rules_laws_container {
+    margin-top: 50px;
+    margin-bottom: 25px;
+    padding: 40px;
+
+    border: 4px solid #ffffff;
+    border-radius: 2.5px;
+    box-shadow:
+        0 0 5px 2.5px #ffffff,
+        0 0 10px 5px #00c9ff,
+        0 0 20px 10px #00c9ff;
+
+    border-collapse: collapse;
+
+    background-image: url("logo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    opacity: 95%;
+}
+    
+#rules_laws_image_container {
+    padding-top: 40px;
+    padding-bottom: 20px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+#rules_laws_image {
+    position: center;
+    border: 2px solid #ffffff;
+    border-radius: 2.5px;
+    box-shadow:
+        0 0 1px 2px #ffffff,
+        0 0 2px 4px #00c9ff,
+        0 0 10px 10px #00c9ff;
+}
+    
+#rules_laws_title {
+    color: #ffffff;
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Allerta Stencil', sans-serif;
+    
+    text-shadow:
+        0 0 5px #ff0000,
+        0 0 10px #ff0015,
+        0 0 15px #ff0015,
+        0 0 20px #ff0015;
+
+    /* text-decoration: underline; */
+    border: 2px solid #ffffff;
+    box-shadow:
+        0 0 2.5px 1px #ffffff,
+        0 0 5px 4px #00c9ff,
+        0 0 10px 10px #00c9ff;
+
+    background-color: #1c1c1c;
+    width: 420px;
+}
+    
+#rules_laws_text {
+    color: #ffffff;
+    font-size: 25px;
+    font-family: 'Fanwood Text', serif;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding: 25px;
+    border: 2px solid #ffffff;
+    border-radius: 2.5px;
+    box-shadow:
+        0 0 2.5px 1px #ffffff,
+        0 0 5px 4px #00c9ff,
+        0 0 10px 10px #00c9ff;
+
+    background-color: #1c1c1c;
+    opacity: 95%;
+}
+
+#general_laws {
+    color: #ff0015;
+    font-size: 27px;
+    font-family: 'Fanwood Text', serif;
+}
+
+#gameplay_rules {
+    color: #ff0015;
+    font-size: 27px;
+    font-family: 'Fanwood Text', serif;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Rules & Laws End ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
