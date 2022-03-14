@@ -107,7 +107,7 @@ body {
         0 0 10px 10px #00c9ff;
 
     border-collapse: collapse;
-    opacity: 95%;
+    opacity: 98%;
 }
 
 #character_lore {
@@ -138,7 +138,189 @@ body {
         0 0 20px #ff0015;
     border-collapse: collapse;
     background-color: #ff0015;
+    padding-right: 3px;
 }
+
+#armor_uniform {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Allerta Stencil', sans-serif;
+    background-color: #1c1c1c;
+}
+#armor_uniform:hover {
+    color: #ffffff;
+    font-size: 30.5px;
+    text-shadow:
+        0 0 10px #00c9ff,
+        0 0 15px #00c9ff;
+}
+#armor_uniform:hover #protocol_icon {
+    color: #ffffff;
+    font-size: 35.5px;
+    text-shadow:
+        0 0 5px #ffffff,
+        0 0 10px #ff0015,
+        0 0 15px #ff0015;
+
+    border-radius: 15px;
+    box-shadow:
+        0 0 10px #ff0015,
+        0 0 20px #ff0015;
+    border-collapse: collapse;
+    background-color: #ff0015;
+}
+
+#weapons_tools {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Allerta Stencil', sans-serif;
+    background-color: #1c1c1c;
+}
+#weapons_tools:hover {
+    color: #ffffff;
+    font-size: 30.5px;
+    text-shadow:
+        0 0 10px #00c9ff,
+        0 0 15px #00c9ff;
+}
+#weapons_tools:hover #protocol_icon {
+    color: #ffffff;
+    font-size: 35.5px;
+    text-shadow:
+        0 0 5px #ffffff,
+        0 0 10px #ff0015,
+        0 0 15px #ff0015;
+
+    border-radius: 15px;
+    box-shadow:
+        0 0 10px #ff0015,
+        0 0 20px #ff0015;
+    border-collapse: collapse;
+    background-color: #ff0015;
+}
+
+#looting {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Allerta Stencil', sans-serif;
+    background-color: #1c1c1c;
+}
+#looting:hover {
+    color: #ffffff;
+    font-size: 30.5px;
+    text-shadow:
+        0 0 10px #00c9ff,
+        0 0 15px #00c9ff;
+}
+#looting:hover #protocol_icon {
+    color: #ffffff;
+    font-size: 35.5px;
+    text-shadow:
+        0 0 5px #ffffff,
+        0 0 10px #ff0015,
+        0 0 15px #ff0015;
+
+    border-radius: 15px;
+    box-shadow:
+        0 0 10px #ff0015,
+        0 0 20px #ff0015;
+    border-collapse: collapse;
+    background-color: #ff0015;
+}
+
+#unit_conduct {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Allerta Stencil', sans-serif;
+    background-color: #1c1c1c;
+}
+#unit_conduct:hover {
+    color: #ffffff;
+    font-size: 30.5px;
+    text-shadow:
+        0 0 10px #00c9ff,
+        0 0 15px #00c9ff;
+}
+#unit_conduct:hover #protocol_icon {
+    color: #ffffff;
+    font-size: 35.5px;
+    text-shadow:
+        0 0 5px #ffffff,
+        0 0 10px #ff0015,
+        0 0 15px #ff0015;
+
+    border-radius: 15px;
+    box-shadow:
+        0 0 10px #ff0015,
+        0 0 20px #ff0015;
+    border-collapse: collapse;
+    background-color: #ff0015;
+}
+
+#report_for_duty {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Allerta Stencil', sans-serif;
+    background-color: #1c1c1c;
+}
+#report_for_duty:hover {
+    color: #ffffff;
+    font-size: 30.5px;
+    text-shadow:
+        0 0 10px #00c9ff,
+        0 0 15px #00c9ff;
+}
+#report_for_duty:hover #protocol_icon {
+    color: #ffffff;
+    font-size: 35.5px;
+    text-shadow:
+        0 0 5px #ffffff,
+        0 0 10px #ff0015,
+        0 0 15px #ff0015;
+
+    border-radius: 15px;
+    box-shadow:
+        0 0 10px #ff0015,
+        0 0 20px #ff0015;
+    border-collapse: collapse;
+    background-color: #ff0015;
+}
+
+#report_progress {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Allerta Stencil', sans-serif;
+    background-color: #1c1c1c;
+}
+#report_progress:hover {
+    color: #ffffff;
+    font-size: 30.5px;
+    text-shadow:
+        0 0 10px #00c9ff,
+        0 0 15px #00c9ff;
+}
+#report_progress:hover #protocol_icon {
+    color: #ffffff;
+    font-size: 35.5px;
+    text-shadow:
+        0 0 5px #ffffff,
+        0 0 10px #ff0015,
+        0 0 15px #ff0015;
+
+    border-radius: 15px;
+    box-shadow:
+        0 0 10px #ff0015,
+        0 0 20px #ff0015;
+    border-collapse: collapse;
+    background-color: #ff0015;
+}
+
 
 
 #protocol_icon {
@@ -146,6 +328,72 @@ body {
     font-size: 35px;
     margin-right: 20px;
     padding: 7px;
-    padding-right: 2.5px;
+}
+#leadership_division {
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'Allerta Stencil', sans-serif;
+    text-shadow:
+        0 0 15px #d6b44c,
+        0 0 20px #d6b44c;
+}
+#combat_division {
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'Allerta Stencil', sans-serif;
+    text-shadow:
+        0 0 15px #b60031,
+        0 0 20px #b60031;
+}
+#engineer_division {
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'Allerta Stencil', sans-serif;
+    text-shadow:
+        0 0 15px #00b368,
+        0 0 20px #00b368;
+}
+#medical_division {
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'Allerta Stencil', sans-serif;
+    text-shadow:
+        0 0 15px #4285f4,
+        0 0 20px #4285f4;
+}
+#emote_name {
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'Allerta Stencil', sans-serif;
+    text-shadow:
+        0 0 15px #00c9ff,
+        0 0 20px #00c9ff;
+}
+#emote_phrase {
+    color: #00c9ff;
+    font-weight: bold;
+}
+#statement_report {
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'Allerta Stencil', sans-serif;
+    text-shadow:
+        0 0 15px #ad6cc2,
+        0 0 20px #ad6cc2;
+}
+#bold_note {
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'Allerta Stencil', sans-serif;
+    text-shadow:
+        0 0 10px #ff0015,
+        0 0 15px #ff0015;
 }
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Protocol End ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */

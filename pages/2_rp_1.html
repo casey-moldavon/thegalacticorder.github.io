@@ -164,6 +164,7 @@
 
             <div id="protocol_collapse" class="accordion accordion-flush">
 
+                <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Character Lore ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
                 <div class="accordion-item">
                     <h2 class="accordion-header" id="headingOne">
                         <button id="character_lore" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
@@ -182,11 +183,190 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Equipment: Armor/Uniform ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button id="armor_uniform" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <i id="protocol_icon" class="fa-solid fa-shield"></i> Equipment: Armor / Uniform
+                        </button>
+                    </h2>
+    
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo">
+                        <div id="protocol_text" class="accordion-body">
+    
+                            <div class="container-fluid">
+                                <p>As stated in our <a href="../pages/1_main.html#rules_laws_link">Rules & Laws</a>, each unit is responsible for wearing the armor and assigned uniform for their position. Unit specific attire is an important part of the Galactic Order’s image, acting not only as a projection of power but also further developing the chain of command, giving visible differences between ranks.</p>
+                                <p>Noticeably, lower ranks will be presented with more armor, weapons and tools to signify the risks they take and the challenges they face in harsher work enviornments. As the ranks increase in number, units will typically lose armor, personal storage, weapons and tools as they become further burdened by the challenges of command. The only exception to this rule is with the main branch of the combat division, which sees an increase in armor leading up to the position of officer. Although Commanders may don the equipment and uniform of any same-division rank 1 or 2 for the purpose of combat, it is typically less common as they hold a level of responsibility that shouldn’t be risked unless absolutely necessary.</p>
+                            </div>
+    
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Equipment: Weapons & Tools ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button id="weapons_tools" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <i id="protocol_icon" class="fa-solid fa-screwdriver-wrench"></i> Equipment: Weapons & Tools
+                        </button>
+                    </h2>
+    
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree">
+                        <div id="protocol_text" class="accordion-body">
+    
+                            <div class="container-fluid">
+                                <p>There is no limit or specific regulation with regards to the weapons each unit may equip at a given time. However, some units have Tool requirements that may prevent them from equipping weapons.</p>
+                                <p><a id="medical_division">Medical Division</a> units must always have quick access to drug pens and a ParaMed Medical Device equipped for instant use.</p>
+                                <p><a id="engineer_division">Engineer Division</a> units must always have a Multitool equipped for instant use and quick access to any of its attachments.</p>
+                            </div>
+    
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Equipment: Looting ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                        <button id="looting" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            <i id="protocol_icon" class="fa-solid fa-gift"></i>Equipment: Looting
+                        </button>
+                    </h2>
+    
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour">
+                        <div id="protocol_text" class="accordion-body">
+    
+                            <div class="container-fluid">
+                                <p>This is the only instance when regulation equipment, such as Armor & Tools, are not enforced as there will be times when items may need to be worn or replaced for the sake of performing the task of item retrieval. However, after looting is complete, all regulations are immediately set back in place.</p>
+                            </div>
+    
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Unit Conduct ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFive">
+                        <button id="unit_conduct" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            <i id="protocol_icon" class="fa-solid fa-medal"></i>Unit Conduct
+
+                        </button>
+                    </h2>
+    
+                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive">
+                        <div id="protocol_text" class="accordion-body">
+    
+                            <div class="container-fluid">
+                                <ol>
+                                    <li>Use <a id="emote_name">Salute</a> emote when first addressed by an Officer.</li>
+                                    <li>Use <a id="emote_name">Salute</a> emote when dismissed by an Officer.</li>
+
+                                    <ul>
+                                        <li>Officers will typically Salute back but are not required to.</li>
+                                    </ul>
+                                    
+                                    <li>Use <a id="emote_name">Attention</a> emote after <a id="emote_name">Salute</a> until Officer says <a id="emote_phrase">"at ease"</a>.</li>
+                                    <li>Use <a id="emote_name">At Ease</a> emote when Officer says <a id="emote_phrase">"at ease"</a>.</li>
+
+                                    <ul>
+                                        <li>Units may resume duties only after Officer says <a id="emote_phrase">"dismissed"</a> or <a id="emote_phrase">"as you were"</a>.</li>
+                                    </ul>
+
+                                    <li>Use <a id="emote_name">Attention</a> emote when an Officer enters the room.</li>
+
+                                    <ul>
+                                        <li>First unit to see Officer calls personnel in the room to <a id="emote_name">Attention</a> emote by saying: <a id="emote_phrase">"Officer on Deck!"</a>.</li>
+                                        <li>Units may resume duties only after Officer says <a id="emote_phrase">"dismissed"</a> or <a id="emote_phrase">"as you were"</a>.</li>
+                                    </ul>
+
+                                    <li>An Officer is any unit Rank 3 or higher.</li>
+                                    <li>Unit Conduct is temporarily suspended during Combat or similar critical settings</li>
+                                </ol>
+
+                                <p><a id="bold_note">Note:</a> Officers must also follow Unit Conduct with Suprirors of higher rank.</p>
+                                <P><a id="bold_note">Note:</a> Officers sharing the same rank use <a id="emote_name">Salute</a> emote when first addressing each-other, but no other Emotes or actions are needed after.</P>
+                                <p><a id="bold_note">Note:</a> These codes do not need to be followed in Habitation areas for Sleeping, Eating, Rest and Relaxation.</p>
+
+                            </div>
+    
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Reporting for Duty ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSix">
+                        <button id="report_for_duty" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                            <!-- <i id="protocol_icon" class="fa-solid fa-ban"></i>Reporting for Duty -->
+                            <i id="protocol_icon" class="fa-solid fa-medal"></i>Reporting for Duty
+
+                        </button>
+                    </h2>
+    
+                    <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix">
+                        <div id="protocol_text" class="accordion-body">
+    
+                            <div class="container-fluid">
+                                <p>As part of a regular Patrol, units must report for active duty to their Commander or superior Officer while following Unit Conduct.</p>
+
+                                <ol>
+                                    <li>Use <a id="emote_name">Salute</a> emote when first addressing an Officer.</li>
+                                    <li>State <a id="statement_report">Rank</a> and <a id="statement_report">Name</a> followed by <a id="emote_phrase">"Reporting for Duty"</a>.</li>
+
+                                    <ul>
+                                        <li><a id="bold_note">Example:</a> <a id="emote_phrase">"Ensign Cr4zy reporting for Duty"</a>.</li>
+                                    </ul>
+
+                                    <li>Use <a id="emote_name">Attention</a> emote after <a id="emote_name">Salute</a> until Officer says <a id="emote_phrase">"at ease"</a>.</li>
+                                    <li>Use <a id="emote_name">At Ease</a> emote when Officer says <a id="emote_phrase">"at ease"</a>.</li>
+                                </ol>
+
+                                <p><a id="bold_note">Note:</a> Units may resume duties only after Officer says <a id="emote_phrase">"dismissed"</a> or <a id="emote_phrase">"as you were"</a>.</p>
+                                <p><a id="bold_note">Note:</a> Officers saying <a id="emote_phrase">"dismissed"</a> or <a id="emote_phrase">"as you were"</a>, in this context, indicates they have begun to log progression.</p>
+                                <p><a id="bold_note">Note:</a> Patrols end when unit either signs off or <a id="emote_phrase">"Requests Relief"</a>. Requesting a relief is when a unit requests to be off-duty. This follows identical protocol as Reporting for Duty.</p>
+
+                            </div>
+    
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Reporting Progress ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSeven">
+                        <button id="report_progress" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                            <i id="protocol_icon" class="fa-solid fa-file-signature"></i>Reporting Progress
+                        </button>
+                    </h2>
+    
+                    <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven">
+                        <div id="protocol_text" class="accordion-body">
+    
+                            <div class="container-fluid">
+                                <p>When off-duty, units who are following proper equipment protocol may independently report any completed <a id="statement_report">Hours</a> and <a id="statement_report">Missions</a> to their Commander.</p>
+                                <ul>
+                                    <li><a id="combat_division">Combat Division</a> units report to Trooper-Commander</li>
+                                    <li><a id="engineer_division">Engineer Division</a> units report to Engineer-Commander</li>
+                                    <li><a id="medical_division">Medical Division</a> units report to Medic-Commander</li>
+                                </ul>
+                                <p>If there is no acting division commander within a unit’s Battalion, they may report to another Commander or the acting 1st Officer.</p>
+                                <p><a id="leadership_division">Leadership Division</a>, indluding 1st Officers, holds responsibility for recording <a id="statement_report"># of Events</a> and <a id="statement_report"># of Recruits</a> for each Unit.</p>
+                            </div>
+    
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
             </div>
         </div>
     </div>
     
 <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Protocol End ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
     
     <script src="assets/js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
