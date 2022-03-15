@@ -121,14 +121,14 @@ body {
 }
 #character_lore:hover {
     color: #ffffff;
-    font-size: 25.1px;
+    font-size: 25.2px;
     text-shadow:
         0 0 10px #00c9ff,
         0 0 15px #00c9ff;
 }
 #character_lore:hover #protocol_icon {
     color: #ffffff;
-    font-size: 30.5px;
+    font-size: 30.2px;
     text-shadow:
         0 0 5px #ffffff,
         0 0 10px #ff0015,
@@ -152,14 +152,14 @@ body {
 }
 #armor_uniform:hover {
     color: #ffffff;
-    font-size: 25.1px;
+    font-size: 25.2px;
     text-shadow:
         0 0 10px #00c9ff,
         0 0 15px #00c9ff;
 }
 #armor_uniform:hover #protocol_icon {
     color: #ffffff;
-    font-size: 30.5px;
+    font-size: 30.2px;
     text-shadow:
         0 0 5px #ffffff,
         0 0 10px #ff0015,
@@ -182,14 +182,14 @@ body {
 }
 #weapons_tools:hover {
     color: #ffffff;
-    font-size: 25.1px;
+    font-size: 25.2px;
     text-shadow:
         0 0 10px #00c9ff,
         0 0 15px #00c9ff;
 }
 #weapons_tools:hover #protocol_icon {
     color: #ffffff;
-    font-size: 30.5px;
+    font-size: 30.2px;
     text-shadow:
         0 0 5px #ffffff,
         0 0 10px #ff0015,
@@ -212,14 +212,14 @@ body {
 }
 #looting:hover {
     color: #ffffff;
-    font-size: 25.1px;
+    font-size: 25.2px;
     text-shadow:
         0 0 10px #00c9ff,
         0 0 15px #00c9ff;
 }
 #looting:hover #protocol_icon {
     color: #ffffff;
-    font-size: 30.5px;
+    font-size: 30.2px;
     text-shadow:
         0 0 5px #ffffff,
         0 0 10px #ff0015,
@@ -242,14 +242,14 @@ body {
 }
 #unit_conduct:hover {
     color: #ffffff;
-    font-size: 25.1px;
+    font-size: 25.2px;
     text-shadow:
         0 0 10px #00c9ff,
         0 0 15px #00c9ff;
 }
 #unit_conduct:hover #protocol_icon {
     color: #ffffff;
-    font-size: 30.5px;
+    font-size: 30.2px;
     text-shadow:
         0 0 5px #ffffff,
         0 0 10px #ff0015,
@@ -272,14 +272,14 @@ body {
 }
 #report_for_duty:hover {
     color: #ffffff;
-    font-size: 25.1px;
+    font-size: 25.2px;
     text-shadow:
         0 0 10px #00c9ff,
         0 0 15px #00c9ff;
 }
 #report_for_duty:hover #protocol_icon {
     color: #ffffff;
-    font-size: 30.5px;
+    font-size: 30.2px;
     text-shadow:
         0 0 5px #ffffff,
         0 0 10px #ff0015,
@@ -302,14 +302,14 @@ body {
 }
 #report_progress:hover {
     color: #ffffff;
-    font-size: 25.1px;
+    font-size: 25.2px;
     text-shadow:
         0 0 10px #00c9ff,
         0 0 15px #00c9ff;
 }
 #report_progress:hover #protocol_icon {
     color: #ffffff;
-    font-size: 30.5px;
+    font-size: 30.2px;
     text-shadow:
         0 0 5px #ffffff,
         0 0 10px #ff0015,
@@ -332,7 +332,7 @@ body {
 }
 #warnings_insubordination:hover {
     color: #ffffff;
-    font-size: 25.1px;
+    font-size: 25.2px;
     text-shadow:
         0 0 10px #b60031,
         0 0 15px #ff0015,
@@ -341,7 +341,7 @@ body {
 }
 #warnings_insubordination:hover #protocol_icon {
     color: #ffffff;
-    font-size: 30.5px;
+    font-size: 30.2px;
     text-shadow:
         0 0 5px #ffffff,
         0 0 10px #ff0015,

@@ -120,14 +120,14 @@ body {
 }
 #officer_permissions:hover {
     color: #ffffff;
-    font-size: 25.1px;
+    font-size: 25.2px;
     text-shadow:
         0 0 10px #00c9ff,
         0 0 15px #00c9ff;
 }
 #officer_permissions:hover #officer_info_icon {
     color: #ffffff;
-    font-size: 30.5px;
+    font-size: 30.2px;
     text-shadow:
         0 0 5px #ffffff,
         0 0 10px #ff0015,
