@@ -113,21 +113,21 @@ body {
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Content Start ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 #officer_permissions {
     color: #ffffff;
-    font-size: 27.5px;
+    font-size: 25px;
     font-weight: bold;
     font-family: 'Allerta Stencil', sans-serif;
     background-color: #1c1c1c;
 }
 #officer_permissions:hover {
     color: #ffffff;
-    font-size: 30.5px;
+    font-size: 25.2px;
     text-shadow:
         0 0 10px #00c9ff,
         0 0 15px #00c9ff;
 }
 #officer_permissions:hover #officer_info_icon {
     color: #ffffff;
-    font-size: 25.5px;
+    font-size: 30.5px;
     text-shadow:
         0 0 5px #ffffff,
         0 0 10px #ff0015,
@@ -146,13 +146,13 @@ body {
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Extra ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 #officer_info_icon {
     color: #ff0015;
-    font-size: 25px;
+    font-size: 30px;
     margin-right: 20px;
     padding: 7px;
 }
 #leadership_division {
     color: #ffffff;
-    font-size: 22.5px;
+    font-size: 22px;
     font-weight: bold;
     font-family: 'Allerta Stencil', sans-serif;
     text-shadow:
@@ -161,7 +161,7 @@ body {
 }
 #combat_division {
     color: #ffffff;
-    font-size: 22.5px;
+    font-size: 22px;
     font-weight: bold;
     font-family: 'Allerta Stencil', sans-serif;
     text-shadow:
@@ -170,7 +170,7 @@ body {
 }
 #engineer_division {
     color: #ffffff;
-    font-size: 22.5px;
+    font-size: 22px;
     font-weight: bold;
     font-family: 'Allerta Stencil', sans-serif;
     text-shadow:
@@ -179,7 +179,7 @@ body {
 }
 #medical_division {
     color: #ffffff;
-    font-size: 22.5px;
+    font-size: 22px;
     font-weight: bold;
     font-family: 'Allerta Stencil', sans-serif;
     text-shadow:

@@ -78,7 +78,7 @@ body {
     border-collapse: collapse;
     background-color: #1c1c1c;
     width: 275px;
-    }
+}
 
 #introduction_text {
     color: #ffffff;
@@ -155,7 +155,7 @@ body {
     
 #rules_laws_title {
     color: #ffffff;
-    font-size: 27.5px;
+    font-size: 30px;
     font-weight: bold;
     font-family: 'Allerta Stencil', sans-serif;
     
@@ -175,7 +175,7 @@ body {
     border-collapse: collapse;
     background-color: #1c1c1c;
     width: 250px;
-    }
+}
     
 #rules_laws_text {
     color: #ffffff;
@@ -208,7 +208,7 @@ body {
 }
 #general_laws:hover {
     color: #ffffff;
-    font-size: 25.5px;
+    font-size: 25.2px;
     text-shadow:
         0 0 10px #00c9ff,
         0 0 15px #00c9ff;
@@ -238,7 +238,7 @@ body {
 }
 #gameplay_rules:hover {
     color: #ffffff;
-    font-size: 25.5px;
+    font-size: 25.2px;
     text-shadow:
         0 0 10px #00c9ff,
         0 0 15px #00c9ff;
