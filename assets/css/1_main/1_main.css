@@ -82,7 +82,8 @@ body {
 
 #introduction_text {
     color: #ffffff;
-    font-size: 1.2vw;
+    /* font-size: 1.2vw; */
+    font-size: 20px;
     font-family: 'Fanwood Text', serif;
     margin-top: 20px;
     padding: 3%;
@@ -100,7 +101,7 @@ body {
 
 #big_welcome {
     color: #ff0015;
-    font-size: 1.25vw;
+    font-size: 22px;
 }
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Introduction End ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
@@ -178,7 +179,8 @@ body {
     
 #rules_laws_text {
     color: #ffffff;
-    font-size: 1.2vw;
+    /* font-size: 1.2vw; */
+    font-size: 20px;
     font-family: 'Fanwood Text', serif;
     padding: 3%;
     background-color: #1c1c1c;
