@@ -1,0 +1,18 @@
+@page {margin: 0;}
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("");
+    background-color: #000000;
+    background-image: url("concept1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
