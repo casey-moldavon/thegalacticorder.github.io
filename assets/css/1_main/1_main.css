@@ -24,7 +24,7 @@ body {
     padding: 40px;
 
     border: 4px solid #ffffff;
-    border-radius: 2.5px;
+    border-radius: 2px;
     box-shadow:
         0 0 5px 2.5px #ffffff,
         0 0 10px 5px #00c9ff,
@@ -49,7 +49,7 @@ body {
 #introduction_image {
     position: center;
     border: 2px solid #ffffff;
-    border-radius: 2.5px;
+    border-radius: 2px;
     box-shadow:
         0 0 1px 2px #ffffff,
         0 0 2px 4px #00c9ff,
@@ -58,7 +58,7 @@ body {
 
 #introduction_title {
     color: #ffffff;
-    font-size: 50px;
+    font-size: 3vw;
     font-weight: bold;
     font-family: 'Allerta Stencil', sans-serif;
     
@@ -67,26 +67,29 @@ body {
         0 0 10px #ff0015,
         0 0 15px #ff0015,
         0 0 20px #ff0015;
-
+    
     border: 2px solid #ffffff;
+    border-radius: 2px;
     box-shadow:
         0 0 2.5px 1px #ffffff,
         0 0 5px 4px #00c9ff,
         0 0 10px 10px #00c9ff;
-
+    
     border-collapse: collapse;
     background-color: #1c1c1c;
-    width: 420px;
-}
+    width: 35%;
+    }
 
 #introduction_text {
     color: #ffffff;
-    font-size: 25px;
+    /* font-size: 25px; */
+    font-size: 1.5vw;
     font-family: 'Fanwood Text', serif;
     margin-top: 20px;
-    padding: 25px;
+    /* padding: 25px; */
+    padding: 3%;
     border: 2px solid #ffffff;
-    border-radius: 2.5px;
+    border-radius: 2px;
     box-shadow:
         0 0 2.5px 1px #ffffff,
         0 0 5px 4px #00c9ff,
@@ -99,7 +102,8 @@ body {
 
 #big_welcome {
     color: #ff0015;
-    font-size: 27px;
+    /* font-size: 27px; */
+    font-size: 1.7vw;
 }
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Introduction End ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
@@ -110,7 +114,7 @@ body {
     padding: 40px;
 
     border: 4px solid #ffffff;
-    border-radius: 2.5px;
+    border-radius: 2px;
     box-shadow:
         0 0 5px 2.5px #ffffff,
         0 0 10px 5px #00c9ff,
@@ -142,7 +146,7 @@ body {
 #rules_laws_image {
     position: center;
     border: 2px solid #ffffff;
-    border-radius: 2.5px;
+    border-radius: 2px;
     box-shadow:
         0 0 1px 2px #ffffff,
         0 0 2px 4px #00c9ff,
@@ -153,7 +157,7 @@ body {
     
 #rules_laws_title {
     color: #ffffff;
-    font-size: 50px;
+    font-size: 3vw;
     font-weight: bold;
     font-family: 'Allerta Stencil', sans-serif;
     
@@ -162,31 +166,32 @@ body {
         0 0 10px #ff0015,
         0 0 15px #ff0015,
         0 0 20px #ff0015;
-
+    
     border: 2px solid #ffffff;
-    border-radius: 2.5px;
+    border-radius: 2px;
     box-shadow:
         0 0 2.5px 1px #ffffff,
         0 0 5px 4px #00c9ff,
         0 0 10px 10px #00c9ff;
-
+    
     border-collapse: collapse;
     background-color: #1c1c1c;
-    width: 420px;
-}
+    width: 35%;
+    }
     
 #rules_laws_text {
     color: #ffffff;
-    font-size: 25px;
+    /* font-size: 25px; */
+    font-size: 1.5vw;
     font-family: 'Fanwood Text', serif;
-    padding: 25px;
+    padding: 3%;
     background-color: #1c1c1c;
     opacity: 95%;
 }
 
 #rules_laws_collapse {
     border: 2px solid #ffffff;
-    border-radius: 2.5px;
+    border-radius: 2px;
     box-shadow:
         0 0 2.5px 1px #ffffff,
         0 0 5px 4px #00c9ff,
@@ -198,21 +203,24 @@ body {
 
 #general_laws {
     color: #ffffff;
-    font-size: 30px;
+    /* font-size: 30px; */
+    font-size: 2vw;
     font-weight: bold;
     font-family: 'Allerta Stencil', sans-serif;
     background-color: #1c1c1c;
 }
 #general_laws:hover {
     color: #ffffff;
-    font-size: 30.5px;
+    /* font-size: 30.5px; */
+    font-size: 2.1vw;
     text-shadow:
         0 0 10px #00c9ff,
         0 0 15px #00c9ff;
 }
 #general_laws:hover #rules_laws_icon {
     color: #ffffff;
-    font-size: 35.5px;
+    /* font-size: 35.5px; */
+    font-size: 2.3vw;
     text-shadow:
         0 0 5px #ffffff,
         0 0 10px #ff0015,
@@ -228,21 +236,24 @@ body {
 
 #gameplay_rules {
     color: #ffffff;
-    font-size: 30px;
+    /* font-size: 30px; */
+    font-size: 2vw;
     font-weight: bold;
     font-family: 'Allerta Stencil', sans-serif;
     background-color: #1c1c1c;
 }
 #gameplay_rules:hover {
     color: #ffffff;
-    font-size: 30.5px;
+    /* font-size: 30.5px; */
+    font-size: 2.1vw;
     text-shadow:
         0 0 10px #00c9ff,
         0 0 15px #00c9ff;
 }
 #gameplay_rules:hover #rules_laws_icon {
     color: #ffffff;
-    font-size: 35.5px;
+    /* font-size: 35.5px; */
+    font-size: 2.3vw;
     text-shadow:
         0 0 5px #ffffff,
         0 0 10px #ff0015,
@@ -258,7 +269,8 @@ body {
 
 #rules_laws_icon {
     color: #ff0015;
-    font-size: 35px;
+    /* font-size: 35px; */
+    font-size: 2.1vw;
     margin-right: 20px;
     padding: 7px;
 }
