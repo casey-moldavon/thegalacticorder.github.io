@@ -48,7 +48,7 @@ body {
     
 #officer_info_image_container {
     padding-top: 40px;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
     padding-left: 10%;
     padding-right: 10%;
 }
@@ -67,7 +67,7 @@ body {
     
 #officer_info_title {
     color: #ffffff;
-    font-size: 3.1vw;
+    font-size: 3vw;
     font-weight: bold;
     font-family: 'Allerta Stencil', sans-serif;
     
@@ -91,9 +91,9 @@ body {
     
 #officer_info_text {
     color: #ffffff;
-    font-size: 25px;
+    font-size: 1.5vw;
     font-family: 'Fanwood Text', serif;
-    padding: 25px;
+    padding: 3%;
     background-color: #1c1c1c;
     opacity: 95%;
 }
@@ -111,23 +111,23 @@ body {
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Content Start ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-#character_lore {
+#officer_permissions {
     color: #ffffff;
-    font-size: 30px;
+    font-size: 1.7vw;
     font-weight: bold;
     font-family: 'Allerta Stencil', sans-serif;
     background-color: #1c1c1c;
 }
-#character_lore:hover {
+#officer_permissions:hover {
     color: #ffffff;
-    font-size: 30.5px;
+    font-size: 1.75vw;
     text-shadow:
         0 0 10px #00c9ff,
         0 0 15px #00c9ff;
 }
-#character_lore:hover #officer_info_icon {
+#officer_permissions:hover #officer_info_icon {
     color: #ffffff;
-    font-size: 35.5px;
+    font-size: 2vw;
     text-shadow:
         0 0 5px #ffffff,
         0 0 10px #ff0015,
@@ -139,20 +139,20 @@ body {
         0 0 20px #ff0015;
     border-collapse: collapse;
     background-color: #ff0015;
-    padding-right: 3px;
 }
+
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Content End ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Extra ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 #officer_info_icon {
     color: #ff0015;
-    font-size: 35px;
+    font-size: 1.9vw;
     margin-right: 20px;
     padding: 7px;
 }
 #leadership_division {
     color: #ffffff;
-    font-size: 22px;
+    font-size: 1.3vw;
     font-weight: bold;
     font-family: 'Allerta Stencil', sans-serif;
     text-shadow:
@@ -161,7 +161,7 @@ body {
 }
 #combat_division {
     color: #ffffff;
-    font-size: 22px;
+    font-size: 1.3vw;
     font-weight: bold;
     font-family: 'Allerta Stencil', sans-serif;
     text-shadow:
@@ -170,7 +170,7 @@ body {
 }
 #engineer_division {
     color: #ffffff;
-    font-size: 22px;
+    font-size: 1.3vw;
     font-weight: bold;
     font-family: 'Allerta Stencil', sans-serif;
     text-shadow:
@@ -179,7 +179,7 @@ body {
 }
 #medical_division {
     color: #ffffff;
-    font-size: 22px;
+    font-size: 1.3vw;
     font-weight: bold;
     font-family: 'Allerta Stencil', sans-serif;
     text-shadow:
@@ -188,9 +188,9 @@ body {
 }
 #emote_name {
     color: #ffffff;
-    font-size: 22px;
+    font-size: 1.5vw;
     font-weight: bold;
-    font-family: 'Allerta Stencil', sans-serif;
+    /* font-family: 'Allerta Stencil', sans-serif; */
     text-shadow:
         0 0 15px #00c9ff,
         0 0 20px #00c9ff;
@@ -201,18 +201,18 @@ body {
 }
 #statement_report {
     color: #ffffff;
-    font-size: 22px;
+    font-size: 1.5vw;
     font-weight: bold;
-    font-family: 'Allerta Stencil', sans-serif;
+    /* font-family: 'Allerta Stencil', sans-serif; */
     text-shadow:
         0 0 15px #ad6cc2,
         0 0 20px #ad6cc2;
 }
 #bold_note {
     color: #ffffff;
-    font-size: 22px;
+    font-size: 1.5vw;
     font-weight: bold;
-    font-family: 'Allerta Stencil', sans-serif;
+    /* font-family: 'Allerta Stencil', sans-serif; */
     text-shadow:
         0 0 10px #ff0015,
         0 0 15px #ff0015;
@@ -220,11 +220,11 @@ body {
 #red_text {
     color: #ff0015;
     font-weight: bold;
-    font-size: 28px;
+    font-size: 1.5vw;
 }
 #red_a_box {
     color: #ffffff;
-    font-size: 25px;
+    font-size: 1.5vw;
     font-weight: bold;
     font-family: 'Allerta Stencil', sans-serif;
     text-shadow:
@@ -240,7 +240,7 @@ body {
     margin: 4px;
 }
 #break_space {
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Officer Info End ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */

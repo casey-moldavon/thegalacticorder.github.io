@@ -82,11 +82,9 @@ body {
 
 #introduction_text {
     color: #ffffff;
-    /* font-size: 25px; */
     font-size: 1.5vw;
     font-family: 'Fanwood Text', serif;
     margin-top: 20px;
-    /* padding: 25px; */
     padding: 3%;
     border: 2px solid #ffffff;
     border-radius: 2px;
@@ -102,8 +100,7 @@ body {
 
 #big_welcome {
     color: #ff0015;
-    /* font-size: 27px; */
-    font-size: 1.7vw;
+    font-size: 1.55vw;
 }
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Introduction End ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
@@ -181,7 +178,6 @@ body {
     
 #rules_laws_text {
     color: #ffffff;
-    /* font-size: 25px; */
     font-size: 1.5vw;
     font-family: 'Fanwood Text', serif;
     padding: 3%;
@@ -203,24 +199,21 @@ body {
 
 #general_laws {
     color: #ffffff;
-    /* font-size: 30px; */
-    font-size: 2vw;
+    font-size: 1.7vw;
     font-weight: bold;
     font-family: 'Allerta Stencil', sans-serif;
     background-color: #1c1c1c;
 }
 #general_laws:hover {
     color: #ffffff;
-    /* font-size: 30.5px; */
-    font-size: 2.1vw;
+    font-size: 1.75vw;
     text-shadow:
         0 0 10px #00c9ff,
         0 0 15px #00c9ff;
 }
 #general_laws:hover #rules_laws_icon {
     color: #ffffff;
-    /* font-size: 35.5px; */
-    font-size: 2.3vw;
+    font-size: 2vw;
     text-shadow:
         0 0 5px #ffffff,
         0 0 10px #ff0015,
@@ -236,24 +229,21 @@ body {
 
 #gameplay_rules {
     color: #ffffff;
-    /* font-size: 30px; */
-    font-size: 2vw;
+    font-size: 1.7vw;
     font-weight: bold;
     font-family: 'Allerta Stencil', sans-serif;
     background-color: #1c1c1c;
 }
 #gameplay_rules:hover {
     color: #ffffff;
-    /* font-size: 30.5px; */
-    font-size: 2.1vw;
+    font-size: 1.75vw;
     text-shadow:
         0 0 10px #00c9ff,
         0 0 15px #00c9ff;
 }
 #gameplay_rules:hover #rules_laws_icon {
     color: #ffffff;
-    /* font-size: 35.5px; */
-    font-size: 2.3vw;
+    font-size: 2vw;
     text-shadow:
         0 0 5px #ffffff,
         0 0 10px #ff0015,
@@ -269,8 +259,7 @@ body {
 
 #rules_laws_icon {
     color: #ff0015;
-    /* font-size: 35px; */
-    font-size: 2.1vw;
+    font-size: 1.9vw;
     margin-right: 20px;
     padding: 7px;
 }
