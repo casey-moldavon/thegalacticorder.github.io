@@ -92,7 +92,7 @@ body {
 #protocol_text {
     color: #ffffff;
     /* font-size: 1.5vw; */
-    font-size: 20px;
+    font-size: 22.5px;
     font-family: 'Fanwood Text', serif;
     padding: 3%;
     background-color: #1c1c1c;
@@ -365,7 +365,7 @@ body {
 }
 #leadership_division {
     color: #ffffff;
-    font-size: 20px;
+    font-size: 22.5px;
     font-weight: bold;
     font-family: 'Allerta Stencil', sans-serif;
     text-shadow:
@@ -374,7 +374,7 @@ body {
 }
 #combat_division {
     color: #ffffff;
-    font-size: 20px;
+    font-size: 22.5px;
     font-weight: bold;
     font-family: 'Allerta Stencil', sans-serif;
     text-shadow:
@@ -383,7 +383,7 @@ body {
 }
 #engineer_division {
     color: #ffffff;
-    font-size: 20px;
+    font-size: 22.5px;
     font-weight: bold;
     font-family: 'Allerta Stencil', sans-serif;
     text-shadow:
@@ -392,7 +392,7 @@ body {
 }
 #medical_division {
     color: #ffffff;
-    font-size: 20px;
+    font-size: 22.5px;
     font-weight: bold;
     font-family: 'Allerta Stencil', sans-serif;
     text-shadow:
@@ -402,7 +402,7 @@ body {
 #emote_name {
     color: #ffffff;
     /* font-size: 1.5vw; */
-    font-size: 20px;
+    font-size: 22.5px;
     font-weight: bold;
     /* font-family: 'Allerta Stencil', sans-serif; */
     text-shadow:
@@ -416,7 +416,7 @@ body {
 #statement_report {
     color: #ffffff;
     /* font-size: 1.5vw; */
-    font-size: 20px;
+    font-size: 22.5px;
     font-weight: bold;
     /* font-family: 'Allerta Stencil', sans-serif; */
     text-shadow:
@@ -426,7 +426,7 @@ body {
 #bold_note {
     color: #ffffff;
     /* font-size: 1.5vw; */
-    font-size: 20px;
+    font-size: 22.5px;
     font-weight: bold;
     /* font-family: 'Allerta Stencil', sans-serif; */
     text-shadow:
@@ -437,12 +437,12 @@ body {
     color: #ff0015;
     font-weight: bold;
     /* font-size: 1.5vw; */
-    font-size: 20px;
+    font-size: 23px;
 }
 #red_a_box {
     color: #ffffff;
     /* font-size: 1.5vw; */
-    font-size: 22px;
+    font-size: 25px;
     font-weight: bold;
     font-family: 'Allerta Stencil', sans-serif;
     text-shadow:
