@@ -37,7 +37,7 @@ body {
     background-size: cover;
     background-position: center;
 
-    opacity: 95%;
+    /* opacity: 95%; */
 }
 
 #introduction_image_container {
@@ -126,7 +126,7 @@ body {
     background-size: cover;
     background-position: center;
 
-    opacity: 95%;
+    /* opacity: 95%; */
 }
 
 #rules_laws_hidden_container {

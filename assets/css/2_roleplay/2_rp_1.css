@@ -37,7 +37,7 @@ body {
     background-size: cover;
     background-position: center;
 
-    opacity: 95%;
+    /* opacity: 95%; */
 }
 
 #protocol_hidden_container {

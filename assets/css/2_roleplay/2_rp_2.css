@@ -37,7 +37,7 @@ body {
     background-size: cover;
     background-position: center;
 
-    opacity: 95%;
+    /* opacity: 95%; */
 }
 
 #officer_info_hidden_container {
