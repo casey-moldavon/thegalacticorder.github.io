@@ -54,6 +54,8 @@ body {
         0 0 1px 2px #ffffff,
         0 0 2px 4px #00c9ff,
         0 0 10px 10px #00c9ff;
+
+    border-collapse: collapse;
 }
 
 #introduction_title {

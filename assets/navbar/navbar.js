@@ -75,8 +75,8 @@ var navbar = `
 
                 <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown4">
                     <li><a class="dropdown-item" href="../pages/4_lore_0.html">Founding</a></li>
-                    <li><a class="dropdown-item" href="../pages/4_lore_0.html#founders_link">Backstories</a></li>
-                    <li><a class="dropdown-item" href="#">Goals</a></li>
+                    <li><a class="dropdown-item" href="../pages/4_lore_0.html#backstories_link">Backstories</a></li>
+                    <li><a class="dropdown-item" href="../pages/4_lore_0.html#goals_link">Goals</a></li>
                     <li><hr class="dropdown-divider"></li>
                     <li><a class="dropdown-item" href="../pages/4_lore_1.html">Classifications</a></li>
                     <li><hr class="dropdown-divider"></li>

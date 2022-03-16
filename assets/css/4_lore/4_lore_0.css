@@ -117,7 +117,7 @@ body {
     background-color: #1c1c1c;
     opacity: 95%;
 }
-
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ History & Lore End ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Backstories Start ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 #founders_container {
@@ -219,8 +219,91 @@ body {
     background-color: #1c1c1c;
     opacity: 95%;
 }
-
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Backstories End ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Goals Start ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+#goals_container {
+    margin-top: 50px;
+    margin-bottom: 25px;
+    padding: 40px;
+
+    border: 4px solid #ffffff;
+    border-radius: 2.5px;
+    box-shadow:
+        0 0 5px 2.5px #ffffff,
+        0 0 10px 5px #00c9ff,
+        0 0 20px 10px #00c9ff;
+
+    border-collapse: collapse;
+
+    background-image: url("logo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    opacity: 95%;
+}
+    
+#goals_image_container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+#goals_image {
+    position: center;
+    border: 2px solid #ffffff;
+    border-radius: 2.5px;
+    box-shadow:
+        0 0 1px 2px #ffffff,
+        0 0 2px 4px #00c9ff,
+        0 0 10px 10px #00c9ff;
+
+    border-collapse: collapse;
+}
+
+#goals_title {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Allerta Stencil', sans-serif;
+    
+    text-shadow:
+        0 0 5px #ff0000,
+        0 0 10px #ff0015,
+        0 0 15px #ff0015,
+        0 0 20px #ff0015;
+
+    border: 2px solid #ffffff;
+    border-radius: 2.5px;
+    box-shadow:
+        0 0 2.5px 1px #ffffff,
+        0 0 5px 4px #00c9ff,
+        0 0 10px 10px #00c9ff;
+
+    border-collapse: collapse;
+    background-color: #1c1c1c;
+    width: 375px;
+}
+    
+#goals_text {
+    color: #ffffff;
+    font-size: 22.5px;
+    font-family: 'Fanwood Text', serif;
+    padding: 3%;
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+    box-shadow:
+        0 0 2.5px 1px #ffffff,
+        0 0 5px 4px #00c9ff,
+        0 0 10px 10px #00c9ff;
+
+    border-collapse: collapse;
+    background-color: #1c1c1c;
+    opacity: 95%;
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Goals Start ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Extra ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 #history_lore_icon {
@@ -321,5 +404,14 @@ body {
 #break_space {
     margin-top: 5%;
     margin-bottom: 5%;
+}
+#complete {
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'Allerta Stencil', sans-serif;
+    text-shadow:
+        0 0 15px #15ff00,
+        0 0 20px #15ff00;
 }
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ History & Lore End ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
