@@ -163,7 +163,7 @@ body {
 
 #smaller_image1 {
     position: relative;
-    border: 2px solid #ffffff;
+    border: 2px solid #ff0015;
     border-radius: 2.5px;
     border-collapse: collapse;
     width: 40%;
@@ -174,7 +174,7 @@ body {
 
 #smaller_image2 {
     position: center;
-    border: 2px solid #ffffff;
+    border: 2px solid #ff0015;
     border-radius: 2.5px;
     border-collapse: collapse;
 }
@@ -413,5 +413,14 @@ body {
     text-shadow:
         0 0 15px #15ff00,
         0 0 20px #15ff00;
+}
+#founder_name {
+    color: #ffffff;
+    font-size: 22.5px;
+    font-weight: bold;
+    /* font-family: 'Allerta Stencil', sans-serif; */
+    text-shadow:
+        0 0 10px #d6b44c,
+        0 0 15px #d6b44c;
 }
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ History & Lore End ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
