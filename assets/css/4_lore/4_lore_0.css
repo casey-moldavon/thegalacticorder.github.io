@@ -33,6 +33,7 @@ body {
     border-collapse: collapse;
 
     background-image: url("logo.png");
+        /* background-image: url("order_background.jpg"); */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -135,6 +136,7 @@ body {
     border-collapse: collapse;
 
     background-image: url("logo.png");
+        /* background-image: url("order_background.jpg"); */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -221,6 +223,7 @@ body {
     border-collapse: collapse;
 
     background-image: url("logo.png");
+        /* background-image: url("order_background.jpg"); */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
