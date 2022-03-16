@@ -48,7 +48,7 @@ body {
     
 #history_lore_image_container {
     padding-top: 40px;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
     padding-left: 10%;
     padding-right: 10%;
 }
@@ -69,18 +69,30 @@ body {
     position: relative;
     border: 2px solid #ffffff;
     border-radius: 2.5px;
-    box-shadow:
+    /* box-shadow:
         0 0 1px 2px #ffffff,
         0 0 2px 4px #00c9ff,
-        0 0 10px 10px #00c9ff;
+        0 0 10px 10px #00c9ff; */
 
     border-collapse: collapse;
     width: 30%;
     margin-right: 2.5%;
-    margin-top: 2.5%;
-    margin-bottom: 2.5%;
+    /* margin-bottom: 2.5%; */
     float: left;
 }
+
+#smaller_image2 {
+    position: center;
+    border: 2px solid #ffffff;
+    border-radius: 2.5px;
+    /* box-shadow:
+        0 0 1px 2px #ffffff,
+        0 0 2px 4px #00c9ff,
+        0 0 10px 10px #00c9ff; */
+
+    border-collapse: collapse;
+}
+
 
 /* #inner_text {
     position: relative;
@@ -115,7 +127,6 @@ body {
     color: #ffffff;
     font-size: 22.5px;
     font-family: 'Fanwood Text', serif;
-    margin-top: 20px;
     padding: 3%;
     border: 2px solid #ffffff;
     border-radius: 2px;
