@@ -27,6 +27,8 @@
 <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Navbar End ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
 
+
+
 <div id="rank_information_container" class="container-md container-fluid">
 
     <div id="rank_information_title" class="container-fluid text-center">
@@ -41,21 +43,24 @@
     <!-- hidden container to adjust accordion width -->
     <!-- <div id="rank_information_hidden_container" class="container-md container-fluid"> -->
 
+
+            <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Rank 0 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
             <div id="rank_0_information" class="container row justify-content-center text-center container-fluid">
                 
                 <p><a id="novitiate_division">RANK 0:</a></p>
 
-                <div id="rank_0_unit_card" class="card text-center bg-dark" style="width: 10rem;">
+                <div id="rank_0_unit_card" class="card text-center bg-dark" style="width: 10rem;" type="button" data-bs-toggle="modal" data-bs-target="#conscriptModal">
                     <!-- <img id="emblem_image" src="../assets/images/badges_emblems/0-conscript.png" class="card-img-top" alt="Conscript"> -->
-                    <a id="conscript_image" href="#">?</a>
+                    <a type="button" id="conscript_image" data-toggle="modal" data-target="#conscriptModal">?</a>
+
                     <ul class="list-group list-group-flush">
                         <li id="rank_0_unit_text" class="list-group-item bg-dark">Rank 0</li>
                         <li id="rank_0_unit_text" class="list-group-item bg-dark">Conscript</li>
                     </ul>
                 </div>
-
+                
                 <div id="rank_0_unit_card" class="card text-center bg-dark" style="width: 10rem;">
-                    <img id="emblem_image" src="../assets/images/badges_emblems/0-novitiate.png" class="card-img-top" alt="Novitiate">
+                    <img id="emblem_image" src="../assets/ranks/badges/0-novitiate.png" class="card-img-top" alt="Novitiate">
                     <ul class="list-group list-group-flush">
                         <li id="rank_0_unit_text" class="list-group-item bg-dark">Rank 0</li>
                         <li id="rank_0_unit_text" class="list-group-item bg-dark">Novitiate</li>
@@ -66,11 +71,12 @@
 
             <p id="small_space"></p>
 
+            <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Combat Division ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
             <div id="combat_division_information" class="container row justify-content-center text-center container-fluid">
                 <p><a id="combat_division">COMBAT DIVISION:</a></p>
 
                 <div id="combat_unit_card" class="card text-center bg-dark" style="width: 10rem;">
-                    <img id="emblem_image" src="../assets/images/badges_emblems/emblem_1_trooper.png" class="card-img-top" alt="Ensign Trooper">
+                    <img id="emblem_image" src="../assets/ranks/emblems/emblem_1_trooper.png" class="card-img-top" alt="Ensign Trooper">
                     <ul class="list-group list-group-flush">
                         <li id="combat_unit_text" class="list-group-item bg-dark">Rank 1</li>
                         <li id="combat_unit_text" class="list-group-item bg-dark">Ensign Trooper</li>
@@ -78,7 +84,7 @@
                 </div>
 
                 <div id="combat_unit_card" class="card text-center bg-dark" style="width: 10rem;">
-                    <img id="emblem_image" src="../assets/images/badges_emblems/emblem_2_trooper.png" class="card-img-top" alt="Lieutenant Trooper">
+                    <img id="emblem_image" src="../assets/ranks/emblems/emblem_2_trooper.png" class="card-img-top" alt="Lieutenant Trooper">
                     <ul class="list-group list-group-flush">
                         <li id="combat_unit_text" class="list-group-item bg-dark">Rank 2</li>
                         <li id="combat_unit_text" class="list-group-item bg-dark">Lieutenant Trooper</li>
@@ -86,7 +92,7 @@
                 </div>
 
                 <div id="combat_unit_card" class="card text-center bg-dark" style="width: 10rem;">
-                    <img id="emblem_image" src="../assets/images/badges_emblems/emblem_2_trooper.png" class="card-img-top" alt="Shock Trooper">
+                    <img id="emblem_image" src="../assets/ranks/emblems/emblem_2_trooper.png class="card-img-top" alt="Shock Trooper">
                     <ul class="list-group list-group-flush">
                         <li id="combat_unit_text" class="list-group-item bg-dark">Rank 2</li>
                         <li id="combat_unit_text" class="list-group-item bg-dark">Shock Trooper</li>
@@ -94,7 +100,7 @@
                 </div>
 
                 <div id="combat_unit_card" class="card text-center bg-dark" style="width: 10rem;">
-                    <img id="emblem_image" src="../assets/images/badges_emblems/emblem_3_trooper.png" class="card-img-top" alt="Trooper Commander">
+                    <img id="emblem_image" src="../assets/ranks/emblems/emblem_3_trooper.png" class="card-img-top" alt="Trooper Commander">
                     <ul class="list-group list-group-flush">
                         <li id="combat_unit_text" class="list-group-item bg-dark">Rank 3</li>
                         <li id="combat_unit_text" class="list-group-item bg-dark">Trooper Commander</li>
@@ -105,11 +111,12 @@
 
             <p id="small_space"></p>
 
+            <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Spec-Ops Sub-Division ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->            
             <div id="spec_ops_sub_division_information" class="container row justify-content-center text-center container-fluid">
                 <p><a id="combat_division">SPECIAL OPS SUB-DIVISION:</a></p>
 
                 <div id="combat_unit_card" class="card text-center bg-dark" style="width: 10rem;">
-                    <img id="emblem_image" src="../assets/images/badges_emblems/emblem_2_outrider.png" class="card-img-top" alt="Outrider">
+                    <img id="emblem_image" src="../assets/ranks/emblems/emblem_2_outrider.png" class="card-img-top" alt="Outrider">
                     <ul class="list-group list-group-flush">
                         <li id="combat_unit_text" class="list-group-item bg-dark">Rank 2</li>
                         <li id="combat_unit_text" class="list-group-item bg-dark">Outrider</li>
@@ -129,11 +136,12 @@
 
             <p id="small_space"></p>
 
+            <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Engineer Division ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->            
             <div id="engineer_division_information" class="container row justify-content-center text-center container-fluid">
                 <p><a id="engineer_division">ENGINEER DIVISION:</a></p>
 
                 <div id="engineer_unit_card" class="card text-center bg-dark" style="width: 10rem;">
-                    <img id="emblem_image" src="../assets/images/badges_emblems/emblem_1_engineer.png" class="card-img-top" alt="Ensign Operator">
+                    <img id="emblem_image" src="../assets/ranks/emblems/emblem_1_engineer.png" class="card-img-top" alt="Ensign Operator">
                     <ul class="list-group list-group-flush">
                         <li id="engineer_unit_text" class="list-group-item bg-dark">Rank 1</li>
                         <li id="engineer_unit_text" class="list-group-item bg-dark">Ensign Operator</li>
@@ -141,7 +149,7 @@
                 </div>
 
                 <div id="engineer_unit_card" class="card text-center bg-dark" style="width: 10rem;">
-                    <img id="emblem_image" src="../assets/images/badges_emblems/emblem_2_engineer.png" class="card-img-top" alt="Lieutenant Engineer">
+                    <img id="emblem_image" src="../assets/ranks/emblems/emblem_2_engineer.png" class="card-img-top" alt="Lieutenant Engineer">
                     <ul class="list-group list-group-flush">
                         <li id="engineer_unit_text" class="list-group-item bg-dark">Rank 2</li>
                         <li id="engineer_unit_text" class="list-group-item bg-dark">Lieutenant Engineer</li>
@@ -149,7 +157,7 @@
                 </div>
 
                 <div id="engineer_unit_card" class="card text-center bg-dark" style="width: 10rem;">
-                    <img id="emblem_image" src="../assets/images/badges_emblems/emblem_3_engineer.png" class="card-img-top" alt="Engineer Commander">
+                    <img id="emblem_image" src="../assets/ranks/emblems/emblem_3_engineer.png" class="card-img-top" alt="Engineer Commander">
                     <ul class="list-group list-group-flush">
                         <li id="engineer_unit_text" class="list-group-item bg-dark">Rank 3</li>
                         <li id="engineer_unit_text" class="list-group-item bg-dark">Engineer Commander</li>
@@ -160,11 +168,12 @@
 
             <p id="small_space"></p>
 
+            <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Medical Division ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
             <div id="medical_division_information" class="container row justify-content-center text-center container-fluid">
                 <p><a id="medical_division">MEDICAL DIVISION:</a></p>
 
                 <div id="medical_unit_card" class="card text-center bg-dark" style="width: 10rem;">
-                    <img id="emblem_image" src="../assets/images/badges_emblems/emblem_1_medic.png" class="card-img-top" alt="Ensign Medic">
+                    <img id="emblem_image" src="../assets/ranks/emblems/emblem_1_medic.png" class="card-img-top" alt="Ensign Medic">
                     <ul class="list-group list-group-flush">
                         <li id="medical_unit_text" class="list-group-item bg-dark">Rank 1</li>
                         <li id="medical_unit_text" class="list-group-item bg-dark">Ensign Medic</li>
@@ -172,7 +181,7 @@
                 </div>
 
                 <div id="medical_unit_card" class="card text-center bg-dark" style="width: 10rem;">
-                    <img id="emblem_image" src="../assets/images/badges_emblems/emblem_2_medic.png" class="card-img-top" alt="Lieutenant Corpsman">
+                    <img id="emblem_image" src="../assets/ranks/emblems/emblem_2_medic.png" class="card-img-top" alt="Lieutenant Corpsman">
                     <ul class="list-group list-group-flush">
                         <li id="medical_unit_text" class="list-group-item bg-dark">Rank 2</li>
                         <li id="medical_unit_text" class="list-group-item bg-dark">Lieutenant Corpsman</li>
@@ -180,7 +189,7 @@
                 </div>
 
                 <div id="medical_unit_card" class="card text-center bg-dark" style="width: 10rem;">
-                    <img id="emblem_image" src="../assets/images/badges_emblems/emblem_3_medic.png" class="card-img-top" alt="Medical Commander">
+                    <img id="emblem_image" src="../assets/ranks/emblems/emblem_3_medic.png" class="card-img-top" alt="Medical Commander">
                     <ul class="list-group list-group-flush">
                         <li id="medical_unit_text" class="list-group-item bg-dark">Rank 3</li>
                         <li id="medical_unit_text" class="list-group-item bg-dark">Medical Commander</li>
@@ -191,11 +200,12 @@
 
             <p id="small_space"></p>
 
+            <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Elite Sub-Division ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
             <div id="elite_sub_division_information" class="container row justify-content-center text-center container-fluid">
                 <p><a id="leadership_division">ELITE SUB-DIVISION:</a></p>
 
                 <div id="leadership_unit_card" class="card text-center bg-dark" style="width: 10rem;">
-                    <img id="emblem_image" src="../assets/images/badges_emblems/emblem_4_elite.png" class="card-img-top" alt="Elite Guard">
+                    <img id="emblem_image" src="../assets/ranks/emblems/emblem_4_elite.png" class="card-img-top" alt="Elite Guard">
                     <ul class="list-group list-group-flush">
                         <li id="leadership_unit_text" class="list-group-item bg-dark">Rank 4</li>
                         <li id="leadership_unit_text" class="list-group-item bg-dark">Elite Guard</li>
@@ -206,11 +216,12 @@
 
             <p id="small_space"></p>
 
+            <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Leadership Division ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
             <div id="leadership_division_information" class="container row justify-content-center text-center container-fluid">
                 <p><a id="leadership_division">LEADERSHIP DIVISION:</a></p>
 
                 <div id="leadership_unit_card" class="card text-center bg-dark" style="width: 10rem;">
-                    <img id="emblem_image" src="../assets/images/badges_emblems/emblem_3_1st_officer.png" class="card-img-top" alt="1st Officer">
+                    <img id="emblem_image" src="../assets/ranks/emblems/emblem_3_1st_officer.png" class="card-img-top" alt="1st Officer">
                     <ul class="list-group list-group-flush">
                         <li id="leadership_unit_text" class="list-group-item bg-dark">Rank 3.5</li>
                         <li id="leadership_unit_text" class="list-group-item bg-dark">1st Officer</li>
@@ -218,7 +229,7 @@
                 </div>
 
                 <div id="leadership_unit_card" class="card text-center bg-dark" style="width: 10rem;">
-                    <img id="emblem_image" src="../assets/images/badges_emblems/4-captain.png" class="card-img-top" alt="Captain">
+                    <img id="emblem_image" src="../assets/ranks/badges/4-captain.png" class="card-img-top" alt="Captain">
                     <ul class="list-group list-group-flush">
                         <li id="leadership_unit_text" class="list-group-item bg-dark">Rank 4</li>
                         <li id="leadership_unit_text" class="list-group-item bg-dark">Captain</li>
@@ -226,7 +237,7 @@
                 </div>
 
                 <div id="leadership_unit_card" class="card text-center bg-dark" style="width: 10rem;">
-                    <img id="emblem_image" src="../assets/images/badges_emblems/5-admiral.png" class="card-img-top" alt="Admiral">
+                    <img id="emblem_image" src="../assets/ranks/badges/5-admiral.png" class="card-img-top" alt="Admiral">
                     <ul class="list-group list-group-flush">
                         <li id="leadership_unit_text" class="list-group-item bg-dark">Rank 5</li>
                         <li id="leadership_unit_text" class="list-group-item bg-dark">Admiral</li>
@@ -238,6 +249,37 @@
     <!-- </div> -->
 </div>
 
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Conscript Modal ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+<div class="modal fade" id="conscriptModal" tabindex="-1" aria-labelledby="conscriptModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+
+        <div id="rank_modal" class="modal-content bg-dark">
+            <div class="modal-header">
+                <img id="emblem_image" src="../assets/ranks/badges/0-conscript.png" alt="Conscript Image">
+                <h5 class="modal-title" id="conscriptModalLabel">Modal title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <div class="row">
+                
+                <div class="container container-fluid">
+                    <img src="" alt="">
+                </div>
+
+            </div>
+
+
+            <div class="modal-body">
+                <p>Acting much like a contracted mercenary, Conscripts operate outside the official ranks of The Galactic Order military. They have no restrictions to the rules and regulations with regards to attire, responsibilities and command. However, this also means they hold no authority in the chain of command and receive no benefits or unit allowances. Conscripts are often hired under a general contract with very specific parameters based on a percentage of funds earned upon completion of assisted missions and tasks.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+
+    </div>
+</div>
 
     <script src="../assets/navbar/navbar.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
