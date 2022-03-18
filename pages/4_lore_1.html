@@ -1,1 +1,315 @@
-<!-- classifications -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>History & Lore: Classifications</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../assets/navbar/navbar.css">
+    <link rel="stylesheet" href="../assets/css/4_lore/4_lore_1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Fanwood+Text&family=Zen+Dots&display=swap">
+
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"> -->
+    <script src="https://kit.fontawesome.com/aa7d326b4c.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Navbar Start ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+<!-- navbar.js function adds navbar to start of <body> -->
+
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Navbar End ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+
+<div id="classifications_container" class="container-md container-fluid bg-dark">
+
+    <div id="classifications_title" class="container-fluid text-center">
+        CLASSIFICATIONS
+    </div>
+        
+    <div id="classifications_image_container" class="container-sm">
+        <img id="classifications_image" class="img-fluid" src="../assets/images/engineers.png" alt="Engineers Image">
+    </div>
+    
+
+    <!-- hidden container to adjust accordion width -->
+    <div id="classifications_hidden_container" class="container-md container-fluid">
+
+        <div id="classifications_collapse" class="accordion accordion-flush">
+
+            <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Divisions ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button id="divisions" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        <i id="classifications_icon" class="fa-solid fa-medal"></i>Divisions
+                    </button>
+                </h2>
+
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne">
+                    <div id="classifications_text" class="accordion-body">
+
+                        <p>A Division refers to the field of study or military branch within the Galactic Order that each individual unit may fall under. Currently there are 5 main Divisions:</p>
+
+                        <p id="break_space"></p>
+
+                        <ol>
+                            <li><a id=leadership_division>Leadership Division:</a> This division is comprised of The Galactic Order's highest-ranking members of authority. This prinarily consists of 1st Officers, Captains, Vice-Admirals and Admirals.</li>
+                            
+                            <p id="break_space"></p>
+
+                            <li><a id=combat_division>Combat Division:</a> This division is focused on military and police action. It involves security, protection and maintaining peace through the enforcement of laws, rules and policy within The Galactic Order’s territory. This is actually the largest division, consisting primarily of:</li>
+                            
+                            <div class="container-md container-fluid">
+                                <table id="combat_table" class="table">
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row"></th>
+                                            <td>Troopers</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"></th>
+                                            <td>Lieutenant-Troopers</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"></th>
+                                            <td>Shock Troopers</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"></th>
+                                            <td>Trooper-Commanders</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <p id="break_space"></p>
+                            
+                            <li><a id=engineer_division>Engineering Division:</a> This division is likely the most widely spread in terms of responsibilities and scope. It consists of everything from the gathering, refining and organizing of resources to the maintenance, production and operation of most (if not all) ships, vehicles and structures within the Galactic Order. This includes (but is not limited to):</li>
+                            
+                            <div class="container-md container-fluid">
+                                <table id="engineer_table" class="table">
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row"></th>
+                                            <td>Miners</td>
+                                            <td>Craftsmen</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"></th>
+                                            <td>Salvagers</td>
+                                            <td>Pilots</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"></th>
+                                            <td>Cargo Delivery</td>
+                                            <td>Co-Pilots</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"></th>
+                                            <td>Cargo-bay Workers</td>
+                                            <td>Operators</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"></th>
+                                            <td>Tradesmen</td>
+                                            <td>Maintenance</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <p id="break_space"></p>
+
+                            <li><a id=medical_division>Medical Division:</a> This division holds two primary purposes: The health and well-being of all within the galactic Order, and The modifying and progression of the human race with the implementation of scientific discoveries to further execute the evolution of all life. This division consists of medical professionals who prioritize the health and progression of Galactic Order members. These roles mostly include:</li>
+                                
+                                <div class="container-md container-fluid">
+                                    <table id="medic_table" class="table">
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row"></th>
+                                                <td>Field Medic</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row"></th>
+                                                <td>Lieutenant-Corpsman</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row"></th>
+                                                <td>Medical-Commander</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                            <p id="break_space"></p>
+
+                            <li><a id=science_division>Science Division:</a> The science division works very closely with the engineering and medical division, with a primary focus on progressing human evolution as well as technological advancements to greater strengthen the Galactic Order’s power and presence throughout the vers. Though very early in its development, the science division is miles ahead nearly every other organization and they grow in numbers and knowledge with every passing day. Those of this division are more commonly found within designated labs or aboard exploratory vessels conducting research and making new discoveries.</li>
+
+                            <div class="container-md container-fluid">
+                                <table id="science_table" class="table">
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row"></th>
+                                            <td>Field Researcher</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"></th>
+                                            <td>Labratory Technologist</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row"></th>
+                                            <td>Chief Science-Officer</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </ol>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Sub-Divisions ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button id="sub_divisions" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <i id="classifications_icon" class="fa-solid fa-medal"></i>Sub-Divisions
+                    </button>
+                </h2>
+
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo">
+                    <div id="classifications_text" class="accordion-body">
+
+                        <p>These exist within only but a few divisions as alternate promotion branches available to some units as a possible variant to the standard path of progression. These are often slightly easier to achieve in terms of prerequisites to what would normally be expected from a role of the same rank but also hold a number of disadvantages such as hindering rank progression beyond the sub-division role or being excluded from the standard chain of command giving less authority within the Galactic Order. It is worth noting that sub-divisions occasionally act as a hybrid, incorporating privileges and responsibilities from other division roles as well as prerequisites. In many cases, these specialized roles will be made available to those whom have served in multiple divisions.</p>
+
+                        <p id="break_space"></p>
+
+                        <ol>
+                            <li><a id=combat_division>Special Operations:</a> This sub-division, also referred to as Special Ops or Spec ops, is a branch of the <a id="combat_note">Combat Division</a>, with relative ties and similarities to <a id="engineer_note">Engineering</a>. It consists of two primary Units (Outrider & Agent) that each utilize stealth, infiltration and intelligence gathering, to name only but a few, in order to accomplish specialized assignments/missions. Members of this division hold no authority within the Galactic order chain of command and their records of service are redacted or temporarily frozen.</li>
+
+                            <p id="break_space"></p>
+
+                            <li><a id=leadership_division>Elite:</a> This sub-division is a branch of the <a id="leadership_note">Leadership Division</a>, though it is important to distinguish that units of this sub-division hold no official authority within the chain of command apart from what is given by members of Leadership. Elite sub-division units are at the top of their field; individuals whom mostly operate as they see fit without the complications and responsibilities of command. They answer only to the high-ranking members of the Leadership Division unless otherwise stated in their unit card description.</li>
+                        </ol>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Battalions ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button id="battalions" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <i id="classifications_icon" class="fa-solid fa-medal"></i>Battalions
+                    </button>
+                </h2>
+
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree">
+                    <div id="classifications_text" class="accordion-body">
+
+                        <p><a id="medical_division"> Primary Ships:</a> Each battalion is run by a Captain and is typically centered around a primary ship. These ships must be larger than 90 meters in length with a large, sub-capitol or capitol classification.</p>
+                        <p>Primary ships may serve one function or multiple but must fall under a Type classification to determine funding and their role within the Fleet.</p>
+
+                        <p id="break_space"></p>
+
+                        <p><a id="combat_division">Units:</a> Most battalions utilize units from multiple divisions to function at or above 75% capability, requiring 5 or more crew members minimum to operate (not factoring in different shifts). The standard battalion size is anywhere between 10 to 25 units when taking shifts and leadership into consideration. More than 25 units will classify the battalion as Large, a title reserved typically for special battalion types such as Admiralty or Academy.</p>
+
+                        <p id="break_space"></p>
+                        
+                        <p><a id="engineer_division">Fighters & Support:</a> For additional ships within a battalion, the primary ship must meet the minimum safety requirements such as docking or a hanger to provide safe crew transfers to accommodate shift changes and crew demands.</p>
+                        <p>Statistically speaking, if all regulations and minimum requirements are met, there is technically no max number of ships that may be present within a single battalion, the exception being what the Battalion Captain is capable / comfortable handling and limits set by Admiralty.</p>
+                        
+                        <li><a id="bold_note">Note:</a> See <a href="../pages/5_ranks_4.html">Captain Info</a> page for more details on battalion Funding</li>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Battalion Types ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                    <button id="battalion_types" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        <i id="classifications_icon" class="fa-solid fa-medal"></i>Battalion Types
+                    </button>
+                </h2>
+
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour">
+                    <div id="classifications_text" class="accordion-body">
+
+                        <p>There are several Battalion Types, each organized to perform specific tasks and hold focused responsibilities based on the chosen primary Ship. Battalions have their own unique blend of units from each division, assigned to accommodate the necessary roles required for optimal efficiency. Listed below are the battalion types currently implemented within The Galactic Order...</p>
+
+                        <p id="break_space"></p>
+
+                        <ol>
+                            <li><a id="leadership_division">Admiralty:</a> Led by an Admiral, this Battalion’s Primary Ship is considered the “Flag Ship”, acting as the hub for all decisions within the Fleet. The most common Primary Ships for this type are multi-purpose.</li>
+
+                            <p id="break_space"></p>
+
+                            <li><a id="academy_battalion">Academy:</a> This type has the expressed and specific purpose of research, development, education, and unit training. The majority of The Galactic Order’s overall progression occurs in these battalions as they are often the starting point for nearly all Novitiates first entering the Organization. As Academy Battalions lead into all other Battalion types, units from every Division can be found here. Similar to Admiralty, these often utilize a multi-purpose Primary Ship along with many support ships and fighters, giving the nickname:  “Mini-Fleets”.</li>
+
+                            <p id="break_space"></p>
+
+                            <li><a id="combat_division">Battle:</a> Although combat units are in every battalion, this type is often centered around protection, preservation of peace and establishing law & order with militant force. The most common Primary Ships for this type are Carriers, Gun Ships, Frigates & Corvettes.</li>
+
+                            <p id="break_space"></p>
+
+                            <li><a id="engineer_division">Industrial:</a> This Battalion is mostly comprised of engineering division units and holds the largest array of career positions and responsibilities. The most common Primary Ships for this type are heavy: Salvage, Mining, Transport/Touring, Freight, Repair, Refueling & Construction.</li>
+
+                            <p id="break_space"></p>
+
+                            <li><a id="medical_division">Medivac:</a> This Battalion mostly consists of medical division units and has a primary focus on Search and Rescue. The most common Primary Ship for this type is the Endeavor with Hospital Attachments.</li>
+
+                            <p id="break_space"></p>
+
+                            <li><a id="science_division">Exploration:</a> This battalion mostly consists of science division units and leads in discovery, colonization and scientific progression. The most common Primary Ships for this type are Expedition, Touring & Science.</li>
+                        </ol>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Battalion Names ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                    <button id="battalion_names" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        <i id="classifications_icon" class="fa-solid fa-medal"></i>Battalion Names
+                    </button>
+                </h2>
+
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive">
+                    <div id="classifications_text" class="accordion-body">
+
+                        <p>Battalions are named with a designation number (F-##) to indicate the assigned Fleet/Admiral followed by the Captain’s Last name, the first Letter of their battalion Type (B for Battle, E for Exploration, etc…) and a number starting at ‘01’. This number is significant for fleets with multiple Battalions of the same type.</p>
+
+                        <p id="break_space"></p>
+
+                        <ul>
+                            <a id="bold_note">Example:</a>
+                            <li>F-01 Remington B-01</li>
+                            <li>Fleet #1</li>
+                            <li>Captain Remington</li>
+                            <li>Battle battalion #1</li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+</div>
+
+
+    <script src="../assets/navbar/navbar.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+
+</html>
