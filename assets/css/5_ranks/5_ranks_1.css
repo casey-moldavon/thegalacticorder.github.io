@@ -679,8 +679,8 @@ body {
 #emblem_image {
     height: 150px;
     padding: 7px;
-    padding-left: 2px;
-    padding-right: 2px;
+    padding-left: 4.5px;
+    padding-right: 4.5px;
 }
 #conscript_image {
     color: #ffffff;
