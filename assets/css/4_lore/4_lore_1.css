@@ -381,6 +381,17 @@ body {
     margin-top: 5%;
     margin-bottom: 5%;
 }
+#leadership_table {
+    color: #ffffff;
+    font-size: 22.5px;
+    font-weight: bold;
+    /* font-family: 'Allerta Stencil', sans-serif; */
+    text-shadow:
+        0 0 15px #d6b44c,
+        0 0 20px #d6b44c;
+
+    width: 250px;
+}
 #leadership_note {
     color: #ffffff;
     font-size: 22.5px;
