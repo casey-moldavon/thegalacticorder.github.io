@@ -396,7 +396,7 @@ body {
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Cards End ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Modal Start ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-#rank_modal {
+#rank_0_modal {
     color: #ffffff;
     font-size: 20px;
     font-weight: bold;
@@ -415,13 +415,74 @@ body {
     border: 2px solid #ffffff;
     border-radius: 2.5px;
     box-shadow:
-        0 0 10px #ffffff,
-        0 0 15px #ffffff,
-        0 0 20px #ffffff;
+        0 0 2.5px 1px #ffffff,
+        0 0 5px 4px #00c9ff,
+        0 0 10px 10px #00c9ff;
 
     border-collapse: collapse;
     margin: 20px;
 }
+#combat_modal {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Fanwood Text', serif;
+    
+    border: 2px solid #ffffff;
+    border-radius: 2.5px;
+    box-shadow:
+        0 0 10px #ffffff,
+        0 0 15px #b60031,
+        0 0 20px #b60031;
+
+    border-collapse: collapse;
+}
+#engineer_modal {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Fanwood Text', serif;
+    
+    border: 2px solid #ffffff;
+    border-radius: 2.5px;
+    box-shadow:
+        0 0 10px #ffffff,
+        0 0 15px #ff7042,
+        0 0 20px #ff7042;
+
+    border-collapse: collapse;
+}
+#medic_modal {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Fanwood Text', serif;
+    
+    border: 2px solid #ffffff;
+    border-radius: 2.5px;
+    box-shadow:
+        0 0 10px #ffffff,
+        0 0 15px #4285f4,
+        0 0 20px #4285f4;
+
+    border-collapse: collapse;
+}
+#leadership_modal {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Fanwood Text', serif;
+    
+    border: 2px solid #ffffff;
+    border-radius: 2.5px;
+    box-shadow:
+        0 0 10px #ffffff,
+        0 0 15px #d6b44c,
+        0 0 20px #d6b44c;
+
+    border-collapse: collapse;
+}
+
 #card_emblem_image {
     height: 200px;
 }
