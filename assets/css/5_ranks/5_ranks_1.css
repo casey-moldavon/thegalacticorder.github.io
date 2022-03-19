@@ -556,6 +556,15 @@ body {
     padding-right: 2.5%;
     background-color: #1c1c1c;
 }
+#novitiate_division_text {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Allerta Stencil', sans-serif;
+    text-shadow:
+        0 0 15px #ffffff,
+        0 0 20px #ffffff;
+}
 
 #leadership_division {
     color: #ffffff;
@@ -578,6 +587,15 @@ body {
     padding-left: 2.5%;
     padding-right: 2.5%;
     background-color: #1c1c1c;
+}
+#leadership_division_text {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Allerta Stencil', sans-serif;
+    text-shadow:
+        0 0 15px #d6b44c,
+        0 0 20px #d6b44c;
 }
 
 #combat_division {
@@ -602,6 +620,15 @@ body {
     padding-right: 2.5%;
     background-color: #1c1c1c;
 }
+#combat_division_text {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Allerta Stencil', sans-serif;
+    text-shadow:
+        0 0 15px #b60031,
+        0 0 20px #b60031;
+}
 
 #engineer_division {
     color: #ffffff;
@@ -624,6 +651,15 @@ body {
     padding-left: 2.5%;
     padding-right: 2.5%;
     background-color: #1c1c1c;
+}
+#engineer_division_text {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Allerta Stencil', sans-serif;
+    text-shadow:
+        0 0 15px #ff7042,
+        0 0 20px #ff7042;
 }
 
 #medical_division {
@@ -648,16 +684,26 @@ body {
     padding-right: 2.5%;
     background-color: #1c1c1c;
 }
-
-#science_division {
+#medical_division_text {
     color: #ffffff;
-    font-size: 22px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Allerta Stencil', sans-serif;
+    text-shadow:
+        0 0 15px #4285f4,
+        0 0 20px #4285f4;
+}
+
+#science_division_text {
+    color: #ffffff;
+    font-size: 20px;
     font-weight: bold;
     font-family: 'Allerta Stencil', sans-serif;
     text-shadow:
         0 0 15px #00b368,
         0 0 20px #00b368;
 }
+
 #academy_battalion {
     color: #ffffff;
     font-size: 22px;
