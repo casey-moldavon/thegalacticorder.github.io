@@ -50,7 +50,6 @@
                 <p><a id="novitiate_division">RANK 0:</a></p>
 
                 <div id="rank_0_unit_card" class="card text-center bg-dark" style="width: 10rem;" type="button" data-bs-toggle="modal" data-bs-target="#conscriptModal">
-                    <!-- <img id="emblem_image" src="../assets/images/badges_emblems/0-conscript.png" class="card-img-top" alt="Conscript"> -->
                     <a type="button" id="conscript_image" data-toggle="modal" data-target="#conscriptModal">?</a>
 
                     <ul class="list-group list-group-flush">
@@ -59,7 +58,7 @@
                     </ul>
                 </div>
                 
-                <div id="rank_0_unit_card" class="card text-center bg-dark" style="width: 10rem;">
+                <div id="rank_0_unit_card" class="card text-center bg-dark" style="width: 10rem;" type="button" data-bs-toggle="modal" data-bs-target="#novitiateModal">
                     <img id="emblem_image" src="../assets/ranks/badges/0-novitiate.png" class="card-img-top" alt="Novitiate">
                     <ul class="list-group list-group-flush">
                         <li id="rank_0_unit_text" class="list-group-item bg-dark">Rank 0</li>
@@ -249,37 +248,124 @@
     <!-- </div> -->
 </div>
 
-<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Conscript Modal ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-<div class="modal fade" id="conscriptModal" tabindex="-1" aria-labelledby="conscriptModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-lg">
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Conscript Modal ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <div class="row">
+        <div class="modal fade" id="conscriptModal" tabindex="-1" aria-labelledby="conscriptModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
 
-        <div id="rank_modal" class="modal-content bg-dark">
-            <div class="modal-header">
-                <img id="emblem_image" src="../assets/ranks/badges/0-conscript.png" alt="Conscript Image">
-                <h5 class="modal-title" id="conscriptModalLabel">Modal title</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
+            
+                <div class="container justify-content-center text-center container-fluid">
+                    <img id="card_emblem_image" src="../assets/ranks/badges/0-conscript.png" alt="Conscript Image">
 
-            <div class="row">
-                
-                <div class="container container-fluid">
-                    <img src="" alt="">
+                    <div id="rank_modal" class="modal-content bg-dark">
+                        <div class="justify-content-center text-center">
+                            <p id="combat_division">CONSCRIPT</p>
+                        </div>
+
+                        <div class="row justify-content-center">
+                            
+                            <div class="col-2">
+                                <img id="modal_image" src="../assets/ranks/units/rank_0_conscript.png" alt="Conscript Image">
+                            </div>
+
+                            <div class="col-2"></div>
+
+                            <div id="modal_text" class="col-7">
+                                <p>Acting much like a contracted mercenary, Conscripts operate outside the official ranks of The Galactic Order military. They have no restrictions to the rules and regulations with regards to attire, responsibilities and command. However, this also means they hold no authority in the chain of command and receive no benefits or unit allowances. Conscripts are often hired under a general contract with very specific parameters based on a percentage of funds earned upon completion of assisted missions and tasks.</p>
+                            </div>
+
+                            <div class="col-1"></div>
+                        </div>
+
+                        <div class="modal-footer justify-content-center text-center">
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button id="rank_prerequisites" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                        <i id="rank_information_icon" class="fa-solid fa-lock"></i>Prerequisites
+                                    </button>
+                                </h2>
+            
+                                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne">
+                                    <div id="rank_prerequisites_text" class="accordion-body">
+            
+                                        <div class="container-fluid text-start">
+                                            <ol>
+                                                <li>Join Discord</li>
+                                                <li>Join RSI Site</li>
+                                                <li>Reqest Conscript Role after Application accepted</li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-
-            </div>
-
-
-            <div class="modal-body">
-                <p>Acting much like a contracted mercenary, Conscripts operate outside the official ranks of The Galactic Order military. They have no restrictions to the rules and regulations with regards to attire, responsibilities and command. However, this also means they hold no authority in the chain of command and receive no benefits or unit allowances. Conscripts are often hired under a general contract with very specific parameters based on a percentage of funds earned upon completion of assisted missions and tasks.</p>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
             </div>
         </div>
-
     </div>
-</div>
+
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Conscript Modal ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <div class="row">
+        <div class="modal fade" id="novitiateModal" tabindex="-1" aria-labelledby="novitiateModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+
+            
+                <div class="container justify-content-center text-center container-fluid">
+                    <img id="card_emblem_image" src="../assets/ranks/badges/0-novitiate.png" alt="Novitiate Image">
+
+                    <div id="rank_modal" class="modal-content bg-dark">
+                        <div class="justify-content-center text-center">
+                            <p id="combat_division">NOVITIATE</p>
+                        </div>
+
+                        <div class="row justify-content-center">
+                            
+                            <div class="col-2">
+                                <img id="modal_image" src="../assets/ranks/units/rank_0_novitiate.png" alt="Novitiate Image">
+                            </div>
+
+                            <div class="col-2"></div>
+
+                            <div id="modal_text" class="col-7">
+                                <p>As entry level, Novitiate is the lowest rank to be found within a Battalion. They hold a very unique placement as they are below every rank, no matter the division, but also have nearly full access to the responsibilities and opportunities available to every division’s Rank 1 position with the exceptions being Equipment, Authority and Benefits. A Novitiate may work as a Trooper, Operator or Medic (within reason) as a means to determine their preferred branch. They may even rotate these responsibilities at will but only with the approval of a superior officer of rank 2 or higher. When presented with their first promotion, often after a performance review following service to one or multiple divisions, a Novitiate will have their pick of Division. Though this decision can be changed at later dates, this is often considered a long-term commitment of duty. For this reason, it is recommended, though not required, that each Novitiate study the roles and responsibilities of each division before deciding.</p>
+                            </div>
+
+                            <div class="col-1"></div>
+                        </div>
+
+                        <div class="modal-footer justify-content-center text-center">
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button id="rank_prerequisites" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                        <i id="rank_information_icon" class="fa-solid fa-lock"></i>Prerequisites
+                                    </button>
+                                </h2>
+            
+                                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne">
+                                    <div id="rank_prerequisites_text" class="accordion-body">
+            
+                                        <div class="container-fluid text-start">
+                                            <ol>
+                                                <li>Join Discord</li>
+                                                <li>Join RSI Site</li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+
+
+
+
 
     <script src="../assets/navbar/navbar.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
