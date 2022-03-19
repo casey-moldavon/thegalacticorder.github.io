@@ -484,7 +484,10 @@ body {
 }
 
 #card_emblem_image {
-    height: 200px;
+    height: 100px;
+    margin-top: 25px;
+    margin-left: 75px;
+    position: absolute;
 }
 
 #rank_prerequisites {
