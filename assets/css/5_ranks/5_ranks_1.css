@@ -412,10 +412,15 @@ body {
     border-collapse: collapse;
 }
 #modal_image {
-    width: 250%;
-}
-#modal_text {
-    padding: 2.5%;
+    border: 2px solid #ffffff;
+    border-radius: 2.5px;
+    box-shadow:
+        0 0 10px #ffffff,
+        0 0 15px #ffffff,
+        0 0 20px #ffffff;
+
+    border-collapse: collapse;
+    margin: 20px;
 }
 #card_emblem_image {
     height: 200px;
