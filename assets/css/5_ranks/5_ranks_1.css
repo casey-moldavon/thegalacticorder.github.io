@@ -391,6 +391,7 @@ body {
         0 0 20px #ffffff;
 
     border-collapse: collapse;
+    background: rgba(255, 255, 255, 0.25);
 }
 #rank_0_collapse {
     border: 2px solid #ffffff;
@@ -402,18 +403,24 @@ body {
 
     border-collapse: collapse;
 }
-#modal_image {
-    /* border: 2px solid #ffffff; */
-    /* border-radius: 2.5px; */
-    /* box-shadow:
-        0 0 2.5px 1px #ffffff,
-        0 0 5px 4px #00c9ff,
-        0 0 10px 10px #00c9ff; */
+#rank_0_modal_image {
+    margin: 50px;
+    padding: -50px;
+    border: 2px solid #ffffff;
+    border-radius: 2.5px;
+    box-shadow:
+        0 0 10px #ffffff,
+        0 0 15px #ffffff,
+        0 0 20px #ffffff;
 
-    /* border-collapse: collapse; */
-    margin-bottom: 20px;
+    border-collapse: collapse;
+    /* background-color: #1c1c1c; */
+    background-image: url("background6.jpeg");
+    /* background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; */
 }
-/* rank_information_collapse */
+
 #combat_modal {
     color: #ffffff;
     font-size: 20px;
@@ -428,9 +435,7 @@ body {
         0 0 20px #b60031;
 
     border-collapse: collapse;
-
     background: rgba(255, 0, 0, 0.25);
-    /* replicate this code above for every modal!!!!!! */
 }
 #combat_collapse {
     border: 2px solid #ffffff;
@@ -441,6 +446,19 @@ body {
         0 0 20px #b60031;
 
     border-collapse: collapse;
+}
+#combat_modal_image {
+    margin: 50px;
+    padding: -50px;
+    border: 2px solid #ffffff;
+    border-radius: 2.5px;
+    box-shadow:
+        0 0 10px #ffffff,
+        0 0 15px #b60031,
+        0 0 20px #b60031;
+
+    border-collapse: collapse;
+    background-color: #1c1c1c;
 }
 #engineer_modal {
     color: #ffffff;
@@ -456,6 +474,7 @@ body {
         0 0 20px #ff7042;
 
     border-collapse: collapse;
+    background: rgba(255, 115, 0, 0.25);
 }
 #engineer_collapse {
     border: 2px solid #ffffff;
@@ -466,6 +485,19 @@ body {
         0 0 20px #ff7042;
 
     border-collapse: collapse;
+}
+#engineer_modal_image {
+    margin: 50px;
+    padding: -50px;
+    border: 2px solid #ffffff;
+    border-radius: 2.5px;
+    box-shadow:
+        0 0 10px #ffffff,
+        0 0 15px #ff7042,
+        0 0 20px #ff7042;
+
+    border-collapse: collapse;
+    background-color: #1c1c1c;
 }
 #medic_modal {
     color: #ffffff;
@@ -481,6 +513,7 @@ body {
         0 0 20px #4285f4;
 
     border-collapse: collapse;
+    background: rgba(0, 60, 255, 0.25);
 }
 #medic_collapse {
     border: 2px solid #ffffff;
@@ -491,6 +524,19 @@ body {
         0 0 20px #4285f4;
 
     border-collapse: collapse;
+}
+#medic_modal_image {
+    margin: 50px;
+    padding: -50px;
+    border: 2px solid #ffffff;
+    border-radius: 2.5px;
+    box-shadow:
+        0 0 10px #ffffff,
+        0 0 15px #4285f4,
+        0 0 20px #4285f4;
+
+    border-collapse: collapse;
+    background-color: #1c1c1c;
 }
 #leadership_modal {
     color: #ffffff;
@@ -506,6 +552,7 @@ body {
         0 0 20px #d6b44c;
 
     border-collapse: collapse;
+    background: rgba(255, 196, 0, 0.25);
 }
 #leadership_collapse {
     border: 2px solid #ffffff;
@@ -516,6 +563,19 @@ body {
         0 0 20px #d6b44c;
 
     border-collapse: collapse;
+}
+#leeadership_modal_image {
+    margin: 50px;
+    padding: -50px;
+    border: 2px solid #ffffff;
+    border-radius: 2.5px;
+    box-shadow:
+        0 0 10px #ffffff,
+        0 0 15px #d6b44c,
+        0 0 20px #d6b44c;
+
+    border-collapse: collapse;
+    background-color: #1c1c1c;
 }
 #card_emblem_image {
     height: 100px;
