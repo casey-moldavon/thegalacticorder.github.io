@@ -10,8 +10,9 @@ body {
     padding: 0;
     background-image: url("");
     background-color: #000000;
+    background-image: url("captain_office1.png");
     /* background-image: url("perseus_promo.jpg"); */
-    background-image: url("perseus_engineering.jpg");
+    /* background-image: url("perseus_engineering.jpg"); */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -268,10 +269,16 @@ body {
 #rank_0_unit_card {
     border: 2px solid #ffffff;
     border-radius: 2.5px;
+    margin: 1%;
+}
+#rank_0_unit_card:hover {
+    border: 2px solid #ffffff;
+    border-radius: 2.5px;
     box-shadow:
         0 0 10px #1c1c1c,
-        0 0 15px #333333,
-        0 0 20px #ffffff;
+        0 0 15px #ffffff,
+        0 0 20px #ffffff,
+        0 0 25px #ffffff;
         
     border-collapse: collapse;
     margin: 1%;
@@ -281,19 +288,29 @@ body {
     font-size: 15.5px;
     font-weight: bold;
     font-family: 'Allerta Stencil', sans-serif;
-    text-shadow:
+}
+#rank_0_unit_card:hover #rank_0_unit_text {
+    font-size: 15.5px;
+        text-shadow:
         0 0 5px #1c1c1c,
-        0 0 10px #333333,
+        0 0 10px #ffffff,
         0 0 15px #ffffff;
 }
 
+
 #combat_unit_card {
+    border: 2px solid #b60031;
+    border-radius: 2.5px;
+    margin: 1%;
+}
+#combat_unit_card:hover {
     border: 2px solid #ffffff;
     border-radius: 2.5px;
     box-shadow:
         0 0 10px #ffffff,
         0 0 15px #b60031,
-        0 0 20px #b60031;
+        0 0 20px #b60031,
+        0 0 25px #b60031;
         
     border-collapse: collapse;
     margin: 1%;
@@ -303,19 +320,29 @@ body {
     font-size: 15.5px;
     font-weight: bold;
     font-family: 'Allerta Stencil', sans-serif;
+}
+#combat_unit_card:hover #combat_unit_text {
+    font-size: 15.5px;
     text-shadow:
         0 0 5px #ffffff,
         0 0 10px #b60031,
         0 0 15px #b60031;
 }
 
+
 #engineer_unit_card {
+    border: 2px solid #ff7042;
+    border-radius: 2.5px;
+    margin: 1%;
+}
+#engineer_unit_card:hover {
     border: 2px solid #ffffff;
     border-radius: 2.5px;
     box-shadow:
         0 0 10px #ffffff,
         0 0 15px #ff7042,
-        0 0 20px #ff7042;
+        0 0 20px #ff7042,
+        0 0 25px #ff7042;
         
     border-collapse: collapse;
     margin: 1%;
@@ -325,19 +352,29 @@ body {
     font-size: 15.5px;
     font-weight: bold;
     font-family: 'Allerta Stencil', sans-serif;
+}
+#engineer_unit_card:hover #engineer_unit_text {
+    font-size: 15.5px;
     text-shadow:
         0 0 5px #ffffff,
         0 0 10px #ff7042,
         0 0 15px #ff7042;
 }
 
+
 #medical_unit_card {
+    border: 2px solid #4285f4;
+    border-radius: 2.5px;
+    margin: 1%;
+}
+#medical_unit_card:hover {
     border: 2px solid #ffffff;
     border-radius: 2.5px;
     box-shadow:
         0 0 10px #ffffff,
         0 0 15px #4285f4,
-        0 0 20px #4285f4;
+        0 0 20px #4285f4,
+        0 0 25px #4285f4;
         
     border-collapse: collapse;
     margin: 1%;
@@ -347,19 +384,29 @@ body {
     font-size: 15.5px;
     font-weight: bold;
     font-family: 'Allerta Stencil', sans-serif;
+}
+#medical_unit_card:hover #medical_unit_text {
+    font-size: 15.5px;
     text-shadow:
         0 0 5px #ffffff,
         0 0 10px #4285f4,
         0 0 15px #4285f4;
 }
 
+
 #leadership_unit_card {
+    border: 2px solid #d6b44c;
+    border-radius: 2.5px;
+    margin: 1%;
+}
+#leadership_unit_card:hover {
     border: 2px solid #ffffff;
     border-radius: 2.5px;
     box-shadow:
         0 0 10px #ffffff,
         0 0 15px #d6b44c,
-        0 0 20px #d6b44c;
+        0 0 20px #d6b44c,
+        0 0 25px #d6b44c;
         
     border-collapse: collapse;
     margin: 1%;
@@ -369,11 +416,16 @@ body {
     font-size: 15.5px;
     font-weight: bold;
     font-family: 'Allerta Stencil', sans-serif;
+}
+#leadership_unit_card:hover #leadership_unit_text {
+    font-size: 15.5px;
     text-shadow:
         0 0 5px #ffffff,
         0 0 10px #d6b44c,
         0 0 15px #d6b44c;
 }
+
+
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Cards End ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Modal Start ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -404,21 +456,25 @@ body {
     border-collapse: collapse;
 }
 #rank_0_modal_image {
-    margin: 50px;
-    padding: -50px;
+    padding: -250px;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
     border: 2px solid #ffffff;
-    border-radius: 2.5px;
+    border-radius: 5px;
     box-shadow:
         0 0 10px #ffffff,
         0 0 15px #ffffff,
         0 0 20px #ffffff;
 
     border-collapse: collapse;
-    /* background-color: #1c1c1c; */
-    background-image: url("background6.jpeg");
-    /* background-repeat: no-repeat;
+    background-color: #1c1c1c;
+    /* background-image: url("background6.jpeg"); */
+    background-image: url("logo_background.jpeg");
+    background-repeat: no-repeat;
     background-size: cover;
-    background-position: center; */
+    background-position: center;
 }
 
 #combat_modal {
@@ -435,6 +491,7 @@ body {
         0 0 20px #b60031;
 
     border-collapse: collapse;
+    /* background: rgba(255, 255, 255, 0.25); */
     background: rgba(255, 0, 0, 0.25);
 }
 #combat_collapse {
@@ -448,10 +505,13 @@ body {
     border-collapse: collapse;
 }
 #combat_modal_image {
-    margin: 50px;
-    padding: -50px;
+    padding: -250px;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
     border: 2px solid #ffffff;
-    border-radius: 2.5px;
+    border-radius: 5px;
     box-shadow:
         0 0 10px #ffffff,
         0 0 15px #b60031,
@@ -459,6 +519,10 @@ body {
 
     border-collapse: collapse;
     background-color: #1c1c1c;
+    background-image: url("logo_background.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 #engineer_modal {
     color: #ffffff;
@@ -474,7 +538,8 @@ body {
         0 0 20px #ff7042;
 
     border-collapse: collapse;
-    background: rgba(255, 115, 0, 0.25);
+    /* background: rgba(255, 255, 255, 0.25); */
+    background: rgba(255, 136, 0, 0.25);
 }
 #engineer_collapse {
     border: 2px solid #ffffff;
@@ -487,10 +552,13 @@ body {
     border-collapse: collapse;
 }
 #engineer_modal_image {
-    margin: 50px;
-    padding: -50px;
+    padding: -250px;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
     border: 2px solid #ffffff;
-    border-radius: 2.5px;
+    border-radius: 5px;
     box-shadow:
         0 0 10px #ffffff,
         0 0 15px #ff7042,
@@ -498,6 +566,10 @@ body {
 
     border-collapse: collapse;
     background-color: #1c1c1c;
+    background-image: url("logo_background.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 #medic_modal {
     color: #ffffff;
@@ -513,7 +585,8 @@ body {
         0 0 20px #4285f4;
 
     border-collapse: collapse;
-    background: rgba(0, 60, 255, 0.25);
+    /* background: rgba(255, 255, 255, 0.25); */
+    background: rgba(0, 132, 255, 0.25);
 }
 #medic_collapse {
     border: 2px solid #ffffff;
@@ -526,10 +599,13 @@ body {
     border-collapse: collapse;
 }
 #medic_modal_image {
-    margin: 50px;
-    padding: -50px;
+    padding: -250px;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
     border: 2px solid #ffffff;
-    border-radius: 2.5px;
+    border-radius: 5px;
     box-shadow:
         0 0 10px #ffffff,
         0 0 15px #4285f4,
@@ -537,6 +613,10 @@ body {
 
     border-collapse: collapse;
     background-color: #1c1c1c;
+    background-image: url("logo_background.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 #leadership_modal {
     color: #ffffff;
@@ -552,7 +632,8 @@ body {
         0 0 20px #d6b44c;
 
     border-collapse: collapse;
-    background: rgba(255, 196, 0, 0.25);
+    background: rgba(255, 255, 255, 0.25);
+    /* background: rgba(255, 196, 0, 0.25); */
 }
 #leadership_collapse {
     border: 2px solid #ffffff;
@@ -564,11 +645,14 @@ body {
 
     border-collapse: collapse;
 }
-#leeadership_modal_image {
-    margin: 50px;
-    padding: -50px;
+#leadership_modal_image {
+    padding: -250px;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
     border: 2px solid #ffffff;
-    border-radius: 2.5px;
+    border-radius: 5px;
     box-shadow:
         0 0 10px #ffffff,
         0 0 15px #d6b44c,
@@ -576,6 +660,10 @@ body {
 
     border-collapse: collapse;
     background-color: #1c1c1c;
+    background-image: url("logo_background.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 #card_emblem_image {
     height: 100px;
@@ -590,7 +678,7 @@ body {
     font-weight: bold;
     font-family: 'Allerta Stencil', sans-serif;
     /* background-color: #1c1c1c; */
-    background-image: url("background6.jpeg");
+    background-image: url("background2_0.png");
 }
 #rank_prerequisites_text {
     color: #ffffff;
@@ -635,8 +723,8 @@ body {
     font-weight: bold;
     font-family: 'Allerta Stencil', sans-serif;
     text-shadow:
-        0 0 15px #ffffff,
-        0 0 20px #ffffff;
+        0 0 15px #00c9ff,
+        0 0 20px #00c9ff;
 
     border: 2px solid #ffffff;
     border-radius: 2.5px;
@@ -667,8 +755,8 @@ body {
     font-weight: bold;
     font-family: 'Allerta Stencil', sans-serif;
     text-shadow:
-        0 0 15px #d6b44c,
-        0 0 20px #d6b44c;
+        0 0 15px #00c9ff,
+        0 0 20px #00c9ff;
 
     border: 2px solid #ffffff;
     border-radius: 2.5px;
@@ -699,8 +787,8 @@ body {
     font-weight: bold;
     font-family: 'Allerta Stencil', sans-serif;
     text-shadow:
-        0 0 15px #b60031,
-        0 0 20px #b60031;
+        0 0 15px #00c9ff,
+        0 0 20px #00c9ff;
 
     border: 2px solid #ffffff;
     border-radius: 2.5px;
@@ -731,8 +819,8 @@ body {
     font-weight: bold;
     font-family: 'Allerta Stencil', sans-serif;
     text-shadow:
-        0 0 15px #ff7042,
-        0 0 20px #ff7042;
+        0 0 15px #00c9ff,
+        0 0 20px #00c9ff;
 
     border: 2px solid #ffffff;
     border-radius: 2.5px;
@@ -763,8 +851,8 @@ body {
     font-weight: bold;
     font-family: 'Allerta Stencil', sans-serif;
     text-shadow:
-        0 0 15px #4285f4,
-        0 0 20px #4285f4;
+        0 0 15px #00c9ff,
+        0 0 20px #00c9ff;
 
     border: 2px solid #ffffff;
     border-radius: 2.5px;
