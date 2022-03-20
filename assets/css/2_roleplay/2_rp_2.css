@@ -38,7 +38,7 @@ body {
     background-size: cover;
     background-position: center;
 
-    /* opacity: 95%; */
+    background-color: rgb(28, 28, 28, 0.75);
 }
 
 #officer_info_hidden_container {
@@ -95,8 +95,7 @@ body {
     font-size: 22.5px;
     font-family: 'Fanwood Text', serif;
     padding: 3%;
-    background-color: #1c1c1c;
-    opacity: 95%;
+    background-color: #2c2c2c;
 }
 
 #officer_info_collapse {
