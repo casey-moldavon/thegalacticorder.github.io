@@ -93,8 +93,6 @@ var navbar = `
                 <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown5">
                     <li><a class="dropdown-item" href="../pages/5_ranks_1.html">Rank Informtation</a></li>
                     <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="../pages/5_ranks_2.html">Rank Progression</a></li>
-                    <li><hr class="dropdown-divider"></li>
                     <li><a class="dropdown-item" href="../pages/5_ranks_3.html">Rank Benefits</a></li>
                     <li><hr class="dropdown-divider"></li>
                     <li><a class="dropdown-item" href="../pages/5_ranks_4.html">Captain Info</a></li>

@@ -558,7 +558,7 @@ body {
 }
 #novitiate_division_text {
     color: #ffffff;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
     font-family: 'Allerta Stencil', sans-serif;
     text-shadow:
@@ -590,7 +590,7 @@ body {
 }
 #leadership_division_text {
     color: #ffffff;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
     font-family: 'Allerta Stencil', sans-serif;
     text-shadow:
@@ -622,7 +622,7 @@ body {
 }
 #combat_division_text {
     color: #ffffff;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
     font-family: 'Allerta Stencil', sans-serif;
     text-shadow:
@@ -654,7 +654,7 @@ body {
 }
 #engineer_division_text {
     color: #ffffff;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
     font-family: 'Allerta Stencil', sans-serif;
     text-shadow:
@@ -686,7 +686,7 @@ body {
 }
 #medical_division_text {
     color: #ffffff;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
     font-family: 'Allerta Stencil', sans-serif;
     text-shadow:
@@ -696,7 +696,7 @@ body {
 
 #science_division_text {
     color: #ffffff;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
     font-family: 'Allerta Stencil', sans-serif;
     text-shadow:
@@ -844,6 +844,15 @@ body {
 
     width: 250px;
 }
+#medic_note {
+    color: #ffffff;
+    font-size: 22.5px;
+    font-weight: bold;
+    /* font-family: 'Allerta Stencil', sans-serif; */
+    text-shadow:
+        0 0 10px #4285f4,
+        0 0 15px #4285f4;
+}
 #science_table {
     color: #ffffff;
     font-size: 22.5px;
@@ -870,5 +879,11 @@ body {
     text-shadow:
         0 0 10px #1c1c1c,
         0 0 15px #ffffff;
+}
+#redacted_text {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Redacted', cursive;
 }
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Rank Information End ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
