@@ -11,8 +11,6 @@ body {
     background-image: url("");
     background-color: #000000;
     background-image: url("captain_office1_background_2.png");
-    /* background-image: url("perseus_promo.jpg"); */
-    /* background-image: url("perseus_engineering.jpg"); */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -80,6 +78,8 @@ body {
     padding-right: 22px;
     border: 3px solid #b60031;
     border-radius: 100px;
+    box-shadow:
+        0 0 10px #b60031;
 
     background-color: #1c1c1c;
     z-index: 2;
@@ -485,6 +485,13 @@ body {
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Content End ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Cards Start ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+#emblem_image {
+    height: 150px;
+    padding: 7px;
+    padding-left: 4.5px;
+    padding-right: 4.5px;
+}
+
 #rank_0_unit_card {
     border: 2px solid #ffffff;
     border-radius: 2.5px;
@@ -694,6 +701,16 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+}
+#conscript_image {
+    color: #ffffff;
+    font-size: 100px;
+    font-weight: bold;
+    font-family: 'Allerta Stencil', sans-serif;
+    text-decoration: none;
+    text-shadow:
+        0 0 10px #1c1c1c,
+        0 0 15px #ffffff;
 }
 
 #combat_modal {
@@ -935,375 +952,5 @@ body {
     font-size: 30px;
     margin-right: 20px;
     padding: 7px;
-}
-#novitiate_division {
-    color: #ffffff;
-    font-size: 22px;
-    font-weight: bold;
-    font-family: 'Allerta Stencil', sans-serif;
-    text-shadow:
-        0 0 15px #00c9ff,
-        0 0 20px #00c9ff;
-
-    border: 2px solid #ffffff;
-    border-radius: 2.5px;
-    box-shadow:
-        0 0 10px #ffffff,
-        0 0 15px #ffffff,
-        0 0 20px #ffffff;
-
-    border-collapse: collapse;
-    padding: 5px;
-    padding-left: 2.5%;
-    padding-right: 2.5%;
-    background-color: #1c1c1c;
-}
-#novitiate_division_text {
-    color: #ffffff;
-    font-size: 18px;
-    font-weight: bold;
-    font-family: 'Allerta Stencil', sans-serif;
-    text-shadow:
-        0 0 15px #ffffff,
-        0 0 20px #ffffff;
-}
-
-#leadership_division {
-    color: #ffffff;
-    font-size: 22px;
-    font-weight: bold;
-    font-family: 'Allerta Stencil', sans-serif;
-    text-shadow:
-        0 0 15px #00c9ff,
-        0 0 20px #00c9ff;
-
-    border: 2px solid #ffffff;
-    border-radius: 2.5px;
-    box-shadow:
-        0 0 10px #ffffff,
-        0 0 15px #d6b44c,
-        0 0 20px #d6b44c;
-
-    border-collapse: collapse;
-    padding: 5px;
-    padding-left: 2.5%;
-    padding-right: 2.5%;
-    background-color: #1c1c1c;
-}
-#leadership_division_text {
-    color: #ffffff;
-    font-size: 18px;
-    font-weight: bold;
-    font-family: 'Allerta Stencil', sans-serif;
-    text-shadow:
-        0 0 15px #d6b44c,
-        0 0 20px #d6b44c;
-}
-
-#combat_division {
-    color: #ffffff;
-    font-size: 22px;
-    font-weight: bold;
-    font-family: 'Allerta Stencil', sans-serif;
-    text-shadow:
-        0 0 15px #00c9ff,
-        0 0 20px #00c9ff;
-
-    border: 2px solid #ffffff;
-    border-radius: 2.5px;
-    box-shadow:
-        0 0 10px #ffffff,
-        0 0 15px #b60031,
-        0 0 20px #b60031;
-
-    border-collapse: collapse;
-    padding: 5px;
-    padding-left: 2.5%;
-    padding-right: 2.5%;
-    background-color: #1c1c1c;
-}
-#combat_division_text {
-    color: #ffffff;
-    font-size: 18px;
-    font-weight: bold;
-    font-family: 'Allerta Stencil', sans-serif;
-    text-shadow:
-        0 0 15px #b60031,
-        0 0 20px #b60031;
-}
-
-#engineer_division {
-    color: #ffffff;
-    font-size: 22px;
-    font-weight: bold;
-    font-family: 'Allerta Stencil', sans-serif;
-    text-shadow:
-        0 0 15px #00c9ff,
-        0 0 20px #00c9ff;
-
-    border: 2px solid #ffffff;
-    border-radius: 2.5px;
-    box-shadow:
-        0 0 10px #ffffff,
-        0 0 15px #ff7042,
-        0 0 20px #ff7042;
-
-    border-collapse: collapse;
-    padding: 5px;
-    padding-left: 2.5%;
-    padding-right: 2.5%;
-    background-color: #1c1c1c;
-}
-#engineer_division_text {
-    color: #ffffff;
-    font-size: 18px;
-    font-weight: bold;
-    font-family: 'Allerta Stencil', sans-serif;
-    text-shadow:
-        0 0 15px #ff7042,
-        0 0 20px #ff7042;
-}
-
-#medical_division {
-    color: #ffffff;
-    font-size: 22px;
-    font-weight: bold;
-    font-family: 'Allerta Stencil', sans-serif;
-    text-shadow:
-        0 0 15px #00c9ff,
-        0 0 20px #00c9ff;
-
-    border: 2px solid #ffffff;
-    border-radius: 2.5px;
-    box-shadow:
-        0 0 10px #ffffff,
-        0 0 15px #4285f4,
-        0 0 20px #4285f4;
-
-    border-collapse: collapse;
-    padding: 5px;
-    padding-left: 2.5%;
-    padding-right: 2.5%;
-    background-color: #1c1c1c;
-}
-#medical_division_text {
-    color: #ffffff;
-    font-size: 18px;
-    font-weight: bold;
-    font-family: 'Allerta Stencil', sans-serif;
-    text-shadow:
-        0 0 15px #4285f4,
-        0 0 20px #4285f4;
-}
-
-#science_division_text {
-    color: #ffffff;
-    font-size: 18px;
-    font-weight: bold;
-    font-family: 'Allerta Stencil', sans-serif;
-    text-shadow:
-        0 0 15px #00b368,
-        0 0 20px #00b368;
-}
-
-#academy_battalion {
-    color: #ffffff;
-    font-size: 22px;
-    font-weight: bold;
-    font-family: 'Allerta Stencil', sans-serif;
-    text-shadow:
-        0 0 15px #ad6cc2,
-        0 0 20px #ad6cc2;
-}
-#emote_name {
-    color: #ffffff;
-    font-size: 22.5px;
-    font-weight: bold;
-    /* font-family: 'Allerta Stencil', sans-serif; */
-    text-shadow:
-        0 0 15px #00c9ff,
-        0 0 20px #00c9ff;
-}
-#emote_phrase {
-    color: #00c9ff;
-    font-weight: bold;
-}
-#statement_report {
-    color: #ffffff;
-    font-size: 22.5px;
-    font-weight: bold;
-    /* font-family: 'Allerta Stencil', sans-serif; */
-    text-shadow:
-        0 0 15px #ad6cc2,
-        0 0 20px #ad6cc2;
-}
-#bold_note {
-    color: #ffffff;
-    font-size: 22.5px;
-    font-weight: bold;
-    /* font-family: 'Allerta Stencil', sans-serif; */
-    text-shadow:
-        0 0 10px #ff0015,
-        0 0 15px #ff0015;
-}
-#red_text {
-    color: #ff0015;
-    font-weight: bold;
-    font-size: 23px;
-}
-#red_a_box {
-    color: #ffffff;
-    font-size: 25px;
-    font-weight: bold;
-    font-family: 'Allerta Stencil', sans-serif;
-    text-shadow:
-        0 0 10px #ffffff;
-
-    background-color: #b60031;
-    box-shadow:
-        0 0 10px #e04957;
-
-    border-radius: 5px;
-    padding-left: 4px;
-    padding-right: 4px;
-    margin: 4px;
-}
-#break_space {
-    margin-top: 5%;
-    margin-bottom: 5%;
-}
-#small_space {
-    margin-top: 5%;
-}
-#leadership_table {
-    color: #ffffff;
-    font-size: 22.5px;
-    font-weight: bold;
-    /* font-family: 'Allerta Stencil', sans-serif; */
-    text-shadow:
-        0 0 15px #d6b44c,
-        0 0 20px #d6b44c;
-
-    width: 250px;
-}
-#leadership_note {
-    color: #ffffff;
-    font-size: 22.5px;
-    font-weight: bold;
-    /* font-family: 'Allerta Stencil', sans-serif; */
-    text-shadow:
-        0 0 15px #d6b44c,
-        0 0 20px #d6b44c;
-}
-#combat_table {
-    color: #ffffff;
-    font-size: 22.5px;
-    font-weight: bold;
-    /* font-family: 'Allerta Stencil', sans-serif; */
-    text-shadow:
-        0 0 10px #b60031,
-        0 0 15px #b60031;
-
-    width: 250px;
-}
-#combat_note {
-    color: #ffffff;
-    font-size: 22.5px;
-    font-weight: bold;
-    /* font-family: 'Allerta Stencil', sans-serif; */
-    text-shadow:
-        0 0 10px #b60031,
-        0 0 15px #b60031;
-}
-#engineer_table {
-    color: #ffffff;
-    font-size: 22.5px;
-    font-weight: bold;
-    /* font-family: 'Allerta Stencil', sans-serif; */
-    text-shadow:
-        0 0 10px #ff7042,
-        0 0 15px #ff7042;
-
-    width: 400px;
-}
-#engineer_note {
-    color: #ffffff;
-    font-size: 22.5px;
-    font-weight: bold;
-    /* font-family: 'Allerta Stencil', sans-serif; */
-    text-shadow:
-        0 0 10px #ff7042,
-        0 0 15px #ff7042;
-}
-#medic_table {
-    color: #ffffff;
-    font-size: 22.5px;
-    font-weight: bold;
-    /* font-family: 'Allerta Stencil', sans-serif; */
-    text-shadow:
-        0 0 10px #4285f4,
-        0 0 15px #4285f4;
-
-    width: 250px;
-}
-#medic_note {
-    color: #ffffff;
-    font-size: 22.5px;
-    font-weight: bold;
-    /* font-family: 'Allerta Stencil', sans-serif; */
-    text-shadow:
-        0 0 10px #4285f4,
-        0 0 15px #4285f4;
-}
-#science_table {
-    color: #ffffff;
-    font-size: 22.5px;
-    font-weight: bold;
-    /* font-family: 'Allerta Stencil', sans-serif; */
-    text-shadow:
-        0 0 10px #00b368,
-        0 0 15px #00b368;
-
-    width: 250px;
-}
-#science_note {
-    color: #ffffff;
-    font-size: 22.5px;
-    font-weight: bold;
-    /* font-family: 'Allerta Stencil', sans-serif; */
-    text-shadow:
-        0 0 10px #00b368,
-        0 0 15px #00b368;
-}
-#novitiate_note {
-    color: #ffffff;
-    font-size: 22.5px;
-    font-weight: bold;
-    /* font-family: 'Allerta Stencil', sans-serif; */
-    text-shadow:
-        0 0 10px #00c9ff,
-        0 0 15px #00c9ff;
-}
-#emblem_image {
-    height: 150px;
-    padding: 7px;
-    padding-left: 4.5px;
-    padding-right: 4.5px;
-}
-#conscript_image {
-    color: #ffffff;
-    font-size: 100px;
-    font-weight: bold;
-    font-family: 'Allerta Stencil', sans-serif;
-    text-decoration: none;
-    text-shadow:
-        0 0 10px #1c1c1c,
-        0 0 15px #ffffff;
-}
-#redacted_text {
-    color: #ffffff;
-    font-size: 18px;
-    font-weight: bold;
-    font-family: 'Redacted', cursive;
 }
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Rank Information End ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */

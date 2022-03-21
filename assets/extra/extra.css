@@ -1,0 +1,451 @@
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Novitiate ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+#novitiate_division {
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'Allerta Stencil', sans-serif;
+    text-shadow:
+        0 0 15px #00c9ff,
+        0 0 20px #00c9ff;
+
+    border: 2px solid #ffffff;
+    border-radius: 2.5px;
+    box-shadow:
+        0 0 10px #ffffff,
+        0 0 15px #ffffff,
+        0 0 20px #ffffff;
+
+    border-collapse: collapse;
+    padding: 5px;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    background-color: #1c1c1c;
+}
+#novitiate_division_text_large {
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'Allerta Stencil', sans-serif;
+    text-shadow:
+        0 0 15px #ffffff,
+        0 0 20px #ffffff;
+}
+#novitiate_division_text {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Allerta Stencil', sans-serif;
+    text-shadow:
+        0 0 15px #ffffff,
+        0 0 20px #ffffff;
+}
+#novitiate_note {
+    color: #ffffff;
+    font-size: 22.5px;
+    font-weight: bold;
+    /* font-family: 'Allerta Stencil', sans-serif; */
+    text-shadow:
+        0 0 10px #00c9ff,
+        0 0 15px #00c9ff;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Combat ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+#combat_division {
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'Allerta Stencil', sans-serif;
+    text-shadow:
+        0 0 15px #00c9ff,
+        0 0 20px #00c9ff;
+
+    border: 2px solid #ffffff;
+    border-radius: 2.5px;
+    box-shadow:
+        0 0 10px #ffffff,
+        0 0 15px #b60031,
+        0 0 20px #b60031;
+
+    border-collapse: collapse;
+    padding: 5px;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    background-color: #1c1c1c;
+}
+#combat_division_text_large {
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'Allerta Stencil', sans-serif;
+    text-shadow:
+        0 0 15px #b60031,
+        0 0 20px #b60031;
+}
+#combat_division_text {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Allerta Stencil', sans-serif;
+    text-shadow:
+        0 0 15px #b60031,
+        0 0 20px #b60031;
+}
+#combat_table {
+    color: #ffffff;
+    font-size: 22.5px;
+    font-weight: bold;
+    /* font-family: 'Allerta Stencil', sans-serif; */
+    text-shadow:
+        0 0 10px #b60031,
+        0 0 15px #b60031;
+
+    width: 250px;
+}
+#combat_note {
+    color: #ffffff;
+    font-size: 22.5px;
+    font-weight: bold;
+    /* font-family: 'Allerta Stencil', sans-serif; */
+    text-shadow:
+        0 0 10px #b60031,
+        0 0 15px #b60031;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Engineer ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+#engineer_division {
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'Allerta Stencil', sans-serif;
+    text-shadow:
+        0 0 15px #00c9ff,
+        0 0 20px #00c9ff;
+
+    border: 2px solid #ffffff;
+    border-radius: 2.5px;
+    box-shadow:
+        0 0 10px #ffffff,
+        0 0 15px #ff7042,
+        0 0 20px #ff7042;
+
+    border-collapse: collapse;
+    padding: 5px;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    background-color: #1c1c1c;
+}
+#engineer_division_text_large {
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'Allerta Stencil', sans-serif;
+    text-shadow:
+        0 0 15px #ff7042,
+        0 0 20px #ff7042;
+}
+#engineer_division_text {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Allerta Stencil', sans-serif;
+    text-shadow:
+        0 0 15px #ff7042,
+        0 0 20px #ff7042;
+}
+#engineer_table {
+    color: #ffffff;
+    font-size: 22.5px;
+    font-weight: bold;
+    /* font-family: 'Allerta Stencil', sans-serif; */
+    text-shadow:
+        0 0 10px #ff7042,
+        0 0 15px #ff7042;
+
+    width: 400px;
+}
+#engineer_note {
+    color: #ffffff;
+    font-size: 22.5px;
+    font-weight: bold;
+    /* font-family: 'Allerta Stencil', sans-serif; */
+    text-shadow:
+        0 0 10px #ff7042,
+        0 0 15px #ff7042;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Medical ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+#medical_division {
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'Allerta Stencil', sans-serif;
+    text-shadow:
+        0 0 15px #00c9ff,
+        0 0 20px #00c9ff;
+
+    border: 2px solid #ffffff;
+    border-radius: 2.5px;
+    box-shadow:
+        0 0 10px #ffffff,
+        0 0 15px #4285f4,
+        0 0 20px #4285f4;
+
+    border-collapse: collapse;
+    padding: 5px;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    background-color: #1c1c1c;
+}
+#medical_division_text_large {
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'Allerta Stencil', sans-serif;
+    text-shadow:
+        0 0 15px #4285f4,
+        0 0 20px #4285f4;
+}
+#medical_division_text {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Allerta Stencil', sans-serif;
+    text-shadow:
+        0 0 15px #4285f4,
+        0 0 20px #4285f4;
+}
+#medical_note {
+    color: #ffffff;
+    font-size: 22.5px;
+    font-weight: bold;
+    /* font-family: 'Allerta Stencil', sans-serif; */
+    text-shadow:
+        0 0 10px #4285f4,
+        0 0 15px #4285f4;
+}
+#science_table {
+    color: #ffffff;
+    font-size: 22.5px;
+    font-weight: bold;
+    /* font-family: 'Allerta Stencil', sans-serif; */
+    text-shadow:
+        0 0 10px #00b368,
+        0 0 15px #00b368;
+
+    width: 250px;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Science ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+#science_division {
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'Allerta Stencil', sans-serif;
+    text-shadow:
+        0 0 15px #00b368,
+        0 0 20px #00b368;
+
+    border: 2px solid #ffffff;
+    border-radius: 2.5px;
+    box-shadow:
+        0 0 10px #ffffff,
+        0 0 15px #00b368,
+        0 0 20px #00b368;
+
+    border-collapse: collapse;
+    padding: 5px;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    background-color: #1c1c1c;
+}
+#science_division_text_large {
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'Allerta Stencil', sans-serif;
+    text-shadow:
+        0 0 15px #00b368,
+        0 0 20px #00b368;
+}
+#science_division_text {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Allerta Stencil', sans-serif;
+    text-shadow:
+        0 0 15px #00b368,
+        0 0 20px #00b368;
+}
+#science_table {
+    color: #ffffff;
+    font-size: 22.5px;
+    font-weight: bold;
+    /* font-family: 'Allerta Stencil', sans-serif; */
+    text-shadow:
+        0 0 10px #00b368,
+        0 0 15px #00b368;
+
+    width: 250px;
+}
+#science_note {
+    color: #ffffff;
+    font-size: 22.5px;
+    font-weight: bold;
+    /* font-family: 'Allerta Stencil', sans-serif; */
+    text-shadow:
+        0 0 10px #00b368,
+        0 0 15px #00b368;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Leadership ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+#leadership_division {
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'Allerta Stencil', sans-serif;
+    text-shadow:
+        0 0 15px #00c9ff,
+        0 0 20px #00c9ff;
+
+    border: 2px solid #ffffff;
+    border-radius: 2.5px;
+    box-shadow:
+        0 0 10px #ffffff,
+        0 0 15px #d6b44c,
+        0 0 20px #d6b44c;
+
+    border-collapse: collapse;
+    padding: 5px;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    background-color: #1c1c1c;
+}
+#leadership_division_text_large {
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'Allerta Stencil', sans-serif;
+    text-shadow:
+        0 0 15px #d6b44c,
+        0 0 20px #d6b44c;
+}
+#leadership_division_text {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Allerta Stencil', sans-serif;
+    text-shadow:
+        0 0 15px #d6b44c,
+        0 0 20px #d6b44c;
+}
+#leadership_table {
+    color: #ffffff;
+    font-size: 22.5px;
+    font-weight: bold;
+    /* font-family: 'Allerta Stencil', sans-serif; */
+    text-shadow:
+        0 0 15px #d6b44c,
+        0 0 20px #d6b44c;
+
+    width: 250px;
+}
+#leadership_note {
+    color: #ffffff;
+    font-size: 22.5px;
+    font-weight: bold;
+    /* font-family: 'Allerta Stencil', sans-serif; */
+    text-shadow:
+        0 0 15px #d6b44c,
+        0 0 20px #d6b44c;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Academy ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+#academy_battalion {
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'Allerta Stencil', sans-serif;
+    text-shadow:
+        0 0 15px #ad6cc2,
+        0 0 20px #ad6cc2;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Text Spacing ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+#break_space {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+#small_space {
+    margin-top: 5%;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Text Misc (Notes) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+#emote_name {
+    color: #ffffff;
+    font-size: 22.5px;
+    font-weight: bold;
+    /* font-family: 'Allerta Stencil', sans-serif; */
+    text-shadow:
+        0 0 15px #00c9ff,
+        0 0 20px #00c9ff;
+}
+#emote_phrase {
+    color: #00c9ff;
+    font-weight: bold;
+}
+#statement_report {
+    color: #ffffff;
+    font-size: 22.5px;
+    font-weight: bold;
+    /* font-family: 'Allerta Stencil', sans-serif; */
+    text-shadow:
+        0 0 15px #ad6cc2,
+        0 0 20px #ad6cc2;
+}
+#bold_note {
+    color: #ffffff;
+    font-size: 22.5px;
+    font-weight: bold;
+    /* font-family: 'Allerta Stencil', sans-serif; */
+    text-shadow:
+        0 0 10px #ff0015,
+        0 0 15px #ff0015;
+}
+#red_text {
+    color: #ff0015;
+    font-weight: bold;
+    font-size: 23px;
+}
+#red_a_box {
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Allerta Stencil', sans-serif;
+    text-shadow:
+        0 0 10px #ffffff;
+
+    background-color: #b60031;
+    box-shadow:
+        0 0 10px #e04957;
+
+    border-radius: 5px;
+    padding-left: 4px;
+    padding-right: 4px;
+    margin: 4px;
+}
+#redacted_text {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Redacted', cursive;
+}
+#complete {
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'Allerta Stencil', sans-serif;
+    text-shadow:
+        0 0 15px #15ff00,
+        0 0 20px #15ff00;
+}
