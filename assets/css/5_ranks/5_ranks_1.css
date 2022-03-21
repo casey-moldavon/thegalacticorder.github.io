@@ -40,11 +40,11 @@ body {
     background-position: center;
 
     background-color: rgb(28, 28, 28, 0.75);
-    max-height: 50vh;
+    max-height: 70vh;
     overflow-y: auto;
 }
 
-#rank_change_info_icon_container {
+#rank_change_info_container {
     margin-top: 200px;
 }
 
@@ -74,7 +74,7 @@ body {
 #rank_change_info_icon {
     color: #ffffff;
     font-size: 75px;
-
+    margin: 25px;
     padding-bottom: 5px;
     padding-left: 22px;
     padding-right: 22px;

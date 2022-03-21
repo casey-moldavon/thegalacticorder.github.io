@@ -26,6 +26,12 @@
 <!-- navbar.js function adds navbar to start of <body> -->
 
 <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Navbar End ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+<div class="fixed-bottom">
+    <button id="rank_change_info_icon" type="button" data-bs-toggle="collapse" data-bs-target="#rank_change_info" aria-expanded="false" aria-controls="rank_change_info">
+        <i class="fa-solid fa-circle-question"></i>
+    </button>
+</div>
+
 
     <div id="rank_information_container" class="container-md container-fluid">
 
@@ -34,11 +40,10 @@
         </div>
 
         <p id="small_space"></p>
+        
 
-        <div id="rank_change_info_icon_container" class="container text-end fixed-top">
-            <button id="rank_change_info_icon" type="button" data-bs-toggle="collapse" data-bs-target="#rank_change_info" aria-expanded="false" aria-controls="rank_change_info">
-                <i class="fa-solid fa-circle-question"></i>
-            </button>
+
+        <div id="rank_change_info_container" class="container fixed-top">
 
             
             <div class="collapse" id="rank_change_info">
