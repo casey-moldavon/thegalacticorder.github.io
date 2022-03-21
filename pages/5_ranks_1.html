@@ -27,18 +27,151 @@
 
 <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Navbar End ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
-
-
-
     <div id="rank_information_container" class="container-md container-fluid">
 
         <div id="rank_information_title" class="container-fluid text-center">
             RANK INFORMATION
         </div>
+
+        <p id="small_space"></p>
+
+        <div id="rank_change_info_icon_container" class="container text-end fixed-top">
+            <button id="rank_change_info_icon" type="button" data-bs-toggle="collapse" data-bs-target="#rank_change_info" aria-expanded="false" aria-controls="rank_change_info">
+                <i class="fa-solid fa-circle-question"></i>
+            </button>
+
             
-        <div id="rank_information_image_container" class="container-sm">
-            <!-- <img id="rank_information_image" class="img-fluid" src="../assets/images/engineers.png" alt="Engineers Image"> -->
+            <div class="collapse" id="rank_change_info">
+                <div id="rank_change_container" class="card card-body text-center">
+
+
+                    <div class="container-md container-fluid">
+                        <p><a id="rank_change_title_text" class="text-start">RANK CHANGE INFO</a></p>
+
+                        <p id="small_space"></p>
+
+                        <div id="rank_information_collapse" class="accordion accordion-flush">
+            
+                            <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Change: Promotion ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="heading_one">
+                                    <button id="change_promotion" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_one" aria-expanded="false" aria-controls="collapse_one">
+                                        <i id="rank_information_icon" class="fa-solid fa-barcode"></i>Promotion
+                                    </button>
+                                </h2>
+            
+                                <div id="collapse_one" class="accordion-collapse collapse" aria-labelledby="heading_one">
+                                    <div id="rank_information_text" class="accordion-body">
+            
+                                        <div class="container-fluid text-start">
+                                            <p>Promotions, after Rank 1, may occur when a member has either achieved the necessary prerequisites for the desired promotion or by choice of a superior Officer of Rank 3 or higher. Officers may also promote others to a rank below their own.</p>
+                                        
+                                            <p><a id="combat_division_text">Warning:</a> Promotions can be prevented from occurring within a battalion if there is limited availability for the desired role. In these instances, transfer requests may be made to leadership for re-assignment to a different Battalion where the position is available. If no existing battalion can offer the role, the individual will be put on a promotion wait list, placement of which is determined by promotion offer date. While awaiting promotion availability, a unit may continue to progress with further prerequisites, which may set them apart from other listed candidates, or they may request a Division Change.</p>
+                                        </div>
+            
+                                        <div class="container-sm">
+                                            <!-- <img id="change_promotion_image" src="../assets/images/chillin1.png" alt="Chillin Image"> -->
+                                        </div>
+            
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Change: Division ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="heading_two">
+                                    <button id="change_division" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_two" aria-expanded="false" aria-controls="collapse_two">
+                                        <i id="rank_information_icon" class="fa-solid fa-barcode"></i>Division Change
+                                    </button>
+                                </h2>
+            
+                                <div id="collapse_two" class="accordion-collapse collapse" aria-labelledby="heading_two">
+                                    <div id="rank_information_text" class="accordion-body">
+            
+                                        <div class="container-fluid text-start">
+                                            <p>This is the process of changing / transferring from one Division to another. When this occurs, regardless of a member’s current rank, they must begin at the lowest level of said division unless acquired prerequisites qualify for a higher rank or they are returning to a division role previously held. With Division Returns, members are typically offered the rank they last held in that division unless otherwise stated by a member of Leadership (Rank 4 or higher).</p>
+                                        </div>
+            
+                                        <div class="container-sm">
+                                            <!-- <img id="change_promotion_image" src="../assets/images/chillin1.png" alt="Chillin Image"> -->
+                                        </div>
+            
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Promotion Prerequiistes ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="heading_three">
+                                    <button id="promotion_prerequisites" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_three" aria-expanded="false" aria-controls="collapse_three">
+                                        <i id="rank_information_icon" class="fa-solid fa-barcode"></i>Promotion Prerequisites
+                                    </button>
+                                </h2>
+            
+                                <div id="collapse_three" class="accordion-collapse collapse" aria-labelledby="heading_three">
+                                    <div id="rank_information_text" class="accordion-body">
+            
+                                        <div class="container-fluid text-start">
+                                            <p>For most positions, there is a list of available achievements that may be completed in order to qualify for that particular role/rank. These are listed on each Rank Information Unit card, under <a id="novitiate_note">Prerequisites</a>. This list often includes a variety of missions, tasks and experiences related to the desired role, reflecting the type of responsibilities that position will entail. This typically falls under 4 primary categories, each with multiple sub-categories:</p>
+                                        
+                                            <p id="small_space"></p>
+
+                                            <a id="science_division_text">Rank Service:</a>
+                                            <p>This is split into 2 sub-categories: <a id="statement_report">Hours</a> & <a id="statement_report">Months</a>, referring to consistent time spend as the current rank.</p>
+                                            <ol>
+                                                <li><a id="medical_division_text">Hours:</a> Number of hours spent in-game as current rank.</li>
+                                                <li><a id="medical_division_text">Months:</a> Number of months since last promoted to current rank.</li>
+                                            </ol>
+
+                                            <p><a id="bold_note">Note:</a> These are specific to the current rank only and get reset after each promotion or division change. This is not only to avoid consistent division changes but to also prevent rapid promotion rates.</p>
+                                        
+                                            <p id="small_space"></p>
+
+                                            <a id="science_division_text">Order Service:</a>
+                                            <p>Currently this represents the number of months serving within The Galactic Order. This prerequisite category is mostly used for promotions into Rank 3 or Leadership.</p>
+
+                                            <p id="small_space"></p>
+
+                                            <a id="science_division_text">Dedication:</a>
+                                            <p>This is split into 3 sub-categories: <a id="statement_report"># of Events</a>, <a id="statement_report"># of Recruits</a> & <a id="statement_report">Patrols</a>.</p>
+                                            
+                                            <ol>
+                                                <li><a id="medical_division_text"># of Events:</a> Number of Galactic Order Events participated in since joining.</li>
+                                                <li><a id="medical_division_text"># of Recruits:</a> Number of members recruited to join the Galactic Order since joining.</li>
+                                                <li><a id="medical_division_text">Patrols:</a> Number of Roleplay Patrols reported for duty since joining.</li>
+                                            </ol>
+
+                                            <p><a id="bold_note">Note:</a> These apply to most promotion prerequisite lists, if not all, in some way. They also do not reset like <a id="science_note">Rank Service</a> prerequisites or have restrictions similar to <a id="science_note">Missions Completed</a> prerequisites.</p>
+
+                                            <p id="small_space"></p>
+
+                                            <a id="science_division_text">Missions Completed:</a>
+                                            <p>This is split based on division along with the missions, tasks and responsibilities that each division has, paired with the requirements of the desired role. Exact writing in Minimum Promotion Prerequisites will typically be one of the following:</p>
+                                            <ol>
+                                                <li>If referring to “division” specific missions (example: Combat missions), then it is implied that multiple listed division-related prerequisites may apple to the same promotion.</li>
+                                                <li>If referring to “Rank / Role” specific missions (examples: Trooper-specific missions), then it is implied that to the next rank promotion is only possible from within the same division. Trooper-specific mission prerequisites may only apply to Lieutenant-Trooper promotion. Engineer-specific mission prerequisites may only apply to Lieutenant-Engineer, etc…</li>
+                                                <li>If referring to specific mission types (example: Turret missions), then it is implied that tasks recorded as such, within the roster, are needed for said promotion.</li>
+                                            </ol>
+
+                                        </div>
+            
+                                        <div class="container-sm">
+                                            <!-- <img id="change_promotion_image" src="../assets/images/chillin1.png" alt="Chillin Image"> -->
+                                        </div>
+            
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
         </div>
+
 
 
             <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Rank 0 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
@@ -857,6 +990,9 @@
                                             <div class="container-fluid text-start">
                                                 <p id="redacted_text">Agents are high-priority covert units of the Special Operations sub-division branch of the Combat Division. They operate completely off-grid, existing purely within the shadows, unregistered to battalions or rosters and with their identities known only to the highest ranked members of the Leadership division.</p>
                                                 <p id="redacted_text">They specialize in deep-cover espionage, infiltration and assassination operations, often on assignment for long periods of time to eliminate political leaders and destabilize government bodies. They’ve also been rumored for use to eliminate corrupt members within the Galactic Order itself. In many instances, they will be planted within divisions as a different rank, either under orders or to simply occupy their down-time between assignments. Progression to this role is classified along with further details pertaining to the position.</p>
+                                            
+                                                <p>Agent is an alternate progression option within the Special Ops sub-division, achievable through promotion from Outrider (only). Because Outrider progression is not recorded officially, they will not be privileged to details regarding their promotion prerequisites and will simply be notified when they qualify.</p>
+                                                <p><a id="bold_note">Special Note:</a> The Promotion to Agent will require a comprehensive and advanced trial, testing the individual’s skills, knowledge and understanding of what the role would entail. This trial may be given at any time without warning, but only to Outriders whom have shown an expressed interest in the promotion and have completed the minimum promotion prerequisites.</p>
                                             </div>
                                         </div>
                                     </div>

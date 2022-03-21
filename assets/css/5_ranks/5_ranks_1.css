@@ -19,6 +19,225 @@ body {
     background-attachment: fixed;
 }
 
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Rank Change Start ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+#rank_change_container {
+    margin-top: 25px;
+    padding: 40px;
+
+    border: 4px solid #ffffff;
+    border-radius: 2.5px;
+    box-shadow:
+        0 0 5px 2.5px #ffffff,
+        0 0 10px 5px #00c9ff,
+        0 0 20px 10px #00c9ff;
+
+    border-collapse: collapse;
+
+    background-image: url("logo.png");
+    /* background-image: url("order_background.jpg"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    background-color: rgb(28, 28, 28, 0.75);
+    max-height: 50vh;
+    overflow-y: auto;
+}
+
+#rank_change_info_icon_container {
+    margin-top: 200px;
+}
+
+#rank_change_title_text {
+    color: #ffffff;
+    font-size: 27.5px;
+    font-weight: bold;
+    font-family: 'Allerta Stencil', sans-serif;
+    padding: 10px;
+    
+    text-shadow:
+        0 0 5px #ff0000,
+        0 0 10px #ff0015,
+        0 0 15px #ff0015,
+        0 0 20px #ff0015;
+
+    border: 2px solid #ffffff;
+    border-radius: 2.5px;
+    box-shadow:
+        0 0 2.5px 1px #ffffff,
+        0 0 5px 4px #00c9ff,
+        0 0 10px 10px #00c9ff;
+
+    border-collapse: collapse;
+    background-color: #1c1c1c;
+}
+#rank_change_info_icon {
+    color: #ffffff;
+    font-size: 75px;
+
+    padding-bottom: 5px;
+    padding-left: 22px;
+    padding-right: 22px;
+    border: 3px solid #b60031;
+    border-radius: 100px;
+
+    background-color: #1c1c1c;
+    z-index: 2;
+}
+#rank_change_info_icon:hover {
+    color: #ffffff;
+    padding-bottom: 5px;
+    padding-left: 22px;
+    padding-right: 22px;
+    text-shadow:
+        0 0 5px #ffffff,
+        0 0 15px #ff0015,
+        0 0 20px #ff0015;
+
+    border: 3px solid #ffffff;
+    border-radius: 100px;
+    box-shadow:
+        0 0 2.5px 1px #ffffff,
+        0 0 5px 4px #00c9ff,
+        0 0 10px 10px #00c9ff;
+
+    border-collapse: collapse;
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Rank Change End ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Rank Change Content ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+#change_promotion {
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Allerta Stencil', sans-serif;
+    background-color: #1c1c1c;
+}
+#change_promotion:hover {
+    color: #ffffff;
+    font-size: 25.2px;
+    text-shadow:
+        0 0 10px #00c9ff,
+        0 0 15px #00c9ff;
+}
+#change_promotion:hover #rank_information_icon {
+    color: #ffffff;
+    font-size: 30.2px;
+    text-shadow:
+        0 0 5px #ffffff,
+        0 0 10px #ff0015,
+        0 0 15px #ff0015;
+
+    border-radius: 15px;
+    box-shadow:
+        0 0 10px #ff0015,
+        0 0 20px #ff0015;
+
+    border-collapse: collapse;
+    background-color: #ff0015;
+    padding-right: 3px;
+}
+#change_promotion_image {
+    width: 100%;
+    position: center;
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+    box-shadow:
+        0 0 5px #ffffff,
+        0 0 10px #00c9ff,
+        0 0 15px #00c9ff;
+        
+    border-collapse: collapse;
+}
+
+#change_division {
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Allerta Stencil', sans-serif;
+    background-color: #1c1c1c;
+}
+#change_division:hover {
+    color: #ffffff;
+    font-size: 25.2px;
+    text-shadow:
+        0 0 10px #00c9ff,
+        0 0 15px #00c9ff;
+}
+#change_division:hover #rank_information_icon {
+    color: #ffffff;
+    font-size: 30.2px;
+    text-shadow:
+        0 0 5px #ffffff,
+        0 0 10px #ff0015,
+        0 0 15px #ff0015;
+
+    border-radius: 15px;
+    box-shadow:
+        0 0 10px #ff0015,
+        0 0 20px #ff0015;
+
+    border-collapse: collapse;
+    background-color: #ff0015;
+    padding-right: 3px;
+}
+#change_division_image {
+    width: 100%;
+    position: center;
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+    box-shadow:
+        0 0 5px #ffffff,
+        0 0 10px #00c9ff,
+        0 0 15px #00c9ff;
+        
+    border-collapse: collapse;
+}
+
+#promotion_prerequisites {
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Allerta Stencil', sans-serif;
+    background-color: #1c1c1c;
+}
+#promotion_prerequisites:hover {
+    color: #ffffff;
+    font-size: 25.2px;
+    text-shadow:
+        0 0 10px #00c9ff,
+        0 0 15px #00c9ff;
+}
+#promotion_prerequisites:hover #rank_information_icon {
+    color: #ffffff;
+    font-size: 30.2px;
+    text-shadow:
+        0 0 5px #ffffff,
+        0 0 10px #ff0015,
+        0 0 15px #ff0015;
+
+    border-radius: 15px;
+    box-shadow:
+        0 0 10px #ff0015,
+        0 0 20px #ff0015;
+
+    border-collapse: collapse;
+    background-color: #ff0015;
+    padding-right: 3px;
+}
+#promotion_prerequisites_image {
+    width: 100%;
+    position: center;
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+    box-shadow:
+        0 0 5px #ffffff,
+        0 0 10px #00c9ff,
+        0 0 15px #00c9ff;
+        
+    border-collapse: collapse;
+}
+
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Rank Information Start ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 #rank_information_container {
     margin-top: 50px;
@@ -1046,6 +1265,24 @@ body {
         0 0 15px #00b368;
 
     width: 250px;
+}
+#science_note {
+    color: #ffffff;
+    font-size: 22.5px;
+    font-weight: bold;
+    /* font-family: 'Allerta Stencil', sans-serif; */
+    text-shadow:
+        0 0 10px #00b368,
+        0 0 15px #00b368;
+}
+#novitiate_note {
+    color: #ffffff;
+    font-size: 22.5px;
+    font-weight: bold;
+    /* font-family: 'Allerta Stencil', sans-serif; */
+    text-shadow:
+        0 0 10px #00c9ff,
+        0 0 15px #00c9ff;
 }
 #emblem_image {
     height: 150px;
