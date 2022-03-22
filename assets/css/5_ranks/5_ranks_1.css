@@ -290,8 +290,9 @@ body {
     
 #rank_information_text {
     color: #ffffff;
-    font-size: 22.5px;
-    font-family: 'Fanwood Text', serif;
+    font-size: 19.5px;
+    /* font-family: 'Fanwood Text', serif; */
+    font-family: 'Montserrat', sans-serif;
     /* padding: 3%; */
     background-color: #1c1c1c;
     opacity: 95%;
@@ -657,9 +658,10 @@ body {
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Modal Start ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 #rank_0_modal {
     color: #ffffff;
-    font-size: 20px;
+    font-size: 17.9px;
     font-weight: bold;
-    font-family: 'Fanwood Text', serif;
+    /* font-family: 'Fanwood Text', serif; */
+    font-family: 'Montserrat', sans-serif;
     
     border: 2px solid #ffffff;
     border-radius: 2.5px;
@@ -715,9 +717,10 @@ body {
 
 #combat_modal {
     color: #ffffff;
-    font-size: 20px;
+    font-size: 17.9px;
     font-weight: bold;
-    font-family: 'Fanwood Text', serif;
+    /* font-family: 'Fanwood Text', serif; */
+    font-family: 'Montserrat', sans-serif;
     
     border: 2px solid #ffffff;
     border-radius: 2.5px;
@@ -762,9 +765,10 @@ body {
 }
 #engineer_modal {
     color: #ffffff;
-    font-size: 20px;
+    font-size: 17.9px;
     font-weight: bold;
-    font-family: 'Fanwood Text', serif;
+    /* font-family: 'Fanwood Text', serif; */
+    font-family: 'Montserrat', sans-serif;
     
     border: 2px solid #ffffff;
     border-radius: 2.5px;
@@ -809,9 +813,10 @@ body {
 }
 #medic_modal {
     color: #ffffff;
-    font-size: 20px;
+    font-size: 17.9px;
     font-weight: bold;
-    font-family: 'Fanwood Text', serif;
+    /* font-family: 'Fanwood Text', serif; */
+    font-family: 'Montserrat', sans-serif;
     
     border: 2px solid #ffffff;
     border-radius: 2.5px;
@@ -856,9 +861,10 @@ body {
 }
 #leadership_modal {
     color: #ffffff;
-    font-size: 20px;
+    font-size: 17.9px;
     font-weight: bold;
-    font-family: 'Fanwood Text', serif;
+    /* font-family: 'Fanwood Text', serif; */
+    font-family: 'Montserrat', sans-serif;
     
     border: 2px solid #ffffff;
     border-radius: 2.5px;
@@ -918,7 +924,7 @@ body {
 }
 #rank_prerequisites_text {
     color: #ffffff;
-    font-size: 20px;
+    font-size: 17.9px;
     font-weight: bold;
     background-color: #1c1c1c;
 }
@@ -952,5 +958,16 @@ body {
     font-size: 30px;
     margin-right: 20px;
     padding: 7px;
+}
+#star_icon {
+    color: #ffffff;
+    font-size: 30px;
+    text-shadow:
+        0 0 5px #b60031,
+        0 0 10px #ff0015,
+        0 0 15px #d6b44c,
+        0 0 25px #d6b44c;
+    
+    margin: 10px;
 }
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Rank Information End ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */

@@ -92,8 +92,9 @@ body {
     
 #full_roster_text {
     color: #ffffff;
-    font-size: 22.5px;
-    font-family: 'Fanwood Text', serif;
+    font-size: 17.9px;
+    /* font-family: 'Fanwood Text', serif; */
+    font-family: 'Montserrat', sans-serif;
     padding: 3%;
     background-color: #1c1c1c;
     opacity: 95%;
@@ -121,98 +122,5 @@ body {
     font-size: 30px;
     margin-right: 20px;
     padding: 7px;
-}
-#leadership_division {
-    color: #ffffff;
-    font-size: 22px;
-    font-weight: bold;
-    font-family: 'Allerta Stencil', sans-serif;
-    text-shadow:
-        0 0 15px #d6b44c,
-        0 0 20px #d6b44c;
-}
-#combat_division {
-    color: #ffffff;
-    font-size: 22px;
-    font-weight: bold;
-    font-family: 'Allerta Stencil', sans-serif;
-    text-shadow:
-        0 0 15px #b60031,
-        0 0 20px #b60031;
-}
-#engineer_division {
-    color: #ffffff;
-    font-size: 22px;
-    font-weight: bold;
-    font-family: 'Allerta Stencil', sans-serif;
-    text-shadow:
-        0 0 15px #ff7042,
-        0 0 20px #ff7042;
-}
-#medical_division {
-    color: #ffffff;
-    font-size: 22px;
-    font-weight: bold;
-    font-family: 'Allerta Stencil', sans-serif;
-    text-shadow:
-        0 0 15px #4285f4,
-        0 0 20px #4285f4;
-}
-#emote_name {
-    color: #ffffff;
-    font-size: 22.5px;
-    font-weight: bold;
-    /* font-family: 'Allerta Stencil', sans-serif; */
-    text-shadow:
-        0 0 15px #00c9ff,
-        0 0 20px #00c9ff;
-}
-#emote_phrase {
-    color: #00c9ff;
-    font-weight: bold;
-}
-#statement_report {
-    color: #ffffff;
-    font-size: 22.5px;
-    font-weight: bold;
-    /* font-family: 'Allerta Stencil', sans-serif; */
-    text-shadow:
-        0 0 15px #ad6cc2,
-        0 0 20px #ad6cc2;
-}
-#bold_note {
-    color: #ffffff;
-    font-size: 22.5px;
-    font-weight: bold;
-    /* font-family: 'Allerta Stencil', sans-serif; */
-    text-shadow:
-        0 0 10px #ff0015,
-        0 0 15px #ff0015;
-}
-#red_text {
-    color: #ff0015;
-    font-weight: bold;
-    font-size: 23px;
-}
-#red_a_box {
-    color: #ffffff;
-    font-size: 25px;
-    font-weight: bold;
-    font-family: 'Allerta Stencil', sans-serif;
-    text-shadow:
-        0 0 10px #ffffff;
-
-    background-color: #b60031;
-    box-shadow:
-        0 0 10px #e04957;
-
-    border-radius: 5px;
-    padding-left: 4px;
-    padding-right: 4px;
-    margin: 4px;
-}
-#break_space {
-    margin-top: 5%;
-    margin-bottom: 5%;
 }
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Full Roster End ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */

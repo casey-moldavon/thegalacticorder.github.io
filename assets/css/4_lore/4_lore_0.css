@@ -105,8 +105,9 @@ body {
     
 #history_lore_text {
     color: #ffffff;
-    font-size: 22.5px;
-    font-family: 'Fanwood Text', serif;
+    font-size: 17.9px;
+    /* font-family: 'Fanwood Text', serif; */
+    font-family: 'Montserrat', sans-serif;
     padding: 3%;
     border: 2px solid #ffffff;
     border-radius: 2px;
@@ -191,8 +192,9 @@ body {
     
 #founders_text {
     color: #ffffff;
-    font-size: 22.5px;
-    font-family: 'Fanwood Text', serif;
+    font-size: 17.9px;
+    /* font-family: 'Fanwood Text', serif; */
+    font-family: 'Montserrat', sans-serif;
     padding: 3%;
     border: 2px solid #ffffff;
     border-radius: 2px;
@@ -275,8 +277,9 @@ body {
     
 #goals_text {
     color: #ffffff;
-    font-size: 22.5px;
-    font-family: 'Fanwood Text', serif;
+    font-size: 17.9px;
+    /* font-family: 'Fanwood Text', serif; */
+    font-family: 'Montserrat', sans-serif;
     padding: 3%;
     border: 2px solid #ffffff;
     border-radius: 2px;

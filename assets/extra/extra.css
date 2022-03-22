@@ -32,7 +32,7 @@
 }
 #novitiate_division_text {
     color: #ffffff;
-    font-size: 18px;
+    font-size: 19.7px;
     font-weight: bold;
     font-family: 'Allerta Stencil', sans-serif;
     text-shadow:
@@ -41,7 +41,7 @@
 }
 #novitiate_note {
     color: #ffffff;
-    font-size: 22.5px;
+    font-size: 17.9px;
     font-weight: bold;
     /* font-family: 'Allerta Stencil', sans-serif; */
     text-shadow:
@@ -83,7 +83,7 @@
 }
 #combat_division_text {
     color: #ffffff;
-    font-size: 18px;
+    font-size: 19.7px;
     font-weight: bold;
     font-family: 'Allerta Stencil', sans-serif;
     text-shadow:
@@ -92,18 +92,18 @@
 }
 #combat_table {
     color: #ffffff;
-    font-size: 22.5px;
+    font-size: 17.9px;
     font-weight: bold;
     /* font-family: 'Allerta Stencil', sans-serif; */
     text-shadow:
         0 0 10px #b60031,
         0 0 15px #b60031;
 
-    width: 250px;
+    width: 275px;
 }
 #combat_note {
     color: #ffffff;
-    font-size: 22.5px;
+    font-size: 17.9px;
     font-weight: bold;
     /* font-family: 'Allerta Stencil', sans-serif; */
     text-shadow:
@@ -145,7 +145,7 @@
 }
 #engineer_division_text {
     color: #ffffff;
-    font-size: 18px;
+    font-size: 19.7px;
     font-weight: bold;
     font-family: 'Allerta Stencil', sans-serif;
     text-shadow:
@@ -154,18 +154,18 @@
 }
 #engineer_table {
     color: #ffffff;
-    font-size: 22.5px;
+    font-size: 17.9px;
     font-weight: bold;
     /* font-family: 'Allerta Stencil', sans-serif; */
     text-shadow:
         0 0 10px #ff7042,
         0 0 15px #ff7042;
 
-    width: 400px;
+    width: 420px;
 }
 #engineer_note {
     color: #ffffff;
-    font-size: 22.5px;
+    font-size: 17.9px;
     font-weight: bold;
     /* font-family: 'Allerta Stencil', sans-serif; */
     text-shadow:
@@ -207,32 +207,32 @@
 }
 #medical_division_text {
     color: #ffffff;
-    font-size: 18px;
+    font-size: 19.7px;
     font-weight: bold;
     font-family: 'Allerta Stencil', sans-serif;
     text-shadow:
         0 0 15px #4285f4,
         0 0 20px #4285f4;
 }
-#medical_note {
+#medical_table {
     color: #ffffff;
-    font-size: 22.5px;
+    font-size: 17.9px;
     font-weight: bold;
     /* font-family: 'Allerta Stencil', sans-serif; */
     text-shadow:
         0 0 10px #4285f4,
         0 0 15px #4285f4;
+
+    width: 275px;
 }
-#science_table {
+#medical_note {
     color: #ffffff;
-    font-size: 22.5px;
+    font-size: 17.9px;
     font-weight: bold;
     /* font-family: 'Allerta Stencil', sans-serif; */
     text-shadow:
-        0 0 10px #00b368,
-        0 0 15px #00b368;
-
-    width: 250px;
+        0 0 10px #4285f4,
+        0 0 15px #4285f4;
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Science ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -269,7 +269,7 @@
 }
 #science_division_text {
     color: #ffffff;
-    font-size: 18px;
+    font-size: 19.7px;
     font-weight: bold;
     font-family: 'Allerta Stencil', sans-serif;
     text-shadow:
@@ -278,18 +278,18 @@
 }
 #science_table {
     color: #ffffff;
-    font-size: 22.5px;
+    font-size: 17.9px;
     font-weight: bold;
     /* font-family: 'Allerta Stencil', sans-serif; */
     text-shadow:
         0 0 10px #00b368,
         0 0 15px #00b368;
 
-    width: 250px;
+    width: 275px;
 }
 #science_note {
     color: #ffffff;
-    font-size: 22.5px;
+    font-size: 17.9px;
     font-weight: bold;
     /* font-family: 'Allerta Stencil', sans-serif; */
     text-shadow:
@@ -332,7 +332,7 @@
 }
 #leadership_division_text {
     color: #ffffff;
-    font-size: 18px;
+    font-size: 19.7px;
     font-weight: bold;
     font-family: 'Allerta Stencil', sans-serif;
     text-shadow:
@@ -341,18 +341,18 @@
 }
 #leadership_table {
     color: #ffffff;
-    font-size: 22.5px;
+    font-size: 17.9px;
     font-weight: bold;
     /* font-family: 'Allerta Stencil', sans-serif; */
     text-shadow:
         0 0 15px #d6b44c,
         0 0 20px #d6b44c;
 
-    width: 250px;
+    width: 275px;
 }
 #leadership_note {
     color: #ffffff;
-    font-size: 22.5px;
+    font-size: 17.9px;
     font-weight: bold;
     /* font-family: 'Allerta Stencil', sans-serif; */
     text-shadow:
@@ -370,6 +370,44 @@
         0 0 15px #ad6cc2,
         0 0 20px #ad6cc2;
 }
+#academy_text {
+    color: #ffffff;
+    font-size: 19.7px;
+    font-weight: bold;
+    font-family: 'Allerta Stencil', sans-serif;
+    text-shadow:
+        0 0 15px #ad6cc2,
+        0 0 20px #ad6cc2;
+}
+#academy_note {
+    color: #ffffff;
+    font-size: 17.9px;
+    font-weight: bold;
+    /* font-family: 'Allerta Stencil', sans-serif; */
+    text-shadow:
+        0 0 15px #ad6cc2,
+        0 0 20px #ad6cc2;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Missions ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+#engineer_medical_text {
+    color: #ffffff;
+    font-size: 19.7px;
+    font-weight: bold;
+    font-family: 'Allerta Stencil', sans-serif;
+    text-shadow:
+        0 0 15px #39a8c7,
+        0 0 20px #39a8c7;
+}
+#engineer_medical_note {
+    color: #ffffff;
+    font-size: 17.9px;
+    font-weight: bold;
+    /* font-family: 'Allerta Stencil', sans-serif; */
+    text-shadow:
+        0 0 15px #39a8c7,
+        0 0 20px #39a8c7;
+}
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Text Spacing ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 #break_space {
@@ -377,13 +415,13 @@
     margin-bottom: 5%;
 }
 #small_space {
-    margin-top: 5%;
+    margin-top: 2.5%;
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Text Misc (Notes) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 #emote_name {
     color: #ffffff;
-    font-size: 22.5px;
+    font-size: 17.9px;
     font-weight: bold;
     /* font-family: 'Allerta Stencil', sans-serif; */
     text-shadow:
@@ -396,7 +434,7 @@
 }
 #statement_report {
     color: #ffffff;
-    font-size: 22.5px;
+    font-size: 17.9px;
     font-weight: bold;
     /* font-family: 'Allerta Stencil', sans-serif; */
     text-shadow:
@@ -405,7 +443,7 @@
 }
 #bold_note {
     color: #ffffff;
-    font-size: 22.5px;
+    font-size: 17.9px;
     font-weight: bold;
     /* font-family: 'Allerta Stencil', sans-serif; */
     text-shadow:
@@ -436,7 +474,7 @@
 }
 #redacted_text {
     color: #ffffff;
-    font-size: 18px;
+    font-size: 19.7px;
     font-weight: bold;
     font-family: 'Redacted', cursive;
 }

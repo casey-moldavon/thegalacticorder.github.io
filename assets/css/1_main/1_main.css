@@ -83,8 +83,9 @@ body {
 
 #introduction_text {
     color: #ffffff;
-    font-size: 22.5px;
-    font-family: 'Fanwood Text', serif;
+    font-size: 17.9px;
+    /* font-family: 'Fanwood Text', serif; */
+        font-family: 'Montserrat', sans-serif;
     margin-top: 20px;
     padding: 3%;
     border: 2px solid #ffffff;
@@ -95,7 +96,7 @@ body {
         0 0 10px 10px #00c9ff;
 
     border-collapse: collapse;
-    background-color: rgb(28, 28, 28, 0.90);
+    background-color: rgb(28, 28, 28, 0.95);
 }
 
 #big_welcome {
@@ -192,8 +193,9 @@ body {
 
 #rules_laws_text {
     color: #ffffff;
-    font-size: 22.5px;
-    font-family: 'Fanwood Text', serif;
+    font-size: 17.9px;
+    /* font-family: 'Fanwood Text', serif; */
+        font-family: 'Montserrat', sans-serif;
     padding: 3%;
     background-color: #2c2c2c;
 }
