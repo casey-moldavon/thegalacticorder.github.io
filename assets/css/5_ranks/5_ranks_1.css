@@ -20,7 +20,8 @@ body {
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Rank Change Start ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 #rank_change_container {
     margin-top: 25px;
-    padding: 40px;
+    padding-top: 40px;
+    padding-bottom: 25px;
 
     border: 4px solid #ffffff;
     border-radius: 2.5px;
@@ -43,7 +44,7 @@ body {
 }
 
 #rank_change_info_container {
-    margin-top: 200px;
+    margin-top: 175px;
 }
 
 #rank_change_title_text {
@@ -102,6 +103,27 @@ body {
         0 0 10px 10px #00c9ff;
 
     border-collapse: collapse;
+}
+#rank_info_close_button {
+    width: 70px;
+    float: right;
+}
+#rank_info_close_button_icon {
+    color: #ff0015;
+    font-size: 50px;
+    margin-top: -80px;
+    position: absolute;
+    text-shadow:
+        0 0 5px #b60031;
+}
+#rank_info_close_button:hover #rank_info_close_button_icon {
+    color: #ffffff;
+    font-size: 50px;
+    text-shadow:
+        0 0 5px #ffffff,
+        0 0 10px #ff0015,
+        0 0 15px #ff0015,
+        0 0 20px #ff0015;
 }
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Rank Change End ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
