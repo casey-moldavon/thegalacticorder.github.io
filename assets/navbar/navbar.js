@@ -109,9 +109,9 @@ var navbar = `
                 <a id="navbar_contact_us" class="nav-link" href="../pages/7_contact_us.html"><i id="fa_nav_icon_square" class="fa-solid fa-square-envelope"></i>Contact Us</a>
             </li>
 
-            <li class="nav-item">
-                <a id="navbar_resources" class="nav-link" href="../pages/8_resources.html"><i id="fa_nav_icon_round" class="fa-solid fa-circle-question"></i>Resources</a>
-            </li>
+            // <li class="nav-item">
+            //     <a id="navbar_resources" class="nav-link" href="../pages/8_resources.html"><i id="fa_nav_icon_round" class="fa-solid fa-circle-question"></i>Resources</a>
+            // </li>
 
         </ul>
     </div>
