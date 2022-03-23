@@ -24,11 +24,10 @@ body {
     padding-bottom: 25px;
 
     border: 4px solid #ffffff;
-    border-radius: 2.5px;
+    border-radius: 2px;
     box-shadow:
-        0 0 5px 2.5px #ffffff,
-        0 0 10px 5px #00c9ff,
-        0 0 20px 10px #00c9ff;
+        0 0 5px #ffffff,
+        0 0 10px 7px #00c9ff;
 
     border-collapse: collapse;
 
@@ -60,12 +59,11 @@ body {
         0 0 15px #ff0015,
         0 0 20px #ff0015;
 
-    border: 2px solid #ffffff;
-    border-radius: 2.5px;
+    border: 3px solid #ffffff;
+    border-radius: 2px;
     box-shadow:
-        0 0 2.5px 1px #ffffff,
-        0 0 5px 4px #00c9ff,
-        0 0 10px 10px #00c9ff;
+        0 0 2.5px #ffffff,
+        0 0 5px 5px #00c9ff;
 
     border-collapse: collapse;
     background-color: #1c1c1c;
@@ -162,12 +160,11 @@ body {
 #change_promotion_image {
     width: 100%;
     position: center;
-    border: 2px solid #ffffff;
+    border: 3px solid #ffffff;
     border-radius: 2px;
     box-shadow:
-        0 0 5px #ffffff,
-        0 0 10px #00c9ff,
-        0 0 15px #00c9ff;
+        0 0 2.5px #ffffff,
+        0 0 5px 5px #00c9ff;
         
     border-collapse: collapse;
 }
@@ -206,12 +203,11 @@ body {
 #change_division_image {
     width: 100%;
     position: center;
-    border: 2px solid #ffffff;
+    border: 3px solid #ffffff;
     border-radius: 2px;
     box-shadow:
-        0 0 5px #ffffff,
-        0 0 10px #00c9ff,
-        0 0 15px #00c9ff;
+        0 0 2.5px #ffffff,
+        0 0 5px 5px #00c9ff;
         
     border-collapse: collapse;
 }
@@ -250,12 +246,11 @@ body {
 #promotion_prerequisites_image {
     width: 100%;
     position: center;
-    border: 2px solid #ffffff;
+    border: 3px solid #ffffff;
     border-radius: 2px;
     box-shadow:
-        0 0 5px #ffffff,
-        0 0 10px #00c9ff,
-        0 0 15px #00c9ff;
+        0 0 2.5px #ffffff,
+        0 0 5px 5px #00c9ff;
         
     border-collapse: collapse;
 }
@@ -294,12 +289,11 @@ body {
 #promotion_exams_image {
     width: 100%;
     position: center;
-    border: 2px solid #ffffff;
+    border: 3px solid #ffffff;
     border-radius: 2px;
     box-shadow:
-        0 0 5px #ffffff,
-        0 0 10px #00c9ff,
-        0 0 15px #00c9ff;
+        0 0 2.5px #ffffff,
+        0 0 5px 5px #00c9ff;
         
     border-collapse: collapse;
 }
@@ -320,12 +314,11 @@ body {
 
 #rank_information_image {
     position: center;
-    border: 2px solid #ffffff;
-    border-radius: 2.5px;
+    border: 3px solid #ffffff;
+    border-radius: 2px;
     box-shadow:
-        0 0 1px 2px #ffffff,
-        0 0 2px 4px #00c9ff,
-        0 0 10px 10px #00c9ff;
+        0 0 2.5px #ffffff,
+        0 0 5px 5px #00c9ff;
 
     border-collapse: collapse;
 }
@@ -342,12 +335,11 @@ body {
         0 0 15px #ff0015,
         0 0 20px #ff0015;
 
-    border: 2px solid #ffffff;
-    border-radius: 2.5px;
+    border: 3px solid #ffffff;
+    border-radius: 2px;
     box-shadow:
-        0 0 2.5px 1px #ffffff,
-        0 0 5px 4px #00c9ff,
-        0 0 10px 10px #00c9ff;
+        0 0 2.5px #ffffff,
+        0 0 5px 5px #00c9ff;
 
     border-collapse: collapse;
     background-color: #1c1c1c;
@@ -365,12 +357,11 @@ body {
 }
 
 #rank_information_collapse {
-    border: 2px solid #ffffff;
-    border-radius: 2.5px;
+    border: 3px solid #ffffff;
+    border-radius: 2px;
     box-shadow:
-        0 0 2.5px 1px #ffffff,
-        0 0 5px 4px #00c9ff;
-        /* 0 0 10px 10px #00c9ff; */
+        0 0 2.5px #ffffff,
+        0 0 5px 5px #00c9ff;
 
     border-collapse: collapse;
     opacity: 98%;
@@ -561,12 +552,12 @@ body {
 
 #rank_0_unit_card {
     border: 2px solid #ffffff;
-    border-radius: 2.5px;
+    border-radius: 2px;
     margin: 1%;
 }
 #rank_0_unit_card:hover {
     border: 2px solid #ffffff;
-    border-radius: 2.5px;
+    border-radius: 2px;
     box-shadow:
         0 0 10px #1c1c1c,
         0 0 15px #ffffff,
@@ -593,12 +584,12 @@ body {
 
 #combat_unit_card {
     border: 2px solid #b60031;
-    border-radius: 2.5px;
+    border-radius: 2px;
     margin: 1%;
 }
 #combat_unit_card:hover {
     border: 2px solid #ffffff;
-    border-radius: 2.5px;
+    border-radius: 2px;
     box-shadow:
         0 0 10px #ffffff,
         0 0 15px #b60031,
@@ -625,12 +616,12 @@ body {
 
 #engineer_unit_card {
     border: 2px solid #ff7042;
-    border-radius: 2.5px;
+    border-radius: 2px;
     margin: 1%;
 }
 #engineer_unit_card:hover {
     border: 2px solid #ffffff;
-    border-radius: 2.5px;
+    border-radius: 2px;
     box-shadow:
         0 0 10px #ffffff,
         0 0 15px #ff7042,
@@ -657,12 +648,12 @@ body {
 
 #medical_unit_card {
     border: 2px solid #4285f4;
-    border-radius: 2.5px;
+    border-radius: 2px;
     margin: 1%;
 }
 #medical_unit_card:hover {
     border: 2px solid #ffffff;
-    border-radius: 2.5px;
+    border-radius: 2px;
     box-shadow:
         0 0 10px #ffffff,
         0 0 15px #4285f4,
@@ -689,12 +680,12 @@ body {
 
 #leadership_unit_card {
     border: 2px solid #d6b44c;
-    border-radius: 2.5px;
+    border-radius: 2px;
     margin: 1%;
 }
 #leadership_unit_card:hover {
     border: 2px solid #ffffff;
-    border-radius: 2.5px;
+    border-radius: 2px;
     box-shadow:
         0 0 10px #ffffff,
         0 0 15px #d6b44c,
@@ -730,7 +721,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     
     border: 2px solid #ffffff;
-    border-radius: 2.5px;
+    border-radius: 2px;
     box-shadow:
         0 0 10px #ffffff,
         0 0 15px #ffffff,
@@ -741,7 +732,7 @@ body {
 }
 #rank_0_collapse {
     border: 2px solid #ffffff;
-    border-radius: 2.5px;
+    border-radius: 2px;
     box-shadow:
         0 0 10px #ffffff,
         0 0 15px #ffffff,
@@ -765,7 +756,8 @@ body {
     border-collapse: collapse;
     background-color: #1c1c1c;
     /* background-image: url("background6.jpeg"); */
-    background-image: url("logo_background.jpeg");
+    /* background-image: url("logo_background.jpeg"); */
+    background-image: url("logo_faded.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -789,7 +781,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     
     border: 2px solid #ffffff;
-    border-radius: 2.5px;
+    border-radius: 2px;
     box-shadow:
         0 0 10px #ffffff,
         0 0 15px #b60031,
@@ -801,7 +793,7 @@ body {
 }
 #combat_collapse {
     border: 2px solid #ffffff;
-    border-radius: 2.5px;
+    border-radius: 2px;
     box-shadow:
         0 0 10px #ffffff,
         0 0 15px #b60031,
@@ -824,7 +816,8 @@ body {
 
     border-collapse: collapse;
     background-color: #1c1c1c;
-    background-image: url("logo_background.jpeg");
+    /* background-image: url("logo_background.jpeg"); */
+    background-image: url("logo_faded.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -837,7 +830,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     
     border: 2px solid #ffffff;
-    border-radius: 2.5px;
+    border-radius: 2px;
     box-shadow:
         0 0 10px #ffffff,
         0 0 15px #ff7042,
@@ -849,7 +842,7 @@ body {
 }
 #engineer_collapse {
     border: 2px solid #ffffff;
-    border-radius: 2.5px;
+    border-radius: 2px;
     box-shadow:
         0 0 10px #ffffff,
         0 0 15px #ff7042,
@@ -872,7 +865,8 @@ body {
 
     border-collapse: collapse;
     background-color: #1c1c1c;
-    background-image: url("logo_background.jpeg");
+    /* background-image: url("logo_background.jpeg"); */
+    background-image: url("logo_faded.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -885,7 +879,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     
     border: 2px solid #ffffff;
-    border-radius: 2.5px;
+    border-radius: 2px;
     box-shadow:
         0 0 10px #ffffff,
         0 0 15px #4285f4,
@@ -897,7 +891,7 @@ body {
 }
 #medic_collapse {
     border: 2px solid #ffffff;
-    border-radius: 2.5px;
+    border-radius: 2px;
     box-shadow:
         0 0 10px #ffffff,
         0 0 15px #4285f4,
@@ -920,7 +914,8 @@ body {
 
     border-collapse: collapse;
     background-color: #1c1c1c;
-    background-image: url("logo_background.jpeg");
+    /* background-image: url("logo_background.jpeg"); */
+    background-image: url("logo_faded.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -933,7 +928,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     
     border: 2px solid #ffffff;
-    border-radius: 2.5px;
+    border-radius: 2px;
     box-shadow:
         0 0 10px #ffffff,
         0 0 15px #d6b44c,
@@ -945,7 +940,7 @@ body {
 }
 #leadership_collapse {
     border: 2px solid #ffffff;
-    border-radius: 2.5px;
+    border-radius: 2px;
     box-shadow:
         0 0 10px #ffffff,
         0 0 15px #d6b44c,
@@ -968,7 +963,8 @@ body {
 
     border-collapse: collapse;
     background-color: #1c1c1c;
-    background-image: url("logo_background.jpeg");
+    /* background-image: url("logo_background.jpeg"); */
+    background-image: url("logo_faded.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -986,7 +982,11 @@ body {
     font-weight: bold;
     font-family: 'Allerta Stencil', sans-serif;
     /* background-color: #1c1c1c; */
-    background-image: url("background2_0.png");
+    /* background-image: url("background2_0.png"); */
+    background-image: url("collapse_background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 #rank_prerequisites_text {
     color: #ffffff;
