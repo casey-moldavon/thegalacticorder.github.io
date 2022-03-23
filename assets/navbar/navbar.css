@@ -57,7 +57,7 @@
 #fa_nav_icon_square {
     color: #ff0015;
     margin-right: 5px;
-    font-size: 19.5px;
+    font-size: 17.5px;
     border-radius: 7px;
     padding: 4px;
 }
@@ -65,7 +65,7 @@
 #fa_nav_icon_round {
     color: #ff0015;
     margin-right: 5px;
-    font-size: 19.5px;
+    font-size: 17.5px;
     border-radius: 15px;
     padding: 4px;
 }
@@ -76,7 +76,7 @@
     color: #ffffff;
     /* font-family: 'Fanwood Text', serif; */
         font-family: 'Montserrat', sans-serif;
-    font-size: 19.7px;
+    font-size: 17.7px;
     border: 3px solid;
     border-radius: 15px;
     background-color: #202124;
@@ -99,7 +99,7 @@
 
 #navbarDropdown1 {
     color: #ffffff;
-    font-size: 19.5px;
+    font-size: 17.5px;
     /* font-family: 'Fanwood Text', serif; */
         font-family: 'Montserrat', sans-serif;
 }
@@ -107,7 +107,7 @@
     text-shadow:
         0 0 10px #00c9ff,
         0 0 15px #00c9ff;
-    font-size: 19.7px;
+    font-size: 17.7px;
 }
 #navbarDropdown1:hover #fa_nav_icon_round {
     color: #ffffff;
@@ -123,7 +123,7 @@
 
 #navbarDropdown2 {
     color: #ffffff;
-    font-size: 19.5px;
+    font-size: 17.5px;
     /* font-family: 'Fanwood Text', serif; */
         font-family: 'Montserrat', sans-serif;
 }
@@ -131,7 +131,7 @@
     text-shadow:
         0 0 10px #00c9ff,
         0 0 15px #00c9ff;
-    font-size: 19.7px;
+    font-size: 17.7px;
 }
 #navbarDropdown2:hover #fa_nav_icon_round {
     color: #ffffff;
@@ -147,7 +147,7 @@
 
 #navbarDropdown3 {
     color: #ffffff;
-    font-size: 19.5px;
+    font-size: 17.5px;
     /* font-family: 'Fanwood Text', serif; */
         font-family: 'Montserrat', sans-serif;
 }
@@ -155,7 +155,7 @@
     text-shadow:
         0 0 10px #00c9ff,
         0 0 15px #00c9ff;
-    font-size: 19.7px;
+    font-size: 17.7px;
 }
 #navbarDropdown3:hover #fa_nav_icon_square {
     color: #ffffff;
@@ -171,7 +171,7 @@
 
 #navbarDropdown4 {
     color: #ffffff;
-    font-size: 19.5px;
+    font-size: 17.5px;
     /* font-family: 'Fanwood Text', serif; */
         font-family: 'Montserrat', sans-serif;
 }
@@ -179,7 +179,7 @@
     text-shadow:
         0 0 10px #00c9ff,
         0 0 15px #00c9ff;
-    font-size: 19.7px;
+    font-size: 17.7px;
 }
 #navbarDropdown4:hover #fa_nav_icon_square {
     color: #ffffff;
@@ -195,7 +195,7 @@
 
 #navbarDropdown5 {
     color: #ffffff;
-    font-size: 19.5px;
+    font-size: 17.5px;
     /* font-family: 'Fanwood Text', serif; */
         font-family: 'Montserrat', sans-serif;
 }
@@ -203,7 +203,7 @@
     text-shadow:
         0 0 10px #00c9ff,
         0 0 15px #00c9ff;
-    font-size: 19.7px;
+    font-size: 17.7px;
 }
 #navbarDropdown5:hover #fa_nav_icon_round {
     color: #ffffff;
@@ -221,7 +221,7 @@
 /* non-dropdown navbar links */
 #navbar_calendar {
     color: #ffffff;
-    font-size: 19.5px;
+    font-size: 17.5px;
     /* font-family: 'Fanwood Text', serif; */
         font-family: 'Montserrat', sans-serif;
 }
@@ -229,7 +229,7 @@
     text-shadow:
         0 0 10px #00c9ff,
         0 0 15px #00c9ff;
-    font-size: 19.7px;
+    font-size: 17.7px;
 }
 #navbar_calendar:hover #fa_nav_icon_square {
     color: #ffffff;
@@ -245,7 +245,7 @@
 
 #navbar_contact_us {
     color: #ffffff;
-    font-size: 19.5px;
+    font-size: 17.5px;
     /* font-family: 'Fanwood Text', serif; */
         font-family: 'Montserrat', sans-serif;
 }
@@ -253,7 +253,7 @@
     text-shadow:
         0 0 10px #00c9ff,
         0 0 15px #00c9ff;
-    font-size: 19.7px;
+    font-size: 17.7px;
 }
 #navbar_contact_us:hover #fa_nav_icon_square {
     color: #ffffff;
@@ -269,7 +269,7 @@
 
 #navbar_resources {
     color: #ffffff;
-    font-size: 19.5px;
+    font-size: 17.5px;
     /* font-family: 'Fanwood Text', serif; */
         font-family: 'Montserrat', sans-serif;
 }
@@ -277,7 +277,7 @@
     text-shadow:
         0 0 10px #00c9ff,
         0 0 15px #00c9ff;
-    font-size: 19.7px;
+    font-size: 17.7px;
 }
 #navbar_resources:hover #fa_nav_icon_round {
     color: #ffffff;

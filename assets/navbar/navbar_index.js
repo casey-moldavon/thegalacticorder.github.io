@@ -26,7 +26,7 @@ var navbar = `
             
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <ul class="navbar-nav">
 
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" id="navbarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
