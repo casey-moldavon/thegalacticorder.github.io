@@ -38,12 +38,12 @@ body {
     background-position: center;
 
     background-color: rgb(28, 28, 28, 0.75);
-    max-height: 70vh;
+    max-height: 87vh;
     overflow-y: auto;
 }
 
 #rank_change_info_container {
-    margin-top: 175px;
+    margin-top: 65px;
 }
 
 #rank_change_title_text {
