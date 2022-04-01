@@ -12,7 +12,7 @@ var sign_in = `
                 </a>
             </div>
             
-            <div class="modal-body">
+            <div id="modal_body" class="modal-body">
     
                 <form>
                 <div class="form-group">

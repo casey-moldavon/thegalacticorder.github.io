@@ -117,7 +117,6 @@
     
     text-shadow:
         0 0 5px #00c9ff,
-        0 0 10px #00c9ff,
         0 0 20px #00c9ff;
 }
 
@@ -188,6 +187,11 @@
         0 0 20px #ff0015;
 }
 
+#modal_body {
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-bottom: 25px;
+}
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Navbar Items ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
