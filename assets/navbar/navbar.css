@@ -71,10 +71,12 @@
 
 /* dropdown navbar links */
 
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Sign In ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
 #sign_in_link {
     color: #ffffff;
     /* font-family: 'Fanwood Text', serif; */
-        font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 17.7px;
     border: 3px solid;
     border-radius: 15px;
@@ -95,6 +97,99 @@
     background-color: #ff0015;
 }
 
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Sign in Modal ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+#sign_in_modal {
+    border: 4px solid #ffffff;
+    border-radius: 2px;
+    box-shadow:
+        0 0 5px #ffffff,
+        0 0 10px 7px #00c9ff;
+
+    border-collapse: collapse;
+    background-color: #202124;
+}
+
+#sign_in_text {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Allerta Stencil', sans-serif;
+    
+    text-shadow:
+        0 0 5px #00c9ff,
+        0 0 10px #00c9ff,
+        0 0 20px #00c9ff;
+}
+
+#sign_up_button {
+    color: #ffffff;
+    /* font-family: 'Fanwood Text', serif; */
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17.7px;
+    border: 3px solid;
+    border-radius: 12px;
+    padding: 7px;
+    background-color: #202124;
+}
+#sign_up_button:hover {
+    color: #ffffff;
+    font-size: 17.7px;
+    text-shadow:
+        0 0 10px #00c9ff,
+        0 0 15px #00c9ff;
+    box-shadow: 0 0 10px #ffffff;
+    border: 3px solid #ffffff;
+}
+#sign_up_button:hover #fa_nav_icon_square {
+    color: #ffffff;
+    box-shadow: 0 1px 42px #ff0015;
+    background-color: #ff0015;
+}
+
+
+#sign_in_button {
+    color: #ffffff;
+    /* font-family: 'Fanwood Text', serif; */
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17.7px;
+    border: 3px solid;
+    border-radius: 12px;
+    padding: 7px;
+    background-color: #202124;
+}
+#sign_in_button:hover {
+    color: #ffffff;
+    font-size: 17.7px;
+    text-shadow:
+        0 0 10px #00c9ff,
+        0 0 15px #00c9ff;
+    box-shadow: 0 0 10px #ffffff;
+    border: 3px solid #ffffff;
+}
+#sign_in_button:hover #fa_nav_icon_square {
+    color: #ffffff;
+    box-shadow: 0 1px 42px #ff0015;
+    background-color: #ff0015;
+}
+
+
+#sign_in_modal_close_button {
+    color: #ff0015;
+    font-size: 40px;
+    text-shadow:
+        0 0 5px #b60031;
+}
+#sign_in_modal_close_button:hover {
+    color: #ffffff;
+    text-shadow:
+        0 0 5px #ffffff,
+        0 0 10px #ff0015,
+        0 0 15px #ff0015,
+        0 0 20px #ff0015;
+}
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Navbar Items ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 #navbarDropdown1 {
     color: #ffffff;

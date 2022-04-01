@@ -1,4 +1,5 @@
 var navbar = `
+
 <nav id="navbar_full" class="navbar navbar-expand-lg navbar-dark bg-dark">
 <div class="container-fluid">
 
@@ -12,8 +13,10 @@ var navbar = `
 
     </div>
 
-    <a id="sign_in_link" class="nav-link" href="#"><i id="fa_nav_icon_square" class="fa-solid fa-right-to-bracket"></i>Sign-in</a>
-    
+    <a id="sign_in_link" class="nav-link" type="button" data-bs-toggle="modal" data-bs-target="#signInModal">
+        <i id="fa_nav_icon_square" class="fa-solid fa-right-to-bracket"></i>Sign-in
+    </a>
+
 </div>
 </nav>
     
