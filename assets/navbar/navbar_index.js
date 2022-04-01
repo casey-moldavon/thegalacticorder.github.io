@@ -24,7 +24,7 @@ var navbar = `
         <span class="navbar-toggler-icon"></span>
     </button>
             
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <div class="collapse navbar-collapse justify-content-center text-center" id="navbarSupportedContent">
                 
         <ul class="navbar-nav">
 
@@ -108,7 +108,6 @@ var navbar = `
             <li class="nav-item">
                 <a id="navbar_contact_us" class="nav-link" href="pages/7_contact_us.html"><i id="fa_nav_icon_square" class="fa-solid fa-square-envelope"></i>Join Today!</a>
             </li>
-
         </ul>
     </div>
 </div>
