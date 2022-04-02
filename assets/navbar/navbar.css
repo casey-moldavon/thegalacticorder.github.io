@@ -22,10 +22,7 @@
 }
 
 #tgo_logo:hover {
-    width: 100.7px;
-    height: 100.7px;
     border: 3px solid #ffffff;
-    border-radius: 60px;
     box-shadow:
         0 0 2.5px 2px #ffffff,
         0 0 10px 5px #ff0015,
@@ -77,7 +74,7 @@
     color: #ffffff;
     /* font-family: 'Fanwood Text', serif; */
     font-family: 'Montserrat', sans-serif;
-    font-size: 17.7px;
+    font-size: 17.5px;
     border: 3px solid;
     border-radius: 15px;
     background-color: #202124;
@@ -124,7 +121,7 @@
     color: #ffffff;
     /* font-family: 'Fanwood Text', serif; */
     font-family: 'Montserrat', sans-serif;
-    font-size: 17.7px;
+    font-size: 17.5px;
     border: 3px solid;
     border-radius: 12px;
     padding: 7px;
@@ -132,7 +129,7 @@
 }
 #sign_up_button:hover {
     color: #ffffff;
-    font-size: 17.7px;
+    font-size: 17.5px;
     text-shadow:
         0 0 10px #00c9ff,
         0 0 15px #00c9ff;
@@ -150,7 +147,7 @@
     color: #ffffff;
     /* font-family: 'Fanwood Text', serif; */
     font-family: 'Montserrat', sans-serif;
-    font-size: 17.7px;
+    font-size: 17.5px;
     border: 3px solid;
     border-radius: 12px;
     padding: 7px;
@@ -158,7 +155,7 @@
 }
 #sign_in_button:hover {
     color: #ffffff;
-    font-size: 17.7px;
+    font-size: 17.5px;
     text-shadow:
         0 0 10px #00c9ff,
         0 0 15px #00c9ff;
@@ -199,13 +196,21 @@
     color: #ffffff;
     font-size: 17.5px;
     /* font-family: 'Fanwood Text', serif; */
-        font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 15px;
+    border: 2px solid rgb(28, 28, 28, 0.01);
+    
 }
 #navbarDropdown1:hover {
     text-shadow:
         0 0 10px #00c9ff,
         0 0 15px #00c9ff;
-    font-size: 17.7px;
+    font-size: 17.5px;
+    border: 2px solid #ffffff;
+    border-radius: 15px;
+    box-shadow: 
+        0 0 5px #ffffff,
+        0 0 10px #00c9ff;
 }
 #navbarDropdown1:hover #fa_nav_icon_round {
     color: #ffffff;
@@ -223,13 +228,20 @@
     color: #ffffff;
     font-size: 17.5px;
     /* font-family: 'Fanwood Text', serif; */
-        font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 15px;
+    border: 2px solid rgb(28, 28, 28, 0.01);
 }
 #navbarDropdown2:hover {
     text-shadow:
         0 0 10px #00c9ff,
         0 0 15px #00c9ff;
-    font-size: 17.7px;
+    font-size: 17.5px;
+    border: 2px solid #ffffff;
+    border-radius: 15px;
+    box-shadow: 
+        0 0 5px #ffffff,
+        0 0 10px #00c9ff;
 }
 #navbarDropdown2:hover #fa_nav_icon_round {
     color: #ffffff;
@@ -247,13 +259,20 @@
     color: #ffffff;
     font-size: 17.5px;
     /* font-family: 'Fanwood Text', serif; */
-        font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 15px;
+    border: 2px solid rgb(28, 28, 28, 0.01);
 }
 #navbarDropdown3:hover {
     text-shadow:
         0 0 10px #00c9ff,
         0 0 15px #00c9ff;
-    font-size: 17.7px;
+    font-size: 17.5px;
+    border: 2px solid #ffffff;
+    border-radius: 15px;
+    box-shadow: 
+        0 0 5px #ffffff,
+        0 0 10px #00c9ff;
 }
 #navbarDropdown3:hover #fa_nav_icon_square {
     color: #ffffff;
@@ -271,13 +290,20 @@
     color: #ffffff;
     font-size: 17.5px;
     /* font-family: 'Fanwood Text', serif; */
-        font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 15px;
+    border: 2px solid rgb(28, 28, 28, 0.01);
 }
 #navbarDropdown4:hover {
     text-shadow:
         0 0 10px #00c9ff,
         0 0 15px #00c9ff;
-    font-size: 17.7px;
+    font-size: 17.5px;
+    border: 2px solid #ffffff;
+    border-radius: 15px;
+    box-shadow: 
+        0 0 5px #ffffff,
+        0 0 10px #00c9ff;
 }
 #navbarDropdown4:hover #fa_nav_icon_square {
     color: #ffffff;
@@ -295,13 +321,20 @@
     color: #ffffff;
     font-size: 17.5px;
     /* font-family: 'Fanwood Text', serif; */
-        font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 15px;
+    border: 2px solid rgb(28, 28, 28, 0.01);
 }
 #navbarDropdown5:hover {
     text-shadow:
         0 0 10px #00c9ff,
         0 0 15px #00c9ff;
-    font-size: 17.7px;
+    font-size: 17.5px;
+    border: 2px solid #ffffff;
+    border-radius: 15px;
+    box-shadow: 
+        0 0 5px #ffffff,
+        0 0 10px #00c9ff;
 }
 #navbarDropdown5:hover #fa_nav_icon_round {
     color: #ffffff;
@@ -321,13 +354,20 @@
     color: #ffffff;
     font-size: 17.5px;
     /* font-family: 'Fanwood Text', serif; */
-        font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 15px;
+    border: 2px solid rgb(28, 28, 28, 0.01);
 }
 #navbar_calendar:hover {
     text-shadow:
         0 0 10px #00c9ff,
         0 0 15px #00c9ff;
-    font-size: 17.7px;
+    font-size: 17.5px;
+    border: 2px solid #ffffff;
+    border-radius: 15px;
+    box-shadow: 
+        0 0 5px #ffffff,
+        0 0 10px #00c9ff;
 }
 #navbar_calendar:hover #fa_nav_icon_square {
     color: #ffffff;
@@ -345,13 +385,20 @@
     color: #ffffff;
     font-size: 17.5px;
     /* font-family: 'Fanwood Text', serif; */
-        font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 15px;
+    border: 2px solid rgb(28, 28, 28, 0.01);
 }
 #navbar_contact_us:hover {
     text-shadow:
         0 0 10px #00c9ff,
         0 0 15px #00c9ff;
-    font-size: 17.7px;
+    font-size: 17.5px;
+    border: 2px solid #ffffff;
+    border-radius: 15px;
+    box-shadow: 
+        0 0 5px #ffffff,
+        0 0 10px #00c9ff;
 }
 #navbar_contact_us:hover #fa_nav_icon_square {
     color: #ffffff;
@@ -369,13 +416,20 @@
     color: #ffffff;
     font-size: 17.5px;
     /* font-family: 'Fanwood Text', serif; */
-        font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 15px;
+    border: 2px solid rgb(28, 28, 28, 0.01);
 }
 #navbar_resources:hover {
     text-shadow:
         0 0 10px #00c9ff,
         0 0 15px #00c9ff;
-    font-size: 17.7px;
+    font-size: 17.5px;
+    border: 2px solid #ffffff;
+    border-radius: 15px;
+    box-shadow: 
+        0 0 5px #ffffff,
+        0 0 10px #00c9ff;
 }
 #navbar_resources:hover #fa_nav_icon_round {
     color: #ffffff;
