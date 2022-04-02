@@ -5,7 +5,7 @@ var sign_in = `
         <div id="sign_in_modal" class="modal-content">
             <div class="modal-header">
 
-                <p class="modal-title" id="sign_in_text">Sign-In/Sign-up <a id="leadership_note">(Officers Only)</a> </p>
+                <p class="modal-title" id="sign_in_text">Sign-In <a id="leadership_note">(Officers Only)</a> </p>
     
                 <a type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
                     <i id="sign_in_modal_close_button" class="fa-solid fa-square-xmark"></i>
