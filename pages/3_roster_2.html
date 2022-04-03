@@ -30,25 +30,132 @@
 <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Navbar End ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
 
-<div id="full_roster_container" class="container-md container-fluid">
+<div id="full_roster_container" class="container container-fluid">
 
-    <div id="full_roster_title" class="container-fluid text-center">
-        FULL ROSTER (PAGE UNDER CONSTRUCTION)
+    <div id="full_roster_title" class="container text-center">
+        FULL ROSTER
     </div>
+
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Leadership Division Start ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <div class="container container-fluid">
+
+        <button id="leadership_division_button" type="button" data-bs-toggle="collapse" data-bs-target="#leadership_division_dropdown" aria-expanded="false" aria-controls="leadership_division_dropdown">
+            Leadership Division Members
+        </button>
         
-    <div id="full_roster_image_container" class="container-sm">
-        <img id="full_roster_image" class="img-fluid" src="../assets/images/hotdog2.jpeg" alt="Under Construction Image">
-    </div>
+        <div class="collapse" id="leadership_division_dropdown">
+            <div class="container container-fluid row">
     
+                <div id="leadership_card" class="card text-center bg-dark" type="button" data-bs-toggle="modal" data-bs-target="#captain">
+                    <img id="card_image" src="../assets/ranks/badges/5-admiral.png" class="card-img-top">
+                    <ul class="list-group list-group-flush">
+                        <li id="leadership_card_text" class="list-group-item bg-dark">Captain Cr4zy</li>
+                    </ul>
+                </div>
 
-    <!-- hidden container to adjust accordion width -->
-    <div id="full_roster_hidden_container" class="container-md container-fluid">
+            </div>
 
-        <div id="full_roster_collapse" class="accordion accordion-flush">
+
+
+
+
 
         </div>
+
     </div>
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Leadership Division End ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Combat Division Start ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <div id="combat_division_container" class="container container-fluid">
+
+        <button id="combat_division_button" type="button" data-bs-toggle="collapse" data-bs-target="#combat_division_dropdown" aria-expanded="false" aria-controls="combat_division_dropdown">
+            Combat Division Members
+        </button>
+        
+        <div class="collapse" id="combat_division_dropdown">
+            <div id="combat_division_members" class="card card-body">
+
+
+
+
+
+
+            </div>
+        </div>
+
+    </div>
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Combat Division End ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+
+
+
 </div>
+
+
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Test Modal ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+    <div class="modal fade" id="captain" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+
+            <div class="container container-fluid">
+                <div id="leadership_modal" class="modal-content">
+
+                    <div id="leadership_name" class="container text-center">
+                        <p>Cosmo "Cr4zy" Remington</p>
+                        <p id="leadership_note">Captain CR4ZY#3241</p>
+                    </div>
+
+                    <!-- <img id="leadership_modal_image" src="../assets/ranks/units/rank_0_conscript.png" alt="Conscript Image"> -->
+                    
+                    <div id="accordion_container" class="container row">
+
+                        <div class="accordion accordion-flush">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button id="modal_collapse_button" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                        Description
+                                    </button>
+                                </h2>
+            
+                                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne">
+                                    <div id="modal_collapse_text" class="accordion-body">
+            
+                                        <div class="container-fluid text-start">
+                                            <p>Acting much like a contracted mercenary, Conscripts operate outside the official ranks of The Galactic Order military. They have no restrictions to the rules and regulations with regards to attire, responsibilities and command. However, this also means they hold no authority in the chain of command and receive no benefits or unit allowances. Conscripts are often hired under a general contract with very specific parameters based on a percentage of funds earned upon completion of assisted missions and tasks.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     <script src="../assets/navbar/navbar.js"></script>
