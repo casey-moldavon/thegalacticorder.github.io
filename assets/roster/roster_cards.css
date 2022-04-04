@@ -10,7 +10,7 @@
         0 0 15px #ff0015,
         0 0 20px #ff0015;
 
-    border: 3px solid #ffffff;
+    border: 2px solid #ffffff;
     border-radius: 2px;
     box-shadow:
         0 0 2.5px #ffffff,
@@ -48,11 +48,11 @@
     font-weight: bold;
     font-family: 'Allerta Stencil', sans-serif;
     text-shadow:
-        0 0 15px #d6b44c,
+        0 0 1px #1c1c1c,
         0 0 20px #d6b44c;
 
-    border: 3px solid #ffffff;
-    border-radius: 5px;
+    border: 2px solid #d6b44c;
+    border-radius: 2.5px;
 
     padding: 15px;
     width: 300px;
@@ -65,8 +65,8 @@
         0 0 15px #00c9ff,
         0 0 20px #00c9ff;
     
-    border: 3px solid #ffffff;
-    border-radius: 5px;
+    border: 2px solid #ffffff;
+    border-radius: 2.5px;
     box-shadow:
         0 0 10px #ffffff,
         0 0 15px #d6b44c,
@@ -79,15 +79,20 @@
 }
 /* ~~~~~~~~~~~~~~~~~~~~ Leadership Card Start ~~~~~~~~~~~~~~~~~~~~ */
 #leadership_card {
-    border: 3px solid #ffffff;
-    border-radius: 5px;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Allerta Stencil', sans-serif;
+
+    border: 2px solid #d6b44c;
+    border-radius: 2.5px;
     background-color: #1c1c1c;
     margin-top: 10px;
     margin-right: 10px;
     width: 375px;
 }
 #leadership_card:hover {
-    border: 3px solid #ffffff;
+    border: 2px solid #ffffff;
     box-shadow:
         0 0 10px #ffffff,
         0 0 15px #d6b44c,
@@ -113,11 +118,11 @@
     font-weight: bold;
     font-family: 'Allerta Stencil', sans-serif;
     text-shadow:
-        0 0 15px #b60031,
+        0 0 1px #1c1c1c,
         0 0 20px #b60031;
 
-    border: 3px solid #ffffff;
-    border-radius: 5px;
+    border: 2px solid #b60031;
+    border-radius: 2.5px;
 
     padding: 5px;
     width: 300px;
@@ -130,8 +135,8 @@
         0 0 15px #00c9ff,
         0 0 20px #00c9ff;
 
-    border: 3px solid #ffffff;
-    border-radius: 5px;
+    border: 2px solid #ffffff;
+    border-radius: 2.5px;
     box-shadow:
         0 0 10px #ffffff,
         0 0 15px #b60031,
@@ -144,15 +149,19 @@
 }
 /* ~~~~~~~~~~~~~~~~~~~~ Combat Card Start ~~~~~~~~~~~~~~~~~~~~ */
 #combat_card {
-    border: 3px solid #ffffff;
-    border-radius: 5px;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Allerta Stencil', sans-serif;
+
+    border: 2px solid #b60031;
+    border-radius: 2.5px;
     background-color: #1c1c1c;
     margin-top: 10px;
     margin-right: 10px;
-    width: 295px;
 }
 #combat_card:hover {
-    border: 3px solid #ffffff;
+    border: 2px solid #ffffff;
     box-shadow:
         0 0 10px #ffffff,
         0 0 15px #b60031,
@@ -176,11 +185,11 @@
     font-weight: bold;
     font-family: 'Allerta Stencil', sans-serif;
     text-shadow:
-        0 0 15px #ff7042,
+        0 0 1px #1c1c1c,
         0 0 20px #ff7042;
 
-    border: 3px solid #ffffff;
-    border-radius: 5px;
+    border: 2px solid #ff7042;
+    border-radius: 2.5px;
 
     padding: 5px;
     width: 300px;
@@ -193,8 +202,8 @@
         0 0 15px #00c9ff,
         0 0 20px #00c9ff;
 
-    border: 3px solid #ffffff;
-    border-radius: 5px;
+    border: 2px solid #ffffff;
+    border-radius: 2.5px;
     box-shadow:
         0 0 10px #ffffff,
         0 0 15px #ff7042,
@@ -207,15 +216,19 @@
 }
 /* ~~~~~~~~~~~~~~~~~~~~ Engineer Card Start ~~~~~~~~~~~~~~~~~~~~ */
 #engineer_card {
-    border: 3px solid #ffffff;
-    border-radius: 5px;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Allerta Stencil', sans-serif;
+
+    border: 2px solid #ff7042;
+    border-radius: 2.5px;
     background-color: #1c1c1c;
     margin-top: 10px;
     margin-right: 10px;
-    width: 295px;
 }
 #engineer_card:hover {
-    border: 3px solid #ffffff;
+    border: 2px solid #ffffff;
     box-shadow:
         0 0 10px #ffffff,
         0 0 15px #ff7042,
@@ -239,11 +252,11 @@
     font-weight: bold;
     font-family: 'Allerta Stencil', sans-serif;
     text-shadow:
-        0 0 15px #4285f4,
+        0 0 1px #1c1c1c,
         0 0 20px #4285f4;
 
-    border: 3px solid #ffffff;
-    border-radius: 5px;
+    border: 2px solid #4285f4;
+    border-radius: 2.5px;
 
     padding: 5px;
     width: 300px;
@@ -256,8 +269,8 @@
         0 0 15px #00c9ff,
         0 0 20px #00c9ff;
 
-    border: 3px solid #ffffff;
-    border-radius: 5px;
+    border: 2px solid #ffffff;
+    border-radius: 2.5px;
     box-shadow:
         0 0 10px #ffffff,
         0 0 15px #4285f4,
@@ -270,15 +283,19 @@
 }
 /* ~~~~~~~~~~~~~~~~~~~~ Medical Card Start ~~~~~~~~~~~~~~~~~~~~ */
 #medical_card {
-    border: 3px solid #ffffff;
-    border-radius: 5px;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Allerta Stencil', sans-serif;
+
+    border: 2px solid #4285f4;
+    border-radius: 2.5px;
     background-color: #1c1c1c;
     margin-top: 10px;
     margin-right: 10px;
-    width: 295px;
 }
 #medical_card:hover {
-    border: 3px solid #ffffff;
+    border: 2px solid #ffffff;
     box-shadow:
         0 0 10px #ffffff,
         0 0 15px #4285f4,
@@ -302,11 +319,11 @@
     font-weight: bold;
     font-family: 'Allerta Stencil', sans-serif;
     text-shadow:
-        0 0 10px #00c9ff,
+        0 0 1px #1c1c1c,
         0 0 15px #ffffff;
 
-    border: 3px solid #ffffff;
-    border-radius: 5px;
+    border: 2px solid #ffffff;
+    border-radius: 2.5px;
 
     padding: 5px;
     width: 300px;
@@ -319,8 +336,8 @@
         0 0 15px #00c9ff,
         0 0 20px #00c9ff;
 
-    border: 3px solid #ffffff;
-    border-radius: 5px;
+    border: 2px solid #ffffff;
+    border-radius: 2.5px;
     box-shadow:
         0 0 10px #ffffff,
         0 0 15px #00c9ff,
@@ -333,15 +350,19 @@
 }
 /* ~~~~~~~~~~~~~~~~~~~~ Novitiate Card Start ~~~~~~~~~~~~~~~~~~~~ */
 #novitiate_card {
-    border: 3px solid #ffffff;
-    border-radius: 5px;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Allerta Stencil', sans-serif;
+    
+    border: 2px solid #ffffff;
+    border-radius: 2.5px;
     background-color: #1c1c1c;
     margin-top: 10px;
     margin-right: 10px;
-    width: 295px;
 }
 #novitiate_card:hover {
-    border: 3px solid #ffffff;
+    border: 2px solid #ffffff;
     box-shadow:
         0 0 10px #ffffff,
         0 0 15px #00c9ff,
@@ -363,8 +384,8 @@
     border-radius: 15px;
     padding: 4px;
 }
-#card_image {
-    width: 200px;
-    margin-left: -11px;
+#card_text {
+    margin-left: -10px;
+    margin-right: -10px;
 }
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Full Roster End ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */

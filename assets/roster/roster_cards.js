@@ -17,38 +17,20 @@ var full_roster = `
             <div class="container container-fluid row">
 
 
-                <div id="leadership_card" class="card mb-2">
-                    <div class="row g-0">
-
-                        <div class="col-md-4">
-                            <img id="card_image" src="../assets/ranks/badges/5-admiral.png" class="img-fluid rounded-start" alt="...">
-                        </div>
-                        <div class="col-md-8 text-center">
-
-                            <div id="leadership_note_small" class="card-body">
-                                <p>Gerard "Holland" Augustinus</p>
-                                <a>Holland Hammer#9185</a>
-                            </div>
-
-                        </div>
+                <div id="leadership_card" class="card text-center" style="width: 9rem;">
+                    <div>
+                        <img id="card_image" src="../assets/ranks/badges/5-admiral.png" class="card-img-top" alt="...">
                     </div>
+                    <p id="card_text">Gerard "Holland" Augustinus</p>
+                    <p id="card_text">Holland Hammer#9185</p>
                 </div>
 
-                <div id="leadership_card" class="card mb-2">
-                    <div class="row g-0">
-
-                        <div class="col-md-4">
-                            <img id="card_image" src="../assets/ranks/badges/5-admiral.png" class="img-fluid rounded-start" alt="...">
-                        </div>
-                        <div class="col-md-8 text-center">
-
-                            <div id="leadership_note_small" class="card-body">
-                                <p>Cosmo "Cr4zy" Remington</p>
-                                <a>Captain CR4ZY#3241</a>
-                            </div>
-
-                        </div>
+                <div id="leadership_card" class="card text-center" style="width: 9rem;">
+                    <div>
+                        <img id="card_image" src="../assets/ranks/badges/5-admiral.png" class="card-img-top" alt="...">
                     </div>
+                    <p id="card_text">Cosmo "Cr4zy" Remington</p>
+                    <p id="card_text">Captain CR4ZY#3241</p>
                 </div>
 
 
@@ -68,21 +50,32 @@ var full_roster = `
             <div class="container container-fluid row">
 
 
-                <div id="combat_card" class="card mb-2">
-                    <div class="row g-0">
-
-                        <div class="col-md-4">
-                            <img id="card_image" src="../assets/ranks/emblems/emblem_1_trooper.png" class="img-fluid rounded-start" alt="...">
-                        </div>
-                        <div class="col-md-8 text-center">
-
-                            <div id="combat_note_small" class="card-body">
-                                <p>Test Name of Testingson</p>
-                                <a>Captain TEST#3241</a>
-                            </div>
-
-                        </div>
+                <div id="combat_card" class="card text-center" style="width: 9rem;">
+                    <div>
+                        <img id="card_image" src="../assets/ranks/emblems/emblem_1_trooper.png" class="card-img-top" alt="...">
                     </div>
+                    <p>Test Name of Testingson</p>
+                </div>
+
+                <div id="combat_card" class="card text-center" style="width: 9rem;">
+                    <div>
+                        <img id="card_image" src="../assets/ranks/emblems/emblem_1_trooper.png" class="card-img-top" alt="...">
+                    </div>
+                    <p>Test Name of Testingson</p>
+                </div>
+
+                <div id="combat_card" class="card text-center" style="width: 9rem;">
+                    <div>
+                        <img id="card_image" src="../assets/ranks/emblems/emblem_1_trooper.png" class="card-img-top" alt="...">
+                    </div>
+                    <p>Test Name of Testingson</p>
+                </div>
+
+                <div id="combat_card" class="card text-center" style="width: 9rem;">
+                    <div>
+                        <img id="card_image" src="../assets/ranks/emblems/emblem_1_trooper.png" class="card-img-top" alt="...">
+                    </div>
+                    <p>Test Name of Testingson</p>
                 </div>
 
 
@@ -102,21 +95,32 @@ var full_roster = `
             <div class="container container-fluid row">
 
 
-                <div id="engineer_card" class="card mb-2">
-                    <div class="row g-0">
-
-                        <div class="col-md-4">
-                            <img id="card_image" src="../assets/ranks/emblems/emblem_1_trooper.png" class="img-fluid rounded-start" alt="...">
-                        </div>
-                        <div class="col-md-8 text-center">
-
-                            <div id="engineer_note_small" class="card-body">
-                                <p>Test Name of Testingson</p>
-                                <a>Captain TEST#3241</a>
-                            </div>
-
-                        </div>
+                <div id="engineer_card" class="card text-center" style="width: 9rem;">
+                    <div>
+                        <img id="card_image" src="../assets/ranks/emblems/emblem_1_engineer.png" class="card-img-top" alt="...">
                     </div>
+                    <p id="card_text">Test Name of Testingson</p>
+                </div>
+
+                <div id="engineer_card" class="card text-center" style="width: 9rem;">
+                    <div>
+                        <img id="card_image" src="../assets/ranks/emblems/emblem_1_engineer.png" class="card-img-top" alt="...">
+                    </div>
+                    <p id="card_text">Test Name of Testingson</p>
+                </div>
+
+                <div id="engineer_card" class="card text-center" style="width: 9rem;">
+                    <div>
+                        <img id="card_image" src="../assets/ranks/emblems/emblem_1_engineer.png" class="card-img-top" alt="...">
+                    </div>
+                    <p id="card_text">Test Name of Testingson</p>
+                </div>
+
+                <div id="engineer_card" class="card text-center" style="width: 9rem;">
+                    <div>
+                        <img id="card_image" src="../assets/ranks/emblems/emblem_1_engineer.png" class="card-img-top" alt="...">
+                    </div>
+                    <p id="card_text">Test Name of Testingson</p>
                 </div>
 
 
@@ -136,21 +140,32 @@ var full_roster = `
             <div class="container container-fluid row">
 
 
-                <div id="medical_card" class="card mb-2">
-                    <div class="row g-0">
-
-                        <div class="col-md-4">
-                            <img id="card_image" src="../assets/ranks/emblems/emblem_3_medic.png" class="img-fluid rounded-start" alt="...">
-                        </div>
-                        <div class="col-md-8 text-center">
-
-                            <div id="medical_note_small" class="card-body">
-                                <p>Test Name of Testingson</p>
-                                <a>Captain TEST#3241</a>
-                            </div>
-
-                        </div>
+                <div id="medical_card" class="card text-center" style="width: 9rem;">
+                    <div>
+                        <img id="card_image" src="../assets/ranks/emblems/emblem_1_medic.png" class="card-img-top" alt="...">
                     </div>
+                    <p id="card_text">Test Name of Testingson</p>
+                </div>
+
+                <div id="medical_card" class="card text-center" style="width: 9rem;">
+                    <div>
+                        <img id="card_image" src="../assets/ranks/emblems/emblem_1_medic.png" class="card-img-top" alt="...">
+                    </div>
+                    <p id="card_text">Test Name of Testingson</p>
+                </div>
+
+                <div id="medical_card" class="card text-center" style="width: 9rem;">
+                    <div>
+                        <img id="card_image" src="../assets/ranks/emblems/emblem_1_medic.png" class="card-img-top" alt="...">
+                    </div>
+                    <p id="card_text">Test Name of Testingson</p>
+                </div>
+
+                <div id="medical_card" class="card text-center" style="width: 9rem;">
+                    <div>
+                        <img id="card_image" src="../assets/ranks/emblems/emblem_1_medic.png" class="card-img-top" alt="...">
+                    </div>
+                    <p id="card_text">Test Name of Testingson</p>
                 </div>
 
 
@@ -170,23 +185,34 @@ var full_roster = `
                 <div class="container container-fluid row">
     
     
-                    <div id="novitiate_card" class="card mb-2">
-                        <div class="row g-0">
-    
-                            <div class="col-md-4">
-                                <img id="card_image" src="../assets/ranks/badges/0-novitiate.png" class="img-fluid rounded-start" alt="...">
-                            </div>
-                            <div class="col-md-8 text-center">
-    
-                                <div id="novitiate_note_small" class="card-body">
-                                    <p>Test Name of Testingson</p>
-                                    <a>Captain TEST#3241</a>
-                                </div>
-    
-                            </div>
+                    <div id="novitiate_card" class="card text-center" style="width: 9rem;">
+                        <div>
+                            <img id="card_image" src="../assets/ranks/badges/0-novitiate.png" class="card-img-top" alt="...">
                         </div>
+                        <p id="card_text">Test Name of Testingson</p>
                     </div>
     
+                    <div id="novitiate_card" class="card text-center" style="width: 9rem;">
+                        <div>
+                            <img id="card_image" src="../assets/ranks/badges/0-novitiate.png" class="card-img-top" alt="...">
+                        </div>
+                        <p id="card_text">Test Name of Testingson</p>
+                    </div>
+
+                    <div id="novitiate_card" class="card text-center" style="width: 9rem;">
+                        <div>
+                            <img id="card_image" src="../assets/ranks/badges/0-novitiate.png" class="card-img-top" alt="...">
+                        </div>
+                        <p id="card_text">Test Name of Testingson</p>
+                    </div>
+    
+                    <div id="novitiate_card" class="card text-center" style="width: 9rem;">
+                        <div>
+                            <img id="card_image" src="../assets/ranks/badges/0-novitiate.png" class="card-img-top" alt="...">
+                        </div>
+                        <p id="card_text">Test Name of Testingson</p>
+                    </div>
+
     
                 </div>
             </div>
