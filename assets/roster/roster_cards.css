@@ -19,7 +19,7 @@
     border-collapse: collapse;
     background-color: #1c1c1c;
     margin-top: 50px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     width: 300px;
 }
 
@@ -48,20 +48,25 @@
     font-weight: bold;
     font-family: 'Allerta Stencil', sans-serif;
     text-shadow:
-        0 0 15px #00c9ff,
-        0 0 20px #00c9ff;
+        0 0 15px #d6b44c,
+        0 0 20px #d6b44c;
 
-    border: 2px solid #d6b44c;
-    border-radius: 2.5px;
+    border: 3px solid #ffffff;
+    border-radius: 5px;
 
-    padding: 5px;
-    padding-left: 2.5%;
-    padding-right: 2.5%;
+    padding: 15px;
+    width: 300px;
     background-color: #1c1c1c;
 }
 #leadership_division_button:hover {
-    border: 2px solid #ffffff;
-    border-radius: 2.5px;
+    color: #ffffff;
+    font-size: 25px;
+    text-shadow:
+        0 0 15px #00c9ff,
+        0 0 20px #00c9ff;
+    
+    border: 3px solid #ffffff;
+    border-radius: 5px;
     box-shadow:
         0 0 10px #ffffff,
         0 0 15px #d6b44c,
@@ -70,79 +75,29 @@
     border-collapse: collapse;
 }
 #leadership_division_dropdown {
-margin-left: -11.7px;
-}
-#leadership_name {
-    color: #ffffff;
-    font-size: 22px;
-    font-weight: bold;
-    font-family: 'Allerta Stencil', sans-serif;
-    text-shadow:
-        0 0 15px #00c9ff,
-        0 0 20px #00c9ff;
-
-    border: 2px solid #ffffff;
-    border-radius: 2.5px;
-    box-shadow:
-        0 0 10px #ffffff,
-        0 0 15px #d6b44c,
-        0 0 20px #d6b44c;
-
-    border-collapse: collapse;
-    width: 400px;
-    background-color: #1c1c1c;
+    margin-left: -11.7px;
 }
 /* ~~~~~~~~~~~~~~~~~~~~ Leadership Card Start ~~~~~~~~~~~~~~~~~~~~ */
 #leadership_card {
-    border: 2px solid #d6b44c;
-    border-radius: 2.5px;
+    border: 3px solid #ffffff;
+    border-radius: 5px;
     background-color: #1c1c1c;
     margin-top: 10px;
     margin-right: 10px;
-    width: 7rem;
+    width: 375px;
 }
 #leadership_card:hover {
-    border: 2px solid #ffffff;
+    border: 3px solid #ffffff;
     box-shadow:
         0 0 10px #ffffff,
         0 0 15px #d6b44c,
         0 0 20px #d6b44c;
 
     border-collapse: collapse;
-}
-#leadership_card_text {
-    color: #ffffff;
-    font-size: 12px;
-    /* font-weight: bold; */
-    font-family: 'Allerta Stencil', sans-serif;
-    text-shadow:
-        0 0 5px #00c9ff,
-        0 0 10px #00c9ff;
 }
 /* ~~~~~~~~~~~~~~~~~~~~ Leadership Card End ~~~~~~~~~~~~~~~~~~~~ */
 /* ~~~~~~~~~~~~~~~~~~~~ Leadership Modal Start ~~~~~~~~~~~~~~~~~~~~ */
-#leadership_modal {    
-    border: 2px solid #ffffff;
-    border-radius: 2px;
-    box-shadow:
-        0 0 10px #ffffff,
-        0 0 15px #d6b44c,
-        0 0 20px #d6b44c;
 
-    border-collapse: collapse;
-    background: rgba(255, 255, 255, 0.25);
-}
-#leadership_collapse {
-    border: 2px solid #ffffff;
-    border-radius: 2px;
-    box-shadow:
-        0 0 10px #ffffff,
-        0 0 15px #d6b44c,
-        0 0 20px #d6b44c;
-
-    border-collapse: collapse;
-    background-image: url("collapse_background.jpg");
-}
 /* ~~~~~~~~~~~~~~~~~~~~ Leadership Modal End ~~~~~~~~~~~~~~~~~~~~ */
 
 
@@ -150,7 +105,7 @@ margin-left: -11.7px;
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Combat Division Start ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 #combat_division_container {
-    margin-top: 25px;
+    margin-bottom: 25px;
 }
 #combat_division_button {
     color: #ffffff;
@@ -158,15 +113,14 @@ margin-left: -11.7px;
     font-weight: bold;
     font-family: 'Allerta Stencil', sans-serif;
     text-shadow:
-        0 0 15px #00c9ff,
-        0 0 20px #00c9ff;
+        0 0 15px #b60031,
+        0 0 20px #b60031;
 
-    border: 2px solid #b60031;
-    border-radius: 2.5px;
+    border: 3px solid #ffffff;
+    border-radius: 5px;
 
     padding: 5px;
-    padding-left: 2.5%;
-    padding-right: 2.5%;
+    width: 300px;
     background-color: #1c1c1c;
 }
 #combat_division_button:hover {
@@ -176,8 +130,8 @@ margin-left: -11.7px;
         0 0 15px #00c9ff,
         0 0 20px #00c9ff;
 
-    border: 2px solid #ffffff;
-    border-radius: 2.5px;
+    border: 3px solid #ffffff;
+    border-radius: 5px;
     box-shadow:
         0 0 10px #ffffff,
         0 0 15px #b60031,
@@ -185,20 +139,221 @@ margin-left: -11.7px;
 
     border-collapse: collapse;
 }
-#combat_division_members {
-    border: 2px solid #ffffff;
-    border-radius: 2.5px;
-    box-shadow:
-        0 0 10px #ffffff,
-        0 0 15px #b60031,
-        0 0 20px #b60031;
-
-    border-collapse: collapse;
-    background-color: rgb(28, 28, 28, 0.75);
+#combat_division_dropdown {
+    margin-left: -11.7px;
+}
+/* ~~~~~~~~~~~~~~~~~~~~ Combat Card Start ~~~~~~~~~~~~~~~~~~~~ */
+#combat_card {
+    border: 3px solid #ffffff;
+    border-radius: 5px;
+    background-color: #1c1c1c;
     margin-top: 10px;
+    margin-right: 10px;
+    width: 295px;
 }
+#combat_card:hover {
+    border: 3px solid #ffffff;
+    box-shadow:
+        0 0 10px #ffffff,
+        0 0 15px #b60031,
+        0 0 20px #b60031;
 
+    border-collapse: collapse;
+}
+/* ~~~~~~~~~~~~~~~~~~~~ Combat Card End ~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~ Combat Modal Start ~~~~~~~~~~~~~~~~~~~~ */
+
+/* ~~~~~~~~~~~~~~~~~~~~ Combat Modal End ~~~~~~~~~~~~~~~~~~~~ */
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Combat Division End ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Engineer Division Start ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+#engineer_division_container {
+    margin-bottom: 25px;
+}
+#engineer_division_button {
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Allerta Stencil', sans-serif;
+    text-shadow:
+        0 0 15px #ff7042,
+        0 0 20px #ff7042;
+
+    border: 3px solid #ffffff;
+    border-radius: 5px;
+
+    padding: 5px;
+    width: 300px;
+    background-color: #1c1c1c;
+}
+#engineer_division_button:hover {
+    color: #ffffff;
+    font-size: 25px;
+    text-shadow:
+        0 0 15px #00c9ff,
+        0 0 20px #00c9ff;
+
+    border: 3px solid #ffffff;
+    border-radius: 5px;
+    box-shadow:
+        0 0 10px #ffffff,
+        0 0 15px #ff7042,
+        0 0 20px #ff7042;
+
+    border-collapse: collapse;
+}
+#engineer_division_dropdown {
+    margin-left: -11.7px;
+}
+/* ~~~~~~~~~~~~~~~~~~~~ Engineer Card Start ~~~~~~~~~~~~~~~~~~~~ */
+#engineer_card {
+    border: 3px solid #ffffff;
+    border-radius: 5px;
+    background-color: #1c1c1c;
+    margin-top: 10px;
+    margin-right: 10px;
+    width: 295px;
+}
+#engineer_card:hover {
+    border: 3px solid #ffffff;
+    box-shadow:
+        0 0 10px #ffffff,
+        0 0 15px #ff7042,
+        0 0 20px #ff7042;
+
+    border-collapse: collapse;
+}
+/* ~~~~~~~~~~~~~~~~~~~~ Engineer Card End ~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~ Engineer Modal Start ~~~~~~~~~~~~~~~~~~~~ */
+
+/* ~~~~~~~~~~~~~~~~~~~~ Engineer Modal End ~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Engineer Division End ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Medical Division Start ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+#medical_division_container {
+    margin-bottom: 25px;
+}
+#medical_division_button {
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Allerta Stencil', sans-serif;
+    text-shadow:
+        0 0 15px #4285f4,
+        0 0 20px #4285f4;
+
+    border: 3px solid #ffffff;
+    border-radius: 5px;
+
+    padding: 5px;
+    width: 300px;
+    background-color: #1c1c1c;
+}
+#medical_division_button:hover {
+    color: #ffffff;
+    font-size: 25px;
+    text-shadow:
+        0 0 15px #00c9ff,
+        0 0 20px #00c9ff;
+
+    border: 3px solid #ffffff;
+    border-radius: 5px;
+    box-shadow:
+        0 0 10px #ffffff,
+        0 0 15px #4285f4,
+        0 0 20px #4285f4;
+
+    border-collapse: collapse;
+}
+#medical_division_dropdown {
+    margin-left: -11.7px;
+}
+/* ~~~~~~~~~~~~~~~~~~~~ Medical Card Start ~~~~~~~~~~~~~~~~~~~~ */
+#medical_card {
+    border: 3px solid #ffffff;
+    border-radius: 5px;
+    background-color: #1c1c1c;
+    margin-top: 10px;
+    margin-right: 10px;
+    width: 295px;
+}
+#medical_card:hover {
+    border: 3px solid #ffffff;
+    box-shadow:
+        0 0 10px #ffffff,
+        0 0 15px #4285f4,
+        0 0 20px #4285f4;
+
+    border-collapse: collapse;
+}
+/* ~~~~~~~~~~~~~~~~~~~~ Medical Card End ~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~ Medical Modal Start ~~~~~~~~~~~~~~~~~~~~ */
+
+/* ~~~~~~~~~~~~~~~~~~~~ Medical Modal End ~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Medical Division End ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Novitiate Division Start ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+#novitiate_division_container {
+    margin-bottom: 25px;
+}
+#novitiate_division_button {
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Allerta Stencil', sans-serif;
+    text-shadow:
+        0 0 10px #00c9ff,
+        0 0 15px #ffffff;
+
+    border: 3px solid #ffffff;
+    border-radius: 5px;
+
+    padding: 5px;
+    width: 300px;
+    background-color: #1c1c1c;
+}
+#novitiate_division_button:hover {
+    color: #ffffff;
+    font-size: 25px;
+    text-shadow:
+        0 0 15px #00c9ff,
+        0 0 20px #00c9ff;
+
+    border: 3px solid #ffffff;
+    border-radius: 5px;
+    box-shadow:
+        0 0 10px #ffffff,
+        0 0 15px #00c9ff,
+        0 0 20px #00c9ff;
+
+    border-collapse: collapse;
+}
+#novitiate_division_dropdown {
+    margin-left: -11.7px;
+}
+/* ~~~~~~~~~~~~~~~~~~~~ Novitiate Card Start ~~~~~~~~~~~~~~~~~~~~ */
+#novitiate_card {
+    border: 3px solid #ffffff;
+    border-radius: 5px;
+    background-color: #1c1c1c;
+    margin-top: 10px;
+    margin-right: 10px;
+    width: 295px;
+}
+#novitiate_card:hover {
+    border: 3px solid #ffffff;
+    box-shadow:
+        0 0 10px #ffffff,
+        0 0 15px #00c9ff,
+        0 0 20px #00c9ff;
+
+    border-collapse: collapse;
+}
+/* ~~~~~~~~~~~~~~~~~~~~ Novitiate Card End ~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~ Novitiate Modal Start ~~~~~~~~~~~~~~~~~~~~ */
+
+/* ~~~~~~~~~~~~~~~~~~~~ Novitiate Modal End ~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Novitiate Division End ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Extra ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 #icon_round {
@@ -207,5 +362,9 @@ margin-left: -11.7px;
     font-size: 17.5px;
     border-radius: 15px;
     padding: 4px;
+}
+#card_image {
+    width: 200px;
+    margin-left: -11px;
 }
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Full Roster End ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */

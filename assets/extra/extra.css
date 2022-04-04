@@ -44,9 +44,23 @@
     font-size: 17.9px;
     font-weight: bold;
     /* font-family: 'Allerta Stencil', sans-serif; */
+    font-family: 'Montserrat', sans-serif;
     text-shadow:
         0 0 10px #00c9ff,
         0 0 15px #00c9ff;
+}
+#novitiate_note_small {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+    /* font-family: 'Allerta Stencil', sans-serif; */
+    font-family: 'Montserrat', sans-serif;
+    text-shadow:
+        0 0 10px #00c9ff,
+        0 0 15px #ffffff;
+
+    margin-left: -20px;
+    margin-right: -20px;
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Combat ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -95,6 +109,7 @@
     font-size: 17.9px;
     font-weight: bold;
     /* font-family: 'Allerta Stencil', sans-serif; */
+    font-family: 'Montserrat', sans-serif;
     text-shadow:
         0 0 10px #b60031,
         0 0 15px #b60031;
@@ -106,9 +121,23 @@
     font-size: 17.9px;
     font-weight: bold;
     /* font-family: 'Allerta Stencil', sans-serif; */
+    font-family: 'Montserrat', sans-serif;
     text-shadow:
         0 0 10px #b60031,
         0 0 15px #b60031;
+}
+#combat_note_small {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+    /* font-family: 'Allerta Stencil', sans-serif; */
+    font-family: 'Montserrat', sans-serif;
+    text-shadow:
+        0 0 10px #b60031,
+        0 0 15px #b60031;
+
+    margin-left: -20px;
+    margin-right: -20px;
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Engineer ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -157,6 +186,7 @@
     font-size: 17.9px;
     font-weight: bold;
     /* font-family: 'Allerta Stencil', sans-serif; */
+    font-family: 'Montserrat', sans-serif;
     text-shadow:
         0 0 10px #ff7042,
         0 0 15px #ff7042;
@@ -168,9 +198,23 @@
     font-size: 17.9px;
     font-weight: bold;
     /* font-family: 'Allerta Stencil', sans-serif; */
+    font-family: 'Montserrat', sans-serif;
     text-shadow:
         0 0 10px #ff7042,
         0 0 15px #ff7042;
+}
+#engineer_note_small {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+    /* font-family: 'Allerta Stencil', sans-serif; */
+    font-family: 'Montserrat', sans-serif;
+    text-shadow:
+        0 0 10px #ff7042,
+        0 0 15px #ff7042;
+
+    margin-left: -20px;
+    margin-right: -20px;
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Medical ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -219,6 +263,7 @@
     font-size: 17.9px;
     font-weight: bold;
     /* font-family: 'Allerta Stencil', sans-serif; */
+    font-family: 'Montserrat', sans-serif;
     text-shadow:
         0 0 10px #4285f4,
         0 0 15px #4285f4;
@@ -230,9 +275,23 @@
     font-size: 17.9px;
     font-weight: bold;
     /* font-family: 'Allerta Stencil', sans-serif; */
+    font-family: 'Montserrat', sans-serif;
     text-shadow:
         0 0 10px #4285f4,
         0 0 15px #4285f4;
+}
+#medical_note_small {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+    /* font-family: 'Allerta Stencil', sans-serif; */
+    font-family: 'Montserrat', sans-serif;
+    text-shadow:
+        0 0 10px #4285f4,
+        0 0 15px #4285f4;
+
+    margin-left: -20px;
+    margin-right: -20px;
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Science ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -281,6 +340,7 @@
     font-size: 17.9px;
     font-weight: bold;
     /* font-family: 'Allerta Stencil', sans-serif; */
+    font-family: 'Montserrat', sans-serif;
     text-shadow:
         0 0 10px #00b368,
         0 0 15px #00b368;
@@ -292,9 +352,23 @@
     font-size: 17.9px;
     font-weight: bold;
     /* font-family: 'Allerta Stencil', sans-serif; */
+    font-family: 'Montserrat', sans-serif;
     text-shadow:
         0 0 10px #00b368,
         0 0 15px #00b368;
+}
+#science_note_small {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+    /* font-family: 'Allerta Stencil', sans-serif; */
+    font-family: 'Montserrat', sans-serif;
+    text-shadow:
+        0 0 10px #00b368,
+        0 0 15px #00b368;
+
+    margin-left: -20px;
+    margin-right: -20px;
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Leadership ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -344,6 +418,7 @@
     font-size: 17.9px;
     font-weight: bold;
     /* font-family: 'Allerta Stencil', sans-serif; */
+    font-family: 'Montserrat', sans-serif;
     text-shadow:
         0 0 15px #d6b44c,
         0 0 20px #d6b44c;
@@ -355,9 +430,23 @@
     font-size: 17.9px;
     font-weight: bold;
     /* font-family: 'Allerta Stencil', sans-serif; */
+    font-family: 'Montserrat', sans-serif;
     text-shadow:
         0 0 15px #d6b44c,
         0 0 20px #d6b44c;
+}
+#leadership_note_small {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+    /* font-family: 'Allerta Stencil', sans-serif; */
+    font-family: 'Montserrat', sans-serif;
+    text-shadow:
+        0 0 15px #d6b44c,
+        0 0 20px #d6b44c;
+
+    margin-left: -20px;
+    margin-right: -20px;
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Academy ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -384,6 +473,7 @@
     font-size: 17.9px;
     font-weight: bold;
     /* font-family: 'Allerta Stencil', sans-serif; */
+    font-family: 'Montserrat', sans-serif;
     text-shadow:
         0 0 15px #ad6cc2,
         0 0 20px #ad6cc2;
@@ -404,6 +494,7 @@
     font-size: 17.9px;
     font-weight: bold;
     /* font-family: 'Allerta Stencil', sans-serif; */
+    font-family: 'Montserrat', sans-serif;
     text-shadow:
         0 0 15px #39a8c7,
         0 0 20px #39a8c7;
@@ -424,6 +515,7 @@
     font-size: 17.9px;
     font-weight: bold;
     /* font-family: 'Allerta Stencil', sans-serif; */
+    font-family: 'Montserrat', sans-serif;
     text-shadow:
         0 0 15px #00c9ff,
         0 0 20px #00c9ff;
@@ -437,6 +529,7 @@
     font-size: 17.9px;
     font-weight: bold;
     /* font-family: 'Allerta Stencil', sans-serif; */
+    font-family: 'Montserrat', sans-serif;
     text-shadow:
         0 0 15px #ad6cc2,
         0 0 20px #ad6cc2;
@@ -446,6 +539,7 @@
     font-size: 17.9px;
     font-weight: bold;
     /* font-family: 'Allerta Stencil', sans-serif; */
+    font-family: 'Montserrat', sans-serif;
     text-shadow:
         0 0 10px #ff0015,
         0 0 15px #ff0015;
