@@ -1,0 +1,211 @@
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Full Roster Start ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+#full_roster_title {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Allerta Stencil', sans-serif;
+    text-shadow:
+        0 0 5px #ff0000,
+        0 0 10px #ff0015,
+        0 0 15px #ff0015,
+        0 0 20px #ff0015;
+
+    border: 3px solid #ffffff;
+    border-radius: 2px;
+    box-shadow:
+        0 0 2.5px #ffffff,
+        0 0 5px 5px #00c9ff;
+
+    border-collapse: collapse;
+    background-color: #1c1c1c;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    width: 300px;
+}
+
+#modal_collapse_button {
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Allerta Stencil', sans-serif;
+    background-image: url("collapse_background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#modal_collapse_text {
+    color: #ffffff;
+    font-size: 17.9px;
+    font-weight: bold;
+    background-color: #1c1c1c;
+}
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Leadership Division Start ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+#leadership_division_button {
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Allerta Stencil', sans-serif;
+    text-shadow:
+        0 0 15px #00c9ff,
+        0 0 20px #00c9ff;
+
+    border: 2px solid #d6b44c;
+    border-radius: 2.5px;
+
+    padding: 5px;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    background-color: #1c1c1c;
+}
+#leadership_division_button:hover {
+    border: 2px solid #ffffff;
+    border-radius: 2.5px;
+    box-shadow:
+        0 0 10px #ffffff,
+        0 0 15px #d6b44c,
+        0 0 20px #d6b44c;
+
+    border-collapse: collapse;
+}
+#leadership_division_dropdown {
+margin-left: -11.7px;
+}
+#leadership_name {
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'Allerta Stencil', sans-serif;
+    text-shadow:
+        0 0 15px #00c9ff,
+        0 0 20px #00c9ff;
+
+    border: 2px solid #ffffff;
+    border-radius: 2.5px;
+    box-shadow:
+        0 0 10px #ffffff,
+        0 0 15px #d6b44c,
+        0 0 20px #d6b44c;
+
+    border-collapse: collapse;
+    width: 400px;
+    background-color: #1c1c1c;
+}
+/* ~~~~~~~~~~~~~~~~~~~~ Leadership Card Start ~~~~~~~~~~~~~~~~~~~~ */
+#leadership_card {
+    border: 2px solid #d6b44c;
+    border-radius: 2.5px;
+    background-color: #1c1c1c;
+    margin-top: 10px;
+    margin-right: 10px;
+    width: 7rem;
+}
+#leadership_card:hover {
+    border: 2px solid #ffffff;
+    box-shadow:
+        0 0 10px #ffffff,
+        0 0 15px #d6b44c,
+        0 0 20px #d6b44c;
+
+    border-collapse: collapse;
+}
+#leadership_card_text {
+    color: #ffffff;
+    font-size: 12px;
+    /* font-weight: bold; */
+    font-family: 'Allerta Stencil', sans-serif;
+    text-shadow:
+        0 0 5px #00c9ff,
+        0 0 10px #00c9ff;
+}
+/* ~~~~~~~~~~~~~~~~~~~~ Leadership Card End ~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~ Leadership Modal Start ~~~~~~~~~~~~~~~~~~~~ */
+#leadership_modal {    
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+    box-shadow:
+        0 0 10px #ffffff,
+        0 0 15px #d6b44c,
+        0 0 20px #d6b44c;
+
+    border-collapse: collapse;
+    background: rgba(255, 255, 255, 0.25);
+}
+#leadership_collapse {
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+    box-shadow:
+        0 0 10px #ffffff,
+        0 0 15px #d6b44c,
+        0 0 20px #d6b44c;
+
+    border-collapse: collapse;
+    background-image: url("collapse_background.jpg");
+}
+/* ~~~~~~~~~~~~~~~~~~~~ Leadership Modal End ~~~~~~~~~~~~~~~~~~~~ */
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Leadership Division End ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Combat Division Start ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+#combat_division_container {
+    margin-top: 25px;
+}
+#combat_division_button {
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Allerta Stencil', sans-serif;
+    text-shadow:
+        0 0 15px #00c9ff,
+        0 0 20px #00c9ff;
+
+    border: 2px solid #b60031;
+    border-radius: 2.5px;
+
+    padding: 5px;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    background-color: #1c1c1c;
+}
+#combat_division_button:hover {
+    color: #ffffff;
+    font-size: 25px;
+    text-shadow:
+        0 0 15px #00c9ff,
+        0 0 20px #00c9ff;
+
+    border: 2px solid #ffffff;
+    border-radius: 2.5px;
+    box-shadow:
+        0 0 10px #ffffff,
+        0 0 15px #b60031,
+        0 0 20px #b60031;
+
+    border-collapse: collapse;
+}
+#combat_division_members {
+    border: 2px solid #ffffff;
+    border-radius: 2.5px;
+    box-shadow:
+        0 0 10px #ffffff,
+        0 0 15px #b60031,
+        0 0 20px #b60031;
+
+    border-collapse: collapse;
+    background-color: rgb(28, 28, 28, 0.75);
+    margin-top: 10px;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Combat Division End ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Extra ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+#icon_round {
+    color: #ff0015;
+    margin-right: 5px;
+    font-size: 17.5px;
+    border-radius: 15px;
+    padding: 4px;
+}
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Full Roster End ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */

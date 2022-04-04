@@ -10,11 +10,13 @@
     <link rel="stylesheet" href="../assets/navbar/navbar.css">
     <link rel="stylesheet" href="../assets/extra/extra.css">
     <link rel="stylesheet" href="../assets/css/3_roster/3_roster_2.css">
+    <link rel="stylesheet" href="../assets/roster/roster_cards.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Fanwood+Text&family=Zen+Dots&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Barcode+128+Text&family=Redacted&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Barcode+128+Text&family=Montserrat&family=Redacted&display=swap">
+
 
     <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"> -->
     <script src="https://kit.fontawesome.com/aa7d326b4c.js" crossorigin="anonymous"></script>
@@ -29,110 +31,260 @@
 
 <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Navbar End ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Roster Buttons Start ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+<div id="roster_buttons_container" class="col">
 
-<div id="full_roster_container" class="container container-fluid">
-
-    <div id="full_roster_title" class="container text-center">
-        FULL ROSTER
-    </div>
-
-    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Leadership Division Start ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-    <div class="container container-fluid">
-
-        <button id="leadership_division_button" type="button" data-bs-toggle="collapse" data-bs-target="#leadership_division_dropdown" aria-expanded="false" aria-controls="leadership_division_dropdown">
-            Leadership Division Members
-        </button>
+    <div class="container">
+        <i id="roster_buttons_button" type="button" data-bs-toggle="collapse" data-bs-target="#roster_buttons_dropdown" aria-expanded="false" aria-controls="roster_buttons_dropdown" class="fa-solid fa-address-card">
+            <p id="roster_buttons_button_text">Opitions</p>
+        </i>
         
-        <div class="collapse" id="leadership_division_dropdown">
-            <div class="container container-fluid row">
+        <div class="collapse text-center" id="roster_buttons_dropdown">
+
+            <div>
+                <a>
+                    <i type="button" id="register_unit_button" class="fa-solid fa-circle-plus" data-bs-toggle="modal" data-bs-target="#register_unit_modal"></i>
+                    <p id="register_unit_button_text">Register Unit</p>
+                </a>
+            </div>
+            <div>
+                <a>
+                    <i type="button" id="transfer_unit_button" class="fa-solid fa-arrows-up-down-left-right" data-bs-toggle="modal" data-bs-target="#transfer_unit_modal"></i>
+                    <p id="transfer_unit_button_text">Transfer Unit</p>
+                </a>
+            </div>
+            <div>
+                <a>
+                    <i type="button" id="register_battalion_button" class="fa-solid fa-users" data-bs-toggle="modal" data-bs-target="#register_battalion_modal"></i></i>
+                    <p id="register_battalion_button_text">Register Battalion</p>
+                </a>
+            </div>
+            <div>
+                <a>
+                    <i type="button" id="file_report_1_button" class="fa-solid fa-pen" data-bs-toggle="modal" data-bs-target="#file_report_1_modal"></i>
+                <p id="file_report_1_button_text">File Report 1</p>
+            </a>
+            </div>
+            <div>
+                <a>
+                    <i type="button" id="file_report_2_button" class="fa-solid fa-pen" data-bs-toggle="modal" data-bs-target="#file_report_2_modal"></i>
+                    <p id="file_report_2_button_text">File Report 2</p>
+                </a>
+            </div>
+            <div>
+                <a>
+                    <i type="button" id="approve_reports_button" class="fa-solid fa-file-pen" data-bs-toggle="modal" data-bs-target="#approve_reports_modal"></i>
+                    <p id="approve_reports_button_text">Approve Reports</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Roster Buttons End ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Member List Start ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+<!-- NOTE: This content is inserted from roster_cards.html & roster_cards.css -->
+
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Member List End ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Roster Button Modals Start ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+<div class="modal fade" id="register_unit_modal" data-bs-backdrop="static" tabindex="-1" aria-labelledby="register_unit_modal_label" aria-hidden="true">
+    <div class="modal-dialog">
+
+        <div id="register_unit_modal" class="modal-content">
+
+            <div class="justify-content-center text-center">
+                <div id="register_unit_modal_title">
+                    <i class="fa-solid fa-circle-plus"></i>
+                    <a>Register Unit</a>
+                </div>
+            </div>
+            
+            <div id="register_unit_modal_body" class="modal-body">
     
-                <div id="leadership_card" class="card text-center bg-dark" type="button" data-bs-toggle="modal" data-bs-target="#captain">
-                    <img id="card_image" src="../assets/ranks/badges/5-admiral.png" class="card-img-top">
-                    <ul class="list-group list-group-flush">
-                        <li id="leadership_card_text" class="list-group-item bg-dark">Captain Cr4zy</li>
-                    </ul>
+                <form>
+                <div class="form-group">
+                    <label id="registered_name" for="unit_name" class="col-form-label">Star Citizen Name:</label>
+                    <input type="text" class="form-control" id="unit_name">
+                </div>
+    
+                <div class="form-group">
+                    <label id="registered_contact" for="unit_contact" class="col-form-label">Discord Profile:</label>
+                    <input type="text" class="form-control" id="unit_contact" placeholder="Name#0000"></input>
                 </div>
 
+                <div class="form-group">
+                    <label id="registered_date" for="unit_start" class="col-form-label">Start Date:</label>
+                    <input type="datetime-local"class="form-control" id="unit_start" placeholder="00/00/0000"></input>
+                </div>
+                </form>
+    
             </div>
 
-
-
-
-
-
-        </div>
-
-    </div>
-    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Leadership Division End ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-
-    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Combat Division Start ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-    <div id="combat_division_container" class="container container-fluid">
-
-        <button id="combat_division_button" type="button" data-bs-toggle="collapse" data-bs-target="#combat_division_dropdown" aria-expanded="false" aria-controls="combat_division_dropdown">
-            Combat Division Members
-        </button>
-        
-        <div class="collapse" id="combat_division_dropdown">
-            <div id="combat_division_members" class="card card-body">
-
-
-
-
-
-
+            <div class="modal-footer">
+                <button id="sign_up_button" type="button">
+                    <i id="fa_nav_icon_square" class="fa-solid fa-star"></i>Submit
+                </button>
+                <button id="sign_in_button" type="button" data-bs-dismiss="modal">
+                    <i id="fa_nav_icon_square" class="fa-solid fa-right-to-bracket"></i>Cancel
+                </button>
             </div>
         </div>
-
     </div>
-    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Combat Division End ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+</div>
 
+<div class="modal fade" id="transfer_unit_modal" data-bs-backdrop="static" tabindex="-1" aria-labelledby="transfer_unit_modal_label" aria-hidden="true">
+    <div class="modal-dialog">
 
+        <div id="transfer_unit_modal" class="modal-content">
 
+            <div class="justify-content-center text-center">
+                <div id="transfer_unit_modal_title">
+                    <i class="fa-solid fa-arrows-up-down-left-right"></i>
+                    <a>Transfer Unit</a>
+                </div>
+            </div>
+            
+            <div id="transfer_unit_modal_body" class="modal-body">
+    
 
+    
+            </div>
+
+            <div class="modal-footer">
+                <button id="sign_up_button" type="button">
+                    <i id="fa_nav_icon_square" class="fa-solid fa-star"></i>Submit
+                </button>
+                <button id="sign_in_button" type="button" data-bs-dismiss="modal">
+                    <i id="fa_nav_icon_square" class="fa-solid fa-right-to-bracket"></i>Cancel
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="register_battalion_modal" data-bs-backdrop="static" tabindex="-1" aria-labelledby="register_battalion_modal_label" aria-hidden="true">
+    <div class="modal-dialog">
+
+        <div id="register_battalion_modal" class="modal-content">
+
+            <div class="justify-content-center text-center">
+                <div id="register_battalion_modal_title">
+                    <i class="fa-solid fa-users"></i>
+                    <a>Register Battalion</a>
+                </div>
+            </div>
+            
+            <div id="register_battalion_modal_body" class="modal-body">
+    
+
+    
+            </div>
+
+            <div class="modal-footer">
+                <button id="sign_up_button" type="button">
+                    <i id="fa_nav_icon_square" class="fa-solid fa-star"></i>Submit
+                </button>
+                <button id="sign_in_button" type="button" data-bs-dismiss="modal">
+                    <i id="fa_nav_icon_square" class="fa-solid fa-right-to-bracket"></i>Cancel
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="file_report_1_modal" data-bs-backdrop="static" tabindex="-1" aria-labelledby="file_report_1_modal_label" aria-hidden="true">
+    <div class="modal-dialog">
+
+        <div id="file_report_1_modal" class="modal-content">
+
+            <div class="justify-content-center text-center">
+                <div id="file_report_1_modal_title">
+                    <i class="fa-solid fa-pen"></i>
+                    <a>File Report 1</a>
+                </div>
+            </div>
+            
+            <div id="file_report_1_modal_body" class="modal-body">
+    
+
+    
+            </div>
+
+            <div class="modal-footer">
+                <button id="sign_up_button" type="button">
+                    <i id="fa_nav_icon_square" class="fa-solid fa-star"></i>Submit
+                </button>
+                <button id="sign_in_button" type="button" data-bs-dismiss="modal">
+                    <i id="fa_nav_icon_square" class="fa-solid fa-right-to-bracket"></i>Cancel
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="file_report_2_modal" data-bs-backdrop="static" tabindex="-1" aria-labelledby="file_report_2_modal_label" aria-hidden="true">
+    <div class="modal-dialog">
+
+        <div id="file_report_2_modal" class="modal-content">
+
+            <div class="justify-content-center text-center">
+                <div id="file_report_2_modal_title">
+                    <i class="fa-solid fa-pen"></i>
+                    <a>File Report 2</a>
+                </div>
+            </div>
+            
+            <div id="file_report_2_modal_body" class="modal-body">
+    
+
+    
+            </div>
+
+            <div class="modal-footer">
+                <button id="sign_up_button" type="button">
+                    <i id="fa_nav_icon_square" class="fa-solid fa-star"></i>Submit
+                </button>
+                <button id="sign_in_button" type="button" data-bs-dismiss="modal">
+                    <i id="fa_nav_icon_square" class="fa-solid fa-right-to-bracket"></i>Cancel
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="approve_reports_modal" data-bs-backdrop="static" tabindex="-1" aria-labelledby="approve_reports_modal_label" aria-hidden="true">
+    <div class="modal-dialog">
+
+        <div id="approve_reports_modal" class="modal-content">
+
+            <div class="justify-content-center text-center">
+                <div id="approve_reports_modal_title">
+                    <i id="approve_reports_button_text"></i>
+                    <a>Approve Reports</a>
+                </div>
+            </div>
+            
+            <div id="approve_reports_modal_body" class="modal-body">
+    
+
+    
+            </div>
+
+            <div class="modal-footer">
+                <button id="sign_up_button" type="button">
+                    <i id="fa_nav_icon_square" class="fa-solid fa-star"></i>Submit
+                </button>
+                <button id="sign_in_button" type="button" data-bs-dismiss="modal">
+                    <i id="fa_nav_icon_square" class="fa-solid fa-right-to-bracket"></i>Cancel
+                </button>
+            </div>
+        </div>
+    </div>
 </div>
 
 
-    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Test Modal ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-
-    <div class="modal fade" id="captain" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-
-            <div class="container container-fluid">
-                <div id="leadership_modal" class="modal-content">
-
-                    <div id="leadership_name" class="container text-center">
-                        <p>Cosmo "Cr4zy" Remington</p>
-                        <p id="leadership_note">Captain CR4ZY#3241</p>
-                    </div>
-
-                    <!-- <img id="leadership_modal_image" src="../assets/ranks/units/rank_0_conscript.png" alt="Conscript Image"> -->
-                    
-                    <div id="accordion_container" class="container row">
-
-                        <div class="accordion accordion-flush">
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="headingOne">
-                                    <button id="modal_collapse_button" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                        Description
-                                    </button>
-                                </h2>
-            
-                                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne">
-                                    <div id="modal_collapse_text" class="accordion-body">
-            
-                                        <div class="container-fluid text-start">
-                                            <p>Acting much like a contracted mercenary, Conscripts operate outside the official ranks of The Galactic Order military. They have no restrictions to the rules and regulations with regards to attire, responsibilities and command. However, this also means they hold no authority in the chain of command and receive no benefits or unit allowances. Conscripts are often hired under a general contract with very specific parameters based on a percentage of funds earned upon completion of assisted missions and tasks.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
 
 
@@ -140,26 +292,11 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Roster Button Modals End ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
     <script src="../assets/navbar/navbar.js"></script>
     <script src="../assets/navbar/navbar_modal.js"></script>
+    <script src="../assets/roster/roster_cards.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 

@@ -17,47 +17,493 @@ body {
     background-attachment: fixed;
 }
 
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Full Roster Start ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-#full_roster_title {
+/* ~~~~~~~~~~~~~~~~~~~~ Roster Buttons Start ~~~~~~~~~~~~~~~~~~~~ */
+#roster_buttons_container {
+    margin-top: 35px;
+    position: sticky;
+    position: fixed;
+}
+
+
+#roster_buttons_button {
+    color: #ffffff;
+    font-size: 70px;
+    background-color: #00c9ff;
+
+    border: 10px solid #00c9ff;
+    border-radius: 15px;
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+#roster_buttons_button:hover {
+    color: #00c9ff;
+    border: 10px solid #ffffff;
+    box-shadow:
+        0 0 5px #ffffff,
+        0 0 10px #ffffff,
+        0 0 20px #00c9ff,
+        0 0 30px #00c9ff;
+    
+    border-collapse: collapse;
+    background-color: #ffffff;
+}
+#roster_buttons_button_text {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Allerta Stencil', sans-serif;
+    text-shadow:
+        0 0 2px #4285f4,
+        0 0 5px #4285f4;
+    margin-bottom: -2px;
+}
+
+
+#register_unit_button {
+    color: #ffffff;
+    font-size: 40px;
+    background-color: #00b368;
+
+    border: 10px solid #00b368;
+    border-radius: 50px;
+}
+#register_unit_button:hover {
+    color: #00b368;
+    border: 10px solid #ffffff;
+    box-shadow:
+        0 0 5px #ffffff,
+        0 0 10px #ffffff,
+        0 0 20px #00c9ff,
+        0 0 30px #15ff00;
+    
+    border-collapse: collapse;
+    background-color: #ffffff;
+}
+#register_unit_button_text {
+    margin: 5px;
+    margin-bottom: 20px;
+    color: #00b368;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+#transfer_unit_button {
+    color: #ffffff;
+    font-size: 42px;
+    background-color: #4285f4;
+
+    border: 7px solid #4285f4;
+    border-radius: 50px;
+}
+#transfer_unit_button:hover {
+    color: #4285f4;
+    border: 7px solid #ffffff;
+    box-shadow:
+        0 0 5px #ffffff,
+        0 0 10px #ffffff,
+        0 0 20px #00c9ff,
+        0 0 30px #4285f4;
+    
+    border-collapse: collapse;
+    background-color: #ffffff;
+}
+#transfer_unit_button_text {
+    margin: 5px;
+    margin-bottom: 20px;
+    color: #4285f4;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+#register_battalion_button {
+    color: #ffffff;
+    font-size: 25px;
+    padding: 4px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    background-color: #ad6cc2;
+
+    border: 7px solid #ad6cc2;
+    border-radius: 50px;
+}
+#register_battalion_button:hover {
+    color: #ad6cc2;
+    border: 7px solid #ffffff;
+    box-shadow:
+        0 0 5px #ffffff,
+        0 0 10px #ffffff,
+        0 0 20px #00c9ff,
+        0 0 30px #ad6cc2;
+    
+    border-collapse: collapse;
+    background-color: #ffffff;
+}
+#register_battalion_button_text {
+    margin: 5px;
+    margin-bottom: 20px;
+    color: #ad6cc2;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+#file_report_1_button {
+    color: #ffffff;
+    font-size: 25px;
+    padding: 7px;
+    background-color: #ff0015;
+
+    border: 7px solid #ff0015;
+    border-radius: 50px;
+}
+#file_report_1_button:hover {
+    color: #ff0015;
+    border: 7px solid #ffffff;
+    box-shadow:
+        0 0 5px #ffffff,
+        0 0 10px #ffffff,
+        0 0 20px #00c9ff,
+        0 0 30px #ff0015;
+    
+    border-collapse: collapse;
+    background-color: #ffffff;
+}
+#file_report_1_button_text {
+    margin: 5px;
+    margin-bottom: 20px;
+    color: #ff0015;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+#file_report_2_button {
+    color: #ffffff;
+    font-size: 25px;
+    padding: 7px;
+    background-color: #ff0015;
+
+    border: 7px solid #ff0015;
+    border-radius: 50px;
+}
+#file_report_2_button:hover {
+    color: #ff0015;
+    border: 7px solid #ffffff;
+    box-shadow:
+        0 0 5px #ffffff,
+        0 0 10px #ffffff,
+        0 0 20px #00c9ff,
+        0 0 30px #ff0015;
+    
+    border-collapse: collapse;
+    background-color: #ffffff;
+}
+#file_report_2_button_text {
+    margin: 5px;
+    margin-bottom: 20px;
+    color: #ff0015;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+#approve_reports_button {
+    color: #ffffff;
+    font-size: 25px;
+    padding: 4px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    background-color: #d6b44c;
+
+    border: 7px solid #d6b44c;
+    border-radius: 50px;
+}
+#approve_reports_button:hover {
+    color: #d6b44c;
+    border: 7px solid #ffffff;
+    box-shadow:
+        0 0 5px #ffffff,
+        0 0 10px #ffffff,
+        0 0 20px #00c9ff,
+        0 0 30px #d6b44c;
+    
+    border-collapse: collapse;
+    background-color: #ffffff;
+}
+#approve_reports_button_text {
+    margin: 5px;
+    margin-bottom: 20px;
+    color: #d6b44c;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+/* ~~~~~~~~~~~~~~~~~~~~ Roster Buttons End ~~~~~~~~~~~~~~~~~~~~ */
+
+/* ~~~~~~~~~~~~~~~~~~~~ Roster Button Modals Start ~~~~~~~~~~~~~~~~~~~~ */
+#register_unit_modal {    
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+    box-shadow:
+        0 0 10px #ffffff,
+        0 0 15px #00b368,
+        0 0 20px #00b368;
+
+    border-collapse: collapse;
+    background-color: rgb(28, 28, 28, 0.55);
+}
+#register_unit_modal_title {
     color: #ffffff;
     font-size: 30px;
     font-weight: bold;
     font-family: 'Allerta Stencil', sans-serif;
     text-shadow:
-        0 0 5px #ff0000,
-        0 0 10px #ff0015,
-        0 0 15px #ff0015,
-        0 0 20px #ff0015;
-
-    border: 3px solid #ffffff;
-    border-radius: 2px;
+    0 0 15px #00c9ff,
+    0 0 20px #00c9ff;
+    
+    border: 2px solid #ffffff;
+    border-radius: 2.5px;
     box-shadow:
-        0 0 2.5px #ffffff,
-        0 0 5px 5px #00c9ff;
-
+    0 0 10px #ffffff,
+        0 0 15px #00b368,
+        0 0 20px #00b368;
+        
     border-collapse: collapse;
+    padding: 5px;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
     background-color: #1c1c1c;
-    margin-top: 50px;
-    margin-bottom: 100px;
-    width: 300px;
 }
-
-#modal_collapse_button {
-    color: #ffffff;
-    font-size: 25px;
-    font-weight: bold;
-    font-family: 'Allerta Stencil', sans-serif;
-    background-image: url("collapse_background.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+#register_unit_modal_body {
+padding-left: 50px;
+padding-right: 50px;
 }
-#modal_collapse_text {
+#registered_name {
     color: #ffffff;
     font-size: 17.9px;
     font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    text-shadow:
+        0 0 10px #00b368,
+        0 0 15px #00b368;
+}
+#registered_contact {
+    color: #ffffff;
+    font-size: 17.9px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    text-shadow:
+        0 0 10px #00b368,
+        0 0 15px #00b368;
+}
+#registered_date {
+    color: #ffffff;
+    font-size: 17.9px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    text-shadow:
+        0 0 10px #00b368,
+        0 0 15px #00b368;
+}
+#unit_start {
+    width: 250px;
+}
+
+
+#transfer_unit_modal {    
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+    box-shadow:
+        0 0 10px #ffffff,
+        0 0 15px #4285f4,
+        0 0 20px #4285f4;
+
+    border-collapse: collapse;
+    background-color: rgb(28, 28, 28, 0.55);
+}
+#transfer_unit_modal_title {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Allerta Stencil', sans-serif;
+    text-shadow:
+    0 0 15px #00c9ff,
+    0 0 20px #00c9ff;
+    
+    border: 2px solid #ffffff;
+    border-radius: 2.5px;
+    box-shadow:
+    0 0 10px #ffffff,
+        0 0 15px #4285f4,
+        0 0 20px #4285f4;
+        
+    border-collapse: collapse;
+    padding: 5px;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
     background-color: #1c1c1c;
 }
+
+
+#register_battalion_modal {    
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+    box-shadow:
+        0 0 10px #ffffff,
+        0 0 15px #ad6cc2,
+        0 0 20px #ad6cc2;
+
+    border-collapse: collapse;
+    background-color: rgb(28, 28, 28, 0.55);
+}
+#register_battalion_modal_title {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Allerta Stencil', sans-serif;
+    text-shadow:
+    0 0 15px #00c9ff,
+    0 0 20px #00c9ff;
+    
+    border: 2px solid #ffffff;
+    border-radius: 2.5px;
+    box-shadow:
+    0 0 10px #ffffff,
+        0 0 15px #ad6cc2,
+        0 0 20px #ad6cc2;
+        
+    border-collapse: collapse;
+    padding: 5px;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    background-color: #1c1c1c;
+}
+
+
+#file_report_1_modal {    
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+    box-shadow:
+        0 0 10px #ffffff,
+        0 0 15px #b60031,
+        0 0 20px #b60031;
+
+    border-collapse: collapse;
+    background-color: rgb(28, 28, 28, 0.55);
+}
+#file_report_1_modal_title {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Allerta Stencil', sans-serif;
+    text-shadow:
+    0 0 15px #00c9ff,
+    0 0 20px #00c9ff;
+    
+    border: 2px solid #ffffff;
+    border-radius: 2.5px;
+    box-shadow:
+    0 0 10px #ffffff,
+        0 0 15px #b60031,
+        0 0 20px #b60031;
+        
+    border-collapse: collapse;
+    padding: 5px;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    background-color: #1c1c1c;
+}
+
+
+#file_report_2_modal {    
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+    box-shadow:
+        0 0 10px #ffffff,
+        0 0 15px #b60031,
+        0 0 20px #b60031;
+
+    border-collapse: collapse;
+    background-color: rgb(28, 28, 28, 0.55);
+}
+#file_report_2_modal_title {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Allerta Stencil', sans-serif;
+    text-shadow:
+    0 0 15px #00c9ff,
+    0 0 20px #00c9ff;
+    
+    border: 2px solid #ffffff;
+    border-radius: 2.5px;
+    box-shadow:
+    0 0 10px #ffffff,
+        0 0 15px #b60031,
+        0 0 20px #b60031;
+        
+    border-collapse: collapse;
+    padding: 5px;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    background-color: #1c1c1c;
+}
+
+
+#approve_reports_modal {    
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+    box-shadow:
+        0 0 10px #ffffff,
+        0 0 15px #d6b44c,
+        0 0 20px #d6b44c;
+
+    border-collapse: collapse;
+    background-color: rgb(28, 28, 28, 0.55);
+}
+#approve_reports_modal_title {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Allerta Stencil', sans-serif;
+    text-shadow:
+    0 0 15px #00c9ff,
+    0 0 20px #00c9ff;
+    
+    border: 2px solid #ffffff;
+    border-radius: 2.5px;
+    box-shadow:
+    0 0 10px #ffffff,
+        0 0 15px #d6b44c,
+        0 0 20px #d6b44c;
+        
+    border-collapse: collapse;
+    padding: 5px;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    background-color: #1c1c1c;
+}
+/* ~~~~~~~~~~~~~~~~~~~~ Roster Button Modals End ~~~~~~~~~~~~~~~~~~~~ */
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Leadership Division Start ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 #leadership_division_button {
     color: #ffffff;
@@ -218,5 +664,11 @@ margin-left: -11.7px;
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Combat Division End ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Extra ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-
+#icon_round {
+    color: #ff0015;
+    margin-right: 5px;
+    font-size: 17.5px;
+    border-radius: 15px;
+    padding: 4px;
+}
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Full Roster End ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
