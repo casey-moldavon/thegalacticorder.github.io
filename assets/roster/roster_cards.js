@@ -78,6 +78,76 @@ var full_roster = `
                     <p>Test Name of Testingson</p>
                 </div>
 
+                <div id="combat_card" class="card text-center" style="width: 9rem;">
+                    <div>
+                        <img id="card_image" src="../assets/ranks/emblems/emblem_1_trooper.png" class="card-img-top" alt="...">
+                    </div>
+                    <p>Test Name of Testingson</p>
+                </div>
+
+                <div id="combat_card" class="card text-center" style="width: 9rem;">
+                    <div>
+                        <img id="card_image" src="../assets/ranks/emblems/emblem_1_trooper.png" class="card-img-top" alt="...">
+                    </div>
+                    <p>Test Name of Testingson</p>
+                </div>
+
+                <div id="combat_card" class="card text-center" style="width: 9rem;">
+                    <div>
+                        <img id="card_image" src="../assets/ranks/emblems/emblem_1_trooper.png" class="card-img-top" alt="...">
+                    </div>
+                    <p>Test Name of Testingson</p>
+                </div>
+
+                <div id="combat_card" class="card text-center" style="width: 9rem;">
+                    <div>
+                        <img id="card_image" src="../assets/ranks/emblems/emblem_1_trooper.png" class="card-img-top" alt="...">
+                    </div>
+                    <p>Test Name of Testingson</p>
+                </div>
+
+                <div id="combat_card" class="card text-center" style="width: 9rem;">
+                    <div>
+                        <img id="card_image" src="../assets/ranks/emblems/emblem_1_trooper.png" class="card-img-top" alt="...">
+                    </div>
+                    <p>Test Name of Testingson</p>
+                </div>
+
+                <div id="combat_card" class="card text-center" style="width: 9rem;">
+                    <div>
+                        <img id="card_image" src="../assets/ranks/emblems/emblem_1_trooper.png" class="card-img-top" alt="...">
+                    </div>
+                    <p>Test Name of Testingson</p>
+                </div>
+
+                <div id="combat_card" class="card text-center" style="width: 9rem;">
+                    <div>
+                        <img id="card_image" src="../assets/ranks/emblems/emblem_1_trooper.png" class="card-img-top" alt="...">
+                    </div>
+                    <p>Test Name of Testingson</p>
+                </div>
+
+                <div id="combat_card" class="card text-center" style="width: 9rem;">
+                    <div>
+                        <img id="card_image" src="../assets/ranks/emblems/emblem_1_trooper.png" class="card-img-top" alt="...">
+                    </div>
+                    <p>Test Name of Testingson</p>
+                </div>
+
+                <div id="combat_card" class="card text-center" style="width: 9rem;">
+                    <div>
+                        <img id="card_image" src="../assets/ranks/emblems/emblem_1_trooper.png" class="card-img-top" alt="...">
+                    </div>
+                    <p>Test Name of Testingson</p>
+                </div>
+
+                <div id="combat_card" class="card text-center" style="width: 9rem;">
+                    <div>
+                        <img id="card_image" src="../assets/ranks/emblems/emblem_1_trooper.png" class="card-img-top" alt="...">
+                    </div>
+                    <p>Test Name of Testingson</p>
+                </div>
+
 
             </div>
         </div>
