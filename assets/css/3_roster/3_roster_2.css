@@ -51,13 +51,6 @@ body {
     border-collapse: collapse;
     background-color: #ffffff;
 }
-#roster_buttons_button_text {
-    font-size: 20px;
-    font-weight: bold;
-    font-family: 'Allerta Stencil', sans-serif;
-    margin-bottom: -2px;
-}
-
 
 #register_unit_button {
     color: #1c1c1c;

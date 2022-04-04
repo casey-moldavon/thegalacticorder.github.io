@@ -55,6 +55,7 @@
     border-radius: 2.5px;
 
     padding: 15px;
+    margin-bottom: 5px;
     width: 300px;
     background-color: #1c1c1c;
 }
@@ -74,9 +75,6 @@
 
     border-collapse: collapse;
 }
-#leadership_division_dropdown {
-    margin-left: -11.7px;
-}
 /* ~~~~~~~~~~~~~~~~~~~~ Leadership Card Start ~~~~~~~~~~~~~~~~~~~~ */
 #leadership_card {
     color: #ffffff;
@@ -87,8 +85,7 @@
     border: 2px solid #d6b44c;
     border-radius: 2.5px;
     background-color: #1c1c1c;
-    margin-top: 10px;
-    margin-right: 10px;
+    margin: 5px;
     width: 375px;
 }
 #leadership_card:hover {
@@ -125,6 +122,7 @@
     border-radius: 2.5px;
 
     padding: 5px;
+    margin-bottom: 5px;
     width: 300px;
     background-color: #1c1c1c;
 }
@@ -144,9 +142,6 @@
 
     border-collapse: collapse;
 }
-#combat_division_dropdown {
-    margin-left: -11.7px;
-}
 /* ~~~~~~~~~~~~~~~~~~~~ Combat Card Start ~~~~~~~~~~~~~~~~~~~~ */
 #combat_card {
     color: #ffffff;
@@ -157,8 +152,7 @@
     border: 2px solid #b60031;
     border-radius: 2.5px;
     background-color: #1c1c1c;
-    margin-top: 10px;
-    margin-right: 10px;
+    margin: 5px;
 }
 #combat_card:hover {
     border: 2px solid #ffffff;
@@ -192,6 +186,7 @@
     border-radius: 2.5px;
 
     padding: 5px;
+    margin-bottom: 5px;
     width: 300px;
     background-color: #1c1c1c;
 }
@@ -211,9 +206,6 @@
 
     border-collapse: collapse;
 }
-#engineer_division_dropdown {
-    margin-left: -11.7px;
-}
 /* ~~~~~~~~~~~~~~~~~~~~ Engineer Card Start ~~~~~~~~~~~~~~~~~~~~ */
 #engineer_card {
     color: #ffffff;
@@ -224,8 +216,7 @@
     border: 2px solid #ff7042;
     border-radius: 2.5px;
     background-color: #1c1c1c;
-    margin-top: 10px;
-    margin-right: 10px;
+    margin: 5px;
 }
 #engineer_card:hover {
     border: 2px solid #ffffff;
@@ -259,6 +250,7 @@
     border-radius: 2.5px;
 
     padding: 5px;
+    margin-bottom: 5px;
     width: 300px;
     background-color: #1c1c1c;
 }
@@ -278,9 +270,6 @@
 
     border-collapse: collapse;
 }
-#medical_division_dropdown {
-    margin-left: -11.7px;
-}
 /* ~~~~~~~~~~~~~~~~~~~~ Medical Card Start ~~~~~~~~~~~~~~~~~~~~ */
 #medical_card {
     color: #ffffff;
@@ -291,8 +280,7 @@
     border: 2px solid #4285f4;
     border-radius: 2.5px;
     background-color: #1c1c1c;
-    margin-top: 10px;
-    margin-right: 10px;
+    margin: 5px;
 }
 #medical_card:hover {
     border: 2px solid #ffffff;
@@ -326,6 +314,7 @@
     border-radius: 2.5px;
 
     padding: 5px;
+    margin-bottom: 5px;
     width: 300px;
     background-color: #1c1c1c;
 }
@@ -345,9 +334,6 @@
 
     border-collapse: collapse;
 }
-#novitiate_division_dropdown {
-    margin-left: -11.7px;
-}
 /* ~~~~~~~~~~~~~~~~~~~~ Novitiate Card Start ~~~~~~~~~~~~~~~~~~~~ */
 #novitiate_card {
     color: #ffffff;
@@ -358,8 +344,7 @@
     border: 2px solid #ffffff;
     border-radius: 2.5px;
     background-color: #1c1c1c;
-    margin-top: 10px;
-    margin-right: 10px;
+    margin: 5px;
 }
 #novitiate_card:hover {
     border: 2px solid #ffffff;

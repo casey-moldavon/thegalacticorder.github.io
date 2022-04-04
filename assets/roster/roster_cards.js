@@ -1,6 +1,6 @@
 var full_roster = `
 
-<div id="full_roster_container" class="container container-fluid">
+<div id="full_roster_container" class="container container-fluid justify-content-center text-center">
 
     <div id="full_roster_title" class="container text-center">
         FULL ROSTER
@@ -13,8 +13,7 @@ var full_roster = `
             Leadership Division
         </button>
         
-        <div class="collapse" id="leadership_division_dropdown">
-            <div class="container container-fluid row">
+        <div class="collapse row justify-content-center" id="leadership_division_dropdown">
 
 
                 <div id="leadership_card" class="card text-center" style="width: 9rem;">
@@ -34,7 +33,6 @@ var full_roster = `
                 </div>
 
 
-            </div>
         </div>
     </div>
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Leadership Division End ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
@@ -46,8 +44,7 @@ var full_roster = `
             Combat Division
         </button>
         
-        <div class="collapse" id="combat_division_dropdown">
-            <div class="container container-fluid row">
+        <div class="collapse row justify-content-center" id="combat_division_dropdown">
 
 
                 <div id="combat_card" class="card text-center" style="width: 9rem;">
@@ -149,7 +146,6 @@ var full_roster = `
                 </div>
 
 
-            </div>
         </div>
     </div>
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Combat Division End ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
@@ -161,8 +157,7 @@ var full_roster = `
             Engineer Division
         </button>
         
-        <div class="collapse" id="engineer_division_dropdown">
-            <div class="container container-fluid row">
+        <div class="collapse row justify-content-center" id="engineer_division_dropdown">
 
 
                 <div id="engineer_card" class="card text-center" style="width: 9rem;">
@@ -194,7 +189,6 @@ var full_roster = `
                 </div>
 
 
-            </div>
         </div>
     </div>
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Engineer Division End ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
@@ -206,8 +200,7 @@ var full_roster = `
             Medical Division
         </button>
         
-        <div class="collapse" id="medical_division_dropdown">
-            <div class="container container-fluid row">
+        <div class="collapse row justify-content-center" id="medical_division_dropdown">
 
 
                 <div id="medical_card" class="card text-center" style="width: 9rem;">
@@ -239,7 +232,6 @@ var full_roster = `
                 </div>
 
 
-            </div>
         </div>
     </div>
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Medical Division End ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
@@ -251,8 +243,7 @@ var full_roster = `
                 Novitiate Division
             </button>
             
-            <div class="collapse" id="novitiate_division_dropdown">
-                <div class="container container-fluid row">
+            <div class="collapse row justify-content-center" id="novitiate_division_dropdown">
     
     
                     <div id="novitiate_card" class="card text-center" style="width: 9rem;">
@@ -283,12 +274,10 @@ var full_roster = `
                         <p id="card_text">Test Name of Testingson</p>
                     </div>
 
-    
-                </div>
+
             </div>
         </div>
         <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Novitiate Division End ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-
 
 
 </div>
