@@ -22,6 +22,8 @@ body {
     margin-top: 35px;
     position: sticky;
     position: fixed;
+    float: left;
+    z-index: 1;
 }
 
 
