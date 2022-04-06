@@ -554,6 +554,7 @@ body {
     border: 2px solid #ffffff;
     border-radius: 2px;
     margin: 1%;
+    background-color: #1c1c1c;
 }
 #rank_0_unit_card:hover {
     border: 2px solid #ffffff;
@@ -572,6 +573,7 @@ body {
     font-size: 15.5px;
     font-weight: bold;
     font-family: 'Allerta Stencil', sans-serif;
+    background-color: #1c1c1c;
 }
 #rank_0_unit_card:hover #rank_0_unit_text {
     font-size: 15.5px;
@@ -586,6 +588,7 @@ body {
     border: 2px solid #b60031;
     border-radius: 2px;
     margin: 1%;
+    background-color: #1c1c1c;
 }
 #combat_unit_card:hover {
     border: 2px solid #ffffff;
@@ -604,6 +607,7 @@ body {
     font-size: 15.5px;
     font-weight: bold;
     font-family: 'Allerta Stencil', sans-serif;
+    background-color: #1c1c1c;
 }
 #combat_unit_card:hover #combat_unit_text {
     font-size: 15.5px;
@@ -618,6 +622,7 @@ body {
     border: 2px solid #ff7042;
     border-radius: 2px;
     margin: 1%;
+    background-color: #1c1c1c;
 }
 #engineer_unit_card:hover {
     border: 2px solid #ffffff;
@@ -636,6 +641,7 @@ body {
     font-size: 15.5px;
     font-weight: bold;
     font-family: 'Allerta Stencil', sans-serif;
+    background-color: #1c1c1c;
 }
 #engineer_unit_card:hover #engineer_unit_text {
     font-size: 15.5px;
@@ -650,6 +656,7 @@ body {
     border: 2px solid #4285f4;
     border-radius: 2px;
     margin: 1%;
+    background-color: #1c1c1c;
 }
 #medical_unit_card:hover {
     border: 2px solid #ffffff;
@@ -668,6 +675,7 @@ body {
     font-size: 15.5px;
     font-weight: bold;
     font-family: 'Allerta Stencil', sans-serif;
+    background-color: #1c1c1c;
 }
 #medical_unit_card:hover #medical_unit_text {
     font-size: 15.5px;
@@ -682,6 +690,7 @@ body {
     border: 2px solid #d6b44c;
     border-radius: 2px;
     margin: 1%;
+    background-color: #1c1c1c;
 }
 #leadership_unit_card:hover {
     border: 2px solid #ffffff;
@@ -700,6 +709,7 @@ body {
     font-size: 15.5px;
     font-weight: bold;
     font-family: 'Allerta Stencil', sans-serif;
+    background-color: #1c1c1c;
 }
 #leadership_unit_card:hover #leadership_unit_text {
     font-size: 15.5px;
