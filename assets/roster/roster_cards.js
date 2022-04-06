@@ -236,6 +236,21 @@ var full_roster = `
     </div>
     <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Medical Division End ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Science Division Start ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <div id="science_division_container" class="container container-fluid">
+
+        <button id="science_division_button" type="button" data-bs-toggle="collapse" data-bs-target="#science_division_dropdown" aria-expanded="false" aria-controls="science_division_dropdown">
+            Science Division
+        </button>
+        
+        <div class="collapse row justify-content-center" id="science_division_dropdown">
+
+
+
+        </div>
+    </div>
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Science Division End ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
         <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Novitiate Division Start ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
         <div id="novitiate_division_container" class="container container-fluid">
 

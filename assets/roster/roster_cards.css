@@ -297,6 +297,70 @@
 /* ~~~~~~~~~~~~~~~~~~~~ Medical Modal End ~~~~~~~~~~~~~~~~~~~~ */
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Medical Division End ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Science Division Start ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+#science_division_container {
+    margin-bottom: 25px;
+}
+#science_division_button {
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Allerta Stencil', sans-serif;
+    text-shadow:
+        0 0 1px #1c1c1c,
+        0 0 20px #00b368;
+
+    border: 2px solid #00b368;
+    border-radius: 2.5px;
+
+    padding: 5px;
+    margin-bottom: 5px;
+    width: 300px;
+    background-color: #1c1c1c;
+}
+#science_division_button:hover {
+    color: #ffffff;
+    font-size: 25px;
+    text-shadow:
+        0 0 15px #00c9ff,
+        0 0 20px #00c9ff;
+
+    border: 2px solid #ffffff;
+    border-radius: 2.5px;
+    box-shadow:
+        0 0 10px #ffffff,
+        0 0 15px #00b368,
+        0 0 20px #00b368;
+
+    border-collapse: collapse;
+}
+/* ~~~~~~~~~~~~~~~~~~~~ Science Card Start ~~~~~~~~~~~~~~~~~~~~ */
+#science_card {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Allerta Stencil', sans-serif;
+
+    border: 2px solid #00b368;
+    border-radius: 2.5px;
+    background-color: #1c1c1c;
+    margin: 5px;
+}
+#science_card:hover {
+    border: 2px solid #ffffff;
+    box-shadow:
+        0 0 10px #ffffff,
+        0 0 15px #00b368,
+        0 0 20px #00b368;
+
+    border-collapse: collapse;
+}
+/* ~~~~~~~~~~~~~~~~~~~~ Science Card End ~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~ Science Modal Start ~~~~~~~~~~~~~~~~~~~~ */
+
+/* ~~~~~~~~~~~~~~~~~~~~ Science Modal End ~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Science Division End ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Novitiate Division Start ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 #novitiate_division_container {
     margin-bottom: 25px;
