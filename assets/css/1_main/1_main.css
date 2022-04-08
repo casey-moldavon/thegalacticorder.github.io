@@ -21,7 +21,7 @@ body {
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Introduction Start ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 #introduction_container {
-    margin-top: 50px;
+    margin-top: 75px;
     margin-bottom: 25px;
     padding: 40px;
 
@@ -32,7 +32,7 @@ body {
         0 0 10px 7px #00c9ff;
 
     border-collapse: collapse;
-    background-color: rgb(28, 28, 28, 0.80);
+    background-color: rgb(28, 28, 28, 0.69);
 }
 
 #introduction_image_container {
@@ -92,7 +92,7 @@ body {
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Rules & Laws Start ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 #rules_laws_container {
-    margin-top: 50px;
+    margin-top: 75px;
     margin-bottom: 25px;
     padding: 40px;
 
@@ -108,7 +108,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-color: rgb(28, 28, 28, 0.75);
+    background-color: rgb(28, 28, 28, 0.69);
 }
 
 #rules_laws_hidden_container {
