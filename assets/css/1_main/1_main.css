@@ -11,8 +11,8 @@ body {
     background-image: url("");
     background-color: #000000;
     /* background-image: url("concept5_edited.jpg"); */
-    background-image: url("intro_background.jpg");
-    /* background-image: url("background_tgo_3.jpg"); */
+    /* background-image: url("intro_background.jpg"); */
+    background-image: url("background_tgo_4.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -32,12 +32,7 @@ body {
         0 0 10px 7px #00c9ff;
 
     border-collapse: collapse;
-
-    background-image: url("logo.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-color: rgb(28, 28, 28, 0.75);
+    background-color: rgb(28, 28, 28, 0.80);
 }
 
 #introduction_image_container {
@@ -87,14 +82,6 @@ body {
         font-family: 'Montserrat', sans-serif;
     margin-top: 20px;
     padding: 3%;
-    border: 3px solid #ffffff;
-    border-radius: 2px;
-    box-shadow:
-        0 0 2.5px #ffffff,
-        0 0 5px 5px #00c9ff;
-
-    border-collapse: collapse;
-    background-color: rgb(28, 28, 28, 0.95);
 }
 
 #big_welcome {
@@ -118,13 +105,10 @@ body {
     border-collapse: collapse;
 
     background-image: url("logo.png");
-    /* background-image: url("order_background.jpg"); */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-color: rgb(28, 28, 28, 0.75);
-
-    /* opacity: 95%; */
 }
 
 #rules_laws_hidden_container {
