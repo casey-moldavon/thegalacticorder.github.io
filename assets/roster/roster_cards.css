@@ -10,7 +10,7 @@
         0 0 15px #ff0015,
         0 0 20px #ff0015;
 
-    border: 2px solid #ffffff;
+    border: 2.5px solid #ffffff;
     border-radius: 2px;
     box-shadow:
         0 0 2.5px #ffffff,
@@ -51,7 +51,7 @@
         0 0 1px #1c1c1c,
         0 0 20px #d6b44c;
 
-    border: 2px solid #d6b44c;
+    border: 5px solid #d6b44c;
     border-radius: 2.5px;
 
     padding: 15px;
@@ -66,7 +66,7 @@
         0 0 15px #00c9ff,
         0 0 20px #00c9ff;
     
-    border: 2px solid #ffffff;
+    border: 5px solid #ffffff;
     border-radius: 2.5px;
     box-shadow:
         0 0 10px #ffffff,
@@ -82,14 +82,14 @@
     font-weight: bold;
     font-family: 'Allerta Stencil', sans-serif;
 
-    border: 2px solid #d6b44c;
+    border: 5px solid #d6b44c;
     border-radius: 2.5px;
     background-color: #1c1c1c;
     margin: 5px;
     width: 375px;
 }
 #leadership_card:hover {
-    border: 2px solid #ffffff;
+    border: 5px solid #ffffff;
     box-shadow:
         0 0 10px #ffffff,
         0 0 15px #d6b44c,
@@ -118,7 +118,7 @@
         0 0 1px #1c1c1c,
         0 0 20px #b60031;
 
-    border: 2px solid #b60031;
+    border: 5px solid #b60031;
     border-radius: 2.5px;
 
     padding: 5px;
@@ -133,7 +133,7 @@
         0 0 15px #00c9ff,
         0 0 20px #00c9ff;
 
-    border: 2px solid #ffffff;
+    border: 5px solid #ffffff;
     border-radius: 2.5px;
     box-shadow:
         0 0 10px #ffffff,
@@ -149,13 +149,13 @@
     font-weight: bold;
     font-family: 'Allerta Stencil', sans-serif;
 
-    border: 2px solid #b60031;
+    border: 5px solid #b60031;
     border-radius: 2.5px;
     background-color: #1c1c1c;
     margin: 5px;
 }
 #combat_card:hover {
-    border: 2px solid #ffffff;
+    border: 5px solid #ffffff;
     box-shadow:
         0 0 10px #ffffff,
         0 0 15px #b60031,
@@ -182,7 +182,7 @@
         0 0 1px #1c1c1c,
         0 0 20px #ff7042;
 
-    border: 2px solid #ff7042;
+    border: 5px solid #ff7042;
     border-radius: 2.5px;
 
     padding: 5px;
@@ -197,7 +197,7 @@
         0 0 15px #00c9ff,
         0 0 20px #00c9ff;
 
-    border: 2px solid #ffffff;
+    border: 5px solid #ffffff;
     border-radius: 2.5px;
     box-shadow:
         0 0 10px #ffffff,
@@ -213,13 +213,13 @@
     font-weight: bold;
     font-family: 'Allerta Stencil', sans-serif;
 
-    border: 2px solid #ff7042;
+    border: 5px solid #ff7042;
     border-radius: 2.5px;
     background-color: #1c1c1c;
     margin: 5px;
 }
 #engineer_card:hover {
-    border: 2px solid #ffffff;
+    border: 5px solid #ffffff;
     box-shadow:
         0 0 10px #ffffff,
         0 0 15px #ff7042,
@@ -246,7 +246,7 @@
         0 0 1px #1c1c1c,
         0 0 20px #4285f4;
 
-    border: 2px solid #4285f4;
+    border: 5px solid #4285f4;
     border-radius: 2.5px;
 
     padding: 5px;
@@ -261,7 +261,7 @@
         0 0 15px #00c9ff,
         0 0 20px #00c9ff;
 
-    border: 2px solid #ffffff;
+    border: 5px solid #ffffff;
     border-radius: 2.5px;
     box-shadow:
         0 0 10px #ffffff,
@@ -277,13 +277,13 @@
     font-weight: bold;
     font-family: 'Allerta Stencil', sans-serif;
 
-    border: 2px solid #4285f4;
+    border: 5px solid #4285f4;
     border-radius: 2.5px;
     background-color: #1c1c1c;
     margin: 5px;
 }
 #medical_card:hover {
-    border: 2px solid #ffffff;
+    border: 5px solid #ffffff;
     box-shadow:
         0 0 10px #ffffff,
         0 0 15px #4285f4,
@@ -310,7 +310,7 @@
         0 0 1px #1c1c1c,
         0 0 20px #00b368;
 
-    border: 2px solid #00b368;
+    border: 5px solid #00b368;
     border-radius: 2.5px;
 
     padding: 5px;
@@ -325,7 +325,7 @@
         0 0 15px #00c9ff,
         0 0 20px #00c9ff;
 
-    border: 2px solid #ffffff;
+    border: 5px solid #ffffff;
     border-radius: 2.5px;
     box-shadow:
         0 0 10px #ffffff,
@@ -341,13 +341,13 @@
     font-weight: bold;
     font-family: 'Allerta Stencil', sans-serif;
 
-    border: 2px solid #00b368;
+    border: 5px solid #00b368;
     border-radius: 2.5px;
     background-color: #1c1c1c;
     margin: 5px;
 }
 #science_card:hover {
-    border: 2px solid #ffffff;
+    border: 5px solid #ffffff;
     box-shadow:
         0 0 10px #ffffff,
         0 0 15px #00b368,
@@ -374,7 +374,7 @@
         0 0 1px #1c1c1c,
         0 0 15px #ffffff;
 
-    border: 2px solid #ffffff;
+    border: 5px solid #ffffff;
     border-radius: 2.5px;
 
     padding: 5px;
@@ -389,7 +389,7 @@
         0 0 15px #00c9ff,
         0 0 20px #00c9ff;
 
-    border: 2px solid #ffffff;
+    border: 5px solid #ffffff;
     border-radius: 2.5px;
     box-shadow:
         0 0 10px #ffffff,
@@ -405,13 +405,13 @@
     font-weight: bold;
     font-family: 'Allerta Stencil', sans-serif;
     
-    border: 2px solid #ffffff;
+    border: 5px solid #ffffff;
     border-radius: 2.5px;
     background-color: #1c1c1c;
     margin: 5px;
 }
 #novitiate_card:hover {
-    border: 2px solid #ffffff;
+    border: 5px solid #ffffff;
     box-shadow:
         0 0 10px #ffffff,
         0 0 15px #00c9ff,
