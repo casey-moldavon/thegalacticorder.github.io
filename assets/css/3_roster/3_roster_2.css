@@ -233,14 +233,7 @@ body {
         0 0 15px #00c9ff,
         0 0 20px #00c9ff;
     
-    border: 2px solid #ffffff;
-    border-radius: 2.5px;
-    box-shadow:
-        0 0 10px #ffffff,
-        0 0 15px #00b368,
-        0 0 20px #00b368;
-        
-    border-collapse: collapse;
+    border-bottom: 1px solid #ffffff;
     background-color: #1c1c1c;
 }
 #register_unit_modal_body {
@@ -311,14 +304,7 @@ padding-right: 50px;
         0 0 15px #00c9ff,
         0 0 20px #00c9ff;
     
-    border: 2px solid #ffffff;
-    border-radius: 2.5px;
-    box-shadow:
-        0 0 10px #ffffff,
-        0 0 15px #4285f4,
-        0 0 20px #4285f4;
-        
-    border-collapse: collapse;
+    border-bottom: 1px solid #ffffff;
     background-color: #1c1c1c;
 }
 
@@ -342,7 +328,7 @@ padding-right: 50px;
 }
 #unit_patrols {
     width: 75px;
-    margin-top: 5px;
+    margin-top: 7.5px;
     font-weight: bold;
 }
 #completed_hours {
@@ -364,208 +350,434 @@ padding-right: 50px;
 }
 #unit_hours {
     width: 75px;
-    margin-top: 5px;
+    margin-top: 7.5px;
     font-weight: bold;
+}
+
+
+#completed_missions_container {
+    width: 95%;
 }
 
 /* Missions */
 #completed_turret {
     color: #ffffff;
-    font-size: 17.9px;
+    font-size: 15px;
     font-weight: bold;
     font-family: 'Montserrat', sans-serif;
     border: 2px solid #b60031;
-    border-radius: 2.5px;
-    background-color: #b60031;
-    padding: 5px;
+    border-radius: 5px;
+    background-color: #1c1c1c;
+    padding-top: 15px;
     margin: 7.5px;
     width: 100px;
-    height: 110px;
+    height: 100px;
 }
 #mission_turret {
     width: 75px;
-    margin-top: 30px;
+    margin-top: 22px;
     font-weight: bold;
 }
+#completed_turret:hover {
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    box-shadow:
+        0 0 5px #ffffff,
+        0 0 10px #b60031,
+        0 0 20px #b60031;
+
+    border-collapse: collapse;  
+    background-color: #b60031;
+}
+
 #completed_ground_assault {
     color: #ffffff;
-    font-size: 17.9px;
+    font-size: 15px;
     font-weight: bold;
     font-family: 'Montserrat', sans-serif;
     border: 2px solid #b60031;
-    border-radius: 2.5px;
-    background-color: #b60031;
+    border-radius: 5px;
+    background-color: #1c1c1c;
     padding: 5px;
     margin: 7.5px;
     width: 100px;
-    height: 110px;
+    height: 100px;
 }
 #mission_ground_assault {
     width: 75px;
-    margin-top: 5px;
+    margin-top: 10px;
     font-weight: bold;
 }
+#completed_ground_assault:hover {
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    box-shadow:
+        0 0 5px #ffffff,
+        0 0 10px #b60031,
+        0 0 20px #b60031;
+
+    border-collapse: collapse;  
+    background-color: #b60031;
+}
+
 #completed_escort {
     color: #ffffff;
-    font-size: 17.9px;
+    font-size: 15px;
     font-weight: bold;
     font-family: 'Montserrat', sans-serif;
     border: 2px solid #ad6cc2;
-    border-radius: 2.5px;
-    background-color: #ad6cc2;
-    padding: 5px;
+    border-radius: 5px;
+    background-color: #1c1c1c;
+    padding-top: 15px;
     margin: 7.5px;
     width: 100px;
-    height: 110px;
+    height: 100px;
 }
 #mission_escort {
     width: 75px;
-    margin-top: 30px;
+    margin-top: 22px;
     font-weight: bold;
 }
+#completed_escort:hover {
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    box-shadow:
+        0 0 5px #ffffff,
+        0 0 10px #ad6cc2,
+        0 0 20px #ad6cc2;
+
+    border-collapse: collapse;  
+    background-color: #ad6cc2;
+}
+
 #completed_inquiry {
     color: #ffffff;
-    font-size: 17.9px;
+    font-size: 15px;
     font-weight: bold;
     font-family: 'Montserrat', sans-serif;
     border: 2px solid #b60031;
-    border-radius: 2.5px;
-    background-color: #b60031;
-    padding: 5px;
+    border-radius: 5px;
+    background-color: #1c1c1c;
+    padding-top: 15px;
     margin: 7.5px;
     width: 100px;
-    height: 110px;
+    height: 100px;
 }
 #mission_inquiry {
     width: 75px;
-    margin-top: 30px;
+    margin-top: 22px;
     font-weight: bold;
 }
+#completed_inquiry:hover {
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    box-shadow:
+        0 0 5px #ffffff,
+        0 0 10px #b60031,
+        0 0 20px #b60031;
+
+    border-collapse: collapse;  
+    background-color: #b60031;
+}
+
 #completed_pilot_co_pilot {
     color: #ffffff;
-    font-size: 17.9px;
+    font-size: 15px;
     font-weight: bold;
     font-family: 'Montserrat', sans-serif;
     border: 2px solid #ff7042;
-    border-radius: 2.5px;
-    background-color: #ff7042;
+    border-radius: 5px;
+    background-color: #1c1c1c;
     padding: 5px;
     margin: 7.5px;
     width: 100px;
-    height: 110px;
+    height: 100px;
 }
 #mission_pilot_co_pilot {
     width: 75px;
-    margin-top: 5px;
+    margin-top: 10px;
     font-weight: bold;
 }
+#completed_pilot_co_pilot:hover {
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    box-shadow:
+        0 0 5px #ffffff,
+        0 0 10px #ff7042,
+        0 0 20px #ff7042;
+
+    border-collapse: collapse;  
+    background-color: #ff7042;
+}
+
 #completed_mining {
     color: #ffffff;
-    font-size: 17.9px;
+    font-size: 15px;
     font-weight: bold;
     font-family: 'Montserrat', sans-serif;
     border: 2px solid #ff7042;
-    border-radius: 2.5px;
-    background-color: #ff7042;
-    padding: 5px;
+    border-radius: 5px;
+    background-color: #1c1c1c;
+    padding-top: 15px;
     margin: 7.5px;
     width: 100px;
-    height: 110px;
+    height: 100px;
 }
 #mission_mining {
     width: 75px;
-    margin-top: 30px;
+    margin-top: 22px;
     font-weight: bold;
 }
+#completed_mining:hover {
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    box-shadow:
+        0 0 5px #ffffff,
+        0 0 10px #ff7042,
+        0 0 20px #ff7042;
+
+    border-collapse: collapse;  
+    background-color: #ff7042;
+}
+
 #completed_salvage {
     color: #ffffff;
-    font-size: 17.9px;
+    font-size: 15px;
     font-weight: bold;
     font-family: 'Montserrat', sans-serif;
     border: 2px solid #ff7042;
-    border-radius: 2.5px;
-    background-color: #ff7042;
-    padding: 5px;
+    border-radius: 5px;
+    background-color: #1c1c1c;
+    padding-top: 15px;
     margin: 7.5px;
     width: 100px;
-    height: 110px;
+    height: 100px;
 }
 #mission_salvage {
     width: 75px;
-    margin-top: 30px;
+    margin-top: 22px;
     font-weight: bold;
 }
+#completed_salvage:hover {
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    box-shadow:
+        0 0 5px #ffffff,
+        0 0 10px #ff7042,
+        0 0 20px #ff7042;
+
+    border-collapse: collapse;  
+    background-color: #ff7042;
+}
+
 #completed_cargo {
     color: #ffffff;
-    font-size: 17.9px;
+    font-size: 15px;
     font-weight: bold;
     font-family: 'Montserrat', sans-serif;
     border: 2px solid #ff7042;
-    border-radius: 2.5px;
-    background-color: #ff7042;
-    padding: 5px;
+    border-radius: 5px;
+    background-color: #1c1c1c;
+    padding-top: 15px;
     margin: 7.5px;
     width: 100px;
-    height: 110px;
+    height: 100px;
 }
 #mission_cargo {
     width: 75px;
-    margin-top: 30px;
+    margin-top: 22px;
     font-weight: bold;
 }
+#completed_cargo:hover {
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    box-shadow:
+        0 0 5px #ffffff,
+        0 0 10px #ff7042,
+        0 0 20px #ff7042;
+
+    border-collapse: collapse;  
+    background-color: #ff7042;
+}
+
 #completed_transit {
     color: #ffffff;
-    font-size: 17.9px;
+    font-size: 15px;
     font-weight: bold;
     font-family: 'Montserrat', sans-serif;
-    border: 2px solid #00b368;
-    border-radius: 2.5px;
-    background-color: #00b368;
-    padding: 5px;
+    border: 2px solid #a17b9b;
+    border-radius: 5px;
+    background-color: #1c1c1c;
+    padding-top: 15px;
     margin: 7.5px;
     width: 100px;
-    height: 110px;
+    height: 100px;
 }
 #mission_transit {
     width: 75px;
-    margin-top: 30px;
+    margin-top: 22px;
     font-weight: bold;
 }
+#completed_transit:hover {
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    box-shadow:
+        0 0 5px #ffffff,
+        0 0 10px #a17b9b,
+        0 0 20px #a17b9b;
+
+    border-collapse: collapse;  
+    background-color: #a17b9b;
+}
+
 #completed_support {
     color: #ffffff;
-    font-size: 17.9px;
+    font-size: 15px;
     font-weight: bold;
     font-family: 'Montserrat', sans-serif;
-    border: 2px solid #00b368;
-    border-radius: 2.5px;
-    background-color: #00b368;
-    padding: 5px;
+    border: 2px solid #a17b9b;
+    border-radius: 5px;
+    background-color: #1c1c1c;
+    padding-top: 15px;
     margin: 7.5px;
     width: 100px;
-    height: 110px;
+    height: 100px;
 }
 #mission_support {
     width: 75px;
-    margin-top: 30px;
+    margin-top: 22px;
     font-weight: bold;
 }
+#completed_support:hover {
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    box-shadow:
+        0 0 5px #ffffff,
+        0 0 10px #a17b9b,
+        0 0 20px #a17b9b;
+
+    border-collapse: collapse;  
+    background-color: #a17b9b;
+}
+
 #completed_search_rescue {
     color: #ffffff;
-    font-size: 17.9px;
+    font-size: 15px;
     font-weight: bold;
     font-family: 'Montserrat', sans-serif;
     border: 2px solid #4285f4;
-    border-radius: 2.5px;
-    background-color: #4285f4;
+    border-radius: 5px;
+    background-color: #1c1c1c;
     padding: 5px;
     margin: 7.5px;
     width: 100px;
-    height: 110px;
+    height: 100px;
 }
 #mission_search_rescue {
     width: 75px;
-    margin-top: 5px;
+    margin-top: 10px;
     font-weight: bold;
+}
+#completed_search_rescue:hover {
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    box-shadow:
+        0 0 5px #ffffff,
+        0 0 10px #4285f4,
+        0 0 20px #4285f4;
+
+    border-collapse: collapse;  
+    background-color: #4285f4;
+}
+
+#completed_manage_data{
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    border: 2px solid #00b368;
+    border-radius: 5px;
+    background-color: #1c1c1c;
+    padding: 5px;
+    margin: 7.5px;
+    width: 100px;
+    height: 100px;
+}
+#mission_manage_data{
+    width: 75px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+#completed_manage_data:hover {
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    box-shadow:
+        0 0 5px #ffffff,
+        0 0 10px #00b368,
+        0 0 20px #00b368;
+
+    border-collapse: collapse;  
+    background-color: #00b368;
+}
+
+#completed_research{
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    border: 2px solid #00b368;
+    border-radius: 5px;
+    background-color: #1c1c1c;
+    padding-top: 15px;
+    margin: 7.5px;
+    width: 100px;
+    height: 100px;
+}
+#mission_research{
+    width: 75px;
+    margin-top: 22px;
+    font-weight: bold;
+}
+#completed_research:hover {
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    box-shadow:
+        0 0 5px #ffffff,
+        0 0 10px #00b368,
+        0 0 20px #00b368;
+
+    border-collapse: collapse;  
+    background-color: #00b368;
+}
+
+#completed_agronomy{
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    border: 2px solid #00b368;
+    border-radius: 5px;
+    background-color: #1c1c1c;
+    padding-top: 15px;
+    margin: 7.5px;
+    width: 100px;
+    height: 100px;
+}
+#mission_agronomy{
+    width: 75px;
+    margin-top: 22px;
+    font-weight: bold;
+}
+#completed_agronomy:hover {
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    box-shadow:
+        0 0 5px #ffffff,
+        0 0 10px #00b368,
+        0 0 20px #00b368;
+
+    border-collapse: collapse;  
+    background-color: #00b368;
 }
 
 #issued_alerts {
@@ -588,7 +800,7 @@ padding-right: 50px;
 }
 #unit_alerts {
     width: 75px;
-    margin-top: 5px;
+    margin-top: 7.5px;
     font-weight: bold;
 }
 #issued_warning {
@@ -642,14 +854,7 @@ padding-right: 50px;
         0 0 15px #00c9ff,
         0 0 20px #00c9ff;
     
-    border: 2px solid #ffffff;
-    border-radius: 2.5px;
-    box-shadow:
-        0 0 10px #ffffff,
-        0 0 15px #b629dd,
-        0 0 20px #b629dd;
-        
-    border-collapse: collapse;
+    border-bottom: 1px solid #ffffff;
     background-color: #1c1c1c;
 }
 
@@ -674,14 +879,7 @@ padding-right: 50px;
         0 0 15px #00c9ff,
         0 0 20px #00c9ff;
     
-    border: 2px solid #ffffff;
-    border-radius: 2.5px;
-    box-shadow:
-        0 0 10px #ffffff,
-        0 0 15px #b629dd,
-        0 0 20px #b629dd;
-        
-    border-collapse: collapse;
+    border-bottom: 1px solid #ffffff;
     background-color: #1c1c1c;
 }
 
@@ -706,14 +904,7 @@ padding-right: 50px;
         0 0 15px #00c9ff,
         0 0 20px #00c9ff;
     
-    border: 2px solid #ffffff;
-    border-radius: 2.5px;
-    box-shadow:
-        0 0 10px #ffffff,
-        0 0 15px #d6b44c,
-        0 0 20px #d6b44c;
-        
-    border-collapse: collapse;
+    border-bottom: 1px solid #ffffff;
     background-color: #1c1c1c;
 }
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Roster Button Modals End ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -839,7 +1030,7 @@ margin-left: -11.7px;
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Combat Division Start ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 #combat_division_container {
-    margin-top: 25px;
+    margin-top: 22px;
 }
 #combat_division_button {
     color: #ffffff;
