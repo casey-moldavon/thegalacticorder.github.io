@@ -17,7 +17,7 @@ body {
     background-attachment: fixed;
 }
 
-/* ~~~~~~~~~~~~~~~~~~~~ Roster Buttons Start ~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Roster Buttons Start ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 #roster_buttons_container {
     margin-top: 35px;
     position: sticky;
@@ -54,6 +54,7 @@ body {
     background-color: #ffffff;
 }
 
+/* ~~~~~~~~~~~~~~~~~~~~ Register Unit ~~~~~~~~~~~~~~~~~~~~ */
 #register_unit_button {
     color: #1c1c1c;
     font-size: 40px;
@@ -83,16 +84,17 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-
-#transfer_unit_button {
+/* ~~~~~~~~~~~~~~~~~~~~ File Report 1 ~~~~~~~~~~~~~~~~~~~~ */
+#file_report_1_button {
     color: #1c1c1c;
-    font-size: 42px;
+    font-size: 25px;
+    padding: 7px;
     background-color: #4285f4;
 
     border: 7px solid #4285f4;
     border-radius: 50px;
 }
-#transfer_unit_button:hover {
+#file_report_1_button:hover {
     color: #4285f4;
     border: 7px solid #ffffff;
     box-shadow:
@@ -104,7 +106,7 @@ body {
     border-collapse: collapse;
     background-color: #ffffff;
 }
-#transfer_unit_button_text {
+#file_report_1_button_text {
     margin: 5px;
     margin-bottom: 20px;
     color: #4285f4;
@@ -113,88 +115,24 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-
-#register_battalion_button {
-    color: #1c1c1c;
-    font-size: 25px;
-    padding: 4px;
-    padding-top: 7px;
-    padding-bottom: 7px;
-    background-color: #ad6cc2;
-
-    border: 7px solid #ad6cc2;
-    border-radius: 50px;
-}
-#register_battalion_button:hover {
-    color: #ad6cc2;
-    border: 7px solid #ffffff;
-    box-shadow:
-        0 0 5px #ffffff,
-        0 0 10px #ffffff,
-        0 0 20px #00c9ff,
-        0 0 30px #ad6cc2;
-    
-    border-collapse: collapse;
-    background-color: #ffffff;
-}
-#register_battalion_button_text {
-    margin: 5px;
-    margin-bottom: 20px;
-    color: #ad6cc2;
-    font-size: 15px;
-    font-weight: bold;
-    font-family: 'Montserrat', sans-serif;
-}
-
-
-#file_report_1_button {
-    color: #1c1c1c;
-    font-size: 25px;
-    padding: 7px;
-    background-color: #ff0015;
-
-    border: 7px solid #ff0015;
-    border-radius: 50px;
-}
-#file_report_1_button:hover {
-    color: #ff0015;
-    border: 7px solid #ffffff;
-    box-shadow:
-        0 0 5px #ffffff,
-        0 0 10px #ffffff,
-        0 0 20px #00c9ff,
-        0 0 30px #ff0015;
-    
-    border-collapse: collapse;
-    background-color: #ffffff;
-}
-#file_report_1_button_text {
-    margin: 5px;
-    margin-bottom: 20px;
-    color: #ff0015;
-    font-size: 15px;
-    font-weight: bold;
-    font-family: 'Montserrat', sans-serif;
-}
-
-
+/* ~~~~~~~~~~~~~~~~~~~~ File Report 2 ~~~~~~~~~~~~~~~~~~~~ */
 #file_report_2_button {
     color: #1c1c1c;
     font-size: 25px;
     padding: 7px;
-    background-color: #ff0015;
+    background-color: #b629dd;
 
-    border: 7px solid #ff0015;
+    border: 7px solid #b629dd;
     border-radius: 50px;
 }
 #file_report_2_button:hover {
-    color: #ff0015;
+    color: #b629dd;
     border: 7px solid #ffffff;
     box-shadow:
         0 0 5px #ffffff,
         0 0 10px #ffffff,
         0 0 20px #00c9ff,
-        0 0 30px #ff0015;
+        0 0 30px #b629dd;
     
     border-collapse: collapse;
     background-color: #ffffff;
@@ -202,13 +140,43 @@ body {
 #file_report_2_button_text {
     margin: 5px;
     margin-bottom: 20px;
-    color: #ff0015;
+    color: #b629dd;
     font-size: 15px;
     font-weight: bold;
     font-family: 'Montserrat', sans-serif;
 }
 
+/* ~~~~~~~~~~~~~~~~~~~~ Edit Unit ~~~~~~~~~~~~~~~~~~~~ */
+#edit_unit_button {
+    color: #1c1c1c;
+    font-size: 42px;
+    background-color: #b629dd;
 
+    border: 7px solid #b629dd;
+    border-radius: 50px;
+}
+#edit_unit_button:hover {
+    color: #b629dd;
+    border: 7px solid #ffffff;
+    box-shadow:
+        0 0 5px #ffffff,
+        0 0 10px #ffffff,
+        0 0 20px #00c9ff,
+        0 0 30px #b629dd;
+    
+    border-collapse: collapse;
+    background-color: #ffffff;
+}
+#edit_unit_button_text {
+    margin: 5px;
+    margin-bottom: 20px;
+    color: #b629dd;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~ Approve Reports ~~~~~~~~~~~~~~~~~~~~ */
 #approve_reports_button {
     color: #1c1c1c;
     font-size: 25px;
@@ -240,9 +208,11 @@ body {
     font-weight: bold;
     font-family: 'Montserrat', sans-serif;
 }
-/* ~~~~~~~~~~~~~~~~~~~~ Roster Buttons End ~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Roster Buttons End ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
-/* ~~~~~~~~~~~~~~~~~~~~ Roster Button Modals Start ~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Roster Button Modals Start ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* ~~~~~~~~~~~~~~~~~~~~ Register Unit Modal ~~~~~~~~~~~~~~~~~~~~ */
 #register_unit_modal {    
     border: 2px solid #ffffff;
     border-radius: 2px;
@@ -260,20 +230,17 @@ body {
     font-weight: bold;
     font-family: 'Allerta Stencil', sans-serif;
     text-shadow:
-    0 0 15px #00c9ff,
-    0 0 20px #00c9ff;
+        0 0 15px #00c9ff,
+        0 0 20px #00c9ff;
     
     border: 2px solid #ffffff;
     border-radius: 2.5px;
     box-shadow:
-    0 0 10px #ffffff,
+        0 0 10px #ffffff,
         0 0 15px #00b368,
         0 0 20px #00b368;
         
     border-collapse: collapse;
-    padding: 5px;
-    padding-left: 2.5%;
-    padding-right: 2.5%;
     background-color: #1c1c1c;
 }
 #register_unit_modal_body {
@@ -298,6 +265,18 @@ padding-right: 50px;
         0 0 10px #00b368,
         0 0 15px #00b368;
 }
+#registered_recruiter {
+    color: #ffffff;
+    font-size: 17.9px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    text-shadow:
+        0 0 10px #00b368,
+        0 0 15px #00b368;
+}
+#unit_recruiter {
+    width: 250px;
+}
 #registered_date {
     color: #ffffff;
     font-size: 17.9px;
@@ -311,84 +290,14 @@ padding-right: 50px;
     width: 250px;
 }
 
-
-#transfer_unit_modal {    
-    border: 2px solid #ffffff;
-    border-radius: 2px;
-    box-shadow:
-        0 0 10px #ffffff,
-        0 0 15px #4285f4,
-        0 0 20px #4285f4;
-
-    border-collapse: collapse;
-    background-color: rgb(28, 28, 28, 0.55);
-}
-#transfer_unit_modal_title {
-    color: #ffffff;
-    font-size: 30px;
-    font-weight: bold;
-    font-family: 'Allerta Stencil', sans-serif;
-    text-shadow:
-    0 0 15px #00c9ff,
-    0 0 20px #00c9ff;
-    
-    border: 2px solid #ffffff;
-    border-radius: 2.5px;
-    box-shadow:
-    0 0 10px #ffffff,
-        0 0 15px #4285f4,
-        0 0 20px #4285f4;
-        
-    border-collapse: collapse;
-    padding: 5px;
-    padding-left: 2.5%;
-    padding-right: 2.5%;
-    background-color: #1c1c1c;
-}
-
-
-#register_battalion_modal {    
-    border: 2px solid #ffffff;
-    border-radius: 2px;
-    box-shadow:
-        0 0 10px #ffffff,
-        0 0 15px #ad6cc2,
-        0 0 20px #ad6cc2;
-
-    border-collapse: collapse;
-    background-color: rgb(28, 28, 28, 0.55);
-}
-#register_battalion_modal_title {
-    color: #ffffff;
-    font-size: 30px;
-    font-weight: bold;
-    font-family: 'Allerta Stencil', sans-serif;
-    text-shadow:
-    0 0 15px #00c9ff,
-    0 0 20px #00c9ff;
-    
-    border: 2px solid #ffffff;
-    border-radius: 2.5px;
-    box-shadow:
-    0 0 10px #ffffff,
-        0 0 15px #ad6cc2,
-        0 0 20px #ad6cc2;
-        
-    border-collapse: collapse;
-    padding: 5px;
-    padding-left: 2.5%;
-    padding-right: 2.5%;
-    background-color: #1c1c1c;
-}
-
-
+/* ~~~~~~~~~~~~~~~~~~~~ File Report 1 Modal ~~~~~~~~~~~~~~~~~~~~ */
 #file_report_1_modal {    
     border: 2px solid #ffffff;
     border-radius: 2px;
     box-shadow:
         0 0 10px #ffffff,
-        0 0 15px #b60031,
-        0 0 20px #b60031;
+        0 0 15px #4285f4,
+        0 0 20px #4285f4;
 
     border-collapse: collapse;
     background-color: rgb(28, 28, 28, 0.55);
@@ -399,31 +308,327 @@ padding-right: 50px;
     font-weight: bold;
     font-family: 'Allerta Stencil', sans-serif;
     text-shadow:
-    0 0 15px #00c9ff,
-    0 0 20px #00c9ff;
+        0 0 15px #00c9ff,
+        0 0 20px #00c9ff;
     
     border: 2px solid #ffffff;
     border-radius: 2.5px;
     box-shadow:
-    0 0 10px #ffffff,
-        0 0 15px #b60031,
-        0 0 20px #b60031;
+        0 0 10px #ffffff,
+        0 0 15px #4285f4,
+        0 0 20px #4285f4;
         
     border-collapse: collapse;
-    padding: 5px;
-    padding-left: 2.5%;
-    padding-right: 2.5%;
     background-color: #1c1c1c;
 }
 
 
+#completed_patrols {
+    color: #ffffff;
+    font-size: 17.9px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    text-shadow:
+        0 0 10px #4285f4,
+        0 0 15px #4285f4;
+
+    border: 2px solid #ffffff;
+    border-radius: 2.5px;
+    background-color: #1c1c1c;
+    padding: 5px;
+    margin: 7.5px;
+    width: 100px;
+    height: 110px;
+}
+#unit_patrols {
+    width: 75px;
+    margin-top: 5px;
+    font-weight: bold;
+}
+#completed_hours {
+    color: #ffffff;
+    font-size: 17.9px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    text-shadow:
+        0 0 10px #4285f4,
+        0 0 15px #4285f4;
+
+    border: 2px solid #ffffff;
+    border-radius: 2.5px;
+    background-color: #1c1c1c;
+    padding: 5px;
+    margin: 7.5px;
+    width: 100px;
+    height: 110px;
+}
+#unit_hours {
+    width: 75px;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+/* Missions */
+#completed_turret {
+    color: #ffffff;
+    font-size: 17.9px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    border: 2px solid #b60031;
+    border-radius: 2.5px;
+    background-color: #b60031;
+    padding: 5px;
+    margin: 7.5px;
+    width: 100px;
+    height: 110px;
+}
+#mission_turret {
+    width: 75px;
+    margin-top: 30px;
+    font-weight: bold;
+}
+#completed_ground_assault {
+    color: #ffffff;
+    font-size: 17.9px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    border: 2px solid #b60031;
+    border-radius: 2.5px;
+    background-color: #b60031;
+    padding: 5px;
+    margin: 7.5px;
+    width: 100px;
+    height: 110px;
+}
+#mission_ground_assault {
+    width: 75px;
+    margin-top: 5px;
+    font-weight: bold;
+}
+#completed_escort {
+    color: #ffffff;
+    font-size: 17.9px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    border: 2px solid #ad6cc2;
+    border-radius: 2.5px;
+    background-color: #ad6cc2;
+    padding: 5px;
+    margin: 7.5px;
+    width: 100px;
+    height: 110px;
+}
+#mission_escort {
+    width: 75px;
+    margin-top: 30px;
+    font-weight: bold;
+}
+#completed_inquiry {
+    color: #ffffff;
+    font-size: 17.9px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    border: 2px solid #b60031;
+    border-radius: 2.5px;
+    background-color: #b60031;
+    padding: 5px;
+    margin: 7.5px;
+    width: 100px;
+    height: 110px;
+}
+#mission_inquiry {
+    width: 75px;
+    margin-top: 30px;
+    font-weight: bold;
+}
+#completed_pilot_co_pilot {
+    color: #ffffff;
+    font-size: 17.9px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    border: 2px solid #ff7042;
+    border-radius: 2.5px;
+    background-color: #ff7042;
+    padding: 5px;
+    margin: 7.5px;
+    width: 100px;
+    height: 110px;
+}
+#mission_pilot_co_pilot {
+    width: 75px;
+    margin-top: 5px;
+    font-weight: bold;
+}
+#completed_mining {
+    color: #ffffff;
+    font-size: 17.9px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    border: 2px solid #ff7042;
+    border-radius: 2.5px;
+    background-color: #ff7042;
+    padding: 5px;
+    margin: 7.5px;
+    width: 100px;
+    height: 110px;
+}
+#mission_mining {
+    width: 75px;
+    margin-top: 30px;
+    font-weight: bold;
+}
+#completed_salvage {
+    color: #ffffff;
+    font-size: 17.9px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    border: 2px solid #ff7042;
+    border-radius: 2.5px;
+    background-color: #ff7042;
+    padding: 5px;
+    margin: 7.5px;
+    width: 100px;
+    height: 110px;
+}
+#mission_salvage {
+    width: 75px;
+    margin-top: 30px;
+    font-weight: bold;
+}
+#completed_cargo {
+    color: #ffffff;
+    font-size: 17.9px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    border: 2px solid #ff7042;
+    border-radius: 2.5px;
+    background-color: #ff7042;
+    padding: 5px;
+    margin: 7.5px;
+    width: 100px;
+    height: 110px;
+}
+#mission_cargo {
+    width: 75px;
+    margin-top: 30px;
+    font-weight: bold;
+}
+#completed_transit {
+    color: #ffffff;
+    font-size: 17.9px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    border: 2px solid #00b368;
+    border-radius: 2.5px;
+    background-color: #00b368;
+    padding: 5px;
+    margin: 7.5px;
+    width: 100px;
+    height: 110px;
+}
+#mission_transit {
+    width: 75px;
+    margin-top: 30px;
+    font-weight: bold;
+}
+#completed_support {
+    color: #ffffff;
+    font-size: 17.9px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    border: 2px solid #00b368;
+    border-radius: 2.5px;
+    background-color: #00b368;
+    padding: 5px;
+    margin: 7.5px;
+    width: 100px;
+    height: 110px;
+}
+#mission_support {
+    width: 75px;
+    margin-top: 30px;
+    font-weight: bold;
+}
+#completed_search_rescue {
+    color: #ffffff;
+    font-size: 17.9px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    border: 2px solid #4285f4;
+    border-radius: 2.5px;
+    background-color: #4285f4;
+    padding: 5px;
+    margin: 7.5px;
+    width: 100px;
+    height: 110px;
+}
+#mission_search_rescue {
+    width: 75px;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+#issued_alerts {
+    color: #ffffff;
+    font-size: 17.9px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    text-shadow:
+        0 0 5px #b60031,
+        0 0 10px #ff0015,
+        0 0 15px #ff0015;
+
+    border: 2px solid #ff0015;
+    border-radius: 2.5px;
+    background-color: #1c1c1c;
+    padding: 5px;
+    margin: 7.5px;
+    width: 100px;
+    height: 110px;
+}
+#unit_alerts {
+    width: 75px;
+    margin-top: 5px;
+    font-weight: bold;
+}
+#issued_warning {
+    color: #ffffff;
+    font-size: 17.9px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    text-shadow:
+        0 0 5px #b60031,
+        0 0 10px #ff0015,
+        0 0 15px #ff0015;
+
+    border: 2px solid #ff0015;
+    border-radius: 2.5px;
+    background-color: #1c1c1c;
+    padding: 5px;
+    margin: 7.5px;
+    width: 100px;
+    height: 110px;
+}
+#warning_checkbox {
+    margin-top: 3px;
+    height: 37px;
+    width: 37px;
+}
+#warning_checkbox:hover {
+    box-shadow:
+        0 0 5px #ffffff,
+        0 0 10px #b60031,
+        0 0 20px #b60031;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~ File Report 2 Modal ~~~~~~~~~~~~~~~~~~~~ */
 #file_report_2_modal {    
     border: 2px solid #ffffff;
     border-radius: 2px;
     box-shadow:
         0 0 10px #ffffff,
-        0 0 15px #b60031,
-        0 0 20px #b60031;
+        0 0 15px #b629dd,
+        0 0 20px #b629dd;
 
     border-collapse: collapse;
     background-color: rgb(28, 28, 28, 0.55);
@@ -434,24 +639,53 @@ padding-right: 50px;
     font-weight: bold;
     font-family: 'Allerta Stencil', sans-serif;
     text-shadow:
-    0 0 15px #00c9ff,
-    0 0 20px #00c9ff;
+        0 0 15px #00c9ff,
+        0 0 20px #00c9ff;
     
     border: 2px solid #ffffff;
     border-radius: 2.5px;
     box-shadow:
-    0 0 10px #ffffff,
-        0 0 15px #b60031,
-        0 0 20px #b60031;
+        0 0 10px #ffffff,
+        0 0 15px #b629dd,
+        0 0 20px #b629dd;
         
     border-collapse: collapse;
-    padding: 5px;
-    padding-left: 2.5%;
-    padding-right: 2.5%;
     background-color: #1c1c1c;
 }
 
+/* ~~~~~~~~~~~~~~~~~~~~ Edit Unit Modal ~~~~~~~~~~~~~~~~~~~~ */
+#edit_unit_modal {    
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+    box-shadow:
+        0 0 10px #ffffff,
+        0 0 15px #b629dd,
+        0 0 20px #b629dd;
 
+    border-collapse: collapse;
+    background-color: rgb(28, 28, 28, 0.55);
+}
+#edit_unit_modal_title {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Allerta Stencil', sans-serif;
+    text-shadow:
+        0 0 15px #00c9ff,
+        0 0 20px #00c9ff;
+    
+    border: 2px solid #ffffff;
+    border-radius: 2.5px;
+    box-shadow:
+        0 0 10px #ffffff,
+        0 0 15px #b629dd,
+        0 0 20px #b629dd;
+        
+    border-collapse: collapse;
+    background-color: #1c1c1c;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~ Approve Reports Modal ~~~~~~~~~~~~~~~~~~~~ */
 #approve_reports_modal {    
     border: 2px solid #ffffff;
     border-radius: 2px;
@@ -469,23 +703,20 @@ padding-right: 50px;
     font-weight: bold;
     font-family: 'Allerta Stencil', sans-serif;
     text-shadow:
-    0 0 15px #00c9ff,
-    0 0 20px #00c9ff;
+        0 0 15px #00c9ff,
+        0 0 20px #00c9ff;
     
     border: 2px solid #ffffff;
     border-radius: 2.5px;
     box-shadow:
-    0 0 10px #ffffff,
+        0 0 10px #ffffff,
         0 0 15px #d6b44c,
         0 0 20px #d6b44c;
         
     border-collapse: collapse;
-    padding: 5px;
-    padding-left: 2.5%;
-    padding-right: 2.5%;
     background-color: #1c1c1c;
 }
-/* ~~~~~~~~~~~~~~~~~~~~ Roster Button Modals End ~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Roster Button Modals End ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 
 

@@ -47,18 +47,6 @@
             </div>
             <div>
                 <a>
-                    <i type="button" id="transfer_unit_button" class="fa-solid fa-arrows-up-down-left-right" data-bs-toggle="modal" data-bs-target="#transfer_unit_modal"></i>
-                    <p id="transfer_unit_button_text">Transfer Unit</p>
-                </a>
-            </div>
-            <div>
-                <a>
-                    <i type="button" id="register_battalion_button" class="fa-solid fa-users" data-bs-toggle="modal" data-bs-target="#register_battalion_modal"></i></i>
-                    <p id="register_battalion_button_text">Register Battalion</p>
-                </a>
-            </div>
-            <div>
-                <a>
                     <i type="button" id="file_report_1_button" class="fa-solid fa-pen" data-bs-toggle="modal" data-bs-target="#file_report_1_modal"></i>
                 <p id="file_report_1_button_text">File Report 1</p>
             </a>
@@ -67,6 +55,12 @@
                 <a>
                     <i type="button" id="file_report_2_button" class="fa-solid fa-pen" data-bs-toggle="modal" data-bs-target="#file_report_2_modal"></i>
                     <p id="file_report_2_button_text">File Report 2</p>
+                </a>
+            </div>
+            <div>
+                <a>
+                    <i type="button" id="edit_unit_button" class="fa-solid fa-arrows-up-down-left-right" data-bs-toggle="modal" data-bs-target="#edit_unit_modal"></i>
+                    <p id="edit_unit_button_text">Edit Unit</p>
                 </a>
             </div>
             <div>
@@ -87,6 +81,8 @@
 <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Member List End ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
 <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Roster Button Modals Start ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+
+<!-- ~~~~~~~~~~~~~~~~~~~~ Register Unit Modal ~~~~~~~~~~~~~~~~~~~~ -->
 <div class="modal fade" id="register_unit_modal" data-bs-backdrop="static" tabindex="-1" aria-labelledby="register_unit_modal_label" aria-hidden="true">
     <div class="modal-dialog">
 
@@ -102,20 +98,31 @@
             <div id="register_unit_modal_body" class="modal-body">
     
                 <form>
-                <div class="form-group">
-                    <label id="registered_name" for="unit_name" class="col-form-label">Star Citizen Name:</label>
-                    <input type="text" class="form-control" id="unit_name" placeholder="Character_Name">
-                </div>
-    
-                <div class="form-group">
-                    <label id="registered_contact" for="unit_contact" class="col-form-label">Discord Profile:</label>
-                    <input type="text" class="form-control" id="unit_contact" placeholder="Name#0000"></input>
-                </div>
+                    <div class="form-group">
+                        <label id="registered_name" for="unit_name" class="col-form-label">Star Citizen Name:</label>
+                        <input type="text" class="form-control" id="unit_name" placeholder="Character_Name">
+                    </div>
+        
+                    <div class="form-group">
+                        <label id="registered_contact" for="unit_contact" class="col-form-label">Discord Profile:</label>
+                        <input type="text" class="form-control" id="unit_contact" placeholder="Name#0000"></input>
+                    </div>
 
-                <div class="form-group">
-                    <label id="registered_date" for="unit_start" class="col-form-label">Start Date:</label>
-                    <input type="datetime-local"class="form-control" id="unit_start" placeholder="00/00/0000"></input>
-                </div>
+                    <div class="form-group">
+                        <label id="registered_recruiter" for="unit_recruiter"class="col-form-label">Recruiter's Name:</label>
+                        <input class="form-control" list="member_list_options" id="unit_recruiter" placeholder="Select Member">
+                        <datalist id="member_list_options">
+                            <option value="Example 1"></option>
+                            <option value="Example 2"></option>
+                            <option value="Example 3"></option>
+                            <option value="Example 4"></option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label id="registered_date" for="unit_start" class="col-form-label">Start Date:</label>
+                        <input type="datetime-local"class="form-control" id="unit_start" placeholder="00/00/0000"></input>
+                    </div>
                 </form>
     
             </div>
@@ -132,71 +139,13 @@
     </div>
 </div>
 
-<div class="modal fade" id="transfer_unit_modal" data-bs-backdrop="static" tabindex="-1" aria-labelledby="transfer_unit_modal_label" aria-hidden="true">
-    <div class="modal-dialog">
-
-        <div id="transfer_unit_modal" class="modal-content">
-
-            <div class="justify-content-center text-center">
-                <div id="transfer_unit_modal_title">
-                    <i class="fa-solid fa-arrows-up-down-left-right"></i>
-                    <a>Transfer Unit</a>
-                </div>
-            </div>
-            
-            <div id="transfer_unit_modal_body" class="modal-body">
-    
-
-    
-            </div>
-
-            <div class="modal-footer">
-                <button id="sign_up_button" type="button">
-                    <i id="fa_nav_icon_square" class="fa-solid fa-star"></i>Submit
-                </button>
-                <button id="sign_in_button" type="button" data-bs-dismiss="modal">
-                    <i id="fa_nav_icon_square" class="fa-solid fa-right-to-bracket"></i>Cancel
-                </button>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="modal fade" id="register_battalion_modal" data-bs-backdrop="static" tabindex="-1" aria-labelledby="register_battalion_modal_label" aria-hidden="true">
-    <div class="modal-dialog">
-
-        <div id="register_battalion_modal" class="modal-content">
-
-            <div class="justify-content-center text-center">
-                <div id="register_battalion_modal_title">
-                    <i class="fa-solid fa-users"></i>
-                    <a>Register Battalion</a>
-                </div>
-            </div>
-            
-            <div id="register_battalion_modal_body" class="modal-body">
-    
-
-    
-            </div>
-
-            <div class="modal-footer">
-                <button id="sign_up_button" type="button">
-                    <i id="fa_nav_icon_square" class="fa-solid fa-star"></i>Submit
-                </button>
-                <button id="sign_in_button" type="button" data-bs-dismiss="modal">
-                    <i id="fa_nav_icon_square" class="fa-solid fa-right-to-bracket"></i>Cancel
-                </button>
-            </div>
-        </div>
-    </div>
-</div>
-
+<!-- ~~~~~~~~~~~~~~~~~~~~ File Report 1 Modal ~~~~~~~~~~~~~~~~~~~~ -->
 <div class="modal fade" id="file_report_1_modal" data-bs-backdrop="static" tabindex="-1" aria-labelledby="file_report_1_modal_label" aria-hidden="true">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-lg">
 
         <div id="file_report_1_modal" class="modal-content">
 
+            
             <div class="justify-content-center text-center">
                 <div id="file_report_1_modal_title">
                     <i class="fa-solid fa-pen"></i>
@@ -205,9 +154,124 @@
             </div>
             
             <div id="file_report_1_modal_body" class="modal-body">
+                
+                <form>
+                    <div class="row text-center">
+                        <div class="col">
+                            <label id="completed_patrols" for="unit_patrols">
+                                Added Patrols:
+                                <input class="text-center" id="unit_patrols" type="number" value="0"/>
+                            </label>
+                        </div>
     
+                        <div class="col">
+                            <label id="completed_hours" for="unit_hours">
+                                Added Hours:
+                                <input class="text-center" id="unit_hours" type="number" value="0"/>
+                            </label>
+                        </div>
 
+                        <div class="col">
+                            <label id="issued_alerts" for="unit_alerts">
+                                Issued Alerts:
+                                <input class="text-center" id="unit_alerts" type="number" value="0" min="0" max="3"/>
+                            </label>
+                        </div>
     
+                        <div class="col">
+                            <label id="issued_warning" for="unit_warning">
+                                Issued Warning:
+
+                                <input id="warning_checkbox" type="checkbox">
+                            </label>
+                        </div>
+                    </div>
+
+                    <p id="break_space"></p>
+
+                    <p class="text-center"><a id="novitiate_division">Completed Missions:</a></p>
+
+                    <!-- missions -->
+                    <div class="row text-center">
+                        <div class="col">
+                            <label id="completed_turret" for="mission_turret">
+                                Turret:
+                                <input class="text-center" id="mission_turret" type="number" value="0"/>
+                            </label>
+                        </div>
+    
+                        <div class="col">
+                            <label id="completed_ground_assault" for="mission_ground_assault">
+                                Ground Assault:
+                                <input class="text-center" id="mission_ground_assault" type="number" value="0"/>
+                            </label>
+                        </div>
+
+                        <div class="col">
+                            <label id="completed_escort" for="mission_escort">
+                                Escort:
+                                <input class="text-center" id="mission_escort" type="number" value="0"/>
+                            </label>
+                        </div>
+
+                        <div class="col">
+                            <label id="completed_inquiry" for="mission_inquiry">
+                                Inquiry:
+                                <input class="text-center" id="mission_inquiry" type="number" value="0"/>
+                            </label>
+                        </div>
+
+                        <div class="col">
+                            <label id="completed_pilot_co_pilot" for="mission_pilot_co_pilot">
+                                Pilot / Co-Pilot:
+                                <input class="text-center" id="mission_pilot_co_pilot" type="number" value="0"/>
+                            </label>
+                        </div>
+
+                        <div class="col">
+                            <label id="completed_mining" for="mission_mining">
+                                Mining:
+                                <input class="text-center" id="mission_mining" type="number" value="0"/>
+                            </label>
+                        </div>
+
+                        <div class="col">
+                            <label id="completed_salvage" for="mission_salvage">
+                                Salvage:
+                                <input class="text-center" id="mission_salvage" type="number" value="0"/>
+                            </label>
+                        </div>
+
+                        <div class="col">
+                            <label id="completed_cargo" for="mission_cargo">
+                                Cargo:
+                                <input class="text-center" id="mission_cargo" type="number" value="0"/>
+                            </label>
+                        </div>
+                        
+                        <div class="col">
+                            <label id="completed_transit" for="mission_transit">
+                                Transit:
+                                <input class="text-center" id="mission_transit" type="number" value="0"/>
+                            </label>
+                        </div>
+
+                        <div class="col">
+                            <label id="completed_support" for="mission_support">
+                                Support:
+                                <input class="text-center" id="mission_support" type="number" value="0"/>
+                            </label>
+                        </div>
+
+                        <div class="col">
+                            <label id="completed_search_rescue" for="mission_search_rescue">
+                                Search & Rescue:
+                                <input class="text-center" id="mission_search_rescue" type="number" value="0"/>
+                            </label>
+                        </div>
+                    </div>
+                </form>
+  
             </div>
 
             <div class="modal-footer">
@@ -222,6 +286,7 @@
     </div>
 </div>
 
+<!-- ~~~~~~~~~~~~~~~~~~~~ File Report 2 Modal ~~~~~~~~~~~~~~~~~~~~ -->
 <div class="modal fade" id="file_report_2_modal" data-bs-backdrop="static" tabindex="-1" aria-labelledby="file_report_2_modal_label" aria-hidden="true">
     <div class="modal-dialog">
 
@@ -252,6 +317,38 @@
     </div>
 </div>
 
+<!-- ~~~~~~~~~~~~~~~~~~~~ Edit Unit Modal ~~~~~~~~~~~~~~~~~~~~ -->
+<div class="modal fade" id="edit_unit_modal" data-bs-backdrop="static" tabindex="-1" aria-labelledby="edit_unit_modal_label" aria-hidden="true">
+    <div class="modal-dialog">
+
+        <div id="edit_unit_modal" class="modal-content">
+
+            <div class="justify-content-center text-center">
+                <div id="edit_unit_modal_title">
+                    <i class="fa-solid fa-arrows-up-down-left-right"></i>
+                    <a>Edit Unit</a>
+                </div>
+            </div>
+            
+            <div id="edit_unit_modal_body" class="modal-body">
+    
+
+    
+            </div>
+
+            <div class="modal-footer">
+                <button id="sign_up_button" type="button">
+                    <i id="fa_nav_icon_square" class="fa-solid fa-star"></i>Submit
+                </button>
+                <button id="sign_in_button" type="button" data-bs-dismiss="modal">
+                    <i id="fa_nav_icon_square" class="fa-solid fa-right-to-bracket"></i>Cancel
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ~~~~~~~~~~~~~~~~~~~~ Approve Report Modal ~~~~~~~~~~~~~~~~~~~~ -->
 <div class="modal fade" id="approve_reports_modal" data-bs-backdrop="static" tabindex="-1" aria-labelledby="approve_reports_modal_label" aria-hidden="true">
     <div class="modal-dialog">
 
@@ -282,20 +379,18 @@
     </div>
 </div>
 
-
-
-
-
-
-
-
-
 <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Roster Button Modals End ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
     <script src="../assets/navbar/navbar.js"></script>
     <script src="../assets/navbar/navbar_modal.js"></script>
     <script src="../assets/roster/roster_cards.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+
+
+
+
+
 </body>
 
 </html>
