@@ -17,12 +17,12 @@ var sign_in = `
                 <form>
                 <div class="form-group">
                     <label id="combat_division_text" for="user_text" class="col-form-label">Username or Email:</label>
-                    <input type="text" class="form-control" id="user_text">
+                    <input type="text" class="form-control" id="user_text" name="username">
                 </div>
     
                 <div class="form-group">
                     <label id="combat_division_text" for="password_text" class="col-form-label">Password:</label>
-                    <input type="password" class="form-control" id="password_text"></input>
+                    <input type="password" class="form-control" id="password_text" name="password"></input>
                 </div>
                 </form>
     
