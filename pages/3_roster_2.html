@@ -47,15 +47,9 @@
             </div>
             <div>
                 <a>
-                    <i type="button" id="file_report_1_button" class="fa-solid fa-pen" data-bs-toggle="modal" data-bs-target="#file_report_1_modal"></i>
-                <p id="file_report_1_button_text">File Report 1</p>
+                    <i type="button" id="file_report_button" class="fa-solid fa-pen" data-bs-toggle="modal" data-bs-target="#file_report_modal"></i>
+                <p id="file_report_button_text">File Report</p>
             </a>
-            </div>
-            <div>
-                <a>
-                    <i type="button" id="file_report_2_button" class="fa-solid fa-pen" data-bs-toggle="modal" data-bs-target="#file_report_2_modal"></i>
-                    <p id="file_report_2_button_text">File Report 2</p>
-                </a>
             </div>
             <div>
                 <a>
@@ -139,24 +133,31 @@
     </div>
 </div>
 
-<!-- ~~~~~~~~~~~~~~~~~~~~ File Report 1 Modal ~~~~~~~~~~~~~~~~~~~~ -->
-<div class="modal fade" id="file_report_1_modal" data-bs-backdrop="static" tabindex="-1" aria-labelledby="file_report_1_modal_label" aria-hidden="true">
+<!-- ~~~~~~~~~~~~~~~~~~~~ File Report Modal ~~~~~~~~~~~~~~~~~~~~ -->
+<div class="modal fade" id="file_report_modal" data-bs-backdrop="static" tabindex="-1" aria-labelledby="file_report_modal_label" aria-hidden="true">
     <div class="modal-dialog modal-lg">
 
-        <div id="file_report_1_modal" class="modal-content">
+        <div id="file_report_modal" class="modal-content">
 
             
             <div class="justify-content-center text-center">
-                <div id="file_report_1_modal_title">
+                <div id="file_report_modal_title">
                     <i class="fa-solid fa-pen"></i>
-                    <a>File Report 1</a>
+                    <a>File Report</a>
                 </div>
             </div>
             
-            <div id="file_report_1_modal_body" class="modal-body">
+            <div id="file_report_modal_body" class="modal-body">
                 
                 <form>
                     <div class="row text-center">
+                        <div class="col">
+                            <label id="completed_events" for="unit_events">
+                                Added Events:
+                                <input class="text-center" id="unit_events" type="number" value="0" name="events"/>
+                            </label>
+                        </div>
+
                         <div class="col">
                             <label id="completed_patrols" for="unit_patrols">
                                 Added Patrols:
@@ -294,41 +295,8 @@
                             </div>
                         </div>
                     </div>
-
-
                 </form>
   
-            </div>
-
-            <div class="modal-footer">
-                <button id="sign_up_button" type="button">
-                    <i id="fa_nav_icon_square" class="fa-solid fa-star"></i>Submit
-                </button>
-                <button id="sign_in_button" type="button" data-bs-dismiss="modal">
-                    <i id="fa_nav_icon_square" class="fa-solid fa-right-to-bracket"></i>Cancel
-                </button>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- ~~~~~~~~~~~~~~~~~~~~ File Report 2 Modal ~~~~~~~~~~~~~~~~~~~~ -->
-<div class="modal fade" id="file_report_2_modal" data-bs-backdrop="static" tabindex="-1" aria-labelledby="file_report_2_modal_label" aria-hidden="true">
-    <div class="modal-dialog">
-
-        <div id="file_report_2_modal" class="modal-content">
-
-            <div class="justify-content-center text-center">
-                <div id="file_report_2_modal_title">
-                    <i class="fa-solid fa-pen"></i>
-                    <a>File Report 2</a>
-                </div>
-            </div>
-            
-            <div id="file_report_2_modal_body" class="modal-body">
-    
-
-    
             </div>
 
             <div class="modal-footer">

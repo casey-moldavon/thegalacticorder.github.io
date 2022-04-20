@@ -84,8 +84,8 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-/* ~~~~~~~~~~~~~~~~~~~~ File Report 1 ~~~~~~~~~~~~~~~~~~~~ */
-#file_report_1_button {
+/* ~~~~~~~~~~~~~~~~~~~~ File Report ~~~~~~~~~~~~~~~~~~~~ */
+#file_report_button {
     color: #1c1c1c;
     font-size: 25px;
     padding: 7px;
@@ -94,7 +94,7 @@ body {
     border: 7px solid #4285f4;
     border-radius: 50px;
 }
-#file_report_1_button:hover {
+#file_report_button:hover {
     color: #4285f4;
     border: 7px solid #ffffff;
     box-shadow:
@@ -106,41 +106,10 @@ body {
     border-collapse: collapse;
     background-color: #ffffff;
 }
-#file_report_1_button_text {
+#file_report_button_text {
     margin: 5px;
     margin-bottom: 20px;
     color: #4285f4;
-    font-size: 15px;
-    font-weight: bold;
-    font-family: 'Montserrat', sans-serif;
-}
-
-/* ~~~~~~~~~~~~~~~~~~~~ File Report 2 ~~~~~~~~~~~~~~~~~~~~ */
-#file_report_2_button {
-    color: #1c1c1c;
-    font-size: 25px;
-    padding: 7px;
-    background-color: #b629dd;
-
-    border: 7px solid #b629dd;
-    border-radius: 50px;
-}
-#file_report_2_button:hover {
-    color: #b629dd;
-    border: 7px solid #ffffff;
-    box-shadow:
-        0 0 5px #ffffff,
-        0 0 10px #ffffff,
-        0 0 20px #00c9ff,
-        0 0 30px #b629dd;
-    
-    border-collapse: collapse;
-    background-color: #ffffff;
-}
-#file_report_2_button_text {
-    margin: 5px;
-    margin-bottom: 20px;
-    color: #b629dd;
     font-size: 15px;
     font-weight: bold;
     font-family: 'Montserrat', sans-serif;
@@ -283,8 +252,8 @@ padding-right: 50px;
     width: 250px;
 }
 
-/* ~~~~~~~~~~~~~~~~~~~~ File Report 1 Modal ~~~~~~~~~~~~~~~~~~~~ */
-#file_report_1_modal {    
+/* ~~~~~~~~~~~~~~~~~~~~ File Report Modal ~~~~~~~~~~~~~~~~~~~~ */
+#file_report_modal {    
     border: 2px solid #ffffff;
     border-radius: 2px;
     box-shadow:
@@ -295,7 +264,7 @@ padding-right: 50px;
     border-collapse: collapse;
     background-color: rgb(28, 28, 28, 0.55);
 }
-#file_report_1_modal_title {
+#file_report_modal_title {
     color: #ffffff;
     font-size: 30px;
     font-weight: bold;
@@ -308,7 +277,28 @@ padding-right: 50px;
     background-color: #1c1c1c;
 }
 
+#completed_events {
+    color: #ffffff;
+    font-size: 17.9px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    text-shadow:
+        0 0 10px #4285f4,
+        0 0 15px #4285f4;
 
+    border: 2px solid #ffffff;
+    border-radius: 2.5px;
+    background-color: #1c1c1c;
+    padding: 5px;
+    margin: 7.5px;
+    width: 100px;
+    height: 110px;
+}
+#unit_events {
+    width: 75px;
+    margin-top: 7.5px;
+    font-weight: bold;
+}
 #completed_patrols {
     color: #ffffff;
     font-size: 17.9px;
@@ -831,31 +821,6 @@ padding-right: 50px;
         0 0 5px #ffffff,
         0 0 10px #b60031,
         0 0 20px #b60031;
-}
-
-/* ~~~~~~~~~~~~~~~~~~~~ File Report 2 Modal ~~~~~~~~~~~~~~~~~~~~ */
-#file_report_2_modal {    
-    border: 2px solid #ffffff;
-    border-radius: 2px;
-    box-shadow:
-        0 0 10px #ffffff,
-        0 0 15px #b629dd,
-        0 0 20px #b629dd;
-
-    border-collapse: collapse;
-    background-color: rgb(28, 28, 28, 0.55);
-}
-#file_report_2_modal_title {
-    color: #ffffff;
-    font-size: 30px;
-    font-weight: bold;
-    font-family: 'Allerta Stencil', sans-serif;
-    text-shadow:
-        0 0 15px #00c9ff,
-        0 0 20px #00c9ff;
-    
-    border-bottom: 1px solid #ffffff;
-    background-color: #1c1c1c;
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~ Edit Unit Modal ~~~~~~~~~~~~~~~~~~~~ */
