@@ -22,7 +22,7 @@ var sign_in = `
     
                 <div class="form-group">
                     <label id="combat_division_text" for="password_text" class="col-form-label">Password:</label>
-                    <input type="text" class="form-control" id="password_text"></input>
+                    <input type="password" class="form-control" id="password_text"></input>
                 </div>
                 </form>
     
