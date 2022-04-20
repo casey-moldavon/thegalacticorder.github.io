@@ -100,17 +100,17 @@
                 <form>
                     <div class="form-group">
                         <label id="registered_name" for="unit_name" class="col-form-label">Star Citizen Name:</label>
-                        <input type="text" class="form-control" id="unit_name" placeholder="Character_Name">
+                        <input type="text" class="form-control" id="unit_name" placeholder="Character_Name" name="sc_name"/>
                     </div>
         
                     <div class="form-group">
                         <label id="registered_contact" for="unit_contact" class="col-form-label">Discord Profile:</label>
-                        <input type="text" class="form-control" id="unit_contact" placeholder="Name#0000"></input>
+                        <input type="text" class="form-control" id="unit_contact" placeholder="Name#0000" name="discord_name"/>
                     </div>
 
                     <div class="form-group">
                         <label id="registered_recruiter" for="unit_recruiter"class="col-form-label">Recruiter's Name:</label>
-                        <input class="form-control" list="member_list_options" id="unit_recruiter" placeholder="Select Member">
+                        <input class="form-control" list="member_list_options" id="unit_recruiter" placeholder="Select Member" name="recruiter">
                         <datalist id="member_list_options">
                             <option value="Example 1"></option>
                             <option value="Example 2"></option>
@@ -121,7 +121,7 @@
 
                     <div class="form-group">
                         <label id="registered_date" for="unit_start" class="col-form-label">Start Date:</label>
-                        <input type="datetime-local"class="form-control" id="unit_start" placeholder="00/00/0000"></input>
+                        <input type="datetime-local"class="form-control" id="unit_start" placeholder="00/00/0000" name="start_date"/>
                     </div>
                 </form>
     
@@ -160,21 +160,21 @@
                         <div class="col">
                             <label id="completed_patrols" for="unit_patrols">
                                 Added Patrols:
-                                <input class="text-center" id="unit_patrols" type="number" value="0"/>
+                                <input class="text-center" id="unit_patrols" type="number" value="0" name="patrols"/>
                             </label>
                         </div>
     
                         <div class="col">
                             <label id="completed_hours" for="unit_hours">
                                 Added Hours:
-                                <input class="text-center" id="unit_hours" type="number" value="0"/>
+                                <input class="text-center" id="unit_hours" type="number" value="0" name="hours"/>
                             </label>
                         </div>
 
                         <div class="col">
                             <label id="issued_alerts" for="unit_alerts">
                                 Issued Alerts:
-                                <input class="text-center" id="unit_alerts" type="number" value="0" min="0" max="3"/>
+                                <input class="text-center" id="unit_alerts" type="number" value="0" min="0" max="3" name="alerts"/>
                             </label>
                         </div>
     
@@ -182,7 +182,7 @@
                             <label id="issued_warning" for="unit_warning">
                                 Issued Warning:
 
-                                <input id="warning_checkbox" type="checkbox">
+                                <input id="warning_checkbox" type="checkbox" name="warnings">
                             </label>
                         </div>
                     </div>
@@ -198,98 +198,98 @@
                             <div class="col">
                                 <label id="completed_turret" for="mission_turret">
                                     Turret
-                                    <input class="text-center" id="mission_turret" type="number" value="0"/>
+                                    <input class="text-center" id="mission_turret" type="number" value="0" name="turret"/>
                                 </label>
                             </div>
         
                             <div class="col">
                                 <label id="completed_ground_assault" for="mission_ground_assault">
                                     Ground Assault
-                                    <input class="text-center" id="mission_ground_assault" type="number" value="0"/>
+                                    <input class="text-center" id="mission_ground_assault" type="number" value="0" name="ground_assault"/>
                                 </label>
                             </div>
     
                             <div class="col">
                                 <label id="completed_escort" for="mission_escort">
                                     Escort
-                                    <input class="text-center" id="mission_escort" type="number" value="0"/>
+                                    <input class="text-center" id="mission_escort" type="number" value="0" name="escort"/>
                                 </label>
                             </div>
     
                             <div class="col">
                                 <label id="completed_inquiry" for="mission_inquiry">
                                     Inquiry
-                                    <input class="text-center" id="mission_inquiry" type="number" value="0"/>
+                                    <input class="text-center" id="mission_inquiry" type="number" value="0" name="inquiry"/>
                                 </label>
                             </div>
     
                             <div class="col">
                                 <label id="completed_pilot_co_pilot" for="mission_pilot_co_pilot">
                                     Pilot / Co-Pilot
-                                    <input class="text-center" id="mission_pilot_co_pilot" type="number" value="0"/>
+                                    <input class="text-center" id="mission_pilot_co_pilot" type="number" value="0" name="pilot_co_pilot"/>
                                 </label>
                             </div>
     
                             <div class="col">
                                 <label id="completed_mining" for="mission_mining">
                                     Mining
-                                    <input class="text-center" id="mission_mining" type="number" value="0"/>
+                                    <input class="text-center" id="mission_mining" type="number" value="0" name="mining"/>
                                 </label>
                             </div>
     
                             <div class="col">
                                 <label id="completed_salvage" for="mission_salvage">
                                     Salvage
-                                    <input class="text-center" id="mission_salvage" type="number" value="0"/>
+                                    <input class="text-center" id="mission_salvage" type="number" value="0" name="salvage"/>
                                 </label>
                             </div>
     
                             <div class="col">
                                 <label id="completed_cargo" for="mission_cargo">
                                     Cargo
-                                    <input class="text-center" id="mission_cargo" type="number" value="0"/>
+                                    <input class="text-center" id="mission_cargo" type="number" value="0" name="cargo"/>
                                 </label>
                             </div>
                             
                             <div class="col">
                                 <label id="completed_transit" for="mission_transit">
                                     Transit
-                                    <input class="text-center" id="mission_transit" type="number" value="0"/>
+                                    <input class="text-center" id="mission_transit" type="number" value="0" name="transit"/>
                                 </label>
                             </div>
     
                             <div class="col">
                                 <label id="completed_support" for="mission_support">
                                     Support
-                                    <input class="text-center" id="mission_support" type="number" value="0"/>
+                                    <input class="text-center" id="mission_support" type="number" value="0" name="support"/>
                                 </label>
                             </div>
     
                             <div class="col">
                                 <label id="completed_search_rescue" for="mission_search_rescue">
                                     Search & Rescue
-                                    <input class="text-center" id="mission_search_rescue" type="number" value="0"/>
+                                    <input class="text-center" id="mission_search_rescue" type="number" value="0" name="search_rescue"/>
                                 </label>
                             </div>
     
                             <div class="col">
                                 <label id="completed_manage_data" for="mission_manage_data">
                                     Manage Data
-                                    <input class="text-center" id="mission_manage_data" type="number" value="0"/>
+                                    <input class="text-center" id="mission_manage_data" type="number" value="0" name="manage_data"/>
                                 </label>
                             </div>
     
                             <div class="col">
                                 <label id="completed_research" for="mission_research">
                                     Research
-                                    <input class="text-center" id="mission_research" type="number" value="0"/>
+                                    <input class="text-center" id="mission_research" type="number" value="0" name="research"/>
                                 </label>
                             </div>
     
                             <div class="col">
                                 <label id="completed_agronomy" for="mission_agronomy">
                                     Agronomy
-                                    <input class="text-center" id="mission_agronomy" type="number" value="0"/>
+                                    <input class="text-center" id="mission_agronomy" type="number" value="0" name="agronomy"/>
                                 </label>
                             </div>
                         </div>
