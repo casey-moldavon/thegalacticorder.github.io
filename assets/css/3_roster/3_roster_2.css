@@ -291,6 +291,7 @@ padding-right: 50px;
     background-color: #1c1c1c;
     padding: 5px;
     margin: 7.5px;
+    margin-bottom: 0;
     width: 100px;
     height: 110px;
 }
@@ -313,6 +314,7 @@ padding-right: 50px;
     background-color: #1c1c1c;
     padding: 5px;
     margin: 7.5px;
+    margin-bottom: 0;
     width: 100px;
     height: 110px;
 }
@@ -335,6 +337,7 @@ padding-right: 50px;
     background-color: #1c1c1c;
     padding: 5px;
     margin: 7.5px;
+    margin-bottom: 0;
     width: 100px;
     height: 110px;
 }
@@ -342,6 +345,60 @@ padding-right: 50px;
     width: 75px;
     margin-top: 7.5px;
     font-weight: bold;
+}
+#issued_alerts {
+    color: #ffffff;
+    font-size: 17.9px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    text-shadow:
+        0 0 5px #b60031,
+        0 0 10px #ff0015,
+        0 0 15px #ff0015;
+
+    border: 2px solid #ff0015;
+    border-radius: 2.5px;
+    background-color: #1c1c1c;
+    padding: 5px;
+    margin: 7.5px;
+    margin-bottom: 0;
+    width: 100px;
+    height: 110px;
+}
+#unit_alerts {
+    width: 75px;
+    margin-top: 7.5px;
+    font-weight: bold;
+}
+#issued_warning {
+    color: #ffffff;
+    font-size: 17.9px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    text-shadow:
+        0 0 5px #b60031,
+        0 0 10px #ff0015,
+        0 0 15px #ff0015;
+
+    border: 2px solid #ff0015;
+    border-radius: 2.5px;
+    background-color: #1c1c1c;
+    padding: 5px;
+    margin: 7.5px;
+    margin-bottom: 0;
+    width: 100px;
+    height: 110px;
+}
+#warning_checkbox {
+    margin-top: 3px;
+    height: 37px;
+    width: 37px;
+}
+#warning_checkbox:hover {
+    box-shadow:
+        0 0 5px #ffffff,
+        0 0 10px #b60031,
+        0 0 20px #b60031;
 }
 
 
@@ -360,6 +417,7 @@ padding-right: 50px;
     background-color: #1c1c1c;
     padding-top: 15px;
     margin: 7.5px;
+    margin-bottom: 0;
     width: 100px;
     height: 100px;
 }
@@ -390,6 +448,7 @@ padding-right: 50px;
     background-color: #1c1c1c;
     padding: 5px;
     margin: 7.5px;
+    margin-bottom: 0;
     width: 100px;
     height: 100px;
 }
@@ -420,6 +479,7 @@ padding-right: 50px;
     background-color: #1c1c1c;
     padding-top: 15px;
     margin: 7.5px;
+    margin-bottom: 0;
     width: 100px;
     height: 100px;
 }
@@ -450,6 +510,7 @@ padding-right: 50px;
     background-color: #1c1c1c;
     padding-top: 15px;
     margin: 7.5px;
+    margin-bottom: 0;
     width: 100px;
     height: 100px;
 }
@@ -480,6 +541,7 @@ padding-right: 50px;
     background-color: #1c1c1c;
     padding: 5px;
     margin: 7.5px;
+    margin-bottom: 0;
     width: 100px;
     height: 100px;
 }
@@ -510,6 +572,7 @@ padding-right: 50px;
     background-color: #1c1c1c;
     padding-top: 15px;
     margin: 7.5px;
+    margin-bottom: 0;
     width: 100px;
     height: 100px;
 }
@@ -540,6 +603,7 @@ padding-right: 50px;
     background-color: #1c1c1c;
     padding-top: 15px;
     margin: 7.5px;
+    margin-bottom: 0;
     width: 100px;
     height: 100px;
 }
@@ -570,6 +634,7 @@ padding-right: 50px;
     background-color: #1c1c1c;
     padding-top: 15px;
     margin: 7.5px;
+    margin-bottom: 0;
     width: 100px;
     height: 100px;
 }
@@ -600,6 +665,7 @@ padding-right: 50px;
     background-color: #1c1c1c;
     padding-top: 15px;
     margin: 7.5px;
+    margin-bottom: 0;
     width: 100px;
     height: 100px;
 }
@@ -630,6 +696,7 @@ padding-right: 50px;
     background-color: #1c1c1c;
     padding-top: 15px;
     margin: 7.5px;
+    margin-bottom: 0;
     width: 100px;
     height: 100px;
 }
@@ -660,6 +727,7 @@ padding-right: 50px;
     background-color: #1c1c1c;
     padding: 5px;
     margin: 7.5px;
+    margin-bottom: 0;
     width: 100px;
     height: 100px;
 }
@@ -690,6 +758,7 @@ padding-right: 50px;
     background-color: #1c1c1c;
     padding: 5px;
     margin: 7.5px;
+    margin-bottom: 0;
     width: 100px;
     height: 100px;
 }
@@ -720,6 +789,7 @@ padding-right: 50px;
     background-color: #1c1c1c;
     padding-top: 15px;
     margin: 7.5px;
+    margin-bottom: 0;
     width: 100px;
     height: 100px;
 }
@@ -750,6 +820,7 @@ padding-right: 50px;
     background-color: #1c1c1c;
     padding-top: 15px;
     margin: 7.5px;
+    margin-bottom: 0;
     width: 100px;
     height: 100px;
 }
@@ -768,59 +839,6 @@ padding-right: 50px;
 
     border-collapse: collapse;  
     background-color: #00b368;
-}
-
-#issued_alerts {
-    color: #ffffff;
-    font-size: 17.9px;
-    font-weight: bold;
-    font-family: 'Montserrat', sans-serif;
-    text-shadow:
-        0 0 5px #b60031,
-        0 0 10px #ff0015,
-        0 0 15px #ff0015;
-
-    border: 2px solid #ff0015;
-    border-radius: 2.5px;
-    background-color: #1c1c1c;
-    padding: 5px;
-    margin: 7.5px;
-    width: 100px;
-    height: 110px;
-}
-#unit_alerts {
-    width: 75px;
-    margin-top: 7.5px;
-    font-weight: bold;
-}
-#issued_warning {
-    color: #ffffff;
-    font-size: 17.9px;
-    font-weight: bold;
-    font-family: 'Montserrat', sans-serif;
-    text-shadow:
-        0 0 5px #b60031,
-        0 0 10px #ff0015,
-        0 0 15px #ff0015;
-
-    border: 2px solid #ff0015;
-    border-radius: 2.5px;
-    background-color: #1c1c1c;
-    padding: 5px;
-    margin: 7.5px;
-    width: 100px;
-    height: 110px;
-}
-#warning_checkbox {
-    margin-top: 3px;
-    height: 37px;
-    width: 37px;
-}
-#warning_checkbox:hover {
-    box-shadow:
-        0 0 5px #ffffff,
-        0 0 10px #b60031,
-        0 0 20px #b60031;
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~ Edit Unit Modal ~~~~~~~~~~~~~~~~~~~~ */
@@ -1044,6 +1062,386 @@ margin-left: -11.7px;
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Combat Division End ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Plus / Minus Buttons ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+#events_minus {
+    color: #ff0015;
+    font-size: 25px;
+}
+    #events_minus:hover {
+        color: #ffffff;
+        text-shadow:
+            0 0 5px #ff0015,
+            0 0 20px #ff0015;
+    }
+#events_plus {
+    color: #15ff00;
+    font-size: 25px;
+}
+    #events_plus:hover {
+        color: #ffffff;
+        text-shadow:
+            0 0 5px #15ff00,
+            0 0 20px #15ff00;
+    }
+
+#patrols_minus {
+    color: #ff0015;
+    font-size: 25px;
+}
+    #patrols_minus:hover {
+        color: #ffffff;
+        text-shadow:
+            0 0 5px #ff0015,
+            0 0 20px #ff0015;
+    }
+#patrols_plus {
+    color: #15ff00;
+    font-size: 25px;
+}
+    #patrols_plus:hover {
+        color: #ffffff;
+        text-shadow:
+            0 0 5px #15ff00,
+            0 0 20px #15ff00;
+    }
+
+#hours_minus {
+    color: #ff0015;
+    font-size: 25px;
+}
+    #hours_minus:hover {
+        color: #ffffff;
+        text-shadow:
+            0 0 5px #ff0015,
+            0 0 20px #ff0015;
+    }
+#hours_plus {
+    color: #15ff00;
+    font-size: 25px;
+}
+    #hours_plus:hover {
+        color: #ffffff;
+        text-shadow:
+            0 0 5px #15ff00,
+            0 0 20px #15ff00;
+    }
+
+#alerts_minus {
+    color: #ff0015;
+    font-size: 25px;
+}
+    #alerts_minus:hover {
+        color: #ffffff;
+        text-shadow:
+            0 0 5px #ff0015,
+            0 0 20px #ff0015;
+    }
+#alerts_plus {
+    color: #15ff00;
+    font-size: 25px;
+}
+    #alerts_plus:hover {
+        color: #ffffff;
+        text-shadow:
+            0 0 5px #15ff00,
+            0 0 20px #15ff00;
+    }
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Missions ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+#turret_minus {
+    color: #ff0015;
+    font-size: 25px;
+}
+#turret_minus:hover {
+    color: #ffffff;
+    text-shadow:
+        0 0 5px #ff0015,
+        0 0 20px #ff0015;
+}
+#turret_plus {
+    color: #15ff00;
+    font-size: 25px;
+}
+#turret_plus:hover {
+    color: #ffffff;
+    text-shadow:
+        0 0 5px #15ff00,
+        0 0 20px #15ff00;
+}
+
+#ground_assault_minus {
+    color: #ff0015;
+    font-size: 25px;
+}
+#ground_assault_minus:hover {
+    color: #ffffff;
+    text-shadow:
+        0 0 5px #ff0015,
+        0 0 20px #ff0015;
+}
+#ground_assault_plus {
+    color: #15ff00;
+    font-size: 25px;
+}
+#ground_assault_plus:hover {
+    color: #ffffff;
+    text-shadow:
+        0 0 5px #15ff00,
+        0 0 20px #15ff00;
+}
+
+#escort_minus {
+    color: #ff0015;
+    font-size: 25px;
+}
+#escort_minus:hover {
+    color: #ffffff;
+    text-shadow:
+        0 0 5px #ff0015,
+        0 0 20px #ff0015;
+}
+#escort_plus {
+    color: #15ff00;
+    font-size: 25px;
+}
+#escort_plus:hover {
+    color: #ffffff;
+    text-shadow:
+        0 0 5px #15ff00,
+        0 0 20px #15ff00;
+}
+
+#inquiry_minus {
+    color: #ff0015;
+    font-size: 25px;
+}
+#inquiry_minus:hover {
+    color: #ffffff;
+    text-shadow:
+        0 0 5px #ff0015,
+        0 0 20px #ff0015;
+}
+#inquiry_plus {
+    color: #15ff00;
+    font-size: 25px;
+}
+#inquiry_plus:hover {
+    color: #ffffff;
+    text-shadow:
+        0 0 5px #15ff00,
+        0 0 20px #15ff00;
+}
+
+#pilot_co_pilot_minus {
+    color: #ff0015;
+    font-size: 25px;
+}
+#pilot_co_pilot_minus:hover {
+    color: #ffffff;
+    text-shadow:
+        0 0 5px #ff0015,
+        0 0 20px #ff0015;
+}
+#pilot_co_pilot_plus {
+    color: #15ff00;
+    font-size: 25px;
+}
+#pilot_co_pilot_plus:hover {
+    color: #ffffff;
+    text-shadow:
+        0 0 5px #15ff00,
+        0 0 20px #15ff00;
+}
+
+#mining_minus {
+    color: #ff0015;
+    font-size: 25px;
+}
+#mining_minus:hover {
+    color: #ffffff;
+    text-shadow:
+        0 0 5px #ff0015,
+        0 0 20px #ff0015;
+}
+#mining_plus {
+    color: #15ff00;
+    font-size: 25px;
+}
+#mining_plus:hover {
+    color: #ffffff;
+    text-shadow:
+        0 0 5px #15ff00,
+        0 0 20px #15ff00;
+}
+
+#salvage_minus {
+    color: #ff0015;
+    font-size: 25px;
+}
+#salvage_minus:hover {
+    color: #ffffff;
+    text-shadow:
+        0 0 5px #ff0015,
+        0 0 20px #ff0015;
+}
+#salvage_plus {
+    color: #15ff00;
+    font-size: 25px;
+}
+#salvage_plus:hover {
+    color: #ffffff;
+    text-shadow:
+        0 0 5px #15ff00,
+        0 0 20px #15ff00;
+}
+
+#cargo_minus {
+    color: #ff0015;
+    font-size: 25px;
+}
+#cargo_minus:hover {
+    color: #ffffff;
+    text-shadow:
+        0 0 5px #ff0015,
+        0 0 20px #ff0015;
+}
+#cargo_plus {
+    color: #15ff00;
+    font-size: 25px;
+}
+#cargo_plus:hover {
+    color: #ffffff;
+    text-shadow:
+        0 0 5px #15ff00,
+        0 0 20px #15ff00;
+}
+
+#transit_minus {
+    color: #ff0015;
+    font-size: 25px;
+}
+#transit_minus:hover {
+    color: #ffffff;
+    text-shadow:
+        0 0 5px #ff0015,
+        0 0 20px #ff0015;
+}
+#transit_plus {
+    color: #15ff00;
+    font-size: 25px;
+}
+#transit_plus:hover {
+    color: #ffffff;
+    text-shadow:
+        0 0 5px #15ff00,
+        0 0 20px #15ff00;
+}
+
+#support_minus {
+    color: #ff0015;
+    font-size: 25px;
+}
+#support_minus:hover {
+    color: #ffffff;
+    text-shadow:
+        0 0 5px #ff0015,
+        0 0 20px #ff0015;
+}
+#support_plus {
+    color: #15ff00;
+    font-size: 25px;
+}
+#support_plus:hover {
+    color: #ffffff;
+    text-shadow:
+        0 0 5px #15ff00,
+        0 0 20px #15ff00;
+}
+
+#search_rescue_minus {
+    color: #ff0015;
+    font-size: 25px;
+}
+#search_rescue_minus:hover {
+    color: #ffffff;
+    text-shadow:
+        0 0 5px #ff0015,
+        0 0 20px #ff0015;
+}
+#search_rescue_plus {
+    color: #15ff00;
+    font-size: 25px;
+}
+#search_rescue_plus:hover {
+    color: #ffffff;
+    text-shadow:
+        0 0 5px #15ff00,
+        0 0 20px #15ff00;
+}
+
+#manage_data_minus {
+    color: #ff0015;
+    font-size: 25px;
+}
+#manage_data_minus:hover {
+    color: #ffffff;
+    text-shadow:
+        0 0 5px #ff0015,
+        0 0 20px #ff0015;
+}
+#manage_data_plus {
+    color: #15ff00;
+    font-size: 25px;
+}
+#manage_data_plus:hover {
+    color: #ffffff;
+    text-shadow:
+        0 0 5px #15ff00,
+        0 0 20px #15ff00;
+}
+
+#research_minus {
+    color: #ff0015;
+    font-size: 25px;
+}
+#research_minus:hover {
+    color: #ffffff;
+    text-shadow:
+        0 0 5px #ff0015,
+        0 0 20px #ff0015;
+}
+#research_plus {
+    color: #15ff00;
+    font-size: 25px;
+}
+#research_plus:hover {
+    color: #ffffff;
+    text-shadow:
+        0 0 5px #15ff00,
+        0 0 20px #15ff00;
+}
+
+#agronomy_minus {
+    color: #ff0015;
+    font-size: 25px;
+}
+#agronomy_minus:hover {
+    color: #ffffff;
+    text-shadow:
+        0 0 5px #ff0015,
+        0 0 20px #ff0015;
+}
+#agronomy_plus {
+    color: #15ff00;
+    font-size: 25px;
+}
+#agronomy_plus:hover {
+    color: #ffffff;
+    text-shadow:
+        0 0 5px #15ff00,
+        0 0 20px #15ff00;
+}
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Extra ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 #icon_round {

@@ -154,29 +154,45 @@
                         <div class="col">
                             <label id="completed_events" for="unit_events">
                                 Added Events:
-                                <input class="text-center" id="unit_events" type="number" value="0" name="events"/>
+                                <input class="text-center" id="unit_events" value="0" name="events"/>
                             </label>
+                            <div class="col">
+                                <i type="button" id="events_minus"><i class="fa-solid fa-circle-minus"></i></i>
+                                <i type="button" id="events_plus"><i class="fa-solid fa-circle-plus"></i></i>
+                            </div>
                         </div>
 
                         <div class="col">
                             <label id="completed_patrols" for="unit_patrols">
                                 Added Patrols:
-                                <input class="text-center" id="unit_patrols" type="number" value="0" name="patrols"/>
+                                <input class="text-center" id="unit_patrols" value="0" name="patrols"/>
                             </label>
+                            <div class="col">
+                                <i type="button" id="patrols_minus"><i class="fa-solid fa-circle-minus"></i></i>
+                                <i type="button" id="patrols_plus"><i class="fa-solid fa-circle-plus"></i></i>
+                            </div>
                         </div>
     
                         <div class="col">
                             <label id="completed_hours" for="unit_hours">
                                 Added Hours:
-                                <input class="text-center" id="unit_hours" type="number" value="0" name="hours"/>
+                                <input class="text-center" id="unit_hours" value="0" name="hours"/>
                             </label>
+                            <div class="col">
+                                <i type="button" id="hours_minus"><i class="fa-solid fa-circle-minus"></i></i>
+                                <i type="button" id="hours_plus"><i class="fa-solid fa-circle-plus"></i></i>
+                            </div>
                         </div>
 
                         <div class="col">
                             <label id="issued_alerts" for="unit_alerts">
                                 Issued Alerts:
-                                <input class="text-center" id="unit_alerts" type="number" value="0" min="0" max="3" name="alerts"/>
+                                <input class="text-center" id="unit_alerts" value="0" min="0" max="3" name="alerts"/>
                             </label>
+                            <div class="col">
+                                <i type="button" id="alerts_minus"><i class="fa-solid fa-circle-minus"></i></i>
+                                <i type="button" id="alerts_plus"><i class="fa-solid fa-circle-plus"></i></i>
+                            </div>
                         </div>
     
                         <div class="col">
@@ -199,99 +215,155 @@
                             <div class="col">
                                 <label id="completed_turret" for="mission_turret">
                                     Turret
-                                    <input class="text-center" id="mission_turret" type="number" value="0" name="turret"/>
+                                    <input class="text-center" id="mission_turret" value="0" name="turret"/>
                                 </label>
+                                <div class="col">
+                                    <i type="button" id="turret_minus"><i class="fa-solid fa-circle-minus"></i></i>
+                                    <i type="button" id="turret_plus"><i class="fa-solid fa-circle-plus"></i></i>
+                                </div>
                             </div>
         
                             <div class="col">
                                 <label id="completed_ground_assault" for="mission_ground_assault">
                                     Ground Assault
-                                    <input class="text-center" id="mission_ground_assault" type="number" value="0" name="ground_assault"/>
+                                    <input class="text-center" id="mission_ground_assault" value="0" name="ground_assault"/>
                                 </label>
+                                <div class="col">
+                                    <i type="button" id="ground_assault_minus"><i class="fa-solid fa-circle-minus"></i></i>
+                                    <i type="button" id="ground_assault_plus"><i class="fa-solid fa-circle-plus"></i></i>
+                                </div>
                             </div>
     
                             <div class="col">
                                 <label id="completed_escort" for="mission_escort">
                                     Escort
-                                    <input class="text-center" id="mission_escort" type="number" value="0" name="escort"/>
+                                    <input class="text-center" id="mission_escort" value="0" name="escort"/>
                                 </label>
+                                <div class="col">
+                                    <i type="button" id="escort_minus"><i class="fa-solid fa-circle-minus"></i></i>
+                                    <i type="button" id="escort_plus"><i class="fa-solid fa-circle-plus"></i></i>
+                                </div>
                             </div>
     
                             <div class="col">
                                 <label id="completed_inquiry" for="mission_inquiry">
                                     Inquiry
-                                    <input class="text-center" id="mission_inquiry" type="number" value="0" name="inquiry"/>
+                                    <input class="text-center" id="mission_inquiry" value="0" name="inquiry"/>
                                 </label>
+                                <div class="col">
+                                    <i type="button" id="inquiry_minus"><i class="fa-solid fa-circle-minus"></i></i>
+                                    <i type="button" id="inquiry_plus"><i class="fa-solid fa-circle-plus"></i></i>
+                                </div>
                             </div>
     
                             <div class="col">
                                 <label id="completed_pilot_co_pilot" for="mission_pilot_co_pilot">
                                     Pilot / Co-Pilot
-                                    <input class="text-center" id="mission_pilot_co_pilot" type="number" value="0" name="pilot_co_pilot"/>
+                                    <input class="text-center" id="mission_pilot_co_pilot" value="0" name="pilot_co_pilot"/>
                                 </label>
+                                <div class="col">
+                                    <i type="button" id="pilot_co_pilot_minus"><i class="fa-solid fa-circle-minus"></i></i>
+                                    <i type="button" id="pilot_co_pilot_plus"><i class="fa-solid fa-circle-plus"></i></i>
+                                </div>
                             </div>
     
                             <div class="col">
                                 <label id="completed_mining" for="mission_mining">
                                     Mining
-                                    <input class="text-center" id="mission_mining" type="number" value="0" name="mining"/>
+                                    <input class="text-center" id="mission_mining" value="0" name="mining"/>
                                 </label>
+                                <div class="col">
+                                    <i type="button" id="mining_minus"><i class="fa-solid fa-circle-minus"></i></i>
+                                    <i type="button" id="mining_plus"><i class="fa-solid fa-circle-plus"></i></i>
+                                </div>
                             </div>
     
                             <div class="col">
                                 <label id="completed_salvage" for="mission_salvage">
                                     Salvage
-                                    <input class="text-center" id="mission_salvage" type="number" value="0" name="salvage"/>
+                                    <input class="text-center" id="mission_salvage" value="0" name="salvage"/>
                                 </label>
+                                <div class="col">
+                                    <i type="button" id="salvage_minus"><i class="fa-solid fa-circle-minus"></i></i>
+                                    <i type="button" id="salvage_plus"><i class="fa-solid fa-circle-plus"></i></i>
+                                </div>
                             </div>
     
                             <div class="col">
                                 <label id="completed_cargo" for="mission_cargo">
                                     Cargo
-                                    <input class="text-center" id="mission_cargo" type="number" value="0" name="cargo"/>
+                                    <input class="text-center" id="mission_cargo" value="0" name="cargo"/>
                                 </label>
+                                <div class="col">
+                                    <i type="button" id="cargo_minus"><i class="fa-solid fa-circle-minus"></i></i>
+                                    <i type="button" id="cargo_plus"><i class="fa-solid fa-circle-plus"></i></i>
+                                </div>
                             </div>
                             
                             <div class="col">
                                 <label id="completed_transit" for="mission_transit">
                                     Transit
-                                    <input class="text-center" id="mission_transit" type="number" value="0" name="transit"/>
+                                    <input class="text-center" id="mission_transit" value="0" name="transit"/>
                                 </label>
+                                <div class="col">
+                                    <i type="button" id="transit_minus"><i class="fa-solid fa-circle-minus"></i></i>
+                                    <i type="button" id="transit_plus"><i class="fa-solid fa-circle-plus"></i></i>
+                                </div>
                             </div>
     
                             <div class="col">
                                 <label id="completed_support" for="mission_support">
                                     Support
-                                    <input class="text-center" id="mission_support" type="number" value="0" name="support"/>
+                                    <input class="text-center" id="mission_support" value="0" name="support"/>
                                 </label>
+                                <div class="col">
+                                    <i type="button" id="support_minus"><i class="fa-solid fa-circle-minus"></i></i>
+                                    <i type="button" id="support_plus"><i class="fa-solid fa-circle-plus"></i></i>
+                                </div>
                             </div>
     
                             <div class="col">
                                 <label id="completed_search_rescue" for="mission_search_rescue">
                                     Search & Rescue
-                                    <input class="text-center" id="mission_search_rescue" type="number" value="0" name="search_rescue"/>
+                                    <input class="text-center" id="mission_search_rescue" value="0" name="search_rescue"/>
                                 </label>
+                                <div class="col">
+                                    <i type="button" id="search_rescue_minus"><i class="fa-solid fa-circle-minus"></i></i>
+                                    <i type="button" id="search_rescue_plus"><i class="fa-solid fa-circle-plus"></i></i>
+                                </div>
                             </div>
     
                             <div class="col">
                                 <label id="completed_manage_data" for="mission_manage_data">
                                     Manage Data
-                                    <input class="text-center" id="mission_manage_data" type="number" value="0" name="manage_data"/>
+                                    <input class="text-center" id="mission_manage_data" value="0" name="manage_data"/>
                                 </label>
+                                <div class="col">
+                                    <i type="button" id="manage_data_minus"><i class="fa-solid fa-circle-minus"></i></i>
+                                    <i type="button" id="manage_data_plus"><i class="fa-solid fa-circle-plus"></i></i>
+                                </div>
                             </div>
     
                             <div class="col">
                                 <label id="completed_research" for="mission_research">
                                     Research
-                                    <input class="text-center" id="mission_research" type="number" value="0" name="research"/>
+                                    <input class="text-center" id="mission_research" value="0" name="research"/>
                                 </label>
+                                <div class="col">
+                                    <i type="button" id="research_minus"><i class="fa-solid fa-circle-minus"></i></i>
+                                    <i type="button" id="research_plus"><i class="fa-solid fa-circle-plus"></i></i>
+                                </div>
                             </div>
     
                             <div class="col">
                                 <label id="completed_agronomy" for="mission_agronomy">
                                     Agronomy
-                                    <input class="text-center" id="mission_agronomy" type="number" value="0" name="agronomy"/>
+                                    <input class="text-center" id="mission_agronomy" value="0" name="agronomy"/>
                                 </label>
+                                <div class="col">
+                                    <i type="button" id="agronomy_minus"><i class="fa-solid fa-circle-minus"></i></i>
+                                    <i type="button" id="agronomy_plus"><i class="fa-solid fa-circle-plus"></i></i>
+                                </div>
                             </div>
                         </div>
                     </div>
