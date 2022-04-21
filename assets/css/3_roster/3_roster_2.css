@@ -1066,7 +1066,8 @@ margin-left: -11.7px;
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Plus / Minus Buttons ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 #events_minus {
     color: #ff0015;
-    font-size: 25px;
+    font-size: 35px;
+    margin-right: 5px;
 }
     #events_minus:hover {
         color: #ffffff;
@@ -1076,7 +1077,8 @@ margin-left: -11.7px;
     }
 #events_plus {
     color: #15ff00;
-    font-size: 25px;
+    font-size: 35px;
+    margin-left: 5px;
 }
     #events_plus:hover {
         color: #ffffff;
@@ -1087,7 +1089,8 @@ margin-left: -11.7px;
 
 #patrols_minus {
     color: #ff0015;
-    font-size: 25px;
+    font-size: 35px;
+    margin-right: 5px;
 }
     #patrols_minus:hover {
         color: #ffffff;
@@ -1097,7 +1100,8 @@ margin-left: -11.7px;
     }
 #patrols_plus {
     color: #15ff00;
-    font-size: 25px;
+    font-size: 35px;
+    margin-left: 5px;
 }
     #patrols_plus:hover {
         color: #ffffff;
@@ -1108,7 +1112,8 @@ margin-left: -11.7px;
 
 #hours_minus {
     color: #ff0015;
-    font-size: 25px;
+    font-size: 35px;
+    margin-right: 5px;
 }
     #hours_minus:hover {
         color: #ffffff;
@@ -1118,7 +1123,8 @@ margin-left: -11.7px;
     }
 #hours_plus {
     color: #15ff00;
-    font-size: 25px;
+    font-size: 35px;
+    margin-left: 5px;
 }
     #hours_plus:hover {
         color: #ffffff;
@@ -1129,7 +1135,8 @@ margin-left: -11.7px;
 
 #alerts_minus {
     color: #ff0015;
-    font-size: 25px;
+    font-size: 35px;
+    margin-right: 5px;
 }
     #alerts_minus:hover {
         color: #ffffff;
@@ -1139,7 +1146,8 @@ margin-left: -11.7px;
     }
 #alerts_plus {
     color: #15ff00;
-    font-size: 25px;
+    font-size: 35px;
+    margin-left: 5px;
 }
     #alerts_plus:hover {
         color: #ffffff;
@@ -1151,7 +1159,8 @@ margin-left: -11.7px;
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Missions ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 #turret_minus {
     color: #ff0015;
-    font-size: 25px;
+    font-size: 35px;
+    margin-right: 5px;
 }
 #turret_minus:hover {
     color: #ffffff;
@@ -1161,7 +1170,8 @@ margin-left: -11.7px;
 }
 #turret_plus {
     color: #15ff00;
-    font-size: 25px;
+    font-size: 35px;
+    margin-left: 5px;
 }
 #turret_plus:hover {
     color: #ffffff;
@@ -1172,7 +1182,8 @@ margin-left: -11.7px;
 
 #ground_assault_minus {
     color: #ff0015;
-    font-size: 25px;
+    font-size: 35px;
+    margin-right: 5px;
 }
 #ground_assault_minus:hover {
     color: #ffffff;
@@ -1182,7 +1193,8 @@ margin-left: -11.7px;
 }
 #ground_assault_plus {
     color: #15ff00;
-    font-size: 25px;
+    font-size: 35px;
+    margin-left: 5px;
 }
 #ground_assault_plus:hover {
     color: #ffffff;
@@ -1193,7 +1205,8 @@ margin-left: -11.7px;
 
 #escort_minus {
     color: #ff0015;
-    font-size: 25px;
+    font-size: 35px;
+    margin-right: 5px;
 }
 #escort_minus:hover {
     color: #ffffff;
@@ -1203,7 +1216,8 @@ margin-left: -11.7px;
 }
 #escort_plus {
     color: #15ff00;
-    font-size: 25px;
+    font-size: 35px;
+    margin-left: 5px;
 }
 #escort_plus:hover {
     color: #ffffff;
@@ -1214,7 +1228,8 @@ margin-left: -11.7px;
 
 #inquiry_minus {
     color: #ff0015;
-    font-size: 25px;
+    font-size: 35px;
+    margin-right: 5px;
 }
 #inquiry_minus:hover {
     color: #ffffff;
@@ -1224,7 +1239,8 @@ margin-left: -11.7px;
 }
 #inquiry_plus {
     color: #15ff00;
-    font-size: 25px;
+    font-size: 35px;
+    margin-left: 5px;
 }
 #inquiry_plus:hover {
     color: #ffffff;
@@ -1235,7 +1251,8 @@ margin-left: -11.7px;
 
 #pilot_co_pilot_minus {
     color: #ff0015;
-    font-size: 25px;
+    font-size: 35px;
+    margin-right: 5px;
 }
 #pilot_co_pilot_minus:hover {
     color: #ffffff;
@@ -1245,7 +1262,8 @@ margin-left: -11.7px;
 }
 #pilot_co_pilot_plus {
     color: #15ff00;
-    font-size: 25px;
+    font-size: 35px;
+    margin-left: 5px;
 }
 #pilot_co_pilot_plus:hover {
     color: #ffffff;
@@ -1256,7 +1274,8 @@ margin-left: -11.7px;
 
 #mining_minus {
     color: #ff0015;
-    font-size: 25px;
+    font-size: 35px;
+    margin-right: 5px;
 }
 #mining_minus:hover {
     color: #ffffff;
@@ -1266,7 +1285,8 @@ margin-left: -11.7px;
 }
 #mining_plus {
     color: #15ff00;
-    font-size: 25px;
+    font-size: 35px;
+    margin-left: 5px;
 }
 #mining_plus:hover {
     color: #ffffff;
@@ -1277,7 +1297,8 @@ margin-left: -11.7px;
 
 #salvage_minus {
     color: #ff0015;
-    font-size: 25px;
+    font-size: 35px;
+    margin-right: 5px;
 }
 #salvage_minus:hover {
     color: #ffffff;
@@ -1287,7 +1308,8 @@ margin-left: -11.7px;
 }
 #salvage_plus {
     color: #15ff00;
-    font-size: 25px;
+    font-size: 35px;
+    margin-left: 5px;
 }
 #salvage_plus:hover {
     color: #ffffff;
@@ -1298,7 +1320,8 @@ margin-left: -11.7px;
 
 #cargo_minus {
     color: #ff0015;
-    font-size: 25px;
+    font-size: 35px;
+    margin-right: 5px;
 }
 #cargo_minus:hover {
     color: #ffffff;
@@ -1308,7 +1331,8 @@ margin-left: -11.7px;
 }
 #cargo_plus {
     color: #15ff00;
-    font-size: 25px;
+    font-size: 35px;
+    margin-left: 5px;
 }
 #cargo_plus:hover {
     color: #ffffff;
@@ -1319,7 +1343,8 @@ margin-left: -11.7px;
 
 #transit_minus {
     color: #ff0015;
-    font-size: 25px;
+    font-size: 35px;
+    margin-right: 5px;
 }
 #transit_minus:hover {
     color: #ffffff;
@@ -1329,7 +1354,8 @@ margin-left: -11.7px;
 }
 #transit_plus {
     color: #15ff00;
-    font-size: 25px;
+    font-size: 35px;
+    margin-left: 5px;
 }
 #transit_plus:hover {
     color: #ffffff;
@@ -1340,7 +1366,8 @@ margin-left: -11.7px;
 
 #support_minus {
     color: #ff0015;
-    font-size: 25px;
+    font-size: 35px;
+    margin-right: 5px;
 }
 #support_minus:hover {
     color: #ffffff;
@@ -1350,7 +1377,8 @@ margin-left: -11.7px;
 }
 #support_plus {
     color: #15ff00;
-    font-size: 25px;
+    font-size: 35px;
+    margin-left: 5px;
 }
 #support_plus:hover {
     color: #ffffff;
@@ -1361,7 +1389,8 @@ margin-left: -11.7px;
 
 #search_rescue_minus {
     color: #ff0015;
-    font-size: 25px;
+    font-size: 35px;
+    margin-right: 5px;
 }
 #search_rescue_minus:hover {
     color: #ffffff;
@@ -1371,7 +1400,8 @@ margin-left: -11.7px;
 }
 #search_rescue_plus {
     color: #15ff00;
-    font-size: 25px;
+    font-size: 35px;
+    margin-left: 5px;
 }
 #search_rescue_plus:hover {
     color: #ffffff;
@@ -1382,7 +1412,8 @@ margin-left: -11.7px;
 
 #manage_data_minus {
     color: #ff0015;
-    font-size: 25px;
+    font-size: 35px;
+    margin-right: 5px;
 }
 #manage_data_minus:hover {
     color: #ffffff;
@@ -1392,7 +1423,8 @@ margin-left: -11.7px;
 }
 #manage_data_plus {
     color: #15ff00;
-    font-size: 25px;
+    font-size: 35px;
+    margin-left: 5px;
 }
 #manage_data_plus:hover {
     color: #ffffff;
@@ -1403,7 +1435,8 @@ margin-left: -11.7px;
 
 #research_minus {
     color: #ff0015;
-    font-size: 25px;
+    font-size: 35px;
+    margin-right: 5px;
 }
 #research_minus:hover {
     color: #ffffff;
@@ -1413,7 +1446,8 @@ margin-left: -11.7px;
 }
 #research_plus {
     color: #15ff00;
-    font-size: 25px;
+    font-size: 35px;
+    margin-left: 5px;
 }
 #research_plus:hover {
     color: #ffffff;
@@ -1424,7 +1458,8 @@ margin-left: -11.7px;
 
 #agronomy_minus {
     color: #ff0015;
-    font-size: 25px;
+    font-size: 35px;
+    margin-right: 5px;
 }
 #agronomy_minus:hover {
     color: #ffffff;
@@ -1434,7 +1469,8 @@ margin-left: -11.7px;
 }
 #agronomy_plus {
     color: #15ff00;
-    font-size: 25px;
+    font-size: 35px;
+    margin-left: 5px;
 }
 #agronomy_plus:hover {
     color: #ffffff;
