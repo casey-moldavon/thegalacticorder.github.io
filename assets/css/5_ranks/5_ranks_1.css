@@ -751,11 +751,17 @@ body {
     border-collapse: collapse;
 }
 #rank_0_modal_image {
-    padding: -250px;
+    /* padding: -250px;
     margin-top: 25px;
     margin-bottom: 50px;
     margin-left: 100px;
-    margin-right: 100px;
+    margin-right: 100px; */
+    height: 500px;
+    width: 220px;
+    margin-bottom: 25px;
+    margin-left: 25%;
+
+    position: center;
     border: 2px solid #ffffff;
     border-radius: 5px;
     box-shadow:
@@ -812,11 +818,16 @@ body {
     border-collapse: collapse;
 }
 #combat_modal_image {
-    padding: -250px;
+    /* padding: -250px;
     margin-top: 25px;
     margin-bottom: 50px;
     margin-left: 100px;
-    margin-right: 100px;
+    margin-right: 100px; */
+    height: 500px;
+    width: 220px;
+    margin-bottom: 25px;
+    margin-left: 25%;
+
     border: 2px solid #ffffff;
     border-radius: 5px;
     box-shadow:
@@ -861,11 +872,16 @@ body {
     border-collapse: collapse;
 }
 #engineer_modal_image {
-    padding: -250px;
+    /* padding: -250px;
     margin-top: 25px;
     margin-bottom: 50px;
     margin-left: 100px;
-    margin-right: 100px;
+    margin-right: 100px; */
+    height: 500px;
+    width: 220px;
+    margin-bottom: 25px;
+    margin-left: 25%;
+
     border: 2px solid #ffffff;
     border-radius: 5px;
     box-shadow:
@@ -910,11 +926,16 @@ body {
     border-collapse: collapse;
 }
 #medic_modal_image {
-    padding: -250px;
+    /* padding: -250px;
     margin-top: 25px;
     margin-bottom: 50px;
     margin-left: 100px;
-    margin-right: 100px;
+    margin-right: 100px; */
+    height: 500px;
+    width: 220px;
+    margin-bottom: 25px;
+    margin-left: 25%;
+
     border: 2px solid #ffffff;
     border-radius: 5px;
     box-shadow:
@@ -964,6 +985,7 @@ body {
     margin-bottom: 50px;
     margin-left: 100px;
     margin-right: 100px;
+
     border: 2px solid #ffffff;
     border-radius: 5px;
     box-shadow:
