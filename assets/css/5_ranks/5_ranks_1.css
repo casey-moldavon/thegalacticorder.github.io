@@ -492,6 +492,30 @@ body {
     background-color: #ff0015;
 }
 
+#science_division_information {
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Allerta Stencil', sans-serif;
+    /* background-color: #1c1c1c; */
+}
+#science_division_information:hover #rank_information_icon {
+    color: #ffffff;
+    font-size: 30.2px;
+    text-shadow:
+        0 0 5px #ffffff,
+        0 0 10px #ff0015,
+        0 0 15px #ff0015;
+
+    border-radius: 15px;
+    box-shadow:
+        0 0 10px #ff0015,
+        0 0 20px #ff0015;
+
+    border-collapse: collapse;
+    background-color: #ff0015;
+}
+
 #elite_sub_division_information {
     color: #ffffff;
     font-size: 25px;
@@ -683,6 +707,40 @@ body {
         0 0 5px #ffffff,
         0 0 10px #4285f4,
         0 0 15px #4285f4;
+}
+
+
+#science_unit_card {
+    border: 2px solid #00b368;
+    border-radius: 2px;
+    margin: 1%;
+    background-color: #1c1c1c;
+}
+#science_unit_card:hover {
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+    box-shadow:
+        0 0 10px #ffffff,
+        0 0 15px #00b368,
+        0 0 20px #00b368,
+        0 0 25px #00b368;
+        
+    border-collapse: collapse;
+    margin: 1%;
+}
+#science_unit_text {
+    color: #ffffff;
+    font-size: 15.5px;
+    font-weight: bold;
+    font-family: 'Allerta Stencil', sans-serif;
+    background-color: #1c1c1c;
+}
+#science_unit_card:hover #medical_unit_text {
+    font-size: 15.5px;
+    text-shadow:
+        0 0 5px #ffffff,
+        0 0 10px #00b368,
+        0 0 15px #00b368;
 }
 
 
@@ -942,6 +1000,60 @@ body {
         0 0 10px #ffffff,
         0 0 15px #4285f4,
         0 0 20px #4285f4;
+
+    border-collapse: collapse;
+    background-color: #1c1c1c;
+    /* background-image: url("logo_background.jpeg"); */
+    background-image: url("logo_faded.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#science_modal {
+    color: #ffffff;
+    font-size: 17.9px;
+    font-weight: bold;
+    /* font-family: 'Fanwood Text', serif; */
+    font-family: 'Montserrat', sans-serif;
+    
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+    box-shadow:
+        0 0 10px #ffffff,
+        0 0 15px #00b368,
+        0 0 20px #00b368;
+
+    border-collapse: collapse;
+    /* background: rgba(255, 255, 255, 0.25); */
+    background: rgba(0, 255, 175, 0.25);
+}
+#science_collapse {
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+    box-shadow:
+        0 0 10px #ffffff,
+        0 0 15px #00b368,
+        0 0 20px #00b368;
+
+    border-collapse: collapse;
+}
+#science_modal_image {
+    /* padding: -250px;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    margin-left: 100px;
+    margin-right: 100px; */
+    height: 500px;
+    width: 220px;
+    margin-bottom: 25px;
+    margin-left: 25%;
+
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    box-shadow:
+        0 0 10px #ffffff,
+        0 0 15px #00b368,
+        0 0 20px #00b368;
 
     border-collapse: collapse;
     background-color: #1c1c1c;

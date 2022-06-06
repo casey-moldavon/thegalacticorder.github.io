@@ -402,6 +402,37 @@
 
             <p id="small_space"></p>
 
+            <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Science Division ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+            <div id="science_division_information" class="container row justify-content-center text-center container-fluid">
+                <p><a id="science_division">SCIENCE DIVISION:</a></p>
+
+                <div id="science_unit_card" class="card text-center" style="width: 10rem;" type="button" data-bs-toggle="modal" data-bs-target="#field_researcherModal">
+                    <img id="emblem_image" src="../assets/ranks/emblems/emblem_1_medic.png" class="card-img-top" alt="Field Researcher">
+                    <ul class="list-group list-group-flush">
+                        <li id="science_unit_text" class="list-group-item">Rank 1</li>
+                        <li id="science_unit_text" class="list-group-item">Field Researcher</li>
+                    </ul>
+                </div>
+
+                <div id="science_unit_card" class="card text-center" style="width: 10rem;" type="button" data-bs-toggle="modal" data-bs-target="#laboratory_techModal">
+                    <img id="emblem_image" src="../assets/ranks/emblems/emblem_2_medic.png" class="card-img-top" alt="Laboratory Tech">
+                    <ul class="list-group list-group-flush">
+                        <li id="science_unit_text" class="list-group-item">Rank 2</li>
+                        <li id="science_unit_text" class="list-group-item">Laboratory Tech</li>
+                    </ul>
+                </div>
+
+                <div id="science_unit_card" class="card text-center" style="width: 10rem;" type="button" data-bs-toggle="modal" data-bs-target="#science_officerModal">
+                    <img id="emblem_image" src="../assets/ranks/emblems/emblem_3_medic.png" class="card-img-top" alt="Science Officer">
+                    <ul class="list-group list-group-flush">
+                        <li id="science_unit_text" class="list-group-item">Rank 3</li>
+                        <li id="science_unit_text" class="list-group-item">Science Officer</li>
+                    </ul>
+                </div>
+            </div>
+
+            <p id="small_space"></p>
+
             <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Elite Sub-Division ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
             <div id="elite_sub_division_information" class="container row justify-content-center text-center container-fluid">
                 <p><a id="leadership_division">ELITE SUB-DIVISION:</a></p>
@@ -676,6 +707,7 @@
                                                     <li>10 Completed <a id="combat_note">Combat Missions</a> (alive)</li>
                                                     <li>10 Completed <a id="engineer_note">Engineer Missions</a> (alive)</li>
                                                     <li>5 Completed <a id="medical_note">Medical Missions</a> (alive)</li>
+                                                    <li>5 Completed <a id="science_note">Science Missions</a> (alive)</li>
                                                     <li>Completed <a id="novitiate_note">Protocol Certification Exam</a></li>
                                                 </ul>
                                             </div>
@@ -1251,6 +1283,7 @@
                                                     <li>10 Completed <a id="combat_note">Combat Missions</a> (alive)</li>
                                                     <li>10 Completed <a id="engineer_note">Engineer Missions</a> (alive)</li>
                                                     <li>5 Completed <a id="medical_note">Medical Missions</a> (alive)</li>
+                                                    <li>5 Completed <a id="science_note">Science Missions</a> (alive)</li>
                                                     <li>Completed <a id="novitiate_note">Protocol Certification Exam</a></li>
                                                 </ul>
                                             </div>
@@ -1544,6 +1577,7 @@
                                                     <li>10 Completed <a id="combat_note">Combat Missions</a> (alive)</li>
                                                     <li>10 Completed <a id="engineer_note">Engineer Missions</a> (alive)</li>
                                                     <li>5 Completed <a id="medical_note">Medical Missions</a> (alive)</li>
+                                                    <li>5 Completed <a id="science_note">Science Missions</a> (alive)</li>
                                                     <li>Completed <a id="novitiate_note">Protocol Certification Exam</a></li>
                                                 </ul>
                                             </div>
@@ -1751,6 +1785,312 @@
                 
                                             <div class="container-fluid text-start">
                                                 <p>Medical Commanders hold authority over medical personnel as well as advancement of medical techniques and practices. It is important to note that these are the only Division Officers with authority to assume command of another division's units, but this may only be done to ensure safety and prevent loss of life. As Combat Division sees the highest mortality rates, these Commanders work closely with <a id="combat_note">Trooper Commanders</a>.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Field Researcher Modal ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <div class="row">
+        <div class="modal fade" id="field_researcherModal" tabindex="-1" aria-labelledby="field_researcherModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-md">
+
+                <div class="container justify-content-center text-center container-fluid">
+                    <div id="science_modal" class="modal-content">
+                        <div class="justify-content-center text-center">
+                            <p id="science_division">RANK 1: FIELD RESEARCHER</p>
+                        </div>
+                        <img id="science_modal_image" src="../assets/ranks/units/rank_0_conscript.png" alt="Field Researcher Image">
+
+                        <div id="accordion_container" class="container justify-content-center text-center">
+
+                            <div id="science_collapse" class="accordion accordion-flush">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne">
+                                        <button id="rank_prerequisites" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                            <i id="rank_information_icon" class="fa-solid fa-book"></i>Description
+                                        </button>
+                                    </h2>
+                
+                                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne">
+                                        <div id="rank_prerequisites_text" class="accordion-body">
+                
+                                            <div class="container-fluid text-start">
+                                                <p>Also referred to as “Field Techs”, these units have a wide scope of available responsibilities and tasks. They assist in exploratory surveys, participate in agricultural practices, manage and maintain data, and they conduct research assessments into existing technology, often compiling intricate and detailed reports to their findings under the supervision of Laboratory Technologists or in their absence. Unlike other division rank 1 units, Field Researchers do not participate in combat unless absolutely necessary when encountering dangerous wildlife during exploratory missions or collecting hazardous samples. This role has a slightly higher mortality rate than others as a result of the challenging environments and high-risk testing they conduct with various samples or technologies.</p>
+                                            
+                                                <p><a id="bold_note">Note:</a> Promotion to Rank 1 grants Full Benefits and starts the weekly income process.</p>
+                                                <li>Click <a href="../pages/5_ranks_2.html" target="_blank">here</a> to view Rank Benefits.</li>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingTwo">
+                                        <button id="rank_prerequisites" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            <i id="rank_information_icon" class="fa-solid fa-shield-halved"></i>Equipment
+                                        </button>
+                                    </h2>
+                
+                                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo">
+                                        <div id="rank_prerequisites_text" class="accordion-body">
+                
+                                            <div class="container-fluid text-start">
+                                                <p><a id="science_division_text">Undersuit:</a> Stoneskin Undersuit</p>
+                                                <!-- <p><a id="science_division_text">Head Armor:</a> Fortifier Helmet White</p> -->
+                                                <!-- <p><a id="science_division_text">Torso Armor:</a> TrueDef-Pro Core Black/Grey</p> -->
+                                                <!-- <p><a id="science_division_text">Arms Armor:</a> Calico Arms Tactical</p> -->
+                                                <!-- <p><a id="science_division_text">Legs Armor:</a> Macflex Legs Black</p> -->
+                                                <p></p>
+                                                <!-- <p><a id="science_division_text">Tools:</a> ParaMed Medical Device</p> -->
+                                                <p>More to be decided</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingThree">
+                                        <button id="rank_prerequisites" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                            <i id="rank_information_icon" class="fa-solid fa-lock"></i>Prerequisites
+                                        </button>
+                                    </h2>
+                
+                                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree">
+                                        <div id="rank_prerequisites_text" class="accordion-body">
+                
+                                            <div class="container-fluid text-start">
+                                                <a><a id="medical_division_text" class="text-centered">Promotion Prerequisites:</a></a>
+                                                <p>(At least 3 must be completed)</p>
+                                                <p></p>
+                                                <ul class="text-start">
+                                                    <li>Report for 2 Patrols</li>
+                                                    <li>Participate in 1 Galactic Order Event</li>
+                                                    <li>Recruitment of 1 Member</li>
+                                                    <li>15 Hours of Service as Rank 0</li>
+                                                    <li>1 Month of service as Rank 0</li>
+                                                    <li>10 Completed <a id="combat_note">Combat Missions</a> (alive)</li>
+                                                    <li>10 Completed <a id="engineer_note">Engineer Missions</a> (alive)</li>
+                                                    <li>5 Completed <a id="medical_note">Medical Missions</a> (alive)</li>
+                                                    <li>5 Completed <a id="science_note">Science Missions</a> (alive)</li>
+                                                    <li>Completed <a id="novitiate_note">Protocol Certification Exam</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Laboratory Tech Modal ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <div class="row">
+        <div class="modal fade" id="laboratory_techModal" tabindex="-1" aria-labelledby="laboratory_techModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-md">
+
+                <div class="container justify-content-center text-center container-fluid">
+                    <div id="science_modal" class="modal-content">
+                        <div class="justify-content-center text-center">
+                            <p id="science_division">RANK 2: LIEUTENANT CORPSMAN</p>
+                        </div>
+                        <img id="science_modal_image" src="../assets/ranks/units/rank_0_conscript.png" alt="Laboratory Tech Image">
+
+                        <div id="accordion_container" class="container justify-content-center text-center">
+
+                            <div id="science_collapse" class="accordion accordion-flush">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne">
+                                        <button id="rank_prerequisites" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                            <i id="rank_information_icon" class="fa-solid fa-book"></i>Description
+                                        </button>
+                                    </h2>
+                
+                                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne">
+                                        <div id="rank_prerequisites_text" class="accordion-body">
+                
+                                            <div class="container-fluid text-start">
+                                                <p>Also referred to as “Lab Techs”, these individuals act as experts in exploration sciences, data management, research and development, and leading complex studies to expand the overall knowledge of The Galactic Order. Despite their role of authority, Lab Techs rarely venture into actual field work, as their responsibilities are: organizing information, cataloging, expanding or revising research, and delegating higher risk tasks to Field Researchers whom are better equipped to handle harsher settings/scenarios.</p>
+                                                <p>Independent research projects they conduct tend to be low-risk but long-term and complex in nature, occasionally expanding from a previously visited project of another individual. Overall, much of this role entails handling, expanding and managing data.</p>
+
+                                                <p><a id="bold_note">Note:</a> Laboratory Tech limit per Battalion:  <a id="science_division_text">2</a></p>
+                                                <p><a id="bold_note">Note:</a> Laboratory Tech limit per Exploration Battalion:  <a id="science_division_text">6</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingTwo">
+                                        <button id="rank_prerequisites" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            <i id="rank_information_icon" class="fa-solid fa-shield-halved"></i>Equipment
+                                        </button>
+                                    </h2>
+                
+                                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo">
+                                        <div id="rank_prerequisites_text" class="accordion-body">
+                
+                                            <div class="container-fluid text-start">
+                                                <p><a id="science_division_text">Undersuit:</a> Stoneskin Undersuit</p>
+                                                <!-- <p><a id="science_division_text">Head Armor:</a> Fortifier Helmet White</p> -->
+                                                <!-- <p><a id="science_division_text">Torso Armor:</a> TrueDef-Pro Core Black/Grey</p> -->
+                                                <!-- <p><a id="science_division_text">Arms Armor:</a> Calico Arms Tactical</p> -->
+                                                <!-- <p><a id="science_division_text">Legs Armor:</a> Macflex Legs Black</p> -->
+                                                <p></p>
+                                                <!-- <p><a id="science_division_text">Tools:</a> ParaMed Medical Device</p> -->
+                                                <p>More to be decided</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingThree">
+                                        <button id="rank_prerequisites" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                            <i id="rank_information_icon" class="fa-solid fa-lock"></i>Prerequisites
+                                        </button>
+                                    </h2>
+                
+                                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree">
+                                        <div id="rank_prerequisites_text" class="accordion-body">
+                
+                                            <div class="container-fluid text-start">
+                                                <a><a id="medical_division_text" class="text-centered">Promotion Prerequisites:</a></a>
+                                                <p>(At least 4 must be completed)</p>
+                                                <p></p>
+                                                <ul class="text-start">
+                                                    <li>Participate in 10 Galactic Order Event</li>
+                                                    <li>Recruitment of 5 Members</li>
+                                                    <li>125 Hours of Service as Rank 1</li>
+                                                    <li>3 Months of service as Rank 1</li>
+                                                    <li>25 Completed <a id="science_note">Science Missions</a> (alive)</li>
+                                                    <li>5 Published <a id="science_note">Research Projects</a></li>
+                                                    <li>Completed <a id="novitiate_note">Protocol Certification Exam</a></li>
+                                                    <!-- <li>Completed <a id="science_note">Science Tier 2 Exam</a></li> -->
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Science Officer Modal ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <div class="row">
+        <div class="modal fade" id="science_officerModal" tabindex="-1" aria-labelledby="science_officerModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-md">
+
+                <div class="container justify-content-center text-center container-fluid">
+                    <div id="science_modal" class="modal-content">
+                        <div class="justify-content-center text-center">
+                            <p id="science_division">RANK 3: SCIENCE OFFICER</p>
+                        </div>
+                            <img id="science_modal_image" src="../assets/ranks/units/rank_0_conscript.png" alt="Science Officer Image">
+
+                        <div id="accordion_container" class="container justify-content-center text-center">
+
+                            <div id="science_collapse" class="accordion accordion-flush">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne">
+                                        <button id="rank_prerequisites" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                            <i id="rank_information_icon" class="fa-solid fa-book"></i>Description
+                                        </button>
+                                    </h2>
+                
+                                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne">
+                                        <div id="rank_prerequisites_text" class="accordion-body">
+                
+                                            <div class="container-fluid text-start">
+                                                <p>Unlike other Divisions, this role is not considered a Commander or military position as there are no combat-designated roles within the Science Division. As a result, they are very rarely found within any battalion types beyond Exploration, the few exceptions being Admiralty, Academy or Medevac, acting in an advisory or educational role. However, Chief Science-Officers, as the name implies, are still considered to be Officers which means they still hold similar responsibilities with regards to leading the Science Division units within their assigned battalion and maintaining detailed records of unit accomplishments / prerequisites. Other responsibilities include organizing research projects, reviewing researched data (after it has been reorganized by Lab Techs), and developing new technologies or scientific discoveries. They also play a key role in establishing research outposts and advancing Galactic Order Settlements.</p>
+                                            
+                                                <p><a id="bold_note">Note:</a> Science Officer limit per Battalion:  <a id="science_division_text">1</a></p>
+                                                <p><a id="bold_note">Note:</a> Science Officer limit per Exploration Battalion:  <a id="science_division_text">2</a></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingTwo">
+                                        <button id="rank_prerequisites" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            <i id="rank_information_icon" class="fa-solid fa-shield-halved"></i>Equipment
+                                        </button>
+                                    </h2>
+                
+                                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo">
+                                        <div id="rank_prerequisites_text" class="accordion-body">
+                
+                                            <div class="container-fluid text-start">
+                                                <p><a id="science_division_text">Undersuit:</a> Stoneskin Undersuit</p>
+                                                <!-- <p><a id="science_division_text">Head Armor:</a> Fortifier Helmet White</p> -->
+                                                <!-- <p><a id="science_division_text">Torso Armor:</a> TrueDef-Pro Core Black/Grey</p> -->
+                                                <!-- <p><a id="science_division_text">Arms Armor:</a> Calico Arms Tactical</p> -->
+                                                <!-- <p><a id="science_division_text">Legs Armor:</a> Macflex Legs Black</p> -->
+                                                <p></p>
+                                                <!-- <p><a id="science_division_text">Tools:</a> ParaMed Medical Device</p> -->
+                                                <p>More to be decided</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingThree">
+                                        <button id="rank_prerequisites" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                            <i id="rank_information_icon" class="fa-solid fa-lock"></i>Prerequisites
+                                        </button>
+                                    </h2>
+                
+                                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree">
+                                        <div id="rank_prerequisites_text" class="accordion-body">
+                
+                                            <div class="container-fluid text-start">
+                                                <a><a id="science_division_text" class="text-centered">Promotion Prerequisites:</a></a>
+                                                <p>(At least 4 must be completed)</p>
+                                                <p></p>
+                                                <ul class="text-start">
+                                                    <li>Participate in 20 Galactic Order Event</li>
+                                                    <li>Recruitment of 10 Members</li>
+                                                    <li>6 Months of service to The Galactic Order</li>
+                                                    <li>50 Completed <a id="science_note">Science Missions</a> (alive)</li>
+                                                    <li>10 Published <a id="science_note">Research Projects</a></li>
+                                                    <li>Completed <a id="novitiate_note">Protocol Certification Exam</a></li>
+                                                    <!-- <li>Completed <a id="science_note">Science Tier 2 Exam</a></li> -->
+                                                    <li>Completed <a id="leadership_note">Officer Exam</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingFour">
+                                        <button id="rank_prerequisites" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                            <i id="rank_information_icon" class="fa-solid fa-medal"></i>Command
+                                        </button>
+                                    </h2>
+                
+                                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour">
+                                        <div id="rank_prerequisites_text" class="accordion-body">
+                
+                                            <div class="container-fluid text-start">
+                                                <p>Science Officers hold authority over Science & Exploration personnel as well as advancement of scientific, exploratory and overall Galactic Order information gathering. It is important to note that this Division is not a Combat-Related Division and does not hold authority in combat settings or scenarios. However, this Division often branches into other Divisions for the sake of research such as field testing weapons, gathering ship component data or better understanding Medical Treatments / Medications (to name a few examples). As a result, Science Officers work closely with <a id="academy_battalion">ALL</a> Division Commanders and Leadership.</p>
                                             </div>
                                         </div>
                                     </div>
