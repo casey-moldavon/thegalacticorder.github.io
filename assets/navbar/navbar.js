@@ -104,9 +104,6 @@ var navbar = `
                 </ul>
             </li>
             
-            <li class="nav-item">
-                <a id="navbar_calendar" class="nav-link" href="../pages/6_calendar.html"><i id="fa_nav_icon_square" class="fa-solid fa-calendar-days"></i>Calendar</a>
-            </li>
 
             <li class="nav-item">
                 <a id="navbar_contact_us" class="nav-link" href="../pages/7_contact_us.html"><i id="fa_nav_icon_square" class="fa-solid fa-square-envelope"></i>Join Today!</a>
