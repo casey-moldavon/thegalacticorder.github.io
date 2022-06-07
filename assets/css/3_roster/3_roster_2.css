@@ -239,6 +239,18 @@ padding-right: 50px;
 #unit_recruiter {
     width: 250px;
 }
+#registered_battalion {
+    color: #ffffff;
+    font-size: 17.9px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    text-shadow:
+        0 0 10px #00b368,
+        0 0 15px #00b368;
+}
+#unit_battalion {
+    width: 250px;
+}
 #registered_date {
     color: #ffffff;
     font-size: 17.9px;
