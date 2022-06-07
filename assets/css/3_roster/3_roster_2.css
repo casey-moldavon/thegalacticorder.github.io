@@ -810,6 +810,37 @@ padding-right: 50px;
     background-color: #00b368;
 }
 
+#completed_explore{
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    border: 2px solid #00b368;
+    border-radius: 5px;
+    background-color: #1c1c1c;
+    padding-top: 15px;
+    margin: 7.5px;
+    margin-bottom: 0;
+    width: 100px;
+    height: 100px;
+}
+#mission_explore{
+    width: 75px;
+    margin-top: 22px;
+    font-weight: bold;
+}
+#completed_explore:hover {
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    box-shadow:
+        0 0 5px #ffffff,
+        0 0 10px #00b368,
+        0 0 20px #00b368;
+
+    border-collapse: collapse;  
+    background-color: #00b368;
+}
+
 #completed_agronomy{
     color: #ffffff;
     font-size: 15px;
@@ -1438,6 +1469,29 @@ margin-left: -11.7px;
     margin-left: 5px;
 }
 #research_plus:hover {
+    color: #ffffff;
+    text-shadow:
+        0 0 5px #15ff00,
+        0 0 20px #15ff00;
+}
+
+#explore_minus {
+    color: #ff0015;
+    font-size: 35px;
+    margin-right: 5px;
+}
+#explore_minus:hover {
+    color: #ffffff;
+    text-shadow:
+        0 0 5px #ff0015,
+        0 0 20px #ff0015;
+}
+#explore_plus {
+    color: #15ff00;
+    font-size: 35px;
+    margin-left: 5px;
+}
+#explore_plus:hover {
     color: #ffffff;
     text-shadow:
         0 0 5px #15ff00,

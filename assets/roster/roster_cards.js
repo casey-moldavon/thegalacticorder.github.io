@@ -414,6 +414,10 @@ const researchMinusButton = document.getElementById('research_minus');
 const researchPlusButton = document.getElementById('research_plus');
 const researchField = document.getElementById('mission_research');
 
+const exploreMinusButton = document.getElementById('explore_minus');
+const explorePlusButton = document.getElementById('explore_plus');
+const exploreField = document.getElementById('mission_explore');
+
 const agronomyMinusButton = document.getElementById('agronomy_minus');
 const agronomyPlusButton = document.getElementById('agronomy_plus');
 const agronomyField = document.getElementById('mission_agronomy');
@@ -559,6 +563,17 @@ researchPlusButton.addEventListener('click', event => {
     event.preventDefault();
     const currentValue = Number(researchField.value) || 0;
     researchField.value = currentValue + 1;
+});
+
+exploreMinusButton.addEventListener('click', event => {
+    event.preventDefault();
+    const currentValue = Number(exploreField.value) || 0;
+    exploreField.value = currentValue - 1;
+});
+explorePlusButton.addEventListener('click', event => {
+    event.preventDefault();
+    const currentValue = Number(exploreField.value) || 0;
+    exploreField.value = currentValue + 1;
 });
 
 agronomyMinusButton.addEventListener('click', event => {
