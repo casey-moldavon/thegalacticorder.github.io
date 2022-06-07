@@ -193,6 +193,37 @@ body {
         
     border-collapse: collapse;
 }
+
+#promotion_exams {
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Allerta Stencil', sans-serif;
+    background-color: #1c1c1c;
+}
+#promotion_exams:hover {
+    color: #ffffff;
+    font-size: 25.2px;
+    text-shadow:
+        0 0 10px #00c9ff,
+        0 0 15px #00c9ff;
+}
+#promotion_exams:hover #rank_benefits_icon {
+    color: #ffffff;
+    font-size: 30.2px;
+    text-shadow:
+        0 0 5px #ffffff,
+        0 0 10px #ff0015,
+        0 0 15px #ff0015;
+
+    border-radius: 15px;
+    box-shadow:
+        0 0 10px #ff0015,
+        0 0 20px #ff0015;
+
+    border-collapse: collapse;
+    background-color: #ff0015;
+}
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Content End ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Extra ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
