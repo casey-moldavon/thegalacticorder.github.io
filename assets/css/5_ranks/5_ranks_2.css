@@ -226,11 +226,76 @@ body {
 }
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Content End ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Exams Start ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+#exam_start_button {
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    margin: 1%;
+    background-color: #1c1c1c;
+}
+#exam_start_button:hover {
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    box-shadow:
+        0 0 10px #1c1c1c,
+        0 0 15px #ffffff,
+        0 0 20px #ffffff,
+        0 0 25px #ffffff;
+        
+    border-collapse: collapse;
+    margin: 1%;
+}
+
+#protocol_exam_modal {
+    color: #ffffff;
+    font-size: 17.9px;
+    font-weight: bold;
+    /* font-family: 'Fanwood Text', serif; */
+    font-family: 'Montserrat', sans-serif;
+    
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+    box-shadow:
+        0 0 10px #ffffff,
+        0 0 15px #ffffff,
+        0 0 20px #ffffff;
+
+    border-collapse: collapse;
+    background: rgba(57, 57, 57, 0.85);
+    padding: 25px;
+
+    max-height: 87vh;
+    overflow-y: auto;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Exams End ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Extra ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 #rank_benefits_icon {
     color: #ff0015;
     font-size: 30px;
     margin-right: 20px;
     padding: 7px;
+}
+
+#question_number {
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: bold;
+    /* font-family: 'Allerta Stencil', sans-serif; */
+    font-family: 'Montserrat', sans-serif;
+    text-shadow:
+        0 0 15px #00c9ff,
+        0 0 20px #00c9ff;
+
+    padding: 5px;
+}
+
+#questions_container {
+    color: #ffffff;
+    font-size: 25px;
+
+    margin: 5px;
+    margin-left: 25px;
 }
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Rank Benefits End ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
