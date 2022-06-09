@@ -439,6 +439,37 @@ body {
     background-color: #ff0015;
 }
 
+#mission_types {
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Allerta Stencil', sans-serif;
+    background-color: #1c1c1c;
+}
+#mission_types:hover {
+    color: #ffffff;
+    font-size: 25.2px;
+    text-shadow:
+        0 0 10px #00c9ff,
+        0 0 15px #00c9ff;
+}
+#mission_types:hover #protocol_icon {
+    color: #ffffff;
+    font-size: 30.2px;
+    text-shadow:
+        0 0 5px #ffffff,
+        0 0 10px #ff0015,
+        0 0 15px #ff0015;
+
+    border-radius: 15px;
+    box-shadow:
+        0 0 10px #ff0015,
+        0 0 20px #ff0015;
+
+    border-collapse: collapse;
+    background-color: #ff0015;
+}
+
 #warnings_insubordination {
     color: #ffffff;
     font-size: 25px;
