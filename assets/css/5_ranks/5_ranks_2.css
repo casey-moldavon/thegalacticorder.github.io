@@ -224,6 +224,34 @@ body {
     border-collapse: collapse;
     background-color: #ff0015;
 }
+#promotion_exam_modal {
+    color: #ffffff;
+    font-size: 17.9px;
+    font-weight: bold;
+    /* font-family: 'Fanwood Text', serif; */
+    font-family: 'Montserrat', sans-serif;
+    
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+    box-shadow:
+        0 0 10px #ffffff,
+        0 0 15px #ffffff,
+        0 0 20px #ffffff;
+
+    border-collapse: collapse;
+    background: rgba(57, 57, 57, 0.85);
+    /* padding: 25px; */
+
+    max-height: 87vh;
+    overflow-y: auto;
+}
+
+#exam_header {
+    background-color: #1c1c1c;
+    margin: 0;
+    padding: 20px;
+}
+
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Content End ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Exams Start ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -249,6 +277,28 @@ body {
     background-color: #00c9ff;
     margin: 1%;
 }
+#protocol_exam_header_title {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Allerta Stencil', sans-serif;
+    text-shadow:
+        0 0 15px #00c9ff,
+        0 0 20px #00c9ff;
+    text-decoration: underline;
+}
+#protocol_timer {
+    color: #ffffff;
+    font-size: 35px;
+    font-weight: bold;
+    font-family: 'Allerta Stencil', sans-serif;
+
+    text-shadow:
+        0 0 5px #ffffff,
+        0 0 10px #ff0015,
+        0 0 15px #ff0015;
+}
+
 
 #medical_exam_start_button {
     color: #ffffff;
@@ -272,24 +322,6 @@ body {
     background-color: #4285f4;
     margin: 1%;
 }
-
-#exam_header {
-    background-color: #1c1c1c;
-    margin: 0;
-    padding: 20px;
-}
-
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Header Titles Start ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-#protocol_exam_header_title {
-    color: #ffffff;
-    font-size: 30px;
-    font-weight: bold;
-    font-family: 'Allerta Stencil', sans-serif;
-    text-shadow:
-        0 0 15px #00c9ff,
-        0 0 20px #00c9ff;
-    text-decoration: underline;
-}
 #medical_exam_header_title {
     color: #ffffff;
     font-size: 30px;
@@ -299,18 +331,6 @@ body {
         0 0 15px #4285f4,
         0 0 20px #4285f4;
     text-decoration: underline;
-}
-
-#protocol_timer {
-    color: #ffffff;
-    font-size: 35px;
-    font-weight: bold;
-    font-family: 'Allerta Stencil', sans-serif;
-
-    text-shadow:
-        0 0 5px #ffffff,
-        0 0 10px #ff0015,
-        0 0 15px #ff0015;
 }
 #medical_timer {
     color: #ffffff;
@@ -323,28 +343,95 @@ body {
         0 0 10px #ff0015,
         0 0 15px #ff0015;
 }
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Header Titles End ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
-#promotion_exam_modal {
+
+#g_tactical_exam_start_button {
     color: #ffffff;
-    font-size: 17.9px;
+    font-size: 25px;
     font-weight: bold;
-    /* font-family: 'Fanwood Text', serif; */
-    font-family: 'Montserrat', sans-serif;
-    
-    border: 2px solid #ffffff;
-    border-radius: 2px;
+    font-family: 'Allerta Stencil', sans-serif;
+
+    border: 2.5px solid #b60031;
+    border-radius: 5px;
+    margin: 1%;
+    background-color: #1c1c1c;
+}
+#g_tactical_exam_start_button:hover {
+    border: 2.5px solid #ffffff;
+    border-radius: 5px;
     box-shadow:
-        0 0 10px #ffffff,
-        0 0 15px #ffffff,
-        0 0 20px #ffffff;
-
+        0 0 10px #b60031,
+        0 0 15px #ffffff;
+        
     border-collapse: collapse;
-    background: rgba(57, 57, 57, 0.85);
-    /* padding: 25px; */
+    background-color: #b60031;
+    margin: 1%;
+}
+#g_tactical_exam_header_title {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Allerta Stencil', sans-serif;
+    text-shadow:
+        0 0 15px #b60031,
+        0 0 20px #b60031;
+    text-decoration: underline;
+}
+#g_tactical_timer {
+    color: #ffffff;
+    font-size: 35px;
+    font-weight: bold;
+    font-family: 'Allerta Stencil', sans-serif;
 
-    max-height: 87vh;
-    overflow-y: auto;
+    text-shadow:
+        0 0 5px #ffffff,
+        0 0 10px #ff0015,
+        0 0 15px #ff0015;
+}
+
+
+#s_tactical_exam_start_button {
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Allerta Stencil', sans-serif;
+
+    border: 2.5px solid #b60031;
+    border-radius: 5px;
+    margin: 1%;
+    background-color: #1c1c1c;
+}
+#s_tactical_exam_start_button:hover {
+    border: 2.5px solid #ffffff;
+    border-radius: 5px;
+    box-shadow:
+        0 0 10px #b60031,
+        0 0 15px #ffffff;
+        
+    border-collapse: collapse;
+    background-color: #b60031;
+    margin: 1%;
+}
+#s_tactical_exam_header_title {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Allerta Stencil', sans-serif;
+    text-shadow:
+        0 0 15px #b60031,
+        0 0 20px #b60031;
+    text-decoration: underline;
+}
+#s_tactical_timer {
+    color: #ffffff;
+    font-size: 35px;
+    font-weight: bold;
+    font-family: 'Allerta Stencil', sans-serif;
+
+    text-shadow:
+        0 0 5px #ffffff,
+        0 0 10px #ff0015,
+        0 0 15px #ff0015;
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Exams End ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
