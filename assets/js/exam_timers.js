@@ -109,5 +109,4 @@ document.getElementById("s_tactical_exam_start_button").addEventListener("click"
 
     return sec;
     }
-})
-;
+});

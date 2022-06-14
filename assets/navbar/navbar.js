@@ -5,8 +5,8 @@ var navbar = `
 
     <div>
 
-        <a class="navbar-brand" href="../index.html">
-            <img id="tgo_logo" src="../assets/images/logo.png" alt="GTO Logo">
+        <a class="navbar-brand" href="../../../index.html">
+            <img id="tgo_logo" src="../../images/logo.png" alt="GTO Logo">
         </a>
         
         <a id="tgo_name" class="navbar-brand align-middle">THE GALACTIC ORDER</a>
@@ -37,8 +37,8 @@ var navbar = `
                 </a>
 
                 <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown1">
-                    <li><a class="dropdown-item" href="../index.html#">Introduction</a></li>
-                    <li><a class="dropdown-item" href="../index.html#rules_laws_link">Rules & Laws</a></li>
+                    <li><a class="dropdown-item" href="../../../index.html#">Introduction</a></li>
+                    <li><a class="dropdown-item" href="../../../index.html#rules_laws_link">Rules & Laws</a></li>
                 </ul>
             </li>
 
@@ -49,9 +49,9 @@ var navbar = `
                 </a>
 
                 <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown2">
-                    <li><a class="dropdown-item" href="../pages/2_rp_1.html">Protocol</a></li>
+                    <li><a class="dropdown-item" href="../2_roleplay/2_rp_1.html">Protocol</a></li>
                     <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="../pages/2_rp_2.html">Officer Info</a></li>
+                    <li><a class="dropdown-item" href="../2_roleplay/2_rp_2.html">Officer Info</a></li>
                 </ul>
             </li>
 
@@ -62,11 +62,11 @@ var navbar = `
                 </a>
 
                 <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown3">
-                    <li><a class="dropdown-item" href="../pages/3_roster_1.html">Battalions</a></li>
+                    <li><a class="dropdown-item" href="../3_roster/3_roster_1.html">Battalions</a></li>
                     <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="../pages/3_roster_1.html">Full Roster</a></li>
+                    <li><a class="dropdown-item" href="../3_roster/3_roster_1.html">Full Roster</a></li>
                     <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="../pages/3_roster_3.html">Spec-Ops</a></li>
+                    <li><a class="dropdown-item" href="../3_roster/3_roster_3.html">Spec-Ops</a></li>
                 </ul>
             </li>
 
@@ -77,13 +77,13 @@ var navbar = `
                 </a>
 
                 <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown4">
-                    <li><a class="dropdown-item" href="../pages/4_lore_0.html">Founding</a></li>
-                    <li><a class="dropdown-item" href="../pages/4_lore_0.html#backstories_link">Backstories</a></li>
-                    <li><a class="dropdown-item" href="../pages/4_lore_0.html#goals_link">Goals</a></li>
+                    <li><a class="dropdown-item" href="../4_lore/4_lore_0.html">Founding</a></li>
+                    <li><a class="dropdown-item" href="../4_lore/4_lore_0.html#backstories_link">Backstories</a></li>
+                    <li><a class="dropdown-item" href="../4_lore/4_lore_0.html#goals_link">Goals</a></li>
                     <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="../pages/4_lore_1.html">Classifications</a></li>
+                    <li><a class="dropdown-item" href="../4_lore/4_lore_1.html">Classifications</a></li>
                     <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="../pages/4_lore_2.html">Combat Theory</a></li>
+                    <li><a class="dropdown-item" href="../4_lore/4_lore_2.html">Combat Theory</a></li>
                 </ul>
             </li>
 
@@ -94,19 +94,19 @@ var navbar = `
                 </a>
 
                 <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown5">
-                    <li><a class="dropdown-item" href="../pages/5_ranks_1.html">Rank Information</a></li>
+                    <li><a class="dropdown-item" href="../5_ranks/5_ranks_1.html">Rank Information</a></li>
                     <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="../pages/5_ranks_2.html">Rank Benefits</a></li>
+                    <li><a class="dropdown-item" href="../5_ranks/5_ranks_2.html">Rank Benefits</a></li>
                     <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="../pages/5_ranks_3.html">Captain Info</a></li>
+                    <li><a class="dropdown-item" href="../5_ranks/5_ranks_3.html">Captain Info</a></li>
                     <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="../pages/5_ranks_4.html">Agent Info</a></li>
+                    <li><a class="dropdown-item" href="../5_ranks/5_ranks_4.html">Agent Info</a></li>
                 </ul>
             </li>
             
 
             <li class="nav-item">
-                <a id="navbar_contact_us" class="nav-link" href="../pages/7_contact_us.html"><i id="fa_nav_icon_square" class="fa-solid fa-square-envelope"></i>Join Today!</a>
+                <a id="navbar_contact_us" class="nav-link" href="../7_contact/7_contact_us.html"><i id="fa_nav_icon_square" class="fa-solid fa-square-envelope"></i>Join Today!</a>
             </li>
 
         </ul>
