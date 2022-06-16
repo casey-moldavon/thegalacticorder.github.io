@@ -23,7 +23,10 @@ const handler = async (event) => {
     
     return {
         statusCode: 200,
-        body: JSON.stringify({ rows: res.rows })
+        body: JSON.stringify({ rows: res.rows }),
+        headers: {
+            'Access-Control-Allow-Origin': '*'
+        }
     };
 }
 
