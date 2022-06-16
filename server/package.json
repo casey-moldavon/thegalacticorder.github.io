@@ -1,27 +1,15 @@
 {
-  "name": "tgo_info_site",
+  "name": "server",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "devStart": "nodemon server.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/casey-moldavon/thegalacticorder.github.io.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/casey-moldavon/thegalacticorder.github.io/issues"
-  },
-  "homepage": "https://github.com/casey-moldavon/thegalacticorder.github.io#readme",
   "dependencies": {
-    "express": "^4.18.1",
     "pg": "^8.7.3"
   },
-  "devDependencies": {
-    "nodemon": "^2.0.16"
-  }
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
 }
