@@ -1,5 +1,5 @@
 
-import { native as pg } from 'pg';
+import pg from 'pg';
 
 const handler = async (event) => {
 
