@@ -36,7 +36,12 @@
 <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Roster Buttons Start ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 <div id="roster_buttons_container" class="col">
 
-    <button onClick="runTestEndpoint()">test</button>
+
+    <div style="color: white; margin: 20px; border: 2px solid white; padding: 20px;">
+        <h3>People:</h3>
+        <div id="people-placeholder"><i>no people loaded</i></div>
+        <button onClick="runTestEndpoint()">Refresh</button>
+    </div>
 
     <div class="container">
         <i id="roster_buttons_button" type="button" data-bs-toggle="collapse" data-bs-target="#roster_buttons_dropdown" aria-expanded="false" aria-controls="roster_buttons_dropdown" class="fa-solid fa-address-card"></i>
