@@ -289,6 +289,36 @@ padding-right: 50px;
     background-color: #1c1c1c;
 }
 
+#registered_battalion {
+    color: #ffffff;
+    font-size: 17.9px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    text-shadow:
+        0 0 10px #00c9ff,
+        0 0 15px #00c9ff;
+    margin-left: 35%;
+}
+#select_battalion {
+    width: 250px;
+    margin-left: 35%;
+}
+#registered_member {
+    color: #ffffff;
+    font-size: 17.9px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    text-shadow:
+        0 0 10px #00c9ff,
+        0 0 15px #00c9ff;
+    margin-left: 35%;
+}
+#select_member {
+    width: 250px;
+    margin-bottom: 40px;
+    margin-left: 35%;
+}
+
 #completed_events {
     color: #ffffff;
     font-size: 17.9px;

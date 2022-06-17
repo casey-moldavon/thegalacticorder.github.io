@@ -124,7 +124,7 @@
 
                     <div class="form-group">
                         <label id="registered_battalion" for="unit_battalion"class="col-form-label">Starting Battalion:</label>
-                        <input class="form-control" list="battalion_list_options" id="unit_battalion" placeholder="Select Battalion" name="battalion">
+                        <input class="form-control" list="battalion_list_options" id="unit_battalion" placeholder="Select Battalion" name="start_battalion">
                         <datalist id="battalion_list_options">
                             <option value="Battalion 1"></option>
                             <option value="Battalion 2"></option>
@@ -143,7 +143,7 @@
 
             <div class="modal-footer">
                 <button id="sign_up_button" type="button">
-                    <i id="fa_nav_icon_square" class="fa-solid fa-star"></i>Submit
+                    <i id="fa_nav_icon_square" onclick="registerUnit()" class="fa-solid fa-star"></i>Submit
                 </button>
                 <button id="sign_in_button" type="button" data-bs-dismiss="modal">
                     <i id="fa_nav_icon_square" class="fa-solid fa-right-to-bracket"></i>Cancel
@@ -170,7 +170,30 @@
             <div id="file_report_modal_body" class="modal-body">
 
                 <form>
+                    <div class="form-group">
+                        <label id="registered_battalion" for="select_battalion"class="col-form-label">Select Battalion:</label>
+                        <input class="form-control" list="battalion_list_options" id="select_battalion" placeholder="Select Battalion" name="select_battalion">
+                        <datalist id="battalion_list_options">
+                            <option value="Battalion 1"></option>
+                            <option value="Battalion 2"></option>
+                            <option value="Battalion 3"></option>
+                            <option value="Battalion 4"></option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label id="registered_member" for="select_member"class="col-form-label">Unit Name:</label>
+                        <input class="form-control" list="member_list_options" id="select_member" placeholder="Select Member" name="member">
+                        <datalist id="member_list_options">
+                            <option value="Example 1"></option>
+                            <option value="Example 2"></option>
+                            <option value="Example 3"></option>
+                            <option value="Example 4"></option>
+                        </select>
+                    </div>
+
                     <div class="row text-center">
+
                         <div class="col">
                             <label id="completed_events" for="unit_events">
                                 Added Events:
@@ -223,6 +246,9 @@
                         </div>
                     </div>
 
+                    <!-- add prompt: if statement: if checkbox = true at "submit", prompt appear for description -->
+                    <!-- self note: collapse does not work inside modal -->
+
                     <p id="break_space"></p>
 
                     <div id="completed_missions_container" class="container container-fluid">
@@ -241,20 +267,6 @@
                                     <i type="button" id="turret_plus"><i class="fa-solid fa-circle-plus"></i></i>
                                 </div>
                             </div>
-
-
-
-
-
-<!-- self note: do same as with unit cards (add collapse for each dscription) -->
-
-
-
-
-
-
-
-
 
                             <div class="col">
                                 <label type="button" id="completed_ground_assault" for="mission_ground_assault">
