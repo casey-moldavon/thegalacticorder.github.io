@@ -23,4 +23,3 @@ client.query(`
 `).then(res => {
     console.log(res.rows)
 }).finally(() => client.end());
-
