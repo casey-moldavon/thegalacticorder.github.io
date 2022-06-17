@@ -50,6 +50,7 @@ async function registerUnit() {
 async function fileReport() {
 
     let battalion = document.getElementById('select_battalion');
+    // += battalion # added to current num
     let member = document.getElementById('select_member');
 
 
