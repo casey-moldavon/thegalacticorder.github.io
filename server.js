@@ -18,11 +18,11 @@ var client = new pg.Client({
 client.connect();
 
 
-// client.query(`
-//     SELECT * FROM test_people
-// `).then(res => {
-//     console.log(res.rows)
-// }).finally(() => client.end());
+client.query(`
+    SELECT * FROM test_people
+`).then(res => {
+    console.log(res.rows)
+}).finally(() => client.end());
 
 client.query(`
     SELECT * FROM full_roster

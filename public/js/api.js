@@ -26,7 +26,7 @@
 
 
 async function generateCards() {
-    const response = await fetch('https://frolicking-frangipane-e2734e.netlify.app/.netlify/functions/test')
+    const response = await fetch('https://frolicking-frangipane-e2734e.netlify.app/.netlify/functions/roster')
     const data = await response.json()
 
     // let placeholder = document.getElementById('unit-card-placeholder');
@@ -37,7 +37,7 @@ async function generateCards() {
         <div>
             <img id="card_image" src="../../ranks/badges/0-novitiate.png" class="card-img-top" alt="...">
         </div>
-        <p id="card_text">${row.sc_name}</p>
+        <p id="card_text">${row.name}</p>
     </div>
     
     `).join('');
