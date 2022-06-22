@@ -11,6 +11,41 @@ async function runTestEndpoint() {
     element.innerHTML = html;
 }
 
+
+
+// what i need to do...
+// write function to fetch sc_name & unit_rank from database and generate cards under each Division of roster
+// write function (if statements) to sort (by unit_rank) into different Divisions (collapse) of roster
+
+// if statements will have different card types
+// function triggers on page load
+// or set to on-click when collapse is viewed
+
+// write functions for each button (Register Unit, File Report, Edit Unit, Approve Reports)
+
+
+
+async function generateCards() {
+    const response = await fetch('https://frolicking-frangipane-e2734e.netlify.app/.netlify/functions/test')
+    const data = await response.json()
+
+    // let placeholder = document.getElementById('unit-card-placeholder');
+    let placeholder = document.getElementById('novitiate_division_dropdown');
+    let newCards = data.rows.map(row =>`
+    
+    <div id="novitiate_card" class="card text-center" style="width: 9rem;">
+        <div>
+            <img id="card_image" src="../../ranks/badges/0-novitiate.png" class="card-img-top" alt="...">
+        </div>
+        <p id="card_text">${row.sc_name}</p>
+    </div>
+    
+    `).join('');
+
+    placeholder.innerHTML = newCards;
+}
+
+
 async function registerUnit() {
     let sc_name = document.getElementById('unit_name');
     let discord_name = document.getElementById('unit_contact');
