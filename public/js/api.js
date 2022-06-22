@@ -27,7 +27,6 @@ async function generateCards() {
     </div>
     
     `).join('');
-
     placeholder.innerHTML = newCards;
 }
 
