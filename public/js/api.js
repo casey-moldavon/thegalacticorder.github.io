@@ -1,18 +1,4 @@
 
-// async function runTestEndpoint() {
-//     const response = await fetch('https://frolicking-frangipane-e2734e.netlify.app/.netlify/functions/test')
-//     const data = await response.json()
-
-//     let element = document.getElementById('people-placeholder');
-//     let html = data.rows.map(row => `
-//         <li><b>${row.name}</b>: ${row.number}</li>
-//     `).join('');
-
-//     element.innerHTML = html;
-// }
-
-
-
 // what i need to do...
 // write function to fetch sc_name & unit_rank from database and generate cards under each Division of roster
 // write function (if statements) to sort (by unit_rank) into different Divisions (collapse) of roster
