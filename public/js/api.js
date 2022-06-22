@@ -21,7 +21,7 @@ async function registerUnit() {
     let unit_rank = "Novitiate";
     let promotion_date = start_date;
     let unit_recruits = 0;
-    let unit_pay = "0/day";
+    let pay_bonus = 0;
 
     let events = 0;
     let patrols = 0;
