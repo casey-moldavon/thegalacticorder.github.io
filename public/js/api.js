@@ -45,6 +45,12 @@ async function registerUnit() {
     let research = 0;
     let explore = 0;
     let agronomy = 0;
+
+    let protocol_exam = false;
+    let medical_exam = false;
+    let g_tactical_exam = false;
+    let s_tactical_exam = false;
+    let officer_exam = false;
 }
 
 async function fileReport() {
