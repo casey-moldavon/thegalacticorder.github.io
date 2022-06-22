@@ -51,6 +51,20 @@ async function registerUnit() {
     let g_tactical_exam = false;
     let s_tactical_exam = false;
     let officer_exam = false;
+
+    let active_salary = true;
+    let leadership_commendation = false;
+    let current_ppv = 0;
+    let past_ppv = 0;
+
+    let achieved_trooper2 = false;
+    let achieved_trooper3 = false;
+    let achieved_engineer2 = false;
+    let achieved_engineer3 = false;
+    let achieved_medical2 = false;
+    let achieved_medical3 = false;
+    let achieved_science2 = false;
+    let achieved_science3 = false;
 }
 
 async function fileReport() {
