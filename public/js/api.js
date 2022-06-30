@@ -23,6 +23,7 @@ async function generateCards() {
         <div>
             <img id="card_image" src="../../ranks/badges/0-novitiate.png" class="card-img-top" alt="...">
         </div>
+        <p id="card_tex:>${row.unit_rank}</p>
         <p id="card_text">${row.sc_name}</p>
     </div>
     

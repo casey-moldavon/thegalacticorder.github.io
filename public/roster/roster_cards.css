@@ -78,9 +78,9 @@
 /* ~~~~~~~~~~~~~~~~~~~~ Leadership Card Start ~~~~~~~~~~~~~~~~~~~~ */
 #leadership_card {
     color: #ffffff;
-    font-size: 15px;
-    font-weight: bold;
-    font-family: 'Allerta Stencil', sans-serif;
+    font-size: 12.2px;
+    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Allerta Stencil', sans-serif; */
 
     border: 5px solid #d6b44c;
     border-radius: 2.5px;
@@ -145,9 +145,9 @@
 /* ~~~~~~~~~~~~~~~~~~~~ Combat Card Start ~~~~~~~~~~~~~~~~~~~~ */
 #combat_card {
     color: #ffffff;
-    font-size: 15px;
-    font-weight: bold;
-    font-family: 'Allerta Stencil', sans-serif;
+    font-size: 12.2px;
+    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Allerta Stencil', sans-serif; */
 
     border: 5px solid #b60031;
     border-radius: 2.5px;
@@ -209,9 +209,9 @@
 /* ~~~~~~~~~~~~~~~~~~~~ Engineer Card Start ~~~~~~~~~~~~~~~~~~~~ */
 #engineer_card {
     color: #ffffff;
-    font-size: 15px;
-    font-weight: bold;
-    font-family: 'Allerta Stencil', sans-serif;
+    font-size: 12.2px;
+    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Allerta Stencil', sans-serif; */
 
     border: 5px solid #ff7042;
     border-radius: 2.5px;
@@ -273,9 +273,9 @@
 /* ~~~~~~~~~~~~~~~~~~~~ Medical Card Start ~~~~~~~~~~~~~~~~~~~~ */
 #medical_card {
     color: #ffffff;
-    font-size: 15px;
-    font-weight: bold;
-    font-family: 'Allerta Stencil', sans-serif;
+    font-size: 12.2px;
+    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Allerta Stencil', sans-serif; */
 
     border: 5px solid #4285f4;
     border-radius: 2.5px;
@@ -337,9 +337,9 @@
 /* ~~~~~~~~~~~~~~~~~~~~ Science Card Start ~~~~~~~~~~~~~~~~~~~~ */
 #science_card {
     color: #ffffff;
-    font-size: 15px;
-    font-weight: bold;
-    font-family: 'Allerta Stencil', sans-serif;
+    font-size: 12.2px;
+    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Allerta Stencil', sans-serif; */
 
     border: 5px solid #00b368;
     border-radius: 2.5px;
@@ -401,9 +401,9 @@
 /* ~~~~~~~~~~~~~~~~~~~~ Novitiate Card Start ~~~~~~~~~~~~~~~~~~~~ */
 #novitiate_card {
     color: #ffffff;
-    font-size: 15px;
-    font-weight: bold;
-    font-family: 'Allerta Stencil', sans-serif;
+    font-size: 12.2px;
+    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Allerta Stencil', sans-serif; */
     
     border: 5px solid #ffffff;
     border-radius: 2.5px;
