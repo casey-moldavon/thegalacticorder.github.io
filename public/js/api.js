@@ -17,14 +17,16 @@ async function generateCards() {
 
     // let placeholder = document.getElementById('unit-card-placeholder');
     let placeholder = document.getElementById('novitiate_division_dropdown');
+
     let newCards = data.rows.map(row =>`
     
+    
     <div id="novitiate_card" class="card text-center" style="width: 9rem;">
-        <div>
-            <img id="card_image" src="../../ranks/badges/0-novitiate.png" class="card-img-top" alt="...">
-        </div>
-        <p id="card_tex:>${row.unit_rank}</p>
-        <p id="card_text">${row.sc_name}</p>
+    <div>
+    <img id="card_image" src="../../ranks/badges/0-novitiate.png" class="card-img-top" alt="...">
+    </div>
+    <p id="card_text">${row.unit_role}</p>
+    <p id="card_name">${row.sc_name}</p>
     </div>
     
     `).join('');
@@ -39,7 +41,8 @@ async function registerUnit() {
     let battalion = document.getElementById('unit_battalion');
     let start_date = document.getElementById('unit_start');
 
-    let unit_rank = "Novitiate";
+    let unit_role = "Novitiate";
+    let unit_rank = "Rank 0";
     let promotion_date = start_date;
     let unit_recruits = 0;
     let pay_bonus = 0;

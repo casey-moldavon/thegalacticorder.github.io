@@ -401,10 +401,6 @@
 /* ~~~~~~~~~~~~~~~~~~~~ Novitiate Card Start ~~~~~~~~~~~~~~~~~~~~ */
 #novitiate_card {
     color: #ffffff;
-    font-size: 12.2px;
-    font-family: 'Montserrat', sans-serif;
-    /* font-family: 'Allerta Stencil', sans-serif; */
-    
     border: 5px solid #ffffff;
     border-radius: 2.5px;
     background-color: #1c1c1c;
@@ -434,7 +430,22 @@
     padding: 4px;
 }
 #card_text {
+    font-size: 10.5px;
+    font-family: 'Montserrat', sans-serif;
+
+    margin: 0px;
     margin-left: -10px;
     margin-right: -10px;
+}
+#card_name {
+    font-size: 10.5px;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 10px;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+#novitiate_card:hover #card_name {
+    /* font-size: 25px; */
+    /* font-family: 'Allerta Stencil', sans-serif; */
 }
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Full Roster End ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
