@@ -123,3 +123,27 @@ async function fileReport() {
     let explore = document.getElementById('mission_explore');
     let agronomy = document.getElementById('mission_agronomy');
 }
+
+
+// if (unit_role = "Novitiate")
+// if (unit_role = "Ensign Trooper")
+// if (unit_role = "Ensign Operator")
+// if (unit_role = "Ensign Medic")
+// if (unit_role = "Field Researcher")
+
+// if (unit_role = "Lieutenant Trooper")
+// if (unit_role = "Shock Trooper")
+// if (unit_role = "Outrider")
+// if (unit_role = "Lieutenant Engineer")
+// if (unit_role = "Lieutenant Corpsman")
+// if (unit_role = "Laboratory Tech")
+
+// if (unit_role = "Trooper Commander")
+// if (unit_role = "Engineer Commander")
+// if (unit_role = "Medical Commander")
+// if (unit_role = "Science Officer")
+
+// if (unit_role = "Trooper Commander")
+// if (unit_role = "Trooper Commander")
+// if (unit_role = "Trooper Commander")
+// if (unit_role = "Trooper Commander")
