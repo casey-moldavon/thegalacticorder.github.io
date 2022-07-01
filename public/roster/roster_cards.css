@@ -430,7 +430,7 @@
     padding: 4px;
 }
 #card_text {
-    font-size: 10.5px;
+    font-size: 12.5px;
     font-family: 'Montserrat', sans-serif;
 
     margin: 0px;
@@ -438,7 +438,7 @@
     margin-right: -10px;
 }
 #card_name {
-    font-size: 10.5px;
+    font-size: 12.5px;
     font-family: 'Montserrat', sans-serif;
     margin-top: 10px;
     margin-left: -10px;
