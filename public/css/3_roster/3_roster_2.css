@@ -10,7 +10,8 @@ body {
     padding: 0;
     background-image: url("");
     background-color: #000000;
-    background-image: url("logo_faded.jpg");
+    /* background-image: url("logo_faded.jpg"); */
+    background-image: url("tgo_base.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
