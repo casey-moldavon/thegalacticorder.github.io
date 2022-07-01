@@ -125,251 +125,251 @@ async function fileReport() {
 
 
 // if (unit_role = "Novitiate")
-(row =>`
+// (row =>`
     
-    <div id="novitiate_card" class="card text-center" style="width: 9rem;">
-    <div>
-    <img id="card_image" src="../../ranks/badges/0-novitiate.png" class="card-img-top" alt="...">
-    </div>
-    <p id="card_text">${row.unit_role}</p>
-    <p id="card_name">${row.sc_name}</p>
-    </div>
+//     <div id="novitiate_card" class="card text-center" style="width: 9rem;">
+//     <div>
+//     <img id="card_image" src="../../ranks/badges/0-novitiate.png" class="card-img-top" alt="...">
+//     </div>
+//     <p id="card_text">${row.unit_role}</p>
+//     <p id="card_name">${row.sc_name}</p>
+//     </div>
     
-    `).join('');
+//     `).join('');
 
 // if (unit_role = "Ensign Trooper")
-(row =>`
+// (row =>`
     
-    <div id="combat_card" class="card text-center" style="width: 9rem;">
-    <div>
-    <img id="card_image" src="../../ranks/emblems/emblem_1_trooper.png" class="card-img-top" alt="...">
-    </div>
-    <p id="card_text">${row.unit_role}</p>
-    <p id="card_name">${row.sc_name}</p>
-    </div>
+//     <div id="combat_card" class="card text-center" style="width: 9rem;">
+//     <div>
+//     <img id="card_image" src="../../ranks/emblems/emblem_1_trooper.png" class="card-img-top" alt="...">
+//     </div>
+//     <p id="card_text">${row.unit_role}</p>
+//     <p id="card_name">${row.sc_name}</p>
+//     </div>
     
-    `).join('');
+//     `).join('');
 
 // if (unit_role = "Ensign Operator")
-(row =>`
+// (row =>`
     
-    <div id="engineer_card" class="card text-center" style="width: 9rem;">
-    <div>
-    <img id="card_image" src="../../ranks/emblems/emblem_1_engineer.png" class="card-img-top" alt="...">
-    </div>
-    <p id="card_text">${row.unit_role}</p>
-    <p id="card_name">${row.sc_name}</p>
-    </div>
+//     <div id="engineer_card" class="card text-center" style="width: 9rem;">
+//     <div>
+//     <img id="card_image" src="../../ranks/emblems/emblem_1_engineer.png" class="card-img-top" alt="...">
+//     </div>
+//     <p id="card_text">${row.unit_role}</p>
+//     <p id="card_name">${row.sc_name}</p>
+//     </div>
     
-    `).join('');
+//     `).join('');
 
 // if (unit_role = "Ensign Medic")
-(row =>`
+// (row =>`
     
-    <div id="medical_card" class="card text-center" style="width: 9rem;">
-    <div>
-    <img id="card_image" src="../../ranks/emblems/emblem_1_medic.png" class="card-img-top" alt="...">
-    </div>
-    <p id="card_text">${row.unit_role}</p>
-    <p id="card_name">${row.sc_name}</p>
-    </div>
+//     <div id="medical_card" class="card text-center" style="width: 9rem;">
+//     <div>
+//     <img id="card_image" src="../../ranks/emblems/emblem_1_medic.png" class="card-img-top" alt="...">
+//     </div>
+//     <p id="card_text">${row.unit_role}</p>
+//     <p id="card_name">${row.sc_name}</p>
+//     </div>
     
-    `).join('');
+//     `).join('');
 
 // if (unit_role = "Field Researcher")
-(row =>`
+// (row =>`
     
-    <div id="science_card" class="card text-center" style="width: 9rem;">
-    <div>
-    <img id="card_image" src="../../ranks/emblems/emblem_1_science.png" class="card-img-top" alt="...">
-    </div>
-    <p id="card_text">${row.unit_role}</p>
-    <p id="card_name">${row.sc_name}</p>
-    </div>
+//     <div id="science_card" class="card text-center" style="width: 9rem;">
+//     <div>
+//     <img id="card_image" src="../../ranks/emblems/emblem_1_science.png" class="card-img-top" alt="...">
+//     </div>
+//     <p id="card_text">${row.unit_role}</p>
+//     <p id="card_name">${row.sc_name}</p>
+//     </div>
     
-    `).join('');
+//     `).join('');
 
-// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // if (unit_role = "Lieutenant Trooper")
-(row =>`
+// (row =>`
     
-    <div id="combat_card" class="card text-center" style="width: 9rem;">
-    <div>
-    <img id="card_image" src="../../ranks/emblems/emblem_2_trooper.png" class="card-img-top" alt="...">
-    </div>
-    <p id="card_text">${row.unit_role}</p>
-    <p id="card_name">${row.sc_name}</p>
-    </div>
+//     <div id="combat_card" class="card text-center" style="width: 9rem;">
+//     <div>
+//     <img id="card_image" src="../../ranks/emblems/emblem_2_trooper.png" class="card-img-top" alt="...">
+//     </div>
+//     <p id="card_text">${row.unit_role}</p>
+//     <p id="card_name">${row.sc_name}</p>
+//     </div>
     
-    `).join('');
+//     `).join('');
 
 // if (unit_role = "Shock Trooper")
-(row =>`
+// (row =>`
     
-    <div id="combat_card" class="card text-center" style="width: 9rem;">
-    <div>
-    <img id="card_image" src="../../ranks/emblems/emblem_2_trooper.png" class="card-img-top" alt="...">
-    </div>
-    <p id="card_text">${row.unit_role}</p>
-    <p id="card_name">${row.sc_name}</p>
-    </div>
+//     <div id="combat_card" class="card text-center" style="width: 9rem;">
+//     <div>
+//     <img id="card_image" src="../../ranks/emblems/emblem_2_trooper.png" class="card-img-top" alt="...">
+//     </div>
+//     <p id="card_text">${row.unit_role}</p>
+//     <p id="card_name">${row.sc_name}</p>
+//     </div>
     
-    `).join('');
+//     `).join('');
 
 // if (unit_role = "Outrider")
-(row =>`
+// (row =>`
     
-    <div id="combat_card" class="card text-center" style="width: 9rem;">
-    <div>
-    <img id="card_image" src="../../ranks/emblems/emblem_2_outrider.png" class="card-img-top" alt="...">
-    </div>
-    <p id="card_text">${row.unit_role}</p>
-    <p id="card_name">${row.sc_name}</p>
-    </div>
+//     <div id="combat_card" class="card text-center" style="width: 9rem;">
+//     <div>
+//     <img id="card_image" src="../../ranks/emblems/emblem_2_outrider.png" class="card-img-top" alt="...">
+//     </div>
+//     <p id="card_text">${row.unit_role}</p>
+//     <p id="card_name">${row.sc_name}</p>
+//     </div>
     
-    `).join('');
+//     `).join('');
 
 // if (unit_role = "Lieutenant Engineer")
-(row =>`
+// (row =>`
     
-    <div id="engineer_card" class="card text-center" style="width: 9rem;">
-    <div>
-    <img id="card_image" src="../../ranks/emblems/emblem_2_engineer.png" class="card-img-top" alt="...">
-    </div>
-    <p id="card_text">${row.unit_role}</p>
-    <p id="card_name">${row.sc_name}</p>
-    </div>
+//     <div id="engineer_card" class="card text-center" style="width: 9rem;">
+//     <div>
+//     <img id="card_image" src="../../ranks/emblems/emblem_2_engineer.png" class="card-img-top" alt="...">
+//     </div>
+//     <p id="card_text">${row.unit_role}</p>
+//     <p id="card_name">${row.sc_name}</p>
+//     </div>
     
-    `).join('');
+//     `).join('');
 
 // if (unit_role = "Lieutenant Corpsman")
-(row =>`
+// (row =>`
     
-    <div id="medical_card" class="card text-center" style="width: 9rem;">
-    <div>
-    <img id="card_image" src="../../ranks/emblems/emblem_2_medic.png" class="card-img-top" alt="...">
-    </div>
-    <p id="card_text">${row.unit_role}</p>
-    <p id="card_name">${row.sc_name}</p>
-    </div>
+//     <div id="medical_card" class="card text-center" style="width: 9rem;">
+//     <div>
+//     <img id="card_image" src="../../ranks/emblems/emblem_2_medic.png" class="card-img-top" alt="...">
+//     </div>
+//     <p id="card_text">${row.unit_role}</p>
+//     <p id="card_name">${row.sc_name}</p>
+//     </div>
     
-    `).join('');
+//     `).join('');
 
 // if (unit_role = "Laboratory Tech")
-(row =>`
+// (row =>`
     
-    <div id="science_card" class="card text-center" style="width: 9rem;">
-    <div>
-    <img id="card_image" src="../../ranks/emblems/emblem_2_science.png" class="card-img-top" alt="...">
-    </div>
-    <p id="card_text">${row.unit_role}</p>
-    <p id="card_name">${row.sc_name}</p>
-    </div>
+//     <div id="science_card" class="card text-center" style="width: 9rem;">
+//     <div>
+//     <img id="card_image" src="../../ranks/emblems/emblem_2_science.png" class="card-img-top" alt="...">
+//     </div>
+//     <p id="card_text">${row.unit_role}</p>
+//     <p id="card_name">${row.sc_name}</p>
+//     </div>
     
-    `).join('');
+//     `).join('');
 
-// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // if (unit_role = "Trooper Commander")
-(row =>`
+// (row =>`
     
-    <div id="combat_card" class="card text-center" style="width: 9rem;">
-    <div>
-    <img id="card_image" src="../../ranks/emblems/emblem_3_trooper.png" class="card-img-top" alt="...">
-    </div>
-    <p id="card_text">${row.unit_role}</p>
-    <p id="card_name">${row.sc_name}</p>
-    </div>
+//     <div id="combat_card" class="card text-center" style="width: 9rem;">
+//     <div>
+//     <img id="card_image" src="../../ranks/emblems/emblem_3_trooper.png" class="card-img-top" alt="...">
+//     </div>
+//     <p id="card_text">${row.unit_role}</p>
+//     <p id="card_name">${row.sc_name}</p>
+//     </div>
     
-    `).join('');
+//     `).join('');
 
 // if (unit_role = "Engineer Commander")
-(row =>`
+// (row =>`
     
-    <div id="engineer_card" class="card text-center" style="width: 9rem;">
-    <div>
-    <img id="card_image" src="../../ranks/emblems/emblem_3_engineer.png" class="card-img-top" alt="...">
-    </div>
-    <p id="card_text">${row.unit_role}</p>
-    <p id="card_name">${row.sc_name}</p>
-    </div>
+//     <div id="engineer_card" class="card text-center" style="width: 9rem;">
+//     <div>
+//     <img id="card_image" src="../../ranks/emblems/emblem_3_engineer.png" class="card-img-top" alt="...">
+//     </div>
+//     <p id="card_text">${row.unit_role}</p>
+//     <p id="card_name">${row.sc_name}</p>
+//     </div>
     
-    `).join('');
+//     `).join('');
 
 // if (unit_role = "Medical Commander")
-(row =>`
+// (row =>`
     
-    <div id="medical_card" class="card text-center" style="width: 9rem;">
-    <div>
-    <img id="card_image" src="../../ranks/emblems/emblem_3_medic.png" class="card-img-top" alt="...">
-    </div>
-    <p id="card_text">${row.unit_role}</p>
-    <p id="card_name">${row.sc_name}</p>
-    </div>
+//     <div id="medical_card" class="card text-center" style="width: 9rem;">
+//     <div>
+//     <img id="card_image" src="../../ranks/emblems/emblem_3_medic.png" class="card-img-top" alt="...">
+//     </div>
+//     <p id="card_text">${row.unit_role}</p>
+//     <p id="card_name">${row.sc_name}</p>
+//     </div>
     
-    `).join('');
+//     `).join('');
 
 // if (unit_role = "Science Officer")
-(row =>`
+// (row =>`
     
-    <div id="science_card" class="card text-center" style="width: 9rem;">
-    <div>
-    <img id="card_image" src="../../ranks/emblems/emblem_3_science.png" class="card-img-top" alt="...">
-    </div>
-    <p id="card_text">${row.unit_role}</p>
-    <p id="card_name">${row.sc_name}</p>
-    </div>
+//     <div id="science_card" class="card text-center" style="width: 9rem;">
+//     <div>
+//     <img id="card_image" src="../../ranks/emblems/emblem_3_science.png" class="card-img-top" alt="...">
+//     </div>
+//     <p id="card_text">${row.unit_role}</p>
+//     <p id="card_name">${row.sc_name}</p>
+//     </div>
     
-    `).join('');
+//     `).join('');
 
-// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-// if (unit_role = "Elite Guard)
-(row =>`
+// // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// if (unit_role = "Elite Guard")
+// (row =>`
     
-    <div id="leadership_card" class="card text-center" style="width: 9rem;">
-    <div>
-    <img id="card_image" src="../../ranks/emblems/emblem_4_elite.png" class="card-img-top" alt="...">
-    </div>
-    <p id="card_text">${row.unit_role}</p>
-    <p id="card_name">${row.sc_name}</p>
-    </div>
+//     <div id="leadership_card" class="card text-center" style="width: 9rem;">
+//     <div>
+//     <img id="card_image" src="../../ranks/emblems/emblem_4_elite.png" class="card-img-top" alt="...">
+//     </div>
+//     <p id="card_text">${row.unit_role}</p>
+//     <p id="card_name">${row.sc_name}</p>
+//     </div>
     
-    `).join('');
+//     `).join('');
 
 // if (unit_role = "1st Officer")
-(row =>`
+// (row =>`
     
-    <div id="leadership_card" class="card text-center" style="width: 9rem;">
-    <div>
-    <img id="card_image" src="../../ranks/emblems/emblem_3_1st_officer.png" class="card-img-top" alt="...">
-    </div>
-    <p id="card_text">${row.unit_role}</p>
-    <p id="card_name">${row.sc_name}</p>
-    </div>
+//     <div id="leadership_card" class="card text-center" style="width: 9rem;">
+//     <div>
+//     <img id="card_image" src="../../ranks/emblems/emblem_3_1st_officer.png" class="card-img-top" alt="...">
+//     </div>
+//     <p id="card_text">${row.unit_role}</p>
+//     <p id="card_name">${row.sc_name}</p>
+//     </div>
     
-    `).join('');
+//     `).join('');
 
 // if (unit_role = "Captain")
-(row =>`
+// (row =>`
     
-    <div id="leadership_card" class="card text-center" style="width: 9rem;">
-    <div>
-    <img id="card_image" src="../../ranks/emblems/rank_4_captain.png" class="card-img-top" alt="...">
-    </div>
-    <p id="card_text">${row.unit_role}</p>
-    <p id="card_name">${row.sc_name}</p>
-    </div>
+//     <div id="leadership_card" class="card text-center" style="width: 9rem;">
+//     <div>
+//     <img id="card_image" src="../../ranks/emblems/rank_4_captain.png" class="card-img-top" alt="...">
+//     </div>
+//     <p id="card_text">${row.unit_role}</p>
+//     <p id="card_name">${row.sc_name}</p>
+//     </div>
     
-    `).join('');
+//     `).join('');
 
 // if (unit_role = "Admiral")
-(row =>`
+// (row =>`
     
-    <div id="leadership_card" class="card text-center" style="width: 9rem;">
-    <div>
-    <img id="card_image" src="../../ranks/emblems/rank_5_admiral.png" class="card-img-top" alt="...">
-    </div>
-    <p id="card_text">${row.unit_role}</p>
-    <p id="card_name">${row.sc_name}</p>
-    </div>
+//     <div id="leadership_card" class="card text-center" style="width: 9rem;">
+//     <div>
+//     <img id="card_image" src="../../ranks/emblems/rank_5_admiral.png" class="card-img-top" alt="...">
+//     </div>
+//     <p id="card_text">${row.unit_role}</p>
+//     <p id="card_name">${row.sc_name}</p>
+//     </div>
     
-    `).join('');
+//     `).join('');
