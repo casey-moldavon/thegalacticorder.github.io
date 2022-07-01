@@ -20,7 +20,6 @@ async function generateCards() {
 
     let newCards = data.rows.map(row =>`
     
-    
     <div id="novitiate_card" class="card text-center" style="width: 9rem;">
     <div>
     <img id="card_image" src="../../ranks/badges/0-novitiate.png" class="card-img-top" alt="...">
@@ -126,17 +125,148 @@ async function fileReport() {
 
 
 // if (unit_role = "Novitiate")
-// if (unit_role = "Ensign Trooper")
-// if (unit_role = "Ensign Operator")
-// if (unit_role = "Ensign Medic")
-// if (unit_role = "Field Researcher")
+(row =>`
+    
+    <div id="novitiate_card" class="card text-center" style="width: 9rem;">
+    <div>
+    <img id="card_image" src="../../ranks/badges/0-novitiate.png" class="card-img-top" alt="...">
+    </div>
+    <p id="card_text">${row.unit_role}</p>
+    <p id="card_name">${row.sc_name}</p>
+    </div>
+    
+    `).join('');
 
+// if (unit_role = "Ensign Trooper")
+(row =>`
+    
+    <div id="combat_card" class="card text-center" style="width: 9rem;">
+    <div>
+    <img id="card_image" src="../../ranks/emblems/emblem_1_trooper.png" class="card-img-top" alt="...">
+    </div>
+    <p id="card_text">${row.unit_role}</p>
+    <p id="card_name">${row.sc_name}</p>
+    </div>
+    
+    `).join('');
+
+// if (unit_role = "Ensign Operator")
+(row =>`
+    
+    <div id="engineer_card" class="card text-center" style="width: 9rem;">
+    <div>
+    <img id="card_image" src="../../ranks/emblems/emblem_1_engineer.png" class="card-img-top" alt="...">
+    </div>
+    <p id="card_text">${row.unit_role}</p>
+    <p id="card_name">${row.sc_name}</p>
+    </div>
+    
+    `).join('');
+
+// if (unit_role = "Ensign Medic")
+(row =>`
+    
+    <div id="medical_card" class="card text-center" style="width: 9rem;">
+    <div>
+    <img id="card_image" src="../../ranks/emblems/emblem_1_medic.png" class="card-img-top" alt="...">
+    </div>
+    <p id="card_text">${row.unit_role}</p>
+    <p id="card_name">${row.sc_name}</p>
+    </div>
+    
+    `).join('');
+
+// if (unit_role = "Field Researcher")
+(row =>`
+    
+    <div id="science_card" class="card text-center" style="width: 9rem;">
+    <div>
+    <img id="card_image" src="../../ranks/emblems/emblem_1_science.png" class="card-img-top" alt="...">
+    </div>
+    <p id="card_text">${row.unit_role}</p>
+    <p id="card_name">${row.sc_name}</p>
+    </div>
+    
+    `).join('');
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // if (unit_role = "Lieutenant Trooper")
+(row =>`
+    
+    <div id="combat_card" class="card text-center" style="width: 9rem;">
+    <div>
+    <img id="card_image" src="../../ranks/emblems/emblem_2_trooper.png" class="card-img-top" alt="...">
+    </div>
+    <p id="card_text">${row.unit_role}</p>
+    <p id="card_name">${row.sc_name}</p>
+    </div>
+    
+    `).join('');
+
 // if (unit_role = "Shock Trooper")
+(row =>`
+    
+    <div id="combat_card" class="card text-center" style="width: 9rem;">
+    <div>
+    <img id="card_image" src="../../ranks/emblems/emblem_2_trooper.png" class="card-img-top" alt="...">
+    </div>
+    <p id="card_text">${row.unit_role}</p>
+    <p id="card_name">${row.sc_name}</p>
+    </div>
+    
+    `).join('');
+
 // if (unit_role = "Outrider")
+(row =>`
+    
+    <div id="combat_card" class="card text-center" style="width: 9rem;">
+    <div>
+    <img id="card_image" src="../../ranks/emblems/emblem_2_outrider.png" class="card-img-top" alt="...">
+    </div>
+    <p id="card_text">${row.unit_role}</p>
+    <p id="card_name">${row.sc_name}</p>
+    </div>
+    
+    `).join('');
+
 // if (unit_role = "Lieutenant Engineer")
+(row =>`
+    
+    <div id="engineer_card" class="card text-center" style="width: 9rem;">
+    <div>
+    <img id="card_image" src="../../ranks/emblems/emblem_2_engineer.png" class="card-img-top" alt="...">
+    </div>
+    <p id="card_text">${row.unit_role}</p>
+    <p id="card_name">${row.sc_name}</p>
+    </div>
+    
+    `).join('');
+
 // if (unit_role = "Lieutenant Corpsman")
+(row =>`
+    
+    <div id="medical_card" class="card text-center" style="width: 9rem;">
+    <div>
+    <img id="card_image" src="../../ranks/emblems/emblem_2_medic.png" class="card-img-top" alt="...">
+    </div>
+    <p id="card_text">${row.unit_role}</p>
+    <p id="card_name">${row.sc_name}</p>
+    </div>
+    
+    `).join('');
+
 // if (unit_role = "Laboratory Tech")
+(row =>`
+    
+    <div id="science_card" class="card text-center" style="width: 9rem;">
+    <div>
+    <img id="card_image" src="../../ranks/emblems/emblem_2_science.png" class="card-img-top" alt="...">
+    </div>
+    <p id="card_text">${row.unit_role}</p>
+    <p id="card_name">${row.sc_name}</p>
+    </div>
+    
+    `).join('');
 
 // if (unit_role = "Trooper Commander")
 // if (unit_role = "Engineer Commander")
