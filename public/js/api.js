@@ -15,32 +15,32 @@ async function generateCards() {
     const response = await fetch('https://frolicking-frangipane-e2734e.netlify.app/.netlify/functions/roster')
     const data = await response.json()
 
-    // let placeholder = document.getElementById('unit-card-placeholder');
     let novitiatePlaceholder = document.getElementById('novitiate_division_dropdown');
-    let sciencePlaceholder = document.getElementById('novitiate_division_dropdown');
-    let medicalPlaceholder = document.getElementById('novitiate_division_dropdown');
-    let engineerPlaceholder = document.getElementById('novitiate_division_dropdown');
-    let combatPlaceholder = document.getElementById('novitiate_division_dropdown');
-    let leadershipPlaceholder = document.getElementById('novitiate_division_dropdown');
+    let sciencePlaceholder = document.getElementById('science_division_dropdown');
+    let medicalPlaceholder = document.getElementById('medical_division_dropdown');
+    let engineerPlaceholder = document.getElementById('engineer_division_dropdown');
+    let combatPlaceholder = document.getElementById('combat_division_dropdown');
+    let leadershipPlaceholder = document.getElementById('leadership_division_dropdown');
 
-    let newCards = data.rows.map(row =>`
+    var novitiateCards = data.rows.map(row =>    
+        `
+        <div id="novitiate_card" class="card text-center" style="width: 9rem;">
+        <div>
+        <img id="card_image" src="../../ranks/badges/0-novitiate.png" class="card-img-top" alt="...">
+        </div>
+        <p id="card_text">${row.unit_role}</p>
+        <p id="card_name">${row.sc_name}</p>
+        </div>
+        `).join('');
     
-    <div id="novitiate_card" class="card text-center" style="width: 9rem;">
-    <div>
-    <img id="card_image" src="../../ranks/badges/0-novitiate.png" class="card-img-top" alt="...">
-    </div>
-    <p id="card_text">${row.unit_role}</p>
-    <p id="card_name">${row.sc_name}</p>
-    </div>
-    
-    `).join('');
-    novitiatePlaceholder.innerHTML = newCards;
-    sciencePlaceholder.innerHTML = newCards;
-    medicalPlaceholder.innerHTML = newCards;
-    engineerPlaceholder.innerHTML = newCards;
-    combatPlaceholder.innerHTML = newCards;
-    leadershipPlaceholder.innerHTML = newCards;
-}
+    novitiatePlaceholder.innerHTML = novitiateCards;
+    sciencePlaceholder.innerHTML = scienceCards;
+    medicalPlaceholder.innerHTML = medicalCards;
+    engineerPlaceholder.innerHTML = engineerCards;
+    combatPlaceholder.innerHTML = combatCards;
+    leadershipPlaceholder.innerHTML = leadershipCards;
+
+};
 
 
 function registerUnit() {
