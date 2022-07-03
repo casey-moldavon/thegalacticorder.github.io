@@ -16,7 +16,12 @@ async function generateCards() {
     const data = await response.json()
 
     // let placeholder = document.getElementById('unit-card-placeholder');
-    let placeholder = document.getElementById('novitiate_division_dropdown');
+    let novitiatePlaceholder = document.getElementById('novitiate_division_dropdown');
+    let sciencePlaceholder = document.getElementById('novitiate_division_dropdown');
+    let medicalPlaceholder = document.getElementById('novitiate_division_dropdown');
+    let engineerPlaceholder = document.getElementById('novitiate_division_dropdown');
+    let combatPlaceholder = document.getElementById('novitiate_division_dropdown');
+    let leadershipPlaceholder = document.getElementById('novitiate_division_dropdown');
 
     let newCards = data.rows.map(row =>`
     
@@ -29,7 +34,12 @@ async function generateCards() {
     </div>
     
     `).join('');
-    placeholder.innerHTML = newCards;
+    novitiatePlaceholder.innerHTML = newCards;
+    sciencePlaceholder.innerHTML = newCards;
+    medicalPlaceholder.innerHTML = newCards;
+    engineerPlaceholder.innerHTML = newCards;
+    combatPlaceholder.innerHTML = newCards;
+    leadershipPlaceholder.innerHTML = newCards;
 }
 
 
