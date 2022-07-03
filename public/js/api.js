@@ -33,7 +33,7 @@ async function generateCards() {
 }
 
 
-async function registerUnit() {
+function registerUnit() {
     let sc_name = document.getElementById('unit_name');
     let discord_name = document.getElementById('unit_contact');
     let recruiter = document.getElementById('unit_recruiter');
