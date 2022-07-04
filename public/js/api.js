@@ -10,7 +10,6 @@
 // write functions for each button (Register Unit, File Report, Edit Unit, Approve Reports)
 
 
-
 async function generateCards() {
     const response = await fetch('https://frolicking-frangipane-e2734e.netlify.app/.netlify/functions/roster');
     const data = await response.json();
