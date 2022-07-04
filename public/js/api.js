@@ -64,6 +64,7 @@ function registerUnit() {
     let recruiter = document.getElementById('unit_recruiter');
     let battalion = document.getElementById('unit_battalion');
     let start_date = document.getElementById('unit_start');
+    // generate unit_id array[-1] + 1 (?)
 
     let unit_role = "Novitiate";
     let unit_rank = "Rank 0";
