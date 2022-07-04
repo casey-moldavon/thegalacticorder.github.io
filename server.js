@@ -19,7 +19,7 @@ client.connect();
 
 
 client.query(`
-    SELECT * FROM full_roster ORDER BY unit_id ASC
+    SELECT * FROM full_roster ORDER BY UnitID ASC
 `).then(res => {
     console.log(res.rows)
 }).finally(() => client.end());
