@@ -22,8 +22,10 @@ async function generateCards() {
     let combatPlaceholder = document.getElementById('combat_division_dropdown');
     let leadershipPlaceholder = document.getElementById('leadership_division_dropdown');
 
-    var novitiateCards = data.rows.map(row =>    
-        `
+
+
+    // need conditional if statement here: if unit_role = "Novitiate", then novitiateCards under novitiatePlaceholder
+    var novitiateCards = data.rows.map(row =>`
         <div id="novitiate_card" class="card text-center" style="width: 9rem;">
         <div>
         <img id="card_image" src="../../ranks/badges/0-novitiate.png" class="card-img-top" alt="...">
@@ -31,8 +33,21 @@ async function generateCards() {
         <p id="card_text">${row.unit_role}</p>
         <p id="card_name">${row.sc_name}</p>
         </div>
-        `).join('');
+    `).join('');
     
+    // need conditional elseif statement here: if unit_role = "Field Researcher", then scienceCards under sciencePlaceholder
+    // var scienceCards = data.rows.map(row => `
+    //     <div id="science_card" class="card text-center" style="width: 9rem;">
+    //     <div>
+    //     <img id="card_image" src="../../ranks/emblems/emblem_1_science.png" class="card-img-top" alt="...">
+    //     </div>
+    //     <p id="card_text">${row.unit_role}</p>
+    //     <p id="card_name">${row.sc_name}</p>
+    //     </div>
+    // `).join('');
+
+
+
     novitiatePlaceholder.innerHTML = novitiateCards;
     sciencePlaceholder.innerHTML = scienceCards;
     medicalPlaceholder.innerHTML = medicalCards;
@@ -189,13 +204,13 @@ async function fileReport() {
 // if (unit_role = "Field Researcher")
 // (row =>`
     
-//     <div id="science_card" class="card text-center" style="width: 9rem;">
-//     <div>
-//     <img id="card_image" src="../../ranks/emblems/emblem_1_science.png" class="card-img-top" alt="...">
-//     </div>
-//     <p id="card_text">${row.unit_role}</p>
-//     <p id="card_name">${row.sc_name}</p>
-//     </div>
+    // <div id="science_card" class="card text-center" style="width: 9rem;">
+    // <div>
+    // <img id="card_image" src="../../ranks/emblems/emblem_1_science.png" class="card-img-top" alt="...">
+    // </div>
+    // <p id="card_text">${row.unit_role}</p>
+    // <p id="card_name">${row.sc_name}</p>
+    // </div>
     
 //     `).join('');
 
