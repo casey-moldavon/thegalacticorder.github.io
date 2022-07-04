@@ -21,18 +21,20 @@ async function generateCards() {
     let combatPlaceholder = document.getElementById('combat_division_dropdown');
     let leadershipPlaceholder = document.getElementById('leadership_division_dropdown');
 
-
-
     // need conditional if statement here: if unit_role = "Novitiate", then novitiateCards under novitiatePlaceholder
-    var novitiateCards = data.rows.map(row =>`
-        <div id="novitiate_card" class="card text-center" style="width: 9rem;">
-        <div>
-        <img id="card_image" src="../../ranks/badges/0-novitiate.png" class="card-img-top" alt="...">
-        </div>
-        <p id="card_text">${row.unit_role}</p>
-        <p id="card_name">${row.sc_name}</p>
-        </div>
-    `).join('');
+
+        var novitiateCards = data.rows.map(
+            row =>
+            `
+            <div id="novitiate_card" class="card text-center" style="width: 9rem;">
+            <div>
+            <img id="card_image" src="../../ranks/badges/0-novitiate.png" class="card-img-top" alt="...">
+            </div>
+            <p id="card_text">${row.unit_role}</p>
+            <p id="card_name">${row.sc_name}</p>
+            </div>
+        `).join('');
+
     
     // need conditional elseif statement here: if unit_role = "Field Researcher", then scienceCards under sciencePlaceholder
     // var scienceCards = data.rows.map(row => `
