@@ -268,11 +268,11 @@ async function generateCards() {
     `).join('');
 
     novitiatePlaceholder.innerHTML = novitiateCards;
-    combatPlaceholder.innerHTML = ensignTrooperCards + lieutenantTrooperCards + shockTrooperCards + outriderCards + trooperCommanderCards;
-    engineerPlaceholder.innerHTML = ensignOperatorCards + lieutenantEngineerCards + engineerCommanderCards;
-    medicalPlaceholder.innerHTML = ensignMedicCards +lieutenantCorpsmanCards + medicalCommanderCards;
-    sciencePlaceholder.innerHTML = fieldResearcherCards +laboratoryTechCards + scienceOfficerCards;
-    leadershipPlaceholder.innerHTML = firstOfficerCards + eliteGuardCards + captainCards + admiralCards;
+    combatPlaceholder.innerHTML = trooperCommanderCards + lieutenantTrooperCards + shockTrooperCards + outriderCards + ensignTrooperCards;
+    engineerPlaceholder.innerHTML = engineerCommanderCards + lieutenantEngineerCards + ensignOperatorCards;
+    medicalPlaceholder.innerHTML = medicalCommanderCards + lieutenantCorpsmanCards + ensignMedicCards;
+    sciencePlaceholder.innerHTML = scienceOfficerCards + laboratoryTechCards + fieldResearcherCards;
+    leadershipPlaceholder.innerHTML = admiralCards + captainCards + eliteGuardCards + firstOfficerCards;
 
 };
 
