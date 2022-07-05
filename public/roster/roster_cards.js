@@ -1,286 +1,369 @@
-const eventsMinusButton = document.getElementById('events_minus');
-const eventsPlusButton = document.getElementById('events_plus');
-const eventsField = document.getElementById('unit_events');
 
-const patrolsMinusButton = document.getElementById('patrols_minus');
-const patrolsPlusButton = document.getElementById('patrols_plus');
-const patrolsField = document.getElementById('unit_patrols');
+async function generateCards() {
+    const response = await fetch('https://frolicking-frangipane-e2734e.netlify.app/.netlify/functions/roster');
+    const data = await response.json();
 
-const hoursMinusButton = document.getElementById('hours_minus');
-const hoursPlusButton = document.getElementById('hours_plus');
-const hoursField = document.getElementById('unit_hours');
-
-const alertsMinusButton = document.getElementById('alerts_minus');
-const alertsPlusButton = document.getElementById('alerts_plus');
-const alertsField = document.getElementById('unit_alerts');
+    let novitiatePlaceholder = document.getElementById('novitiate_division_dropdown');
+    let sciencePlaceholder = document.getElementById('science_division_dropdown');
+    let medicalPlaceholder = document.getElementById('medical_division_dropdown');
+    let engineerPlaceholder = document.getElementById('engineer_division_dropdown');
+    let combatPlaceholder = document.getElementById('combat_division_dropdown');
+    let leadershipPlaceholder = document.getElementById('leadership_division_dropdown');
 
 
-eventsMinusButton.addEventListener('click', event => {
-    event.preventDefault();
-    const currentValue = Number(eventsField.value) || 0;
-    eventsField.value = currentValue - 1;
-});
-eventsPlusButton.addEventListener('click', event => {
-    event.preventDefault();
-    const currentValue = Number(eventsField.value) || 0;
-    eventsField.value = currentValue + 1;
-});
+    var novitiates = data.rows.filter(units => units.unit_role == "Novitiate");
 
-patrolsMinusButton.addEventListener('click', event => {
-    event.preventDefault();
-    const currentValue = Number(patrolsField.value) || 0;
-    patrolsField.value = currentValue - 1;
-});
-patrolsPlusButton.addEventListener('click', event => {
-    event.preventDefault();
-    const currentValue = Number(patrolsField.value) || 0;
-    patrolsField.value = currentValue + 1;
-});
+    var ensignTroopers = data.rows.filter(units => units.unit_role == "Ensign Trooper");
+    var ensignOperators = data.rows.filter(units => units.unit_role == "Ensign Operator");
+    var ensignMedics = data.rows.filter(units => units.unit_role == "Ensign Medic");
+    var fieldResearchers = data.rows.filter(units => units.unit_role == "Field Researcher");
 
-hoursMinusButton.addEventListener('click', event => {
-    event.preventDefault();
-    const currentValue = Number(hoursField.value) || 0;
-    hoursField.value = currentValue - 1;
-});
-hoursPlusButton.addEventListener('click', event => {
-    event.preventDefault();
-    const currentValue = Number(hoursField.value) || 0;
-    hoursField.value = currentValue + 1;
-});
+    var lieutenantTroopers = data.rows.filter(units => units.unit_role == "Lieutenant Trooper");
+    var shockTroopers = data.rows.filter(units => units.unit_role == "Shock Trooper");
+    var outriders = data.rows.filter(units => units.unit_role == "Outrider");
+    var lieutenantEngineers = data.rows.filter(units => units.unit_role == "Lieutenant Engineer");
+    var lieutenantCorpsman = data.rows.filter(units => units.unit_role == "Lieutenant Corpsman");
+    var laboratoryTechs = data.rows.filter(units => units.unit_role == "Laboratory Tech");
 
-alertsMinusButton.addEventListener('click', event => {
-    event.preventDefault();
-    const currentValue = Number(alertsField.value) || 0;
-    alertsField.value = currentValue - 1;
-});
-alertsPlusButton.addEventListener('click', event => {
-    event.preventDefault();
-    const currentValue = Number(alertsField.value) || 0;
-    alertsField.value = currentValue + 1;
-});
+    var trooperCommanders = data.rows.filter(units => units.unit_role == "Trooper Commander");
+    var engineerCommanders = data.rows.filter(units => units.unit_role == "Engineer Commander");
+    var medicalCommanders = data.rows.filter(units => units.unit_role == "Medical Commander");
+    var scienceOfficers = data.rows.filter(units => units.unit_role == "Science Officer");
+
+    var firstOfficers = data.rows.filter(units => units.unit_role == "1st Officer");
+    var eliteGuards = data.rows.filter(units => units.unit_role == "Elite Guard");
+    var captains = data.rows.filter(units => units.unit_role == "Captain");
+    var admirals = data.rows.filter(units => units.unit_role == "Admiral");
 
 
-const turretMinusButton = document.getElementById('turret_minus');
-const turretPlusButton = document.getElementById('turret_plus');
-const turretField = document.getElementById('mission_turret');
+    var novitiateCards = novitiates.map(
+        row =>
+        `
+        <div id="novitiate_card" class="card text-center" style="width: 9rem;">
+        <div>
+        <img id="card_image" src="../../ranks/badges/0-novitiate.png" class="card-img-top" alt="...">
+        </div>
+        <p id="card_text">${row.unit_role}</p>
+        <p id="card_name">${row.sc_name}</p>
+        </div>
+    `).join('');
 
-const groundAssaultMinusButton = document.getElementById('ground_assault_minus');
-const groundAssaultPlusButton = document.getElementById('ground_assault_plus');
-const groundAssaultField = document.getElementById('mission_ground_assault');
+    var ensignTrooperCards = ensignTroopers.map(
+        row =>
+        `
+        <div id="combat_card" class="card text-center" style="width: 9rem;">
+        <div>
+        <img id="card_image" src="../../ranks/emblems/emblem_1_trooper.png" class="card-img-top" alt="...">
+        </div>
+        <p id="card_text">${row.unit_role}</p>
+        <p id="card_name">${row.sc_name}</p>
+        </div>
+    `).join('');
 
-const escortMinusButton = document.getElementById('escort_minus');
-const escortPlusButton = document.getElementById('escort_plus');
-const escortField = document.getElementById('mission_escort');
+    var ensignOperatorCards = ensignOperators.map(
+        row =>
+        `
+        <div id="engineer_card" class="card text-center" style="width: 9rem;">
+        <div>
+        <img id="card_image" src="../../ranks/emblems/emblem_1_engineer.png" class="card-img-top" alt="...">
+        </div>
+        <p id="card_text">${row.unit_role}</p>
+        <p id="card_name">${row.sc_name}</p>
+        </div>
+    `).join('');
 
-const inquiryMinusButton = document.getElementById('inquiry_minus');
-const inquiryPlusButton = document.getElementById('inquiry_plus');
-const inquiryField = document.getElementById('mission_inquiry');
+    var ensignMedicCards = ensignMedics.map(
+        row =>
+        `
+        <div id="medical_card" class="card text-center" style="width: 9rem;">
+        <div>
+        <img id="card_image" src="../../ranks/emblems/emblem_1_medic.png" class="card-img-top" alt="...">
+        </div>
+        <p id="card_text">${row.unit_role}</p>
+        <p id="card_name">${row.sc_name}</p>
+        </div>
+    `).join('');
 
-const pilotCoPilotMinusButton = document.getElementById('pilot_co_pilot_minus');
-const pilotCoPilotPlusButton = document.getElementById('pilot_co_pilot_plus');
-const pilotCoPilotField = document.getElementById('mission_pilot_co_pilot');
+    var fieldResearcherCards = fieldResearchers.map(
+        row =>
+        `
+        <div id="science_card" class="card text-center" style="width: 9rem;">
+        <div>
+        <img id="card_image" src="../../ranks/emblems/emblem_1_science.png" class="card-img-top" alt="...">
+        </div>
+        <p id="card_text">${row.unit_role}</p>
+        <p id="card_name">${row.sc_name}</p>
+        </div>
+    `).join('');
 
-const miningMinusButton = document.getElementById('mining_minus');
-const miningPlusButton = document.getElementById('mining_plus');
-const miningField = document.getElementById('mission_mining');
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    var lieutenantTrooperCards = lieutenantTroopers.map(
+        row =>
+        `
+        <div id="combat_card" class="card text-center" style="width: 9rem;">
+        <div>
+        <img id="card_image" src="../../ranks/emblems/emblem_2_trooper.png" class="card-img-top" alt="...">
+        </div>
+        <p id="card_text">${row.unit_role}</p>
+        <p id="card_name">${row.sc_name}</p>
+        </div>
+    `).join('');
 
-const salvageMinusButton = document.getElementById('salvage_minus');
-const salvagePlusButton = document.getElementById('salvage_plus');
-const salvageField = document.getElementById('mission_salvage');
+    var shockTrooperCards = shockTroopers.map(
+        row =>
+        `
+        <div id="combat_card" class="card text-center" style="width: 9rem;">
+        <div>
+        <img id="card_image" src="../../ranks/emblems/emblem_2_trooper.png" class="card-img-top" alt="...">
+        </div>
+        <p id="card_text">${row.unit_role}</p>
+        <p id="card_name">${row.sc_name}</p>
+        </div>
+    `).join('');
 
-const cargoMinusButton = document.getElementById('cargo_minus');
-const cargoPlusButton = document.getElementById('cargo_plus');
-const cargoField = document.getElementById('mission_cargo');
+    var outriderCards = outriders.map(
+        row =>
+        `
+        <div id="combat_card" class="card text-center" style="width: 9rem;">
+        <div>
+        <img id="card_image" src="../../ranks/emblems/emblem_2_outrider.png" class="card-img-top" alt="...">
+        </div>
+        <p id="card_text">${row.unit_role}</p>
+        <p id="card_name">${row.sc_name}</p>
+        </div>
+    `).join('');
 
-const transitMinusButton = document.getElementById('transit_minus');
-const transitPlusButton = document.getElementById('transit_plus');
-const transitField = document.getElementById('mission_transit');
+    var lieutenantEngineerCards = lieutenantEngineers.map(
+        row =>
+        `
+        <div id="engineer_card" class="card text-center" style="width: 9rem;">
+        <div>
+        <img id="card_image" src="../../ranks/emblems/emblem_2_engineer.png" class="card-img-top" alt="...">
+        </div>
+        <p id="card_text">${row.unit_role}</p>
+        <p id="card_name">${row.sc_name}</p>
+        </div>
+    `).join('');
 
-const supportMinusButton = document.getElementById('support_minus');
-const supportPlusButton = document.getElementById('support_plus');
-const supportField = document.getElementById('mission_support');
+    var lieutenantCorpsmanCards = lieutenantCorpsman.map(
+        row =>
+        `
+        <div id="medical_card" class="card text-center" style="width: 9rem;">
+        <div>
+        <img id="card_image" src="../../ranks/emblems/emblem_2_medic.png" class="card-img-top" alt="...">
+        </div>
+        <p id="card_text">${row.unit_role}</p>
+        <p id="card_name">${row.sc_name}</p>
+        </div>
+    `).join('');
 
-const searchRescueMinusButton = document.getElementById('search_rescue_minus');
-const searchRescuePlusButton = document.getElementById('search_rescue_plus');
-const searchRescueField = document.getElementById('mission_search_rescue');
+    var laboratoryTechCards = laboratoryTechs.map(
+        row =>
+        `
+        <div id="science_card" class="card text-center" style="width: 9rem;">
+        <div>
+        <img id="card_image" src="../../ranks/emblems/emblem_2_science.png" class="card-img-top" alt="...">
+        </div>
+        <p id="card_text">${row.unit_role}</p>
+        <p id="card_name">${row.sc_name}</p>
+        </div>
+    `).join('');
 
-const manageDataMinusButton = document.getElementById('manage_data_minus');
-const manageDataPlusButton = document.getElementById('manage_data_plus');
-const manageDataField = document.getElementById('mission_manage_data');
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    var trooperCommanderCards = trooperCommanders.map(
+        row =>
+        `
+        <div id="combat_card" class="card text-center" style="width: 9rem;">
+        <div>
+        <img id="card_image" src="../../ranks/emblems/emblem_3_trooper.png" class="card-img-top" alt="...">
+        </div>
+        <p id="card_text">${row.unit_role}</p>
+        <p id="card_name">${row.sc_name}</p>
+        </div>
+    `).join('');
 
-const researchMinusButton = document.getElementById('research_minus');
-const researchPlusButton = document.getElementById('research_plus');
-const researchField = document.getElementById('mission_research');
+    var engineerCommanderCards = engineerCommanders.map(
+        row =>
+        `
+        <div id="engineer_card" class="card text-center" style="width: 9rem;">
+        <div>
+        <img id="card_image" src="../../ranks/emblems/emblem_3_engineer.png" class="card-img-top" alt="...">
+        </div>
+        <p id="card_text">${row.unit_role}</p>
+        <p id="card_name">${row.sc_name}</p>
+        </div>
+    `).join('');
 
-const exploreMinusButton = document.getElementById('explore_minus');
-const explorePlusButton = document.getElementById('explore_plus');
-const exploreField = document.getElementById('mission_explore');
+    var medicalCommanderCards = medicalCommanders.map(
+        row =>
+        `
+        <div id="medical_card" class="card text-center" style="width: 9rem;">
+        <div>
+        <img id="card_image" src="../../ranks/emblems/emblem_3_medic.png" class="card-img-top" alt="...">
+        </div>
+        <p id="card_text">${row.unit_role}</p>
+        <p id="card_name">${row.sc_name}</p>
+        </div>
+    `).join('');
 
-const agronomyMinusButton = document.getElementById('agronomy_minus');
-const agronomyPlusButton = document.getElementById('agronomy_plus');
-const agronomyField = document.getElementById('mission_agronomy');
+    var scienceOfficerCards = scienceOfficers.map(
+        row =>
+        `
+        <div id="science_card" class="card text-center" style="width: 9rem;">
+        <div>
+        <img id="card_image" src="../../ranks/emblems/emblem_3_science.png" class="card-img-top" alt="...">
+        </div>
+        <p id="card_text">${row.unit_role}</p>
+        <p id="card_name">${row.sc_name}</p>
+        </div>
+    `).join('');
 
-turretMinusButton.addEventListener('click', event => {
-    event.preventDefault();
-    const currentValue = Number(turretField.value) || 0;
-    turretField.value = currentValue - 1;
-});
-turretPlusButton.addEventListener('click', event => {
-    event.preventDefault();
-    const currentValue = Number(turretField.value) || 0;
-    turretField.value = currentValue + 1;
-});
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    var firstOfficerCards = firstOfficers.map(
+        row =>
+        `
+        <div id="leadership_card" class="card text-center" style="width: 9rem;">
+        <div>
+        <img id="card_image" src="../../ranks/emblems/emblem_4_elite.png" class="card-img-top" alt="...">
+        </div>
+        <p id="card_text">${row.unit_role}</p>
+        <p id="card_name">${row.sc_name}</p>
+        </div>
+    `).join('');
 
-groundAssaultMinusButton.addEventListener('click', event => {
-    event.preventDefault();
-    const currentValue = Number(groundAssaultField.value) || 0;
-    groundAssaultField.value = currentValue - 1;
-});
-groundAssaultPlusButton.addEventListener('click', event => {
-    event.preventDefault();
-    const currentValue = Number(groundAssaultField.value) || 0;
-    groundAssaultField.value = currentValue + 1;
-});
+    var eliteGuardCards = eliteGuards.map(
+        row =>
+        `
+        <div id="leadership_card" class="card text-center" style="width: 9rem;">
+        <div>
+        <img id="card_image" src="../../ranks/emblems/emblem_3_1st_officer.png" class="card-img-top" alt="...">
+        </div>
+        <p id="card_text">${row.unit_role}</p>
+        <p id="card_name">${row.sc_name}</p>
+        </div>
+    `).join('');
 
-escortMinusButton.addEventListener('click', event => {
-    event.preventDefault();
-    const currentValue = Number(escortField.value) || 0;
-    escortField.value = currentValue - 1;
-});
-escortPlusButton.addEventListener('click', event => {
-    event.preventDefault();
-    const currentValue = Number(escortField.value) || 0;
-    escortField.value = currentValue + 1;
-});
+    var captainCards = captains.map(
+        row =>
+        `
+        <div id="leadership_card" class="card text-center" style="width: 9rem;">
+        <div>
+        <img id="card_image" src="../../ranks/badges/4-captain.png" class="card-img-top" alt="...">
+        </div>
+        <p id="card_text">${row.unit_role}</p>
+        <p id="card_name">${row.sc_name}</p>
+        </div>
+    `).join('');
 
-inquiryMinusButton.addEventListener('click', event => {
-    event.preventDefault();
-    const currentValue = Number(inquiryField.value) || 0;
-    inquiryField.value = currentValue - 1;
-});
-inquiryPlusButton.addEventListener('click', event => {
-    event.preventDefault();
-    const currentValue = Number(inquiryField.value) || 0;
-    inquiryField.value = currentValue + 1;
-});
+    var admiralCards = admirals.map(
+        row =>
+        `
+        <div id="leadership_card" class="card text-center" style="width: 9rem;">
+        <div>
+        <img id="card_image" src="../../ranks/badges/5-admiral.png" class="card-img-top" alt="...">
+        </div>
+        <p id="card_text">${row.unit_role}</p>
+        <p id="card_name">${row.sc_name}</p>
+        </div>
+    `).join('');
 
-pilotCoPilotMinusButton.addEventListener('click', event => {
-    event.preventDefault();
-    const currentValue = Number(pilotCoPilotField.value) || 0;
-    pilotCoPilotField.value = currentValue - 1;
-});
-pilotCoPilotPlusButton.addEventListener('click', event => {
-    event.preventDefault();
-    const currentValue = Number(pilotCoPilotField.value) || 0;
-    pilotCoPilotField.value = currentValue + 1;
-});
+    novitiatePlaceholder.innerHTML = novitiateCards;
+    combatPlaceholder.innerHTML = trooperCommanderCards + lieutenantTrooperCards + shockTrooperCards + outriderCards + ensignTrooperCards;
+    engineerPlaceholder.innerHTML = engineerCommanderCards + lieutenantEngineerCards + ensignOperatorCards;
+    medicalPlaceholder.innerHTML = medicalCommanderCards + lieutenantCorpsmanCards + ensignMedicCards;
+    sciencePlaceholder.innerHTML = scienceOfficerCards + laboratoryTechCards + fieldResearcherCards;
+    leadershipPlaceholder.innerHTML = admiralCards + captainCards + eliteGuardCards + firstOfficerCards;
 
-miningMinusButton.addEventListener('click', event => {
-    event.preventDefault();
-    const currentValue = Number(miningField.value) || 0;
-    miningField.value = currentValue - 1;
-});
-miningPlusButton.addEventListener('click', event => {
-    event.preventDefault();
-    const currentValue = Number(miningField.value) || 0;
-    miningField.value = currentValue + 1;
-});
+};
 
-salvageMinusButton.addEventListener('click', event => {
-    event.preventDefault();
-    const currentValue = Number(salvageField.value) || 0;
-    salvageField.value = currentValue - 1;
-});
-salvagePlusButton.addEventListener('click', event => {
-    event.preventDefault();
-    const currentValue = Number(salvageField.value) || 0;
-    salvageField.value = currentValue + 1;
-});
 
-cargoMinusButton.addEventListener('click', event => {
-    event.preventDefault();
-    const currentValue = Number(cargoField.value) || 0;
-    cargoField.value = currentValue - 1;
-});
-cargoPlusButton.addEventListener('click', event => {
-    event.preventDefault();
-    const currentValue = Number(cargoField.value) || 0;
-    cargoField.value = currentValue + 1;
-});
+function registerUnit() {
+    let sc_name = document.getElementById('unit_name');
+    let discord_name = document.getElementById('unit_contact');
+    let recruiter = document.getElementById('unit_recruiter');
+    let battalion = document.getElementById('unit_battalion');
+    let start_date = document.getElementById('unit_start');
+    // generate unit_id array[-1] + 1 (?)
 
-transitMinusButton.addEventListener('click', event => {
-    event.preventDefault();
-    const currentValue = Number(transitField.value) || 0;
-    transitField.value = currentValue - 1;
-});
-transitPlusButton.addEventListener('click', event => {
-    event.preventDefault();
-    const currentValue = Number(transitField.value) || 0;
-    transitField.value = currentValue + 1;
-});
+    let unit_role = "Novitiate";
+    let unit_rank = "Rank 0";
+    let promotion_date = start_date;
+    let unit_recruits = 0;
+    let pay_bonus = 0;
 
-supportMinusButton.addEventListener('click', event => {
-    event.preventDefault();
-    const currentValue = Number(supportField.value) || 0;
-    supportField.value = currentValue - 1;
-});
-supportPlusButton.addEventListener('click', event => {
-    event.preventDefault();
-    const currentValue = Number(supportField.value) || 0;
-    supportField.value = currentValue + 1;
-});
+    let events = 0;
+    let patrols = 0;
+    let hours = 0;
 
-searchRescueMinusButton.addEventListener('click', event => {
-    event.preventDefault();
-    const currentValue = Number(searchRescueField.value) || 0;
-    searchRescueField.value = currentValue - 1;
-});
-searchRescuePlusButton.addEventListener('click', event => {
-    event.preventDefault();
-    const currentValue = Number(searchRescueField.value) || 0;
-    searchRescueField.value = currentValue + 1;
-});
+    let alerts = 0;
+    let warnings = 0;
 
-manageDataMinusButton.addEventListener('click', event => {
-    event.preventDefault();
-    const currentValue = Number(manageDataField.value) || 0;
-    manageDataField.value = currentValue - 1;
-});
-manageDataPlusButton.addEventListener('click', event => {
-    event.preventDefault();
-    const currentValue = Number(manageDataField.value) || 0;
-    manageDataField.value = currentValue + 1;
-});
+    let turret = 0;
+    let ground_assault = 0;
+    let escort = 0;
+    let inquiry = 0;
+    let pilot_co_pilot = 0;
+    let mining = 0;
+    let salvage = 0;
+    let cargo = 0;
+    let transit = 0;
+    let support = 0;
+    let search_rescue = 0;
+    let manage_data = 0;
+    let research = 0;
+    let explore = 0;
+    let agronomy = 0;
 
-researchMinusButton.addEventListener('click', event => {
-    event.preventDefault();
-    const currentValue = Number(researchField.value) || 0;
-    researchField.value = currentValue - 1;
-});
-researchPlusButton.addEventListener('click', event => {
-    event.preventDefault();
-    const currentValue = Number(researchField.value) || 0;
-    researchField.value = currentValue + 1;
-});
+    let protocol_exam = false;
+    let medical_exam = false;
+    let g_tactical_exam = false;
+    let s_tactical_exam = false;
+    let officer_exam = false;
 
-exploreMinusButton.addEventListener('click', event => {
-    event.preventDefault();
-    const currentValue = Number(exploreField.value) || 0;
-    exploreField.value = currentValue - 1;
-});
-explorePlusButton.addEventListener('click', event => {
-    event.preventDefault();
-    const currentValue = Number(exploreField.value) || 0;
-    exploreField.value = currentValue + 1;
-});
+    let active_salary = true;
+    let leadership_commendation = false;
+    let current_ppv = 0;
+    let past_ppv = 0;
 
-agronomyMinusButton.addEventListener('click', event => {
-    event.preventDefault();
-    const currentValue = Number(agronomyField.value) || 0;
-    agronomyField.value = currentValue - 1;
-});
-agronomyPlusButton.addEventListener('click', event => {
-    event.preventDefault();
-    const currentValue = Number(agronomyField.value) || 0;
-    agronomyField.value = currentValue + 1;
-});
+    let achieved_trooper2 = false;
+    let achieved_trooper3 = false;
+    let achieved_engineer2 = false;
+    let achieved_engineer3 = false;
+    let achieved_medical2 = false;
+    let achieved_medical3 = false;
+    let achieved_science2 = false;
+    let achieved_science3 = false;
+}
+
+async function fileReport() {
+
+    let battalion = document.getElementById('select_battalion');
+    // += battalion # added to current num
+    let member = document.getElementById('select_member');
+
+
+    let events = document.getElementById('unit_events');
+    let patrols = document.getElementById('unit_patrols');
+    let hours = document.getElementById('unit_hours');
+
+    let alerts = document.getElementById('unit_alerts');
+    let warnings = document.getElementById('unit_warning');
+
+
+    // completed missions
+    let turret = document.getElementById('mission_turret');
+    let ground_assault = document.getElementById('mission_ground_assault');
+    let escort = document.getElementById('mission_escort');
+    let inquiry = document.getElementById('mission_inquiry');
+    let pilot_co_pilot = document.getElementById('mission_pilot_co_pilot');
+    let mining = document.getElementById('mission_mining');
+    let salvage = document.getElementById('mission_salvage');
+    let cargo = document.getElementById('mission_cargo');
+    let transit = document.getElementById('mission_transit');
+    let support = document.getElementById('mission_support');
+    let search_rescue = document.getElementById('mission_search_rescue');
+    let manage_data = document.getElementById('mission_manage_data');
+    let research = document.getElementById('mission_research');
+    let explore = document.getElementById('mission_explore');
+    let agronomy = document.getElementById('mission_agronomy');
+}
