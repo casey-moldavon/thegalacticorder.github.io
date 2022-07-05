@@ -19,9 +19,9 @@ client.connect();
 
 
 client.query(`
-    SELECT * FROM full_roster ORDER BY unit_id ASC
+    SELECT * FROM full_roster
 `).then(res => {
-    console.log(res.rows.sort((a,b) => (a.unit_id > client.unit_id) ? 1 : ((b.unit_id > a.unit_id) ? -1 : 0)))
+    console.log(res.rows)
 }).finally(() => client.end());
 
 
