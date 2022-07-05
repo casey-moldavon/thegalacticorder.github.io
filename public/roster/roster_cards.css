@@ -20,7 +20,9 @@
     background-color: #1c1c1c;
     margin-top: 50px;
     margin-bottom: 50px;
-    width: 300px;
+    /* width: 300px; */
+    width: 400px;
+    padding: 10px;
 }
 
 #modal_collapse_button {
