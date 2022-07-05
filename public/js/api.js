@@ -1,15 +1,4 @@
 
-// what i need to do...
-// write function to fetch sc_name & unit_rank from database and generate cards under each Division of roster
-// write function (if statements) to sort (by unit_rank) into different Divisions (collapse) of roster
-
-// if statements will have different card types
-// function triggers on page load
-// or set to on-click when collapse is viewed
-
-// write functions for each button (Register Unit, File Report, Edit Unit, Approve Reports)
-
-
 async function generateCards() {
     const response = await fetch('https://frolicking-frangipane-e2734e.netlify.app/.netlify/functions/roster');
     const data = await response.json();
@@ -21,7 +10,6 @@ async function generateCards() {
     let combatPlaceholder = document.getElementById('combat_division_dropdown');
     let leadershipPlaceholder = document.getElementById('leadership_division_dropdown');
 
-    // data is the array of objects
 
     var novitiates = data.rows.filter(units => units.unit_role == "Novitiate");
 
