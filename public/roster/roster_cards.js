@@ -278,3 +278,51 @@ async function generateCardData() {
     generateButtonData(data);
     // return data;
 };
+
+
+async function generateButtonData(data) {
+    const response2 = await fetch('https://frolicking-frangipane-e2734e.netlify.app/.netlify/functions/battalions');
+    const data2 = await response2.json();
+
+
+    let fullMemberList = document.getElementById('full_member_list_options');
+    let fullBattalionList = document.getElementById('full_battalion_list_options');
+    let reportBattalionList = document.getElementById('report_battalion_list_options');
+
+    var allMemberNames = data.rows.map(row =>`<option value="${row.sc_name}"></option>`).join('');
+    var allBattalions = data2.rows.map(row =>`<option value="${row.battalion_name}"></option>`).join('');
+
+    fullMemberList.innerHTML = allMemberNames;
+    fullBattalionList.innerHTML = allBattalions;
+    reportBattalionList.innerHTML = allBattalions;
+
+    // return data;
+    generateBattalionNames(data)
+}
+ 
+
+function generateBattalionNames(data){
+
+
+    // test array of objects
+    // let data = [{battalion: "F-01 Hammer A-00", sc_name: "Hammer"}, {battalion: "F-01 Cr4zy A-01", sc_name: "Cr4zy"}];
+
+
+    let selectBattalion = document.getElementById('select_battalion');
+    let battalionMemberList = document.getElementById('battalion_member_list_options');
+
+    var admiraltyMembers = data.rows.filter(units => units.battalion == "F-01 Hammer A-00")
+    var academyMembers = data.rows.filter(units => units.battalion == "F-01 Cr4zy A-01")
+
+    // used to filter test array
+    // var admiraltyMembers = data.filter(units => units.battalion == "F-01 Hammer A-00")
+    // var academyMembers = data.filter(units => units.battalion == "F-01 Cr4zy A-01")
+
+    var admiraltyMemberNames = admiraltyMembers.map(row =>`<option value="${row.sc_name}"></option>`).join('');
+    var academyMemberNames = academyMembers.map(row =>`<option value="${row.sc_name}"></option>`).join('');
+    
+
+    // if (selectBattalion === "F-01 Hammer A-00"){battalionMemberList.innerHTML = admiraltyMemberNames;}
+    // else if (selectBattalion === "F-01 Cr4zy A-01"){battalionMemberList.innerHTML = academyMemberNames;}
+    battalionMemberList.innerHTML = admiraltyMemberNames + academyMemberNames;
+}
