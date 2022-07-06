@@ -18,7 +18,8 @@ const handler = async (event) => {
 
 
     let res = await client.query(`
-        SELECT * FROM full_roster ORDER BY unit_id ASC
+        SELECT * FROM full_roster ORDER BY unit_id ASC;
+        SELECT * FROM battalion_roster ORDER BY battalion_id ASC;
     `);
     
     return {
