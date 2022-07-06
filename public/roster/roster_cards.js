@@ -287,48 +287,52 @@ async function generateButtonData(data) {
 
     let fullMemberList = document.getElementById('full_member_list_options');
     let fullBattalionList = document.getElementById('full_battalion_list_options');
-    let reportBattalionList = document.getElementById('report_battalion_list_options');
+    // let reportBattalionList = document.getElementById('report_battalion_list_options');
+
+    // ~~~~~~~~~~~~~~~ Temporary Fix ~~~~~~~~~~~~~~~
     let battalionMemberList = document.getElementById('battalion_member_list_options');
+    // ~~~~~~~~~~~~~~~ Temporary Fix ~~~~~~~~~~~~~~~
 
     var allMemberNames = data.rows.map(row =>`<option value="${row.sc_name}"></option>`).join('');
     var allBattalions = data2.rows.map(row =>`<option value="${row.battalion_name}"></option>`).join('');
 
     fullMemberList.innerHTML = allMemberNames;
     fullBattalionList.innerHTML = allBattalions;
-    reportBattalionList.innerHTML = allBattalions;
-
-    battalionMemberList.innerHTML = allMemberNames;
+    // reportBattalionList.innerHTML = allBattalions;
 
     // ~~~~~~~~~~~~~~~ Temporary Fix ~~~~~~~~~~~~~~~
-
+    battalionMemberList.innerHTML = allMemberNames;
     // ~~~~~~~~~~~~~~~ Temporary Fix ~~~~~~~~~~~~~~~
 
     // return data;
+    // generateBattalionNames(data)
 }
+
+
 
 // function called after user makes dropdown selection (onchange="generateBattalionNames()")
 // select_battalion dropdown is currently commented out for another time
-// function generateBattalionNames(data){
+function generateBattalionNames(){
 
-//     // test array of objects
-//     // let data = [{battalion: "F-01 Holland A-00", sc_name: "Hammer"}, {battalion: "F-01 Cr4zy A-01", sc_name: "Cr4zy"}];
+    // test array of objects
+    // let data = [{battalion: "F-01 Holland A-00", sc_name: "Hammer"}, {battalion: "F-01 Cr4zy A-01", sc_name: "Cr4zy"}];
 
-//     let selectBattalion = document.getElementById('select_battalion');
-//     let battalionMemberList = document.getElementById('battalion_member_list_options');
+    let selectBattalion = document.getElementById('select_battalion');
+    let battalionMemberList = document.getElementById('battalion_member_list_options');
 
-//     var admiraltyMembers = oldData.rows.filter(units => units.battalion == "F-01 Holland A-00")
-//     var academyMembers = oldData.rows.filter(units => units.battalion == "F-01 Cr4zy A-01")
+    var admiraltyMembers = data.rows.filter(units => units.battalion == "F-01 Holland A-00")
+    var academyMembers = data.rows.filter(units => units.battalion == "F-01 Cr4zy A-01")
 
-//     // used to filter test array
-//     // var admiraltyMembers = data.filter(units => units.battalion == "F-01 Holland A-00")
-//     // var academyMembers = data.filter(units => units.battalion == "F-01 Cr4zy A-01")
+    // used to filter test array
+    // var admiraltyMembers = data.filter(units => units.battalion == "F-01 Holland A-00")
+    // var academyMembers = data.filter(units => units.battalion == "F-01 Cr4zy A-01")
 
-//     var admiraltyMemberNames = admiraltyMembers.map(row =>`<option value="${row.sc_name}"></option>`).join('');
-//     var academyMemberNames = academyMembers.map(row =>`<option value="${row.sc_name}"></option>`).join('');
+    var admiraltyMemberNames = admiraltyMembers.map(row =>`<option value="${row.sc_name}"></option>`).join('');
+    var academyMemberNames = academyMembers.map(row =>`<option value="${row.sc_name}"></option>`).join('');
     
-//     if (selectBattalion == "F-01 Holland A-00"){battalionMemberList.innerHTML = admiraltyMemberNames;}
-//     else if (selectBattalion == "F-01 Cr4zy A-01"){battalionMemberList.innerHTML = academyMemberNames;}
+    if (selectBattalion == "F-01 Holland A-00"){battalionMemberList.innerHTML = admiraltyMemberNames;}
+    else if (selectBattalion == "F-01 Cr4zy A-01"){battalionMemberList.innerHTML = academyMemberNames;}
 
-//     // used for testing
-//     // battalionMemberList.innerHTML = admiraltyMemberNames + academyMemberNames;
-// }
+    // used for testing
+    // battalionMemberList.innerHTML = admiraltyMemberNames + academyMemberNames;
+}
