@@ -310,6 +310,7 @@ async function generateButtonData(data) {
     return [data, data2];
 }
 
+// reportBattalionList does not display properly (from function above) if this function is made async
 function generateBattalionNames(){
 
     const array = generateButtonData();
