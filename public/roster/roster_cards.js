@@ -367,3 +367,5 @@ async function fileReport() {
     let explore = document.getElementById('mission_explore');
     let agronomy = document.getElementById('mission_agronomy');
 }
+
+// needs if statement before sending to Database: if member (select_member) != "Select Member", then add data to database
