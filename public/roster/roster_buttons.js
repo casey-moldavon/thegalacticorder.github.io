@@ -298,45 +298,36 @@ async function generateButtonData(data) {
 
     let fullMemberList = document.getElementById('full_member_list_options');
     let fullBattalionList = document.getElementById('full_battalion_list_options');
+    let reportBattalionList = document.getElementById('report_battalion_list_options');
 
     var allMemberNames = data.rows.map(row =>`<option value="${row.sc_name}"></option>`).join('');
     var allBattalions = data2.rows.map(row =>`<option value="${row.battalion_name}"></option>`).join('');
 
     fullMemberList.innerHTML = allMemberNames;
     fullBattalionList.innerHTML = allBattalions;
+    reportBattalionList.innerHTML = allBattalions;
 
-    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    let battalionMemberList = document.getElementById('battalion_member_list_options');
+    return [data, data2];
+}
 
+function generateBattalionNames(){
+
+    const array = generateButtonData();
+    let data = array[0];
+
+
+    let selectBattalion = document.getElementById('select_battalion');
+    let battalionMemberList = document.getElementById('select_member');
 
     var admiraltyMembers = data.rows.filter(units => units.battalion == "F-01 Hammer A-00")
     var academyMembers = data.rows.filter(units => units.battalion == "F-01 Cr4zy A-01")
     var admiraltyMemberNames = admiraltyMembers.map(row =>`<option value="${row.sc_name}"></option>`).join('');
     var academyMemberNames = academyMembers.map(row =>`<option value="${row.sc_name}"></option>`).join('');
 
-    fullMemberList.innerHTML = allMemberNames;
-    fullBattalionList.innerHTML = allBattalions;
-    
     if (selectBattalion == "F-01 Hammer A-00"){battalionMemberList.innerHTML = admiraltyMemberNames;}
     else if (selectBattalion == "F-01 Cr4zy A-01"){battalionMemberList.innerHTML = academyMemberNames;}
 }
 
-function fileReportNameDropdown() {
-
-    let namePlaceholder = document.getElementById('member_list_options')
-    
-    if (('#select_battalion') == "F-01 Cr4zy A-01") {
-        let unitName = data.rows.filter(units => units.battalion == "F-01 Cr4zy A-01")
-
-        var nameDropdown = unitName.map(
-            row =>`
-            <option value="${row.sc_name}"></option>
-        `).join('');
-
-        namePlaceholder.innerHTML = nameDropdown;
-
-    }
-}
 
 function registerUnit() {
 
