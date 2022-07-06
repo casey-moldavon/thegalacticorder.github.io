@@ -23,9 +23,3 @@ client.query(`
 `).then(res => {
     console.log(res.rows)
 }).finally(() => client.end());
-
-client.query(`
-    SELECT * FROM battalion_roster
-`).then(res => {
-    console.log(res.rows)
-}).finally(() => client.end());
