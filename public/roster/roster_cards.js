@@ -305,24 +305,24 @@ function generateBattalionNames(data){
 
 
     // test array of objects
-    // let data = [{battalion: "F-01 Hammer A-00", sc_name: "Hammer"}, {battalion: "F-01 Cr4zy A-01", sc_name: "Cr4zy"}];
+    // let data = [{battalion: "F-01 Holland A-00", sc_name: "Hammer"}, {battalion: "F-01 Cr4zy A-01", sc_name: "Cr4zy"}];
 
 
     let selectBattalion = document.getElementById('select_battalion');
     let battalionMemberList = document.getElementById('battalion_member_list_options');
 
-    var admiraltyMembers = data.rows.filter(units => units.battalion == "F-01 Hammer A-00")
+    var admiraltyMembers = data.rows.filter(units => units.battalion == "F-01 Holland A-00")
     var academyMembers = data.rows.filter(units => units.battalion == "F-01 Cr4zy A-01")
 
     // used to filter test array
-    // var admiraltyMembers = data.filter(units => units.battalion == "F-01 Hammer A-00")
+    // var admiraltyMembers = data.filter(units => units.battalion == "F-01 Holland A-00")
     // var academyMembers = data.filter(units => units.battalion == "F-01 Cr4zy A-01")
 
     var admiraltyMemberNames = admiraltyMembers.map(row =>`<option value="${row.sc_name}"></option>`).join('');
     var academyMemberNames = academyMembers.map(row =>`<option value="${row.sc_name}"></option>`).join('');
     
 
-    // if (selectBattalion === "F-01 Hammer A-00"){battalionMemberList.innerHTML = admiraltyMemberNames;}
-    // else if (selectBattalion === "F-01 Cr4zy A-01"){battalionMemberList.innerHTML = academyMemberNames;}
-    battalionMemberList.innerHTML = admiraltyMemberNames + academyMemberNames;
+    if (selectBattalion == "F-01 Holland A-00"){battalionMemberList.innerHTML = admiraltyMemberNames;}
+    else if (selectBattalion == "F-01 Cr4zy A-01"){battalionMemberList.innerHTML = academyMemberNames;}
+    // battalionMemberList.innerHTML = admiraltyMemberNames + academyMemberNames;
 }
