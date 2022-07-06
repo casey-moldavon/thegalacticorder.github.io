@@ -296,7 +296,7 @@ async function generateRosterData() {
 
 
 
-
+    return data;
 
 };
 
