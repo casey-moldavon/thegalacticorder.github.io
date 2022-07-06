@@ -372,7 +372,7 @@ function registerUnit() {
     let achieved_science3 = false;
 }
 
-async function fileReport() {
+function fileReport() {
 
     let battalion = document.getElementById('select_battalion');
     // += battalion # added to current num

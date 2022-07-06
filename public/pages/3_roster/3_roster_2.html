@@ -23,7 +23,7 @@
 
 </head>
 
-<body onload="generateCards()">
+<body onload="generateRosterData()">
 
 <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Navbar Start ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
@@ -175,7 +175,7 @@
                     <div class="form-group">
                         <label id="registered_member" for="select_member"class="col-form-label">Unit Name:</label>
                         <input class="form-control" list="battalion_member_list_options" id="select_member" placeholder="Select Member" name="member">
-                        <datalist onload="generateFileReport()" id="battalion_member_list_options">
+                        <datalist id="battalion_member_list_options">
                             <option value="Example 1"></option>
                             <option value="Example 2"></option>
                             <option value="Example 3"></option>

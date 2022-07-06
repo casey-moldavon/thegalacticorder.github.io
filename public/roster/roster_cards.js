@@ -1,6 +1,10 @@
-async function generateCards() {
+async function generateRosterData() {
     const response = await fetch('https://frolicking-frangipane-e2734e.netlify.app/.netlify/functions/roster');
     const data = await response.json();
+
+    const response2 = await fetch('https://frolicking-frangipane-e2734e.netlify.app/.netlify/functions/battalions');
+    const data2 = await response2.json();
+    
 
     let novitiatePlaceholder = document.getElementById('novitiate_division_dropdown');
     let sciencePlaceholder = document.getElementById('science_division_dropdown');
@@ -274,23 +278,30 @@ async function generateCards() {
 
 
 
-
     let fullMemberList = document.getElementById('full_member_list_options');
+    let fullBattalionList = document.getElementById('full_battalion_list_options');
+
 
     var allMemberNames = data.rows.map(row =>`<option value="${row.sc_name}"></option>`).join('');
+    var allBattalions = data2.rows.map(row =>`<option value="${row.battalion_name}"></option>`).join('');
+
 
     fullMemberList.innerHTML = allMemberNames;
+    fullBattalionList.innerHTML = allBattalions;
+
+
+
+
+
+
+
+
+
+
 };
 
 
-let fullBattalionList = document.getElementById('full_battalion_list_options');
-
-var allBattalions = data.rows.map(row =>`<option value="${row.battalion}"></option>`).join('');
-
-fullBattalionList.innerHTML = allBattalions;
-
-
-function generateFileReportList(){
+async function generateFileReportList(){
 
     let battalionMemberList = document.getElementById('battalion_member_list_options');
     let selectBattalion = document.getElementById('select_battalion');
