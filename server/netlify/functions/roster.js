@@ -19,16 +19,16 @@ const handler = async (event) => {
 
     let res = await client.query(`
         SELECT * FROM full_roster ORDER BY unit_id ASC;
-        SELECT * FROM battalion_roster ORDER BY battalion_id ASC;
-    `);
+        `);
+        
+        return {
+            statusCode: 200,
+            body: JSON.stringify({ rows: res.rows }),
+            headers: {
+                'Access-Control-Allow-Origin': '*'
+            }
+        };
+    }
     
-    return {
-        statusCode: 200,
-        body: JSON.stringify({ rows: res.rows }),
-        headers: {
-            'Access-Control-Allow-Origin': '*'
-        }
-    };
-}
-
-export { handler }
+    export { handler }
+    // SELECT * FROM battalion_roster ORDER BY battalion_id ASC;
