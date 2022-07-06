@@ -291,7 +291,30 @@ agronomyPlusButton.addEventListener('click', event => {
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+function fileReportNameDropdown() {
+
+    let namePlaceholder = document.getElementById('member_list_options')
+    
+    if (('#select_battalion') == "F-01 Cr4zy A-01") {
+        let unitName = data.rows.filter(units => units.battalion == "F-01 Cr4zy A-01")
+
+        var nameDropdown = unitName.map(
+            row =>`
+            <option value="${row.sc_name}"></option>
+        `).join('');
+
+        namePlaceholder.innerHTML = nameDropdown;
+
+    }
+}
+
 function registerUnit() {
+
+
+
+
+
+
     let sc_name = document.getElementById('unit_name');
     let discord_name = document.getElementById('unit_contact');
     let recruiter = document.getElementById('unit_recruiter');
