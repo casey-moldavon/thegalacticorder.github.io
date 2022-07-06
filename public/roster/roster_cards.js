@@ -274,20 +274,34 @@ async function generateCards() {
 
 
 
+
     let fullMemberList = document.getElementById('full_member_list_options');
+
+    var allMemberNames = data.rows.map(row =>`<option value="${row.sc_name}"></option>`).join('');
+
+    fullMemberList.innerHTML = allMemberNames;
+};
+
+
+let fullBattalionList = document.getElementById('full_battalion_list_options');
+
+var allBattalions = data.rows.map(row =>`<option value="${row.battalion}"></option>`).join('');
+
+fullBattalionList.innerHTML = allBattalions;
+
+
+function generateFileReportList(){
+
     let battalionMemberList = document.getElementById('battalion_member_list_options');
     let selectBattalion = document.getElementById('select_battalion');
 
     var admiraltyMembers = data.rows.filter(units => units.battalion == "F-01 Hammer A-00")
     var academyMembers = data.rows.filter(units => units.battalion == "F-01 Cr4zy A-01")
 
-    var allMemberNames = data.rows.map(row =>`<option value="${row.sc_name}"></option>`).join('');
     var admiraltyMemberNames = admiraltyMembers.map(row =>`<option value="${row.sc_name}"></option>`).join('');
     var academyMemberNames = academyMembers.map(row =>`<option value="${row.sc_name}"></option>`).join('');
-
-    fullMemberList.innerHTML = allMemberNames;
 
 
     if (selectBattalion == "F-01 Hammer A-00"){battalionMemberList.innerHTML = admiraltyMemberNames;}
     else if (selectBattalion == "F-01 Cr4zy A-01"){battalionMemberList.innerHTML = academyMemberNames;}
-};
+}
