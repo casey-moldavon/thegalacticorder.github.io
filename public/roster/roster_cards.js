@@ -1,4 +1,3 @@
-
 async function generateCards() {
     const response = await fetch('https://frolicking-frangipane-e2734e.netlify.app/.netlify/functions/roster');
     const data = await response.json();
@@ -9,7 +8,6 @@ async function generateCards() {
     let engineerPlaceholder = document.getElementById('engineer_division_dropdown');
     let combatPlaceholder = document.getElementById('combat_division_dropdown');
     let leadershipPlaceholder = document.getElementById('leadership_division_dropdown');
-
 
     var novitiates = data.rows.filter(units => units.unit_role == "Novitiate");
 
@@ -273,4 +271,23 @@ async function generateCards() {
     medicalPlaceholder.innerHTML = medicalCommanderCards + lieutenantCorpsmanCards + ensignMedicCards;
     sciencePlaceholder.innerHTML = scienceOfficerCards + laboratoryTechCards + fieldResearcherCards;
     leadershipPlaceholder.innerHTML = admiralCards + captainCards + eliteGuardCards + firstOfficerCards;
+
+
+
+    let fullMemberList = document.getElementById('full_member_list_options');
+    let battalionMemberList = document.getElementById('battalion_member_list_options');
+    let selectBattalion = document.getElementById('select_battalion');
+
+    var admiraltyMembers = data.rows.filter(units => units.battalion == "F-01 Hammer A-00")
+    var academyMembers = data.rows.filter(units => units.battalion == "F-01 Cr4zy A-01")
+
+    var allMemberNames = data.rows.map(row =>`<option value="${row.sc_name}"></option>`).join('');
+    var admiraltyMemberNames = admiraltyMembers.map(row =>`<option value="${row.sc_name}"></option>`).join('');
+    var academyMemberNames = academyMembers.map(row =>`<option value="${row.sc_name}"></option>`).join('');
+
+    fullMemberList.innerHTML = allMemberNames;
+
+
+    if (selectBattalion == "F-01 Hammer A-00"){battalionMemberList.innerHTML = admiraltyMemberNames;}
+    else if (selectBattalion == "F-01 Cr4zy A-01"){battalionMemberList.innerHTML = academyMemberNames;}
 };
