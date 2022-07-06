@@ -318,7 +318,7 @@ function generateBattalionNames(){
 
 
     let selectBattalion = document.getElementById('select_battalion');
-    let battalionMemberList = document.getElementById('select_member');
+    let battalionMemberList = document.getElementById('battalion_member_list_options');
 
     var admiraltyMembers = data.rows.filter(units => units.battalion == "F-01 Hammer A-00")
     var academyMembers = data.rows.filter(units => units.battalion == "F-01 Cr4zy A-01")
