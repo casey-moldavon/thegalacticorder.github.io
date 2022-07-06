@@ -310,7 +310,7 @@ async function generateButtonData(data) {
     return [data, data2];
 }
 
-// reportBattalionList does not display properly (from function above) if this function is made async
+
 function generateBattalionNames(){
 
     const array = generateButtonData();
@@ -325,11 +325,15 @@ function generateBattalionNames(){
     var admiraltyMemberNames = admiraltyMembers.map(row =>`<option value="${row.sc_name}"></option>`).join('');
     var academyMemberNames = academyMembers.map(row =>`<option value="${row.sc_name}"></option>`).join('');
 
+    
+    // battalionMemberList.innerHTML = admiraltyMemberNames + academyMemberNames;
     if (selectBattalion == "F-01 Hammer A-00"){battalionMemberList.innerHTML = admiraltyMemberNames;}
     else if (selectBattalion == "F-01 Cr4zy A-01"){battalionMemberList.innerHTML = academyMemberNames;}
 }
 
-
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 function registerUnit() {
 
 
