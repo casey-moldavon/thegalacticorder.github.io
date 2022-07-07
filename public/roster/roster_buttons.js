@@ -335,12 +335,12 @@ function generateBattalionNames(){
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 function registerUnit() {
 
-    let sc_name = document.getElementById('unit_name');
-    let discord_name = document.getElementById('unit_contact');
-    let recruiter = document.getElementById('unit_recruiter');
-    let battalion = document.getElementById('unit_battalion');
-    let start_date = document.getElementById('unit_start');
     // generate unit_id array[-1] + 1 (?)
+    let sc_name = document.getElementById('unit_name').value;
+    let discord_name = document.getElementById('unit_contact').value;
+    let recruiter = document.getElementById('unit_recruiter').value;
+    let battalion = document.getElementById('unit_battalion').value;
+    let start_date = document.getElementById('unit_start').value;
 
     let unit_role = "Novitiate";
     let unit_rank = "Rank 0";
@@ -390,6 +390,8 @@ function registerUnit() {
     let achieved_medical3 = false;
     let achieved_science2 = false;
     let achieved_science3 = false;
+
+    let recruit_list = [];
 
     // add function that refreshes page
 }

@@ -257,12 +257,170 @@ async function generateCardData() {
     var admiralCards = admirals.map(
         row =>
         `
-        <div id="leadership_card" class="card text-center" style="width: 9rem;">
+        <div id="leadership_card" type="button" class="card text-center" data-bs-toggle="collapse" data-bs-target="#unit_id_${row.sc_name}" aria-expanded="false" aria-controls="unit_id_${row.sc_name}" style="width: 9rem;">
         <div>
         <img id="card_image" src="../../ranks/badges/5-admiral.png" class="card-img-top" alt="...">
         </div>
         <p id="card_text">${row.unit_role}</p>
         <p id="card_name">${row.sc_name}</p>
+        </div>
+
+        <div class="collapse fixed-top" id="unit_id_${row.sc_name}">
+            <div class="container container-fluid" id="unit_id_container">
+
+            <div id="unit_id_close_button" type="button" data-bs-toggle="collapse" data-bs-target="#unit_id_${row.sc_name}" aria-expanded="false" aria-controls="unit_id_${row.sc_name}">
+                <i id="unit_id_close_button_icon" class="fa-solid fa-square-xmark"></i>
+            </div>
+
+            <p><a id="leadership_division">${row.sc_name} / ${row.discord_name}</a></p>
+            <p><a id="leadership_division">Rank ${row.unit_rank} : ${row.unit_role}</a></p>
+
+
+                <div class="row justify-content-center text-center">
+                    <div class="col">
+                        <div id="stored_events">
+                        <p>Events</p>
+                        <p class="text-center" id="total_events">${row.events}</p>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div id="stored_patrols">
+                        <p>Patrols</p>
+                        <p class="text-center" id="total_patrols">${row.patrols}</p>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div id="stored_hours">
+                        <p>Hours</p>
+                        <p class="text-center" id="total_hours">${row.hours}</p>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div id="stored_alerts">
+                        <p>Alerts</p>
+                        <p class="text-center" id="total_alerts">${row.alerts}</p>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div id="stored_warnings">
+                        <p>Warnings</p>
+                        <p class="text-center" id="total_warnings">${row.warnings}</p>
+                        </div>
+                    </div>
+
+
+
+                    <div class="col">
+                        <div type="button" id="stored_turret">
+                        <p>Turret</p>
+                        <p class="text-center" id="total_turret">${row.turret}</p>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div type="button" id="stored_ground_assault">
+                        <p>Ground Assault</p>
+                        <p class="text-center" id="total_ground_assault">${row.ground_assault}</p>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div type="button" id="stored_escort">
+                        <p>Escort</p>
+                        <p class="text-center" id="total_escort">${row.escort}</p>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div type="button" id="stored_inquiry">
+                        <p>Inquiry</p>
+                        <p class="text-center" id="total_inquiry">${row.inquiry}</p>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div type="button" id="stored_pilot_co_pilot">
+                        <p>Pilot / Co-Pilot</p>
+                        <p class="text-center" id="total_pilot_co_pilot">${row.pilot_co_pilot}</p>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div type="button" id="stored_mining">
+                        <p>Mining</p>
+                        <p class="text-center" id="total_mining">${row.mining}</p>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div type="button" id="stored_salvage">
+                        <p>Salvage</p>
+                        <p class="text-center" id="total_salvage">${row.salvage}</p>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div type="button" id="stored_cargo">
+                        <p>Cargo</p>
+                        <p class="text-center" id="total_cargo">${row.cargo}</p>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div type="button" id="stored_transit">
+                        <p>Transit</p>
+                        <p class="text-center" id="total_transit">${row.transit}</p>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div type="button" id="stored_support">
+                        <p>Support</p>
+                        <p class="text-center" id="total_support">${row.support}</p>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div type="button" id="stored_search_rescue">
+                        <p>Search & Rescue</p>
+                        <p class="text-center" id="total_search_rescue">${row.search_rescue}</p>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div type="button" id="stored_manage_data">
+                        <p>Manage Data</p>
+                        <p class="text-center" id="total_manage_data">${row.manage_data}</p>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div type="button" id="stored_research">
+                        <p>Research</p>
+                        <p class="text-center" id="total_research">${row.research}</p>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div type="button" id="stored_explore">
+                        <p>Explore</p>
+                        <p class="text-center" id="total_explore">${row.explore}</p>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div type="button" id="stored_agronomy">
+                        <p>Agronomy</p>
+                        <p class="text-center" id="total_agronomy">${row.agronomy}</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
     `).join('');
 
