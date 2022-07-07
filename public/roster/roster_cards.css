@@ -53,7 +53,9 @@
     font-size: 40px;
     position: absolute;
     text-shadow:
-        0 0 2px #b60031;
+        0 0 2px #b60031,
+        0 0 10px #ffffff,
+        0 0 15px #ffffff;
 }
 #unit_id_close_button:hover #unit_id_close_button_icon {
     color: #ffffff;
@@ -167,7 +169,15 @@
     background-color: #1c1c1c;
 }
 #leadership_name_container{
-    /* background-color: #1c1c1c; */
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+    box-shadow:
+    0 0 10px #ffffff,
+    0 0 15px #d6b44c,
+    0 0 20px #d6b44c;
+    
+    border-collapse: collapse;
+    background-color: #1c1c1c;
 }
 /* ~~~~~~~~~~~~~~~~~~~~ Leadership Modal End ~~~~~~~~~~~~~~~~~~~~ */
 
