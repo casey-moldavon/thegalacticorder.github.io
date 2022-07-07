@@ -285,14 +285,14 @@ async function generateCardData() {
 
                 <div id="leadership_name_container" class="container">
                     <div class="row">
-                        <div class="row">
+                        <div class="col">
                             <div id="stored_start_date">
                             <p>Start Date</p>
                             <p class="text-center" id="data_start_date">${row.start_date}</p>
                             </div>
                         </div>
 
-                        <div class="row">
+                        <div class="col">
                             <div id="stored_promotion_date">
                             <p>Last Date Promoted</p>
                             <p class="text-center" id="data_promotion_date">${row.promotion_date}</p>
