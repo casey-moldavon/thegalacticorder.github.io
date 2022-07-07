@@ -19,7 +19,6 @@ const handler = async (event) => {
 
     let res = await client.query(`
         SELECT * FROM full_roster ORDER BY unit_id ASC
-        CONVERT(DATE, '2010-12-20 22:52:43.133') DateOnly
         `);
         
         return {
