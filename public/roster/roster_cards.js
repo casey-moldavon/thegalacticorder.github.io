@@ -282,18 +282,18 @@ async function generateCardData() {
                     <p><a id="leadership_note">Rank ${row.unit_rank} : ${row.unit_role}</a></p>
                 </div>
 
-                <button type="button" data-bs-toggle="collapse" data-bs-target="#unit_service_progression_collapse">
+                <button type="button" data-bs-toggle="collapse" data-bs-target="#${row.sc_name}_service_progression_collapse">
                     Service Progression
                 </button>
-                <button type="button" data-bs-toggle="collapse" data-bs-target="#unit_mission_progression_collapse">
+                <button type="button" data-bs-toggle="collapse" data-bs-target="#${row.sc_name}_mission_progression_collapse">
                     Mission Progression
                 </button>
             </div>
         </div>
 
 
-        <div class="collapse fixed-top justify-content-center text-center" id="unit_service_progression_collapse">
-            <div class="container container-fluid">
+        <div class="collapse fixed-top justify-content-center text-center" id="${row.sc_name}_service_progression_collapse">
+            <div class="container container-fluid" id="unit_service_progression_collapse">
                 <div class="row">
 
                     <div class="row">
@@ -336,8 +336,8 @@ async function generateCardData() {
         </div>
 
 
-        <div class="collapse fixed-bottom justify-content-center text-center" id="unit_mission_progression_collapse">
-            <div class="container container-fluid" id="unit_mission_progression_container">
+        <div class="collapse fixed-top justify-content-center text-center" id="${row.sc_name}_mission_progression_collapse">
+            <div class="container container-fluid" id="unit_mission_progression_collapse">
                 <div class="row">
 
                     <div class="col">
