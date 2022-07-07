@@ -305,7 +305,8 @@ async function generateCardData() {
                     daily salary
                     bonus
                     bi weekly total
-                months
+
+                rank # months
                 total months
 
                 </div>
