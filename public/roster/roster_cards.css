@@ -42,6 +42,44 @@
     background-color: #1c1c1c;
 }
 
+#unit_service_progression_collapse {
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+    box-shadow:
+        0 0 5px #ffffff,
+        0 0 10px 5px #00c9ff;
+
+    border-collapse: collapse;
+    /* background-color: #1c1c1c; */
+    background-color: rgb(28, 28, 28, 0.85);
+
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    margin-top: 55px;
+    margin-left: 12%;
+    width: 180px;
+}
+#unit_mission_progression_container {
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+    box-shadow:
+        0 0 5px #ffffff,
+        0 0 10px 5px #00c9ff;
+
+    border-collapse: collapse;
+    /* background-color: #1c1c1c; */
+    background-color: rgb(28, 28, 28, 0.85);
+
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    margin-bottom: 20px;
+    width: 40%;
+    max-height: 87vh;
+    overflow-y: auto;
+}
+
 #unit_id_close_button {
     width: 50px;
     margin-right: -12.5px;
@@ -122,7 +160,7 @@
 }
 /* ~~~~~~~~~~~~~~~~~~~~ Leadership Card End ~~~~~~~~~~~~~~~~~~~~ */
 /* ~~~~~~~~~~~~~~~~~~~~ Leadership Modal Start ~~~~~~~~~~~~~~~~~~~~ */
-#unit_id_container {
+#leadership_unit_id_container {
     color: #ffffff;
     font-size: 17.9px;
     font-weight: bold;
@@ -149,7 +187,7 @@
     max-height: 87vh;
     overflow-y: auto;
 }
-#unit_id_image {
+#leadership_unit_id_image {
     width: 240px;
     height: 240px;
     float: left;
@@ -633,17 +671,6 @@
     margin-top: 17.5px;
     font-weight: bold;
 }
-#stored_turret:hover {
-    border: 2px solid #ffffff;
-    border-radius: 5px;
-    box-shadow:
-        0 0 5px #ffffff,
-        0 0 10px #b60031,
-        0 0 20px #b60031;
-
-    border-collapse: collapse;  
-    background-color: #b60031;
-}
 
 #stored_ground_assault {
     color: #ffffff;
@@ -662,17 +689,6 @@
 #total_ground_assault {
     margin-top: -10px;
     font-weight: bold;
-}
-#stored_ground_assault:hover {
-    border: 2px solid #ffffff;
-    border-radius: 5px;
-    box-shadow:
-        0 0 5px #ffffff,
-        0 0 10px #b60031,
-        0 0 20px #b60031;
-
-    border-collapse: collapse;  
-    background-color: #b60031;
 }
 
 #stored_escort {
@@ -693,17 +709,6 @@
     margin-top: 17.5px;
     font-weight: bold;
 }
-#stored_escort:hover {
-    border: 2px solid #ffffff;
-    border-radius: 5px;
-    box-shadow:
-        0 0 5px #ffffff,
-        0 0 10px #ad6cc2,
-        0 0 20px #ad6cc2;
-
-    border-collapse: collapse;  
-    background-color: #ad6cc2;
-}
 
 #stored_inquiry {
     color: #ffffff;
@@ -722,17 +727,6 @@
 #total_inquiry {
     margin-top: 17.5px;
     font-weight: bold;
-}
-#stored_inquiry:hover {
-    border: 2px solid #ffffff;
-    border-radius: 5px;
-    box-shadow:
-        0 0 5px #ffffff,
-        0 0 10px #b60031,
-        0 0 20px #b60031;
-
-    border-collapse: collapse;  
-    background-color: #b60031;
 }
 
 #stored_pilot_co_pilot {
@@ -753,17 +747,6 @@
     margin-top: -10px;
     font-weight: bold;
 }
-#stored_pilot_co_pilot:hover {
-    border: 2px solid #ffffff;
-    border-radius: 5px;
-    box-shadow:
-        0 0 5px #ffffff,
-        0 0 10px #ff7042,
-        0 0 20px #ff7042;
-
-    border-collapse: collapse;  
-    background-color: #ff7042;
-}
 
 #stored_mining {
     color: #ffffff;
@@ -782,17 +765,6 @@
 #total_mining {
     margin-top: 17.5px;
     font-weight: bold;
-}
-#stored_mining:hover {
-    border: 2px solid #ffffff;
-    border-radius: 5px;
-    box-shadow:
-        0 0 5px #ffffff,
-        0 0 10px #ff7042,
-        0 0 20px #ff7042;
-
-    border-collapse: collapse;  
-    background-color: #ff7042;
 }
 
 #stored_salvage {
@@ -813,17 +785,6 @@
     margin-top: 17.5px;
     font-weight: bold;
 }
-#stored_salvage:hover {
-    border: 2px solid #ffffff;
-    border-radius: 5px;
-    box-shadow:
-        0 0 5px #ffffff,
-        0 0 10px #ff7042,
-        0 0 20px #ff7042;
-
-    border-collapse: collapse;  
-    background-color: #ff7042;
-}
 
 #stored_cargo {
     color: #ffffff;
@@ -842,17 +803,6 @@
 #total_cargo {
     margin-top: 17.5px;
     font-weight: bold;
-}
-#stored_cargo:hover {
-    border: 2px solid #ffffff;
-    border-radius: 5px;
-    box-shadow:
-        0 0 5px #ffffff,
-        0 0 10px #ff7042,
-        0 0 20px #ff7042;
-
-    border-collapse: collapse;  
-    background-color: #ff7042;
 }
 
 #stored_transit {
@@ -873,17 +823,6 @@
     margin-top: 17.5px;
     font-weight: bold;
 }
-#stored_transit:hover {
-    border: 2px solid #ffffff;
-    border-radius: 5px;
-    box-shadow:
-        0 0 5px #ffffff,
-        0 0 10px #a17b9b,
-        0 0 20px #a17b9b;
-
-    border-collapse: collapse;  
-    background-color: #a17b9b;
-}
 
 #stored_support {
     color: #ffffff;
@@ -902,17 +841,6 @@
 #total_support {
     margin-top: 17.5px;
     font-weight: bold;
-}
-#stored_support:hover {
-    border: 2px solid #ffffff;
-    border-radius: 5px;
-    box-shadow:
-        0 0 5px #ffffff,
-        0 0 10px #a17b9b,
-        0 0 20px #a17b9b;
-
-    border-collapse: collapse;  
-    background-color: #a17b9b;
 }
 
 #stored_search_rescue {
@@ -933,17 +861,6 @@
     margin-top: -10px;
     font-weight: bold;
 }
-#stored_search_rescue:hover {
-    border: 2px solid #ffffff;
-    border-radius: 5px;
-    box-shadow:
-        0 0 5px #ffffff,
-        0 0 10px #4285f4,
-        0 0 20px #4285f4;
-
-    border-collapse: collapse;  
-    background-color: #4285f4;
-}
 
 #stored_manage_data{
     color: #ffffff;
@@ -962,17 +879,6 @@
 #total_manage_data{
     margin-top: -10px;
     font-weight: bold;
-}
-#stored_manage_data:hover {
-    border: 2px solid #ffffff;
-    border-radius: 5px;
-    box-shadow:
-        0 0 5px #ffffff,
-        0 0 10px #00b368,
-        0 0 20px #00b368;
-
-    border-collapse: collapse;  
-    background-color: #00b368;
 }
 
 #stored_research{
@@ -993,17 +899,6 @@
     margin-top: 17.5px;
     font-weight: bold;
 }
-#stored_research:hover {
-    border: 2px solid #ffffff;
-    border-radius: 5px;
-    box-shadow:
-        0 0 5px #ffffff,
-        0 0 10px #00b368,
-        0 0 20px #00b368;
-
-    border-collapse: collapse;  
-    background-color: #00b368;
-}
 
 #stored_explore{
     color: #ffffff;
@@ -1023,17 +918,6 @@
     margin-top: 17.5px;
     font-weight: bold;
 }
-#stored_explore:hover {
-    border: 2px solid #ffffff;
-    border-radius: 5px;
-    box-shadow:
-        0 0 5px #ffffff,
-        0 0 10px #00b368,
-        0 0 20px #00b368;
-
-    border-collapse: collapse;  
-    background-color: #00b368;
-}
 
 #stored_agronomy{
     color: #ffffff;
@@ -1052,17 +936,6 @@
 #total_agronomy{
     margin-top: 17.5px;
     font-weight: bold;
-}
-#stored_agronomy:hover {
-    border: 2px solid #ffffff;
-    border-radius: 5px;
-    box-shadow:
-        0 0 5px #ffffff,
-        0 0 10px #00b368,
-        0 0 20px #00b368;
-
-    border-collapse: collapse;  
-    background-color: #00b368;
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Extra ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
