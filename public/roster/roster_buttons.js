@@ -335,11 +335,6 @@ function generateBattalionNames(){
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 function registerUnit() {
 
-
-
-
-
-
     let sc_name = document.getElementById('unit_name');
     let discord_name = document.getElementById('unit_contact');
     let recruiter = document.getElementById('unit_recruiter');
@@ -395,6 +390,8 @@ function registerUnit() {
     let achieved_medical3 = false;
     let achieved_science2 = false;
     let achieved_science3 = false;
+
+    // add function that refreshes page
 }
 
 function fileReport() {
@@ -428,6 +425,8 @@ function fileReport() {
     let research = document.getElementById('mission_research');
     let explore = document.getElementById('mission_explore');
     let agronomy = document.getElementById('mission_agronomy');
+
+    // add function or code that clears data on modal (after entering it into the database) in every box except select_battalion
 }
 
 // needs if statement before sending to Database: if member (select_member) != "Select Member", then add data to database
