@@ -282,6 +282,35 @@ async function generateCardData() {
                     <p><a id="leadership_note">Rank ${row.unit_rank} : ${row.unit_role}</a></p>
                 </div>
 
+
+                <div id="leadership_name_container" class="container">
+                    <div class="row">
+                        <div class="row">
+                            <div id="stored_start_date">
+                            <p>Start Date</p>
+                            <p class="text-center" id="data_start_date">${row.start_date}</p>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div id="stored_promotion_date">
+                            <p>Last Date Promoted</p>
+                            <p class="text-center" id="data_promotion_date">${row.promotion_date}</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                Salary
+                    daily salary
+                    bonus
+                    bi weekly total
+                months
+                total months
+
+                </div>
+
+
                 <button type="button" data-bs-toggle="collapse" data-bs-target="#${row.sc_name}_service_progression_collapse">
                     Service Progression
                 </button>
@@ -299,35 +328,35 @@ async function generateCardData() {
                     <div class="row">
                         <div id="stored_events">
                         <p>Events</p>
-                        <p class="text-center" id="total_events">${row.events}</p>
+                        <p class="text-center" id="data_events">${row.events}</p>
                         </div>
                     </div>
 
                     <div class="row">
                         <div id="stored_patrols">
                         <p>Patrols</p>
-                        <p class="text-center" id="total_patrols">${row.patrols}</p>
+                        <p class="text-center" id="data_patrols">${row.patrols}</p>
                         </div>
                     </div>
 
                     <div class="row">
                         <div id="stored_hours">
                         <p>Hours</p>
-                        <p class="text-center" id="total_hours">${row.hours}</p>
+                        <p class="text-center" id="data_hours">${row.hours}</p>
                         </div>
                     </div>
 
                     <div class="row">
                         <div id="stored_alerts">
                         <p>Alerts</p>
-                        <p class="text-center" id="total_alerts">${row.alerts}</p>
+                        <p class="text-center" id="data_alerts">${row.alerts}</p>
                         </div>
                     </div>
 
                     <div class="row">
                         <div id="stored_warnings">
                         <p>Warnings</p>
-                        <p class="text-center" id="total_warnings">${row.warnings}</p>
+                        <p class="text-center" id="data_warnings">${row.warnings}</p>
                         </div>
                     </div>
 
@@ -343,105 +372,105 @@ async function generateCardData() {
                     <div class="col">
                         <div id="stored_turret">
                         <p>Turret</p>
-                        <p class="text-center" id="total_turret">${row.turret}</p>
+                        <p class="text-center" id="data_turret">${row.turret}</p>
                         </div>
                     </div>
 
                     <div class="col">
                         <div id="stored_ground_assault">
                         <p>Ground Assault</p>
-                        <p class="text-center" id="total_ground_assault">${row.ground_assault}</p>
+                        <p class="text-center" id="data_ground_assault">${row.ground_assault}</p>
                         </div>
                     </div>
 
                     <div class="col">
                         <div id="stored_escort">
                         <p>Escort</p>
-                        <p class="text-center" id="total_escort">${row.escort}</p>
+                        <p class="text-center" id="data_escort">${row.escort}</p>
                         </div>
                     </div>
 
                     <div class="col">
                         <div id="stored_inquiry">
                         <p>Inquiry</p>
-                        <p class="text-center" id="total_inquiry">${row.inquiry}</p>
+                        <p class="text-center" id="data_inquiry">${row.inquiry}</p>
                         </div>
                     </div>
 
                     <div class="col">
                         <div id="stored_pilot_co_pilot">
                         <p>Pilot / Co-Pilot</p>
-                        <p class="text-center" id="total_pilot_co_pilot">${row.pilot_co_pilot}</p>
+                        <p class="text-center" id="data_pilot_co_pilot">${row.pilot_co_pilot}</p>
                         </div>
                     </div>
 
                     <div class="col">
                         <div id="stored_mining">
                         <p>Mining</p>
-                        <p class="text-center" id="total_mining">${row.mining}</p>
+                        <p class="text-center" id="data_mining">${row.mining}</p>
                         </div>
                     </div>
 
                     <div class="col">
                         <div id="stored_salvage">
                         <p>Salvage</p>
-                        <p class="text-center" id="total_salvage">${row.salvage}</p>
+                        <p class="text-center" id="data_salvage">${row.salvage}</p>
                         </div>
                     </div>
 
                     <div class="col">
                         <div id="stored_cargo">
                         <p>Cargo</p>
-                        <p class="text-center" id="total_cargo">${row.cargo}</p>
+                        <p class="text-center" id="data_cargo">${row.cargo}</p>
                         </div>
                     </div>
 
                     <div class="col">
                         <div id="stored_transit">
                         <p>Transit</p>
-                        <p class="text-center" id="total_transit">${row.transit}</p>
+                        <p class="text-center" id="data_transit">${row.transit}</p>
                         </div>
                     </div>
 
                     <div class="col">
                         <div id="stored_support">
                         <p>Support</p>
-                        <p class="text-center" id="total_support">${row.support}</p>
+                        <p class="text-center" id="data_support">${row.support}</p>
                         </div>
                     </div>
 
                     <div class="col">
                         <div id="stored_search_rescue">
                         <p>Search & Rescue</p>
-                        <p class="text-center" id="total_search_rescue">${row.search_rescue}</p>
+                        <p class="text-center" id="data_search_rescue">${row.search_rescue}</p>
                         </div>
                     </div>
 
                     <div class="col">
                         <div id="stored_manage_data">
                         <p>Manage Data</p>
-                        <p class="text-center" id="total_manage_data">${row.manage_data}</p>
+                        <p class="text-center" id="data_manage_data">${row.manage_data}</p>
                         </div>
                     </div>
 
                     <div class="col">
                         <div id="stored_research">
                         <p>Research</p>
-                        <p class="text-center" id="total_research">${row.research}</p>
+                        <p class="text-center" id="data_research">${row.research}</p>
                         </div>
                     </div>
 
                     <div class="col">
                         <div id="stored_explore">
                         <p>Explore</p>
-                        <p class="text-center" id="total_explore">${row.explore}</p>
+                        <p class="text-center" id="data_explore">${row.explore}</p>
                         </div>
                     </div>
 
                     <div class="col">
                         <div id="stored_agronomy">
                         <p>Agronomy</p>
-                        <p class="text-center" id="total_agronomy">${row.agronomy}</p>
+                        <p class="text-center" id="data_agronomy">${row.agronomy}</p>
                         </div>
                     </div>
 

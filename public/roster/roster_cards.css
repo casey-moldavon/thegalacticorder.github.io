@@ -538,6 +538,58 @@
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ stored ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
+#stored_start_date {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    text-shadow:
+        0 0 10px #4285f4,
+        0 0 15px #4285f4;
+
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    background-color: #1c1c1c;
+    padding-top: 15px;
+    margin: 7.5px;
+    margin-bottom: 0;
+    width: 150px;
+    height: 90px;
+}
+#data_start_date {
+    margin-top: 17.5px;
+    font-weight: bold;
+}
+#stored_promotion_date {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    text-shadow:
+        0 0 10px #4285f4,
+        0 0 15px #4285f4;
+
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    background-color: #1c1c1c;
+    padding-top: 15px;
+    margin: 7.5px;
+    margin-bottom: 0;
+    width: 150px;
+    height: 90px;
+}
+#data_promotion_date {
+    margin-top: 17.5px;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
 #stored_events {
     color: #ffffff;
     font-size: 15px;
@@ -556,7 +608,7 @@
     width: 100px;
     height: 90px;
 }
-#total_events {
+#data_events {
     margin-top: 17.5px;
     font-weight: bold;
 }
@@ -578,7 +630,7 @@
     width: 100px;
     height: 90px;
 }
-#total_patrols {
+#data_patrols {
     margin-top: 17.5px;
     font-weight: bold;
 }
@@ -600,7 +652,7 @@
     width: 100px;
     height: 90px;
 }
-#total_hours {
+#data_hours {
     margin-top: 17.5px;
     font-weight: bold;
 }
@@ -623,7 +675,7 @@
     width: 100px;
     height: 90px;
 }
-#total_alerts {
+#data_alerts {
     margin-top: 17.5px;
     font-weight: bold;
 }
@@ -646,7 +698,7 @@
     width: 100px;
     height: 90px;
 }
-#total_warnings {
+#data_warnings {
     margin-top: 17.5px;
     font-weight: bold;
 }
@@ -665,7 +717,7 @@
     width: 100px;
     height: 90px;
 }
-#total_turret {
+#data_turret {
     margin-top: 17.5px;
     font-weight: bold;
 }
@@ -684,7 +736,7 @@
     width: 100px;
     height: 90px;
 }
-#total_ground_assault {
+#data_ground_assault {
     margin-top: -10px;
     font-weight: bold;
 }
@@ -703,7 +755,7 @@
     width: 100px;
     height: 90px;
 }
-#total_escort {
+#data_escort {
     margin-top: 17.5px;
     font-weight: bold;
 }
@@ -722,7 +774,7 @@
     width: 100px;
     height: 90px;
 }
-#total_inquiry {
+#data_inquiry {
     margin-top: 17.5px;
     font-weight: bold;
 }
@@ -741,7 +793,7 @@
     width: 100px;
     height: 90px;
 }
-#total_pilot_co_pilot {
+#data_pilot_co_pilot {
     margin-top: -10px;
     font-weight: bold;
 }
@@ -760,7 +812,7 @@
     width: 100px;
     height: 90px;
 }
-#total_mining {
+#data_mining {
     margin-top: 17.5px;
     font-weight: bold;
 }
@@ -779,7 +831,7 @@
     width: 100px;
     height: 90px;
 }
-#total_salvage {
+#data_salvage {
     margin-top: 17.5px;
     font-weight: bold;
 }
@@ -798,7 +850,7 @@
     width: 100px;
     height: 90px;
 }
-#total_cargo {
+#data_cargo {
     margin-top: 17.5px;
     font-weight: bold;
 }
@@ -817,7 +869,7 @@
     width: 100px;
     height: 90px;
 }
-#total_transit {
+#data_transit {
     margin-top: 17.5px;
     font-weight: bold;
 }
@@ -836,7 +888,7 @@
     width: 100px;
     height: 90px;
 }
-#total_support {
+#data_support {
     margin-top: 17.5px;
     font-weight: bold;
 }
@@ -855,7 +907,7 @@
     width: 100px;
     height: 90px;
 }
-#total_search_rescue {
+#data_search_rescue {
     margin-top: -10px;
     font-weight: bold;
 }
@@ -874,7 +926,7 @@
     width: 100px;
     height: 90px;
 }
-#total_manage_data{
+#data_manage_data{
     margin-top: -10px;
     font-weight: bold;
 }
@@ -893,7 +945,7 @@
     width: 100px;
     height: 90px;
 }
-#total_research{
+#data_research{
     margin-top: 17.5px;
     font-weight: bold;
 }
@@ -912,7 +964,7 @@
     width: 100px;
     height: 90px;
 }
-#total_explore{
+#data_explore{
     margin-top: 17.5px;
     font-weight: bold;
 }
@@ -931,7 +983,7 @@
     width: 100px;
     height: 90px;
 }
-#total_agronomy{
+#data_agronomy{
     margin-top: 17.5px;
     font-weight: bold;
 }
