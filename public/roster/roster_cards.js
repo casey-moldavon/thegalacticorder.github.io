@@ -272,6 +272,10 @@ async function generateCardData() {
                 <i id="unit_id_close_button_icon" class="fa-solid fa-square-xmark"></i>
             </div>
 
+            <div class="container">
+                <img id="unit_id_image" class="img-fluid" src="../../ranks/badges/5-admiral.png" alt="Commanded Image">
+            </div>
+
             <p><a id="leadership_division">${row.sc_name} / ${row.discord_name}</a></p>
             <p><a id="leadership_division">Rank ${row.unit_rank} : ${row.unit_role}</a></p>
 

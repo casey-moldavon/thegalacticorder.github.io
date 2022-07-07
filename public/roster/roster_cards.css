@@ -149,6 +149,13 @@
     max-height: 87vh;
     overflow-y: auto;
 }
+#unit_id_image {
+    width: 200px;
+    height: 200px;
+    float: left;
+    margin-top: -40px;
+    margin-left: -45px;
+}
 /* ~~~~~~~~~~~~~~~~~~~~ Leadership Modal End ~~~~~~~~~~~~~~~~~~~~ */
 
 
