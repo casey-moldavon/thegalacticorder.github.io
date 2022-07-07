@@ -172,9 +172,9 @@
     border: 2px solid #ffffff;
     border-radius: 2px;
     box-shadow:
-    0 0 10px #ffffff,
-    0 0 15px #d6b44c,
-    0 0 20px #d6b44c;
+        0 0 10px #ffffff,
+        0 0 15px #d6b44c,
+        0 0 20px #d6b44c;
     
     border-collapse: collapse;
     background-color: #1c1c1c;
