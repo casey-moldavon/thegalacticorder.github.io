@@ -138,10 +138,8 @@
     padding: 40px;
     margin-top: 50px;
     width: 45%;
-    /* background: rgba(255, 255, 255, 0.25); */
     
     background-image: url("logo.png");
-    /* background-image: url("order_background.jpg"); */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -150,11 +148,26 @@
     overflow-y: auto;
 }
 #unit_id_image {
-    width: 200px;
-    height: 200px;
+    width: 240px;
+    height: 240px;
     float: left;
+
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+    box-shadow:
+        0 0 10px #ffffff,
+        0 0 15px #d6b44c,
+        0 0 20px #d6b44c;
+
+    border-collapse: collapse;
+
     margin-top: -40px;
-    margin-left: -45px;
+    margin-left: -65px;
+    padding: 20px;
+    background-color: #1c1c1c;
+}
+#leadership_name_container{
+    /* background-color: #1c1c1c; */
 }
 /* ~~~~~~~~~~~~~~~~~~~~ Leadership Modal End ~~~~~~~~~~~~~~~~~~~~ */
 
