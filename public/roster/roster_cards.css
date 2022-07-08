@@ -50,31 +50,15 @@
         0 0 10px 5px #00c9ff;
 
     border-collapse: collapse;
-    background-color: rgb(28, 28, 28, 0.75);
+    background-color: rgb(28, 28, 28, 0.90);
 
     padding: 20px;
     padding-left: 25px;
     margin-top: 55px;
-    margin-left: 15%;
-    width: 150px;
-    float: left;
-}
-#unit_warning_progression_collapse {
-    border: 2px solid #ffffff;
-    border-radius: 2px;
-    box-shadow:
-        0 0 5px #ffffff,
-        0 0 10px 5px #00c9ff;
-
-    border-collapse: collapse;
-    background-color: rgb(28, 28, 28, 0.75);
-
-    padding: 20px;
-    padding-left: 25px;
-    margin-top: 55px;
-    margin-left: 5%;
-    width: 150px;
-    float: left;
+    margin-right: 5.5%;
+    /* width: 150px; */
+    width: 305px;
+    float: right;
 }
 #unit_mission_progression_collapse {
     border: 2px solid #ffffff;
@@ -84,7 +68,7 @@
         0 0 10px 5px #00c9ff;
 
     border-collapse: collapse;
-    background-color: rgb(28, 28, 28, 0.75);
+    background-color: rgb(28, 28, 28, 0.90);
 
     padding: 20px;
     padding-left: 25px;
@@ -114,6 +98,37 @@
     text-shadow:
         0 0 2px #ffffff,
         0 0 10px #ff0015;
+}
+
+#unit_id_progression_button {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Allerta Stencil', sans-serif;
+    box-shadow:
+        0 0 2px #b60031,
+        0 0 10px #ffffff;
+
+    border-collapse: collapse;
+    border: 2px solid #ff0015;
+    border-radius: 5px;
+    background-color: #ff0015;
+
+    margin-top: 30px;
+    margin-bottom: -10px;
+    margin-left: 15px;
+    margin-right: 15px;
+    width: 225px;
+}
+#unit_id_progression_button:hover {
+    color: #b60031;
+    box-shadow:
+        0 0 2px #b60031,
+        0 0 10px #b60031;
+
+    border-collapse: collapse;
+    border: 2px solid #b60031;
+    background-color: #ffffff;
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Leadership Division Start ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -192,34 +207,25 @@
     padding: 40px;
     margin-top: 50px;
     width: 45%;
-    height: 70vh;
+    min-width: 657px;
+    max-height: 750px;
+    overflow-x: auto;
+    overflow-y: auto;
     
     background-image: url("logo.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-color: rgb(28, 28, 28, 0.95);
-    max-height: 87vh;
-    overflow-y: auto;
+
 }
 #leadership_unit_id_image {
-    width: 240px;
-    height: 240px;
-    float: left;
-
-    border: 2px solid #ffffff;
     border-radius: 2px;
-    box-shadow:
-        0 0 10px #ffffff,
-        0 0 15px #d6b44c,
-        0 0 20px #d6b44c;
-
-    border-collapse: collapse;
-
-    margin-top: -40px;
-    margin-left: -65px;
-    padding: 20px;
-    background-color: #1c1c1c;
+    padding: 10px;
+    margin-top: -10px;
+    width: 200px;
+    height: 200px;
+    float: right;
 }
 #leadership_name_container{
     border: 2px solid #ffffff;
@@ -231,7 +237,8 @@
     
     border-collapse: collapse;
     background-color: #1c1c1c;
-    padding: 9px;
+    padding: 20px;
+    height: 220px;
 }
 #leadership_data_container{
     border: 2px solid #ffffff;
@@ -244,7 +251,10 @@
     border-collapse: collapse;
     background-color: #1c1c1c;
     padding-top: 20px;
+    padding-bottom: 20px;
     margin-top: 40px;
+    height: 300px;
+    max-height: 300px;
     overflow-y: auto;
 }
 /* ~~~~~~~~~~~~~~~~~~~~ Leadership Modal End ~~~~~~~~~~~~~~~~~~~~ */
@@ -568,8 +578,7 @@
 /* ~~~~~~~~~~~~~~~~~~~~ Novitiate Modal End ~~~~~~~~~~~~~~~~~~~~ */
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Novitiate Division End ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ stored ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Data Start ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 #stored_start_date {
     color: #ffffff;
     font-size: 15px;
@@ -611,7 +620,7 @@
     font-weight: bold;
 }
 
-
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Stored ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 #stored_recruits {
     color: #ffffff;
     font-size: 15px;
@@ -745,18 +754,6 @@
     margin-top: -10px;
     font-weight: bold;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 #stored_alerts {
     color: #ffffff;
     font-size: 15px;
@@ -803,7 +800,7 @@
     margin-top: 17.5px;
     font-weight: bold;
 }
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ missions ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Missions ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 #stored_turret {
     color: #ffffff;
     font-size: 15px;
@@ -1088,7 +1085,7 @@
     margin-top: 17.5px;
     font-weight: bold;
 }
-
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Data End ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Extra ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 #icon_round {
     color: #ff0015;

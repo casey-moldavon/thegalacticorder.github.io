@@ -297,11 +297,10 @@ async function generateCardData() {
                     <i id="unit_id_close_button_icon" class="fa-solid fa-square-xmark"></i>
                 </div>
 
-                <div class="container">
-                    <img id="leadership_unit_id_image" class="img-fluid" src="../../ranks/badges/5-admiral.png" alt="Commanded Image">
-                </div>
+                <div id="leadership_name_container" class="container text-start">
 
-                <div id="leadership_name_container" class="container">
+                <img id="leadership_unit_id_image" class="img-fluid" src="../../ranks/badges/5-admiral.png" alt="Commanded Image">
+
                     <p><a id="leadership_division_text_large">${row.sc_name}</a></p>
                     <p><a id="leadership_note">${row.discord_name}</a></p>
                     <p><a id="leadership_note">Rank ${row.unit_rank} : ${row.unit_role}</a></p>
@@ -311,6 +310,7 @@ async function generateCardData() {
 
                 <div id="leadership_data_container" class="container">
                     <div class="row">
+
                         <div class="col">
                             <div id="stored_start_date">
                             <p>Start Date (yyyy-mm-dd)</p>
@@ -326,22 +326,38 @@ async function generateCardData() {
                         </div>
 
                     </div>
+                    <div class="row">
+
+                        <div class="col">
+                            <div id="stored_promotion_date">
+                            <p>Last Date Promoted</p>
+                            <p class="text-center" id="data_promotion_date">${row.promotion_date.slice(0,10)}</p>
+                            </div>
+                        </div>
+
+                        
+                        Salary
+                        daily salary
+                        bonus
+                        bi weekly total
 
 
-                Salary
-                    daily salary
-                    bonus
-                    bi weekly total
-
+                    </div>
                 </div>
 
+                <div class="container container-fluid"
+                    <div class="row">
 
-                <button type="button" data-bs-toggle="collapse" data-bs-target="#${row.sc_name}_service_progression_collapse, #${row.sc_name}_warning_progression_collapse">
-                    Service Progression
-                </button>
-                <button type="button" data-bs-toggle="collapse" data-bs-target="#${row.sc_name}_mission_progression_collapse">
-                    Mission Progression
-                </button>
+                        <button id="unit_id_progression_button" type="button" data-bs-toggle="collapse" data-bs-target="#${row.sc_name}_mission_progression_collapse">
+                            Mission Progression
+                        </button>
+
+                        <button id="unit_id_progression_button" class="col" type="button" data-bs-toggle="collapse" data-bs-target="#${row.sc_name}_service_progression_collapse, #${row.sc_name}_warning_progression_collapse">
+                            Service Progression
+                        </button>
+
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -350,42 +366,48 @@ async function generateCardData() {
             <div class="container container-fluid" id="unit_service_progression_collapse">
                 <div class="row">
 
-                    <div class="row">
+                    <div class="col">
                         <div id="stored_recruits">
                         <p>Recruits</p>
                         <p class="text-center" id="data_recruits">${row.unit_recruits}</p>
                         </div>
                     </div>
 
-                    <div class="row">
-                        <div id="stored_events">
-                        <p>Events</p>
-                        <p class="text-center" id="data_events">${row.events}</p>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div id="stored_patrols">
-                        <p>Patrols</p>
-                        <p class="text-center" id="data_patrols">${row.patrols}</p>
-                        </div>
-                    </div>
-
-                    <div class="row">
+                    <div class="col">
                         <div id="stored_rank_hours">
                         <p>Rank ${row.unit_rank} Hours</p>
                         <p class="text-center" id="data_rank_hours">${row.hours}</p>
                         </div>
                     </div>
 
-                    <div class="row">
+                </div>
+                <div class="row">
+
+                    <div class="col">
+                        <div id="stored_events">
+                        <p>Events</p>
+                        <p class="text-center" id="data_events">${row.events}</p>
+                        </div>
+                    </div>
+
+                    <div class="col">
                         <div id="stored_rank_months">
                         <p>Rank ${row.unit_rank} Months</p>
                         <p class="text-center" id="data_rank_months">${monthDiff(row.promotion_date.slice(0,4), today.slice(0,4), row.promotion_date.slice(5,7), today.slice(5,7))}</p>
                         </div>
                     </div>
 
-                    <div class="row">
+                </div>
+                <div class="row">
+
+                    <div class="col">
+                        <div id="stored_patrols">
+                        <p>Patrols</p>
+                        <p class="text-center" id="data_patrols">${row.patrols}</p>
+                        </div>
+                    </div>
+
+                    <div class="col">
                         <div id="stored_total_months">
                         <p>Total Months</p>
                         <p class="text-center" id="data_total_months">${monthDiff(row.start_date.slice(0,4), today.slice(0,4), row.start_date.slice(5,7), today.slice(5,7))}</p>
@@ -393,27 +415,21 @@ async function generateCardData() {
                     </div>
 
                 </div>
-            </div>
-        </div>
-
-
-        <div class="collapse fixed-top justify-content-center text-center" id="${row.sc_name}_warning_progression_collapse">
-            <div class="container container-fluid" id="unit_warning_progression_collapse">
                 <div class="row">
 
-                <div class="row">
-                    <div id="stored_alerts">
-                    <p>Alerts</p>
-                    <p class="text-center" id="data_alerts">${row.alerts}</p>
+                    <div class="col">
+                        <div id="stored_alerts">
+                        <p>Alerts</p>
+                        <p class="text-center" id="data_alerts">${row.alerts}</p>
+                        </div>
                     </div>
-                </div>
 
-                <div class="row">
-                    <div id="stored_warnings">
-                    <p>Warnings</p>
-                    <p class="text-center" id="data_warnings">${row.warnings}</p>
+                    <div class="col">
+                        <div id="stored_warnings">
+                        <p>Warnings</p>
+                        <p class="text-center" id="data_warnings">${row.warnings}</p>
+                        </div>
                     </div>
-                </div>
 
                 </div>
             </div>

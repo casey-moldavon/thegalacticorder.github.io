@@ -346,7 +346,7 @@ function registerUnit() {
     let unit_rank = "Rank 0";
     let promotion_date = start_date;
     let unit_recruits = 0;
-    let pay_bonus = 0;
+    let veteran_bonus = 0;
 
     let events = 0;
     let patrols = 0;
