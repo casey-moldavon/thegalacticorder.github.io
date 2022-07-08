@@ -214,6 +214,19 @@
     
     border-collapse: collapse;
     background-color: #1c1c1c;
+    padding: 10px;
+}
+#leadership_data_container{
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+    box-shadow:
+        0 0 10px #ffffff,
+        0 0 15px #d6b44c,
+        0 0 20px #d6b44c;
+    
+    border-collapse: collapse;
+    background-color: #1c1c1c;
+    padding-top: 20px;
 }
 /* ~~~~~~~~~~~~~~~~~~~~ Leadership Modal End ~~~~~~~~~~~~~~~~~~~~ */
 
@@ -550,14 +563,12 @@
     border: 2px solid #ffffff;
     border-radius: 5px;
     background-color: #1c1c1c;
-    padding-top: 15px;
-    margin: 7.5px;
-    margin-bottom: 0;
-    width: 150px;
+    padding: 5px;
+    width: 120px;
     height: 90px;
 }
 #data_start_date {
-    margin-top: 17.5px;
+    margin-top: -10px;
     font-weight: bold;
 }
 #stored_promotion_date {
@@ -572,14 +583,52 @@
     border: 2px solid #ffffff;
     border-radius: 5px;
     background-color: #1c1c1c;
-    padding-top: 15px;
-    margin: 7.5px;
-    margin-bottom: 0;
-    width: 150px;
+    padding: 5px;
+    width: 120px;
     height: 90px;
 }
 #data_promotion_date {
-    margin-top: 17.5px;
+    margin-top: -10px;
+    font-weight: bold;
+}
+#stored_rank_months {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    text-shadow:
+        0 0 10px #4285f4,
+        0 0 15px #4285f4;
+
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    background-color: #1c1c1c;
+    padding: 5px;
+    width: 100px;
+    height: 90px;
+}
+#data_rank_months {
+    margin-top: -10px;
+    font-weight: bold;
+}
+#stored_total_months {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    text-shadow:
+        0 0 10px #4285f4,
+        0 0 15px #4285f4;
+
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    background-color: #1c1c1c;
+    padding: 5px;
+    width: 100px;
+    height: 90px;
+}
+#data_total_months {
+    margin-top: -10px;
     font-weight: bold;
 }
 

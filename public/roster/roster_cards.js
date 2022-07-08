@@ -34,6 +34,12 @@ async function generateCardData() {
     var captains = data.rows.filter(units => units.unit_role == "Captain");
     var admirals = data.rows.filter(units => units.unit_role == "Admiral");
 
+    var today = new Date();
+    var dd = String(today.getDate()).padStart(2, '0');
+    var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+    var yyyy = today.getFullYear();
+
+    today = yyyy + '-' + mm + '-' + dd;
 
     var novitiateCards = novitiates.map(
         row =>
@@ -283,19 +289,33 @@ async function generateCardData() {
                 </div>
 
 
-                <div id="leadership_name_container" class="container">
+                <div id="leadership_data_container" class="container">
                     <div class="row">
                         <div class="col">
                             <div id="stored_start_date">
-                            <p>Start Date</p>
-                            <p class="text-center" id="data_start_date">${row.start_date}</p>
+                            <p>Start Date (yyyy-mm-dd)</p>
+                            <p class="text-center" id="data_start_date">${row.start_date.slice(0,10)}</p>
                             </div>
                         </div>
 
                         <div class="col">
                             <div id="stored_promotion_date">
                             <p>Last Date Promoted</p>
-                            <p class="text-center" id="data_promotion_date">${row.promotion_date}</p>
+                            <p class="text-center" id="data_promotion_date">${row.promotion_date.slice(5,7)}</p>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div id="stored_rank_months">
+                            <p>Rank ${row.unit_rank} Months</p>
+                            <p class="text-center" id="data_rank_months">${parseInt(mm) - parseInt(row.promotion_date.slice(5,7))}</p>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div id="stored_total_months">
+                            <p>Total Months</p>
+                            <p class="text-center" id="data_total_months">${row.unit_rank}</p>
                             </div>
                         </div>
                     </div>
