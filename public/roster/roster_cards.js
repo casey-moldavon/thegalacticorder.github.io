@@ -13,6 +13,47 @@ function monthDiff(oldYear, currentYear, oldMonth, currentMonth) {
     return months <= 0 ? 0 : months;
 }
 
+function unitTotalPay(role, veteranBonus) {
+
+    if (role == "Novitiate") {return 0}
+    else if (role == "Ensign Trooper") {return 100 + ((100 / 10) * veteranBonus)}
+    else if (role == "Ensign Operator") {return 100 + ((100 / 10) * veteranBonus)}
+    else if (role == "Ensign Medic") {return 100 + ((100 / 10) * veteranBonus)}
+    else if (role == "Field Researcher") {return 100 + ((100 / 10) * veteranBonus)}
+
+    else if (role == "Outrider") {return 175 + ((175 / 10) * veteranBonus)}
+
+    else if (role == "Lieutenant Trooper") {return 250 + ((250 / 10) * veteranBonus)}
+    else if (role == "Shock Trooper") {return 250 + ((250 / 10) * veteranBonus)}
+    else if (role == "Lieutenant Engineer") {return 250 + ((250 / 10) * veteranBonus)}
+    else if (role == "Lieutenant Corpsman") {return 250 + ((250 / 10) * veteranBonus)}
+    else if (role == "Laboratory Tech") {return 250 + ((250 / 10) * veteranBonus)}
+
+    else if (role == "Trooper Commander") {return 500 + ((500 / 10) * veteranBonus)}
+    else if (role == "Engineer Commander") {return 500 + ((500 / 10) * veteranBonus)}
+    else if (role == "Medical Commander") {return 500 + ((500 / 10) * veteranBonus)}
+    else if (role == "Science Officer") {return 500 + ((500 / 10) * veteranBonus)}
+
+    else if (role == "1st Officer") {return 750 + ((750 / 10) * veteranBonus)}
+
+    else return 0
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 async function generateCardData() {
     const response = await fetch('https://frolicking-frangipane-e2734e.netlify.app/.netlify/functions/roster');
     const data = await response.json();
@@ -302,9 +343,9 @@ async function generateCardData() {
                 <img id="leadership_unit_id_image" class="img-fluid" src="../../ranks/badges/5-admiral.png" alt="Commanded Image">
 
                     <p><a id="leadership_division_text_large">${row.sc_name}</a></p>
-                    <p><a id="leadership_note">${row.discord_name}</a></p>
+                    <p><a id="novitiate_note">${row.discord_name}</a></p>
                     <p><a id="leadership_note">Rank ${row.unit_rank} : ${row.unit_role}</a></p>
-                    <p><a id="leadership_note">${row.battalion}</a></p>
+                    <p><a id="novitiate_note">${row.battalion}</a></p>
                 </div>
 
 
@@ -319,9 +360,9 @@ async function generateCardData() {
                         </div>
 
                         <div class="col">
-                            <div id="stored_promotion_date">
-                            <p>Last Date Promoted</p>
-                            <p class="text-center" id="data_promotion_date">${row.promotion_date.slice(0,10)}</p>
+                            <div id="stored_veteran_bonus">
+                            <p>Veteran Bonus</p>
+                            <p class="text-center" id="data_veteran_bonus">+${row.veteran_bonus * 10} %</p>
                             </div>
                         </div>
 
@@ -335,12 +376,12 @@ async function generateCardData() {
                             </div>
                         </div>
 
-                        
-                        Salary
-                        daily salary
-                        bonus
-                        bi weekly total
-
+                        <div class="col">
+                            <div id="stored_daily_pay">
+                            <p>Daily Salary</p>
+                            <p class="text-center" id="data_daily_pay">${unitTotalPay(row.unit_role, row.veteran_bonus)}</p>
+                            </div>
+                        </div>
 
                     </div>
                 </div>
