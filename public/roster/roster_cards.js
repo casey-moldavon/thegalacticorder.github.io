@@ -350,39 +350,41 @@ async function generateCardData() {
 
 
                 <div id="leadership_data_container" class="container">
-                    <div class="row">
+                    <div id="unit_data_container" class="container">
+                        <div class="row">
 
-                        <div class="col">
-                            <div id="stored_start_date">
-                            <p>Start Date (yyyy-mm-dd)</p>
-                            <p class="text-center" id="data_start_date">${row.start_date.slice(0,10)}</p>
+                            <div class="col">
+                                <div id="stored_start_date">
+                                <p>Start Date (yyyy-mm-dd)</p>
+                                <p class="text-center" id="data_start_date">${row.start_date.slice(0,10)}</p>
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="col">
-                            <div id="stored_veteran_bonus">
-                            <p>Veteran Bonus</p>
-                            <p class="text-center" id="data_veteran_bonus">+${row.veteran_bonus * 10} %</p>
+                            <div class="col">
+                                <div id="stored_veteran_bonus">
+                                <p>Veteran Bonus</p>
+                                <p class="text-center" id="data_veteran_bonus">+${row.veteran_bonus * 10} %</p>
+                                </div>
                             </div>
+
                         </div>
+                        <div class="row">
 
-                    </div>
-                    <div class="row">
-
-                        <div class="col">
-                            <div id="stored_promotion_date">
-                            <p>Last Date Promoted</p>
-                            <p class="text-center" id="data_promotion_date">${row.promotion_date.slice(0,10)}</p>
+                            <div class="col">
+                                <div id="stored_promotion_date">
+                                <p>Last Date Promoted</p>
+                                <p class="text-center" id="data_promotion_date">${row.promotion_date.slice(0,10)}</p>
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="col">
-                            <div id="stored_daily_pay">
-                            <p>Daily Salary</p>
-                            <p class="text-center" id="data_daily_pay">${unitTotalPay(row.unit_role, row.veteran_bonus)}</p>
+                            <div class="col">
+                                <div id="stored_daily_pay">
+                                <p>Daily Salary</p>
+                                <p class="text-center" id="data_daily_pay">${unitTotalPay(row.unit_role, row.veteran_bonus)}</p>
+                                </div>
                             </div>
+                        
                         </div>
-
                     </div>
                 </div>
 

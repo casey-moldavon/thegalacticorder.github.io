@@ -57,7 +57,7 @@
     margin-top: 55px;
     margin-right: 5.5%;
     /* width: 150px; */
-    width: 305px;
+    width: 275px;
     float: right;
 }
 #unit_mission_progression_collapse {
@@ -74,7 +74,7 @@
     padding-left: 25px;
     margin-top: 55px;
     margin-left: 1%;
-    width: 452px;
+    width: 400px;
     float: left;
 }
 
@@ -130,7 +130,21 @@
     border: 2px solid #b60031;
     background-color: #ffffff;
 }
+#unit_data_container {
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+    box-shadow:
+        0 0 5px #ffffff,
+        0 0 10px 5px #00c9ff;
 
+    border-collapse: collapse;
+    background-color: rgb(28, 28, 28, 0.90);
+
+    padding: 20px;
+    padding-right: 25px;
+    width: 275px;
+    float: left;
+}
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Leadership Division Start ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 #leadership_division_button {
     color: #ffffff;
@@ -253,7 +267,7 @@
     padding-top: 20px;
     padding-bottom: 20px;
     margin-top: 40px;
-    height: 300px;
+    height: 290px;
     max-height: 300px;
     overflow-y: auto;
 }
@@ -612,6 +626,7 @@
     border-radius: 5px;
     background-color: #1c1c1c;
     padding: 5px;
+    margin-top: 7.5px;
     width: 120px;
     height: 90px;
 }
@@ -634,9 +649,7 @@
     border-radius: 5px;
     background-color: #1c1c1c;
     padding-top: 5px;
-    margin: 7.5px;
-    margin-bottom: 0;
-    width: 100px;
+    width: 80px;
     height: 90px;
 }
 #data_veteran_bonus {
@@ -656,9 +669,8 @@
     border-radius: 5px;
     background-color: #1c1c1c;
     padding-top: 5px;
-    margin: 7.5px;
-    margin-bottom: 0;
-    width: 100px;
+    margin-top: 7.5px;
+    width: 80px;
     height: 90px;
 }
 #data_daily_pay {
@@ -679,7 +691,7 @@
     border-radius: 5px;
     background-color: #1c1c1c;
     padding-top: 15px;
-    margin: 7.5px;
+    /* margin-top: 7.5px; */
     margin-bottom: 0;
     width: 100px;
     height: 90px;
@@ -701,7 +713,7 @@
     border-radius: 5px;
     background-color: #1c1c1c;
     padding-top: 15px;
-    margin: 7.5px;
+    margin-top: 7.5px;
     margin-bottom: 0;
     width: 100px;
     height: 90px;
@@ -723,7 +735,7 @@
     border-radius: 5px;
     background-color: #1c1c1c;
     padding-top: 15px;
-    margin: 7.5px;
+    margin-top: 7.5px;
     margin-bottom: 0;
     width: 100px;
     height: 90px;
@@ -745,7 +757,7 @@
     border-radius: 5px;
     background-color: #1c1c1c;
     padding-top: 5px;
-    margin: 7.5px;
+    /* margin-top: 7.5px; */
     margin-bottom: 0;
     width: 100px;
     height: 90px;
@@ -767,7 +779,7 @@
     border-radius: 5px;
     background-color: #1c1c1c;
     padding-top: 5px;
-    margin: 7.5px;
+    margin-top: 7.5px;
     margin-bottom: 0;
     width: 100px;
     height: 90px;
@@ -790,7 +802,7 @@
     border-radius: 5px;
     background-color: #1c1c1c;
     padding-top: 5px;
-    margin: 7.5px;
+    margin-top: 7.5px;
     margin-bottom: 0;
     width: 100px;
     height: 90px;
@@ -813,7 +825,7 @@
     border-radius: 5px;
     background-color: #1c1c1c;
     padding-top: 15px;
-    margin: 7.5px;
+    margin-top: 7.5px;
     margin-bottom: 0;
     width: 100px;
     height: 90px;
@@ -836,7 +848,7 @@
     border-radius: 5px;
     background-color: #1c1c1c;
     padding-top: 15px;
-    margin: 7.5px;
+    margin-top: 7.5px;
     margin-bottom: 0;
     width: 100px;
     height: 90px;
@@ -855,7 +867,7 @@
     border-radius: 5px;
     background-color: #1c1c1c;
     padding-top: 15px;
-    margin: 7.5px;
+    /* margin-top: 7.5px; */
     margin-bottom: 0;
     width: 100px;
     height: 90px;
@@ -874,7 +886,7 @@
     border-radius: 5px;
     background-color: #1c1c1c;
     padding: 5px;
-    margin: 7.5px;
+    /* margin-top: 7.5px; */
     margin-bottom: 0;
     width: 100px;
     height: 90px;
@@ -893,7 +905,7 @@
     border-radius: 5px;
     background-color: #1c1c1c;
     padding-top: 15px;
-    margin: 7.5px;
+    /* margin-top: 7.5px; */
     margin-bottom: 0;
     width: 100px;
     height: 90px;
@@ -912,7 +924,7 @@
     border-radius: 5px;
     background-color: #1c1c1c;
     padding-top: 15px;
-    margin: 7.5px;
+    margin-top: 7.5px;
     margin-bottom: 0;
     width: 100px;
     height: 90px;
@@ -931,7 +943,7 @@
     border-radius: 5px;
     background-color: #1c1c1c;
     padding: 5px;
-    margin: 7.5px;
+    margin-top: 7.5px;
     margin-bottom: 0;
     width: 100px;
     height: 90px;
@@ -950,7 +962,7 @@
     border-radius: 5px;
     background-color: #1c1c1c;
     padding-top: 15px;
-    margin: 7.5px;
+    margin-top: 7.5px;
     margin-bottom: 0;
     width: 100px;
     height: 90px;
@@ -969,7 +981,7 @@
     border-radius: 5px;
     background-color: #1c1c1c;
     padding-top: 15px;
-    margin: 7.5px;
+    margin-top: 7.5px;
     margin-bottom: 0;
     width: 100px;
     height: 90px;
@@ -988,7 +1000,7 @@
     border-radius: 5px;
     background-color: #1c1c1c;
     padding-top: 15px;
-    margin: 7.5px;
+    margin-top: 7.5px;
     margin-bottom: 0;
     width: 100px;
     height: 90px;
@@ -1007,7 +1019,7 @@
     border-radius: 5px;
     background-color: #1c1c1c;
     padding-top: 15px;
-    margin: 7.5px;
+    margin-top: 7.5px;
     margin-bottom: 0;
     width: 100px;
     height: 90px;
@@ -1026,7 +1038,7 @@
     border-radius: 5px;
     background-color: #1c1c1c;
     padding-top: 15px;
-    margin: 7.5px;
+    margin-top: 7.5px;
     margin-bottom: 0;
     width: 100px;
     height: 90px;
@@ -1045,7 +1057,7 @@
     border-radius: 5px;
     background-color: #1c1c1c;
     padding: 5px;
-    margin: 7.5px;
+    margin-top: 7.5px;
     margin-bottom: 0;
     width: 100px;
     height: 90px;
@@ -1064,7 +1076,7 @@
     border-radius: 5px;
     background-color: #1c1c1c;
     padding: 5px;
-    margin: 7.5px;
+    margin-top: 7.5px;
     margin-bottom: 0;
     width: 100px;
     height: 90px;
@@ -1083,7 +1095,7 @@
     border-radius: 5px;
     background-color: #1c1c1c;
     padding-top: 15px;
-    margin: 7.5px;
+    margin-top: 7.5px;
     margin-bottom: 0;
     width: 100px;
     height: 90px;
@@ -1102,7 +1114,7 @@
     border-radius: 5px;
     background-color: #1c1c1c;
     padding-top: 15px;
-    margin: 7.5px;
+    margin-top: 7.5px;
     margin-bottom: 0;
     width: 100px;
     height: 90px;
@@ -1121,7 +1133,7 @@
     border-radius: 5px;
     background-color: #1c1c1c;
     padding-top: 15px;
-    margin: 7.5px;
+    margin-top: 7.5px;
     margin-bottom: 0;
     width: 100px;
     height: 90px;
