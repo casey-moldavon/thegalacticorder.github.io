@@ -55,7 +55,24 @@
     padding: 20px;
     padding-left: 25px;
     margin-top: 55px;
-    margin-left: 12%;
+    margin-left: 15%;
+    width: 150px;
+    float: left;
+}
+#unit_warning_progression_collapse {
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+    box-shadow:
+        0 0 5px #ffffff,
+        0 0 10px 5px #00c9ff;
+
+    border-collapse: collapse;
+    background-color: rgb(28, 28, 28, 0.75);
+
+    padding: 20px;
+    padding-left: 25px;
+    margin-top: 55px;
+    margin-left: 5%;
     width: 150px;
     float: left;
 }
@@ -214,7 +231,7 @@
     
     border-collapse: collapse;
     background-color: #1c1c1c;
-    padding: 10px;
+    padding: 9px;
 }
 #leadership_data_container{
     border: 2px solid #ffffff;
@@ -227,7 +244,8 @@
     border-collapse: collapse;
     background-color: #1c1c1c;
     padding-top: 20px;
-    margin-top: 75px;
+    margin-top: 40px;
+    overflow-y: auto;
 }
 /* ~~~~~~~~~~~~~~~~~~~~ Leadership Modal End ~~~~~~~~~~~~~~~~~~~~ */
 
@@ -558,8 +576,8 @@
     font-weight: bold;
     font-family: 'Montserrat', sans-serif;
     text-shadow:
-        0 0 10px #4285f4,
-        0 0 15px #4285f4;
+        0 0 10px #ad6cc2,
+        0 0 15px #ad6cc2;
 
     border: 2px solid #ffffff;
     border-radius: 5px;
@@ -594,19 +612,36 @@
 }
 
 
+#stored_recruits {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    text-shadow:
+        0 0 10px #ad6cc2,
+        0 0 15px #ad6cc2;
 
-
-
-
-
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    background-color: #1c1c1c;
+    padding-top: 15px;
+    margin: 7.5px;
+    margin-bottom: 0;
+    width: 100px;
+    height: 90px;
+}
+#data_recruits {
+    margin-top: 17.5px;
+    font-weight: bold;
+}
 #stored_events {
     color: #ffffff;
     font-size: 15px;
     font-weight: bold;
     font-family: 'Montserrat', sans-serif;
     text-shadow:
-        0 0 10px #4285f4,
-        0 0 15px #4285f4;
+        0 0 10px #ad6cc2,
+        0 0 15px #ad6cc2;
 
     border: 2px solid #ffffff;
     border-radius: 5px;
@@ -627,8 +662,8 @@
     font-weight: bold;
     font-family: 'Montserrat', sans-serif;
     text-shadow:
-        0 0 10px #4285f4,
-        0 0 15px #4285f4;
+        0 0 10px #ad6cc2,
+        0 0 15px #ad6cc2;
 
     border: 2px solid #ffffff;
     border-radius: 5px;
