@@ -592,47 +592,6 @@
     margin-top: -10px;
     font-weight: bold;
 }
-#stored_rank_months {
-    color: #ffffff;
-    font-size: 15px;
-    font-weight: bold;
-    font-family: 'Montserrat', sans-serif;
-    text-shadow:
-        0 0 10px #4285f4,
-        0 0 15px #4285f4;
-
-    border: 2px solid #ffffff;
-    border-radius: 5px;
-    background-color: #1c1c1c;
-    padding: 5px;
-    width: 100px;
-    height: 90px;
-}
-#data_rank_months {
-    margin-top: -10px;
-    font-weight: bold;
-}
-#stored_total_months {
-    color: #ffffff;
-    font-size: 15px;
-    font-weight: bold;
-    font-family: 'Montserrat', sans-serif;
-    text-shadow:
-        0 0 10px #4285f4,
-        0 0 15px #4285f4;
-
-    border: 2px solid #ffffff;
-    border-radius: 5px;
-    background-color: #1c1c1c;
-    padding: 5px;
-    width: 100px;
-    height: 90px;
-}
-#data_total_months {
-    margin-top: -10px;
-    font-weight: bold;
-}
-
 
 
 
@@ -684,7 +643,7 @@
     margin-top: 17.5px;
     font-weight: bold;
 }
-#stored_hours {
+#stored_rank_hours {
     color: #ffffff;
     font-size: 15px;
     font-weight: bold;
@@ -696,16 +655,73 @@
     border: 2px solid #ffffff;
     border-radius: 5px;
     background-color: #1c1c1c;
-    padding-top: 15px;
+    padding-top: 5px;
     margin: 7.5px;
     margin-bottom: 0;
     width: 100px;
     height: 90px;
 }
-#data_hours {
-    margin-top: 17.5px;
+#data_rank_hours {
+    margin-top: -10px;
     font-weight: bold;
 }
+#stored_rank_months {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    text-shadow:
+        0 0 10px #4285f4,
+        0 0 15px #4285f4;
+
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    background-color: #1c1c1c;
+    padding-top: 5px;
+    margin: 7.5px;
+    margin-bottom: 0;
+    width: 100px;
+    height: 90px;
+}
+#data_rank_months {
+    margin-top: -10px;
+    font-weight: bold;
+}
+#stored_total_months {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    text-shadow:
+        0 0 5px #4285f4,
+        0 0 10px #d6b44c,
+        0 0 15px #d6b44c;
+
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    background-color: #1c1c1c;
+    padding-top: 5px;
+    margin: 7.5px;
+    margin-bottom: 0;
+    width: 100px;
+    height: 90px;
+}
+#data_total_months {
+    margin-top: -10px;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 #stored_alerts {
     color: #ffffff;
     font-size: 15px;

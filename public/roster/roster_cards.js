@@ -1,3 +1,11 @@
+function monthDiff(d1, d2) {
+    var months;
+    months = (d2.getFullYear() - d1.getFullYear()) * 12;
+    months -= d1.getMonth();
+    months += d2.getMonth();
+    return months <= 0 ? 0 : months;
+}
+
 async function generateCardData() {
     const response = await fetch('https://frolicking-frangipane-e2734e.netlify.app/.netlify/functions/roster');
     const data = await response.json();
@@ -34,12 +42,16 @@ async function generateCardData() {
     var captains = data.rows.filter(units => units.unit_role == "Captain");
     var admirals = data.rows.filter(units => units.unit_role == "Admiral");
 
+
+
     var today = new Date();
     var dd = String(today.getDate()).padStart(2, '0');
     var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
     var yyyy = today.getFullYear();
 
     today = yyyy + '-' + mm + '-' + dd;
+
+
 
     var novitiateCards = novitiates.map(
         row =>
@@ -305,19 +317,6 @@ async function generateCardData() {
                             </div>
                         </div>
 
-                        <div class="col">
-                            <div id="stored_rank_months">
-                            <p>Rank ${row.unit_rank} Months</p>
-                            <p class="text-center" id="data_rank_months">${parseInt(mm) - parseInt(row.promotion_date.slice(5,7))}</p>
-                            </div>
-                        </div>
-
-                        <div class="col">
-                            <div id="stored_total_months">
-                            <p>Total Months</p>
-                            <p class="text-center" id="data_total_months">${row.unit_rank}</p>
-                            </div>
-                        </div>
                     </div>
 
 
@@ -361,9 +360,23 @@ async function generateCardData() {
                     </div>
 
                     <div class="row">
-                        <div id="stored_hours">
-                        <p>Hours</p>
-                        <p class="text-center" id="data_hours">${row.hours}</p>
+                        <div id="stored_rank_hours">
+                        <p>Rank ${row.unit_rank} Hours</p>
+                        <p class="text-center" id="data_rank_hours">${row.hours}</p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div id="stored_rank_months">
+                        <p>Rank ${row.unit_rank} Months</p>
+                        <p class="text-center" id="data_rank_months">0</p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div id="stored_total_months">
+                        <p>Total Months</p>
+                        <p class="text-center" id="data_total_months">0</p>
                         </div>
                     </div>
 
