@@ -397,19 +397,23 @@ async function generateCardData() {
                     </div>
                 </div>
 
-                <div class="container container-fluid"
+                <div class="container container-fluid">
                     <div class="row">
 
                         <button id="unit_id_progression_button" type="button" data-bs-toggle="collapse" data-bs-target="#${row.sc_name}_mission_progression_collapse">
                             Missions
                         </button>
 
+                        <button id="unit_id_progression_button" type="button" data-bs-toggle="collapse" data-bs-target="#${row.sc_name}_history_progression_collapse">
+                            History
+                        </button>
+                        
+                        <button id="unit_id_progression_button" class="button" type="button" data-bs-toggle="collapse" data-bs-target="#${row.sc_name}_service_progression_collapse, #${row.sc_name}_warning_progression_collapse">
+                            Service
+                        </button>
+                        
                         <button id="unit_id_progression_button" type="button" data-bs-toggle="collapse" data-bs-target="#${row.sc_name}_exam_progression_collapse">
                             Exams
-                        </button>
-
-                        <button id="unit_id_progression_button" class="col" type="button" data-bs-toggle="collapse" data-bs-target="#${row.sc_name}_service_progression_collapse, #${row.sc_name}_warning_progression_collapse">
-                            Service
                         </button>
 
                     </div>
@@ -646,6 +650,12 @@ async function generateCardData() {
                     </div>
 
                 </div>
+            </div>
+        </div>
+
+        <div class="collapse fixed-top justify-content-center text-center" id="${row.sc_name}_history_progression_collapse">
+            <div class="container container-fluid" id="unit_history_progression_collapse">
+                <p>${row.backstory}</p>
             </div>
         </div>
 
