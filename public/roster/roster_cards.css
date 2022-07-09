@@ -176,6 +176,23 @@
     width: 270px;
     float: left;
 }
+/* ~~~~~~~~~~~~~~~~~~~~ Symbols ~~~~~~~~~~~~~~~~~~~~ */
+#leadership_commendation_symbol {
+    color: #1c1c1c;
+    font-size: 50px;
+    border: 5px solid #1c1c1c;
+    border-radius: 50px;
+    box-shadow:
+    0 0 10px #ffffff;
+    
+    border-collapse: collapse;
+    padding: 15px;
+    margin: 20px;
+    background-color: #d6b44c;
+}
+
+
+
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Leadership Division Start ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 #leadership_division_button {
     color: #ffffff;

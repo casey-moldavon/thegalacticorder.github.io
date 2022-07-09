@@ -1,10 +1,4 @@
-// function monthDiff(d1, d2) {
-//     var months;
-//     months = (d2.getFullYear() - d1.getFullYear()) * 12;
-//     months -= d1.getMonth();
-//     months += d2.getMonth();
-//     return months <= 0 ? 0 : months;
-// }
+
 function monthDiff(oldYear, currentYear, oldMonth, currentMonth) {
     var months;
     months = (parseInt(currentYear) - parseInt(oldYear)) * 12;
@@ -52,9 +46,10 @@ function examPass(boolean) {
     else return "No Pass"
 }
 
-
-
-
+function leadershipCommendation(boolean) {
+    if (boolean == true) {return `<i class="fa-solid fa-medal" id="leadership_commendation_symbol"></i>`}
+    else return ``
+}
 
 
 
@@ -419,7 +414,17 @@ async function generateCardData() {
                     </div>
                 </div>
             </div>
+
+            ${leadershipCommendation(row.leadership_commendation)}
+            
         </div>
+
+
+
+
+
+
+
 
 
         <div class="collapse fixed-top justify-content-center text-center" id="${row.sc_name}_service_progression_collapse">
