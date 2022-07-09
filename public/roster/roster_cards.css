@@ -319,13 +319,6 @@
 #leadership_name_container{
     border: 2px solid #ffffff;
     border-radius: 2px;
-    /* box-shadow:
-        0 0 10px #ffffff,
-        0 0 15px #d6b44c,
-        0 0 20px #d6b44c;
-    
-    border-collapse: collapse; */
-    /* background-color: #1c1c1c; */
     background-color: rgb(28, 28, 28, 0.90);
     padding: 20px;
     height: 220px;
@@ -401,7 +394,57 @@
 }
 /* ~~~~~~~~~~~~~~~~~~~~ Combat Card End ~~~~~~~~~~~~~~~~~~~~ */
 /* ~~~~~~~~~~~~~~~~~~~~ Combat Modal Start ~~~~~~~~~~~~~~~~~~~~ */
+#combat_unit_id_container {
+    color: #ffffff;
+    font-size: 17.9px;
+    font-weight: bold;
+    /* font-family: 'Fanwood Text', serif; */
+    font-family: 'Montserrat', sans-serif;
+    
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+    box-shadow:
+        0 0 10px #ffffff,
+        0 0 15px #b60031,
+        0 0 20px #b60031;
 
+    border-collapse: collapse;
+    padding: 40px;
+    margin-top: 50px;
+    width: 657px;
+    min-width: 657px;
+    max-height: 750px;
+    overflow-x: auto;
+    overflow-y: auto;
+    
+    background-image: url("logo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #1c1c1c;
+    /* background-color: rgb(28, 28, 28, 0.90); */
+}
+#combat_unit_id_image {
+    border-radius: 2px;
+    padding: 10px;
+    margin-top: -10px;
+    width: 200px;
+    height: 200px;
+    float: right;
+}
+#combat_name_container{
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+    background-color: rgb(28, 28, 28, 0.90);
+    padding: 20px;
+    height: 220px;
+}
+#combat_data_container{
+    padding-top: 10px;
+    margin-top: 40px;
+    height: 250px;
+    max-height: 250px;
+}
 /* ~~~~~~~~~~~~~~~~~~~~ Combat Modal End ~~~~~~~~~~~~~~~~~~~~ */
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Combat Division End ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
@@ -465,7 +508,57 @@
 }
 /* ~~~~~~~~~~~~~~~~~~~~ Engineer Card End ~~~~~~~~~~~~~~~~~~~~ */
 /* ~~~~~~~~~~~~~~~~~~~~ Engineer Modal Start ~~~~~~~~~~~~~~~~~~~~ */
+#engineer_unit_id_container {
+    color: #ffffff;
+    font-size: 17.9px;
+    font-weight: bold;
+    /* font-family: 'Fanwood Text', serif; */
+    font-family: 'Montserrat', sans-serif;
+    
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+    box-shadow:
+        0 0 10px #ffffff,
+        0 0 15px #ff7042,
+        0 0 20px #ff7042;
 
+    border-collapse: collapse;
+    padding: 40px;
+    margin-top: 50px;
+    width: 657px;
+    min-width: 657px;
+    max-height: 750px;
+    overflow-x: auto;
+    overflow-y: auto;
+    
+    background-image: url("logo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #1c1c1c;
+    /* background-color: rgb(28, 28, 28, 0.90); */
+}
+#engineer_unit_id_image {
+    border-radius: 2px;
+    padding: 10px;
+    margin-top: -10px;
+    width: 200px;
+    height: 200px;
+    float: right;
+}
+#engineer_name_container{
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+    background-color: rgb(28, 28, 28, 0.90);
+    padding: 20px;
+    height: 220px;
+}
+#engineer_data_container{
+    padding-top: 10px;
+    margin-top: 40px;
+    height: 250px;
+    max-height: 250px;
+}
 /* ~~~~~~~~~~~~~~~~~~~~ Engineer Modal End ~~~~~~~~~~~~~~~~~~~~ */
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Engineer Division End ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
@@ -529,7 +622,57 @@
 }
 /* ~~~~~~~~~~~~~~~~~~~~ Medical Card End ~~~~~~~~~~~~~~~~~~~~ */
 /* ~~~~~~~~~~~~~~~~~~~~ Medical Modal Start ~~~~~~~~~~~~~~~~~~~~ */
+#medical_unit_id_container {
+    color: #ffffff;
+    font-size: 17.9px;
+    font-weight: bold;
+    /* font-family: 'Fanwood Text', serif; */
+    font-family: 'Montserrat', sans-serif;
+    
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+    box-shadow:
+        0 0 10px #ffffff,
+        0 0 15px #4285f4,
+        0 0 20px #4285f4;
 
+    border-collapse: collapse;
+    padding: 40px;
+    margin-top: 50px;
+    width: 657px;
+    min-width: 657px;
+    max-height: 750px;
+    overflow-x: auto;
+    overflow-y: auto;
+    
+    background-image: url("logo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #1c1c1c;
+    /* background-color: rgb(28, 28, 28, 0.90); */
+}
+#medical_unit_id_image {
+    border-radius: 2px;
+    padding: 10px;
+    margin-top: -10px;
+    width: 200px;
+    height: 200px;
+    float: right;
+}
+#medical_name_container{
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+    background-color: rgb(28, 28, 28, 0.90);
+    padding: 20px;
+    height: 220px;
+}
+#medical_data_container{
+    padding-top: 10px;
+    margin-top: 40px;
+    height: 250px;
+    max-height: 250px;
+}
 /* ~~~~~~~~~~~~~~~~~~~~ Medical Modal End ~~~~~~~~~~~~~~~~~~~~ */
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Medical Division End ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
@@ -593,7 +736,57 @@
 }
 /* ~~~~~~~~~~~~~~~~~~~~ Science Card End ~~~~~~~~~~~~~~~~~~~~ */
 /* ~~~~~~~~~~~~~~~~~~~~ Science Modal Start ~~~~~~~~~~~~~~~~~~~~ */
+#science_unit_id_container {
+    color: #ffffff;
+    font-size: 17.9px;
+    font-weight: bold;
+    /* font-family: 'Fanwood Text', serif; */
+    font-family: 'Montserrat', sans-serif;
+    
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+    box-shadow:
+        0 0 10px #ffffff,
+        0 0 15px #00b368,
+        0 0 20px #00b368;
 
+    border-collapse: collapse;
+    padding: 40px;
+    margin-top: 50px;
+    width: 657px;
+    min-width: 657px;
+    max-height: 750px;
+    overflow-x: auto;
+    overflow-y: auto;
+    
+    background-image: url("logo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #1c1c1c;
+    /* background-color: rgb(28, 28, 28, 0.90); */
+}
+#science_unit_id_image {
+    border-radius: 2px;
+    padding: 10px;
+    margin-top: -10px;
+    width: 200px;
+    height: 200px;
+    float: right;
+}
+#science_name_container{
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+    background-color: rgb(28, 28, 28, 0.90);
+    padding: 20px;
+    height: 220px;
+}
+#science_data_container{
+    padding-top: 10px;
+    margin-top: 40px;
+    height: 250px;
+    max-height: 250px;
+}
 /* ~~~~~~~~~~~~~~~~~~~~ Science Modal End ~~~~~~~~~~~~~~~~~~~~ */
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Science Division End ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
@@ -653,7 +846,57 @@
 }
 /* ~~~~~~~~~~~~~~~~~~~~ Novitiate Card End ~~~~~~~~~~~~~~~~~~~~ */
 /* ~~~~~~~~~~~~~~~~~~~~ Novitiate Modal Start ~~~~~~~~~~~~~~~~~~~~ */
+#novitiate_unit_id_container {
+    color: #ffffff;
+    font-size: 17.9px;
+    font-weight: bold;
+    /* font-family: 'Fanwood Text', serif; */
+    font-family: 'Montserrat', sans-serif;
+    
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+    box-shadow:
+        0 0 10px #ffffff,
+        0 0 15px #00c9ff,
+        0 0 20px #00c9ff;
 
+    border-collapse: collapse;
+    padding: 40px;
+    margin-top: 50px;
+    width: 657px;
+    min-width: 657px;
+    max-height: 750px;
+    overflow-x: auto;
+    overflow-y: auto;
+    
+    background-image: url("logo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #1c1c1c;
+    /* background-color: rgb(28, 28, 28, 0.90); */
+}
+#novitiate_unit_id_image {
+    border-radius: 2px;
+    padding: 10px;
+    margin-top: -10px;
+    width: 200px;
+    height: 200px;
+    float: right;
+}
+#novitiate_name_container{
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+    background-color: rgb(28, 28, 28, 0.90);
+    padding: 20px;
+    height: 220px;
+}
+#novitiate_data_container{
+    padding-top: 10px;
+    margin-top: 40px;
+    height: 250px;
+    max-height: 250px;
+}
 /* ~~~~~~~~~~~~~~~~~~~~ Novitiate Modal End ~~~~~~~~~~~~~~~~~~~~ */
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Novitiate Division End ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
