@@ -392,6 +392,7 @@ function registerUnit() {
     let achieved_science3 = false;
 
     let recruit_list = [];
+    let backstory = "";
 
     // add function that refreshes page
 }

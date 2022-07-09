@@ -190,8 +190,36 @@
     margin: 20px;
     background-color: #d6b44c;
 }
-
-
+#withheld_salary_symbol {
+    color: #1c1c1c;
+    font-size: 50px;
+    border: 5px solid #1c1c1c;
+    border-radius: 50px;
+    box-shadow:
+    0 0 10px #ffffff;
+    
+    border-collapse: collapse;
+    padding: 15px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin: 20px;
+    background-color: #00b368;
+}
+#battalion_discharged_symbol {
+    color: #ffffff;
+    font-size: 50px;
+    border: 5px solid #1c1c1c;
+    border-radius: 50px;
+    box-shadow:
+    0 0 10px #ffffff;
+    
+    border-collapse: collapse;
+    padding: 15px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin: 20px;
+    background-color: #424242;
+}
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Leadership Division Start ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 #leadership_division_button {

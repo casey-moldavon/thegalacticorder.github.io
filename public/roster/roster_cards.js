@@ -51,9 +51,15 @@ function leadershipCommendation(boolean) {
     else return ``
 }
 
+function withheldSalary(boolean) {
+    if (boolean == false) {return `<i class="fa-solid fa-hand-holding-dollar" id="withheld_salary_symbol"></i>`}
+    else return ``
+}
 
-
-
+function indicateDischarged(battalion) {
+    if (battalion == "None") {return `<i class="fa-solid fa-door-open" id="battalion_discharged_symbol"></i>`}
+    else return ``
+}
 
 
 
@@ -416,7 +422,9 @@ async function generateCardData() {
             </div>
 
             ${leadershipCommendation(row.leadership_commendation)}
-            
+            ${withheldSalary(row.active_salary)}
+            ${indicateDischarged(row.battalion)}
+
         </div>
 
 
