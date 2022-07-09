@@ -5413,7 +5413,7 @@ async function generateCardData() {
         `
         <div id="leadership_card" type="button" class="card text-center" data-bs-toggle="collapse" data-bs-target="#unit_id_${row.sc_name}" aria-expanded="false" aria-controls="unit_id_${row.sc_name}" style="width: 9rem;">
             <div>
-                <img id="card_image" src="../../ranks/emblems/emblem_4_elite.png" class="card-img-top" alt="...">
+                <img id="card_image" src="../../ranks/emblems/emblem_3_1st_officer.png" class="card-img-top" alt="...">
             </div>
             <p id="card_text">${row.unit_role}</p>
             <p id="card_name">${row.sc_name}</p>
@@ -5766,7 +5766,7 @@ async function generateCardData() {
         `
         <div id="leadership_card" type="button" class="card text-center" data-bs-toggle="collapse" data-bs-target="#unit_id_${row.sc_name}" aria-expanded="false" aria-controls="unit_id_${row.sc_name}" style="width: 9rem;">
             <div>
-                <img id="card_image" src="../../ranks/emblems/emblem_3_1st_officer.png" class="card-img-top" alt="...">
+                <img id="card_image" src="../../ranks/emblems/emblem_4_elite.png" class="card-img-top" alt="...">
             </div>
             <p id="card_text">${row.unit_role}</p>
             <p id="card_name">${row.sc_name}</p>

@@ -64,7 +64,7 @@ var navbar = `
                 <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown3">
                     <li><a class="dropdown-item" href="public/pages/3_roster/3_roster_1.html">Battalions</a></li>
                     <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="public/pages/3_roster/3_roster_1.html">Full Roster</a></li>
+                    <li><a class="dropdown-item" href="public/pages/3_roster/3_roster_2.html">Full Roster</a></li>
                     <li><hr class="dropdown-divider"></li>
                     <li><a class="dropdown-item" href="public/pages/3_roster/3_roster_3.html">Spec-Ops</a></li>
                 </ul>
