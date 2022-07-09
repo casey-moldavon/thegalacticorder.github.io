@@ -63,7 +63,6 @@ function indicateDischarged(battalion) {
 
 
 
-
 async function generateCardData() {
     const response = await fetch('https://frolicking-frangipane-e2734e.netlify.app/.netlify/functions/roster');
     const data = await response.json();
@@ -437,6 +436,23 @@ async function generateCardData() {
 
         <div class="collapse fixed-top justify-content-center text-center" id="${row.sc_name}_service_progression_collapse">
             <div class="container container-fluid" id="unit_service_progression_collapse">
+                <div class="row">
+
+                    <div class="col">
+                        <div id="stored_current_ppv">
+                        <p>Current PPVs</p>
+                        <p class="text-center" id="data_current_ppv">${row.current_ppv}</p>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div id="stored_past_ppv">
+                        <p>Previous PPVs</p>
+                        <p class="text-center" id="data_past_ppv">${row.past_ppv}</p>
+                        </div>
+                    </div>
+
+                </div>
                 <div class="row">
 
                     <div class="col">
