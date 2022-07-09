@@ -39,7 +39,13 @@ function unitTotalPay(role, veteranBonus) {
     else return 0
 }
 
+function properDateDisplay(unitDate) {
+    let day = unitDate.slice(8,10);
+    let month = unitDate.slice(5,7);
+    let year = unitDate.slice(0,4);
 
+    return month + "-" + day + "-" + year;
+}
 
 
 
@@ -349,14 +355,14 @@ async function generateCardData() {
                 </div>
 
 
-                <div id="leadership_data_container" class="container">
+                <div id="leadership_data_container" class="container container-fluid">
                     <div id="unit_data_container" class="container">
                         <div class="row">
 
                             <div class="col">
                                 <div id="stored_start_date">
-                                <p>Start Date (yyyy-mm-dd)</p>
-                                <p class="text-center" id="data_start_date">${row.start_date.slice(0,10)}</p>
+                                <p>Start Date</p>
+                                <p class="text-center" id="data_start_date">${properDateDisplay(row.start_date)}</p>
                                 </div>
                             </div>
 
@@ -373,7 +379,7 @@ async function generateCardData() {
                             <div class="col">
                                 <div id="stored_promotion_date">
                                 <p>Last Date Promoted</p>
-                                <p class="text-center" id="data_promotion_date">${row.promotion_date.slice(0,10)}</p>
+                                <p class="text-center" id="data_promotion_date">${properDateDisplay(row.promotion_date)}</p>
                                 </div>
                             </div>
 
