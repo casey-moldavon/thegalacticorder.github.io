@@ -54,9 +54,25 @@
     padding: 20px;
     padding-left: 25px;
     margin-top: 55px;
-    margin-right: 5.5%;
+    /* margin-right: 2.5%; */
     width: 275px;
-    float: right;
+    /* float: right; */
+}
+#unit_exam_progression_collapse {
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+    box-shadow:
+        0 0 5px #ffffff,
+        0 0 10px 5px #00c9ff;
+
+    border-collapse: collapse;
+    background-color: rgb(28, 28, 28, 0.90);
+
+    padding: 20px;
+    margin-top: 55px;
+    margin-right: 20%;
+    width: 170px;
+    /* float: right; */
 }
 #unit_mission_progression_collapse {
     border: 2px solid #ffffff;
@@ -71,9 +87,9 @@
     padding: 20px;
     padding-left: 25px;
     margin-top: 55px;
-    margin-left: 2.5%;
+    margin-left: 10%;
     width: 400px;
-    float: left;
+    /* float: left; */
 }
 
 #unit_id_close_button {
@@ -116,7 +132,7 @@
     margin-bottom: -10px;
     margin-left: 15px;
     margin-right: 15px;
-    width: 225px;
+    width: 125px;
 }
 #unit_id_progression_button:hover {
     color: #b60031;
@@ -128,6 +144,7 @@
     border: 2px solid #b60031;
     background-color: #ffffff;
 }
+
 #unit_data_container {
     border: 2px solid #ffffff;
     border-radius: 2px;
@@ -631,8 +648,8 @@
     font-weight: bold;
     font-family: 'Montserrat', sans-serif;
     text-shadow:
-        0 0 10px #4285f4,
-        0 0 15px #4285f4;
+        0 0 10px #00b368,
+        0 0 15px #00b368;
 
     border: 2px solid #ffffff;
     border-radius: 5px;
@@ -651,8 +668,8 @@
     font-weight: bold;
     font-family: 'Montserrat', sans-serif;
     text-shadow:
-        0 0 10px #4285f4,
-        0 0 15px #4285f4;
+        0 0 10px #00b368,
+        0 0 15px #00b368;
 
     border: 2px solid #ffffff;
     border-radius: 5px;
@@ -666,6 +683,122 @@
     margin-top: -10px;
     font-weight: bold;
 }
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Exams ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+#stored_protocol_exam {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    text-shadow:
+        0 0 10px #ffffff,
+        0 0 15px #00c9ff;
+
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    background-color: #1c1c1c;
+    padding-top: 7.5px;
+    /* margin-top: 7.5px; */
+    margin-left: 15px;
+    width: 120px;
+    height: 100px;
+}
+#data_protocol_exam {
+    margin-top: -10px;
+    font-weight: bold;
+}
+
+#stored_medical_exam {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    text-shadow:
+        0 0 10px #4285f4,
+        0 0 15px #4285f4;
+
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    background-color: #1c1c1c;
+    padding-top: 7.5px;
+    margin-top: 7.5px;
+    margin-left: 15px;
+    width: 120px;
+    height: 100px;
+}
+#data_medical_exam {
+    margin-top: -10px;
+    font-weight: bold;
+}
+
+#stored_g_tactical_exam {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    text-shadow:
+        0 0 10px #b60031,
+        0 0 15px #b60031;
+
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    background-color: #1c1c1c;
+    padding-top: 7.5px;
+    margin-top: 7.5px;
+    margin-left: 15px;
+    width: 120px;
+    height: 100px;
+}
+#data_g_tactical_exam {
+    margin-top: -10px;
+    font-weight: bold;
+}
+
+#stored_s_tactical_exam {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    text-shadow:
+        0 0 10px #b60031,
+        0 0 15px #b60031;
+
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    background-color: #1c1c1c;
+    padding-top: 7.5px;
+    margin-top: 7.5px;
+    margin-left: 15px;
+    width: 120px;
+    height: 100px;
+}
+#data_s_tactical_exam {
+    margin-top: -10px;
+    font-weight: bold;
+}
+
+#stored_officer_exam {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    text-shadow:
+        0 0 10px #d6b44c,
+        0 0 15px #d6b44c;
+
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    background-color: #1c1c1c;
+    padding-top: 7.5px;
+    margin-top: 7.5px;
+    margin-left: 15px;
+    width: 120px;
+    height: 100px;
+}
+#data_officer_exam {
+    margin-top: -10px;
+    font-weight: bold;
+}
+
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Stored ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 #stored_recruits {
     color: #ffffff;

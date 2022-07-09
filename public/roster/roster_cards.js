@@ -35,7 +35,7 @@ function unitTotalPay(role, veteranBonus) {
     else if (role == "Science Officer") {return 500 + ((500 / 10) * veteranBonus)}
 
     else if (role == "1st Officer") {return 750 + ((750 / 10) * veteranBonus)}
-
+    else if (role == "Elite Guard") {return 1500 + ((1500 / 10) * veteranBonus)}
     else return 0
 }
 
@@ -47,7 +47,10 @@ function properDateDisplay(unitDate) {
     return month + "-" + day + "-" + year;
 }
 
-
+function examPass(boolean) {
+    if (boolean == true) {return `<a id="complete">Pass</a>`}
+    else return "No Pass"
+}
 
 
 
@@ -398,11 +401,15 @@ async function generateCardData() {
                     <div class="row">
 
                         <button id="unit_id_progression_button" type="button" data-bs-toggle="collapse" data-bs-target="#${row.sc_name}_mission_progression_collapse">
-                            Mission Progression
+                            Missions
+                        </button>
+
+                        <button id="unit_id_progression_button" type="button" data-bs-toggle="collapse" data-bs-target="#${row.sc_name}_exam_progression_collapse">
+                            Exams
                         </button>
 
                         <button id="unit_id_progression_button" class="col" type="button" data-bs-toggle="collapse" data-bs-target="#${row.sc_name}_service_progression_collapse, #${row.sc_name}_warning_progression_collapse">
-                            Service Progression
+                            Service
                         </button>
 
                     </div>
@@ -477,6 +484,50 @@ async function generateCardData() {
                         <div id="stored_warnings">
                         <p>Warnings</p>
                         <p class="text-center" id="data_warnings">${row.warnings}</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="collapse fixed-top justify-content-center text-center" id="${row.sc_name}_exam_progression_collapse">
+            <div class="container container-fluid" id="unit_exam_progression_collapse">
+                <div class="col">
+
+                    <div class="row">
+                        <div id="stored_protocol_exam">
+                        <p>Protocol Exam</p>
+                        <p class="text-center" id="data_protocol_exam">${examPass(row.protocol_exam)}</p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div id="stored_medical_exam">
+                        <p>Medical T-2 Exam</p>
+                        <p class="text-center" id="data_medical_exam">${examPass(row.medical_exam)}</p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div id="stored_g_tactical_exam">
+                        <p>G-Tactical Exam</p>
+                        <p class="text-center" id="data_g_tactical_exam">${examPass(row.g_tactical_exam)}</p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div id="stored_s_tactical_exam">
+                        <p>S-Tactical Exam</p>
+                        <p class="text-center" id="data_s_tactical_exam">${examPass(row.s_tactical_exam)}</p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div id="stored_officer_exam">
+                        <p>Officer Exam</p>
+                        <p class="text-center" id="data_officer_exam">${examPass(row.officer_exam)}</p>
                         </div>
                     </div>
 
