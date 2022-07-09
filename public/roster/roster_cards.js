@@ -130,7 +130,7 @@ async function generateCardData() {
 
                 <div id="novitiate_name_container" class="container text-start">
 
-                <img id="novitiate_unit_id_image" class="img-fluid" src="../../ranks/badges/5-admiral.png" alt="Commanded Image">
+                <img id="novitiate_unit_id_image" class="img-fluid" src="../../ranks/badges/0-novitiate.png" alt="Novitiate Image">
 
                     <p><a id="novitiate_division_text_large">${row.sc_name}</a></p>
                     <p><a id="novitiate_note">${row.discord_name}</a></p>
@@ -483,7 +483,7 @@ async function generateCardData() {
 
                 <div id="combat_name_container" class="container text-start">
 
-                <img id="combat_unit_id_image" class="img-fluid" src="../../ranks/badges/5-admiral.png" alt="Commanded Image">
+                <img id="combat_unit_id_image" class="img-fluid" src="../../ranks/badges/1-ensign.png" alt="Ensign Image">
 
                     <p><a id="combat_division_text_large">${row.sc_name}</a></p>
                     <p><a id="novitiate_note">${row.discord_name}</a></p>
@@ -836,7 +836,7 @@ async function generateCardData() {
 
                 <div id="engineer_name_container" class="container text-start">
 
-                <img id="engineer_unit_id_image" class="img-fluid" src="../../ranks/badges/5-admiral.png" alt="Commanded Image">
+                <img id="combat_unit_id_image" class="img-fluid" src="../../ranks/badges/1-ensign.png" alt="Ensign Image">
 
                     <p><a id="engineer_division_text_large">${row.sc_name}</a></p>
                     <p><a id="novitiate_note">${row.discord_name}</a></p>
@@ -1189,7 +1189,7 @@ async function generateCardData() {
 
             <div id="medical_name_container" class="container text-start">
 
-            <img id="medical_unit_id_image" class="img-fluid" src="../../ranks/badges/5-admiral.png" alt="Commanded Image">
+            <img id="combat_unit_id_image" class="img-fluid" src="../../ranks/badges/1-ensign.png" alt="Ensign Image">
 
                 <p><a id="medical_division_text_large">${row.sc_name}</a></p>
                 <p><a id="novitiate_note">${row.discord_name}</a></p>
@@ -1542,7 +1542,7 @@ async function generateCardData() {
 
                 <div id="science_name_container" class="container text-start">
 
-                <img id="science_unit_id_image" class="img-fluid" src="../../ranks/badges/5-admiral.png" alt="Commanded Image">
+                <img id="combat_unit_id_image" class="img-fluid" src="../../ranks/badges/1-ensign.png" alt="Ensign Image">
 
                     <p><a id="science_division_text_large">${row.sc_name}</a></p>
                     <p><a id="novitiate_note">${row.discord_name}</a></p>
@@ -1896,7 +1896,7 @@ async function generateCardData() {
 
                 <div id="combat_name_container" class="container text-start">
 
-                <img id="combat_unit_id_image" class="img-fluid" src="../../ranks/badges/5-admiral.png" alt="Commanded Image">
+                <img id="combat_unit_id_image" class="img-fluid" src="../../ranks/badges/2-lieutenant.png" alt="Lieutenant Image">
 
                     <p><a id="combat_division_text_large">${row.sc_name}</a></p>
                     <p><a id="novitiate_note">${row.discord_name}</a></p>
@@ -2249,7 +2249,7 @@ async function generateCardData() {
 
                 <div id="combat_name_container" class="container text-start">
 
-                <img id="combat_unit_id_image" class="img-fluid" src="../../ranks/badges/5-admiral.png" alt="Commanded Image">
+                <img id="combat_unit_id_image" class="img-fluid" src="../../ranks/badges/2-lieutenant.png" alt="Lieutenant Image">
 
                     <p><a id="combat_division_text_large">${row.sc_name}</a></p>
                     <p><a id="novitiate_note">${row.discord_name}</a></p>
@@ -2602,7 +2602,7 @@ async function generateCardData() {
 
                 <div id="combat_name_container" class="container text-start">
 
-                <img id="combat_unit_id_image" class="img-fluid" src="../../ranks/badges/5-admiral.png" alt="Commanded Image">
+                <img id="combat_unit_id_image" class="img-fluid" src="../../ranks/badges/2-lieutenant.png" alt="Lieutenant Image">
 
                     <p><a id="combat_division_text_large">${row.sc_name}</a></p>
                     <p><a id="novitiate_note">${row.discord_name}</a></p>
@@ -2955,7 +2955,7 @@ async function generateCardData() {
 
                 <div id="engineer_name_container" class="container text-start">
 
-                <img id="engineer_unit_id_image" class="img-fluid" src="../../ranks/badges/5-admiral.png" alt="Commanded Image">
+                <img id="combat_unit_id_image" class="img-fluid" src="../../ranks/badges/2-lieutenant.png" alt="Lieutenant Image">
 
                     <p><a id="engineer_division_text_large">${row.sc_name}</a></p>
                     <p><a id="novitiate_note">${row.discord_name}</a></p>
@@ -3308,7 +3308,7 @@ async function generateCardData() {
 
             <div id="medical_name_container" class="container text-start">
 
-            <img id="medical_unit_id_image" class="img-fluid" src="../../ranks/badges/5-admiral.png" alt="Commanded Image">
+            <img id="combat_unit_id_image" class="img-fluid" src="../../ranks/badges/2-lieutenant.png" alt="Lieutenant Image">
 
                 <p><a id="medical_division_text_large">${row.sc_name}</a></p>
                 <p><a id="novitiate_note">${row.discord_name}</a></p>
@@ -3661,7 +3661,7 @@ async function generateCardData() {
 
                 <div id="science_name_container" class="container text-start">
 
-                <img id="science_unit_id_image" class="img-fluid" src="../../ranks/badges/5-admiral.png" alt="Commanded Image">
+                <img id="combat_unit_id_image" class="img-fluid" src="../../ranks/badges/2-lieutenant.png" alt="Lieutenant Image">
 
                     <p><a id="science_division_text_large">${row.sc_name}</a></p>
                     <p><a id="novitiate_note">${row.discord_name}</a></p>
@@ -4015,7 +4015,7 @@ async function generateCardData() {
 
                 <div id="combat_name_container" class="container text-start">
 
-                <img id="combat_unit_id_image" class="img-fluid" src="../../ranks/badges/5-admiral.png" alt="Commanded Image">
+                <img id="combat_unit_id_image" class="img-fluid" src="../../ranks/badges/3-commander.png" alt="Commander Image">
 
                     <p><a id="combat_division_text_large">${row.sc_name}</a></p>
                     <p><a id="novitiate_note">${row.discord_name}</a></p>
@@ -4368,7 +4368,7 @@ async function generateCardData() {
 
                 <div id="engineer_name_container" class="container text-start">
 
-                <img id="engineer_unit_id_image" class="img-fluid" src="../../ranks/badges/5-admiral.png" alt="Commanded Image">
+                <img id="combat_unit_id_image" class="img-fluid" src="../../ranks/badges/3-commander.png" alt="Commander Image">
 
                     <p><a id="engineer_division_text_large">${row.sc_name}</a></p>
                     <p><a id="novitiate_note">${row.discord_name}</a></p>
@@ -4721,7 +4721,7 @@ async function generateCardData() {
 
             <div id="medical_name_container" class="container text-start">
 
-            <img id="medical_unit_id_image" class="img-fluid" src="../../ranks/badges/5-admiral.png" alt="Commanded Image">
+            <img id="combat_unit_id_image" class="img-fluid" src="../../ranks/badges/3-commander.png" alt="Commander Image">
 
                 <p><a id="medical_division_text_large">${row.sc_name}</a></p>
                 <p><a id="novitiate_note">${row.discord_name}</a></p>
@@ -5074,7 +5074,7 @@ async function generateCardData() {
 
                 <div id="science_name_container" class="container text-start">
 
-                <img id="science_unit_id_image" class="img-fluid" src="../../ranks/badges/5-admiral.png" alt="Commanded Image">
+                <img id="combat_unit_id_image" class="img-fluid" src="../../ranks/badges/3-commander.png" alt="Commander Image">
 
                     <p><a id="science_division_text_large">${row.sc_name}</a></p>
                     <p><a id="novitiate_note">${row.discord_name}</a></p>
@@ -5428,7 +5428,7 @@ async function generateCardData() {
 
                 <div id="leadership_name_container" class="container text-start">
 
-                <img id="leadership_unit_id_image" class="img-fluid" src="../../ranks/badges/5-admiral.png" alt="Commanded Image">
+                <img id="combat_unit_id_image" class="img-fluid" src="../../ranks/badges/3-commander.png" alt="Commander Image">
 
                     <p><a id="leadership_division_text_large">${row.sc_name}</a></p>
                     <p><a id="novitiate_note">${row.discord_name}</a></p>
@@ -5781,7 +5781,7 @@ async function generateCardData() {
 
                 <div id="leadership_name_container" class="container text-start">
 
-                <img id="leadership_unit_id_image" class="img-fluid" src="../../ranks/badges/5-admiral.png" alt="Commanded Image">
+                <img id="leadership_unit_id_image" class="img-fluid" src="../../ranks/badges/4-captain.png" alt="Captain Image">
 
                     <p><a id="leadership_division_text_large">${row.sc_name}</a></p>
                     <p><a id="novitiate_note">${row.discord_name}</a></p>
@@ -6134,7 +6134,7 @@ async function generateCardData() {
 
                 <div id="leadership_name_container" class="container text-start">
 
-                <img id="leadership_unit_id_image" class="img-fluid" src="../../ranks/badges/5-admiral.png" alt="Commanded Image">
+                <img id="leadership_unit_id_image" class="img-fluid" src="../../ranks/badges/4-captain.png" alt="Captain Image">
 
                     <p><a id="leadership_division_text_large">${row.sc_name}</a></p>
                     <p><a id="novitiate_note">${row.discord_name}</a></p>
@@ -6487,7 +6487,7 @@ async function generateCardData() {
 
                 <div id="leadership_name_container" class="container text-start">
 
-                <img id="leadership_unit_id_image" class="img-fluid" src="../../ranks/badges/5-admiral.png" alt="Commanded Image">
+                <img id="leadership_unit_id_image" class="img-fluid" src="../../ranks/badges/5-admiral.png" alt="Admiral Image">
 
                     <p><a id="leadership_division_text_large">${row.sc_name}</a></p>
                     <p><a id="novitiate_note">${row.discord_name}</a></p>
