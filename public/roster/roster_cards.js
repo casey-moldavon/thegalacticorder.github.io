@@ -6511,7 +6511,7 @@ async function generateCardData() {
                             <div class="col">
                                 <div id="stored_start_date">
                                 <p>Start Date</p>
-                                <p class="text-center" id="data_spo_start_date">${properDateDisplay(row.start_date)}</p>
+                                <p class="text-center" id="data_start_date">${properDateDisplay(row.start_date)}</p>
                                 </div>
                             </div>
 
@@ -6528,7 +6528,7 @@ async function generateCardData() {
                             <div class="col">
                                 <div id="stored_promotion_date">
                                 <p>Last Date Promoted</p>
-                                <p class="text-center" id="data_spo_promotion_date">${properDateDisplay(row.promotion_date)}</p>
+                                <p class="text-center" id="data_promotion_date">${properDateDisplay(row.promotion_date)}</p>
                                 </div>
                             </div>
 
@@ -6621,7 +6621,7 @@ async function generateCardData() {
                     <div class="col">
                         <div id="stored_rank_months">
                         <p>Rank ${row.unit_rank} Months</p>
-                        <p class="text-center" id="data_spo_rank_months">${monthDiff(row.promotion_date.slice(0,4), today.slice(0,4), row.promotion_date.slice(5,7), today.slice(5,7))}</p>
+                        <p class="text-center" id="data_rank_months">${monthDiff(row.promotion_date.slice(0,4), today.slice(0,4), row.promotion_date.slice(5,7), today.slice(5,7))}</p>
                         </div>
                     </div>
 
@@ -6638,7 +6638,7 @@ async function generateCardData() {
                     <div class="col">
                         <div id="stored_total_months">
                         <p>Total Months</p>
-                        <p class="text-center" id="data_spo_total_months">${monthDiff(row.start_date.slice(0,4), today.slice(0,4), row.start_date.slice(5,7), today.slice(5,7))}</p>
+                        <p class="text-center" id="data_total_months">${monthDiff(row.start_date.slice(0,4), today.slice(0,4), row.start_date.slice(5,7), today.slice(5,7))}</p>
                         </div>
                     </div>
 
