@@ -69,10 +69,18 @@ async function generateCardData() {
     
 
     let novitiatePlaceholder = document.getElementById('novitiate_division_dropdown');
-    let sciencePlaceholder = document.getElementById('science_division_dropdown');
-    let medicalPlaceholder = document.getElementById('medical_division_dropdown');
-    let engineerPlaceholder = document.getElementById('engineer_division_dropdown');
-    let combatPlaceholder = document.getElementById('combat_division_dropdown');
+    let scienceRank3 = document.getElementById('science_rank_3');
+    let scienceRank2 = document.getElementById('science_rank_2');
+    let scienceRank1 = document.getElementById('science_rank_1');
+    let medicalRank3 = document.getElementById('medical_rank_3');
+    let medicalRank2 = document.getElementById('medical_rank_2');
+    let medicalRank1 = document.getElementById('medical_rank_1');
+    let engineerRank3 = document.getElementById('engineer_rank_3');
+    let engineerRank2 = document.getElementById('engineer_rank_2');
+    let engineerRank1 = document.getElementById('engineer_rank_1');
+    let combatRank3 = document.getElementById('combat_rank_3');
+    let combatRank2 = document.getElementById('combat_rank_2');
+    let combatRank1 = document.getElementById('combat_rank_1');
     let leadershipPlaceholder = document.getElementById('leadership_division_dropdown');
 
     var novitiates = data.rows.filter(units => units.unit_role == "Novitiate");
@@ -6821,10 +6829,18 @@ async function generateCardData() {
     `).join('');
 
     novitiatePlaceholder.innerHTML = novitiateCards;
-    combatPlaceholder.innerHTML = trooperCommanderCards + lieutenantTrooperCards + shockTrooperCards + outriderCards + ensignTrooperCards;
-    engineerPlaceholder.innerHTML = engineerCommanderCards + lieutenantEngineerCards + ensignOperatorCards;
-    medicalPlaceholder.innerHTML = medicalCommanderCards + lieutenantCorpsmanCards + ensignMedicCards;
-    sciencePlaceholder.innerHTML = scienceOfficerCards + laboratoryTechCards + fieldResearcherCards;
+    combatRank3.innerHTML = trooperCommanderCards;
+    combatRank2.innerHTML = lieutenantTrooperCards + shockTrooperCards + outriderCards;
+    combatRank1.innerHTML = ensignTrooperCards;
+    engineerRank3.innerHTML = engineerCommanderCards;
+    engineerRank2.innerHTML = lieutenantEngineerCards;
+    engineerRank1.innerHTML = ensignOperatorCards;
+    medicalRank3.innerHTML = medicalCommanderCards;
+    medicalRank2.innerHTML = lieutenantCorpsmanCards;
+    medicalRank1.innerHTML = ensignMedicCards;
+    scienceRank3.innerHTML = scienceOfficerCards;
+    scienceRank2.innerHTML = laboratoryTechCards;
+    scienceRank1.innerHTML = fieldResearcherCards;
     leadershipPlaceholder.innerHTML = admiralCards + captainCards + eliteGuardCards + firstOfficerCards;
 
 

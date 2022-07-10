@@ -1,3 +1,19 @@
+#non_division {
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'Allerta Stencil', sans-serif;
+    text-shadow:
+        0 0 2.5px #b60031;
+
+    border: 2px solid #ffffff;
+    border-radius: 2.5px;
+
+    padding: 5px;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    background-color: #1c1c1c;
+}
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Novitiate ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 #novitiate_division {
     color: #ffffff;
