@@ -82,8 +82,6 @@ var navbar = `
                     <li><a class="dropdown-item" href="public/pages/4_lore/4_lore_0.html#goals_link">Goals</a></li>
                     <li><hr class="dropdown-divider"></li>
                     <li><a class="dropdown-item" href="public/pages/4_lore/4_lore_1.html">Classifications</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="public/pages/4_lore/4_lore_2.html">Combat Theory</a></li>
                 </ul>
             </li>
 
