@@ -40,7 +40,7 @@
     font-weight: bold;
     background-color: #1c1c1c;
 }
-
+/* ~~~~~~~~~~~~~~~~~~~~ Progression Start ~~~~~~~~~~~~~~~~~~~~ */
 #unit_service_progression_collapse {
     border: 2px solid #ffffff;
     border-radius: 2px;
@@ -112,7 +112,17 @@
     overflow-x: auto;
     overflow-y: auto;
 }
+#unit_data_container {
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+    background-color: rgb(28, 28, 28, 0.90);
 
+    padding: 20px;
+    margin-left: -22px;
+    width: 270px;
+    float: left;
+}
+/* ~~~~~~~~~~~~~~~~~~~~ Progression End ~~~~~~~~~~~~~~~~~~~~ */
 #unit_id_close_button {
     width: 50px;
     margin-right: -12.5px;
@@ -164,17 +174,6 @@
     border-collapse: collapse;
     border: 2px solid #b60031;
     background-color: #ffffff;
-}
-
-#unit_data_container {
-    border: 2px solid #ffffff;
-    border-radius: 2px;
-    background-color: rgb(28, 28, 28, 0.90);
-
-    padding: 20px;
-    margin-left: -22px;
-    width: 270px;
-    float: left;
 }
 /* ~~~~~~~~~~~~~~~~~~~~ Symbols ~~~~~~~~~~~~~~~~~~~~ */
 #leadership_commendation_symbol {
@@ -985,6 +984,28 @@
     margin-top: -10px;
     font-weight: bold;
 }
+/* ~~~~~~~~~~~~~~~~~~~~ Special Ops Data Start ~~~~~~~~~~~~~~~~~~~~ */
+#data_spo_start_date {
+    margin-top: 17.5px;
+    font-weight: bold;
+    font-family: 'Redacted', cursive;
+}
+#data_spo_promotion_date {
+    margin-top: -10px;
+    font-weight: bold;
+    font-family: 'Redacted', cursive;
+}
+#data_spo_veteran_bonus {
+    margin-top: -10px;
+    font-weight: bold;
+    font-family: 'Redacted', cursive;
+}
+#data_spo_daily_pay {
+    margin-top: -10px;
+    font-weight: bold;
+    font-family: 'Redacted', cursive;
+}
+/* ~~~~~~~~~~~~~~~~~~~~ Special Ops Data End ~~~~~~~~~~~~~~~~~~~~ */
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Exams ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 #stored_protocol_exam {
     color: #ffffff;
@@ -1100,8 +1121,7 @@
     margin-top: -10px;
     font-weight: bold;
 }
-
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Stored ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Service ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 #stored_current_ppv {
     color: #ffffff;
     font-size: 15px;
@@ -1326,6 +1346,58 @@
     margin-top: 17.5px;
     font-weight: bold;
 }
+/* ~~~~~~~~~~~~~~~~~~~~ Special Ops Service Start ~~~~~~~~~~~~~~~~~~~~ */
+#data_spo_current_ppv {
+    margin-top: -10px;
+    font-weight: bold;
+    font-family: 'Redacted', cursive;
+}
+#data_spo_past_ppv {
+    margin-top: -10px;
+    font-weight: bold;
+    font-family: 'Redacted', cursive;
+}
+#data_spo_recruits {
+    margin-top: 17.5px;
+    font-weight: bold;
+    font-family: 'Redacted', cursive;
+}
+#data_spo_events {
+    margin-top: 17.5px;
+    font-weight: bold;
+    font-family: 'Redacted', cursive;
+}
+#data_spo_patrols {
+    margin-top: 17.5px;
+    font-weight: bold;
+    font-family: 'Redacted', cursive;
+}
+#data_spo_rank_hours {
+    margin-top: -10px;
+    font-weight: bold;
+    font-family: 'Redacted', cursive;
+}
+#data_spo_rank_months {
+    margin-top: -10px;
+    font-weight: bold;
+    font-family: 'Redacted', cursive;
+}
+#data_spo_total_months {
+    margin-top: -10px;
+    font-weight: bold;
+    font-family: 'Redacted', cursive;
+}
+#data_spo_alerts {
+    margin-top: 17.5px;
+    font-weight: bold;
+    font-family: 'Redacted', cursive;
+}
+#data_spo_warnings {
+    margin-top: 17.5px;
+    font-weight: bold;
+    font-family: 'Redacted', cursive;
+}
+/* ~~~~~~~~~~~~~~~~~~~~ Special Ops Service End ~~~~~~~~~~~~~~~~~~~~ */
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Missions ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 #stored_turret {
     color: #ffffff;
@@ -1611,6 +1683,83 @@
     margin-top: 17.5px;
     font-weight: bold;
 }
+/* ~~~~~~~~~~~~~~~~~~~~ Special Ops Missions Start ~~~~~~~~~~~~~~~~~~~~ */
+#data_spo_turret {
+    margin-top: 17.5px;
+    font-weight: bold;
+    font-family: 'Redacted', cursive;
+}
+#data_spo_ground_assault {
+    margin-top: -10px;
+    font-weight: bold;
+    font-family: 'Redacted', cursive;
+}
+#data_spo_escort {
+    margin-top: 17.5px;
+    font-weight: bold;
+    font-family: 'Redacted', cursive;
+}
+#data_spo_inquiry {
+    margin-top: 17.5px;
+    font-weight: bold;
+    font-family: 'Redacted', cursive;
+}
+#data_spo_pilot_co_pilot {
+    margin-top: -10px;
+    font-weight: bold;
+    font-family: 'Redacted', cursive;
+}
+#data_spo_mining {
+    margin-top: 17.5px;
+    font-weight: bold;
+    font-family: 'Redacted', cursive;
+}
+#data_spo_salvage {
+    margin-top: 17.5px;
+    font-weight: bold;
+    font-family: 'Redacted', cursive;
+}
+#data_spo_cargo {
+    margin-top: 17.5px;
+    font-weight: bold;
+    font-family: 'Redacted', cursive;
+}
+#data_spo_transit {
+    margin-top: 17.5px;
+    font-weight: bold;
+    font-family: 'Redacted', cursive;
+}
+#data_spo_support {
+    margin-top: 17.5px;
+    font-weight: bold;
+    font-family: 'Redacted', cursive;
+}
+#data_spo_search_rescue {
+    margin-top: -10px;
+    font-weight: bold;
+    font-family: 'Redacted', cursive;
+}
+#data_spo_manage_data{
+    margin-top: -10px;
+    font-weight: bold;
+    font-family: 'Redacted', cursive;
+}
+#data_spo_research{
+    margin-top: 17.5px;
+    font-weight: bold;
+    font-family: 'Redacted', cursive;
+}
+#data_spo_explore{
+    margin-top: 17.5px;
+    font-weight: bold;
+    font-family: 'Redacted', cursive;
+}
+#data_spo_agronomy{
+    margin-top: 17.5px;
+    font-weight: bold;
+    font-family: 'Redacted', cursive;
+}
+/* ~~~~~~~~~~~~~~~~~~~~ Special Ops Missions End ~~~~~~~~~~~~~~~~~~~~ */
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Data End ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Extra ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 #icon_round {

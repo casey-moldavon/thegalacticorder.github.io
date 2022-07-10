@@ -2626,14 +2626,14 @@ async function generateCardData() {
                             <div class="col">
                                 <div id="stored_start_date">
                                 <p>Start Date</p>
-                                <p class="text-center" id="data_start_date">${properDateDisplay(row.start_date)}</p>
+                                <p class="text-center" id="data_spo_start_date">${properDateDisplay(row.start_date)}</p>
                                 </div>
                             </div>
 
                             <div class="col">
                                 <div id="stored_veteran_bonus">
                                 <p>Veteran Bonus</p>
-                                <p class="text-center" id="data_veteran_bonus">+${row.veteran_bonus * 10} %</p>
+                                <p class="text-center" id="data_spo_veteran_bonus">+${row.veteran_bonus * 10} %</p>
                                 </div>
                             </div>
 
@@ -2643,14 +2643,14 @@ async function generateCardData() {
                             <div class="col">
                                 <div id="stored_promotion_date">
                                 <p>Last Date Promoted</p>
-                                <p class="text-center" id="data_promotion_date">${properDateDisplay(row.promotion_date)}</p>
+                                <p class="text-center" id="data_spo_promotion_date">${properDateDisplay(row.promotion_date)}</p>
                                 </div>
                             </div>
 
                             <div class="col">
                                 <div id="stored_daily_pay">
                                 <p>Daily Salary</p>
-                                <p class="text-center" id="data_daily_pay">${unitTotalPay(row.unit_role, row.veteran_bonus)}</p>
+                                <p class="text-center" id="data_spo_daily_pay">${unitTotalPay(row.unit_role, row.veteran_bonus)}</p>
                                 </div>
                             </div>
                         
@@ -2695,14 +2695,14 @@ async function generateCardData() {
                     <div class="col">
                         <div id="stored_current_ppv">
                         <p>Current PPVs</p>
-                        <p class="text-center" id="data_current_ppv">${row.current_ppv}</p>
+                        <p class="text-center" id="data_spo_current_ppv">${row.current_ppv}</p>
                         </div>
                     </div>
 
                     <div class="col">
                         <div id="stored_past_ppv">
                         <p>Previous PPVs</p>
-                        <p class="text-center" id="data_past_ppv">${row.past_ppv}</p>
+                        <p class="text-center" id="data_spo_past_ppv">${row.past_ppv}</p>
                         </div>
                     </div>
 
@@ -2712,14 +2712,14 @@ async function generateCardData() {
                     <div class="col">
                         <div id="stored_recruits">
                         <p>Recruits</p>
-                        <p class="text-center" id="data_recruits">${row.unit_recruits}</p>
+                        <p class="text-center" id="data_spo_recruits">${row.unit_recruits}</p>
                         </div>
                     </div>
 
                     <div class="col">
                         <div id="stored_rank_hours">
                         <p>Rank ${row.unit_rank} Hours</p>
-                        <p class="text-center" id="data_rank_hours">${row.hours}</p>
+                        <p class="text-center" id="data_spo_rank_hours">${row.hours}</p>
                         </div>
                     </div>
 
@@ -2729,14 +2729,14 @@ async function generateCardData() {
                     <div class="col">
                         <div id="stored_events">
                         <p>Events</p>
-                        <p class="text-center" id="data_events">${row.events}</p>
+                        <p class="text-center" id="data_spo_events">${row.events}</p>
                         </div>
                     </div>
 
                     <div class="col">
                         <div id="stored_rank_months">
                         <p>Rank ${row.unit_rank} Months</p>
-                        <p class="text-center" id="data_rank_months">${monthDiff(row.promotion_date.slice(0,4), today.slice(0,4), row.promotion_date.slice(5,7), today.slice(5,7))}</p>
+                        <p class="text-center" id="data_spo_rank_months">${monthDiff(row.promotion_date.slice(0,4), today.slice(0,4), row.promotion_date.slice(5,7), today.slice(5,7))}</p>
                         </div>
                     </div>
 
@@ -2746,14 +2746,14 @@ async function generateCardData() {
                     <div class="col">
                         <div id="stored_patrols">
                         <p>Patrols</p>
-                        <p class="text-center" id="data_patrols">${row.patrols}</p>
+                        <p class="text-center" id="data_spo_patrols">${row.patrols}</p>
                         </div>
                     </div>
 
                     <div class="col">
                         <div id="stored_total_months">
                         <p>Total Months</p>
-                        <p class="text-center" id="data_total_months">${monthDiff(row.start_date.slice(0,4), today.slice(0,4), row.start_date.slice(5,7), today.slice(5,7))}</p>
+                        <p class="text-center" id="data_spo_total_months">${monthDiff(row.start_date.slice(0,4), today.slice(0,4), row.start_date.slice(5,7), today.slice(5,7))}</p>
                         </div>
                     </div>
 
@@ -2763,14 +2763,14 @@ async function generateCardData() {
                     <div class="col">
                         <div id="stored_alerts">
                         <p>Alerts</p>
-                        <p class="text-center" id="data_alerts">${row.alerts}</p>
+                        <p class="text-center" id="data_spo_alerts">${row.alerts}</p>
                         </div>
                     </div>
 
                     <div class="col">
                         <div id="stored_warnings">
                         <p>Warnings</p>
-                        <p class="text-center" id="data_warnings">${row.warnings}</p>
+                        <p class="text-center" id="data_spo_warnings">${row.warnings}</p>
                         </div>
                     </div>
 
@@ -2830,105 +2830,105 @@ async function generateCardData() {
                     <div class="col">
                         <div id="stored_turret">
                         <p>Turret</p>
-                        <p class="text-center" id="data_turret">${row.turret}</p>
+                        <p class="text-center" id="data_spo_turret">${row.turret}</p>
                         </div>
                     </div>
 
                     <div class="col">
                         <div id="stored_ground_assault">
                         <p>Ground Assault</p>
-                        <p class="text-center" id="data_ground_assault">${row.ground_assault}</p>
+                        <p class="text-center" id="data_spo_ground_assault">${row.ground_assault}</p>
                         </div>
                     </div>
 
                     <div class="col">
                         <div id="stored_escort">
                         <p>Escort</p>
-                        <p class="text-center" id="data_escort">${row.escort}</p>
+                        <p class="text-center" id="data_spo_escort">${row.escort}</p>
                         </div>
                     </div>
 
                     <div class="col">
                         <div id="stored_inquiry">
                         <p>Inquiry</p>
-                        <p class="text-center" id="data_inquiry">${row.inquiry}</p>
+                        <p class="text-center" id="data_spo_inquiry">${row.inquiry}</p>
                         </div>
                     </div>
 
                     <div class="col">
                         <div id="stored_pilot_co_pilot">
                         <p>Pilot / Co-Pilot</p>
-                        <p class="text-center" id="data_pilot_co_pilot">${row.pilot_co_pilot}</p>
+                        <p class="text-center" id="data_spo_pilot_co_pilot">${row.pilot_co_pilot}</p>
                         </div>
                     </div>
 
                     <div class="col">
                         <div id="stored_mining">
                         <p>Mining</p>
-                        <p class="text-center" id="data_mining">${row.mining}</p>
+                        <p class="text-center" id="data_spo_mining">${row.mining}</p>
                         </div>
                     </div>
 
                     <div class="col">
                         <div id="stored_salvage">
                         <p>Salvage</p>
-                        <p class="text-center" id="data_salvage">${row.salvage}</p>
+                        <p class="text-center" id="data_spo_salvage">${row.salvage}</p>
                         </div>
                     </div>
 
                     <div class="col">
                         <div id="stored_cargo">
                         <p>Cargo</p>
-                        <p class="text-center" id="data_cargo">${row.cargo}</p>
+                        <p class="text-center" id="data_spo_cargo">${row.cargo}</p>
                         </div>
                     </div>
 
                     <div class="col">
                         <div id="stored_transit">
                         <p>Transit</p>
-                        <p class="text-center" id="data_transit">${row.transit}</p>
+                        <p class="text-center" id="data_spo_transit">${row.transit}</p>
                         </div>
                     </div>
 
                     <div class="col">
                         <div id="stored_support">
                         <p>Support</p>
-                        <p class="text-center" id="data_support">${row.support}</p>
+                        <p class="text-center" id="data_spo_support">${row.support}</p>
                         </div>
                     </div>
 
                     <div class="col">
                         <div id="stored_search_rescue">
                         <p>Search & Rescue</p>
-                        <p class="text-center" id="data_search_rescue">${row.search_rescue}</p>
+                        <p class="text-center" id="data_spo_search_rescue">${row.search_rescue}</p>
                         </div>
                     </div>
 
                     <div class="col">
                         <div id="stored_manage_data">
                         <p>Manage Data</p>
-                        <p class="text-center" id="data_manage_data">${row.manage_data}</p>
+                        <p class="text-center" id="data_spo_manage_data">${row.manage_data}</p>
                         </div>
                     </div>
 
                     <div class="col">
                         <div id="stored_research">
                         <p>Research</p>
-                        <p class="text-center" id="data_research">${row.research}</p>
+                        <p class="text-center" id="data_spo_research">${row.research}</p>
                         </div>
                     </div>
 
                     <div class="col">
                         <div id="stored_explore">
                         <p>Explore</p>
-                        <p class="text-center" id="data_explore">${row.explore}</p>
+                        <p class="text-center" id="data_spo_explore">${row.explore}</p>
                         </div>
                     </div>
 
                     <div class="col">
                         <div id="stored_agronomy">
                         <p>Agronomy</p>
-                        <p class="text-center" id="data_agronomy">${row.agronomy}</p>
+                        <p class="text-center" id="data_spo_agronomy">${row.agronomy}</p>
                         </div>
                     </div>
 
@@ -6511,14 +6511,14 @@ async function generateCardData() {
                             <div class="col">
                                 <div id="stored_start_date">
                                 <p>Start Date</p>
-                                <p class="text-center" id="data_start_date">${properDateDisplay(row.start_date)}</p>
+                                <p class="text-center" id="data_spo_start_date">${properDateDisplay(row.start_date)}</p>
                                 </div>
                             </div>
 
                             <div class="col">
                                 <div id="stored_veteran_bonus">
                                 <p>Veteran Bonus</p>
-                                <p class="text-center" id="data_veteran_bonus">+${row.veteran_bonus * 10} %</p>
+                                <p class="text-center" id="data_spo_veteran_bonus">+${row.veteran_bonus * 10} %</p>
                                 </div>
                             </div>
 
@@ -6528,14 +6528,14 @@ async function generateCardData() {
                             <div class="col">
                                 <div id="stored_promotion_date">
                                 <p>Last Date Promoted</p>
-                                <p class="text-center" id="data_promotion_date">${properDateDisplay(row.promotion_date)}</p>
+                                <p class="text-center" id="data_spo_promotion_date">${properDateDisplay(row.promotion_date)}</p>
                                 </div>
                             </div>
 
                             <div class="col">
                                 <div id="stored_daily_pay">
                                 <p>Daily Salary</p>
-                                <p class="text-center" id="data_daily_pay">${unitTotalPay(row.unit_role, row.veteran_bonus)}</p>
+                                <p class="text-center" id="data_spo_daily_pay">${unitTotalPay(row.unit_role, row.veteran_bonus)}</p>
                                 </div>
                             </div>
                         
@@ -6580,14 +6580,14 @@ async function generateCardData() {
                     <div class="col">
                         <div id="stored_current_ppv">
                         <p>Current PPVs</p>
-                        <p class="text-center" id="data_current_ppv">${row.current_ppv}</p>
+                        <p class="text-center" id="data_spo_current_ppv">${row.current_ppv}</p>
                         </div>
                     </div>
 
                     <div class="col">
                         <div id="stored_past_ppv">
                         <p>Previous PPVs</p>
-                        <p class="text-center" id="data_past_ppv">${row.past_ppv}</p>
+                        <p class="text-center" id="data_spo_past_ppv">${row.past_ppv}</p>
                         </div>
                     </div>
 
@@ -6597,14 +6597,14 @@ async function generateCardData() {
                     <div class="col">
                         <div id="stored_recruits">
                         <p>Recruits</p>
-                        <p class="text-center" id="data_recruits">${row.unit_recruits}</p>
+                        <p class="text-center" id="data_spo_recruits">${row.unit_recruits}</p>
                         </div>
                     </div>
 
                     <div class="col">
                         <div id="stored_rank_hours">
                         <p>Rank ${row.unit_rank} Hours</p>
-                        <p class="text-center" id="data_rank_hours">${row.hours}</p>
+                        <p class="text-center" id="data_spo_rank_hours">${row.hours}</p>
                         </div>
                     </div>
 
@@ -6614,14 +6614,14 @@ async function generateCardData() {
                     <div class="col">
                         <div id="stored_events">
                         <p>Events</p>
-                        <p class="text-center" id="data_events">${row.events}</p>
+                        <p class="text-center" id="data_spo_events">${row.events}</p>
                         </div>
                     </div>
 
                     <div class="col">
                         <div id="stored_rank_months">
                         <p>Rank ${row.unit_rank} Months</p>
-                        <p class="text-center" id="data_rank_months">${monthDiff(row.promotion_date.slice(0,4), today.slice(0,4), row.promotion_date.slice(5,7), today.slice(5,7))}</p>
+                        <p class="text-center" id="data_spo_rank_months">${monthDiff(row.promotion_date.slice(0,4), today.slice(0,4), row.promotion_date.slice(5,7), today.slice(5,7))}</p>
                         </div>
                     </div>
 
@@ -6631,14 +6631,14 @@ async function generateCardData() {
                     <div class="col">
                         <div id="stored_patrols">
                         <p>Patrols</p>
-                        <p class="text-center" id="data_patrols">${row.patrols}</p>
+                        <p class="text-center" id="data_spo_patrols">${row.patrols}</p>
                         </div>
                     </div>
 
                     <div class="col">
                         <div id="stored_total_months">
                         <p>Total Months</p>
-                        <p class="text-center" id="data_total_months">${monthDiff(row.start_date.slice(0,4), today.slice(0,4), row.start_date.slice(5,7), today.slice(5,7))}</p>
+                        <p class="text-center" id="data_spo_total_months">${monthDiff(row.start_date.slice(0,4), today.slice(0,4), row.start_date.slice(5,7), today.slice(5,7))}</p>
                         </div>
                     </div>
 
@@ -6648,14 +6648,14 @@ async function generateCardData() {
                     <div class="col">
                         <div id="stored_alerts">
                         <p>Alerts</p>
-                        <p class="text-center" id="data_alerts">${row.alerts}</p>
+                        <p class="text-center" id="data_spo_alerts">${row.alerts}</p>
                         </div>
                     </div>
 
                     <div class="col">
                         <div id="stored_warnings">
                         <p>Warnings</p>
-                        <p class="text-center" id="data_warnings">${row.warnings}</p>
+                        <p class="text-center" id="data_spo_warnings">${row.warnings}</p>
                         </div>
                     </div>
 
@@ -6715,105 +6715,105 @@ async function generateCardData() {
                     <div class="col">
                         <div id="stored_turret">
                         <p>Turret</p>
-                        <p class="text-center" id="data_turret">${row.turret}</p>
+                        <p class="text-center" id="data_spo_turret">${row.turret}</p>
                         </div>
                     </div>
 
                     <div class="col">
                         <div id="stored_ground_assault">
                         <p>Ground Assault</p>
-                        <p class="text-center" id="data_ground_assault">${row.ground_assault}</p>
+                        <p class="text-center" id="data_spo_ground_assault">${row.ground_assault}</p>
                         </div>
                     </div>
 
                     <div class="col">
                         <div id="stored_escort">
                         <p>Escort</p>
-                        <p class="text-center" id="data_escort">${row.escort}</p>
+                        <p class="text-center" id="data_spo_escort">${row.escort}</p>
                         </div>
                     </div>
 
                     <div class="col">
                         <div id="stored_inquiry">
                         <p>Inquiry</p>
-                        <p class="text-center" id="data_inquiry">${row.inquiry}</p>
+                        <p class="text-center" id="data_spo_inquiry">${row.inquiry}</p>
                         </div>
                     </div>
 
                     <div class="col">
                         <div id="stored_pilot_co_pilot">
                         <p>Pilot / Co-Pilot</p>
-                        <p class="text-center" id="data_pilot_co_pilot">${row.pilot_co_pilot}</p>
+                        <p class="text-center" id="data_spo_pilot_co_pilot">${row.pilot_co_pilot}</p>
                         </div>
                     </div>
 
                     <div class="col">
                         <div id="stored_mining">
                         <p>Mining</p>
-                        <p class="text-center" id="data_mining">${row.mining}</p>
+                        <p class="text-center" id="data_spo_mining">${row.mining}</p>
                         </div>
                     </div>
 
                     <div class="col">
                         <div id="stored_salvage">
                         <p>Salvage</p>
-                        <p class="text-center" id="data_salvage">${row.salvage}</p>
+                        <p class="text-center" id="data_spo_salvage">${row.salvage}</p>
                         </div>
                     </div>
 
                     <div class="col">
                         <div id="stored_cargo">
                         <p>Cargo</p>
-                        <p class="text-center" id="data_cargo">${row.cargo}</p>
+                        <p class="text-center" id="data_spo_cargo">${row.cargo}</p>
                         </div>
                     </div>
 
                     <div class="col">
                         <div id="stored_transit">
                         <p>Transit</p>
-                        <p class="text-center" id="data_transit">${row.transit}</p>
+                        <p class="text-center" id="data_spo_transit">${row.transit}</p>
                         </div>
                     </div>
 
                     <div class="col">
                         <div id="stored_support">
                         <p>Support</p>
-                        <p class="text-center" id="data_support">${row.support}</p>
+                        <p class="text-center" id="data_spo_support">${row.support}</p>
                         </div>
                     </div>
 
                     <div class="col">
                         <div id="stored_search_rescue">
                         <p>Search & Rescue</p>
-                        <p class="text-center" id="data_search_rescue">${row.search_rescue}</p>
+                        <p class="text-center" id="data_spo_search_rescue">${row.search_rescue}</p>
                         </div>
                     </div>
 
                     <div class="col">
                         <div id="stored_manage_data">
                         <p>Manage Data</p>
-                        <p class="text-center" id="data_manage_data">${row.manage_data}</p>
+                        <p class="text-center" id="data_spo_manage_data">${row.manage_data}</p>
                         </div>
                     </div>
 
                     <div class="col">
                         <div id="stored_research">
                         <p>Research</p>
-                        <p class="text-center" id="data_research">${row.research}</p>
+                        <p class="text-center" id="data_spo_research">${row.research}</p>
                         </div>
                     </div>
 
                     <div class="col">
                         <div id="stored_explore">
                         <p>Explore</p>
-                        <p class="text-center" id="data_explore">${row.explore}</p>
+                        <p class="text-center" id="data_spo_explore">${row.explore}</p>
                         </div>
                     </div>
 
                     <div class="col">
                         <div id="stored_agronomy">
                         <p>Agronomy</p>
-                        <p class="text-center" id="data_agronomy">${row.agronomy}</p>
+                        <p class="text-center" id="data_spo_agronomy">${row.agronomy}</p>
                         </div>
                     </div>
 
