@@ -124,7 +124,7 @@ const questionsProtocolExam = [
             c: "2951",
             d: "2952"
         },
-        correctAnswer:  "c"
+        correctAnswer: "c"
     },
     {
         questionNum: "Q2.",
@@ -693,7 +693,95 @@ const questionsProtocolExam = [
         correctAnswer: "a"
     }
 
-]
+];
+
+const questionsMedicalExam = [
+    {
+        questionNum: "Q1.",
+        type: "single",
+        question: "What are the Tool Requirements for Rank 2: Lieutenant Corpsman?",
+        answers: {
+            a: "ParaMed",
+            b: "ParaMed + All MedPens",
+            c: "All MedPens",
+            d: "None"
+        },
+        correctAnswer: "a"
+    },
+    {
+        questionNum: "Q2.",
+        type: "multi",
+        question: "What Mission Types apply to Medical Division progression?",
+        answers: {
+            a: "Escort",
+            b: "Inquiry",
+            c: "Transport",
+            d: "Support",
+            e: "Search & Rescue",
+            f: "Research"
+        },
+        correctAnswer: "a" + "c" + "d" + "e"
+    },
+    {
+        questionNum: "Q3.",
+        type: "multi",
+        question: "What parts of the body can recieve Tier 3 injuries?",
+        answers: {
+            a: "Head",
+            b: "Chest",
+            c: "Back",
+            d: "Arms",
+            e: "Legs"
+        },
+        correctAnswer: "a" + "b" + "d" + "e"
+    },
+    {
+        questionNum: "Q4.",
+        type: "multi",
+        question: "What parts of the body can recieve Tier 2 injuries?",
+        answers: {
+            a: "Head",
+            b: "Chest",
+            c: "Back",
+            d: "Arms",
+            e: "Legs"
+        },
+        correctAnswer: "a" + "b" + "c" + "d" + "e"
+    },
+
+
+
+
+
+
+
+
+    {
+        questionNum: "Q1.",
+        type: "single",
+        question: "",
+        answers: {
+            a: "",
+            b: "",
+            c: "",
+            d: ""
+        },
+        correctAnswer: ""
+    },
+    {
+        questionNum: "Q1.",
+        type: "multi",
+        question: "",
+        answers: {
+            a: "",
+            b: "",
+            c: "",
+            d: ""
+        },
+        correctAnswer: "a" + "b" + "c" + "d"
+    },
+];
+
 
 function buildProtocolExam() {
 
@@ -708,6 +796,10 @@ function buildProtocolExam() {
 
     questionsProtocolExam.forEach(
         (currentQuestion, questionNumber) => {
+    const questionsMedicalExam = [
+
+    ]
+    
             const answers = [];
 
 
