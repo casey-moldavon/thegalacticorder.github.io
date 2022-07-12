@@ -448,12 +448,12 @@ label.radio input {
     pointer-events: none;
 }
 label.radio span {
-    color: #00c9ff;
+    color: #ffffff;
     padding: 2.5px;
     margin: 2.5px;
     width: 40px;
 
-    border: 2px solid #00c9ff;
+    border: 2px solid #ff0015;
     border-radius: 5px;
 
     display: inline-block;
@@ -461,7 +461,7 @@ label.radio span {
 label.radio input:checked + span {
     color: #ffffff;
     border-color: #ffffff;
-    background-color: #00c9ff;
+    background-color: #ff0015;
     box-shadow:
         0 0 5px #ffffff,
         0 0 15px #ffffff;
@@ -480,12 +480,12 @@ label.checkbox input {
     pointer-events: none;
 }
 label.checkbox span {
-    color: #00c9ff;
+    color: #ffffff;
     padding: 2.5px;
     margin: 2.5px;
     width: 40px;
 
-    border: 2px solid #00c9ff;
+    border: 2px solid #ff0015;
     border-radius: 5px;
 
     display: inline-block;
@@ -493,7 +493,7 @@ label.checkbox span {
 label.checkbox input:checked + span {
     color: #ffffff;
     border-color: #ffffff;
-    background-color: #00c9ff;
+    background-color: #ff0015;
     box-shadow:
         0 0 5px #ffffff,
         0 0 15px #ffffff;
@@ -524,7 +524,7 @@ label.checkbox input:checked + span {
     padding: 7px;
 }
 
-#question_number {
+#protocol_number {
     color: #ffffff;
     font-size: 25px;
     font-weight: bold;
@@ -533,6 +533,42 @@ label.checkbox input:checked + span {
     text-shadow:
         0 0 15px #00c9ff,
         0 0 20px #00c9ff;
+
+    padding: 5px;
+}
+#medical_number {
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: bold;
+    /* font-family: 'Allerta Stencil', sans-serif; */
+    font-family: 'Montserrat', sans-serif;
+    text-shadow:
+        0 0 15px #4285f4,
+        0 0 20px #4285f4;
+
+    padding: 5px;
+}
+#combat_number {
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: bold;
+    /* font-family: 'Allerta Stencil', sans-serif; */
+    font-family: 'Montserrat', sans-serif;
+    text-shadow:
+        0 0 15px #b60031,
+        0 0 20px #b60031;
+
+    padding: 5px;
+}
+#officer_number {
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: bold;
+    /* font-family: 'Allerta Stencil', sans-serif; */
+    font-family: 'Montserrat', sans-serif;
+    text-shadow:
+        0 0 15px #d6b44c,
+        0 0 20px #d6b44c;
 
     padding: 5px;
 }

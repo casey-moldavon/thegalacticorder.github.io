@@ -22,7 +22,7 @@
 
 </head>
 
-<body onload="buildProtocolExam()">
+<body>
 
 <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Navbar Start ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
@@ -201,7 +201,7 @@
                                 <p>It is worth noting, by no means do we expect members to know everything about Star Citizen and the Org. Even slight familiarity with our content and the ability to quickly access any information is almost more valuable than simply knowing, as the content tends to change and update regularly. For this reason, the Exam is completely open source with no restriction to notes, web-pages, tabs or available information for the applicant as they answer each question.</p>
                             </div>
 
-                            <!-- <button id="protocol_exam_start_button" class="text-center" style="width: 10rem;" type="button" data-bs-toggle="modal" data-bs-target="#protocol_examModal">
+                            <!-- <button id="protocol_exam_start_button" onclick="buildProtocolExam()" class="text-center" style="width: 10rem;" type="button" data-bs-toggle="modal" data-bs-target="#protocol_examModal">
                                 Start Exam
                             </button> -->
 
@@ -238,7 +238,7 @@
                                 <p>It is worth noting, by no means do we expect members to know everything about Star Citizen and the Org. Even slight familiarity with our content and the ability to quickly access any information is almost more valuable than simply knowing, as the content tends to change and update regularly. For this reason, the Exam is completely open source with no restriction to notes, web-pages, tabs or available information for the applicant as they answer each question.</p>
                             </div>
 
-                            <!-- <button id="medical_exam_start_button" class="text-center" style="width: 10rem;" type="button" data-bs-toggle="modal" data-bs-target="#medical_examModal">
+                            <!-- <button id="medical_exam_start_button" onclick="buildMedicalExam()" class="text-center" style="width: 10rem;" type="button" data-bs-toggle="modal" data-bs-target="#medical_examModal">
                                 Start Exam
                             </button> -->
 
@@ -355,9 +355,11 @@
                             <p id="protocol_timer"></p>
                             <p></p>
                         </div>
+
+
                         <div class="container justify-content-center container-fluid">
 
-                            <div id="quiz_1"></div>
+                            <div id="protocol_exam_placeholder"></div>
                             <p></p>
                             <button id="submit">Submit Quiz</button>
                             <p></p>
@@ -370,8 +372,113 @@
         </div>
     </div>
 
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Medical Tier 2 Exam Modal ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <div class="row">
+        <div class="modal fade" id="medical_examModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="medical_examModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+
+                <div class="container justify-content-center container-fluid">
+                    <!-- <img id="card_emblem_image" src="../../ranks/badges/0-novitiate.png" alt="novitiate Image"> -->
+
+                    <div id="promotion_exam_modal" class="modal-content">
+                        <div id="exam_header" class="modal-header sticky-top text-center">
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p id="medical_exam_header_title">MEDICAL TIER 2 EXAM</p>
+                            <p></p>
+                            <p id="medical_timer"></p>
+                            <p></p>
+                        </div>
 
 
+                        <div class="container justify-content-center container-fluid">
+
+                            <div id="medical_exam_placeholder"></div>
+                            <p></p>
+                            <button id="submit">Submit Quiz</button>
+                            <p></p>
+                            <div id="results"></div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ G-Tactical Exam Modal ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <div class="row">
+        <div class="modal fade" id="g_tactical_examModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="g_tactical_examModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+
+                <div class="container justify-content-center container-fluid">
+                    <!-- <img id="card_emblem_image" src="../../ranks/badges/0-novitiate.png" alt="novitiate Image"> -->
+
+                    <div id="promotion_exam_modal" class="modal-content">
+                        <div id="exam_header" class="modal-header sticky-top text-center">
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p id="g_tactical_exam_header_title">G-TACTICAL TIER 2 EXAM</p>
+                            <p></p>
+                            <p id="g_tactical_timer"></p>
+                            <p></p>
+                        </div>
+
+
+                        <div class="container justify-content-center container-fluid">
+
+                            <div id="g_tactical_exam_placeholder"></div>
+                            <p></p>
+                            <button id="submit">Submit Quiz</button>
+                            <p></p>
+                            <div id="results"></div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ S-Tactical Exam Modal ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <div class="row">
+        <div class="modal fade" id="s_tactical_examModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="s_tactical_examModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+
+                <div class="container justify-content-center container-fluid">
+                    <!-- <img id="card_emblem_image" src="../../ranks/badges/0-novitiate.png" alt="novitiate Image"> -->
+
+                    <div id="promotion_exam_modal" class="modal-content">
+                        <div id="exam_header" class="modal-header sticky-top text-center">
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p id="s_tactical_exam_header_title">S-TACTICAL TIER 2 EXAM</p>
+                            <p></p>
+                            <p id="s_tactical_timer"></p>
+                            <p></p>
+                        </div>
+
+
+                        <div class="container justify-content-center container-fluid">
+
+                            <div id="s_tactical_exam_placeholder"></div>
+                            <p></p>
+                            <button id="submit">Submit Quiz</button>
+                            <p></p>
+                            <div id="results"></div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 

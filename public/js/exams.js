@@ -692,7 +692,6 @@ const questionsProtocolExam = [
         },
         correctAnswer: "a"
     }
-
 ];
 
 const questionsMedicalExam = [
@@ -748,60 +747,462 @@ const questionsMedicalExam = [
         },
         correctAnswer: "a" + "b" + "c" + "d" + "e"
     },
-
-
-
-
-
-
-
-
     {
-        questionNum: "Q1.",
+        questionNum: "Q5.",
         type: "single",
-        question: "",
+        question: "True or False: The drug Hemozal should be administered to incapacitated Units.",
         answers: {
-            a: "",
-            b: "",
-            c: "",
-            d: ""
+            a: "True",
+            b: "False"
         },
-        correctAnswer: ""
+        correctAnswer: "a"
     },
     {
-        questionNum: "Q1.",
-        type: "multi",
-        question: "",
+        questionNum: "Q6.",
+        type: "single",
+        question: "True or False: a Minor Injury (tier 3) requires stabilization (with medical bed)?",
         answers: {
-            a: "",
-            b: "",
-            c: "",
-            d: ""
+            a: "True",
+            b: "False"
+        },
+        correctAnswer: "b"
+    },
+    {
+        questionNum: "Q7.",
+        type: "multi",
+        question: "What are the most common Negative Effects of a Tier 3 injury?",
+        answers: {
+            a: "Poor Weapon handling",
+            b: "Movement problems",
+            c: "Sensory problems",
+            d: "Reduced stamina"
         },
         correctAnswer: "a" + "b" + "c" + "d"
     },
+    {
+        questionNum: "Q8.",
+        type: "single",
+        question: "True or False: Limping is typically common with Moderate injuries (Tier 2).",
+        answers: {
+            a: "True",
+            b: "False"
+        },
+        correctAnswer: "a"
+    },
+    {
+        questionNum: "Q9.",
+        type: "single",
+        question: "What does BDL stand for?",
+        answers: {
+            a: "Body Dose Level",
+            b: "Body Drug Level",
+            c: "Blood Drug Level",
+            d: "Blood Demexatrine Level"
+        },
+        correctAnswer: "c"
+    },
+    {
+        questionNum: "Q10.",
+        type: "single",
+        question: "What drug reduces concussion symptoms and normalizes weapon handling and movement speed?",
+        answers: {
+            a: "Demexatrine",
+            b: "Sterogen",
+            c: "Resurgera",
+            d: "Roxaphen",
+            e: "Hemozal"
+        },
+        correctAnswer: "a"
+    },
+    {
+        questionNum: "Q11.",
+        type: "single",
+        question: "What drug reduces vision and hearing symptoms and normalizes stamina?",
+        answers: {
+            a: "Demexatrine",
+            b: "Sterogen",
+            c: "Resurgera",
+            d: "Roxaphen",
+            e: "Hemozal"
+        },
+        correctAnswer: "b"
+    },
+    {
+        questionNum: "Q12.",
+        type: "single",
+        question: "What drug reduces pain symptoms and normalizes movement ability?",
+        answers: {
+            a: "Demexatrine",
+            b: "Sterogen",
+            c: "Resurgera",
+            d: "Roxaphen",
+            e: "Hemozal"
+        },
+        correctAnswer: "d"
+    },
+    {
+        questionNum: "Q13.",
+        type: "single",
+        question: "What drug revives overdosed units (if not incapacitated) and doubles decay rate of Blood Drug Levels?",
+        answers: {
+            a: "Demexatrine",
+            b: "Sterogen",
+            c: "Resurgera",
+            d: "Roxaphen",
+            e: "Hemozal"
+        },
+        correctAnswer: "c"
+    },
+    {
+        questionNum: "Q14.",
+        type: "single",
+        question: "What drug restores health, stops bleeding and recovers a Unit from incapacitated state?",
+        answers: {
+            a: "Demexatrine",
+            b: "Sterogen",
+            c: "Resurgera",
+            d: "Roxaphen",
+            e: "Hemozal"
+        },
+        correctAnswer: "e"
+    },
+    {
+        questionNum: "Q15.",
+        type: "single",
+        question: "What drugs do not increase BDL?",
+        answers: {
+            a: "Demexatrine",
+            b: "Sterogen",
+            c: "Resurgera",
+            d: "Roxaphen",
+            e: "Hemozal"
+        },
+        correctAnswer: "c"
+    },
+    {
+        questionNum: "Q16.",
+        type: "single",
+        question: "At what BDL percentage (%) does Overdose occur and what does this effect do??",
+        answers: {
+            a: "75%; blurs vision and staggered / hindered movement",
+            b: "85%; blurs vision and staggered / hindered movement",
+            c: "100%; causes incapacitation and death",
+            d: "100%; gradually decreases health"
+        },
+        correctAnswer: "d"
+    },
+    {
+        questionNum: "Q17.",
+        type: "multi",
+        question: "What can be done to reduce BDL?",
+        answers: {
+            a: "Medical Bed",
+            b: "Waiting",
+            c: "Roxaphen",
+            d: "Resurgera",
+            e: "Drink Water"
+        },
+        correctAnswer: "a" + "b" + "d"
+    },
+    {
+        questionNum: "Q18.",
+        type: "single",
+        question: "What BDL percentage (%) does a Unit experience blurred vision and staggered / hindered movement?",
+        answers: {
+            a: "65%",
+            b: "75%",
+            c: "85%",
+            d: "90%",
+            e: "100%"
+        },
+        correctAnswer: "b"
+    },
+    {
+        questionNum: "Q19.",
+        type: "multi",
+        question: "What are the primary advantages of the ParaMed Medical Device over Medical Pens?",
+        answers: {
+            a: "Scans Vitals",
+            b: "Treat Tier 2 Injuries",
+            c: "Multiple Drugs",
+            d: "Multiple Use",
+            e: "Treat Tier 3 Injuries"
+        },
+        correctAnswer: "a" + "c" + "d"
+    },
+    {
+        questionNum: "Q20.",
+        type: "multi",
+        question: "Which Ships currently have a Medical Bed on board?",
+        answers: {
+            a: "Cutlass Red",
+            b: "890 Jump",
+            c: "Endeavor",
+            d: "Reclaimer",
+            e: "Carrack"
+        },
+        correctAnswer: "a" + "b" + "e"
+    },
+    {
+        questionNum: "Q21.",
+        type: "multi",
+        question: "Which Medical Beds currently allow for respawn?",
+        answers: {
+            a: "Tier 1",
+            b: "Tier 2",
+            c: "Tier 3",
+            d: "Hospital"
+        },
+        correctAnswer: "a" + "b" + "d"
+    },
+    {
+        questionNum: "Q22.",
+        type: "single",
+        question: "What color is MedPen and what drug does it contain?",
+        answers: {
+            a: "Purple; Demaxatrine",
+            b: "Orange; Sterogen",
+            c: "Grey/Black; Resurgera",
+            d: "Green; Roxaphen",
+            e: "Red; Hemozal",
+            f: "Blue; Oxygen"
+        },
+        correctAnswer: "e"
+    },
+    {
+        questionNum: "Q23.",
+        type: "single",
+        question: "What color is CorticoPen and what drug does it contain?",
+        answers: {
+            a: "Purple; Demaxatrine",
+            b: "Orange; Sterogen",
+            c: "Grey/Black; Resurgera",
+            d: "Green; Roxaphen",
+            e: "Red; Hemozal",
+            f: "Blue; Oxygen"
+        },
+        correctAnswer: "b"
+    },
+    {
+        questionNum: "Q24.",
+        type: "single",
+        question: "What color is AdrenoPen and what drug does it contain?",
+        answers: {
+            a: "Purple; Demaxatrine",
+            b: "Orange; Sterogen",
+            c: "Grey/Black; Resurgera",
+            d: "Green; Roxaphen",
+            e: "Red; Hemozal",
+            f: "Blue; Oxygen"
+        },
+        correctAnswer: "a"
+    },
+    {
+        questionNum: "Q25.",
+        type: "single",
+        question: "What color is OpioPen and what drug does it contain?",
+        answers: {
+            a: "Purple; Demaxatrine",
+            b: "Orange; Sterogen",
+            c: "Grey/Black; Resurgera",
+            d: "Green; Roxaphen",
+            e: "Red; Hemozal",
+            f: "Blue; Oxygen"
+        },
+        correctAnswer: "d"
+    },
+    {
+        questionNum: "Q26.",
+        type: "single",
+        question: "What color is DetoxPen and what drug does it contain?",
+        answers: {
+            a: "Purple; Demaxatrine",
+            b: "Orange; Sterogen",
+            c: "Grey/Black; Resurgera",
+            d: "Green; Roxaphen",
+            e: "Red; Hemozal",
+            f: "Blue; Oxygen"
+        },
+        correctAnswer: "c"
+    },
+    {
+        questionNum: "Q27.",
+        type: "single",
+        question: "What color is OxyPen and what does it contain?",
+        answers: {
+            a: "Purple; Demaxatrine",
+            b: "Orange; Sterogen",
+            c: "Grey/Black; Resurgera",
+            d: "Green; Roxaphen",
+            e: "Red; Hemozal",
+            f: "Blue; Oxygen"
+        },
+        correctAnswer: "e"
+    },
+    {
+        questionNum: "Q28.",
+        type: "multi",
+        question: "What are the primary responsibilities of Rank 2: Lieutenant Corpsman?",
+        answers: {
+            a: "Manage Medical Bay",
+            b: "Educate",
+            c: "Provide Tier 3 Healthcare",
+            d: "Provide Tier 2 Healthcare",
+            e: "Provide Tier 1 Healthcare"
+        },
+        correctAnswer: "b" + "c" + "d"
+    },
+    {
+        questionNum: "Q29.",
+        type: "multi",
+        question: "What Advantage(s) does a Planetary Hospital typically have over a Station Medical Center?",
+        answers: {
+            a: "Unlimited Medical Supplies",
+            b: "More Rooms",
+            c: "Patient Transport Gurney",
+            d: "Pharmacy",
+            e: "Emergency Elevator"
+        },
+        correctAnswer: "b" + "e"
+    },
+    {
+        questionNum: "Q30.",
+        type: "single",
+        question: "What Battalion Type has a Focus on Medical?",
+        answers: {
+            a: "Admiralty",
+            b: "Academy",
+            c: "Battle",
+            d: "Medevac",
+            e: "Medical"
+        },
+        correctAnswer: "d"
+    },
+    {
+        questionNum: "Q31.",
+        type: "single",
+        question: "What is Lieutenant Corpsman limit per standard Battalion?",
+        answers: {
+            a: "1",
+            b: "2",
+            c: "3",
+            d: "4"
+        },
+        correctAnswer: "b"
+    },
+    {
+        questionNum: "Q32.",
+        type: "single",
+        question: "What is Lieutenant Corpsman limit per Battle Battalion?",
+        answers: {
+            a: "1",
+            b: "2",
+            c: "3",
+            d: "4"
+        },
+        correctAnswer: "d"
+    },
+    {
+        questionNum: "Q33.",
+        type: "single",
+        question: "What is Lieutenant Corpsman limit per Medevac Battalion?",
+        answers: {
+            a: "2",
+            b: "4",
+            c: "6",
+            d: "8"
+        },
+        correctAnswer: "c"
+    },
+    {
+        questionNum: "Q34.",
+        type: "multi",
+        question: "What Battalion types are Lieutenant Corpsmen most often found in?",
+        answers: {
+            a: "Admiralty",
+            b: "Academy",
+            c: "Battle",
+            d: "Medevac",
+            e: "Medical"
+        },
+        correctAnswer: "b" + "e"
+    },
+    {
+        questionNum: "Q35.",
+        type: "single",
+        question: "True or False: Medical Commanders are only found within Battalions that have a Tier 1 Medical Bay.",
+        answers: {
+            a: "True",
+            b: "False"
+        },
+        correctAnswer: "b"
+    },
+    {
+        questionNum: "Q36.",
+        type: "single",
+        question: "What ship is most Commonly used for Medevac Battalion?",
+        answers: {
+            a: "Cutlass Red",
+            b: "890 Jump",
+            c: "Endeavor",
+            d: "Reclaimer",
+            e: "Carrack"
+        },
+        correctAnswer: "a"
+    },
+    {
+        questionNum: "Q37.",
+        type: "single",
+        question: "True or False: Medical Division Units are responsible for piloting Medical Ships.",
+        answers: {
+            a: "True",
+            b: "False"
+        },
+        correctAnswer: "b"
+    },
+    {
+        questionNum: "Q38.",
+        type: "single",
+        question: "True or False: Medical Beds refill Food and Drink.",
+        answers: {
+            a: "True",
+            b: "False"
+        },
+        correctAnswer: "a"
+    },
+    {
+        questionNum: "Q39.",
+        type: "single",
+        question: "True or False: Medical Division Units are restricted from Engaging in Combat during an encounter or firefight?",
+        answers: {
+            a: "True",
+            b: "False"
+        },
+        correctAnswer: "b"
+    },
+    {
+        questionNum: "Q40.",
+        type: "single",
+        question: "True or False: Medical Division Units are required to carry Drug Pens.",
+        answers: {
+            a: "True",
+            b: "False"
+        },
+        correctAnswer: "b"
+    },
 ];
 
-
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Protocol Exam Modal ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 function buildProtocolExam() {
-
-
-    const protocolExamContainer = document.getElementById('quiz_1');
+    const protocolExamContainer = document.getElementById('protocol_exam_placeholder');
     const resultsContainer = document.getElementById('results');
     const submitButton = document.getElementById('submit');
-
-
 
     const outputProtocolExam = [];
 
     questionsProtocolExam.forEach(
         (currentQuestion, questionNumber) => {
-    const questionsMedicalExam = [
-
-    ]
-    
-            const answers = [];
-
+            let answers = [];
 
             if (currentQuestion.type == "single") {
                 for(letter in currentQuestion.answers) {
@@ -811,7 +1212,7 @@ function buildProtocolExam() {
                         <div id="questions_container">
                         <label class="radio text-center">
                             <input type="radio" name="question${questionNumber}" value="${letter}">
-                                <Span id="answer_letter">${letter} </Span>
+                                <Span id="answer_letter">${letter.toUpperCase()} </Span>
                                 <a id="question_text">${currentQuestion.answers[letter]}</a>
                         </label>
                         </div>
@@ -823,14 +1224,85 @@ function buildProtocolExam() {
                     `
                     <p id="small_space"></p>
                     <div>
-                    <a id="question_number">${currentQuestion.questionNum}</a>
+                    <a id="protocol_number">${currentQuestion.questionNum}</a>
                     <a id="question_text">${currentQuestion.question}</a>
                     </div>
                     <div> ${answers.join('')} </div>
                     `
                 );
             }
+            else {
+                for(letter in currentQuestion.answers) {
+    
+                    answers.push(
+                        `
+                        <div id="questions_container">
+                        <label class="checkbox text-center">
+                            <input type="checkbox" name="question${questionNumber}" value="${letter}">
+                                <Span id="answer_letter">${letter.toUpperCase()} </Span>
+                                <a id="question_text">${currentQuestion.answers[letter]}</a>
+                        </label>
+                        </div>
+                        `
+                    );
+                }
+    
+                outputProtocolExam.push(
+                    `
+                    <p id="small_space"></p>
+                    <div>
+                    <a id="protocol_number">${currentQuestion.questionNum}</a>
+                    <a id="question_text">${currentQuestion.question}</a>
+                    </div>
+                    <div> ${answers.join('')} </div>
+                    `
+                );
+            }
+        }
+    );
+    protocolExamContainer.innerHTML = outputProtocolExam.join('');
+}
+// function showResults() {}
 
+// submitButton.addEventListener('click', showResults);
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Medical Tier 2 Exam Modal ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+function buildMedicalExam() {
+    const medicalExamContainer = document.getElementById('medical_exam_placeholder');
+
+    const outputMedicalExam = [];
+
+    questionsMedicalExam.forEach(
+        (currentQuestion, questionNumber) => {
+            let answers = [];
+
+            if (currentQuestion.type == "single") {
+                for(letter in currentQuestion.answers) {
+    
+                    answers.push(
+                        `
+                        <div id="questions_container">
+                        <label class="radio text-center">
+                            <input type="radio" name="question${questionNumber}" value="${letter}">
+                                <Span id="answer_letter">${letter.toUpperCase()} </Span>
+                                <a id="question_text">${currentQuestion.answers[letter]}</a>
+                        </label>
+                        </div>
+                        `
+                    );
+                }
+    
+                outputMedicalExam.push(
+                    `
+                    <p id="small_space"></p>
+                    <div>
+                    <a id="medical_number">${currentQuestion.questionNum}</a>
+                    <a id="question_text">${currentQuestion.question}</a>
+                    </div>
+                    <div> ${answers.join('')} </div>
+                    `
+                )
+            }
 
             else {
                 for(letter in currentQuestion.answers) {
@@ -840,7 +1312,7 @@ function buildProtocolExam() {
                         <div id="questions_container">
                         <label class="checkbox text-center">
                             <input type="checkbox" name="question${questionNumber}" value="${letter}">
-                                <Span id="answer_letter">${letter} </Span>
+                                <Span id="answer_letter">${letter.toUpperCase()} </Span>
                                 <a id="question_text">${currentQuestion.answers[letter]}</a>
                         </label>
                         </div>
@@ -848,26 +1320,18 @@ function buildProtocolExam() {
                     );
                 }
     
-                outputProtocolExam.push(
+                outputMedicalExam.push(
                     `
                     <p id="small_space"></p>
                     <div>
-                    <a id="question_number">${currentQuestion.questionNum}</a>
+                    <a id="medical_number">${currentQuestion.questionNum}</a>
                     <a id="question_text">${currentQuestion.question}</a>
                     </div>
                     <div> ${answers.join('')} </div>
                     `
                 );
             }
-
-
-
         }
     );
-
-    protocolExamContainer.innerHTML = outputProtocolExam.join('');
+    medicalExamContainer.innerHTML = outputMedicalExam.join('');
 }
-
-// function showResults() {}
-
-// submitButton.addEventListener('click', showResults);
