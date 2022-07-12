@@ -22,28 +22,13 @@
 
 </head>
 
-<body onload="buildQuiz()">
+<body onload="buildProtocolExam()">
 
 <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Navbar Start ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
 <!-- navbar.js function adds navbar to start of <body> -->
 
 <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Navbar End ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
-
-
-
-<!-- <div class="container">
-    <p></p>
-    <p id="novitiate_division">Exam goes here!</p>
-
-    <div id="quiz_1"></div>
-    <p></p>
-    <div id="results"></div>
-    <p></p>
-
-</div> -->
-
-
 
 <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Rank Benefits Start ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
@@ -220,7 +205,6 @@
                                 Start Exam
                             </button> -->
 
-
                             <p><a id="bold_note">Note:</a> Exam not yet available here. COMING SOON!</p>
 
                         </div>
@@ -353,9 +337,38 @@
 
 
 
+    <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Protocol Cert Exam Modal ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+    <div class="row">
+        <div class="modal fade" id="protocol_examModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="protocol_examModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
 
+                <div class="container container-fluid">
 
+                    <div id="promotion_exam_modal" class="modal-content">
+                        <div id="exam_header" class="modal-header sticky-top text-center">
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                            <p id="protocol_exam_header_title">PROTOCOL CERTIFICATION EXAM</p>
+                            <p></p>
+                            <p id="protocol_timer"></p>
+                            <p></p>
+                        </div>
+                        <div class="container justify-content-center container-fluid">
 
+                            <div id="quiz_1"></div>
+                            <p></p>
+                            <button id="submit">Submit Quiz</button>
+                            <p></p>
+                            <div id="results"></div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 

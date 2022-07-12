@@ -537,6 +537,14 @@ label.checkbox input:checked + span {
     padding: 5px;
 }
 
+#question_text {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    /* font-family: 'Allerta Stencil', sans-serif; */
+    font-family: 'Montserrat', sans-serif;
+}
+
 #questions_container {
     color: #ffffff;
     font-size: 25px;
