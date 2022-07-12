@@ -436,7 +436,6 @@ body {
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Exams End ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
-
 label.radio {
     cursor: pointer;
 }
@@ -452,6 +451,8 @@ label.radio span {
     padding: 2.5px;
     margin: 2.5px;
     width: 40px;
+    text-shadow:
+        0 0 5px #b60031;
 
     border: 2px solid #ff0015;
     border-radius: 5px;
@@ -460,6 +461,8 @@ label.radio span {
 }
 label.radio input:checked + span {
     color: #ffffff;
+    text-shadow:
+        0 0 5px #ffffff;
     border-color: #ffffff;
     background-color: #ff0015;
     box-shadow:
@@ -484,6 +487,8 @@ label.checkbox span {
     padding: 2.5px;
     margin: 2.5px;
     width: 40px;
+    text-shadow:
+        0 0 5px #b60031;
 
     border: 2px solid #ff0015;
     border-radius: 5px;
@@ -492,6 +497,8 @@ label.checkbox span {
 }
 label.checkbox input:checked + span {
     color: #ffffff;
+    text-shadow:
+        0 0 5px #ffffff;
     border-color: #ffffff;
     background-color: #ff0015;
     box-shadow:
