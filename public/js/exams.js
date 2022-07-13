@@ -1288,3 +1288,8 @@ function timerProtocolExam() {
         return sec;
     }
 }
+
+// self note: fix multi answer questions
+// self note: add timer (days: hours: minutes) to replace Start Exam button
+// self note: add member name select
+// apply exam progression to database
