@@ -132,20 +132,19 @@ const questionsProtocolExam = [
             b: "False"
         },
         correctAnswer: "a"
-    }
-    // ,
-    // {
-    //     questionNum: "Q5.",
-    //     type: "multi",
-    //     question: "Which Divisions have Tool requirements?",
-    //     answers: {
-    //         a: "Combat",
-    //         b: "Engineering",
-    //         c: "Medical",
-    //         d: "Science"
-    //     },
-    //     correctAnswer: "b" + "c" + "d"
-    // },
+    },
+    {
+        questionNum: "Q5.",
+        type: "multi",
+        question: "Which Divisions have Tool requirements?",
+        answers: {
+            a: "Combat",
+            b: "Engineering",
+            c: "Medical",
+            d: "Science"
+        },
+        correctAnswer: "b"+ "c" +"d"
+    },
     // {
     //     questionNum: "Q6.",
     //     type: "single",
@@ -658,16 +657,16 @@ const questionsProtocolExam = [
     //     },
     //     correctAnswer: "b"
     // },
-    // {
-    //     questionNum: "Q50.",
-    //     type: "single",
-    //     question: "True or False: Demotion or Termination may occur with 1st Official Warning.",
-    //     answers: {
-    //         a: "True",
-    //         b: "False"
-    //     },
-    //     correctAnswer: "a"
-    // }
+    {
+        questionNum: "Q50.",
+        type: "single",
+        question: "True or False: Demotion or Termination may occur with 1st Official Warning.",
+        answers: {
+            a: "True",
+            b: "False"
+        },
+        correctAnswer: "a"
+    }
 ];
 
 const questionsMedicalExam = [
