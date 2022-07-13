@@ -1242,7 +1242,7 @@ function buildProtocolExam() {
 
 function showProtocolExamResults() {
     const answerContainers = document.getElementById('protocol_exam_container').querySelectorAll('.answers');
-    const resultsContainer = document.getElementById('meh_results');
+    const resultsContainer = document.getElementById('protocol_exam_results');
 
     let numCorrect = 0;
 
@@ -1252,18 +1252,11 @@ function showProtocolExamResults() {
         const selector = `input[name=question${questionNumber}]:checked`;
         const userAnswer = (answerContainer.querySelector(selector) || {}).value;
 
+        if (userAnswer === currentQuestion.correctAnswer) {numCorrect++;}
 
-        if (userAnswer === currentQuestion.correctAnswer) {
-
-            numCorrect++;
-
-            // answerContainers[questionNumber].style.color = 'lightgreen';
-        }
-        // else {
-        //     answerContainers[questionNumber].style.color = 'red';
-        // }
     });
-    resultsContainer.innerHTML = `${numCorrect} out of ${questionsProtocolExam.length}`;
+    if (numCorrect >= 3) {resultsContainer.innerHTML = `<div id="protocol_exam_final_results"><a id="complete">Pass</a></div>`}
+    else {resultsContainer.innerHTML = `<div id="protocol_exam_final_results"><a id="failed_exam">Fail</a></div>`};
 }
 
 

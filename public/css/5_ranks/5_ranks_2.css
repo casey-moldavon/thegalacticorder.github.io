@@ -265,6 +265,7 @@ body {
     border-radius: 5px;
     margin: 1%;
     background-color: #1c1c1c;
+    width: 200px;
 }
 #protocol_exam_start_button:hover {
     border: 2.5px solid #ffffff;
@@ -297,6 +298,18 @@ body {
         0 0 5px #ffffff,
         0 0 10px #ff0015,
         0 0 15px #ff0015;
+}
+#protocol_exam_final_results {
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Allerta Stencil', sans-serif;
+
+    border: 2.5px solid #00c9ff;
+    border-radius: 5px;
+    margin: 1%;
+    background-color: #1c1c1c;
+    width: 100px;
 }
 
 

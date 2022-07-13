@@ -201,13 +201,23 @@
                                 <p>It is worth noting, by no means do we expect members to know everything about Star Citizen and the Org. Even slight familiarity with our content and the ability to quickly access any information is almost more valuable than simply knowing, as the content tends to change and update regularly. For this reason, the Exam is completely open source with no restriction to notes, web-pages, tabs or available information for the applicant as they answer each question.</p>
                             </div>
 
-                            <!-- <button id="protocol_exam_start_button" onclick="buildProtocolExam()" class="text-center" style="width: 10rem;" type="button" data-bs-toggle="modal" data-bs-target="#protocol_examModal">
-                                Start Exam
-                            </button> -->
+                            <div class="container container-fluid text-center">
 
-                            <div id="meh_results">bloop</div>
+                                <div class="row">
+                                    <div class="col">
+                                        <!-- <button id="protocol_exam_start_button" onclick="buildProtocolExam()" class="text-center" type="button" data-bs-toggle="modal" data-bs-target="#protocol_examModal">
+                                            Start Exam
+                                        </button> -->
+                                    </div>
+                                    
+                                    <div class="col">
+                                        <div id="protocol_exam_results"></div>
+                                    </div>
+                                </div>
 
-                            <p><a id="bold_note">Note:</a> Exam not yet available here. COMING SOON!</p>
+                            </div>
+
+                            <!-- <p><a id="bold_note">Note:</a> Exam not yet available here. COMING SOON!</p> -->
 
                         </div>
                     </div>
@@ -360,7 +370,7 @@
 
                             <div id="protocol_exam_container"></div>
                             <p></p>
-                            <button id="meh_submit" onclick="showProtocolExamResults()"> Submit Quiz </button>
+                            <button id="meh_submit" onclick="showProtocolExamResults()"type="button" data-bs-toggle="modal" data-bs-target="#protocol_examModal"> Submit Answers </button>
                             <p></p>
 
                         </div>
