@@ -201,9 +201,9 @@
                                 <p>It is worth noting, by no means do we expect members to know everything about Star Citizen and the Org. Even slight familiarity with our content and the ability to quickly access any information is almost more valuable than simply knowing, as the content tends to change and update regularly. For this reason, the Exam is completely open source with no restriction to notes, web-pages, tabs or available information for the applicant as they answer each question.</p>
                             </div>
 
-                            <!-- <button id="protocol_exam_start_button" onclick="buildProtocolExam()" class="text-center" style="width: 10rem;" type="button" data-bs-toggle="modal" data-bs-target="#protocol_examModal">
+                            <button id="protocol_exam_start_button" onclick="buildProtocolExam()" class="text-center" style="width: 10rem;" type="button" data-bs-toggle="modal" data-bs-target="#protocol_examModal">
                                 Start Exam
-                            </button> -->
+                            </button>
 
                             <p><a id="bold_note">Note:</a> Exam not yet available here. COMING SOON!</p>
 
@@ -325,15 +325,9 @@
                     </div>
                 </div>
 
-
-
-
             </div>
         </div>
     </div>
-
-
-
 
 
 
@@ -349,6 +343,7 @@
                             <p></p>
                             <p></p>
                             <p></p>
+                            <div id="meh_results">bloop</div>
                             <p></p>
                             <p id="protocol_exam_header_title">PROTOCOL CERTIFICATION EXAM</p>
                             <p></p>
@@ -359,11 +354,10 @@
 
                         <div class="container justify-content-center container-fluid">
 
-                            <div id="protocol_exam_placeholder"></div>
+                            <div id="protocol_exam_container"></div>
                             <p></p>
-                            <button id="submit">Submit Quiz</button>
+                            <button id="meh_submit" onclick="showProtocolExamResults()"> Submit Quiz </button>
                             <p></p>
-                            <div id="results"></div>
 
                         </div>
                     </div>
@@ -393,7 +387,7 @@
                         </div>
 
 
-                        <div class="container justify-content-center container-fluid">
+                        <!-- <div class="container justify-content-center container-fluid">
 
                             <div id="medical_exam_placeholder"></div>
                             <p></p>
@@ -401,7 +395,7 @@
                             <p></p>
                             <div id="results"></div>
 
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -429,7 +423,7 @@
                         </div>
 
 
-                        <div class="container justify-content-center container-fluid">
+                        <!-- <div class="container justify-content-center container-fluid">
 
                             <div id="g_tactical_exam_placeholder"></div>
                             <p></p>
@@ -437,7 +431,7 @@
                             <p></p>
                             <div id="results"></div>
 
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -465,7 +459,7 @@
                         </div>
 
 
-                        <div class="container justify-content-center container-fluid">
+                        <!-- <div class="container justify-content-center container-fluid">
 
                             <div id="s_tactical_exam_placeholder"></div>
                             <p></p>
@@ -473,7 +467,7 @@
                             <p></p>
                             <div id="results"></div>
 
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -482,16 +476,10 @@
 
 
 
-
-
-
-
-
 <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ rank_benefits End ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
     <script src="../../navbar/navbar.js"></script>
     <script src="../../navbar/navbar_modal.js"></script>
-    <script src="../../js/exam_timers.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 
