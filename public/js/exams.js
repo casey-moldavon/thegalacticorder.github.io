@@ -101,38 +101,38 @@ const questionsProtocolExam = [
         },
         correctAnswer: "c"
     },
-    {
-        questionNum: "Q2.",
-        type: "single",
-        question: "What is the primary goal of The Galactic Order?",
-        answers: {
-            a: "Replace the UEE",
-            b: "Defeat the Vanduul",
-            c: "Ensure galactic stability",
-            d: "All of the above"
-        },
-        correctAnswer: "d"
-    },
-    {
-        questionNum: "Q3.",
-        type: "single",
-        question: "True or False: Any unit may wear a previously worn uniform of their same division?",
-        answers: {
-            a: "True",
-            b: "False"
-        },
-        correctAnswer: "b"
-    },
-    {
-        questionNum: "Q4.",
-        type: "single",
-        question: "True or False: Commanders may wear any previously worn uniform of their same division?",
-        answers: {
-            a: "True",
-            b: "False"
-        },
-        correctAnswer: "a"
-    },
+    // {
+    //     questionNum: "Q2.",
+    //     type: "single",
+    //     question: "What is the primary goal of The Galactic Order?",
+    //     answers: {
+    //         a: "Replace the UEE",
+    //         b: "Defeat the Vanduul",
+    //         c: "Ensure galactic stability",
+    //         d: "All of the above"
+    //     },
+    //     correctAnswer: "d"
+    // },
+    // {
+    //     questionNum: "Q3.",
+    //     type: "single",
+    //     question: "True or False: Any unit may wear a previously worn uniform of their same division?",
+    //     answers: {
+    //         a: "True",
+    //         b: "False"
+    //     },
+    //     correctAnswer: "b"
+    // },
+    // {
+    //     questionNum: "Q4.",
+    //     type: "single",
+    //     question: "True or False: Commanders may wear any previously worn uniform of their same division?",
+    //     answers: {
+    //         a: "True",
+    //         b: "False"
+    //     },
+    //     correctAnswer: "a"
+    // },
     {
         questionNum: "Q5.",
         type: "multi",
@@ -143,7 +143,7 @@ const questionsProtocolExam = [
             c: "Medical",
             d: "Science"
         },
-        correctAnswer: "b"+ "c" +"d"
+        correctAnswer: ["b","c","d"]
     },
     // {
     //     questionNum: "Q6.",
@@ -1237,57 +1237,79 @@ function buildProtocolExam() {
 
     );
     protocolExamContainer.innerHTML = outputProtocolExam.join('');
-    timerProtocolExam()
+    // timerProtocolExam()
 }
 
 function showProtocolExamResults() {
-    const answerContainers = document.getElementById('protocol_exam_container').querySelectorAll('.answers');
-    const resultsContainer = document.getElementById('protocol_exam_results');
+    const protocolExamContainer = document.getElementById('protocol_exam_container').querySelectorAll('.answers'); // this collects all the answers
+    const resultsContainer = document.getElementById('protocol_exam_results'); // displays results
+    const testResults = document.getElementById('test_results'); // displays results (testing)
 
     let numCorrect = 0;
 
-    questionsProtocolExam.forEach( (currentQuestion, questionNumber) => {
-
-        const answerContainer = answerContainers[questionNumber];
-        const selector = `input[name=question${questionNumber}]:checked`;
-        const userAnswer = (answerContainer.querySelector(selector) || {}).value;
-
-        if (userAnswer === currentQuestion.correctAnswer) {numCorrect++;}
-
-    });
-    if (numCorrect >= 3) {resultsContainer.innerHTML = `<div id="protocol_exam_final_results"><a id="complete">Pass</a></div>`}
-    else {resultsContainer.innerHTML = `<div id="protocol_exam_final_results"><a id="failed_exam">Fail</a></div>`};
-}
-
-
-
-function timerProtocolExam() {
-    document.getElementById("protocol_exam_start_button");
-    document.getElementById('protocol_timer').innerHTML = 30 + ":" + 01;
-    startTimer();
     
-    function startTimer() {
-        var presentTime = document.getElementById('protocol_timer').innerHTML;
-        var timeArray = presentTime.split(/[:]+/);
-        var m = timeArray[0];
-        var s = checkSecond((timeArray[1] - 1));
-        if(s==59){m=m-1}
-        if(m<0){
-            return
-        }
+    questionsProtocolExam.forEach( (currentQuestion, questionNumber) => { // this line sorts through object array
+        // currentQuestion displays each object
+        // questionNumber is the array number of each object
+        var answerContainer = protocolExamContainer[questionNumber]; // this variable isolates each object (within the array) Example: object[0] or 
+        var selector = `input[name=question${questionNumber}]:checked`; // this variable is equal to the checked answer (line: 1189)
+        var userAnswer = (answerContainer.querySelector(selector) || {}).value; //this variable is equal to what is selected (the value)
+
+
+        let tempCorrect = 0;
+
+        // console.log(currentQuestion)
+        // console.log(questionNumber)
+        // console.log(currentQuestion.type)
         
-        document.getElementById('protocol_timer').innerHTML =
-        m + ":" + s;
-        console.log(m)
-        setTimeout(startTimer, 1000);    
-    }
-    
-    function checkSecond(sec) {
-        if (sec < 10 && sec >= 0) {sec = "0" + sec};
-        if (sec < 0) {sec = "59"};
-        return sec;
-    }
+        if (currentQuestion.type == "single") {
+            console.log(userAnswer)
+            if (userAnswer === currentQuestion.correctAnswer) {numCorrect++;}
+        }
+
+        else if (currentQuestion.type == "multi") {
+            console.log(userAnswer)
+            
+            if (answerContainer[userAnswer] === currentQuestion.correctAnswer) {tempCorrect++}
+            console.log("tempCorrect =")
+            console.log(tempCorrect);
+        }
+    });
+
+    testResults.innerHTML = `${numCorrect} out of ${questionsProtocolExam.length}`;
+    // if (numCorrect >= 3) {resultsContainer.innerHTML = `<div id="protocol_exam_final_results"><a id="complete">Pass</a></div>`}
+    // else {resultsContainer.innerHTML = `<div id="protocol_exam_final_results"><a id="failed_exam">Fail</a></div>`};
 }
+
+
+
+// function timerProtocolExam() {
+//     document.getElementById("protocol_exam_start_button");
+//     document.getElementById('protocol_timer').innerHTML = 30 + ":" + 01;
+//     startTimer();
+    
+//     function startTimer() {
+//         var presentTime = document.getElementById('protocol_timer').innerHTML;
+//         var timeArray = presentTime.split(/[:]+/);
+//         var m = timeArray[0];
+//         var s = checkSecond((timeArray[1] - 1));
+//         if(s==59){m=m-1}
+//         if(m<0){
+//             return
+//         }
+        
+//         document.getElementById('protocol_timer').innerHTML =
+//         m + ":" + s;
+//         console.log(m)
+//         setTimeout(startTimer, 1000);    
+//     }
+    
+//     function checkSecond(sec) {
+//         if (sec < 10 && sec >= 0) {sec = "0" + sec};
+//         if (sec < 0) {sec = "59"};
+//         return sec;
+//     }
+// }
 
 // self note: fix multi answer questions
 // self note: add timer (days: hours: minutes) to replace Start Exam button
