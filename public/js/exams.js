@@ -101,38 +101,38 @@ const questionsProtocolExam = [
         },
         correctAnswer: "c"
     },
-    // {
-    //     questionNum: "Q2.",
-    //     type: "single",
-    //     question: "What is the primary goal of The Galactic Order?",
-    //     answers: {
-    //         a: "Replace the UEE",
-    //         b: "Defeat the Vanduul",
-    //         c: "Ensure galactic stability",
-    //         d: "All of the above"
-    //     },
-    //     correctAnswer: "d"
-    // },
-    // {
-    //     questionNum: "Q3.",
-    //     type: "single",
-    //     question: "True or False: Any unit may wear a previously worn uniform of their same division?",
-    //     answers: {
-    //         a: "True",
-    //         b: "False"
-    //     },
-    //     correctAnswer: "b"
-    // },
-    // {
-    //     questionNum: "Q4.",
-    //     type: "single",
-    //     question: "True or False: Commanders may wear any previously worn uniform of their same division?",
-    //     answers: {
-    //         a: "True",
-    //         b: "False"
-    //     },
-    //     correctAnswer: "a"
-    // },
+    {
+        questionNum: "Q2.",
+        type: "single",
+        question: "What is the primary goal of The Galactic Order?",
+        answers: {
+            a: "Replace the UEE",
+            b: "Defeat the Vanduul",
+            c: "Ensure galactic stability",
+            d: "All of the above"
+        },
+        correctAnswer: "d"
+    },
+    {
+        questionNum: "Q3.",
+        type: "single",
+        question: "True or False: Any unit may wear a previously worn uniform of their same division?",
+        answers: {
+            a: "True",
+            b: "False"
+        },
+        correctAnswer: "b"
+    },
+    {
+        questionNum: "Q4.",
+        type: "single",
+        question: "True or False: Commanders may wear any previously worn uniform of their same division?",
+        answers: {
+            a: "True",
+            b: "False"
+        },
+        correctAnswer: "a"
+    },
     {
         questionNum: "Q5.",
         type: "multi",
@@ -145,518 +145,518 @@ const questionsProtocolExam = [
         },
         correctAnswer: ["b","c","d"]
     },
-    // {
-    //     questionNum: "Q6.",
-    //     type: "single",
-    //     question: "What are the Combat Division Tool requirements?",
-    //     answers: {
-    //         a: "Pistol",
-    //         b: "Knife",
-    //         c: "Rifle",
-    //         d: "None"
-    //     },
-    //     correctAnswer: "d"
-    // },
-    // {
-    //     questionNum: "Q7.",
-    //     type: "single",
-    //     question: "What are the Engineering Division Tool requirements?",
-    //     answers: {
-    //         a: "MultiTool",
-    //         b: "MultiTool + All attachments",
-    //         c: "Uniform",
-    //         d: "None"
-    //     },
-    //     correctAnswer: "b"
-    // },
-    // {
-    //     questionNum: "Q8.",
-    //     type: "single",
-    //     question: "What are the Medical Division Tool requirements?",
-    //     answers: {
-    //         a: "ParaMed",
-    //         b: "ParaMed + All MedPens",
-    //         c: "All MedPens",
-    //         d: "None"
-    //     },
-    //     correctAnswer: "a"
-    // },
-    // {
-    //     questionNum: "Q9.",
-    //     type: "single",
-    //     question: "What are the Science Division Tool requirements?",
-    //     answers: {
-    //         a: "MultiTool",
-    //         b: "ParaMed",
-    //         c: "Tigerclaw",
-    //         d: "None"
-    //     },
-    //     correctAnswer: "c"
-    // },
-    // {
-    //     questionNum: "Q10.",
-    //     type: "multi",
-    //     question: "What instances may Uniform regulations be excused?",
-    //     answers: {
-    //         a: "When off-duty",
-    //         b: "During criticial operations",
-    //         c: "When looting",
-    //         d: "When stated by Leadership"
-    //     },
-    //     correctAnswer: "a" + "b" + "c" + "d"
-    // },
-    // {
-    //     questionNum: "Q11.",
-    //     type: "single",
-    //     question: "What weapons are units restricted from using?",
-    //     answers: {
-    //         a: "Grenades & Launchers",
-    //         b: "Trip Mines",
-    //         c: "Railguns",
-    //         d: "None"
-    //     },
-    //     correctAnswer: "d"
-    // },
-    // {
-    //     questionNum: "Q12.",
-    //     type: "single",
-    //     question: "What is the punishment for wearing improper uniform?",
-    //     answers: {
-    //         a: "Insubordination Warning",
-    //         b: "Red A Alert",
-    //         c: "Red D Alert<",
-    //         d: "Red U Alert"
-    //     },
-    //     correctAnswer: "b"
-    // },
-    // {
-    //     questionNum: "Q13.",
-    //     type: "multi",
-    //     question: "When does a rank 2, or lower, Salute?",
-    //     answers: {
-    //         a: "When addressed by Officer",
-    //         b: "When addressing an Officer",
-    //         c: "When entering room with Officer",
-    //         d: "When dismissed by Officer"
-    //     },
-    //     correctAnswer: "a" + "b" + "d"
-    // },
-    // {
-    //     questionNum: "Q14.",
-    //     type: "single",
-    //     question: "True of False: Officers are not required to Salute back to lower Ranks.",
-    //     answers: {
-    //         a: "True",
-    //         b: "False"
-    //     },
-    //     correctAnswer: "a"
-    // },
-    // {
-    //     questionNum: "Q15.",
-    //     type: "multi",
-    //     question: "When must an Officer Salute?",
-    //     answers: {
-    //         a: "When subordinate Salutes Officer",
-    //         b: "When addressing another Officer",
-    //         c: "When dismissing another Officer",
-    //         d: "When addressing a Superior"
-    //     },
-    //     correctAnswer: "b" + "d"
-    // },
-    // {
-    //     questionNum: "Q16.",
-    //     type: "single",
-    //     question: "For Rank 2 units, or lower, what emote follows after Salute?",
-    //     answers: {
-    //         a: "Attention emote",
-    //         b: "At Ease emote",
-    //         c: "Bow emote",
-    //         d: "Stand emote"
-    //     },
-    //     correctAnswer: "a"
-    // },
-    // {
-    //     questionNum: "Q17.",
-    //     type: "single",
-    //     question: "When is At East emote used?",
-    //     answers: {
-    //         a: "When Officer approaches",
-    //         b: "When Officer says “At Ease”",
-    //         c: "When Officer says “As you were” or “Dismissed”",
-    //         d: "All of the above"
-    //     },
-    //     correctAnswer: "b"
-    // },
-    // {
-    //     questionNum: "Q18.",
-    //     type: "single",
-    //     question: "When may a unit return to their regular duties from Attention emote or At Ease emote?",
-    //     answers: {
-    //         a: "When Officer says “As you were”",
-    //         b: "When Officer says “Dismissed”",
-    //         c: "When Officer says “As you were” or “Dismissed”",
-    //         d: "When Officer says “At Ease”"
-    //     },
-    //     correctAnswer: "c"
-    // },
-    // {
-    //     questionNum: "Q19.",
-    //     type: "single",
-    //     question: "True or False: Units must Salute an Officer when Dismissed.",
-    //     answers: {
-    //         a: "True",
-    //         b: "False"
-    //     },
-    //     correctAnswer: "a"
-    // },
-    // {
-    //     questionNum: "Q20.",
-    //     type: "single",
-    //     question: "When is Attention emote used independently from Salute?",
-    //     answers: {
-    //         a: "When Dismissed",
-    //         b: "When unit says “Officer on Deck”",
-    //         c: "When Officer uses Attention emote",
-    //         d: "Never"
-    //     },
-    //     correctAnswer: "b"
-    // },
-    // {
-    //     questionNum: "Q21.",
-    //     type: "single",
-    //     question: "When must Units request Permission to Board?",
-    //     answers: {
-    //         a: "When Officer is boarding",
-    //         b: "When Officer has boarded",
-    //         c: "Always",
-    //         d: "Never"
-    //     },
-    //     correctAnswer: "b"
-    // },
-    // {
-    //     questionNum: "Q22.",
-    //     type: "single",
-    //     question: "When must Units request Permission to Depart?",
-    //     answers: {
-    //         a: "When Officer departs",
-    //         b: "When Officer has departed",
-    //         c: "Always",
-    //         d: "Never"
-    //     },
-    //     correctAnswer: "c"
-    // },
-    // {
-    //     questionNum: "Q23.",
-    //     type: "single",
-    //     question: "Who may grant Permission for Boarding or Departing?",
-    //     answers: {
-    //         a: "Lieutenant",
-    //         b: "Officer",
-    //         c: "Captain",
-    //         d: "All of the above"
-    //     },
-    //     correctAnswer: "d"
-    // },
-    // {
-    //     questionNum: "Q24.",
-    //     type: "single",
-    //     question: "True or False: a Lieutenant may grant an Officer permission to board.",
-    //     answers: {
-    //         a: "True",
-    //         b: "False"
-    //     },
-    //     correctAnswer: "a"
-    // },
-    // {
-    //     questionNum: "Q25.",
-    //     type: "single",
-    //     question: "What part of a ship is off-limits to Rank 1 units or lower?",
-    //     answers: {
-    //         a: "Armory",
-    //         b: "Engineering",
-    //         c: "Medical",
-    //         d: "Medical",
-    //         e: "The Bridge"
-    //     },
-    //     correctAnswer: "d"
-    // },
-    // {
-    //     questionNum: "Q26.",
-    //     type: "multi",
-    //     question: "Combat Division Units are restricted from what parts of a ship?",
-    //     answers: {
-    //         a: "Armory",
-    //         b: "Engineering",
-    //         c: "Medical",
-    //         d: "The Bridge",
-    //         e: "None"
-    //     },
-    //     correctAnswer: "b" + "c"
-    // },
-    // {
-    //     questionNum: "Q27.",
-    //     type: "multi",
-    //     question: "Engineer Division Units are restricted from what parts of a ship?",
-    //     answers: {
-    //         a: "Armory",
-    //         b: "Engineering",
-    //         c: "Medical",
-    //         d: "The Bridge",
-    //         e: "None"
-    //     },
-    //     correctAnswer: "a" + "c"
-    // },
-    // {
-    //     questionNum: "Q28.",
-    //     type: "multi",
-    //     question: "Medical Division Units are restricted from what parts of a ship?",
-    //     answers: {
-    //         a: "Armory",
-    //         b: "Engineering",
-    //         c: "Medical",
-    //         d: "The Bridge",
-    //         e: "None"
-    //     },
-    //     correctAnswer: "e"
-    // },
-    // {
-    //     questionNum: "Q29.",
-    //     type: "single",
-    //     question: "True or False: Rank 3: Officers aren’t restricted from parts of a ship.",
-    //     answers: {
-    //         a: "True",
-    //         b: "False"
-    //     },
-    //     correctAnswer: "b"
-    // },
-    // {
-    //     questionNum: "Q30.",
-    //     type: "multi",
-    //     question: "Which units may freely enter the Captain’s Cabin?",
-    //     answers: {
-    //         a: "Lieutenants",
-    //         b: "Officers",
-    //         c: "1st Officer",
-    //         d: "Captain"
-    //     },
-    //     correctAnswer: "c" + "d"
-    // },
-    // {
-    //     questionNum: "Q31.",
-    //     type: "single",
-    //     question: "True or False: Gameplay Rules only apply in-game when associating with Galactic Order members.",
-    //     answers: {
-    //         a: "True",
-    //         b: "False"
-    //     },
-    //     correctAnswer: "a"
-    // },
-    // {
-    //     questionNum: "Q32.",
-    //     type: "multi",
-    //     question: "When/Where are Unit Conduct codes not required?",
-    //     answers: {
-    //         a: "When offline",
-    //         b: "When off-duty",
-    //         c: "When in combat",
-    //         d: "When in Habitation areas"
-    //     },
-    //     correctAnswer: "a" + "b" + "c" + "d"
-    // },
-    // {
-    //     questionNum: "Q33.",
-    //     type: "multi",
-    //     question: "What are Rank 3: Officers responsible for Recording / Reporting?",
-    //     answers: {
-    //         a: "Alerts & Warnings",
-    //         b: "Hours & Missions",
-    //         c: "Patrols & Months",
-    //         d: "Recruits & Events"
-    //     },
-    //     correctAnswer: "a" + "b"
-    // },
-    // {
-    //     questionNum: "Q34.",
-    //     type: "single",
-    //     question: "What are 1st Officers responsible for Recording / Reporting?",
-    //     answers: {
-    //         a: "Alerts & Warnings",
-    //         b: "Hours & Missions",
-    //         c: "Patrols & Months",
-    //         d: "Recruits & Events"
-    //     },
-    //     correctAnswer: "d"
-    // },
-    // {
-    //     questionNum: "Q35.",
-    //     type: "multi",
-    //     question: "Select all Units Trooper Commanders can oversee.",
-    //     answers: {
-    //         a: "Ensign Troopers",
-    //         b: "Lieutenant & Shock Troopers",
-    //         c: "Outriders & Agents",
-    //         d: "Combat Pilots"
-    //     },
-    //     correctAnswer: "a" + "b"
-    // },
-    // {
-    //     questionNum: "Q36.",
-    //     type: "multi",
-    //     question: "Select all Units Engineer Commanders can oversee.",
-    //     answers: {
-    //         a: "Ensign Operators",
-    //         b: "Lieutenant Engineers",
-    //         c: "Combat Pilots",
-    //         d: "Combat Commanders"
-    //     },
-    //     correctAnswer: "a" + "b"
-    // },
-    // {
-    //     questionNum: "Q37.",
-    //     type: "multi",
-    //     question: "Select all Units Medical Commanders can oversee.",
-    //     answers: {
-    //         a: "Ensign Medics",
-    //         b: "Lieutenant Corpsman",
-    //         c: "Ensign Troopers",
-    //         d: "Lieutenant & Shock Troopers"
-    //     },
-    //     correctAnswer: "a" + "b" + "c" + "d"
-    // },
-    // {
-    //     questionNum: "Q38.",
-    //     type: "multi",
-    //     question: "Select all Units Science Officers can oversee.",
-    //     answers: {
-    //         a: "Ensign Operators",
-    //         b: "Ensign Troopers",
-    //         c: "Field Researchers",
-    //         d: "Laboratory Techs"
-    //     },
-    //     correctAnswer: "c" + "d"
-    // },
-    // {
-    //     questionNum: "Q39.",
-    //     type: "multi",
-    //     question: "Who do Commanders report to?",
-    //     answers: {
-    //         a: "Officers",
-    //         b: "1st Officers",
-    //         c: "Captains",
-    //         d: "Admirals"
-    //     },
-    //     correctAnswer: "b" + "c" + "d"
-    // },
-    // {
-    //     questionNum: "Q40.",
-    //     type: "single",
-    //     question: "What division is a CP Commander part of?",
-    //     answers: {
-    //         a: "Combat",
-    //         b: "Engineering",
-    //         c: "Medical",
-    //         d: "Science"
-    //     },
-    //     correctAnswer: "b"
-    // },
-    // {
-    //     questionNum: "Q41.",
-    //     type: "single",
-    //     question: "True or False: Patrols are counted when reporting for duty.",
-    //     answers: {
-    //         a: "True",
-    //         b: "False"
-    //     },
-    //     correctAnswer: "a"
-    // },
-    // {
-    //     questionNum: "Q42.",
-    //     type: "single",
-    //     question: "True or False: An individual unit’s Hours & Missions are recorded by an Officer only after they’ve reported for duty.",
-    //     answers: {
-    //         a: "True",
-    //         b: "False"
-    //     },
-    //     correctAnswer: "a"
-    // },
-    // {
-    //     questionNum: "Q43.",
-    //     type: "single",
-    //     question: "How does an Officer Report for Duty?",
-    //     answers: {
-    //         a: "When they report to a Superior",
-    //         b: "When they report to another Officer",
-    //         c: "When a subordinate reports for duty",
-    //         d: "All of the above"
-    //     },
-    //     correctAnswer: "d"
-    // },
-    // {
-    //     questionNum: "Q44.",
-    //     type: "single",
-    //     question: "True or False: Roleplay is only required when first reporting for duty.",
-    //     answers: {
-    //         a: "True",
-    //         b: "False"
-    //     },
-    //     correctAnswer: "b"
-    // },
-    // {
-    //     questionNum: "Q45.",
-    //     type: "single",
-    //     question: "True or False: A Patrol is only considered to end when the unit “Requests Relief” or logs off.",
-    //     answers: {
-    //         a: "True",
-    //         b: "False"
-    //     },
-    //     correctAnswer: "a"
-    // },
-    // {
-    //     questionNum: "Q46.",
-    //     type: "single",
-    //     question: "What is a Red A Alert?",
-    //     answers: {
-    //         a: "An Alert for unit to wear the proper uniform",
-    //         b: "An Alert for unit to wear the proper tool(s)",
-    //         c: "An Alert for Weapon violation",
-    //         d: "All of the abov"
-    //     },
-    //     correctAnswer: "a"
-    // },
-    // {
-    //     questionNum: "Q47.",
-    //     type: "single",
-    //     question: "What happens with 3 Red A Alerts on Record?",
-    //     answers: {
-    //         a: "Demotion",
-    //         b: "Termination",
-    //         c: "Official Warning",
-    //         d: "Benefits Removed"
-    //     },
-    //     correctAnswer: "c"
-    // },
-    // {
-    //     questionNum: "Q48.",
-    //     type: "single",
-    //     question: "What is an Act of Insubordination?",
-    //     answers: {
-    //         a: "3 Red A Alerts",
-    //         b: "3 Red U Alerts",
-    //         c: "Official Warning",
-    //         d: "Law violation"
-    //     },
-    //     correctAnswer: "c"
-    // },
-    // {
-    //     questionNum: "Q49.",
-    //     type: "single",
-    //     question: "True or False: Alerts and Official Warnings may be removed from record over time, at Leadership’s discretion.",
-    //     answers: {
-    //         a: "True",
-    //         b: "False"
-    //     },
-    //     correctAnswer: "b"
-    // },
+    {
+        questionNum: "Q6.",
+        type: "single",
+        question: "What are the Combat Division Tool requirements?",
+        answers: {
+            a: "Pistol",
+            b: "Knife",
+            c: "Rifle",
+            d: "None"
+        },
+        correctAnswer: "d"
+    },
+    {
+        questionNum: "Q7.",
+        type: "single",
+        question: "What are the Engineering Division Tool requirements?",
+        answers: {
+            a: "MultiTool",
+            b: "MultiTool + All attachments",
+            c: "Uniform",
+            d: "None"
+        },
+        correctAnswer: "b"
+    },
+    {
+        questionNum: "Q8.",
+        type: "single",
+        question: "What are the Medical Division Tool requirements?",
+        answers: {
+            a: "ParaMed",
+            b: "ParaMed + All MedPens",
+            c: "All MedPens",
+            d: "None"
+        },
+        correctAnswer: "a"
+    },
+    {
+        questionNum: "Q9.",
+        type: "single",
+        question: "What are the Science Division Tool requirements?",
+        answers: {
+            a: "MultiTool",
+            b: "ParaMed",
+            c: "Tigerclaw",
+            d: "None"
+        },
+        correctAnswer: "c"
+    },
+    {
+        questionNum: "Q10.",
+        type: "multi",
+        question: "What instances may Uniform regulations be excused?",
+        answers: {
+            a: "When off-duty",
+            b: "During criticial operations",
+            c: "When looting",
+            d: "When stated by Leadership"
+        },
+        correctAnswer: ["a","b","c","d"]
+    },
+    {
+        questionNum: "Q11.",
+        type: "single",
+        question: "What weapons are units restricted from using?",
+        answers: {
+            a: "Grenades & Launchers",
+            b: "Trip Mines",
+            c: "Railguns",
+            d: "None"
+        },
+        correctAnswer: "d"
+    },
+    {
+        questionNum: "Q12.",
+        type: "single",
+        question: "What is the punishment for wearing improper uniform?",
+        answers: {
+            a: "Insubordination Warning",
+            b: "Red A Alert",
+            c: "Red D Alert<",
+            d: "Red U Alert"
+        },
+        correctAnswer: "b"
+    },
+    {
+        questionNum: "Q13.",
+        type: "multi",
+        question: "When does a rank 2, or lower, Salute?",
+        answers: {
+            a: "When addressed by Officer",
+            b: "When addressing an Officer",
+            c: "When entering room with Officer",
+            d: "When dismissed by Officer"
+        },
+        correctAnswer: ["a","b","d"]
+    },
+    {
+        questionNum: "Q14.",
+        type: "single",
+        question: "True of False: Officers are not required to Salute back to lower Ranks.",
+        answers: {
+            a: "True",
+            b: "False"
+        },
+        correctAnswer: "a"
+    },
+    {
+        questionNum: "Q15.",
+        type: "multi",
+        question: "When must an Officer Salute?",
+        answers: {
+            a: "When subordinate Salutes Officer",
+            b: "When addressing another Officer",
+            c: "When dismissing another Officer",
+            d: "When addressing a Superior"
+        },
+        correctAnswer: ["b","d"]
+    },
+    {
+        questionNum: "Q16.",
+        type: "single",
+        question: "For Rank 2 units, or lower, what emote follows after Salute?",
+        answers: {
+            a: "Attention emote",
+            b: "At Ease emote",
+            c: "Bow emote",
+            d: "Stand emote"
+        },
+        correctAnswer: "a"
+    },
+    {
+        questionNum: "Q17.",
+        type: "single",
+        question: "When is At East emote used?",
+        answers: {
+            a: "When Officer approaches",
+            b: "When Officer says “At Ease”",
+            c: "When Officer says “As you were” or “Dismissed”",
+            d: "All of the above"
+        },
+        correctAnswer: "b"
+    },
+    {
+        questionNum: "Q18.",
+        type: "single",
+        question: "When may a unit return to their regular duties from Attention emote or At Ease emote?",
+        answers: {
+            a: "When Officer says “As you were”",
+            b: "When Officer says “Dismissed”",
+            c: "When Officer says “As you were” or “Dismissed”",
+            d: "When Officer says “At Ease”"
+        },
+        correctAnswer: "c"
+    },
+    {
+        questionNum: "Q19.",
+        type: "single",
+        question: "True or False: Units must Salute an Officer when Dismissed.",
+        answers: {
+            a: "True",
+            b: "False"
+        },
+        correctAnswer: "a"
+    },
+    {
+        questionNum: "Q20.",
+        type: "single",
+        question: "When is Attention emote used independently from Salute?",
+        answers: {
+            a: "When Dismissed",
+            b: "When unit says “Officer on Deck”",
+            c: "When Officer uses Attention emote",
+            d: "Never"
+        },
+        correctAnswer: "b"
+    },
+    {
+        questionNum: "Q21.",
+        type: "single",
+        question: "When must Units request Permission to Board?",
+        answers: {
+            a: "When Officer is boarding",
+            b: "When Officer has boarded",
+            c: "Always",
+            d: "Never"
+        },
+        correctAnswer: "b"
+    },
+    {
+        questionNum: "Q22.",
+        type: "single",
+        question: "When must Units request Permission to Depart?",
+        answers: {
+            a: "When Officer departs",
+            b: "When Officer has departed",
+            c: "Always",
+            d: "Never"
+        },
+        correctAnswer: "c"
+    },
+    {
+        questionNum: "Q23.",
+        type: "single",
+        question: "Who may grant Permission for Boarding or Departing?",
+        answers: {
+            a: "Lieutenant",
+            b: "Officer",
+            c: "Captain",
+            d: "All of the above"
+        },
+        correctAnswer: "d"
+    },
+    {
+        questionNum: "Q24.",
+        type: "single",
+        question: "True or False: a Lieutenant may grant an Officer permission to board.",
+        answers: {
+            a: "True",
+            b: "False"
+        },
+        correctAnswer: "a"
+    },
+    {
+        questionNum: "Q25.",
+        type: "multi",
+        question: "What part of a ship is off-limits to Rank 1 units or lower?",
+        answers: {
+            a: "Armory",
+            b: "Engineering",
+            c: "Medical",
+            d: "Medical",
+            e: "The Bridge"
+        },
+        correctAnswer: "e"
+    },
+    {
+        questionNum: "Q26.",
+        type: "multi",
+        question: "Combat Division Units are restricted from what parts of a ship?",
+        answers: {
+            a: "Armory",
+            b: "Engineering",
+            c: "Medical",
+            d: "The Bridge",
+            e: "None"
+        },
+        correctAnswer: ["b","c"]
+    },
+    {
+        questionNum: "Q27.",
+        type: "multi",
+        question: "Engineer Division Units are restricted from what parts of a ship?",
+        answers: {
+            a: "Armory",
+            b: "Engineering",
+            c: "Medical",
+            d: "The Bridge",
+            e: "None"
+        },
+        correctAnswer: ["a","c"]
+    },
+    {
+        questionNum: "Q28.",
+        type: "multi",
+        question: "Medical Division Units are restricted from what parts of a ship?",
+        answers: {
+            a: "Armory",
+            b: "Engineering",
+            c: "Medical",
+            d: "The Bridge",
+            e: "None"
+        },
+        correctAnswer: "e"
+    },
+    {
+        questionNum: "Q29.",
+        type: "single",
+        question: "True or False: Rank 3: Officers aren’t restricted from parts of a ship.",
+        answers: {
+            a: "True",
+            b: "False"
+        },
+        correctAnswer: "b"
+    },
+    {
+        questionNum: "Q30.",
+        type: "multi",
+        question: "Which units may freely enter the Captain’s Cabin?",
+        answers: {
+            a: "Lieutenants",
+            b: "Officers",
+            c: "1st Officer",
+            d: "Captain"
+        },
+        correctAnswer: ["c","d"]
+    },
+    {
+        questionNum: "Q31.",
+        type: "single",
+        question: "True or False: Gameplay Rules only apply in-game when associating with Galactic Order members.",
+        answers: {
+            a: "True",
+            b: "False"
+        },
+        correctAnswer: "a"
+    },
+    {
+        questionNum: "Q32.",
+        type: "multi",
+        question: "When/Where are Unit Conduct codes not required?",
+        answers: {
+            a: "When offline",
+            b: "When off-duty",
+            c: "When in combat",
+            d: "When in Habitation areas"
+        },
+        correctAnswer: ["a","b","c","d"]
+    },
+    {
+        questionNum: "Q33.",
+        type: "multi",
+        question: "What are Rank 3: Officers responsible for Recording / Reporting?",
+        answers: {
+            a: "Alerts & Warnings",
+            b: "Hours & Missions",
+            c: "Patrols & Months",
+            d: "Recruits & Events"
+        },
+        correctAnswer: ["a","b"]
+    },
+    {
+        questionNum: "Q34.",
+        type: "multi",
+        question: "What are 1st Officers responsible for Recording / Reporting?",
+        answers: {
+            a: "Alerts & Warnings",
+            b: "Hours & Missions",
+            c: "Patrols & Months",
+            d: "Recruits & Events"
+        },
+        correctAnswer: "d"
+    },
+    {
+        questionNum: "Q35.",
+        type: "multi",
+        question: "Select all Units Trooper Commanders can oversee.",
+        answers: {
+            a: "Ensign Troopers",
+            b: "Lieutenant & Shock Troopers",
+            c: "Outriders & Agents",
+            d: "Combat Pilots"
+        },
+        correctAnswer: ["a","b"]
+    },
+    {
+        questionNum: "Q36.",
+        type: "multi",
+        question: "Select all Units Engineer Commanders can oversee.",
+        answers: {
+            a: "Ensign Operators",
+            b: "Lieutenant Engineers",
+            c: "Combat Pilots",
+            d: "Combat Commanders"
+        },
+        correctAnswer: ["a","b"]
+    },
+    {
+        questionNum: "Q37.",
+        type: "multi",
+        question: "Select all Units Medical Commanders can oversee.",
+        answers: {
+            a: "Ensign Medics",
+            b: "Lieutenant Corpsman",
+            c: "Ensign Troopers",
+            d: "Lieutenant & Shock Troopers"
+        },
+        correctAnswer: ["a","b","c","d"]
+    },
+    {
+        questionNum: "Q38.",
+        type: "multi",
+        question: "Select all Units Science Officers can oversee.",
+        answers: {
+            a: "Ensign Operators",
+            b: "Ensign Troopers",
+            c: "Field Researchers",
+            d: "Laboratory Techs"
+        },
+        correctAnswer: ["c","d"]
+    },
+    {
+        questionNum: "Q39.",
+        type: "multi",
+        question: "Who do Commanders report to?",
+        answers: {
+            a: "Officers",
+            b: "1st Officers",
+            c: "Captains",
+            d: "Admirals"
+        },
+        correctAnswer: ["b","c","d"]
+    },
+    {
+        questionNum: "Q40.",
+        type: "single",
+        question: "What division is a CP Commander part of?",
+        answers: {
+            a: "Combat",
+            b: "Engineering",
+            c: "Medical",
+            d: "Science"
+        },
+        correctAnswer: "b"
+    },
+    {
+        questionNum: "Q41.",
+        type: "single",
+        question: "True or False: Patrols are counted when reporting for duty.",
+        answers: {
+            a: "True",
+            b: "False"
+        },
+        correctAnswer: "a"
+    },
+    {
+        questionNum: "Q42.",
+        type: "single",
+        question: "True or False: An individual unit’s Hours & Missions are recorded by an Officer only after they’ve reported for duty.",
+        answers: {
+            a: "True",
+            b: "False"
+        },
+        correctAnswer: "a"
+    },
+    {
+        questionNum: "Q43.",
+        type: "single",
+        question: "How does an Officer Report for Duty?",
+        answers: {
+            a: "When they report to a Superior",
+            b: "When they report to another Officer",
+            c: "When a subordinate reports for duty",
+            d: "All of the above"
+        },
+        correctAnswer: "d"
+    },
+    {
+        questionNum: "Q44.",
+        type: "single",
+        question: "True or False: Roleplay is only required when first reporting for duty.",
+        answers: {
+            a: "True",
+            b: "False"
+        },
+        correctAnswer: "b"
+    },
+    {
+        questionNum: "Q45.",
+        type: "single",
+        question: "True or False: A Patrol is only considered to end when the unit “Requests Relief” or logs off.",
+        answers: {
+            a: "True",
+            b: "False"
+        },
+        correctAnswer: "a"
+    },
+    {
+        questionNum: "Q46.",
+        type: "single",
+        question: "What is a Red A Alert?",
+        answers: {
+            a: "An Alert for unit to wear the proper uniform",
+            b: "An Alert for unit to wear the proper tool(s)",
+            c: "An Alert for Weapon violation",
+            d: "All of the above"
+        },
+        correctAnswer: "a"
+    },
+    {
+        questionNum: "Q47.",
+        type: "single",
+        question: "What happens with 3 Red A Alerts on Record?",
+        answers: {
+            a: "Demotion",
+            b: "Termination",
+            c: "Official Warning",
+            d: "Benefits Removed"
+        },
+        correctAnswer: "c"
+    },
+    {
+        questionNum: "Q48.",
+        type: "single",
+        question: "What is an Act of Insubordination?",
+        answers: {
+            a: "3 Red A Alerts",
+            b: "3 Red U Alerts",
+            c: "Official Warning",
+            d: "Law violation"
+        },
+        correctAnswer: "c"
+    },
+    {
+        questionNum: "Q49.",
+        type: "single",
+        question: "True or False: Alerts and Official Warnings may be removed from record over time, at Leadership’s discretion.",
+        answers: {
+            a: "True",
+            b: "False"
+        },
+        correctAnswer: "b"
+    },
     {
         questionNum: "Q50.",
         type: "single",
@@ -676,7 +676,7 @@ const questionsMedicalExam = [
         question: "What are the Tool Requirements for Rank 2: Lieutenant Corpsman?",
         answers: {
             a: "ParaMed",
-            b: "ParaMed + All MedPens",
+            b: "ParaMed,All MedPens",
             c: "All MedPens",
             d: "None"
         },
@@ -694,7 +694,7 @@ const questionsMedicalExam = [
             e: "Search & Rescue",
             f: "Research"
         },
-        correctAnswer: "a" + "c" + "d" + "e"
+        correctAnswer: ["a","c","d","e"]
     },
     {
         questionNum: "Q3.",
@@ -707,7 +707,7 @@ const questionsMedicalExam = [
             d: "Arms",
             e: "Legs"
         },
-        correctAnswer: "a" + "b" + "d" + "e"
+        correctAnswer: ["a","b","d","e"]
     },
     {
         questionNum: "Q4.",
@@ -720,7 +720,7 @@ const questionsMedicalExam = [
             d: "Arms",
             e: "Legs"
         },
-        correctAnswer: "a" + "b" + "c" + "d" + "e"
+        correctAnswer: ["a","b","c","d","e"]
     },
     {
         questionNum: "Q5.",
@@ -752,7 +752,7 @@ const questionsMedicalExam = [
             c: "Sensory problems",
             d: "Reduced stamina"
         },
-        correctAnswer: "a" + "b" + "c" + "d"
+        correctAnswer: ["a","b","c","d"]
     },
     {
         questionNum: "Q8.",
@@ -877,7 +877,7 @@ const questionsMedicalExam = [
             d: "Resurgera",
             e: "Drink Water"
         },
-        correctAnswer: "a" + "b" + "d"
+        correctAnswer: ["a","b","d"]
     },
     {
         questionNum: "Q18.",
@@ -903,7 +903,7 @@ const questionsMedicalExam = [
             d: "Multiple Use",
             e: "Treat Tier 3 Injuries"
         },
-        correctAnswer: "a" + "c" + "d"
+        correctAnswer: ["a","c","d"]
     },
     {
         questionNum: "Q20.",
@@ -916,7 +916,7 @@ const questionsMedicalExam = [
             d: "Reclaimer",
             e: "Carrack"
         },
-        correctAnswer: "a" + "b" + "e"
+        correctAnswer: ["a","b","e"]
     },
     {
         questionNum: "Q21.",
@@ -928,7 +928,7 @@ const questionsMedicalExam = [
             c: "Tier 3",
             d: "Hospital"
         },
-        correctAnswer: "a" + "b" + "d"
+        correctAnswer: ["a","b","d"]
     },
     {
         questionNum: "Q22.",
@@ -1025,7 +1025,7 @@ const questionsMedicalExam = [
             d: "Provide Tier 2 Healthcare",
             e: "Provide Tier 1 Healthcare"
         },
-        correctAnswer: "b" + "c" + "d"
+        correctAnswer: ["b","c","d"]
     },
     {
         questionNum: "Q29.",
@@ -1038,7 +1038,7 @@ const questionsMedicalExam = [
             d: "Pharmacy",
             e: "Emergency Elevator"
         },
-        correctAnswer: "b" + "e"
+        correctAnswer: ["b","e"]
     },
     {
         questionNum: "Q30.",
@@ -1100,7 +1100,7 @@ const questionsMedicalExam = [
             d: "Medevac",
             e: "Medical"
         },
-        correctAnswer: "b" + "e"
+        correctAnswer: ["b","e"]
     },
     {
         questionNum: "Q35.",
@@ -1167,7 +1167,7 @@ const questionsMedicalExam = [
     },
 ];
 
-var protocolExamContainer;
+// var protocolExamContainer;
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Protocol Exam Modal ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 function buildProtocolExam() {
@@ -1237,81 +1237,80 @@ function buildProtocolExam() {
 
     );
     protocolExamContainer.innerHTML = outputProtocolExam.join('');
-    // timerProtocolExam()
+    timerProtocolExam()
 }
 
 function showProtocolExamResults() {
-    const protocolExamContainer = document.getElementById('protocol_exam_container').querySelectorAll('.answers'); // this collects all the answers
-    const resultsContainer = document.getElementById('protocol_exam_results'); // displays results
-    const testResults = document.getElementById('test_results'); // displays results (testing)
+    const protocolExamContainer = document.getElementById('protocol_exam_container').querySelectorAll('.answers');
+    const protocolExamResults = document.getElementById('protocol_exam_results');
+    // const testResults = document.getElementById('test_results');
 
     let numCorrect = 0;
-
     
-    questionsProtocolExam.forEach( (currentQuestion, questionNumber) => { // this line sorts through object array
-        // currentQuestion displays each object
-        // questionNumber is the array number of each object
-        var answerContainer = protocolExamContainer[questionNumber]; // this variable isolates each object (within the array) Example: object[0] or 
-        var selector = `input[name=question${questionNumber}]:checked`; // this variable is equal to the checked answer (line: 1189)
-        var userAnswer = (answerContainer.querySelector(selector) || {}).value; //this variable is equal to what is selected (the value)
+    questionsProtocolExam.forEach( (currentQuestion, questionNumber) => {
 
+        var protocolAnswerContainer = protocolExamContainer[questionNumber];
+        var protocolSelector = `input[name=question${questionNumber}]:checked`;
+        var protocolUserAnswer = (protocolAnswerContainer.querySelector(protocolSelector) || {}).value;
+        var protocolCheckboxes = document.querySelectorAll(`input[name=question${questionNumber}]:checked`);
 
         let tempCorrect = 0;
-
-        // console.log(currentQuestion)
-        // console.log(questionNumber)
-        // console.log(currentQuestion.type)
+        let tempArray = [];
         
         if (currentQuestion.type == "single") {
-            console.log(userAnswer)
-            if (userAnswer === currentQuestion.correctAnswer) {numCorrect++;}
+            if (protocolUserAnswer === currentQuestion.correctAnswer) {numCorrect++;}
         }
-
+        
         else if (currentQuestion.type == "multi") {
-            console.log(userAnswer)
-            
-            if (answerContainer[userAnswer] === currentQuestion.correctAnswer) {tempCorrect++}
-            console.log("tempCorrect =")
-            console.log(tempCorrect);
+
+            for (var i = 0; i < protocolCheckboxes.length; i++) {
+                tempArray.push(protocolCheckboxes[i].value)
+            }
+            for (var num = 0; num < tempArray.length; num ++) {
+                if (tempArray[num] == currentQuestion.correctAnswer[num]) {tempCorrect++}
+            }
+            if (tempCorrect == currentQuestion.correctAnswer.length) {numCorrect++}
         }
+        tempCorrect = 0;
+        tempArray = [];
     });
 
-    testResults.innerHTML = `${numCorrect} out of ${questionsProtocolExam.length}`;
-    // if (numCorrect >= 3) {resultsContainer.innerHTML = `<div id="protocol_exam_final_results"><a id="complete">Pass</a></div>`}
-    // else {resultsContainer.innerHTML = `<div id="protocol_exam_final_results"><a id="failed_exam">Fail</a></div>`};
+    // testResults.innerHTML = `${numCorrect} out of ${questionsProtocolExam.length}`;
+    if (numCorrect >= 35) {protocolExamResults.innerHTML = `<div id="protocol_exam_final_results"><a id="complete">Pass</a></div>`}
+    else {protocolExamResults.innerHTML = `<div id="protocol_exam_final_results"><a id="failed_exam">Fail</a></div>`};
 }
 
 
 
-// function timerProtocolExam() {
-//     document.getElementById("protocol_exam_start_button");
-//     document.getElementById('protocol_timer').innerHTML = 30 + ":" + 01;
-//     startTimer();
+function timerProtocolExam() {
+    document.getElementById("protocol_exam_start_button");
+    document.getElementById('protocol_timer').innerHTML = 30 + ":" + 01;
+    startTimer();
     
-//     function startTimer() {
-//         var presentTime = document.getElementById('protocol_timer').innerHTML;
-//         var timeArray = presentTime.split(/[:]+/);
-//         var m = timeArray[0];
-//         var s = checkSecond((timeArray[1] - 1));
-//         if(s==59){m=m-1}
-//         if(m<0){
-//             return
-//         }
+    function startTimer() {
+        var presentTime = document.getElementById('protocol_timer').innerHTML;
+        var timeArray = presentTime.split(/[:]+/);
+        var m = timeArray[0];
+        var s = checkSecond((timeArray[1] - 1));
+        if(s==59){m=m-1}
+        if(m<0){
+            return
+        }
         
-//         document.getElementById('protocol_timer').innerHTML =
-//         m + ":" + s;
-//         console.log(m)
-//         setTimeout(startTimer, 1000);    
-//     }
+        document.getElementById('protocol_timer').innerHTML =
+        m + ":" + s;
+        console.log(m)
+        setTimeout(startTimer, 1000);    
+    }
     
-//     function checkSecond(sec) {
-//         if (sec < 10 && sec >= 0) {sec = "0" + sec};
-//         if (sec < 0) {sec = "59"};
-//         return sec;
-//     }
-// }
+    function checkSecond(sec) {
+        if (sec < 10 && sec >= 0) {sec = "0" + sec};
+        if (sec < 0) {sec = "59"};
+        return sec;
+    }
+}
 
-// self note: fix multi answer questions
 // self note: add timer (days: hours: minutes) to replace Start Exam button
 // self note: add member name select
 // apply exam progression to database
+// replace if else statement at end of showProtocolExamResults() to instead display database status
