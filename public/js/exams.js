@@ -1285,7 +1285,7 @@ function showProtocolExamResults() {
 function timerProtocolExam() {
     var protocolExamEnd = document.getElementById('protocol_exam_submit');
     var protocolExamStart = document.getElementById("protocol_exam_start_button");
-    document.getElementById('protocol_timer').innerHTML = 00 + ":" + 11;
+    document.getElementById('protocol_timer').innerHTML = 30 + ":" + 01;
     startTimer();
     
     function startTimer() {
@@ -1295,6 +1295,8 @@ function timerProtocolExam() {
         var s = checkSecond((timeArray[1] - 1));
         if(s==59){m=m-1}
         if(m<0){
+            protocolExamStart.style.visibility = "hidden";
+            protocolExamEnd.click();
             return
         }
         
@@ -1308,8 +1310,6 @@ function timerProtocolExam() {
         if (sec < 10 && sec >= 0) {sec = "0" + sec};
         if (sec < 0) {
             sec = "59";
-            protocolExamStart.style.visibility = "hidden";
-            protocolExamEnd.click();
         };
         return sec;
     }

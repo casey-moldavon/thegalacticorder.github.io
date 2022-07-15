@@ -526,6 +526,31 @@ label.checkbox input:checked + span {
 #answer_letter {
     margin-right: 15px;
 }
+
+
+#protocol_exam_submit {
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Allerta Stencil', sans-serif;
+
+    border: 2.5px solid #00c9ff;
+    border-radius: 5px;
+    /* margin: 1%; */
+    background-color: #1c1c1c;
+    width: 200px;
+}
+#protocol_exam_submit:hover {
+    border: 2.5px solid #ffffff;
+    border-radius: 5px;
+    box-shadow:
+        0 0 10px #00c9ff,
+        0 0 15px #ffffff;
+        
+    border-collapse: collapse;
+    background-color: #00c9ff;
+    /* margin: 1%; */
+}
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Extra ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 #rank_benefits_icon {
     color: #ff0015;
