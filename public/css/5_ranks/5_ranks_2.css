@@ -305,7 +305,7 @@ body {
     font-weight: bold;
     font-family: 'Allerta Stencil', sans-serif;
 
-    border: 2.5px solid #00c9ff;
+    border: 2.5px solid #ffffff;
     border-radius: 5px;
     margin: 1%;
     background-color: #1c1c1c;
@@ -447,6 +447,8 @@ body {
         0 0 15px #ff0015;
 }
 
+
+
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Exams End ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 label.radio {
@@ -521,21 +523,9 @@ label.checkbox input:checked + span {
     border-collapse: collapse;
 }
 
-
 #answer_letter {
     margin-right: 15px;
 }
-
-
-
-
-
-
-
-
-
-
-
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Extra ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 #rank_benefits_icon {
     color: #ff0015;

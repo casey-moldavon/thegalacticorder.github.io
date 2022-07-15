@@ -1283,8 +1283,9 @@ function showProtocolExamResults() {
 
 
 function timerProtocolExam() {
-    document.getElementById("protocol_exam_start_button");
-    document.getElementById('protocol_timer').innerHTML = 30 + ":" + 01;
+    var protocolExamEnd = document.getElementById('protocol_exam_submit');
+    var protocolExamStart = document.getElementById("protocol_exam_start_button");
+    document.getElementById('protocol_timer').innerHTML = 00 + ":" + 11;
     startTimer();
     
     function startTimer() {
@@ -1300,12 +1301,16 @@ function timerProtocolExam() {
         document.getElementById('protocol_timer').innerHTML =
         m + ":" + s;
         console.log(m)
-        setTimeout(startTimer, 1000);    
+        setTimeout(startTimer, 1000);
     }
     
     function checkSecond(sec) {
         if (sec < 10 && sec >= 0) {sec = "0" + sec};
-        if (sec < 0) {sec = "59"};
+        if (sec < 0) {
+            sec = "59";
+            protocolExamStart.style.visibility = "hidden";
+            protocolExamEnd.click();
+        };
         return sec;
     }
 }
