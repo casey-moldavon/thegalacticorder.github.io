@@ -1243,7 +1243,7 @@ function buildProtocolExam() {
 function showProtocolExamResults() {
     const protocolExamContainer = document.getElementById('protocol_exam_container').querySelectorAll('.answers');
     const protocolExamResults = document.getElementById('protocol_exam_results');
-    // const testResults = document.getElementById('test_results');
+    // const testResults = document.getElementById('test_results'); // for testing
 
     let numCorrect = 0;
     
@@ -1275,7 +1275,7 @@ function showProtocolExamResults() {
         tempArray = [];
     });
 
-    // testResults.innerHTML = `${numCorrect} out of ${questionsProtocolExam.length}`;
+    // testResults.innerHTML = `${numCorrect} out of ${questionsProtocolExam.length}`; // for testing
     if (numCorrect >= 35) {protocolExamResults.innerHTML = `<div id="protocol_exam_final_results"><a id="complete">Pass</a></div>`}
     else {protocolExamResults.innerHTML = `<div id="protocol_exam_final_results"><a id="failed_exam">Fail</a></div>`};
 }
