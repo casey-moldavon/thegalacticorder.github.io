@@ -1,3 +1,4 @@
+const bodyParser = require("body-parser");
 
 function monthDiff(oldYear, currentYear, oldMonth, currentMonth) {
     var months;
@@ -115,7 +116,6 @@ async function generateCardData() {
     var yyyy = today.getFullYear();
 
     today = yyyy + '-' + mm + '-' + dd;
-
 
 
     var novitiateCards = novitiates.map(

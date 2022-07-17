@@ -86,8 +86,6 @@
 // });
 
 
-
-
 const questionsProtocolExam = [
     {
         questionNum: "Q1.",
@@ -224,7 +222,7 @@ const questionsProtocolExam = [
         answers: {
             a: "Insubordination Warning",
             b: "Red A Alert",
-            c: "Red D Alert<",
+            c: "Red D Alert",
             d: "Red U Alert"
         },
         correctAnswer: "b"
@@ -1167,6 +1165,10 @@ const questionsMedicalExam = [
     },
 ];
 
+const questionsGTacticalExam = [];
+
+const questionsSTacticalExam = [];
+
 var examUnitData = [];
 
 async function generateExamData() {
@@ -1187,14 +1189,12 @@ async function generateExamBattalionData(examData) {
 
     examBattalionList.innerHTML = allBattalions;
     examUnitData = examData;
-
-    console.log(examUnitData);
 }
 
 
 function generateExamBattalionNames(){
 
-    const data = examUnitData;
+    let data = examUnitData;
 
     let examSelectBattalion = document.getElementById('exam_select_battalion').value;
     let examBattalionMemberList = document.getElementById('exam_battalion_member_list_options');
@@ -1205,8 +1205,6 @@ function generateExamBattalionNames(){
     var admiraltyMemberNames = admiraltyMembers.map(row =>`<option value="${row.sc_name}"></option>`).join('');
     var academyMemberNames = academyMembers.map(row =>`<option value="${row.sc_name}"></option>`).join('');
 
-    console.log(admiraltyMembers)
-    
     if (examSelectBattalion == "F-01 Holland A-00"){examBattalionMemberList.innerHTML = admiraltyMemberNames;}
     else if (examSelectBattalion == "F-01 Cr4zy A-01"){examBattalionMemberList.innerHTML = academyMemberNames;}
 }
@@ -1327,8 +1325,14 @@ function showProtocolExamResults() {
     });
 
     // testResults.innerHTML = `${numCorrect} out of ${questionsProtocolExam.length}`; // for testing
-    if (numCorrect >= 35) {protocolExamResults.innerHTML = `<div id="protocol_exam_final_results"><a id="complete">Pass</a></div>`}
-    else {protocolExamResults.innerHTML = `<div id="protocol_exam_final_results"><a id="failed_exam">Fail</a></div>`};
+    if (numCorrect >= 35) {
+        protocolExamResults.innerHTML = `<div class="text-center" id="protocol_exam_final_results"><a id="complete">Pass</a></div>`;
+        updateProtocolPass();
+    }
+    else {
+        protocolExamResults.innerHTML = `<div class="text-center" id="protocol_exam_final_results"><a id="failed_exam">Fail</a></div>`;
+        updateProtocolFail();
+    }
 }
 
 
@@ -1336,7 +1340,7 @@ function showProtocolExamResults() {
 function timerProtocolExam() {
     var protocolExamEnd = document.getElementById('protocol_exam_submit');
     var protocolExamStart = document.getElementById("protocol_exam_start_button");
-    document.getElementById('protocol_timer').innerHTML = 00 + ":" + 11;
+    document.getElementById('protocol_timer').innerHTML = 30 + ":" + 01;
     startTimer();
     
     function startTimer() {
@@ -1366,7 +1370,44 @@ function timerProtocolExam() {
     }
 }
 
+
+function updateProtocolPass() {
+    let examParticipant = document.getElementById('exam_select_member').value;
+    let data = examUnitData;
+
+    console.log(examParticipant)
+
+    var currentProtocolScore = data.row.map(units => units.examParticipant)
+
+    console.log(currentProtocolScore)
+
+    currentProtocolScore = true;
+    console.log(currentProtocolScore)
+}
+
+function updateProtocolFail() {
+    let examParticipant = document.getElementById('exam_select_member').value;
+    let data = examUnitData;
+
+    console.log(data)
+    console.log(examParticipant)
+
+    var allProtocolScores = data.rows.filter(unit => unit.protocol_exam)
+
+
+    var currentProtocolScore;
+    allProtocolScores.map(row => {
+        if (row.sc_name == examParticipant) {
+            currentProtocolScore = allProtocolScores;
+        }
+    });
+
+    console.log(currentProtocolScore)
+
+    // currentProtocolScore = false;
+    // console.log(currentProtocolScore)
+}
+
 // self note: add timer (days: hours: minutes) to replace Start Exam button
-// self note: add member name select
 // apply exam progression to database
 // replace if else statement at end of showProtocolExamResults() to instead display database status
