@@ -1197,18 +1197,25 @@ function generateExamBattalionNames(){
     const data = examUnitData;
 
     let examSelectBattalion = document.getElementById('exam_select_battalion').value;
-    let examBattalionMemberList = document.getElementById('exam_battalion_list_options');
+    let examBattalionMemberList = document.getElementById('exam_battalion_member_list_options');
 
     var admiraltyMembers = data.rows.filter(units => units.battalion == "F-01 Holland A-00")
     var academyMembers = data.rows.filter(units => units.battalion == "F-01 Cr4zy A-01")
 
     var admiraltyMemberNames = admiraltyMembers.map(row =>`<option value="${row.sc_name}"></option>`).join('');
     var academyMemberNames = academyMembers.map(row =>`<option value="${row.sc_name}"></option>`).join('');
+
+    console.log(admiraltyMembers)
     
     if (examSelectBattalion == "F-01 Holland A-00"){examBattalionMemberList.innerHTML = admiraltyMemberNames;}
     else if (examSelectBattalion == "F-01 Cr4zy A-01"){examBattalionMemberList.innerHTML = academyMemberNames;}
 }
 
+
+function examStartButtonReveal() {
+    var protocolExamStartButton = document.getElementById("protocol_exam_start_button");
+    protocolExamStartButton.style.visibility = "visible";
+}
 
 
 
@@ -1339,7 +1346,7 @@ function timerProtocolExam() {
         var s = checkSecond((timeArray[1] - 1));
         if(s==59){m=m-1}
         if(m<0){
-            // protocolExamStart.style.visibility = "hidden";
+            protocolExamStart.style.visibility = "hidden";
             protocolExamEnd.click();
             return
         }
