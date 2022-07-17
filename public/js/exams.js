@@ -1167,26 +1167,26 @@ const questionsMedicalExam = [
     },
 ];
 
-
-async function generateUnitData() {
-    const response = await fetch('https://frolicking-frangipane-e2734e.netlify.app/.netlify/functions/roster');
-    const data = await response.json();
-
-    generateExamBattalionData(data);
-};
-
 var examUnitData = [];
 
-async function generateExamBattalionData(data) {
-    const response2 = await fetch('https://frolicking-frangipane-e2734e.netlify.app/.netlify/functions/battalions');
-    const data2 = await response2.json();
+async function generateExamData() {
+    const examResponse = await fetch('https://frolicking-frangipane-e2734e.netlify.app/.netlify/functions/roster');
+    const examData = await examResponse.json();
+
+    generateExamBattalionData(examData);
+};
+
+
+async function generateExamBattalionData(examData) {
+    const examResponse2 = await fetch('https://frolicking-frangipane-e2734e.netlify.app/.netlify/functions/battalions');
+    const examData2 = await examResponse2.json();
 
 
     let examBattalionList = document.getElementById('exam_battalion_list_options');
-    var allBattalions = data2.rows.map(row =>`<option value="${row.battalion_name}"></option>`).join('');
+    var allBattalions = examData2.rows.map(row =>`<option value="${row.battalion_name}"></option>`).join('');
 
     examBattalionList.innerHTML = allBattalions;
-    examUnitData = data;
+    examUnitData = examData;
 
     console.log(examUnitData);
 }
