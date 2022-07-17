@@ -1172,28 +1172,23 @@ async function generateUnitData() {
     const response = await fetch('https://frolicking-frangipane-e2734e.netlify.app/.netlify/functions/roster');
     const data = await response.json();
 
-    generateBattalionData(data);
+    generateExamBattalionData(data);
 };
 
 var examUnitData = [];
 
-async function generateBattalionData(data) {
+async function generateExamBattalionData(data) {
     const response2 = await fetch('https://frolicking-frangipane-e2734e.netlify.app/.netlify/functions/battalions');
     const data2 = await response2.json();
 
 
-    let fullMemberList = document.getElementById('full_member_list_options');
-    let fullBattalionList = document.getElementById('full_battalion_list_options');
-    let reportBattalionList = document.getElementById('report_battalion_list_options');
-
-    var allMemberNames = data.rows.map(row =>`<option value="${row.sc_name}"></option>`).join('');
+    let examBattalionList = document.getElementById('exam_battalion_list_options');
     var allBattalions = data2.rows.map(row =>`<option value="${row.battalion_name}"></option>`).join('');
 
-    fullMemberList.innerHTML = allMemberNames;
-    fullBattalionList.innerHTML = allBattalions;
-    reportBattalionList.innerHTML = allBattalions;
-
+    examBattalionList.innerHTML = allBattalions;
     examUnitData = data;
+
+    console.log(examUnitData);
 }
 
 
