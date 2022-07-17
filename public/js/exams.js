@@ -1167,7 +1167,56 @@ const questionsMedicalExam = [
     },
 ];
 
-// var protocolExamContainer;
+
+async function generateUnitData() {
+    const response = await fetch('https://frolicking-frangipane-e2734e.netlify.app/.netlify/functions/roster');
+    const data = await response.json();
+
+    generateBattalionData(data);
+};
+
+var examUnitData = [];
+
+async function generateBattalionData(data) {
+    const response2 = await fetch('https://frolicking-frangipane-e2734e.netlify.app/.netlify/functions/battalions');
+    const data2 = await response2.json();
+
+
+    let fullMemberList = document.getElementById('full_member_list_options');
+    let fullBattalionList = document.getElementById('full_battalion_list_options');
+    let reportBattalionList = document.getElementById('report_battalion_list_options');
+
+    var allMemberNames = data.rows.map(row =>`<option value="${row.sc_name}"></option>`).join('');
+    var allBattalions = data2.rows.map(row =>`<option value="${row.battalion_name}"></option>`).join('');
+
+    fullMemberList.innerHTML = allMemberNames;
+    fullBattalionList.innerHTML = allBattalions;
+    reportBattalionList.innerHTML = allBattalions;
+
+    examUnitData = data;
+}
+
+
+function generateExamBattalionNames(){
+
+    const data = examUnitData;
+
+    let examSelectBattalion = document.getElementById('exam_select_battalion').value;
+    let examBattalionMemberList = document.getElementById('exam_battalion_list_options');
+
+    var admiraltyMembers = data.rows.filter(units => units.battalion == "F-01 Holland A-00")
+    var academyMembers = data.rows.filter(units => units.battalion == "F-01 Cr4zy A-01")
+
+    var admiraltyMemberNames = admiraltyMembers.map(row =>`<option value="${row.sc_name}"></option>`).join('');
+    var academyMemberNames = academyMembers.map(row =>`<option value="${row.sc_name}"></option>`).join('');
+    
+    if (examSelectBattalion == "F-01 Holland A-00"){examBattalionMemberList.innerHTML = admiraltyMemberNames;}
+    else if (examSelectBattalion == "F-01 Cr4zy A-01"){examBattalionMemberList.innerHTML = academyMemberNames;}
+}
+
+
+
+
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Protocol Exam Modal ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 function buildProtocolExam() {
@@ -1242,7 +1291,7 @@ function buildProtocolExam() {
 
 function showProtocolExamResults() {
     const protocolExamContainer = document.getElementById('protocol_exam_container').querySelectorAll('.answers');
-    const protocolExamResults = document.getElementById('protocol_exam_results');
+    const protocolExamResults = document.getElementById('protocol_button_container');
     // const testResults = document.getElementById('test_results'); // for testing
 
     let numCorrect = 0;
@@ -1285,7 +1334,7 @@ function showProtocolExamResults() {
 function timerProtocolExam() {
     var protocolExamEnd = document.getElementById('protocol_exam_submit');
     var protocolExamStart = document.getElementById("protocol_exam_start_button");
-    document.getElementById('protocol_timer').innerHTML = 30 + ":" + 01;
+    document.getElementById('protocol_timer').innerHTML = 00 + ":" + 11;
     startTimer();
     
     function startTimer() {
@@ -1295,7 +1344,7 @@ function timerProtocolExam() {
         var s = checkSecond((timeArray[1] - 1));
         if(s==59){m=m-1}
         if(m<0){
-            protocolExamStart.style.visibility = "hidden";
+            // protocolExamStart.style.visibility = "hidden";
             protocolExamEnd.click();
             return
         }

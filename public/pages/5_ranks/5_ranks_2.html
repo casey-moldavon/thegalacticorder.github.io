@@ -22,7 +22,7 @@
 
 </head>
 
-<body>
+<body onload="generateUnitData()">
 
 <!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Navbar Start ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
@@ -201,21 +201,41 @@
                                 <p>It is worth noting, by no means do we expect members to know everything about Star Citizen and the Org. Even slight familiarity with our content and the ability to quickly access any information is almost more valuable than simply knowing, as the content tends to change and update regularly. For this reason, the Exam is completely open source with no restriction to notes, web-pages, tabs or available information for the applicant as they answer each question.</p>
                             </div>
 
-                            <div class="container container-fluid text-center">
+                            <p id="break_space"></p>
+                            
+                            <div class="container container-fluid justify-content-center text-center">
+
+                                <form>
+                                    <div class="form-group">
+                                        <label id="select_registered_battalion" for="exam_select_battalion"class="col-form-label">Select Battalion:</label>
+                                        <input class="form-control" list="exam_battalion_list_options" id="exam_select_battalion" placeholder="Select Battalion" name="exam_select_battalion" onchange="generateExamBattalionNames()">
+                                        <datalist id="exam_battalion_list_options">
+                                            <option value="Battalion 1"></option>
+                                            <option value="Battalion 2"></option>
+                                            <option value="Battalion 3"></option>
+                                            <option value="Battalion 4"></option>
+                                        </select>
+                                    </div>
+                
+                                    <div class="form-group">
+                                        <label id="registered_member" for="exam_select_member"class="col-form-label">Unit Name:</label>
+                                        <input class="form-control" list="exam_battalion_member_list_options" id="exam_select_member" placeholder="Select Member" name="exam_select_member">
+                                        <datalist id="exam_battalion_member_list_options">
+                                            <option value="First Select Battalion"></option>
+                                        </select>
+                                    </div>
+                                </form>
+
 
                                 <div class="row">
-                                    <div class="col">
-                                        <!-- <button id="protocol_exam_start_button" onclick="buildProtocolExam()" class="text-center" type="button" data-bs-toggle="modal" data-bs-target="#protocol_examModal">Start Exam</button> -->
-                                    </div>
-                                    
-                                    <div class="col">
-                                        <div id="protocol_exam_results"></div>
+                                    <div id="protocol_button_container" class="col">
+                                        <button id="protocol_exam_start_button" onclick="buildProtocolExam()" class="text-center" type="button" data-bs-toggle="modal" data-bs-target="#protocol_examModal">Start Exam</button>
                                     </div>
                                 </div>
 
-                            </div>
+                            </div> 
 
-                            <p><a id="bold_note">Note:</a> Exam not yet available here. COMING SOON!</p>
+                            <!-- <p><a id="bold_note">Note:</a> Exam not yet available here. COMING SOON!</p> -->
 
                         </div>
                     </div>
