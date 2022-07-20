@@ -1165,9 +1165,1007 @@ const questionsMedicalExam = [
     },
 ];
 
-const questionsGTacticalExam = [];
+const questionsGTacticalExam = [
+    {
+        questionNum: "Q1.",
+        type: "multi",
+        question: "What are the Primary Ship types typically found in Battle Battalion?",
+        answers: {
+            a: "Carriers",
+            b: "Gun Ships",
+            c: "Frigates",
+            d: "Corvettes",
+            e: "Destroyers"
+        },
+        correctAnswer: ["a","b","c","d","e"]
+    },
+    {
+        questionNum: "Q2.",
+        type: "multi",
+        question: "What are the most common Support Ships found in Battle Battalion?",
+        answers: {
+            a: "Repair",
+            b: "Re-arm",
+            c: "Refuel",
+            d: "Combat",
+            e: "Medical"
+        },
+        correctAnswer: ["a","b","c","e"]
+    },
+    {
+        questionNum: "Q3.",
+        type: "multi",
+        question: "Select all Units of the Combat Division.",
+        answers: {
+            a: "Ensign Trooper",
+            b: "Lietenant Trooper & Shock Trooper",
+            c: "Outrider",
+            d: "Agent",
+            e: "Trooper Commander"
+        },
+        correctAnswer: ["a","b","c","d","e"]
+    },
+    {
+        questionNum: "Q4.",
+        type: "single",
+        question: "What Sub-Division is part of the Combat Division?",
+        answers: {
+            a: "Medical",
+            b: "Spec-Ops",
+            c: "Elite",
+            d: "Combat Pilot"
+        },
+        correctAnswer: "b"
+    },
+    {
+        questionNum: "Q5.",
+        type: "single",
+        question: "In a Standard Battalion, what is the Shock Trooper limit?",
+        answers: {
+            a: "1",
+            b: "2",
+            c: "3",
+            d: "4"
+        },
+        correctAnswer: "b"
+    },
+    {
+        questionNum: "Q6.",
+        type: "single",
+        question: "In a Battle Battalion, what is the Shock Trooper limit?",
+        answers: {
+            a: "2",
+            b: "4",
+            c: "6",
+            d: "8"
+        },
+        correctAnswer: "c"
+    },
+    {
+        questionNum: "Q7.",
+        type: "single",
+        question: "What is the Center Symbol for Combat Division emblem?",
+        answers: {
+            a: "Shield",
+            b: "Sword",
+            c: "Target",
+            d: "All of the above"
+        },
+        correctAnswer: "a"
+    },
+    {
+        questionNum: "Q8.",
+        type: "single",
+        question: "True or False: Lieutenant Trooper and Shock Trooper share the same rank and authority.",
+        answers: {
+            a: "True",
+            b: "False"
+        },
+        correctAnswer: "b"
+    },
+    {
+        questionNum: "Q9.",
+        type: "multi",
+        question: "Select all Ammunition Types for ground infantry Units?",
+        answers: {
+            a: "Ballistic",
+            b: "Electron",
+            c: "Laser",
+            d: "Plasma",
+            e: "Explosive"
+        },
+        correctAnswer: ["a","b","c","d"]
+    },
+    {
+        questionNum: "Q10.",
+        type: "multi",
+        question: "Which Ammunition Type is capable of spreading to nearby enemies?",
+        answers: {
+            a: "Ballistic",
+            b: "Electron",
+            c: "Laser",
+            d: "Plasma",
+            e: "Explosive"
+        },
+        correctAnswer: "b"
+    },
+    {
+        questionNum: "Q11.",
+        type: "single",
+        question: "Which Ammunition Type replaces ammunition with a battery, giving a larger ammo capacity?",
+        answers: {
+            a: "Ballistic",
+            b: "Electron",
+            c: "Laser",
+            d: "Plasma",
+            e: "Explosive"
+        },
+        correctAnswer: "c"
+    },
+    {
+        questionNum: "Q12.",
+        type: "single",
+        question: "Which Ammunition Type does mostly direct damage to a single target?",
+        answers: {
+            a: "Ballistic",
+            b: "Electron",
+            c: "Laser",
+            d: "Plasma",
+            e: "Explosive"
+        },
+        correctAnswer: "a"
+    },
+    {
+        questionNum: "Q13.",
+        type: "single",
+        question: "Which Ammunition Type typically comes with a 'charge' ability?",
+        answers: {
+            a: "Ballistic",
+            b: "Electron",
+            c: "Laser",
+            d: "Plasma",
+            e: "Explosive"
+        },
+        correctAnswer: "d"
+    },
+    {
+        questionNum: "Q14.",
+        type: "multi",
+        question: "Which Ammunition Type will have the option to recharge clips?",
+        answers: {
+            a: "Ballistic",
+            b: "Electron",
+            c: "Laser",
+            d: "Plasma",
+            e: "Explosive"
+        },
+        correctAnswer: "c"
+    },
+    {
+        questionNum: "Q15.",
+        type: "single",
+        question: "How many different Weapon Types are there?",
+        answers: {
+            a: "6",
+            b: "8",
+            c: "10",
+            d: "12",
+            e: "14"
+        },
+        correctAnswer: "e"
+    },
+    {
+        questionNum: "Q16.",
+        type: "multi",
+        question: "Which Weapon Types are not currently available in-game?",
+        answers: {
+            a: "Trip Mines",
+            b: "Crossbows",
+            c: "Light Machine Guns",
+            d: "Anti-Personnel",
+            e: "Missile Launchers"
+        },
+        correctAnswer: ["b","d"]
+    },
+    {
+        questionNum: "Q17.",
+        type: "multi",
+        question: "Which Weapon Types have Explosive effects?",
+        answers: {
+            a: "Grenade",
+            b: "Grenade Launcher",
+            c: "Missile Launcher",
+            d: "Railgun",
+            e: "Anti-Personnel"
+        },
+        correctAnswer: ["a","b","c","d","e"]
+    },
+    {
+        questionNum: "Q18.",
+        type: "multi",
+        question: "For weapon comparison statistics, what are the primary stats listed?",
+        answers: {
+            a: "Ammo Count",
+            b: "Alpha",
+            c: "DPS",
+            d: "Max DMG",
+            e: "Effective Range",
+            f: "Maximum Range",
+            g: "Accuracy"
+        },
+        correctAnswer: ["a","b","c","e","f","g"]
+    },
+    {
+        questionNum: "Q19.",
+        type: "multi",
+        question: "Which Weapon Stats have a focus on Damage Per Second with All successful hits?",
+        answers: {
+            a: "Ammo Count",
+            b: "Alpha",
+            c: "DPS",
+            d: "Max DMG",
+            e: "Effective Range",
+            f: "Maximum Range",
+            g: "Accuracy"
+        },
+        correctAnswer: "c"
+    },
+    {
+        questionNum: "Q20.",
+        type: "multi",
+        question: "Which Weapon Stats have a focus on damage dealt up to a specific point or distance?",
+        answers: {
+            a: "Ammo Count",
+            b: "Alpha",
+            c: "DPS",
+            d: "Max DMG",
+            e: "Effective Range",
+            f: "Maximum Range",
+            g: "Accuracy"
+        },
+        correctAnswer: "e"
+    },
+    {
+        questionNum: "Q21.",
+        type: "multi",
+        question: "Which Weapon Stats have a focus on full distance of damage?",
+        answers: {
+            a: "Ammo Count",
+            b: "Alpha",
+            c: "DPS",
+            d: "Max DMG",
+            e: "Effective Range",
+            f: "Maximum Range",
+            g: "Accuracy"
+        },
+        correctAnswer: "f"
+    },
+    {
+        questionNum: "Q22.",
+        type: "single",
+        question: "Which Weapon Stat has a focus on Single Instance Damage?",
+        answers: {
+            a: "Ammo Count",
+            b: "Alpha",
+            c: "DPS",
+            d: "Max DMG",
+            e: "Effective Range",
+            f: "Maximum Range",
+            g: "Accuracy"
+        },
+        correctAnswer: "b"
+    },
+    {
+        questionNum: "Q23.",
+        type: "single",
+        question: "True or False: Laser Trip Mines are mostly used for Bunker/Ship defense against intruders or laying traps.",
+        answers: {
+            a: "True",
+            b: "False"
+        },
+        correctAnswer: "a"
+    },
+    {
+        questionNum: "Q24.",
+        type: "single",
+        question: "True or False: Laser Trip Mines are commonly found within Bunkers and Derelict ships.",
+        answers: {
+            a: "True",
+            b: "False"
+        },
+        correctAnswer: "b"
+    },
+    {
+        questionNum: "Q25.",
+        type: "single",
+        question: "How many Explosive Weapons / Tools are there in total?",
+        answers: {
+            a: "4",
+            b: "5",
+            c: "6",
+            d: "7"
+        },
+        correctAnswer: "c"
+    },
+    {
+        questionNum: "Q26.",
+        type: "multi",
+        question: "Select all Ground Assault mission types.",
+        answers: {
+            a: "Cave",
+            b: "Bunker",
+            c: "ERT",
+            d: "Derelict",
+            e: "Bounty"
+        },
+        correctAnswer: ["a","b","d"]
+    },
+    {
+        questionNum: "Q27.",
+        type: "single",
+        question: "True or False: Cave & Bunker are the most Common Ground Assault missions.",
+        answers: {
+            a: "True",
+            b: "False"
+        },
+        correctAnswer: "a"
+    },
+    {
+        questionNum: "Q28.",
+        type: "single",
+        question: "True or False: For Cave & Bunker missions, mid-range and short-range weapons are recommended.",
+        answers: {
+            a: "True",
+            b: "False"
+        },
+        correctAnswer: "b"
+    },
+    {
+        questionNum: "Q29.",
+        type: "multi",
+        question: "What leg/hip equipped items are recommended for Troopers and Combat Division Units?",
+        answers: {
+            a: "ParaMed",
+            b: "MedPen",
+            c: "OxyPen",
+            d: "Pistol",
+            e: "Knife"
+        },
+        correctAnswer: ["b","d","e"]
+    },
+    {
+        questionNum: "Q30.",
+        type: "single",
+        question: "What is the Max number of ammo clips an Ensign Trooper can equip to their chest piece?",
+        answers: {
+            a: "2",
+            b: "4",
+            c: "6",
+            d: "8"
+        },
+        correctAnswer: "b"
+    },
+    {
+        questionNum: "Q31.",
+        type: "single",
+        question: "What is the Max number of ammo clips a Shock Trooper can equip to their chest piece?",
+        answers: {
+            a: "2",
+            b: "4",
+            c: "6",
+            d: "8"
+        },
+        correctAnswer: "d"
+    },
+    {
+        questionNum: "Q32.",
+        type: "single",
+        question: "What is the Max number of ammo clips a Lieutenant Trooper can equip to their chest piece?",
+        answers: {
+            a: "2",
+            b: "4",
+            c: "6",
+            d: "8"
+        },
+        correctAnswer: "c"
+    },
+    {
+        questionNum: "Q33.",
+        type: "single",
+        question: "At what Gear weight range (in lbs.) is Movement Speed reduced to 95%?",
+        answers: {
+            a: "15-24",
+            b: "25-34",
+            c: "35-44",
+            d: "45 or more"
+        },
+        correctAnswer: "a"
+    },
+    {
+        questionNum: "Q34.",
+        type: "single",
+        question: "At what Gear weight range (in lbs.) is Movement Speed reduced to 90%?",
+        answers: {
+            a: "15-24",
+            b: "25-34",
+            c: "35-44",
+            d: "45 or more"
+        },
+        correctAnswer: "b"
+    },
+    {
+        questionNum: "Q35.",
+        type: "single",
+        question: "At what Gear weight range (in lbs.) is Movement Speed reduced to 80%?",
+        answers: {
+            a: "15-24",
+            b: "25-34",
+            c: "35-44",
+            d: "45 or more"
+        },
+        correctAnswer: "d"
+    },
+    {
+        questionNum: "Q36.",
+        type: "single",
+        question: "True or False: Only Combat Division units have access to Heavy or Medium Armor.",
+        answers: {
+            a: "True",
+            b: "False"
+        },
+        correctAnswer: "b"
+    },
+    {
+        questionNum: "Q37.",
+        type: "single",
+        question: "What color armor does Hurston Security wear?",
+        answers: {
+            a: "Red & White",
+            b: "White & Blue",
+            c: "White & Black",
+            d: "Yellow & Black"
+        },
+        correctAnswer: "d"
+    },
+    {
+        questionNum: "Q38.",
+        type: "single",
+        question: "What color armor does Crusader Security wear?",
+        answers: {
+            a: "Red & White",
+            b: "White & Blue",
+            c: "White & Black",
+            d: "Yellow & Black"
+        },
+        correctAnswer: "b"
+    },
+    {
+        questionNum: "Q39.",
+        type: "single",
+        question: "What color armor does Microtech Security wear?",
+        answers: {
+            a: "Red & White",
+            b: "White & Blue",
+            c: "White & Black",
+            d: "Yellow & Black"
+        },
+        correctAnswer: "b"
+    },
+    {
+        questionNum: "Q40.",
+        type: "single",
+        question: "What color armor does Arcorp Security wear?",
+        answers: {
+            a: "Red & White",
+            b: "White & Blue",
+            c: "White & Black",
+            d: "Yellow & Black"
+        },
+        correctAnswer: "a"
+    }
+];
 
-const questionsSTacticalExam = [];
+const questionsSTacticalExam = [
+    {
+        questionNum: "Q1.",
+        type: "multi",
+        question: "What are the Primary Ship types typically found in Battle Battalion?",
+        answers: {
+            a: "Carriers",
+            b: "Gun Ships",
+            c: "Frigates",
+            d: "Corvettes",
+            e: "Destroyers"
+        },
+        correctAnswer: ["a","b","c","d","e"]
+    },
+    {
+        questionNum: "Q2.",
+        type: "multi",
+        question: "What are the most common Support Ships found in Battle Battalion?",
+        answers: {
+            a: "Repair",
+            b: "Re-arm",
+            c: "Refuel",
+            d: "Combat",
+            e: "Medical"
+        },
+        correctAnswer: ["a","b","c","e"]
+    },
+    {
+        questionNum: "Q3.",
+        type: "multi",
+        question: "Select all Units of the Combat Division.",
+        answers: {
+            a: "Ensign Trooper",
+            b: "Lietenant Trooper & Shock Trooper",
+            c: "Outrider",
+            d: "Agent",
+            e: "Trooper Commander"
+        },
+        correctAnswer: ["a","b","c","d","e"]
+    },
+    {
+        questionNum: "Q4.",
+        type: "single",
+        question: "What Sub-Division is part of the Combat Division?",
+        answers: {
+            a: "Medical",
+            b: "Spec-Ops",
+            c: "Elite",
+            d: "Combat Pilot"
+        },
+        correctAnswer: "b"
+    },
+    {
+        questionNum: "Q5.",
+        type: "single",
+        question: "In a Standard Battalion, what is the Shock Trooper limit?",
+        answers: {
+            a: "1",
+            b: "2",
+            c: "3",
+            d: "4"
+        },
+        correctAnswer: "b"
+    },
+    {
+        questionNum: "Q6.",
+        type: "single",
+        question: "In a Battle Battalion, what is the Shock Trooper limit?",
+        answers: {
+            a: "2",
+            b: "4",
+            c: "6",
+            d: "8"
+        },
+        correctAnswer: "c"
+    },
+    {
+        questionNum: "Q7.",
+        type: "single",
+        question: "What is the Center Symbol for Combat Division emblem?",
+        answers: {
+            a: "Shield",
+            b: "Sword",
+            c: "Target",
+            d: "All of the above"
+        },
+        correctAnswer: "a"
+    },
+    {
+        questionNum: "Q8.",
+        type: "single",
+        question: "True or False: Lieutenant Trooper and Shock Trooper share the same rank and authority.",
+        answers: {
+            a: "True",
+            b: "False"
+        },
+        correctAnswer: "b"
+    },
+    {
+        questionNum: "Q9.",
+        type: "multi",
+        question: "Select all Ammunition Types for ship Guns & Turrets.",
+        answers: {
+            a: "Ballistic",
+            b: "Laser",
+            c: "Neutron",
+            d: "Distortion",
+            e: "Explosive"
+        },
+        correctAnswer: ["a","b","c","d"]
+    },
+    {
+        questionNum: "Q10.",
+        type: "multi",
+        question: "Select the different Turret Types.",
+        answers: {
+            a: "Anti-Personnel",
+            b: "Manned",
+            c: "Secondary",
+            d: "Remote",
+            e: "Primary"
+        },
+        correctAnswer: ["b","d"]
+    },
+    {
+        questionNum: "Q11.",
+        type: "single",
+        question: "For Turrets, what Keybind is Relative Mode typically linked to?",
+        answers: {
+            a: "C",
+            b: "B",
+            c: "X",
+            d: "Q",
+            e: "V"
+        },
+        correctAnswer: "d"
+    },
+    {
+        questionNum: "Q12.",
+        type: "single",
+        question: "For Turrets, what Keybind is Gyro Mode typically linked to?",
+        answers: {
+            a: "C",
+            b: "B",
+            c: "X",
+            d: "Q",
+            e: "V"
+        },
+        correctAnswer: "c"
+    },
+    {
+        questionNum: "Q13.",
+        type: "single",
+        question: "For Turrets, what Keybind is Stagger Mode typically linked to?",
+        answers: {
+            a: "C",
+            b: "B",
+            c: "X",
+            d: "Q",
+            e: "V"
+        },
+        correctAnswer: "b"
+    },
+    {
+        questionNum: "Q14.",
+        type: "single",
+        question: "True or False: Stagger Mode is more effective with Duel(2) Gun Turrets over Quad(4) Gun Turrets.",
+        answers: {
+            a: "True",
+            b: "False"
+        },
+        correctAnswer: "a"
+    },
+    {
+        questionNum: "Q15.",
+        type: "single",
+        question: "For Turrets, what Keybind is Realignment typically linked to?",
+        answers: {
+            a: "C",
+            b: "B",
+            c: "X",
+            d: "Q",
+            e: "V"
+        },
+        correctAnswer: "a"
+    },
+    {
+        questionNum: "Q16.",
+        type: "single",
+        question: "What Combat Division Unit would typically control a ship or vehicle Primary Gun Turret?",
+        answers: {
+            a: "Ensign Trooper",
+            b: "Lieutenant Trooper",
+            c: "Shock Trooper",
+            d: "Outrider",
+            e: "Trooper Commander"
+        },
+        correctAnswer: "b"
+    },
+    {
+        questionNum: "Q17.",
+        type: "single",
+        question: "What Combat Division Unit would typically control a ship or vehicle Secondary Gun Turret?",
+        answers: {
+            a: "Ensign Trooper",
+            b: "Lieutenant Trooper",
+            c: "Shock Trooper",
+            d: "Outrider",
+            e: "Trooper Commander"
+        },
+        correctAnswer: "a"
+    },
+    {
+        questionNum: "Q18.",
+        type: "multi",
+        question: "What Division Units would typically control a ship or vehicle Remote Gun Turret?",
+        answers: {
+            a: "Ensign Trooper",
+            b: "Lieutenant Trooper",
+            c: "Shock Trooper",
+            d: "Ensign Operator",
+            e: "Lieutenant Engineer"
+        },
+        correctAnswer: "a"
+    },
+    {
+        questionNum: "Q19.",
+        type: "single",
+        question: "How many different Turret Gun Types are there?",
+        answers: {
+            a: "6",
+            b: "8",
+            c: "12",
+            d: "16"
+        },
+        correctAnswer: "d"
+    },
+    {
+        questionNum: "Q20.",
+        type: "multi",
+        question: "Select All Ballistic Turret Gun Types.",
+        answers: {
+            a: "Repeater",
+            b: "Gatling",
+            c: "Scattergun",
+            d: "Beam",
+            e: "Cannon",
+            f: "Tachyon Cannon",
+            g: "High Explosive Cannon",
+            h: "Mass Driver"
+        },
+        correctAnswer: ["a","b","c","e","g","h"]
+    },
+    {
+        questionNum: "Q21.",
+        type: "multi",
+        question: "Select All Laser Turret Gun Types.",
+        answers: {
+            a: "Repeater",
+            b: "Gatling",
+            c: "Scattergun",
+            d: "Beam",
+            e: "Cannon",
+            f: "Tachyon Cannon",
+            g: "High Explosive Cannon",
+            h: "Mass Driver"
+        },
+        correctAnswer: ["a","c","d","e"]
+    },
+    {
+        questionNum: "Q22.",
+        type: "multi",
+        question: "Select All Neutron Turret Gun Types.",
+        answers: {
+            a: "Repeater",
+            b: "Gatling",
+            c: "Scattergun",
+            d: "Beam",
+            e: "Cannon",
+            f: "Tachyon Cannon",
+            g: "High Explosive Cannon",
+            h: "Mass Driver"
+        },
+        correctAnswer: ["a","e","f"]
+    },
+    {
+        questionNum: "Q23.",
+        type: "multi",
+        question: "Select All Distortion Turret Gun Types.",
+        answers: {
+            a: "Repeater",
+            b: "Gatling",
+            c: "Scattergun",
+            d: "Beam",
+            e: "Cannon",
+            f: "Tachyon Cannon",
+            g: "High Explosive Cannon",
+            h: "Mass Driver"
+        },
+        correctAnswer: ["a","c","e"]
+    },
+    {
+        questionNum: "Q24.",
+        type: "single",
+        question: "True or False: Missile launchers may be attached to Turrets.",
+        answers: {
+            a: "True",
+            b: "False"
+        },
+        correctAnswer: "a"
+    },
+    {
+        questionNum: "Q25.",
+        type: "single",
+        question: "True or False: Some Remote Turrets can be replaced with Manned Turrets.",
+        answers: {
+            a: "True",
+            b: "False"
+        },
+        correctAnswer: "b"
+    },
+    {
+        questionNum: "Q26.",
+        type: "single",
+        question: "Which Ammunition Types for ship Guns & Turrets has a focus on direct Hull damage? ",
+        answers: {
+            a: "Ballistic",
+            b: "Laser",
+            c: "Neutron",
+            d: "Distortion"
+        },
+        correctAnswer: "a"
+    },
+    {
+        questionNum: "Q27.",
+        type: "multi",
+        question: "Which Ammunition Types for ship Guns & Turrets must first destroy a vehicle's shield before damaging the Hull? ",
+        answers: {
+            a: "Ballistic",
+            b: "Laser",
+            c: "Neutron",
+            d: "Distortion"
+        },
+        correctAnswer: ["b","c"]
+    },
+    {
+        questionNum: "Q28.",
+        type: "single",
+        question: "Which Ammunition Types for ship Guns & Turrets has a focus on disabling components? ",
+        answers: {
+            a: "Ballistic",
+            b: "Laser",
+            c: "Neutron",
+            d: "Distortion"
+        },
+        correctAnswer: "d"
+    },
+    {
+        questionNum: "Q29.",
+        type: "multi",
+        question: "What leg/hip equipped items are recommended for Troopers and Combat Division Units?",
+        answers: {
+            a: "ParaMed",
+            b: "MedPen",
+            c: "OxyPen",
+            d: "Pistol",
+            e: "Knife"
+        },
+        correctAnswer: ["b","d","e"]
+    },
+    {
+        questionNum: "Q30.",
+        type: "single",
+        question: "What is the Max number of ammo clips an Ensign Trooper can equip to their chest piece?",
+        answers: {
+            a: "2",
+            b: "4",
+            c: "6",
+            d: "8"
+        },
+        correctAnswer: "b"
+    },
+    {
+        questionNum: "Q31.",
+        type: "single",
+        question: "What is the Max number of ammo clips a Shock Trooper can equip to their chest piece?",
+        answers: {
+            a: "2",
+            b: "4",
+            c: "6",
+            d: "8"
+        },
+        correctAnswer: "d"
+    },
+    {
+        questionNum: "Q32.",
+        type: "single",
+        question: "What is the Max number of ammo clips a Lieutenant Trooper can equip to their chest piece?",
+        answers: {
+            a: "2",
+            b: "4",
+            c: "6",
+            d: "8"
+        },
+        correctAnswer: "c"
+    },
+    {
+        questionNum: "Q33.",
+        type: "single",
+        question: "At what Gear weight range (in lbs.) is Movement Speed reduced to 95%?",
+        answers: {
+            a: "15-24",
+            b: "25-34",
+            c: "35-44",
+            d: "45 or more"
+        },
+        correctAnswer: "a"
+    },
+    {
+        questionNum: "Q34.",
+        type: "single",
+        question: "At what Gear weight range (in lbs.) is Movement Speed reduced to 90%?",
+        answers: {
+            a: "15-24",
+            b: "25-34",
+            c: "35-44",
+            d: "45 or more"
+        },
+        correctAnswer: "b"
+    },
+    {
+        questionNum: "Q35.",
+        type: "single",
+        question: "At what Gear weight range (in lbs.) is Movement Speed reduced to 80%?",
+        answers: {
+            a: "15-24",
+            b: "25-34",
+            c: "35-44",
+            d: "45 or more"
+        },
+        correctAnswer: "d"
+    },
+    {
+        questionNum: "Q36.",
+        type: "single",
+        question: "True or False: Only Combat Division units have access to Heavy or Medium Armor.",
+        answers: {
+            a: "True",
+            b: "False"
+        },
+        correctAnswer: "b"
+    },
+    {
+        questionNum: "Q37.",
+        type: "single",
+        question: "What color armor does Hurston Security wear?",
+        answers: {
+            a: "Red & White",
+            b: "White & Blue",
+            c: "White & Black",
+            d: "Yellow & Black"
+        },
+        correctAnswer: "d"
+    },
+    {
+        questionNum: "Q38.",
+        type: "single",
+        question: "What color armor does Crusader Security wear?",
+        answers: {
+            a: "Red & White",
+            b: "White & Blue",
+            c: "White & Black",
+            d: "Yellow & Black"
+        },
+        correctAnswer: "b"
+    },
+    {
+        questionNum: "Q39.",
+        type: "single",
+        question: "What color armor does Microtech Security wear?",
+        answers: {
+            a: "Red & White",
+            b: "White & Blue",
+            c: "White & Black",
+            d: "Yellow & Black"
+        },
+        correctAnswer: "b"
+    },
+    {
+        questionNum: "Q40.",
+        type: "single",
+        question: "What color armor does Arcorp Security wear?",
+        answers: {
+            a: "Red & White",
+            b: "White & Blue",
+            c: "White & Black",
+            d: "Yellow & Black"
+        },
+        correctAnswer: "a"
+    }
+];
 
 var examUnitData = [];
 
