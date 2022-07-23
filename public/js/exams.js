@@ -1177,7 +1177,8 @@ const questionsGTacticalExam = [
             d: "Corvettes",
             e: "Destroyers"
         },
-        correctAnswer: ["a","b","c","d","e"]
+        correctAnswer: ["a","b","c","d"]
+        // note: Destroyers would very likely be found in Special Battalions like Academy or Admiralty
     },
     {
         questionNum: "Q2.",
@@ -2194,11 +2195,17 @@ function generateExamBattalionNames(){
 
     let data = examUnitData;
 
+    let protocolNoPass = data.rows.filter(score => score.protocol_exam == false);
+
     let examSelectBattalion = document.getElementById('exam_select_battalion').value;
     let examBattalionMemberList = document.getElementById('exam_battalion_member_list_options');
 
     var admiraltyMembers = data.rows.filter(units => units.battalion == "F-01 Holland A-00")
     var academyMembers = data.rows.filter(units => units.battalion == "F-01 Cr4zy A-01")
+
+    // Comment both variables above and uncomment both variables below when ready to launch exam (live)
+    // var admiraltyMembers = protocolNoPass.filter(units => units.battalion == "F-01 Holland A-00")
+    // var academyMembers = protocolNoPass.filter(units => units.battalion == "F-01 Cr4zy A-01")
 
     var admiraltyMemberNames = admiraltyMembers.map(row =>`<option value="${row.sc_name}"></option>`).join('');
     var academyMemberNames = academyMembers.map(row =>`<option value="${row.sc_name}"></option>`).join('');
@@ -2369,41 +2376,33 @@ function timerProtocolExam() {
 }
 
 
-function updateProtocolPass() {
-    let examParticipant = document.getElementById('exam_select_member').value;
-    let data = examUnitData;
+// function updateProtocolPass() {
+//     let examParticipant = document.getElementById('exam_select_member').value;
+//     let data = examUnitData;
 
-    console.log(examParticipant)
+//     let examParticipantData = data.rows.filter(unit => unit.sc_name == examParticipant);
+//     let protocolData = examParticipantData[0].protocol_exam;
 
-    var currentProtocolScore = data.row.map(units => units.examParticipant)
 
-    console.log(currentProtocolScore)
-
-    currentProtocolScore = true;
-    console.log(currentProtocolScore)
-}
+// } // not finished
 
 function updateProtocolFail() {
     let examParticipant = document.getElementById('exam_select_member').value;
     let data = examUnitData;
 
-    console.log(data)
-    console.log(examParticipant)
+    let examParticipantData = data.rows.filter(unit => unit.sc_name == examParticipant);
+    let protocolData = examParticipantData[0].protocol_exam;
 
-    var allProtocolScores = data.rows.filter(unit => unit.protocol_exam)
+    // console.log(data);
+    // console.log(examParticipant);
+    // console.log(examParticipantData);
+    console.log(protocolData);
 
 
-    var currentProtocolScore;
-    allProtocolScores.map(row => {
-        if (row.sc_name == examParticipant) {
-            currentProtocolScore = allProtocolScores;
-        }
-    });
+    protocolData = false
 
-    console.log(currentProtocolScore)
-
-    // currentProtocolScore = false;
-    // console.log(currentProtocolScore)
+    console.log(protocolData)
+    console.log(examParticipantData)
 }
 
 // self note: add timer (days: hours: minutes) to replace Start Exam button
