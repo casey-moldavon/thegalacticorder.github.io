@@ -2188,8 +2188,9 @@ async function generateExamBattalionData(examData) {
 
     examBattalionList.innerHTML = allBattalions;
     examUnitData = examData;
-}
 
+    // console.log(examUnitData);
+}
 
 function generateExamBattalionNames(){
 
@@ -2391,13 +2392,17 @@ function updateProtocolFail() {
     let data = examUnitData;
 
     let examParticipantData = data.rows.filter(unit => unit.sc_name == examParticipant);
-
+    
     // console.log(data);
     // console.log(examParticipant);
-    // console.log(examParticipantData);
+    // console.log(examParticipantData)    
     examParticipantData[0].protocol_exam = false;
     // console.log(examParticipantData)
+
+    // console.log(data)
+    // console.log(examUnitData)
 }
+
 
 // self note: add timer (days: hours: minutes) to replace Start Exam button
 // apply exam progression to database
