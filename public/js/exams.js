@@ -2363,7 +2363,7 @@ function timerProtocolExam() {
         
         document.getElementById('protocol_timer').innerHTML =
         m + ":" + s;
-        console.log(m)
+        // console.log(m)
         setTimeout(startTimer, 1000);
     }
     
