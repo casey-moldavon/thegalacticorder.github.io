@@ -2391,18 +2391,12 @@ function updateProtocolFail() {
     let data = examUnitData;
 
     let examParticipantData = data.rows.filter(unit => unit.sc_name == examParticipant);
-    let protocolData = examParticipantData[0].protocol_exam;
 
     // console.log(data);
     // console.log(examParticipant);
     // console.log(examParticipantData);
-    console.log(protocolData);
-
-
-    protocolData = false
-
-    console.log(protocolData)
-    console.log(examParticipantData)
+    examParticipantData[0].protocol_exam = false;
+    // console.log(examParticipantData)
 }
 
 // self note: add timer (days: hours: minutes) to replace Start Exam button
