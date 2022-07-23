@@ -2347,7 +2347,7 @@ function timerProtocolExam() {
     var protocolExamStart = document.getElementById("protocol_exam_start_button");
     document.getElementById('protocol_timer').innerHTML = 30 + ":" + 01;
     startTimer();
-    
+
     function startTimer() {
         var presentTime = document.getElementById('protocol_timer').innerHTML;
         var timeArray = presentTime.split(/[:]+/);
