@@ -277,6 +277,22 @@ body {
     width: 250px;
     margin-bottom: 20px;
 }
+#exam_select_member_medical {
+    width: 250px;
+    margin-bottom: 20px;
+}
+#exam_select_member_g_tactical {
+    width: 250px;
+    margin-bottom: 20px;
+}
+#exam_select_member_s_tactical {
+    width: 250px;
+    margin-bottom: 20px;
+}
+#exam_select_member_officer {
+    width: 250px;
+    margin-bottom: 20px;
+}
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Content End ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
