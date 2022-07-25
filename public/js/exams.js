@@ -2378,7 +2378,7 @@ function timerProtocolExam() {
 
 
 // function updateProtocolPass() {
-//     let examParticipant = document.getElementById('exam_select_member').value;
+//     let examParticipant = document.getElementById('exam_select_member_protocol').value;
 //     let data = examUnitData;
 
 //     let examParticipantData = data.rows.filter(unit => unit.sc_name == examParticipant);
@@ -2388,7 +2388,7 @@ function timerProtocolExam() {
 // } // not finished
 
 function updateProtocolFail() {
-    let examParticipant = document.getElementById('exam_select_member').value;
+    let examParticipant = document.getElementById('exam_select_member_protocol').value;
     let data = examUnitData;
 
     let examParticipantData = data.rows.filter(unit => unit.sc_name == examParticipant);
