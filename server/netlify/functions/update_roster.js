@@ -35,7 +35,7 @@ const handler = async (event) => {
         UPDATE
             full_roster
         SET
-            ${event.body.field} = ${event.body.value == true}
+            ${event.body.field} = ${event.body.value}
         WHERE
             sc_name = '${event.body.sc_name}'
     `);

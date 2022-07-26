@@ -2389,7 +2389,7 @@ function timerProtocolExam() {
 
 // } // not finished
 
-function updateProtocolFail() {
+async function updateProtocolFail() {
     let examParticipant = document.getElementById('exam_select_member_protocol').value;
     let data = examUnitData;
 
@@ -2404,7 +2404,14 @@ function updateProtocolFail() {
     // console.log(data)
     // console.log(examUnitData)
 
-
+    await fetch('https://frolicking-frangipane-e2734e.netlify.app/.netlify/functions/update_roster', {
+        method: 'POST',
+        body: JSON.stringify({
+            sc_name: examParticipant,
+            field: 'protocol_exam',
+            value: false
+        })
+    });
 
 
     //  UPDATE full_roster
