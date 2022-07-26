@@ -17,11 +17,14 @@ const handler = async (event) => {
     client.connect();
 
     console.log(event.body);
+    console.log(typeof event.body);
 
-    if (!event.body.sc_name || !event.body.field || !event.body.value) {
+    event.body = JSON.parse(event.body)
+
+    if (!event.body.sc_name || !event.body.field || event.body.value === undefined) {
         return {
             statusCode: 400,
-            body: JSON.stringify({ error: "missing sc_name or protocol_exam" }),
+            body: JSON.stringify({ error: "missing sc_name, field, or value" }),
             headers: {
                 'Access-Control-Allow-Origin': '*'
             }
