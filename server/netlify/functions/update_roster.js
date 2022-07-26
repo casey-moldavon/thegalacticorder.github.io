@@ -16,7 +16,9 @@ const handler = async (event) => {
 
     client.connect();
 
-    if (!event.body.sc_name || !event.body.protocol_exam || !event.body.protocol_exam_passed) {
+    console.log(event.body);
+
+    if (!event.body.sc_name || !event.body.field || !event.body.value) {
         return {
             statusCode: 400,
             body: JSON.stringify({ error: "missing sc_name or protocol_exam" }),
@@ -30,7 +32,7 @@ const handler = async (event) => {
         UPDATE
             full_roster
         SET
-            ${event.body.protocol_exam} = ${event.body.protocol_exam_passed == true}
+            ${event.body.field} = ${event.body.value == true}
         WHERE
             sc_name = ${event.body.sc_name}
     `);
