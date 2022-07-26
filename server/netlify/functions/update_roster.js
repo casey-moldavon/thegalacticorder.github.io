@@ -37,7 +37,7 @@ const handler = async (event) => {
         SET
             ${event.body.field} = ${event.body.value == true}
         WHERE
-            sc_name = ${event.body.sc_name}
+            sc_name = '${event.body.sc_name}'
     `);
     
     return {
