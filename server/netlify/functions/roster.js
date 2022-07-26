@@ -21,13 +21,13 @@ const handler = async (event) => {
         SELECT * FROM full_roster ORDER BY unit_id ASC;
         `);
         
-        return {
-            statusCode: 200,
-            body: JSON.stringify({ rows: res.rows }),
-            headers: {
-                'Access-Control-Allow-Origin': '*'
-            }
-        };
-    }
+    return {
+        statusCode: 200,
+        body: JSON.stringify({ rows: res.rows }),
+        headers: {
+            'Access-Control-Allow-Origin': '*'
+        }
+    };
+}
     
     export { handler }

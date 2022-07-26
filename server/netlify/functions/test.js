@@ -21,13 +21,13 @@ const handler = async (event) => {
         SELECT * FROM test_people
         `);
         
-        return {
-            statusCode: 200,
-            body: JSON.stringify({ rows: res.rows }),
-            headers: {
-                'Access-Control-Allow-Origin': '*'
-            }
-        };
-    }
+    return {
+        statusCode: 200,
+        body: JSON.stringify({ rows: res.rows }),
+        headers: {
+            'Access-Control-Allow-Origin': '*'
+        }
+    };
+}
     
     export { handler }
