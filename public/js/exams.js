@@ -2202,12 +2202,8 @@ function generateExamBattalionNames(){
     let examBattalionMemberList = document.getElementById('exam_battalion_member_list_options');
 
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    var admiraltyMembers = data.rows.filter(units => units.battalion == "F-01 Holland A-00")
-    var academyMembers = data.rows.filter(units => units.battalion == "F-01 Cr4zy A-01")
-
-    // Comment both variables above and uncomment both variables below when ready to launch exam (live)
-    // var admiraltyMembers = protocolNoPass.filter(units => units.battalion == "F-01 Holland A-00")
-    // var academyMembers = protocolNoPass.filter(units => units.battalion == "F-01 Cr4zy A-01")
+    var admiraltyMembers = protocolNoPass.filter(units => units.battalion == "F-01 Holland A-00")
+    var academyMembers = protocolNoPass.filter(units => units.battalion == "F-01 Cr4zy A-01")
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
     var admiraltyMemberNames = admiraltyMembers.map(row =>`<option value="${row.sc_name}"></option>`).join('');
@@ -2379,15 +2375,30 @@ function timerProtocolExam() {
 }
 
 
-// function updateProtocolPass() {
-//     let examParticipant = document.getElementById('exam_select_member_protocol').value;
-//     let data = examUnitData;
+function updateProtocolPass() {
+    let examParticipant = document.getElementById('exam_select_member_protocol').value;
+    let data = examUnitData;
 
-//     let examParticipantData = data.rows.filter(unit => unit.sc_name == examParticipant);
-//     let protocolData = examParticipantData[0].protocol_exam;
+    let examParticipantData = data.rows.filter(unit => unit.sc_name == examParticipant);
+    
+    // console.log(data);
+    console.log(examParticipant);
+    // console.log(examParticipantData)    
+    examParticipantData[0].protocol_exam = true;
+    console.log(examParticipantData)
 
+    // console.log(data)
+    // console.log(examUnitData)
 
-// } // not finished
+    await fetch('https://frolicking-frangipane-e2734e.netlify.app/.netlify/functions/update_roster', {
+        method: 'POST',
+        body: JSON.stringify({
+            sc_name: examParticipant,
+            field: 'protocol_exam',
+            value: true
+        })
+    });
+} // not finished
 
 async function updateProtocolFail() {
     let examParticipant = document.getElementById('exam_select_member_protocol').value;
@@ -2400,28 +2411,11 @@ async function updateProtocolFail() {
     // console.log(examParticipantData)    
     examParticipantData[0].protocol_exam = false;
     console.log(examParticipantData)
-
-    // console.log(data)
-    // console.log(examUnitData)
-
-    await fetch('https://frolicking-frangipane-e2734e.netlify.app/.netlify/functions/update_roster', {
-        method: 'POST',
-        body: JSON.stringify({
-            sc_name: examParticipant,
-            field: 'protocol_exam',
-            value: false
-        })
-    });
-
-
-    //  UPDATE full_roster
-    //  SET protocol_exam = false
-    //  WHERE sc_name = examParticipant;
 }
 
 
 // ~~~~~~~~~~~~~~~~~~~~ Project Notes ~~~~~~~~~~~~~~~~~~~~
-// after compelted, switch fail & pass functions (fail will have no effect on db)
+
 // see commends at line 2204 (to remove names that have passed the exam already)
 
 // self note: add timer (days: hours: minutes) to replace Start Exam button
