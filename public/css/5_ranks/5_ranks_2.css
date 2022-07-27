@@ -639,6 +639,78 @@ label.checkbox input:checked + span {
     background-color: #00c9ff;
     /* margin: 1%; */
 }
+
+#medical_exam_submit {
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Allerta Stencil', sans-serif;
+
+    border: 2.5px solid #4285f4;
+    border-radius: 5px;
+    /* margin: 1%; */
+    background-color: #1c1c1c;
+    width: 200px;
+}
+#medical_exam_submit:hover {
+    border: 2.5px solid #ffffff;
+    border-radius: 5px;
+    box-shadow:
+        0 0 10px #4285f4,
+        0 0 15px #ffffff;
+        
+    border-collapse: collapse;
+    background-color: #4285f4;
+    /* margin: 1%; */
+}
+
+#g_tactical_exam_submit {
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Allerta Stencil', sans-serif;
+
+    border: 2.5px solid #b60031;
+    border-radius: 5px;
+    /* margin: 1%; */
+    background-color: #1c1c1c;
+    width: 200px;
+}
+#g_tactical_exam_submit:hover {
+    border: 2.5px solid #ffffff;
+    border-radius: 5px;
+    box-shadow:
+        0 0 10px #b60031,
+        0 0 15px #ffffff;
+        
+    border-collapse: collapse;
+    background-color: #b60031;
+    /* margin: 1%; */
+}
+
+#s_tactical_exam_submit {
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Allerta Stencil', sans-serif;
+
+    border: 2.5px solid #b60031;
+    border-radius: 5px;
+    /* margin: 1%; */
+    background-color: #1c1c1c;
+    width: 200px;
+}
+#s_tactical_exam_submit:hover {
+    border: 2.5px solid #ffffff;
+    border-radius: 5px;
+    box-shadow:
+        0 0 10px #b60031,
+        0 0 15px #ffffff;
+        
+    border-collapse: collapse;
+    background-color: #b60031;
+    /* margin: 1%; */
+}
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Extra ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 #rank_benefits_icon {
     color: #ff0015;

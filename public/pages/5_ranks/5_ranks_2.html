@@ -318,7 +318,7 @@
 
                                 <p id="small_space"></p>
                                 
-                                <p>Test Applicants will have 25 Minutes to answer 40 Multiple Choice Questions and must score 70% or higher in order to Pass. All Questions & Answers are related to Galactic Order content and Star Citizen FPS Combat Gameplay.</p>
+                                <p>Test Applicants will have 25 Minutes to answer 40 Multiple Choice Questions and must score 75% or higher in order to Pass. All Questions & Answers are related to Galactic Order content and Star Citizen FPS Combat Gameplay.</p>
                                 <p>The Exam will appear and the timer will begin once the applicant presses the <a id="combat_note">“Start Exam”</a> button. Closing or refreshing the window / tab, at any point, will immediately end the exam. The exam will also end when the applicant either runs out of time or clicks the “Submit” button below. All answers that are not completed within the time-limit will be marked as incorrect.</p>
 
                                 <p><a id="combat_note">Note 1:</a> Some questions will require selecting multiple listed answers to be counted as correct.</p>
@@ -382,7 +382,7 @@
 
                                 <p id="small_space"></p>
                                 
-                                <p>Test Applicants will have 25 Minutes to answer 40 Multiple Choice Questions and must score 70% or higher in order to Pass. All Questions & Answers are related to Galactic Order content and Star Citizen FPS & Space-related Combat Gameplay.</p>
+                                <p>Test Applicants will have 25 Minutes to answer 40 Multiple Choice Questions and must score 75% or higher in order to Pass. All Questions & Answers are related to Galactic Order content and Star Citizen FPS & Space-related Combat Gameplay.</p>
                                 <p>The Exam will appear and the timer will begin once the applicant presses the <a id="combat_note">“Start Exam”</a> button. Closing or refreshing the window / tab, at any point, will immediately end the exam. The exam will also end when the applicant either runs out of time or clicks the “Submit” button below. All answers that are not completed within the time-limit will be marked as incorrect.</p>
 
                                 <p><a id="combat_note">Note 1:</a> Some questions will require selecting multiple listed answers to be counted as correct.</p>
@@ -393,14 +393,38 @@
                                 <p>After the exam ends, the results will calculate and appear below as a <a id="science_note">Pass</a> or <a id="combat_note">Fail</a>.</p>
                                 <p>It is worth noting, by no means do we expect members to know everything about Star Citizen or the Org. Even slight familiarity with our content and the ability to quickly access any information is almost more valuable than simply knowing, as the content tends to change and update regularly. For this reason, the Exam is completely open source with no restriction to notes, web-pages, tabs or available information for the applicant as they answer each question.</p>
                             </div>
+                            <p id="break_space"></p>
+                            
+                            <div class="container container-fluid">
+                                <form>
+                                    <div class="form-group">
+                                        <label id="exam_select_registered_battalion" for="exam_select_battalion"class="col-form-label">Select Battalion:</label>
+                                        <input class="form-control" list="s_tactical_exam_battalion_list_options" id="s_tactical_exam_select_battalion" placeholder="Select Battalion" name="exam_select_battalion" onchange="generateSTacticalExamBattalionNames()">
+                                        <datalist id="s_tactical_exam_battalion_list_options">
+                                            <option value="Battalion 1"></option>
+                                            <option value="Battalion 2"></option>
+                                            <option value="Battalion 3"></option>
+                                            <option value="Battalion 4"></option>
+                                        </select>
+                                    </div>
+                
+                                    <div class="form-group">
+                                        <label id="exam_registered_member" for="exam_select_member"class="col-form-label">Unit Name:</label>
+                                        <input class="form-control" list="exam_battalion_member_list_options" id="exam_select_member_s_tactical" placeholder="Select Member" name="exam_select_member" onchange="sTacticalExamStartButtonReveal()">
+                                        <datalist id="exam_battalion_member_list_options">
+                                            <option value="First Select Battalion"></option>
+                                        </select>
+                                    </div>
+                                </form>
 
-                            <!-- <button id="s_tactical_exam_start_button" class="text-center" style="width: 10rem;" type="button" data-bs-toggle="modal" data-bs-target="#s_tactical_examModal">
-                                Start Exam
-                            </button> -->
 
-
-                            <p><a id="bold_note">Note:</a> Exam not yet available here. COMING SOON!</p>
-
+                                <div class="row">
+                                    <div id="s_tactical_button_container" class="col">
+                                        <button id="s_tactical_exam_start_button" onclick="buildGTacticalExam()" class="text-center" type="button" data-bs-toggle="modal" data-bs-target="#s_tactical_examModal">Start Exam</button>
+                                    </div>
+                                </div>
+                            </div> 
+                            
                         </div>
                     </div>
                 </div>
@@ -540,15 +564,16 @@
                         </div>
 
 
-                        <!-- <div class="container justify-content-center container-fluid">
 
-                            <div id="s_tactical_exam_placeholder"></div>
-                            <p></p>
-                            <button id="submit">Submit Quiz</button>
-                            <p></p>
-                            <div id="results"></div>
+                        <div class="container justify-content-center container-fluid">
 
-                        </div> -->
+                            <div id="s_tactical_exam_container"></div>
+                            <p></p>
+                            <button id="s_tactical_exam_submit" onclick="showSTacticalExamResults()"type="button" data-bs-toggle="modal" data-bs-target="#s_tactical_examModal"> Submit Exam </button>
+                            <!-- <button id="meh_submit" onclick="showSTacticalExamResults()"> Submit Answers </button> -->
+                            <p></p>
+
+                        </div>
                     </div>
                 </div>
             </div>

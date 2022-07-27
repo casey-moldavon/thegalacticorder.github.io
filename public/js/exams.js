@@ -1193,7 +1193,7 @@ const questionsGTacticalExam = [
     {
         questionNum: "Q10.",
         type: "multi",
-        question: "Which Ammunition Type is capable of spreading to nearby enemies?",
+        question: "Which Ammunition Type is capable of hitting nearby enemies?",
         answers: {
             a: "Ballistic",
             b: "Electron",
@@ -2106,7 +2106,7 @@ async function generateExamBattalionData(examData) {
     examBattalionList.innerHTML = allBattalions;
     medicalExamBattalionList.innerHTML = allBattalions;
     gTacticalExamBattalionList.innerHTML = allBattalions;
-    sTacticalExamBattalionList.innerHTML = allBattalions;
+    // sTacticalExamBattalionList.innerHTML = allBattalions;
 
     examUnitData = examData;
 
@@ -2612,7 +2612,7 @@ function buildGTacticalExam() {
                     `
                     <p id="small_space"></p>
                     <div>
-                    <a id="g_tactical_number">${currentQuestion.questionNum}</a>
+                    <a id="combat_number">${currentQuestion.questionNum}</a>
                     <a id="question_text">${currentQuestion.question}</a>
                     </div>
                     <div class="answers"> ${answers.join('')} </div>
@@ -2639,7 +2639,7 @@ function buildGTacticalExam() {
                     `
                     <p id="small_space"></p>
                     <div>
-                    <a id="g_tactical_number">${currentQuestion.questionNum}</a>
+                    <a id="combat_number">${currentQuestion.questionNum}</a>
                     <a id="question_text">${currentQuestion.question}</a>
                     </div>
                     <div class="answers"> ${answers.join('')} </div>
@@ -2772,7 +2772,225 @@ async function updateGTacticalFail() {
     examParticipantData[0].gTactical_exam = false;
     console.log(examParticipantData)
 }
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ S Tactical Exam ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ S Tactical Exam ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ S Tactical Exam ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+function generateSTacticalExamBattalionNames(){
 
+    let data = examUnitData;
+
+    let sTacticalNoPass = data.rows.filter(score => score.s_tactical_exam == false);
+
+    let examSelectBattalion = document.getElementById('s_tactical_exam_select_battalion').value;
+    let examBattalionMemberList = document.getElementById('exam_battalion_member_list_options');
+
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    var admiraltyMembers = sTacticalNoPass.filter(units => units.battalion == "F-01 Holland A-00")
+    var academyMembers = sTacticalNoPass.filter(units => units.battalion == "F-01 Cr4zy A-01")
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+    var admiraltyMemberNames = admiraltyMembers.map(row =>`<option value="${row.sc_name}"></option>`).join('');
+    var academyMemberNames = academyMembers.map(row =>`<option value="${row.sc_name}"></option>`).join('');
+
+    if (examSelectBattalion == "F-01 Holland A-00"){examBattalionMemberList.innerHTML = admiraltyMemberNames;}
+    else if (examSelectBattalion == "F-01 Cr4zy A-01"){examBattalionMemberList.innerHTML = academyMemberNames;}
+}
+
+
+function sTacticalExamStartButtonReveal() {
+    var sTacticalExamStartButton = document.getElementById("s_tactical_exam_start_button");
+    sTacticalExamStartButton.style.visibility = "visible";
+}
+
+function buildSTacticalExam() {
+    var sTacticalExamContainer = document.getElementById('s_tactical_exam_container');
+
+    const outputSTacticalExam = [];
+
+    questionsSTacticalExam.forEach(
+        (currentQuestion, questionNumber) => {
+            let answers = [];
+
+            if (currentQuestion.type == "single") {
+                for(letter in currentQuestion.answers) {
+    
+                    answers.push(
+                        `
+                        <div id="questions_container">
+                        <label class="radio text-center">
+                            <input type="radio" name="question${questionNumber}" value="${letter}">
+                                <Span id="answer_letter">${letter} </Span>
+                                <a id="question_text">${currentQuestion.answers[letter]}</a>
+                        </label>
+                        </div>
+                        `
+                    );
+                }
+    
+                outputSTacticalExam.push(
+                    `
+                    <p id="small_space"></p>
+                    <div>
+                    <a id="combat_number">${currentQuestion.questionNum}</a>
+                    <a id="question_text">${currentQuestion.question}</a>
+                    </div>
+                    <div class="answers"> ${answers.join('')} </div>
+                    `
+                );
+            }
+            else {
+                for(letter in currentQuestion.answers) {
+    
+                    answers.push(
+                        `
+                        <div id="questions_container">
+                        <label class="checkbox text-center">
+                            <input type="checkbox" name="question${questionNumber}" value="${letter}">
+                                <Span id="answer_letter">${letter} </Span>
+                                <a id="question_text">${currentQuestion.answers[letter]}</a>
+                        </label>
+                        </div>
+                        `
+                    );
+                }
+    
+                outputSTacticalExam.push(
+                    `
+                    <p id="small_space"></p>
+                    <div>
+                    <a id="combat_number">${currentQuestion.questionNum}</a>
+                    <a id="question_text">${currentQuestion.question}</a>
+                    </div>
+                    <div class="answers"> ${answers.join('')} </div>
+                    `
+                );
+            }
+        }
+
+    );
+    sTacticalExamContainer.innerHTML = outputSTacticalExam.join('');
+    timerSTacticalExam()
+}
+
+function showSTacticalExamResults() {
+    const sTacticalExamContainer = document.getElementById('s_tactical_exam_container').querySelectorAll('.answers');
+    const sTacticalExamResults = document.getElementById('s_tactical_button_container');
+    // const testResults = document.getElementById('test_results'); // for testing
+
+    let numCorrect = 0;
+    
+    questionsSTacticalExam.forEach( (currentQuestion, questionNumber) => {
+
+        var sTacticalAnswerContainer = sTacticalExamContainer[questionNumber];
+        var sTacticalSelector = `input[name=question${questionNumber}]:checked`;
+        var sTacticalUserAnswer = (sTacticalAnswerContainer.querySelector(sTacticalSelector) || {}).value;
+        var sTacticalCheckboxes = document.querySelectorAll(`input[name=question${questionNumber}]:checked`);
+
+        let tempCorrect = 0;
+        let tempArray = [];
+        
+        if (currentQuestion.type == "single") {
+            if (sTacticalUserAnswer === currentQuestion.correctAnswer) {numCorrect++;}
+        }
+        
+        else if (currentQuestion.type == "multi") {
+
+            for (var i = 0; i < sTacticalCheckboxes.length; i++) {
+                tempArray.push(sTacticalCheckboxes[i].value)
+            }
+            for (var num = 0; num < tempArray.length; num ++) {
+                if (tempArray[num] == currentQuestion.correctAnswer[num]) {tempCorrect++}
+            }
+            if (tempCorrect == currentQuestion.correctAnswer.length) {numCorrect++}
+        }
+        tempCorrect = 0;
+        tempArray = [];
+    });
+
+    // testResults.innerHTML = `${numCorrect} out of ${questionsSTacticalExam.length}`; // for testing
+    if (numCorrect >= 30) {
+        sTacticalExamResults.innerHTML = `<div class="text-center" id="s_tactical_exam_final_results"><a id="complete">Pass</a></div>`;
+        updateSTacticalPass();
+    }
+    else {
+        sTacticalExamResults.innerHTML = `<div class="text-center" id="s_tactical_exam_final_results"><a id="failed_exam">Fail</a></div>`;
+        updateSTacticalFail();
+    }
+}
+
+
+
+function timerSTacticalExam() {
+    var sTacticalExamEnd = document.getElementById('s_tactical_exam_submit');
+    var sTacticalExamStart = document.getElementById("s_tactical_exam_start_button");
+    document.getElementById('s_tactical_timer').innerHTML = 25 + ":" + 01;
+    startTimer();
+
+    function startTimer() {
+        var presentTime = document.getElementById('s_tactical_timer').innerHTML;
+        var timeArray = presentTime.split(/[:]+/);
+        var m = timeArray[0];
+        var s = checkSecond((timeArray[1] - 1));
+        if(s==59){m=m-1}
+        if(m<0){
+            sTacticalExamStart.style.visibility = "hidden";
+            sTacticalExamEnd.click();
+            return
+        }
+        
+        document.getElementById('s_tactical_timer').innerHTML =
+        m + ":" + s;
+        // console.log(m)
+        setTimeout(startTimer, 1000);
+    }
+    
+    function checkSecond(sec) {
+        if (sec < 10 && sec >= 0) {sec = "0" + sec};
+        if (sec < 0) {
+            sec = "59";
+        };
+        return sec;
+    }
+}
+
+
+async function updateSTacticalPass() {
+    let examParticipant = document.getElementById('exam_select_member_s_tactical').value;
+    let data = examUnitData;
+
+    let examParticipantData = data.rows.filter(unit => unit.sc_name == examParticipant);
+    
+    // console.log(data);
+    console.log(examParticipant);
+    // console.log(examParticipantData)    
+    examParticipantData[0].sTactical_exam = true;
+    console.log(examParticipantData)
+
+    // console.log(data)
+    // console.log(examUnitData)
+
+    await fetch('https://frolicking-frangipane-e2734e.netlify.app/.netlify/functions/update_roster', {
+        method: 'POST',
+        body: JSON.stringify({
+            sc_name: examParticipant,
+            field: 's_tactical_exam',
+            value: true
+        })
+    });
+} // not finished
+
+async function updateSTacticalFail() {
+    let examParticipant = document.getElementById('exam_select_member_s_tactical').value;
+    let data = examUnitData;
+
+    let examParticipantData = data.rows.filter(unit => unit.sc_name == examParticipant);
+    
+    // console.log(data);
+    console.log(examParticipant);
+    // console.log(examParticipantData)    
+    examParticipantData[0].sTactical_exam = false;
+    console.log(examParticipantData)
+}
 // ~~~~~~~~~~~~~~~~~~~~ Project Notes ~~~~~~~~~~~~~~~~~~~~
 
 // self note: add timer (days: hours: minutes) to replace Start Exam button
