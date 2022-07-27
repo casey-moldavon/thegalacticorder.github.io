@@ -2375,7 +2375,7 @@ function timerProtocolExam() {
 }
 
 
-function updateProtocolPass() {
+async function updateProtocolPass() {
     let examParticipant = document.getElementById('exam_select_member_protocol').value;
     let data = examUnitData;
 
