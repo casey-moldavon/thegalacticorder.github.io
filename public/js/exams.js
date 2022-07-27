@@ -1802,7 +1802,7 @@ const questionsSTacticalExam = [
             d: "Ensign Operator",
             e: "Lieutenant Engineer"
         },
-        correctAnswer: "a"
+        correctAnswer: ["a","d"]
     },
     {
         questionNum: "Q19.",
@@ -2106,7 +2106,7 @@ async function generateExamBattalionData(examData) {
     examBattalionList.innerHTML = allBattalions;
     medicalExamBattalionList.innerHTML = allBattalions;
     gTacticalExamBattalionList.innerHTML = allBattalions;
-    // sTacticalExamBattalionList.innerHTML = allBattalions;
+    sTacticalExamBattalionList.innerHTML = allBattalions;
 
     examUnitData = examData;
 
