@@ -2553,7 +2553,7 @@ function showMedicalExamResults() {
     });
 
     // testResults.innerHTML = `${numCorrect} out of ${questionsMedicalExam.length}`; // for testing
-    if (numCorrect >= 35) {
+    if (numCorrect >= 30) {
         medicalExamResults.innerHTML = `<div class="text-center" id="medical_exam_final_results"><a id="complete">Pass</a></div>`;
         updateMedicalPass();
     }
@@ -2568,7 +2568,7 @@ function showMedicalExamResults() {
 function timerMedicalExam() {
     var medicalExamEnd = document.getElementById('medical_exam_submit');
     var medicalExamStart = document.getElementById("medical_exam_start_button");
-    document.getElementById('medical_timer').innerHTML = 30 + ":" + 01;
+    document.getElementById('medical_timer').innerHTML = 25 + ":" + 01;
     startTimer();
 
     function startTimer() {
