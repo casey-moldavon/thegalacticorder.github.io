@@ -2098,11 +2098,15 @@ async function generateExamBattalionData(examData) {
 
     let examBattalionList = document.getElementById('exam_battalion_list_options');
     let medicalExamBattalionList = document.getElementById('medical_exam_battalion_list_options');
+    let gTacticalExamBattalionList = document.getElementById('g_tactical_exam_battalion_list_options');
+    let sTacticalExamBattalionList = document.getElementById('s_tactical_exam_battalion_list_options');
 
     var allBattalions = examData2.rows.map(row =>`<option value="${row.battalion_name}"></option>`).join('');
 
     examBattalionList.innerHTML = allBattalions;
     medicalExamBattalionList.innerHTML = allBattalions;
+    gTacticalExamBattalionList.innerHTML = allBattalions;
+    sTacticalExamBattalionList.innerHTML = allBattalions;
 
     examUnitData = examData;
 
