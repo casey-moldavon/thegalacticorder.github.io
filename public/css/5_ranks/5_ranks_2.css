@@ -261,7 +261,16 @@ body {
         0 0 10px #00c9ff,
         0 0 15px #00c9ff;
 }
-#exam_select_battalion {
+#protocol_exam_select_battalion {
+    width: 250px;
+}
+#medical_exam_select_battalion {
+    width: 250px;
+}
+#g_tactical_exam_select_battalion {
+    width: 250px;
+}
+#s_tactical_exam_select_battalion {
     width: 250px;
 }
 #exam_registered_member {
@@ -400,6 +409,18 @@ body {
         0 0 10px #ff0015,
         0 0 15px #ff0015;
 }
+#medical_exam_final_results {
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Allerta Stencil', sans-serif;
+
+    border: 2.5px solid #ffffff;
+    border-radius: 5px;
+    margin: 1%;
+    background-color: #1c1c1c;
+    width: 100px;
+}
 
 
 #g_tactical_exam_start_button {
@@ -444,6 +465,18 @@ body {
         0 0 5px #ffffff,
         0 0 10px #ff0015,
         0 0 15px #ff0015;
+}
+#g_tactical_exam_final_results {
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Allerta Stencil', sans-serif;
+
+    border: 2.5px solid #ffffff;
+    border-radius: 5px;
+    margin: 1%;
+    background-color: #1c1c1c;
+    width: 100px;
 }
 
 
@@ -490,7 +523,18 @@ body {
         0 0 10px #ff0015,
         0 0 15px #ff0015;
 }
+#s_tactical_exam_final_results {
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Allerta Stencil', sans-serif;
 
+    border: 2.5px solid #ffffff;
+    border-radius: 5px;
+    margin: 1%;
+    background-color: #1c1c1c;
+    width: 100px;
+}
 
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Exams End ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */

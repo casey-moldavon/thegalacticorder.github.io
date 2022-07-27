@@ -208,7 +208,7 @@
                                 <form>
                                     <div class="form-group">
                                         <label id="exam_select_registered_battalion" for="exam_select_battalion"class="col-form-label">Select Battalion:</label>
-                                        <input class="form-control" list="exam_battalion_list_options" id="exam_select_battalion" placeholder="Select Battalion" name="exam_select_battalion" onchange="generateExamBattalionNames()">
+                                        <input class="form-control" list="exam_battalion_list_options" id="protocol_exam_select_battalion" placeholder="Select Battalion" name="exam_select_battalion" onchange="generateProtocolExamBattalionNames()">
                                         <datalist id="exam_battalion_list_options">
                                             <option value="Battalion 1"></option>
                                             <option value="Battalion 2"></option>
@@ -219,7 +219,7 @@
                 
                                     <div class="form-group">
                                         <label id="exam_registered_member" for="exam_select_member"class="col-form-label">Unit Name:</label>
-                                        <input class="form-control" list="exam_battalion_member_list_options" id="exam_select_member_protocol" placeholder="Select Member" name="exam_select_member" onchange="examStartButtonReveal()">
+                                        <input class="form-control" list="exam_battalion_member_list_options" id="exam_select_member_protocol" placeholder="Select Member" name="exam_select_member" onchange="protocolExamStartButtonReveal()">
                                         <datalist id="exam_battalion_member_list_options">
                                             <option value="First Select Battalion"></option>
                                         </select>
@@ -268,12 +268,40 @@
                                 <p>It is worth noting, by no means do we expect members to know everything about Star Citizen and the Org. Even slight familiarity with our content and the ability to quickly access any information is almost more valuable than simply knowing, as the content tends to change and update regularly. For this reason, the Exam is completely open source with no restriction to notes, web-pages, tabs or available information for the applicant as they answer each question.</p>
                             </div>
 
-                            <!-- <button id="medical_exam_start_button" onclick="buildMedicalExam()" class="text-center" style="width: 10rem;" type="button" data-bs-toggle="modal" data-bs-target="#medical_examModal">
-                                Start Exam
-                            </button> -->
+                            <p id="break_space"></p>
+                            
+                            <div class="container container-fluid">
+                                <form>
+                                    <div class="form-group">
+                                        <label id="exam_select_registered_battalion" for="exam_select_battalion"class="col-form-label">Select Battalion:</label>
+                                        <input class="form-control" list="medical_exam_battalion_list_options" id="medical_exam_select_battalion" placeholder="Select Battalion" name="exam_select_battalion" onchange="generateMedicalExamBattalionNames()">
+                                        <datalist id="medical_exam_battalion_list_options">
+                                            <option value="Battalion 1"></option>
+                                            <option value="Battalion 2"></option>
+                                            <option value="Battalion 3"></option>
+                                            <option value="Battalion 4"></option>
+                                        </select>
+                                    </div>
+                
+                                    <div class="form-group">
+                                        <label id="exam_registered_member" for="exam_select_member"class="col-form-label">Unit Name:</label>
+                                        <input class="form-control" list="exam_battalion_member_list_options" id="exam_select_member_medical" placeholder="Select Member" name="exam_select_member" onchange="medicalExamStartButtonReveal()">
+                                        <datalist id="exam_battalion_member_list_options">
+                                            <option value="First Select Battalion"></option>
+                                        </select>
+                                    </div>
+                                </form>
 
 
-                            <p><a id="bold_note">Note:</a> Exam not yet available here. COMING SOON!</p>
+                                <div class="row">
+                                    <div id="medical_button_container" class="col">
+                                        <button id="medical_exam_start_button" onclick="buildMedicalExam()" class="text-center" type="button" data-bs-toggle="modal" data-bs-target="#medical_examModal">Start Exam</button>
+                                    </div>
+                                </div>
+
+                            </div> 
+
+                            <!-- <p><a id="bold_note">Note:</a> Exam not yet available here. COMING SOON!</p> -->
 
                         </div>
                     </div>
@@ -418,15 +446,15 @@
                         </div>
 
 
-                        <!-- <div class="container justify-content-center container-fluid">
+                        <div class="container justify-content-center container-fluid">
 
-                            <div id="medical_exam_placeholder"></div>
+                            <div id="medical_exam_container"></div>
                             <p></p>
-                            <button id="submit">Submit Quiz</button>
+                            <button id="medical_exam_submit" onclick="showMedicalExamResults()"type="button" data-bs-toggle="modal" data-bs-target="#medical_examModal"> Submit Exam </button>
+                            <!-- <button id="meh_submit" onclick="showMedicalExamResults()"> Submit Answers </button> -->
                             <p></p>
-                            <div id="results"></div>
 
-                        </div> -->
+                        </div>
                     </div>
                 </div>
             </div>

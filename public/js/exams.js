@@ -674,7 +674,7 @@ const questionsMedicalExam = [
         question: "What are the Tool Requirements for Rank 2: Lieutenant Corpsman?",
         answers: {
             a: "ParaMed",
-            b: "ParaMed,All MedPens",
+            b: "ParaMed + All MedPens",
             c: "All MedPens",
             d: "None"
         },
@@ -841,7 +841,7 @@ const questionsMedicalExam = [
     },
     {
         questionNum: "Q15.",
-        type: "single",
+        type: "multi",
         question: "What drugs do not increase BDL?",
         answers: {
             a: "Demexatrine",
@@ -1098,7 +1098,7 @@ const questionsMedicalExam = [
             d: "Medevac",
             e: "Medical"
         },
-        correctAnswer: ["b","e"]
+        correctAnswer: ["b","d"]
     },
     {
         questionNum: "Q35.",
@@ -1108,7 +1108,7 @@ const questionsMedicalExam = [
             a: "True",
             b: "False"
         },
-        correctAnswer: "b"
+        correctAnswer: "a"
     },
     {
         questionNum: "Q36.",
@@ -1121,7 +1121,7 @@ const questionsMedicalExam = [
             d: "Reclaimer",
             e: "Carrack"
         },
-        correctAnswer: "a"
+        correctAnswer: "c"
     },
     {
         questionNum: "Q37.",
@@ -2184,21 +2184,30 @@ async function generateExamBattalionData(examData) {
 
 
     let examBattalionList = document.getElementById('exam_battalion_list_options');
+    let medicalExamBattalionList = document.getElementById('medical_exam_battalion_list_options');
+
     var allBattalions = examData2.rows.map(row =>`<option value="${row.battalion_name}"></option>`).join('');
 
     examBattalionList.innerHTML = allBattalions;
+    medicalExamBattalionList.innerHTML = allBattalions;
+
     examUnitData = examData;
 
     // console.log(examUnitData);
 }
 
-function generateExamBattalionNames(){
+
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Protocol Exam ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Protocol Exam ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Protocol Exam ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+function generateProtocolExamBattalionNames(){
 
     let data = examUnitData;
 
     let protocolNoPass = data.rows.filter(score => score.protocol_exam == false);
 
-    let examSelectBattalion = document.getElementById('exam_select_battalion').value;
+    let examSelectBattalion = document.getElementById('protocol_exam_select_battalion').value;
     let examBattalionMemberList = document.getElementById('exam_battalion_member_list_options');
 
     // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -2214,14 +2223,10 @@ function generateExamBattalionNames(){
 }
 
 
-function examStartButtonReveal() {
+function protocolExamStartButtonReveal() {
     var protocolExamStartButton = document.getElementById("protocol_exam_start_button");
     protocolExamStartButton.style.visibility = "visible";
 }
-
-
-
-// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Protocol Exam Modal ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 function buildProtocolExam() {
     var protocolExamContainer = document.getElementById('protocol_exam_container');
@@ -2412,12 +2417,228 @@ async function updateProtocolFail() {
     examParticipantData[0].protocol_exam = false;
     console.log(examParticipantData)
 }
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Medical Exam ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Medical Exam ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Medical Exam ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+function generateMedicalExamBattalionNames(){
+
+    let data = examUnitData;
+
+    let medicalNoPass = data.rows.filter(score => score.medical_exam == false);
+
+    let examSelectBattalion = document.getElementById('medical_exam_select_battalion').value;
+    let examBattalionMemberList = document.getElementById('exam_battalion_member_list_options');
+
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    var admiraltyMembers = medicalNoPass.filter(units => units.battalion == "F-01 Holland A-00")
+    var academyMembers = medicalNoPass.filter(units => units.battalion == "F-01 Cr4zy A-01")
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+    var admiraltyMemberNames = admiraltyMembers.map(row =>`<option value="${row.sc_name}"></option>`).join('');
+    var academyMemberNames = academyMembers.map(row =>`<option value="${row.sc_name}"></option>`).join('');
+
+    if (examSelectBattalion == "F-01 Holland A-00"){examBattalionMemberList.innerHTML = admiraltyMemberNames;}
+    else if (examSelectBattalion == "F-01 Cr4zy A-01"){examBattalionMemberList.innerHTML = academyMemberNames;}
+}
+
+
+function medicalExamStartButtonReveal() {
+    var medicalExamStartButton = document.getElementById("medical_exam_start_button");
+    medicalExamStartButton.style.visibility = "visible";
+}
+
+function buildMedicalExam() {
+    var medicalExamContainer = document.getElementById('medical_exam_container');
+
+    const outputMedicalExam = [];
+
+    questionsMedicalExam.forEach(
+        (currentQuestion, questionNumber) => {
+            let answers = [];
+
+            if (currentQuestion.type == "single") {
+                for(letter in currentQuestion.answers) {
+    
+                    answers.push(
+                        `
+                        <div id="questions_container">
+                        <label class="radio text-center">
+                            <input type="radio" name="question${questionNumber}" value="${letter}">
+                                <Span id="answer_letter">${letter} </Span>
+                                <a id="question_text">${currentQuestion.answers[letter]}</a>
+                        </label>
+                        </div>
+                        `
+                    );
+                }
+    
+                outputMedicalExam.push(
+                    `
+                    <p id="small_space"></p>
+                    <div>
+                    <a id="medical_number">${currentQuestion.questionNum}</a>
+                    <a id="question_text">${currentQuestion.question}</a>
+                    </div>
+                    <div class="answers"> ${answers.join('')} </div>
+                    `
+                );
+            }
+            else {
+                for(letter in currentQuestion.answers) {
+    
+                    answers.push(
+                        `
+                        <div id="questions_container">
+                        <label class="checkbox text-center">
+                            <input type="checkbox" name="question${questionNumber}" value="${letter}">
+                                <Span id="answer_letter">${letter} </Span>
+                                <a id="question_text">${currentQuestion.answers[letter]}</a>
+                        </label>
+                        </div>
+                        `
+                    );
+                }
+    
+                outputMedicalExam.push(
+                    `
+                    <p id="small_space"></p>
+                    <div>
+                    <a id="medical_number">${currentQuestion.questionNum}</a>
+                    <a id="question_text">${currentQuestion.question}</a>
+                    </div>
+                    <div class="answers"> ${answers.join('')} </div>
+                    `
+                );
+            }
+        }
+
+    );
+    medicalExamContainer.innerHTML = outputMedicalExam.join('');
+    timerMedicalExam()
+}
+
+function showMedicalExamResults() {
+    const medicalExamContainer = document.getElementById('medical_exam_container').querySelectorAll('.answers');
+    const medicalExamResults = document.getElementById('medical_button_container');
+    // const testResults = document.getElementById('test_results'); // for testing
+
+    let numCorrect = 0;
+    
+    questionsMedicalExam.forEach( (currentQuestion, questionNumber) => {
+
+        var medicalAnswerContainer = medicalExamContainer[questionNumber];
+        var medicalSelector = `input[name=question${questionNumber}]:checked`;
+        var medicalUserAnswer = (medicalAnswerContainer.querySelector(medicalSelector) || {}).value;
+        var medicalCheckboxes = document.querySelectorAll(`input[name=question${questionNumber}]:checked`);
+
+        let tempCorrect = 0;
+        let tempArray = [];
+        
+        if (currentQuestion.type == "single") {
+            if (medicalUserAnswer === currentQuestion.correctAnswer) {numCorrect++;}
+        }
+        
+        else if (currentQuestion.type == "multi") {
+
+            for (var i = 0; i < medicalCheckboxes.length; i++) {
+                tempArray.push(medicalCheckboxes[i].value)
+            }
+            for (var num = 0; num < tempArray.length; num ++) {
+                if (tempArray[num] == currentQuestion.correctAnswer[num]) {tempCorrect++}
+            }
+            if (tempCorrect == currentQuestion.correctAnswer.length) {numCorrect++}
+        }
+        tempCorrect = 0;
+        tempArray = [];
+    });
+
+    // testResults.innerHTML = `${numCorrect} out of ${questionsMedicalExam.length}`; // for testing
+    if (numCorrect >= 35) {
+        medicalExamResults.innerHTML = `<div class="text-center" id="medical_exam_final_results"><a id="complete">Pass</a></div>`;
+        updateMedicalPass();
+    }
+    else {
+        medicalExamResults.innerHTML = `<div class="text-center" id="medical_exam_final_results"><a id="failed_exam">Fail</a></div>`;
+        updateMedicalFail();
+    }
+}
+
+
+
+function timerMedicalExam() {
+    var medicalExamEnd = document.getElementById('medical_exam_submit');
+    var medicalExamStart = document.getElementById("medical_exam_start_button");
+    document.getElementById('medical_timer').innerHTML = 30 + ":" + 01;
+    startTimer();
+
+    function startTimer() {
+        var presentTime = document.getElementById('medical_timer').innerHTML;
+        var timeArray = presentTime.split(/[:]+/);
+        var m = timeArray[0];
+        var s = checkSecond((timeArray[1] - 1));
+        if(s==59){m=m-1}
+        if(m<0){
+            medicalExamStart.style.visibility = "hidden";
+            medicalExamEnd.click();
+            return
+        }
+        
+        document.getElementById('medical_timer').innerHTML =
+        m + ":" + s;
+        // console.log(m)
+        setTimeout(startTimer, 1000);
+    }
+    
+    function checkSecond(sec) {
+        if (sec < 10 && sec >= 0) {sec = "0" + sec};
+        if (sec < 0) {
+            sec = "59";
+        };
+        return sec;
+    }
+}
+
+
+async function updateMedicalPass() {
+    let examParticipant = document.getElementById('exam_select_member_medical').value;
+    let data = examUnitData;
+
+    let examParticipantData = data.rows.filter(unit => unit.sc_name == examParticipant);
+    
+    // console.log(data);
+    console.log(examParticipant);
+    // console.log(examParticipantData)    
+    examParticipantData[0].medical_exam = true;
+    console.log(examParticipantData)
+
+    // console.log(data)
+    // console.log(examUnitData)
+
+    await fetch('https://frolicking-frangipane-e2734e.netlify.app/.netlify/functions/update_roster', {
+        method: 'POST',
+        body: JSON.stringify({
+            sc_name: examParticipant,
+            field: 'medical_exam',
+            value: true
+        })
+    });
+} // not finished
+
+async function updateMedicalFail() {
+    let examParticipant = document.getElementById('exam_select_member_medical').value;
+    let data = examUnitData;
+
+    let examParticipantData = data.rows.filter(unit => unit.sc_name == examParticipant);
+    
+    // console.log(data);
+    console.log(examParticipant);
+    // console.log(examParticipantData)    
+    examParticipantData[0].medical_exam = false;
+    console.log(examParticipantData)
+}
 
 
 // ~~~~~~~~~~~~~~~~~~~~ Project Notes ~~~~~~~~~~~~~~~~~~~~
 
-// see commends at line 2204 (to remove names that have passed the exam already)
-
 // self note: add timer (days: hours: minutes) to replace Start Exam button
-// apply exam progression to database
 // replace if else statement at end of showProtocolExamResults() to instead display database status
