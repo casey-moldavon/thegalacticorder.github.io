@@ -1,91 +1,4 @@
 
-// document.getElementById("medical_exam_start_button").addEventListener("click", function(){
-//     document.getElementById('medical_timer').innerHTML =
-//     25 + ":" + 01;
-//     startTimer();
-
-//     function startTimer() {
-//         var presentTime = document.getElementById('medical_timer').innerHTML;
-//         var timeArray = presentTime.split(/[:]+/);
-//         var m = timeArray[0];
-//         var s = checkSecond((timeArray[1] - 1));
-//         if(s==59){m=m-1}
-//         if(m<0){
-//             return
-//         }
-        
-//         document.getElementById('medical_timer').innerHTML =
-//             m + ":" + s;
-//         console.log(m)
-//         setTimeout(startTimer, 1000);    
-//     }
-
-//     function checkSecond(sec) {
-//     if (sec < 10 && sec >= 0) {sec = "0" + sec};
-//     if (sec < 0) {sec = "59"};
-//     return sec;
-//     }
-// });
-
-// document.getElementById("g_tactical_exam_start_button").addEventListener("click", function(){
-//     document.getElementById('g_tactical_timer').innerHTML =
-//     25 + ":" + 01;
-//     startTimer();
-
-//     function startTimer() {
-//         var presentTime = document.getElementById('g_tactical_timer').innerHTML;
-//         var timeArray = presentTime.split(/[:]+/);
-//         var m = timeArray[0];
-//         var s = checkSecond((timeArray[1] - 1));
-//         if(s==59){m=m-1}
-//         if(m<0){
-//             return
-//         }
-        
-//         document.getElementById('g_tactical_timer').innerHTML =
-//             m + ":" + s;
-//         console.log(m)
-//         setTimeout(startTimer, 1000);    
-//     }
-
-//     function checkSecond(sec) {
-//     if (sec < 10 && sec >= 0) {sec = "0" + sec};
-//     if (sec < 0) {sec = "59"};
-//     return sec;
-//     }
-// });
-
-// document.getElementById("s_tactical_exam_start_button").addEventListener("click", function(){
-//     document.getElementById('s_tactical_timer').innerHTML =
-//     00 + ":" + 11;
-//     startTimer();
-
-//     function startTimer() {
-//         var presentTime = document.getElementById('s_tactical_timer').innerHTML;
-//         var timeArray = presentTime.split(/[:]+/);
-//         var m = timeArray[0];
-//         var s = checkSecond((timeArray[1] - 1));
-//         if(s==59){m=m-1}
-//         if(m<0){
-//             return
-//         }
-        
-//         document.getElementById('s_tactical_timer').innerHTML =
-//             m + ":" + s;
-//         console.log(m)
-//         setTimeout(startTimer, 1000);    
-//     }
-
-//     function checkSecond(sec) {
-//         if (sec < 10 && sec >= 0) {
-//             sec = "0" + sec
-//         };
-//     if (sec < 0) {sec = "59"};
-//     return sec;
-//     }
-// });
-
-
 const questionsProtocolExam = [
     {
         questionNum: "Q1.",
@@ -2636,7 +2549,225 @@ async function updateMedicalFail() {
     examParticipantData[0].medical_exam = false;
     console.log(examParticipantData)
 }
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ G Tactical Exam ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ G Tactical Exam ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ G Tactical Exam ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+function generateGTacticalExamBattalionNames(){
 
+    let data = examUnitData;
+
+    let gTacticalNoPass = data.rows.filter(score => score.g_tactical_exam == false);
+
+    let examSelectBattalion = document.getElementById('g_tactical_exam_select_battalion').value;
+    let examBattalionMemberList = document.getElementById('exam_battalion_member_list_options');
+
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    var admiraltyMembers = gTacticalNoPass.filter(units => units.battalion == "F-01 Holland A-00")
+    var academyMembers = gTacticalNoPass.filter(units => units.battalion == "F-01 Cr4zy A-01")
+    // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+    var admiraltyMemberNames = admiraltyMembers.map(row =>`<option value="${row.sc_name}"></option>`).join('');
+    var academyMemberNames = academyMembers.map(row =>`<option value="${row.sc_name}"></option>`).join('');
+
+    if (examSelectBattalion == "F-01 Holland A-00"){examBattalionMemberList.innerHTML = admiraltyMemberNames;}
+    else if (examSelectBattalion == "F-01 Cr4zy A-01"){examBattalionMemberList.innerHTML = academyMemberNames;}
+}
+
+
+function gTacticalExamStartButtonReveal() {
+    var gTacticalExamStartButton = document.getElementById("g_tactical_exam_start_button");
+    gTacticalExamStartButton.style.visibility = "visible";
+}
+
+function buildGTacticalExam() {
+    var gTacticalExamContainer = document.getElementById('g_tactical_exam_container');
+
+    const outputGTacticalExam = [];
+
+    questionsGTacticalExam.forEach(
+        (currentQuestion, questionNumber) => {
+            let answers = [];
+
+            if (currentQuestion.type == "single") {
+                for(letter in currentQuestion.answers) {
+    
+                    answers.push(
+                        `
+                        <div id="questions_container">
+                        <label class="radio text-center">
+                            <input type="radio" name="question${questionNumber}" value="${letter}">
+                                <Span id="answer_letter">${letter} </Span>
+                                <a id="question_text">${currentQuestion.answers[letter]}</a>
+                        </label>
+                        </div>
+                        `
+                    );
+                }
+    
+                outputGTacticalExam.push(
+                    `
+                    <p id="small_space"></p>
+                    <div>
+                    <a id="g_tactical_number">${currentQuestion.questionNum}</a>
+                    <a id="question_text">${currentQuestion.question}</a>
+                    </div>
+                    <div class="answers"> ${answers.join('')} </div>
+                    `
+                );
+            }
+            else {
+                for(letter in currentQuestion.answers) {
+    
+                    answers.push(
+                        `
+                        <div id="questions_container">
+                        <label class="checkbox text-center">
+                            <input type="checkbox" name="question${questionNumber}" value="${letter}">
+                                <Span id="answer_letter">${letter} </Span>
+                                <a id="question_text">${currentQuestion.answers[letter]}</a>
+                        </label>
+                        </div>
+                        `
+                    );
+                }
+    
+                outputGTacticalExam.push(
+                    `
+                    <p id="small_space"></p>
+                    <div>
+                    <a id="g_tactical_number">${currentQuestion.questionNum}</a>
+                    <a id="question_text">${currentQuestion.question}</a>
+                    </div>
+                    <div class="answers"> ${answers.join('')} </div>
+                    `
+                );
+            }
+        }
+
+    );
+    gTacticalExamContainer.innerHTML = outputGTacticalExam.join('');
+    timerGTacticalExam()
+}
+
+function showGTacticalExamResults() {
+    const gTacticalExamContainer = document.getElementById('g_tactical_exam_container').querySelectorAll('.answers');
+    const gTacticalExamResults = document.getElementById('g_tactical_button_container');
+    // const testResults = document.getElementById('test_results'); // for testing
+
+    let numCorrect = 0;
+    
+    questionsGTacticalExam.forEach( (currentQuestion, questionNumber) => {
+
+        var gTacticalAnswerContainer = gTacticalExamContainer[questionNumber];
+        var gTacticalSelector = `input[name=question${questionNumber}]:checked`;
+        var gTacticalUserAnswer = (gTacticalAnswerContainer.querySelector(gTacticalSelector) || {}).value;
+        var gTacticalCheckboxes = document.querySelectorAll(`input[name=question${questionNumber}]:checked`);
+
+        let tempCorrect = 0;
+        let tempArray = [];
+        
+        if (currentQuestion.type == "single") {
+            if (gTacticalUserAnswer === currentQuestion.correctAnswer) {numCorrect++;}
+        }
+        
+        else if (currentQuestion.type == "multi") {
+
+            for (var i = 0; i < gTacticalCheckboxes.length; i++) {
+                tempArray.push(gTacticalCheckboxes[i].value)
+            }
+            for (var num = 0; num < tempArray.length; num ++) {
+                if (tempArray[num] == currentQuestion.correctAnswer[num]) {tempCorrect++}
+            }
+            if (tempCorrect == currentQuestion.correctAnswer.length) {numCorrect++}
+        }
+        tempCorrect = 0;
+        tempArray = [];
+    });
+
+    // testResults.innerHTML = `${numCorrect} out of ${questionsGTacticalExam.length}`; // for testing
+    if (numCorrect >= 30) {
+        gTacticalExamResults.innerHTML = `<div class="text-center" id="g_tactical_exam_final_results"><a id="complete">Pass</a></div>`;
+        updateGTacticalPass();
+    }
+    else {
+        gTacticalExamResults.innerHTML = `<div class="text-center" id="g_tactical_exam_final_results"><a id="failed_exam">Fail</a></div>`;
+        updateGTacticalFail();
+    }
+}
+
+
+
+function timerGTacticalExam() {
+    var gTacticalExamEnd = document.getElementById('g_tactical_exam_submit');
+    var gTacticalExamStart = document.getElementById("g_tactical_exam_start_button");
+    document.getElementById('g_tactical_timer').innerHTML = 25 + ":" + 01;
+    startTimer();
+
+    function startTimer() {
+        var presentTime = document.getElementById('g_tactical_timer').innerHTML;
+        var timeArray = presentTime.split(/[:]+/);
+        var m = timeArray[0];
+        var s = checkSecond((timeArray[1] - 1));
+        if(s==59){m=m-1}
+        if(m<0){
+            gTacticalExamStart.style.visibility = "hidden";
+            gTacticalExamEnd.click();
+            return
+        }
+        
+        document.getElementById('g_tactical_timer').innerHTML =
+        m + ":" + s;
+        // console.log(m)
+        setTimeout(startTimer, 1000);
+    }
+    
+    function checkSecond(sec) {
+        if (sec < 10 && sec >= 0) {sec = "0" + sec};
+        if (sec < 0) {
+            sec = "59";
+        };
+        return sec;
+    }
+}
+
+
+async function updateGTacticalPass() {
+    let examParticipant = document.getElementById('exam_select_member_g_tactical').value;
+    let data = examUnitData;
+
+    let examParticipantData = data.rows.filter(unit => unit.sc_name == examParticipant);
+    
+    // console.log(data);
+    console.log(examParticipant);
+    // console.log(examParticipantData)    
+    examParticipantData[0].gTactical_exam = true;
+    console.log(examParticipantData)
+
+    // console.log(data)
+    // console.log(examUnitData)
+
+    await fetch('https://frolicking-frangipane-e2734e.netlify.app/.netlify/functions/update_roster', {
+        method: 'POST',
+        body: JSON.stringify({
+            sc_name: examParticipant,
+            field: 'g_tactical_exam',
+            value: true
+        })
+    });
+} // not finished
+
+async function updateGTacticalFail() {
+    let examParticipant = document.getElementById('exam_select_member_g_tactical').value;
+    let data = examUnitData;
+
+    let examParticipantData = data.rows.filter(unit => unit.sc_name == examParticipant);
+    
+    // console.log(data);
+    console.log(examParticipant);
+    // console.log(examParticipantData)    
+    examParticipantData[0].gTactical_exam = false;
+    console.log(examParticipantData)
+}
 
 // ~~~~~~~~~~~~~~~~~~~~ Project Notes ~~~~~~~~~~~~~~~~~~~~
 
