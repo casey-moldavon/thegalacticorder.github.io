@@ -444,10 +444,17 @@ async function fileReport() {
         })
     });
 
-    let warnings = document.getElementById('unit_warning').value;
+    // let warnings = document.getElementById('unit_warning').value;
 
+    combatMissionData(memberData)
+    // engineerMissionData(memberData)
+    // medicalMissionData(memberData)
+    // scienceMissionData(memberData)
+}
 
-    // completed missions
+// completed missions
+async function combatMissionData(memberData) {
+
     let turret = document.getElementById('mission_turret').value;
     await fetch('https://frolicking-frangipane-e2734e.netlify.app/.netlify/functions/update_roster', {
         method: 'POST',
@@ -488,6 +495,9 @@ async function fileReport() {
         })
     });
 
+}
+
+async function engineerMissionData(memberData) {
     let pilot_co_pilot = document.getElementById('mission_pilot_co_pilot').value;
     await fetch('https://frolicking-frangipane-e2734e.netlify.app/.netlify/functions/update_roster', {
         method: 'POST',
@@ -527,7 +537,9 @@ async function fileReport() {
             value: memberData[0].cargo + parseInt(cargo)
         })
     });
+}
 
+async function medicalMissionData(memberData) {
     let transit = document.getElementById('mission_transit').value;
     await fetch('https://frolicking-frangipane-e2734e.netlify.app/.netlify/functions/update_roster', {
         method: 'POST',
@@ -557,7 +569,9 @@ async function fileReport() {
             value: memberData[0].search_rescue + parseInt(search_rescue)
         })
     });
+}
 
+async function scienceMissionData(memberData) {
     let manage_data = document.getElementById('mission_manage_data').value;
     await fetch('https://frolicking-frangipane-e2734e.netlify.app/.netlify/functions/update_roster', {
         method: 'POST',
@@ -597,8 +611,6 @@ async function fileReport() {
             value: memberData[0].agronomy + parseInt(agronomy)
         })
     });
-
-    // add function or code that clears data on modal (after entering it into the database) in every box except select_battalion
 }
 
 // needs if statement before sending to Database: if member (select_member) != "Select Member", then add data to database
