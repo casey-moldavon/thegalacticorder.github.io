@@ -206,4 +206,21 @@ body {
     margin-right: 20px;
     padding: 7px;
 }
+
+#red_button {
+    color: #1c1c1c;
+    /* font-size: 25px; */
+    background-color: #b60031;
+    padding-right: 2px;
+    border: 5px solid #b60031;
+    border-radius: 5px;
+}
+#red_symbol {
+    color: #ff0015;
+}
+#button_example {
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    padding: 5px;
+}
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Officer Info End ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
