@@ -143,7 +143,7 @@ async function generateCardData() {
                     <p><a id="novitiate_division_text_large">${row.sc_name}</a></p>
                     <p><a id="novitiate_note">${row.discord_name}</a></p>
                     <p><a id="novitiate_note">Rank ${row.unit_rank} : ${row.unit_role}</a></p>
-                    <p><a id="novitiate_note">${row.battalion}</a></p>
+                    <p><a id="novitiate_note">Battalion: ${row.battalion}</a></p>
                 </div>
 
 
@@ -496,7 +496,7 @@ async function generateCardData() {
                     <p><a id="combat_division_text_large">${row.sc_name}</a></p>
                     <p><a id="novitiate_note">${row.discord_name}</a></p>
                     <p><a id="combat_note">Rank ${row.unit_rank} : ${row.unit_role}</a></p>
-                    <p><a id="novitiate_note">${row.battalion}</a></p>
+                    <p><a id="novitiate_note">Battalion: ${row.battalion}</a></p>
                 </div>
 
 
@@ -849,7 +849,7 @@ async function generateCardData() {
                     <p><a id="engineer_division_text_large">${row.sc_name}</a></p>
                     <p><a id="novitiate_note">${row.discord_name}</a></p>
                     <p><a id="engineer_note">Rank ${row.unit_rank} : ${row.unit_role}</a></p>
-                    <p><a id="novitiate_note">${row.battalion}</a></p>
+                    <p><a id="novitiate_note">Battalion: ${row.battalion}</a></p>
                 </div>
 
 
@@ -1202,7 +1202,7 @@ async function generateCardData() {
                 <p><a id="medical_division_text_large">${row.sc_name}</a></p>
                 <p><a id="novitiate_note">${row.discord_name}</a></p>
                 <p><a id="medical_note">Rank ${row.unit_rank} : ${row.unit_role}</a></p>
-                <p><a id="novitiate_note">${row.battalion}</a></p>
+                <p><a id="novitiate_note">Battalion: ${row.battalion}</a></p>
             </div>
 
 
@@ -1555,7 +1555,7 @@ async function generateCardData() {
                     <p><a id="science_division_text_large">${row.sc_name}</a></p>
                     <p><a id="novitiate_note">${row.discord_name}</a></p>
                     <p><a id="science_note">Rank ${row.unit_rank} : ${row.unit_role}</a></p>
-                    <p><a id="novitiate_note">${row.battalion}</a></p>
+                    <p><a id="novitiate_note">Battalion: ${row.battalion}</a></p>
                 </div>
 
 
@@ -1909,7 +1909,7 @@ async function generateCardData() {
                     <p><a id="combat_division_text_large">${row.sc_name}</a></p>
                     <p><a id="novitiate_note">${row.discord_name}</a></p>
                     <p><a id="combat_note">Rank ${row.unit_rank} : ${row.unit_role}</a></p>
-                    <p><a id="novitiate_note">${row.battalion}</a></p>
+                    <p><a id="novitiate_note">Battalion: ${row.battalion}</a></p>
                 </div>
 
 
@@ -2262,7 +2262,7 @@ async function generateCardData() {
                     <p><a id="combat_division_text_large">${row.sc_name}</a></p>
                     <p><a id="novitiate_note">${row.discord_name}</a></p>
                     <p><a id="combat_note">Rank ${row.unit_rank} : ${row.unit_role}</a></p>
-                    <p><a id="novitiate_note">${row.battalion}</a></p>
+                    <p><a id="novitiate_note">Battalion: ${row.battalion}</a></p>
                 </div>
 
 
@@ -2615,7 +2615,7 @@ async function generateCardData() {
                     <p><a id="combat_division_text_large">${row.sc_name}</a></p>
                     <p><a id="novitiate_note">${row.discord_name}</a></p>
                     <p><a id="combat_note">Rank ${row.unit_rank} : ${row.unit_role}</a></p>
-                    <p><a id="novitiate_note">${row.battalion}</a></p>
+                    <p><a id="novitiate_note">Battalion: ${row.battalion}</a></p>
                 </div>
 
 
@@ -2968,7 +2968,7 @@ async function generateCardData() {
                     <p><a id="engineer_division_text_large">${row.sc_name}</a></p>
                     <p><a id="novitiate_note">${row.discord_name}</a></p>
                     <p><a id="engineer_note">Rank ${row.unit_rank} : ${row.unit_role}</a></p>
-                    <p><a id="novitiate_note">${row.battalion}</a></p>
+                    <p><a id="novitiate_note">Battalion: ${row.battalion}</a></p>
                 </div>
 
 
@@ -3321,7 +3321,7 @@ async function generateCardData() {
                 <p><a id="medical_division_text_large">${row.sc_name}</a></p>
                 <p><a id="novitiate_note">${row.discord_name}</a></p>
                 <p><a id="medical_note">Rank ${row.unit_rank} : ${row.unit_role}</a></p>
-                <p><a id="novitiate_note">${row.battalion}</a></p>
+                <p><a id="novitiate_note">Battalion: ${row.battalion}</a></p>
             </div>
 
 
@@ -3674,7 +3674,7 @@ async function generateCardData() {
                     <p><a id="science_division_text_large">${row.sc_name}</a></p>
                     <p><a id="novitiate_note">${row.discord_name}</a></p>
                     <p><a id="science_note">Rank ${row.unit_rank} : ${row.unit_role}</a></p>
-                    <p><a id="novitiate_note">${row.battalion}</a></p>
+                    <p><a id="novitiate_note">Battalion: ${row.battalion}</a></p>
                 </div>
 
 
@@ -4028,7 +4028,7 @@ async function generateCardData() {
                     <p><a id="combat_division_text_large">${row.sc_name}</a></p>
                     <p><a id="novitiate_note">${row.discord_name}</a></p>
                     <p><a id="combat_note">Rank ${row.unit_rank} : ${row.unit_role}</a></p>
-                    <p><a id="novitiate_note">${row.battalion}</a></p>
+                    <p><a id="novitiate_note">Battalion: ${row.battalion}</a></p>
                 </div>
 
 
@@ -4381,7 +4381,7 @@ async function generateCardData() {
                     <p><a id="engineer_division_text_large">${row.sc_name}</a></p>
                     <p><a id="novitiate_note">${row.discord_name}</a></p>
                     <p><a id="engineer_note">Rank ${row.unit_rank} : ${row.unit_role}</a></p>
-                    <p><a id="novitiate_note">${row.battalion}</a></p>
+                    <p><a id="novitiate_note">Battalion: ${row.battalion}</a></p>
                 </div>
 
 
@@ -4734,7 +4734,7 @@ async function generateCardData() {
                 <p><a id="medical_division_text_large">${row.sc_name}</a></p>
                 <p><a id="novitiate_note">${row.discord_name}</a></p>
                 <p><a id="medical_note">Rank ${row.unit_rank} : ${row.unit_role}</a></p>
-                <p><a id="novitiate_note">${row.battalion}</a></p>
+                <p><a id="novitiate_note">Battalion: ${row.battalion}</a></p>
             </div>
 
 
@@ -5087,7 +5087,7 @@ async function generateCardData() {
                     <p><a id="science_division_text_large">${row.sc_name}</a></p>
                     <p><a id="novitiate_note">${row.discord_name}</a></p>
                     <p><a id="science_note">Rank ${row.unit_rank} : ${row.unit_role}</a></p>
-                    <p><a id="novitiate_note">${row.battalion}</a></p>
+                    <p><a id="novitiate_note">Battalion: ${row.battalion}</a></p>
                 </div>
 
 
@@ -5441,7 +5441,7 @@ async function generateCardData() {
                     <p><a id="leadership_division_text_large">${row.sc_name}</a></p>
                     <p><a id="novitiate_note">${row.discord_name}</a></p>
                     <p><a id="leadership_note">Rank ${row.unit_rank} : ${row.unit_role}</a></p>
-                    <p><a id="novitiate_note">${row.battalion}</a></p>
+                    <p><a id="novitiate_note">Battalion: ${row.battalion}</a></p>
                 </div>
 
 
@@ -5794,7 +5794,7 @@ async function generateCardData() {
                     <p><a id="leadership_division_text_large">${row.sc_name}</a></p>
                     <p><a id="novitiate_note">${row.discord_name}</a></p>
                     <p><a id="leadership_note">Rank ${row.unit_rank} : ${row.unit_role}</a></p>
-                    <p><a id="novitiate_note">${row.battalion}</a></p>
+                    <p><a id="novitiate_note">Battalion: ${row.battalion}</a></p>
                 </div>
 
 
@@ -6147,7 +6147,7 @@ async function generateCardData() {
                     <p><a id="leadership_division_text_large">${row.sc_name}</a></p>
                     <p><a id="novitiate_note">${row.discord_name}</a></p>
                     <p><a id="leadership_note">Rank ${row.unit_rank} : ${row.unit_role}</a></p>
-                    <p><a id="novitiate_note">${row.battalion}</a></p>
+                    <p><a id="novitiate_note">Battalion: ${row.battalion}</a></p>
                 </div>
 
 
@@ -6500,7 +6500,7 @@ async function generateCardData() {
                     <p><a id="leadership_division_text_large">${row.sc_name}</a></p>
                     <p><a id="novitiate_note">${row.discord_name}</a></p>
                     <p><a id="leadership_note">Rank ${row.unit_rank} : ${row.unit_role}</a></p>
-                    <p><a id="novitiate_note">${row.battalion}</a></p>
+                    <p><a id="novitiate_note">Battalion: ${row.battalion}</a></p>
                 </div>
 
 
