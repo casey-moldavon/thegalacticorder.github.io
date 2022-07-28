@@ -310,6 +310,7 @@ async function generateButtonData(data) {
     reportBattalionList.innerHTML = allBattalions;
 
     userData = data;
+    console.log(userData);
 }
 
 
@@ -397,14 +398,31 @@ function registerUnit() {
     // add function that refreshes page
 }
 
-function fileReport() {
 
-    let battalion = document.getElementById('select_battalion');
-    // += battalion # added to current num
-    let member = document.getElementById('select_member');
+async function fileReport() {
+    let selectedMember = document.getElementById('select_member').value;
+    let memberData = userData.rows.filter(unit => unit.sc_name == selectedMember);
 
 
-    let events = document.getElementById('unit_events');
+    let events = document.getElementById('unit_events').value;
+
+
+    await fetch('https://frolicking-frangipane-e2734e.netlify.app/.netlify/functions/update_roster', {
+        method: 'POST',
+        body: JSON.stringify({
+            sc_name: selectedMember,
+            field: 'events',
+            value: memberData[0].events + parseInt(events)
+        })
+    });
+
+
+
+    // console.log(userData);
+    // console.log(memberData);
+    // console.log(memberData[0].events);
+    // console.log(memberData[0].events + parseInt(events));
+
     let patrols = document.getElementById('unit_patrols');
     let hours = document.getElementById('unit_hours');
 
