@@ -310,7 +310,10 @@ async function generateButtonData(data) {
     reportBattalionList.innerHTML = allBattalions;
 
     userData = data;
-    console.log(userData);
+    // let last = userData.rows.length - 1;
+    // console.log(userData);
+    // console.log(userData.rows[0]);
+    // console.log(userData.rows[last]);
 }
 
 
