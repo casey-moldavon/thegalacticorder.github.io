@@ -405,8 +405,6 @@ async function fileReport() {
 
 
     let events = document.getElementById('unit_events').value;
-
-
     await fetch('https://frolicking-frangipane-e2734e.netlify.app/.netlify/functions/update_roster', {
         method: 'POST',
         body: JSON.stringify({
@@ -416,36 +414,189 @@ async function fileReport() {
         })
     });
 
+    let patrols = document.getElementById('unit_patrols').value;
+    await fetch('https://frolicking-frangipane-e2734e.netlify.app/.netlify/functions/update_roster', {
+        method: 'POST',
+        body: JSON.stringify({
+            sc_name: selectedMember,
+            field: 'patrols',
+            value: memberData[0].patrols + parseInt(patrols)
+        })
+    });
 
+    let hours = document.getElementById('unit_hours').value;
+    await fetch('https://frolicking-frangipane-e2734e.netlify.app/.netlify/functions/update_roster', {
+        method: 'POST',
+        body: JSON.stringify({
+            sc_name: selectedMember,
+            field: 'hours',
+            value: memberData[0].hours + parseInt(hours)
+        })
+    });
 
-    // console.log(userData);
-    // console.log(memberData);
-    // console.log(memberData[0].events);
-    // console.log(memberData[0].events + parseInt(events));
+    let alerts = document.getElementById('unit_alerts').value;
+    await fetch('https://frolicking-frangipane-e2734e.netlify.app/.netlify/functions/update_roster', {
+        method: 'POST',
+        body: JSON.stringify({
+            sc_name: selectedMember,
+            field: 'alerts',
+            value: memberData[0].alerts + parseInt(alerts)
+        })
+    });
 
-    let patrols = document.getElementById('unit_patrols');
-    let hours = document.getElementById('unit_hours');
-
-    let alerts = document.getElementById('unit_alerts');
-    let warnings = document.getElementById('unit_warning');
+    let warnings = document.getElementById('unit_warning').value;
 
 
     // completed missions
-    let turret = document.getElementById('mission_turret');
-    let ground_assault = document.getElementById('mission_ground_assault');
-    let escort = document.getElementById('mission_escort');
-    let inquiry = document.getElementById('mission_inquiry');
-    let pilot_co_pilot = document.getElementById('mission_pilot_co_pilot');
-    let mining = document.getElementById('mission_mining');
-    let salvage = document.getElementById('mission_salvage');
-    let cargo = document.getElementById('mission_cargo');
-    let transit = document.getElementById('mission_transit');
-    let support = document.getElementById('mission_support');
-    let search_rescue = document.getElementById('mission_search_rescue');
-    let manage_data = document.getElementById('mission_manage_data');
-    let research = document.getElementById('mission_research');
-    let explore = document.getElementById('mission_explore');
-    let agronomy = document.getElementById('mission_agronomy');
+    let turret = document.getElementById('mission_turret').value;
+    await fetch('https://frolicking-frangipane-e2734e.netlify.app/.netlify/functions/update_roster', {
+        method: 'POST',
+        body: JSON.stringify({
+            sc_name: selectedMember,
+            field: 'turret',
+            value: memberData[0].turret + parseInt(turret)
+        })
+    });
+
+    let ground_assault = document.getElementById('mission_ground_assault').value;
+    await fetch('https://frolicking-frangipane-e2734e.netlify.app/.netlify/functions/update_roster', {
+        method: 'POST',
+        body: JSON.stringify({
+            sc_name: selectedMember,
+            field: 'ground_assault',
+            value: memberData[0].ground_assault + parseInt(ground_assault)
+        })
+    });
+
+    let escort = document.getElementById('mission_escort').value;
+    await fetch('https://frolicking-frangipane-e2734e.netlify.app/.netlify/functions/update_roster', {
+        method: 'POST',
+        body: JSON.stringify({
+            sc_name: selectedMember,
+            field: 'escort',
+            value: memberData[0].escort + parseInt(escort)
+        })
+    });
+
+    let inquiry = document.getElementById('mission_inquiry').value;
+    await fetch('https://frolicking-frangipane-e2734e.netlify.app/.netlify/functions/update_roster', {
+        method: 'POST',
+        body: JSON.stringify({
+            sc_name: selectedMember,
+            field: 'inquiry',
+            value: memberData[0].inquiry + parseInt(inquiry)
+        })
+    });
+
+    let pilot_co_pilot = document.getElementById('mission_pilot_co_pilot').value;
+    await fetch('https://frolicking-frangipane-e2734e.netlify.app/.netlify/functions/update_roster', {
+        method: 'POST',
+        body: JSON.stringify({
+            sc_name: selectedMember,
+            field: 'pilot_co_pilot',
+            value: memberData[0].pilot_co_pilot + parseInt(pilot_co_pilot)
+        })
+    });
+
+    let mining = document.getElementById('mission_mining').value;
+    await fetch('https://frolicking-frangipane-e2734e.netlify.app/.netlify/functions/update_roster', {
+        method: 'POST',
+        body: JSON.stringify({
+            sc_name: selectedMember,
+            field: 'mining',
+            value: memberData[0].mining + parseInt(mining)
+        })
+    });
+
+    let salvage = document.getElementById('mission_salvage').value;
+    await fetch('https://frolicking-frangipane-e2734e.netlify.app/.netlify/functions/update_roster', {
+        method: 'POST',
+        body: JSON.stringify({
+            sc_name: selectedMember,
+            field: 'salvage',
+            value: memberData[0].salvage + parseInt(salvage)
+        })
+    });
+
+    let cargo = document.getElementById('mission_cargo').value;
+    await fetch('https://frolicking-frangipane-e2734e.netlify.app/.netlify/functions/update_roster', {
+        method: 'POST',
+        body: JSON.stringify({
+            sc_name: selectedMember,
+            field: 'cargo',
+            value: memberData[0].cargo + parseInt(cargo)
+        })
+    });
+
+    let transit = document.getElementById('mission_transit').value;
+    await fetch('https://frolicking-frangipane-e2734e.netlify.app/.netlify/functions/update_roster', {
+        method: 'POST',
+        body: JSON.stringify({
+            sc_name: selectedMember,
+            field: 'transit',
+            value: memberData[0].transit + parseInt(transit)
+        })
+    });
+
+    let support = document.getElementById('mission_support').value;
+    await fetch('https://frolicking-frangipane-e2734e.netlify.app/.netlify/functions/update_roster', {
+        method: 'POST',
+        body: JSON.stringify({
+            sc_name: selectedMember,
+            field: 'support',
+            value: memberData[0].support + parseInt(support)
+        })
+    });
+
+    let search_rescue = document.getElementById('mission_search_rescue').value;
+    await fetch('https://frolicking-frangipane-e2734e.netlify.app/.netlify/functions/update_roster', {
+        method: 'POST',
+        body: JSON.stringify({
+            sc_name: selectedMember,
+            field: 'search_rescue',
+            value: memberData[0].search_rescue + parseInt(search_rescue)
+        })
+    });
+
+    let manage_data = document.getElementById('mission_manage_data').value;
+    await fetch('https://frolicking-frangipane-e2734e.netlify.app/.netlify/functions/update_roster', {
+        method: 'POST',
+        body: JSON.stringify({
+            sc_name: selectedMember,
+            field: 'manage_data',
+            value: memberData[0].manage_data + parseInt(manage_data)
+        })
+    });
+
+    let research = document.getElementById('mission_research').value;
+    await fetch('https://frolicking-frangipane-e2734e.netlify.app/.netlify/functions/update_roster', {
+        method: 'POST',
+        body: JSON.stringify({
+            sc_name: selectedMember,
+            field: 'research',
+            value: memberData[0].research + parseInt(research)
+        })
+    });
+
+    let explore = document.getElementById('mission_explore').value;
+    await fetch('https://frolicking-frangipane-e2734e.netlify.app/.netlify/functions/update_roster', {
+        method: 'POST',
+        body: JSON.stringify({
+            sc_name: selectedMember,
+            field: 'explore',
+            value: memberData[0].explore + parseInt(explore)
+        })
+    });
+
+    let agronomy = document.getElementById('mission_agronomy').value;
+    await fetch('https://frolicking-frangipane-e2734e.netlify.app/.netlify/functions/update_roster', {
+        method: 'POST',
+        body: JSON.stringify({
+            sc_name: selectedMember,
+            field: 'agronomy',
+            value: memberData[0].agronomy + parseInt(agronomy)
+        })
+    });
 
     // add function or code that clears data on modal (after entering it into the database) in every box except select_battalion
 }
